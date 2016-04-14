@@ -1,0 +1,30 @@
+# This file is part of the dune-xt project:
+#   https://github.com/dune-community/dune-xt-super
+# The copyright lies with the authors of this file (see below).
+# License: BSD 2-Clause License (http://opensource.org/licenses/BSD-2-Clause)
+# Authors:
+#   Rene Milk       (2016)
+
+sudo: false
+dist: trusty
+
+language: python
+python:
+    - "3.4"
+
+before_script:
+    - pushd ${TRAVIS_BUILD_DIR}/.travis
+    - ./init_sshkey.sh $encrypted_ba1fade4c117_key $encrypted_ba1fade4c117_iv dune-community.github.io
+    - popd
+
+deploy:
+    provider: script
+    script: .travis/update_static_pages.bash
+
+script:
+  true #fake successful test run
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change
