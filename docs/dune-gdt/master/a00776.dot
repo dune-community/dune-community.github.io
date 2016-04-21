@@ -1,0 +1,23 @@
+digraph "Dune::GDT::DefaultProductSpace&lt; SpaceImps &gt;"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Dune::GDT::DefaultProduct\lSpace\< SpaceImps \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Dune::GDT::SpaceInterface\l\< internal::DefaultProductSpace\lTraits\< SpaceImps...\>, XT::Common\l::tuple_element\< 0, std::tuple\<\l SpaceImps...\> \>::type::dimDomain,\l GDT::BaseFunctionSet::internal::SumDimRange\l\< SpaceImps...\>::dimRange, 1 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00160.html"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="XT::CRTPInterface\<\l SpaceInterface\< internal\l::DefaultProductSpaceTraits\l\< SpaceImps...\>, domainDim,\l rangeDim, rangeDimCols \>, internal\l::DefaultProductSpaceTraits\< SpaceImps...\> \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node2 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::DefaultProduct\lSpaceTraits\< SpaceImps...\>\l, XT::Common::tuple_element\l\< 0, std::tuple\< SpaceImps...\>\l \>::type::dimDomain, GDT::BaseFunction\lSet::internal::SumDimRange\< SpaceImps...\>\l::dimRange, 1 \>" ,fontname="Helvetica"];
+  Node4 [label="Dune::GDT::SpaceInterface\l\< Traits, domainDim, rangeDim,\l rangeDimCols \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00160.html"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="XT::CRTPInterface\<\l SpaceInterface\< Traits,\l domainDim, rangeDim, rangeDim\lCols \>, Traits \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Dune::GDT::ProductSpaceInterface\l\< internal::DefaultProductSpaceTraits\l\< SpaceImps...\>, XT::Common::tuple\l_element\< 0, std::tuple\< SpaceImps...\>\l \>::type::dimDomain, GDT::BaseFunctionSet\l::internal::SumDimRange\< SpaceImps...\>::\ldimRange, 1 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00420.html"];
+  Node7 -> Node6 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::DefaultProduct\lSpaceTraits\< SpaceImps...\>\l, XT::Common::tuple_element\l\< 0, std::tuple\< SpaceImps...\>\l \>::type::dimDomain, GDT::BaseFunction\lSet::internal::SumDimRange\< SpaceImps...\>\l::dimRange, 1 \>" ,fontname="Helvetica"];
+  Node7 [label="Dune::GDT::ProductSpaceInterface\l\< Traits, domainDim, rangeDim,\l rangeDimCols \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00420.html"];
+  Node1 -> Node8 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< DunePdelabCgSpaceWrapper\l\< GridViewImp, polynomialOrder,\l RangeFieldImp, domainDim, 1\l \>, DunePdelabCgSpaceWrapper\l\< GridViewImp, polynomialOrder\l-1, RangeFieldImp, 1, 1 \> \>" ,fontname="Helvetica"];
+  Node8 [label="Dune::GDT::DefaultProduct\lSpace\< DunePdelabCgSpaceWrapper\l\< GridViewImp, polynomialOrder,\l RangeFieldImp, domainDim, 1 \>\l, DunePdelabCgSpaceWrapper\< GridViewImp,\l polynomialOrder-1, RangeFieldImp, 1, 1 \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00087.html"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Dune::GDT::DunePdelabTaylor\lHoodSpaceWrapper\< GridViewImp,\l polynomialOrder, domainDim,\l RangeFieldImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00121.html"];
+}

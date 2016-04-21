@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['weightedl2localizableproduct',['WeightedL2LocalizableProduct',['../a00461.html#a2ecf1d2236a65c76b0c41055adb74579',1,'Dune::GDT::WeightedL2LocalizableProduct::WeightedL2LocalizableProduct(const WeightFunctionType &amp;weight, GridLayer grd_layr, const Range &amp;rng, const Source &amp;src, const XT::Common::Parameter &amp;param={})'],['../a00461.html#acefe6c76bd8a94a4565d9420184b7863',1,'Dune::GDT::WeightedL2LocalizableProduct::WeightedL2LocalizableProduct(const size_t over_integrate, const WeightFunctionType &amp;weight, GridLayer grd_layr, const Range &amp;rng, const Source &amp;src, const XT::Common::Parameter &amp;param={})']]],
+  ['weightedl2matrixoperator',['WeightedL2MatrixOperator',['../a00462.html#a302edab811e6e3d02bd1727cf990732b',1,'Dune::GDT::WeightedL2MatrixOperator::WeightedL2MatrixOperator(const WeightFunctionType &amp;weight, Args &amp;&amp;...args)'],['../a00462.html#a5de8724628ae422113afe2509342fa2f',1,'Dune::GDT::WeightedL2MatrixOperator::WeightedL2MatrixOperator(const size_t over_integrate, const WeightFunctionType &amp;weight, Args &amp;&amp;...args)']]],
+  ['weightedl2operator',['WeightedL2Operator',['../a00463.html#a6c0ceb8b442ae221745b658863f0e42b',1,'Dune::GDT::WeightedL2Operator']]]
+];
