@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: Dune::GDT::MatrixDataHandle&lt; MatrixType, SpaceType &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::LocalNumericalBoundaryFluxInterface&lt; Traits &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,276 +85,76 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00702.html">Dune</a></li><li class="navelem"><a class="el" href="a00703.html">GDT</a></li><li class="navelem"><a class="el" href="a00386.html">MatrixDataHandle</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00760.html">Dune</a></li><li class="navelem"><a class="el" href="a00761.html">GDT</a></li><li class="navelem"><a class="el" href="a00386.html">LocalNumericalBoundaryFluxInterface</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a01037.html">List of all members</a>  </div>
+<a href="a01101.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::MatrixDataHandle&lt; MatrixType, SpaceType &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::LocalNumericalBoundaryFluxInterface&lt; Traits &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00498_source.html">dune/gdt/assembler/codim0-matrix-datahandle.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00654_source.html">dune/gdt/local/fluxes/interfaces.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::MatrixDataHandle&lt; MatrixType, SpaceType &gt;:</div>
+Inheritance diagram for Dune::GDT::LocalNumericalBoundaryFluxInterface&lt; Traits &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01038.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_matrix_data_handle_3_01_matrix_type_00_01_space_type_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1_matrix_data_handle_3_01_matrix_type_00_01_space_type_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_matrix_data_handle_3_01_matrix_type_00_01_space_type_01_4_inherit__map">
+<div class="center"><img src="a01102.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_local_numerical_boundary_flux_interface_3_01_traits_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_local_numerical_boundary_flux_interface_3_01_traits_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_local_numerical_boundary_flux_interface_3_01_traits_01_4_inherit__map">
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:adf7da2e53f222144cce9f20c566b3fc9"><td class="memItemLeft" align="right" valign="top">typedef MatrixType::ScalarType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00386.html#adf7da2e53f222144cce9f20c566b3fc9">DataType</a></td></tr>
-<tr class="memdesc:adf7da2e53f222144cce9f20c566b3fc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">export type of data for message buffer  <a href="#adf7da2e53f222144cce9f20c566b3fc9">More...</a><br /></td></tr>
-<tr class="separator:adf7da2e53f222144cce9f20c566b3fc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7900fb50680083e3f0c392b5f00f6f60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00386.html#a7900fb50680083e3f0c392b5f00f6f60">MatrixDataHandle</a> (MatrixType &amp;matrix, const <a class="el" href="a00703.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &amp;space, bool fixed_size=true)</td></tr>
-<tr class="separator:a7900fb50680083e3f0c392b5f00f6f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab053f6bc2a7e1214ca9020c4e66ba096"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00386.html#ab053f6bc2a7e1214ca9020c4e66ba096">contains</a> (int, int codim) const </td></tr>
-<tr class="memdesc:ab053f6bc2a7e1214ca9020c4e66ba096"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if data for this codim should be communicated  <a href="#ab053f6bc2a7e1214ca9020c4e66ba096">More...</a><br /></td></tr>
-<tr class="separator:ab053f6bc2a7e1214ca9020c4e66ba096"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a792e202380687f7421d05086ad575e45"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00386.html#a792e202380687f7421d05086ad575e45">fixedsize</a> (int, int) const </td></tr>
-<tr class="memdesc:a792e202380687f7421d05086ad575e45"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if size per entity of given dim and codim is a constant  <a href="#a792e202380687f7421d05086ad575e45">More...</a><br /></td></tr>
-<tr class="separator:a792e202380687f7421d05086ad575e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefffc587a5e83417645b3fda93f35bee"><td class="memTemplParams" colspan="2">template&lt;class EntityType &gt; </td></tr>
-<tr class="memitem:aefffc587a5e83417645b3fda93f35bee"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t<br class="typebreak" />
-&lt; EntityType::codimension!=0, <br class="typebreak" />
-size_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00386.html#aefffc587a5e83417645b3fda93f35bee">size</a> (const EntityType &amp;) const </td></tr>
-<tr class="separator:aefffc587a5e83417645b3fda93f35bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5514dc05e79c2dd5bcc6d713cd88b0c3"><td class="memTemplParams" colspan="2">template&lt;class EntityType &gt; </td></tr>
-<tr class="memitem:a5514dc05e79c2dd5bcc6d713cd88b0c3"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t<br class="typebreak" />
-&lt; EntityType::codimension==0, <br class="typebreak" />
-size_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00386.html#a5514dc05e79c2dd5bcc6d713cd88b0c3">size</a> (const EntityType &amp;entity) const </td></tr>
-<tr class="separator:a5514dc05e79c2dd5bcc6d713cd88b0c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb3fcdeefa7ce533f5ae93167cc90eaf"><td class="memTemplParams" colspan="2">template&lt;class MessageBuffer , class EntityType &gt; </td></tr>
-<tr class="memitem:adb3fcdeefa7ce533f5ae93167cc90eaf"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t<br class="typebreak" />
-&lt; EntityType::codimension!=0 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00386.html#adb3fcdeefa7ce533f5ae93167cc90eaf">gather</a> (MessageBuffer &amp;, const EntityType &amp;) const </td></tr>
-<tr class="memdesc:adb3fcdeefa7ce533f5ae93167cc90eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">pack data from user to message buffer  <a href="#adb3fcdeefa7ce533f5ae93167cc90eaf">More...</a><br /></td></tr>
-<tr class="separator:adb3fcdeefa7ce533f5ae93167cc90eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82c1839e701d78fbd4f72ea50bad384f"><td class="memTemplParams" colspan="2">template&lt;class MessageBuffer , class EntityType &gt; </td></tr>
-<tr class="memitem:a82c1839e701d78fbd4f72ea50bad384f"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t<br class="typebreak" />
-&lt; EntityType::codimension==0 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00386.html#a82c1839e701d78fbd4f72ea50bad384f">gather</a> (MessageBuffer &amp;buff, const EntityType &amp;entity) const </td></tr>
-<tr class="separator:a82c1839e701d78fbd4f72ea50bad384f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4ec9dc32b67129c34edf986116fd70a"><td class="memTemplParams" colspan="2">template&lt;class MessageBuffer , class EntityType &gt; </td></tr>
-<tr class="memitem:ac4ec9dc32b67129c34edf986116fd70a"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t<br class="typebreak" />
-&lt; EntityType::codimension!=0 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00386.html#ac4ec9dc32b67129c34edf986116fd70a">scatter</a> (MessageBuffer &amp;, const EntityType &amp;, size_t)</td></tr>
-<tr class="separator:ac4ec9dc32b67129c34edf986116fd70a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a152a57c2acdde8f10c1f5f51be9c1bc5"><td class="memTemplParams" colspan="2">template&lt;class MessageBuffer , class EntityType &gt; </td></tr>
-<tr class="memitem:a152a57c2acdde8f10c1f5f51be9c1bc5"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t<br class="typebreak" />
-&lt; EntityType::codimension==0 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00386.html#a152a57c2acdde8f10c1f5f51be9c1bc5">scatter</a> (MessageBuffer &amp;buff, const EntityType &amp;entity, size_t n)</td></tr>
-<tr class="separator:a152a57c2acdde8f10c1f5f51be9c1bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add34291c1ffe503962fceb056ddf5c0f"><td class="memItemLeft" align="right" valign="top">LocalfunctionTupleType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00386.html#add34291c1ffe503962fceb056ddf5c0f">local_functions</a> (const EntityType &amp;entity) const </td></tr>
+<tr class="separator:add34291c1ffe503962fceb056ddf5c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a186fa2c9babd6c27b5216a3f87bde0a3"><td class="memTemplParams" colspan="2">template&lt;class E , class D , size_t d, class R , size_t r, size_t rC, class IntersectionType &gt; </td></tr>
+<tr class="memitem:a186fa2c9babd6c27b5216a3f87bde0a3"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00386.html#a186fa2c9babd6c27b5216a3f87bde0a3">evaluate</a> (const LocalfunctionTupleType &amp;local_functions_tuple, const XT::Functions::LocalfunctionInterface&lt; E, D, d, R, r, rC &gt; &amp;local_source_entity, const IntersectionType &amp;intersection, const Dune::FieldVector&lt; D, d-1 &gt; &amp;x_intersection) const -&gt; typename XT::Functions::LocalfunctionSetInterface&lt; E, D, d, R, r, rC &gt;::RangeType</td></tr>
+<tr class="separator:a186fa2c9babd6c27b5216a3f87bde0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="adf7da2e53f222144cce9f20c566b3fc9"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class MatrixType , class SpaceType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef MatrixType::ScalarType <a class="el" href="a00386.html">Dune::GDT::MatrixDataHandle</a>&lt; MatrixType, <a class="el" href="a00703.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &gt;::<a class="el" href="a00386.html#adf7da2e53f222144cce9f20c566b3fc9">DataType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>export type of data for message buffer </p>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a7900fb50680083e3f0c392b5f00f6f60"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class MatrixType , class SpaceType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00386.html">Dune::GDT::MatrixDataHandle</a>&lt; MatrixType, <a class="el" href="a00703.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &gt;::<a class="el" href="a00386.html">MatrixDataHandle</a> </td>
-          <td>(</td>
-          <td class="paramtype">MatrixType &amp;&#160;</td>
-          <td class="paramname"><em>matrix</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="a00703.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &amp;&#160;</td>
-          <td class="paramname"><em>space</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>fixed_size</em> = <code>true</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ab053f6bc2a7e1214ca9020c4e66ba096"></a>
+<a class="anchor" id="a186fa2c9babd6c27b5216a3f87bde0a3"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class MatrixType , class SpaceType &gt; </div>
+template&lt;class Traits&gt; </div>
+<div class="memtemplate">
+template&lt;class E , class D , size_t d, class R , size_t r, size_t rC, class IntersectionType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="a00386.html">Dune::GDT::MatrixDataHandle</a>&lt; MatrixType, <a class="el" href="a00703.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &gt;::contains </td>
+          <td class="memname">auto <a class="el" href="a00386.html">Dune::GDT::LocalNumericalBoundaryFluxInterface</a>&lt; Traits &gt;::evaluate </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramtype">const LocalfunctionTupleType &amp;&#160;</td>
+          <td class="paramname"><em>local_functions_tuple</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>codim</em>&#160;</td>
+          <td class="paramtype">const XT::Functions::LocalfunctionInterface&lt; E, D, d, R, r, rC &gt; &amp;&#160;</td>
+          <td class="paramname"><em>local_source_entity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const IntersectionType &amp;&#160;</td>
+          <td class="paramname"><em>intersection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::FieldVector&lt; D, d-1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>x_intersection</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
+          <td></td><td> const -&gt; typename XT::Functions::LocalfunctionSetInterface&lt;E, D, d, R, r, rC&gt;::RangeType
   </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>returns true if data for this codim should be communicated </p>
-
-</div>
-</div>
-<a class="anchor" id="a792e202380687f7421d05086ad575e45"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class MatrixType , class SpaceType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="a00386.html">Dune::GDT::MatrixDataHandle</a>&lt; MatrixType, <a class="el" href="a00703.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &gt;::fixedsize </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>returns true if size per entity of given dim and codim is a constant </p>
-
-</div>
-</div>
-<a class="anchor" id="adb3fcdeefa7ce533f5ae93167cc90eaf"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class MatrixType , class SpaceType &gt; </div>
-<div class="memtemplate">
-template&lt;class MessageBuffer , class EntityType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::enable_if_t&lt;EntityType::codimension != 0&gt; <a class="el" href="a00386.html">Dune::GDT::MatrixDataHandle</a>&lt; MatrixType, <a class="el" href="a00703.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &gt;::gather </td>
-          <td>(</td>
-          <td class="paramtype">MessageBuffer &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const EntityType &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>pack data from user to message buffer </p>
-
-</div>
-</div>
-<a class="anchor" id="a82c1839e701d78fbd4f72ea50bad384f"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class MatrixType , class SpaceType &gt; </div>
-<div class="memtemplate">
-template&lt;class MessageBuffer , class EntityType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::enable_if_t&lt;EntityType::codimension == 0&gt; <a class="el" href="a00386.html">Dune::GDT::MatrixDataHandle</a>&lt; MatrixType, <a class="el" href="a00703.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &gt;::gather </td>
-          <td>(</td>
-          <td class="paramtype">MessageBuffer &amp;&#160;</td>
-          <td class="paramname"><em>buff</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const EntityType &amp;&#160;</td>
-          <td class="paramname"><em>entity</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -366,138 +166,17 @@ template&lt;class MessageBuffer , class EntityType &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac4ec9dc32b67129c34edf986116fd70a"></a>
+<a class="anchor" id="add34291c1ffe503962fceb056ddf5c0f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class MatrixType , class SpaceType &gt; </div>
-<div class="memtemplate">
-template&lt;class MessageBuffer , class EntityType &gt; </div>
+template&lt;class Traits&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::enable_if_t&lt;EntityType::codimension != 0&gt; <a class="el" href="a00386.html">Dune::GDT::MatrixDataHandle</a>&lt; MatrixType, <a class="el" href="a00703.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &gt;::scatter </td>
-          <td>(</td>
-          <td class="paramtype">MessageBuffer &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const EntityType &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>unpack data from message buffer to user n is the number of objects sent by the sender </p>
-
-</div>
-</div>
-<a class="anchor" id="a152a57c2acdde8f10c1f5f51be9c1bc5"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class MatrixType , class SpaceType &gt; </div>
-<div class="memtemplate">
-template&lt;class MessageBuffer , class EntityType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::enable_if_t&lt;EntityType::codimension == 0&gt; <a class="el" href="a00386.html">Dune::GDT::MatrixDataHandle</a>&lt; MatrixType, <a class="el" href="a00703.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &gt;::scatter </td>
-          <td>(</td>
-          <td class="paramtype">MessageBuffer &amp;&#160;</td>
-          <td class="paramname"><em>buff</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const EntityType &amp;&#160;</td>
-          <td class="paramname"><em>entity</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aefffc587a5e83417645b3fda93f35bee"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class MatrixType , class SpaceType &gt; </div>
-<div class="memtemplate">
-template&lt;class EntityType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::enable_if_t&lt;EntityType::codimension != 0, size_t&gt; <a class="el" href="a00386.html">Dune::GDT::MatrixDataHandle</a>&lt; MatrixType, <a class="el" href="a00703.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &gt;::size </td>
-          <td>(</td>
-          <td class="paramtype">const EntityType &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>how many objects of type DataType have to be sent for a given entity</p>
-<p>Note: Only the sender side needs to know this size. </p>
-
-</div>
-</div>
-<a class="anchor" id="a5514dc05e79c2dd5bcc6d713cd88b0c3"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class MatrixType , class SpaceType &gt; </div>
-<div class="memtemplate">
-template&lt;class EntityType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::enable_if_t&lt;EntityType::codimension == 0, size_t&gt; <a class="el" href="a00386.html">Dune::GDT::MatrixDataHandle</a>&lt; MatrixType, <a class="el" href="a00703.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &gt;::size </td>
+          <td class="memname">LocalfunctionTupleType <a class="el" href="a00386.html">Dune::GDT::LocalNumericalBoundaryFluxInterface</a>&lt; Traits &gt;::local_functions </td>
           <td>(</td>
           <td class="paramtype">const EntityType &amp;&#160;</td>
           <td class="paramname"><em>entity</em></td><td>)</td>
@@ -510,17 +189,16 @@ template&lt;class EntityType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>how many objects of type DataType have to be sent for a given entity Note: Only the sender side needs to know this size. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00498_source.html">codim0-matrix-datahandle.hh</a></li>
+<li><a class="el" href="a00654_source.html">local/fluxes/interfaces.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:19 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:10 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: ug_pdelab_istl.cc File Reference</title>
+<title>dune-gdt: laxfriedrichs.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -83,19 +83,69 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_eaee94ab3c5b11ce8fcab1cb9d405304.html">src</a></li><li class="navelem"><a class="el" href="dir_58c354ae22a30254506a25a39957e8ba.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_16224573f43954b382d54ec1df2a2147.html">dune</a></li><li class="navelem"><a class="el" href="dir_f1992dd472896fb89117bdc8155a3e1c.html">gdt</a></li><li class="navelem"><a class="el" href="dir_91b47eb1f5534b791b2db4e72c4ced9d.html">operators</a></li><li class="navelem"><a class="el" href="dir_a7df9ae745501a4de0fabd95a044ee81.html">elliptic-ipdg.bindings</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_eaee94ab3c5b11ce8fcab1cb9d405304.html">src</a></li><li class="navelem"><a class="el" href="dir_58c354ae22a30254506a25a39957e8ba.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_16224573f43954b382d54ec1df2a2147.html">dune</a></li><li class="navelem"><a class="el" href="dir_f1992dd472896fb89117bdc8155a3e1c.html">gdt</a></li><li class="navelem"><a class="el" href="dir_7df66b530ab698acb840d3fba4a971eb.html">local</a></li><li class="navelem"><a class="el" href="dir_d11b86b133e4ec0cf3d7e9282f3e5c58.html">fluxes</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">ug_pdelab_istl.cc File Reference</div>  </div>
+<div class="title">local/fluxes/laxfriedrichs.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;config.h&quot;</code><br />
-</div></div><!-- contents -->
+<div class="textblock"><code>#include &lt;tuple&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;dune/xt/functions/interfaces.hh&gt;</code><br />
+<code>#include &lt;dune/xt/functions/type_traits.hh&gt;</code><br />
+<code>#include &lt;dune/xt/la/eigen-solver.hh&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00654_source.html">interfaces.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00639_source.html">godunov.hh</a>&quot;</code><br />
+</div>
+<p><a href="a00681_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00301.html">Dune::GDT::LaxFriedrichsLocalNumericalCouplingFlux&lt; AnalyticalFluxImp, LocalizableFunctionImp &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lax-Friedrichs flux evaluation for inner intersections and periodic boundary intersections.  <a href="a00301.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00299.html">Dune::GDT::LaxFriedrichsLocalDirichletNumericalBoundaryFlux&lt; AnalyticalFluxImp, BoundaryValueImp, LocalizableFunctionImp &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lax-Friedrichs flux evaluation for Dirichlet boundary intersections.  <a href="a00299.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00297.html">Dune::GDT::LaxFriedrichsLocalAbsorbingNumericalBoundaryFlux&lt; AnalyticalFluxImp, LocalizableFunctionImp &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lax-Friedrichs flux evaluation for absorbing boundary conditions on boundary intersections.  <a href="a00297.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00302.html">Dune::GDT::internal::LaxFriedrichsLocalNumericalCouplingFluxTraits&lt; AnalyticalFluxImp, LocalizableFunctionImp &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00300.html">Dune::GDT::internal::LaxFriedrichsLocalDirichletNumericalBoundaryFluxTraits&lt; AnalyticalFluxImp, BoundaryValueImp, LocalizableFunctionImp &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00298.html">Dune::GDT::internal::LaxFriedrichsLocalAbsorbingNumericalBoundaryFluxTraits&lt; AnalyticalFluxImp, LocalizableFunctionImp &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00296.html">Dune::GDT::internal::LaxFriedrichsFluxImplementation&lt; Traits &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00301.html">Dune::GDT::LaxFriedrichsLocalNumericalCouplingFlux&lt; AnalyticalFluxImp, LocalizableFunctionImp &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lax-Friedrichs flux evaluation for inner intersections and periodic boundary intersections.  <a href="a00301.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00299.html">Dune::GDT::LaxFriedrichsLocalDirichletNumericalBoundaryFlux&lt; AnalyticalFluxImp, BoundaryValueImp, LocalizableFunctionImp &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lax-Friedrichs flux evaluation for Dirichlet boundary intersections.  <a href="a00299.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00297.html">Dune::GDT::LaxFriedrichsLocalAbsorbingNumericalBoundaryFlux&lt; AnalyticalFluxImp, LocalizableFunctionImp &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lax-Friedrichs flux evaluation for absorbing boundary conditions on boundary intersections.  <a href="a00297.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00760"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00760.html">Dune</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00761"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00761.html">Dune::GDT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00766"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00766.html">Dune::GDT::internal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:18 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:09 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

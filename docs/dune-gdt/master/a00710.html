@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: Dune::GDT::LocalSipdgIntegrands Namespace Reference</title>
+<title>dune-gdt: prolongations.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -40,9 +40,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -63,8 +63,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="namespaces.html"><span>Namespace&#160;List</span></a></li>
-      <li><a href="namespacemembers.html"><span>Namespace&#160;Members</span></a></li>
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -83,42 +83,64 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00702.html">Dune</a></li><li class="navelem"><a class="el" href="a00703.html">GDT</a></li><li class="navelem"><a class="el" href="a00710.html">LocalSipdgIntegrands</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_eaee94ab3c5b11ce8fcab1cb9d405304.html">src</a></li><li class="navelem"><a class="el" href="dir_58c354ae22a30254506a25a39957e8ba.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_16224573f43954b382d54ec1df2a2147.html">dune</a></li><li class="navelem"><a class="el" href="dir_f1992dd472896fb89117bdc8155a3e1c.html">gdt</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::LocalSipdgIntegrands Namespace Reference</div>  </div>
+<div class="title">prolongations.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Contains local evaluations for the symmetric interior penalty discontinuous Galerkin (SIPDG) discretization.  
-<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;dune/xt/grid/layers.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00553_source.html">dune/gdt/discretefunction/default.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00649_source.html">dune/gdt/spaces/interface.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00646_source.html">dune/gdt/spaces/cg/interface.hh</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00674_source.html">prolongations/l2.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00677_source.html">prolongations/lagrange.hh</a>&quot;</code><br />
+</div>
+<p><a href="a00710_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00711"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00711.html">internal</a></td></tr>
+<tr class="memitem:a00760"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00760.html">Dune</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00761"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00761.html">Dune::GDT</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html">BoundaryLHS</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html">BoundaryRHS</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00174.html">Inner</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aa08c25274fd4dd387590da5f9087f4ea"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType , class SourceSpaceType , class SourceVectorType , class RangeSpaceType , class RangeVectorType &gt; </td></tr>
+<tr class="memitem:aa08c25274fd4dd387590da5f9087f4ea"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak" />
+&lt; XT::Grid::is_layer<br class="typebreak" />
+&lt; GridLayerType &gt;::value <br class="typebreak" />
+&amp;&amp;is_cg_space&lt; RangeSpaceType &gt;<br class="typebreak" />
+::value, void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00761.html#aa08c25274fd4dd387590da5f9087f4ea">Dune::GDT::prolong</a> (const GridLayerType &amp;grid_layer, const ConstDiscreteFunction&lt; SourceSpaceType, SourceVectorType &gt; &amp;source, DiscreteFunction&lt; RangeSpaceType, RangeVectorType &gt; &amp;range, const size_t=0)</td></tr>
+<tr class="separator:aa08c25274fd4dd387590da5f9087f4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af392b611b527d3309b23f902cae6bf4b"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType , class SourceSpaceType , class SourceVectorType , class RangeSpaceType , class RangeVectorType &gt; </td></tr>
+<tr class="memitem:af392b611b527d3309b23f902cae6bf4b"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak" />
+&lt; XT::Grid::is_layer<br class="typebreak" />
+&lt; GridLayerType &gt;::value <br class="typebreak" />
+&amp;&amp;!is_cg_space&lt; RangeSpaceType &gt;<br class="typebreak" />
+::value, void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00761.html#af392b611b527d3309b23f902cae6bf4b">Dune::GDT::prolong</a> (const GridLayerType &amp;grid_layer, const ConstDiscreteFunction&lt; SourceSpaceType, SourceVectorType &gt; &amp;source, DiscreteFunction&lt; RangeSpaceType, RangeVectorType &gt; &amp;range, const size_t over_integrate=0)</td></tr>
+<tr class="separator:af392b611b527d3309b23f902cae6bf4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b3045aa4dc67c8c6aa40604468a8ec7"><td class="memTemplParams" colspan="2">template&lt;class SourceSpaceType , class SourceVectorType , class RangeSpaceType , class RangeVectorType &gt; </td></tr>
+<tr class="memitem:a5b3045aa4dc67c8c6aa40604468a8ec7"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; is_cg_space<br class="typebreak" />
+&lt; RangeSpaceType &gt;::value, <br class="typebreak" />
+void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00761.html#a5b3045aa4dc67c8c6aa40604468a8ec7">Dune::GDT::prolong</a> (const ConstDiscreteFunction&lt; SourceSpaceType, SourceVectorType &gt; &amp;source, DiscreteFunction&lt; RangeSpaceType, RangeVectorType &gt; &amp;range, const size_t=0)</td></tr>
+<tr class="separator:a5b3045aa4dc67c8c6aa40604468a8ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a857b2b6325e4bf58234495716f241819"><td class="memTemplParams" colspan="2">template&lt;class SourceSpaceType , class SourceVectorType , class RangeSpaceType , class RangeVectorType &gt; </td></tr>
+<tr class="memitem:a857b2b6325e4bf58234495716f241819"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt;!is_cg_space<br class="typebreak" />
+&lt; RangeSpaceType &gt;::value, <br class="typebreak" />
+void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00761.html#a857b2b6325e4bf58234495716f241819">Dune::GDT::prolong</a> (const ConstDiscreteFunction&lt; SourceSpaceType, SourceVectorType &gt; &amp;source, DiscreteFunction&lt; RangeSpaceType, RangeVectorType &gt; &amp;range, const size_t over_integrate=0)</td></tr>
+<tr class="separator:a857b2b6325e4bf58234495716f241819"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Contains local evaluations for the symmetric interior penalty discontinuous Galerkin (SIPDG) discretization. </p>
-<p>For the choice of penalization and the role of the user input see Epshteyn, Riviere (2007): "Estimation of penalty parameters for symmetric interior penalty Galerkin methods" </p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:20 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:09 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

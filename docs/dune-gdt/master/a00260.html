@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: Dune::GDT::L2ProjectionLocalizableOperator&lt; GridLayerImp, SourceImp, RangeImp &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::L2FaceVectorFunctional&lt; FunctionType, Space, Vector, GridLayer, Field &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,39 +85,213 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00702.html">Dune</a></li><li class="navelem"><a class="el" href="a00703.html">GDT</a></li><li class="navelem"><a class="el" href="a00260.html">L2ProjectionLocalizableOperator</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00760.html">Dune</a></li><li class="navelem"><a class="el" href="a00761.html">GDT</a></li><li class="navelem"><a class="el" href="a00260.html">L2FaceVectorFunctional</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00910.html">List of all members</a>  </div>
+<a href="a00967.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::L2ProjectionLocalizableOperator&lt; GridLayerImp, SourceImp, RangeImp &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::L2FaceVectorFunctional&lt; FunctionType, Space, Vector, GridLayer, Field &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00622_source.html">dune/gdt/projections/l2.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00671_source.html">dune/gdt/functionals/l2.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::L2ProjectionLocalizableOperator&lt; GridLayerImp, SourceImp, RangeImp &gt;:</div>
+Inheritance diagram for Dune::GDT::L2FaceVectorFunctional&lt; FunctionType, Space, Vector, GridLayer, Field &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00911.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_l2_projection_localizable_operator_3_01_grid_layer_imp_00_01_source_imp_00_01_range_imp_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1_l2_projection_localizable_operator_3_01_grid_layer_imp_00_01_source_imp_00_01_range_imp_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_l2_projection_localizable_operator_3_01_grid_layer_imp_00_01_source_imp_00_01_range_imp_01_4_inherit__map">
+<div class="center"><img src="a00968.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_l2_face_vector_functional_3_01_function_type_00_01_space_00_01_vector_00_01_grid_layer_00_01_field_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_l2_face_vector_functional_3_01_function_type_00_01_space_00_01_vector_00_01_grid_layer_00_01_field_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_l2_face_vector_functional_3_01_function_type_00_01_space_00_01_vector_00_01_grid_layer_00_01_field_01_4_inherit__map">
 </map>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a0382bec85fb53851c140eddd3be7b917"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+<a class="el" href="a00504.html">internal::VectorFunctionalBaseTraits</a><br class="typebreak" />
+&lt; Vector, Space, GridLayer, <br class="typebreak" />
+Field &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00503.html#a0382bec85fb53851c140eddd3be7b917">Traits</a></td></tr>
+<tr class="separator:a0382bec85fb53851c140eddd3be7b917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9527de51de1f3e477a0ec1ba8224120"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+BaseAssemblerType::AnsatzSpaceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00503.html#af9527de51de1f3e477a0ec1ba8224120">SpaceType</a></td></tr>
+<tr class="separator:af9527de51de1f3e477a0ec1ba8224120"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93c7c58d87b23cd2d22758657a251ac4"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+SpaceType::BaseFunctionSetType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00503.html#a93c7c58d87b23cd2d22758657a251ac4">TestBaseType</a></td></tr>
+<tr class="separator:a93c7c58d87b23cd2d22758657a251ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8ab76809d2400766dce4226b1d15d50"><td class="memItemLeft" align="right" valign="top">typedef Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00503.html#af8ab76809d2400766dce4226b1d15d50">VectorType</a></td></tr>
+<tr class="separator:af8ab76809d2400766dce4226b1d15d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ffaf64d6af45aa091b7a786fc7a2d0"><td class="memItemLeft" align="right" valign="top">typedef Traits::FieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00503.html#af4ffaf64d6af45aa091b7a786fc7a2d0">FieldType</a></td></tr>
+<tr class="separator:af4ffaf64d6af45aa091b7a786fc7a2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8309bd7d1255924356c79626e4a22697"><td class="memItemLeft" align="right" valign="top">typedef Traits::derived_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00503.html#a8309bd7d1255924356c79626e4a22697">derived_type</a></td></tr>
+<tr class="separator:a8309bd7d1255924356c79626e4a22697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1af58e17509958aad670db09ef5aaaba"><td class="memTemplParams" colspan="2">template&lt;class... Args&gt; </td></tr>
-<tr class="memitem:a1af58e17509958aad670db09ef5aaaba"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00260.html#a1af58e17509958aad670db09ef5aaaba">L2ProjectionLocalizableOperator</a> (Args &amp;&amp;...args)</td></tr>
-<tr class="separator:a1af58e17509958aad670db09ef5aaaba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63ea9487771e735e3ac5bc0ecfa89ce4"><td class="memTemplParams" colspan="2">template&lt;class... Args&gt; </td></tr>
+<tr class="memitem:a63ea9487771e735e3ac5bc0ecfa89ce4"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00260.html#a63ea9487771e735e3ac5bc0ecfa89ce4">L2FaceVectorFunctional</a> (const FunctionType &amp;function, Args &amp;&amp;...args)</td></tr>
+<tr class="separator:a63ea9487771e735e3ac5bc0ecfa89ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11d33015eb4f913e9cc17e4f8df3dcdc"><td class="memTemplParams" colspan="2">template&lt;class... Args&gt; </td></tr>
+<tr class="memitem:a11d33015eb4f913e9cc17e4f8df3dcdc"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00260.html#a11d33015eb4f913e9cc17e4f8df3dcdc">L2FaceVectorFunctional</a> (const XT::Grid::ApplyOn::WhichIntersection&lt; GridLayerType &gt; *which_intersections, const FunctionType &amp;function, Args &amp;&amp;...args)</td></tr>
+<tr class="separator:a11d33015eb4f913e9cc17e4f8df3dcdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ab2c833f4dde08c471b0e92fd33db73"><td class="memTemplParams" colspan="2">template&lt;class... Args&gt; </td></tr>
+<tr class="memitem:a6ab2c833f4dde08c471b0e92fd33db73"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00260.html#a6ab2c833f4dde08c471b0e92fd33db73">L2FaceVectorFunctional</a> (const size_t over_integrate, const FunctionType &amp;function, Args &amp;&amp;...args)</td></tr>
+<tr class="separator:a6ab2c833f4dde08c471b0e92fd33db73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb535e6e2e082a2c44550aaedc2163fd"><td class="memTemplParams" colspan="2">template&lt;class... Args&gt; </td></tr>
+<tr class="memitem:aeb535e6e2e082a2c44550aaedc2163fd"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00260.html#aeb535e6e2e082a2c44550aaedc2163fd">L2FaceVectorFunctional</a> (const size_t over_integrate, const XT::Grid::ApplyOn::WhichIntersection&lt; GridLayerType &gt; *which_intersections, const FunctionType &amp;function, Args &amp;&amp;...args)</td></tr>
+<tr class="separator:aeb535e6e2e082a2c44550aaedc2163fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e8bd43ec9bfb79c6825525340e57de4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00503.html#af8ab76809d2400766dce4226b1d15d50">VectorType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00503.html#a3e8bd43ec9bfb79c6825525340e57de4">vector</a> () const</td></tr>
+<tr class="separator:a3e8bd43ec9bfb79c6825525340e57de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79f1a2d5ee68a49b0ec46cb4bbda41d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00503.html#af8ab76809d2400766dce4226b1d15d50">VectorType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00503.html#a79f1a2d5ee68a49b0ec46cb4bbda41d6">vector</a> ()</td></tr>
+<tr class="separator:a79f1a2d5ee68a49b0ec46cb4bbda41d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a891d9c0fb0c78ca854910237982be21d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00503.html#af9527de51de1f3e477a0ec1ba8224120">SpaceType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00503.html#a891d9c0fb0c78ca854910237982be21d">space</a> () const</td></tr>
+<tr class="separator:a891d9c0fb0c78ca854910237982be21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a310966de52432d5119c9708ab383d7f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00503.html">ThisType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00503.html#a310966de52432d5119c9708ab383d7f6">append</a> (const <a class="el" href="a00397.html">LocalVolumeFunctionalInterface</a>&lt; <a class="el" href="a00503.html#a93c7c58d87b23cd2d22758657a251ac4">TestBaseType</a>, <a class="el" href="a00503.html#af4ffaf64d6af45aa091b7a786fc7a2d0">FieldType</a> &gt; &amp;local_volume_functional, const XT::Grid::ApplyOn::WhichEntity&lt; GridLayerType &gt; *where=new XT::Grid::ApplyOn::AllEntities&lt; GridLayerType &gt;())</td></tr>
+<tr class="separator:a310966de52432d5119c9708ab383d7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c850b18e84303f679c4c26994f3a183"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00503.html">ThisType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00503.html#a9c850b18e84303f679c4c26994f3a183">append</a> (const <a class="el" href="a00349.html">LocalFaceFunctionalInterface</a>&lt; <a class="el" href="a00503.html#a93c7c58d87b23cd2d22758657a251ac4">TestBaseType</a>, IntersectionType, <a class="el" href="a00503.html#af4ffaf64d6af45aa091b7a786fc7a2d0">FieldType</a> &gt; &amp;local_face_functional, const XT::Grid::ApplyOn::WhichIntersection&lt; GridLayerType &gt; *where=new XT::Grid::ApplyOn::AllIntersections&lt; GridLayerType &gt;())</td></tr>
+<tr class="separator:a9c850b18e84303f679c4c26994f3a183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a869ffd54eabf36ed3d0841c1bafa7a83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00503.html">ThisType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00503.html#a869ffd54eabf36ed3d0841c1bafa7a83">add</a> (Args &amp;&amp;...args)</td></tr>
+<tr class="separator:a869ffd54eabf36ed3d0841c1bafa7a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51478eabc1a95422876ec36bb09010d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00503.html#af4ffaf64d6af45aa091b7a786fc7a2d0">FieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00503.html#a51478eabc1a95422876ec36bb09010d8">apply</a> (const XT::LA::VectorInterface&lt; S &gt; &amp;source) const</td></tr>
+<tr class="separator:a51478eabc1a95422876ec36bb09010d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d75d568a22454619049bd3b92f23b8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00503.html#af4ffaf64d6af45aa091b7a786fc7a2d0">FieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00503.html#a2d75d568a22454619049bd3b92f23b8f">apply</a> (const <a class="el" href="a00071.html">ConstDiscreteFunction</a>&lt; <a class="el" href="a00503.html#af9527de51de1f3e477a0ec1ba8224120">SpaceType</a>, S &gt; &amp;source) const</td></tr>
+<tr class="separator:a2d75d568a22454619049bd3b92f23b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dbbdf157cdfa60b592f80d80c482d9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00503.html#af4ffaf64d6af45aa091b7a786fc7a2d0">FieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00153.html#a8dbbdf157cdfa60b592f80d80c482d9b">apply</a> (const SourceType &amp;source) const</td></tr>
+<tr class="separator:a8dbbdf157cdfa60b592f80d80c482d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class FunctionType, class Space, class Vector = typename XT::LA::Container&lt;typename Space::RangeFieldType&gt;::VectorType, class GridLayer = typename Space::GridLayerType, class Field = typename Space::RangeFieldType&gt;<br />
+class Dune::GDT::L2FaceVectorFunctional&lt; FunctionType, Space, Vector, GridLayer, Field &gt;</h3>
+
+<dl class="todo"><dt><b><a class="el" href="a00778.html#_todo000010">Todo:</a></b></dt><dd>Unit tests are missing for this class. </dd></dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a8309bd7d1255924356c79626e4a22697"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Traits::derived_type <a class="el" href="a00153.html">Dune::GDT::FunctionalInterface</a>&lt; <a class="el" href="a00503.html#a0382bec85fb53851c140eddd3be7b917">Traits</a> &gt;::<a class="el" href="a00503.html#a8309bd7d1255924356c79626e4a22697">derived_type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af4ffaf64d6af45aa091b7a786fc7a2d0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Traits::FieldType <a class="el" href="a00153.html">Dune::GDT::FunctionalInterface</a>&lt; <a class="el" href="a00503.html#a0382bec85fb53851c140eddd3be7b917">Traits</a> &gt;::<a class="el" href="a00503.html#af4ffaf64d6af45aa091b7a786fc7a2d0">FieldType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af9527de51de1f3e477a0ec1ba8224120"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef BaseAssemblerType::AnsatzSpaceType <a class="el" href="a00503.html">Dune::GDT::VectorFunctionalBase</a>&lt; Vector , Space , GridLayer , Field  &gt;::<a class="el" href="a00503.html#af9527de51de1f3e477a0ec1ba8224120">SpaceType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a93c7c58d87b23cd2d22758657a251ac4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef SpaceType::BaseFunctionSetType <a class="el" href="a00503.html">Dune::GDT::VectorFunctionalBase</a>&lt; Vector , Space , GridLayer , Field  &gt;::<a class="el" href="a00503.html#a93c7c58d87b23cd2d22758657a251ac4">TestBaseType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0382bec85fb53851c140eddd3be7b917"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00504.html">internal::VectorFunctionalBaseTraits</a>&lt;Vector , Space , GridLayer , Field &gt; <a class="el" href="a00503.html">Dune::GDT::VectorFunctionalBase</a>&lt; Vector , Space , GridLayer , Field  &gt;::<a class="el" href="a00503.html#a0382bec85fb53851c140eddd3be7b917">Traits</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af8ab76809d2400766dce4226b1d15d50"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Vector  <a class="el" href="a00503.html">Dune::GDT::VectorFunctionalBase</a>&lt; Vector , Space , GridLayer , Field  &gt;::<a class="el" href="a00503.html#af8ab76809d2400766dce4226b1d15d50">VectorType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a1af58e17509958aad670db09ef5aaaba"></a>
+<a class="anchor" id="a63ea9487771e735e3ac5bc0ecfa89ce4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GridLayerImp , class SourceImp , class RangeImp &gt; </div>
+template&lt;class FunctionType , class Space , class Vector  = typename XT::LA::Container&lt;typename Space::RangeFieldType&gt;::VectorType, class GridLayer  = typename Space::GridLayerType, class Field  = typename Space::RangeFieldType&gt; </div>
 <div class="memtemplate">
 template&lt;class... Args&gt; </div>
 <table class="mlabels">
@@ -125,11 +299,21 @@ template&lt;class... Args&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00260.html">Dune::GDT::L2ProjectionLocalizableOperator</a>&lt; GridLayerImp, SourceImp, RangeImp &gt;::<a class="el" href="a00260.html">L2ProjectionLocalizableOperator</a> </td>
+          <td class="memname"><a class="el" href="a00260.html">Dune::GDT::L2FaceVectorFunctional</a>&lt; FunctionType, Space, Vector, GridLayer, Field &gt;::<a class="el" href="a00260.html">L2FaceVectorFunctional</a> </td>
           <td>(</td>
-          <td class="paramtype">Args &amp;&amp;...&#160;</td>
-          <td class="paramname"><em>args</em></td><td>)</td>
+          <td class="paramtype">const FunctionType &amp;&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -141,13 +325,386 @@ template&lt;class... Args&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a11d33015eb4f913e9cc17e4f8df3dcdc"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class FunctionType , class Space , class Vector  = typename XT::LA::Container&lt;typename Space::RangeFieldType&gt;::VectorType, class GridLayer  = typename Space::GridLayerType, class Field  = typename Space::RangeFieldType&gt; </div>
+<div class="memtemplate">
+template&lt;class... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00260.html">Dune::GDT::L2FaceVectorFunctional</a>&lt; FunctionType, Space, Vector, GridLayer, Field &gt;::<a class="el" href="a00260.html">L2FaceVectorFunctional</a> </td>
+          <td>(</td>
+          <td class="paramtype">const XT::Grid::ApplyOn::WhichIntersection&lt; GridLayerType &gt; *&#160;</td>
+          <td class="paramname"><em>which_intersections</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FunctionType &amp;&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6ab2c833f4dde08c471b0e92fd33db73"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class FunctionType , class Space , class Vector  = typename XT::LA::Container&lt;typename Space::RangeFieldType&gt;::VectorType, class GridLayer  = typename Space::GridLayerType, class Field  = typename Space::RangeFieldType&gt; </div>
+<div class="memtemplate">
+template&lt;class... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00260.html">Dune::GDT::L2FaceVectorFunctional</a>&lt; FunctionType, Space, Vector, GridLayer, Field &gt;::<a class="el" href="a00260.html">L2FaceVectorFunctional</a> </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>over_integrate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FunctionType &amp;&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeb535e6e2e082a2c44550aaedc2163fd"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class FunctionType , class Space , class Vector  = typename XT::LA::Container&lt;typename Space::RangeFieldType&gt;::VectorType, class GridLayer  = typename Space::GridLayerType, class Field  = typename Space::RangeFieldType&gt; </div>
+<div class="memtemplate">
+template&lt;class... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00260.html">Dune::GDT::L2FaceVectorFunctional</a>&lt; FunctionType, Space, Vector, GridLayer, Field &gt;::<a class="el" href="a00260.html">L2FaceVectorFunctional</a> </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>over_integrate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Grid::ApplyOn::WhichIntersection&lt; GridLayerType &gt; *&#160;</td>
+          <td class="paramname"><em>which_intersections</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FunctionType &amp;&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a869ffd54eabf36ed3d0841c1bafa7a83"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00503.html">ThisType</a>&amp; <a class="el" href="a00503.html">Dune::GDT::VectorFunctionalBase</a>&lt; Vector , Space , GridLayer , Field  &gt;::add </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="a00780.html#_deprecated000001">Deprecated:</a></b></dt><dd>"Use append() instead (since 11.01.2017)!" </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a310966de52432d5119c9708ab383d7f6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00503.html">ThisType</a>&amp; <a class="el" href="a00503.html">Dune::GDT::VectorFunctionalBase</a>&lt; Vector , Space , GridLayer , Field  &gt;::append </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00397.html">LocalVolumeFunctionalInterface</a>&lt; <a class="el" href="a00503.html#a93c7c58d87b23cd2d22758657a251ac4">TestBaseType</a>, <a class="el" href="a00503.html#af4ffaf64d6af45aa091b7a786fc7a2d0">FieldType</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>local_volume_functional</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Grid::ApplyOn::WhichEntity&lt; GridLayerType &gt; *&#160;</td>
+          <td class="paramname"><em>where</em> = <code>new&#160;XT::Grid::ApplyOn::AllEntities&lt;GridLayerType&gt;()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9c850b18e84303f679c4c26994f3a183"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00503.html">ThisType</a>&amp; <a class="el" href="a00503.html">Dune::GDT::VectorFunctionalBase</a>&lt; Vector , Space , GridLayer , Field  &gt;::append </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00349.html">LocalFaceFunctionalInterface</a>&lt; <a class="el" href="a00503.html#a93c7c58d87b23cd2d22758657a251ac4">TestBaseType</a>, IntersectionType, <a class="el" href="a00503.html#af4ffaf64d6af45aa091b7a786fc7a2d0">FieldType</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>local_face_functional</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Grid::ApplyOn::WhichIntersection&lt; GridLayerType &gt; *&#160;</td>
+          <td class="paramname"><em>where</em> = <code>new&#160;XT::Grid::ApplyOn::AllIntersections&lt;GridLayerType&gt;()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8dbbdf157cdfa60b592f80d80c482d9b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00503.html#af4ffaf64d6af45aa091b7a786fc7a2d0">FieldType</a> <a class="el" href="a00153.html">Dune::GDT::FunctionalInterface</a>&lt; <a class="el" href="a00504.html">internal::VectorFunctionalBaseTraits</a>&lt; Vector, Space, GridLayer, Field &gt;  &gt;::apply </td>
+          <td>(</td>
+          <td class="paramtype">const SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a51478eabc1a95422876ec36bb09010d8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00503.html#af4ffaf64d6af45aa091b7a786fc7a2d0">FieldType</a> <a class="el" href="a00503.html">Dune::GDT::VectorFunctionalBase</a>&lt; Vector , Space , GridLayer , Field  &gt;::apply </td>
+          <td>(</td>
+          <td class="paramtype">const XT::LA::VectorInterface&lt; S &gt; &amp;&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2d75d568a22454619049bd3b92f23b8f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00503.html#af4ffaf64d6af45aa091b7a786fc7a2d0">FieldType</a> <a class="el" href="a00503.html">Dune::GDT::VectorFunctionalBase</a>&lt; Vector , Space , GridLayer , Field  &gt;::apply </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00071.html">ConstDiscreteFunction</a>&lt; <a class="el" href="a00503.html#af9527de51de1f3e477a0ec1ba8224120">SpaceType</a>, S &gt; &amp;&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a891d9c0fb0c78ca854910237982be21d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00503.html#af9527de51de1f3e477a0ec1ba8224120">SpaceType</a>&amp; <a class="el" href="a00503.html">Dune::GDT::VectorFunctionalBase</a>&lt; Vector , Space , GridLayer , Field  &gt;::space </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3e8bd43ec9bfb79c6825525340e57de4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00503.html#af8ab76809d2400766dce4226b1d15d50">VectorType</a>&amp; <a class="el" href="a00503.html">Dune::GDT::VectorFunctionalBase</a>&lt; Vector , Space , GridLayer , Field  &gt;::vector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a79f1a2d5ee68a49b0ec46cb4bbda41d6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00503.html#af8ab76809d2400766dce4226b1d15d50">VectorType</a>&amp; <a class="el" href="a00503.html">Dune::GDT::VectorFunctionalBase</a>&lt; Vector , Space , GridLayer , Field  &gt;::vector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00622_source.html">projections/l2.hh</a></li>
+<li><a class="el" href="a00671_source.html">functionals/l2.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:19 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:10 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

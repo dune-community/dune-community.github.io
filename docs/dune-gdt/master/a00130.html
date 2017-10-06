@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: Dune::GDT::internal::EllipticOperatorTraits&lt; DiffusionFactorType, DiffusionTensorType, GridLayerType, Field &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::BaseFunctionSet::internal::DynamicTupleGetter&lt; I &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,82 +85,63 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00702.html">Dune</a></li><li class="navelem"><a class="el" href="a00703.html">GDT</a></li><li class="navelem"><a class="el" href="a00707.html">internal</a></li><li class="navelem"><a class="el" href="a00130.html">EllipticOperatorTraits</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00760.html">Dune</a></li><li class="navelem"><a class="el" href="a00761.html">GDT</a></li><li class="navelem"><a class="el" href="a00762.html">BaseFunctionSet</a></li><li class="navelem"><a class="el" href="a00763.html">internal</a></li><li class="navelem"><a class="el" href="a00130.html">DynamicTupleGetter</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
-<a href="a01186.html">List of all members</a>  </div>
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="a01233.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::EllipticOperatorTraits&lt; DiffusionFactorType, DiffusionTensorType, GridLayerType, Field &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::BaseFunctionSet::internal::DynamicTupleGetter&lt; I &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00551_source.html">dune/gdt/operators/elliptic.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00703_source.html">dune/gdt/spaces/basefunctionset/product.hh</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a20c82e3fb22716f75d452f3e46eaa75a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00129.html">EllipticOperator</a><br class="typebreak" />
-&lt; DiffusionFactorType, <br class="typebreak" />
-DiffusionTensorType, <br class="typebreak" />
-GridLayerType, Field &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a20c82e3fb22716f75d452f3e46eaa75a">derived_type</a></td></tr>
-<tr class="separator:a20c82e3fb22716f75d452f3e46eaa75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0ad974e766be9f7e06be02bcf7e7f8b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00406.html">NoJacobian</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#ac0ad974e766be9f7e06be02bcf7e7f8b">JacobianType</a></td></tr>
-<tr class="separator:ac0ad974e766be9f7e06be02bcf7e7f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a089a3259322a4edf56995ff22e797b68"><td class="memItemLeft" align="right" valign="top">typedef Field&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a089a3259322a4edf56995ff22e797b68">FieldType</a></td></tr>
-<tr class="separator:a089a3259322a4edf56995ff22e797b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aa282a09adfda37f5f735810eb89a44fe"><td class="memTemplParams" colspan="2">template&lt;typename... TupleArgs&gt; </td></tr>
+<tr class="memitem:aa282a09adfda37f5f735810eb89a44fe"><td class="memTemplItemLeft" align="right" valign="top">static std::enable_if&lt; I==sizeof...(TupleArgs), <br class="typebreak" />
+size_t &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00130.html#aa282a09adfda37f5f735810eb89a44fe">sumSize</a> (const std::tuple&lt; TupleArgs...&gt; &amp;)</td></tr>
+<tr class="separator:aa282a09adfda37f5f735810eb89a44fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a20c82e3fb22716f75d452f3e46eaa75a"></a>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aa282a09adfda37f5f735810eb89a44fe"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class DiffusionFactorType, typename DiffusionTensorType, class GridLayerType, class Field&gt; </div>
+template&lt;size_t I = 0&gt; </div>
+<div class="memtemplate">
+template&lt;typename... TupleArgs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00129.html">EllipticOperator</a>&lt;DiffusionFactorType, DiffusionTensorType, GridLayerType, Field&gt; <a class="el" href="a00130.html">Dune::GDT::internal::EllipticOperatorTraits</a>&lt; DiffusionFactorType, DiffusionTensorType, GridLayerType, Field &gt;::<a class="el" href="a00130.html#a20c82e3fb22716f75d452f3e46eaa75a">derived_type</a></td>
+          <td class="memname">static std::enable_if&lt;I == sizeof...(TupleArgs), size_t&gt;::type <a class="el" href="a00130.html">Dune::GDT::BaseFunctionSet::internal::DynamicTupleGetter</a>&lt; I &gt;::sumSize </td>
+          <td>(</td>
+          <td class="paramtype">const std::tuple&lt; TupleArgs...&gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a089a3259322a4edf56995ff22e797b68"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class DiffusionFactorType, typename DiffusionTensorType, class GridLayerType, class Field&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef Field <a class="el" href="a00130.html">Dune::GDT::internal::EllipticOperatorTraits</a>&lt; DiffusionFactorType, DiffusionTensorType, GridLayerType, Field &gt;::<a class="el" href="a00130.html#a089a3259322a4edf56995ff22e797b68">FieldType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ac0ad974e766be9f7e06be02bcf7e7f8b"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class DiffusionFactorType, typename DiffusionTensorType, class GridLayerType, class Field&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a00406.html">NoJacobian</a> <a class="el" href="a00130.html">Dune::GDT::internal::EllipticOperatorTraits</a>&lt; DiffusionFactorType, DiffusionTensorType, GridLayerType, Field &gt;::<a class="el" href="a00130.html#ac0ad974e766be9f7e06be02bcf7e7f8b">JacobianType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00551_source.html">operators/elliptic.hh</a></li>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="a00703_source.html">spaces/basefunctionset/product.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:19 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:11 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

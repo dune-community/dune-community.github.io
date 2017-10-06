@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: enums.hh File Reference</title>
+<title>dune-gdt: default.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -83,46 +83,105 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_eaee94ab3c5b11ce8fcab1cb9d405304.html">src</a></li><li class="navelem"><a class="el" href="dir_58c354ae22a30254506a25a39957e8ba.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_16224573f43954b382d54ec1df2a2147.html">dune</a></li><li class="navelem"><a class="el" href="dir_f1992dd472896fb89117bdc8155a3e1c.html">gdt</a></li><li class="navelem"><a class="el" href="dir_91b47eb1f5534b791b2db4e72c4ced9d.html">operators</a></li><li class="navelem"><a class="el" href="dir_2aea60d8179215910741717bf9fb1687.html">fv</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_eaee94ab3c5b11ce8fcab1cb9d405304.html">src</a></li><li class="navelem"><a class="el" href="dir_58c354ae22a30254506a25a39957e8ba.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_16224573f43954b382d54ec1df2a2147.html">dune</a></li><li class="navelem"><a class="el" href="dir_f1992dd472896fb89117bdc8155a3e1c.html">gdt</a></li><li class="navelem"><a class="el" href="dir_0e08db9718cdc017276840d0b5dc9bb6.html">discretefunction</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">operators/fv/enums.hh File Reference</div>  </div>
+<div class="title">discretefunction/default.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;dune/common/fvector.hh&gt;</code><br />
+<code>#include &lt;dune/grid/io/file/vtk.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/exceptions.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/memory.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/ranges.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/tuple.hh&gt;</code><br />
+<code>#include &lt;dune/xt/la/container.hh&gt;</code><br />
+<code>#include &lt;dune/xt/functions/interfaces.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00565_source.html">dune/gdt/local/discretefunction.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00649_source.html">dune/gdt/spaces/interface.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00555_source.html">dune/gdt/spaces/fv/default.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00733_source.html">dune/gdt/type_traits.hh</a>&gt;</code><br />
+</div>
 <p><a href="a00553_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:a00702"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00702.html">Dune</a></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00071.html">Dune::GDT::ConstDiscreteFunction&lt; SpaceImp, VectorImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00703"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00703.html">Dune::GDT</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00505.html">Dune::GDT::internal::visualize_helper&lt; ii, is_product_space &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00506.html">Dune::GDT::internal::visualize_helper&lt; ii, true &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00489.html">Dune::GDT::internal::static_for_loop&lt; index, N &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00491.html">Dune::GDT::internal::static_for_loop&lt; index, 1 &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00490.html">Dune::GDT::internal::static_for_loop&lt; index, 0 &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00071.html">Dune::GDT::ConstDiscreteFunction&lt; SpaceImp, VectorImp &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00107.html">Dune::GDT::DiscreteFunction&lt; SpaceImp, VectorImp &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00201.html">Dune::GDT::internal::is_const_discrete_function_helper&lt; D &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00199.html">Dune::GDT::is_const_discrete_function&lt; D, candidate &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00200.html">Dune::GDT::is_const_discrete_function&lt; D, false &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00205.html">Dune::GDT::is_discrete_function&lt; D, candidate &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00206.html">Dune::GDT::is_discrete_function&lt; D, false &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a7d8c92722e087cefba1ac46ec1fa76f0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00703.html#a7d8c92722e087cefba1ac46ec1fa76f0">Dune::GDT::NumericalFluxes</a> { <br />
-&#160;&#160;<a class="el" href="a00703.html#a7d8c92722e087cefba1ac46ec1fa76f0aae254d63f2381cc183c11594873793e0">Dune::GDT::NumericalFluxes::force</a>, 
-<a class="el" href="a00703.html#a7d8c92722e087cefba1ac46ec1fa76f0a9399d693b7ac38875e19f1c38c4e4439">Dune::GDT::NumericalFluxes::godunov</a>, 
-<a class="el" href="a00703.html#a7d8c92722e087cefba1ac46ec1fa76f0a0f43c03a9e7ebc152cbaae416314ad69">Dune::GDT::NumericalFluxes::kinetic</a>, 
-<a class="el" href="a00703.html#a7d8c92722e087cefba1ac46ec1fa76f0a088da8a28ff265eb3b7e18ae1fc24274">Dune::GDT::NumericalFluxes::laxfriedrichs</a>, 
-<br />
-&#160;&#160;<a class="el" href="a00703.html#a7d8c92722e087cefba1ac46ec1fa76f0a03070545f77a8199923fb2e80550deb2">Dune::GDT::NumericalFluxes::laxwendroff</a>, 
-<a class="el" href="a00703.html#a7d8c92722e087cefba1ac46ec1fa76f0aa5aea357904deb91ca3777416848e6b0">Dune::GDT::NumericalFluxes::local_laxfriedrichs</a>, 
-<a class="el" href="a00703.html#a7d8c92722e087cefba1ac46ec1fa76f0a230d6f2fbb1b2f868241b805b6f837e7">Dune::GDT::NumericalFluxes::musta</a>
-<br />
- }</td></tr>
-<tr class="separator:a7d8c92722e087cefba1ac46ec1fa76f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00760"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00760.html">Dune</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00761"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00761.html">Dune::GDT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00766"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00766.html">Dune::GDT::internal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a6b9c4a6f7b668a0b5d89f4f02d9f2257"><td class="memTemplParams" colspan="2">template&lt;class SpaceType , class VectorType &gt; </td></tr>
+<tr class="memitem:a6b9c4a6f7b668a0b5d89f4f02d9f2257"><td class="memTemplItemLeft" align="right" valign="top">ConstDiscreteFunction<br class="typebreak" />
+&lt; SpaceType, VectorType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00761.html#a6b9c4a6f7b668a0b5d89f4f02d9f2257">Dune::GDT::make_const_discrete_function</a> (const SpaceType &amp;space, const VectorType &amp;vector, const std::string nm=&quot;gdt.constdiscretefunction&quot;)</td></tr>
+<tr class="separator:a6b9c4a6f7b668a0b5d89f4f02d9f2257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6598655545d02249af38a6508ea0681b"><td class="memTemplParams" colspan="2">template&lt;class SpaceType , class VectorType &gt; </td></tr>
+<tr class="memitem:a6598655545d02249af38a6508ea0681b"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; is_space<br class="typebreak" />
+&lt; SpaceType &gt;::value <br class="typebreak" />
+&amp;&amp;XT::LA::is_vector<br class="typebreak" />
+&lt; VectorType &gt;::value, <br class="typebreak" />
+DiscreteFunction&lt; SpaceType, <br class="typebreak" />
+VectorType &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00761.html#a6598655545d02249af38a6508ea0681b">Dune::GDT::make_discrete_function</a> (const SpaceType &amp;space, VectorType &amp;vector, const std::string nm=&quot;gdt.discretefunction&quot;)</td></tr>
+<tr class="separator:a6598655545d02249af38a6508ea0681b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d3e19a85ebe5c1fbbc4b77437af843c"><td class="memTemplParams" colspan="2">template&lt;class SpaceType , class VectorType &gt; </td></tr>
+<tr class="memitem:a7d3e19a85ebe5c1fbbc4b77437af843c"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; is_space<br class="typebreak" />
+&lt; SpaceType &gt;::value <br class="typebreak" />
+&amp;&amp;XT::LA::is_vector<br class="typebreak" />
+&lt; VectorType &gt;::value, <br class="typebreak" />
+DiscreteFunction&lt; SpaceType, <br class="typebreak" />
+VectorType &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00761.html#a7d3e19a85ebe5c1fbbc4b77437af843c">Dune::GDT::make_discrete_function</a> (const SpaceType &amp;space, VectorType &amp;&amp;vector, const std::string nm=&quot;gdt.discretefunction&quot;)</td></tr>
+<tr class="separator:a7d3e19a85ebe5c1fbbc4b77437af843c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a824112d0ae2d504cb60bf725b0b52811"><td class="memTemplParams" colspan="2">template&lt;class VectorType , class SpaceType &gt; </td></tr>
+<tr class="memitem:a824112d0ae2d504cb60bf725b0b52811"><td class="memTemplItemLeft" align="right" valign="top">DiscreteFunction&lt; SpaceType, <br class="typebreak" />
+VectorType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00761.html#a824112d0ae2d504cb60bf725b0b52811">Dune::GDT::make_discrete_function</a> (const SpaceType &amp;space, const std::string nm=&quot;gdt.discretefunction&quot;)</td></tr>
+<tr class="separator:a824112d0ae2d504cb60bf725b0b52811"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:18 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:09 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

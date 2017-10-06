@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: Dune::GDT::internal::LocalFvRhsJacobianIntegrandTraits&lt; RhsEvaluationImp, SourceType &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::internal::LocalEllipticIntegrandTraits&lt; DiffusionFactorImp, DiffusionTensorImp &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,161 +85,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00702.html">Dune</a></li><li class="navelem"><a class="el" href="a00703.html">GDT</a></li><li class="navelem"><a class="el" href="a00707.html">internal</a></li><li class="navelem"><a class="el" href="a00346.html">LocalFvRhsJacobianIntegrandTraits</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00760.html">Dune</a></li><li class="navelem"><a class="el" href="a00761.html">GDT</a></li><li class="navelem"><a class="el" href="a00766.html">internal</a></li><li class="navelem"><a class="el" href="a00346.html">LocalEllipticIntegrandTraits</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="a01271.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::LocalFvRhsJacobianIntegrandTraits&lt; RhsEvaluationImp, SourceType &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::internal::LocalEllipticIntegrandTraits&lt; DiffusionFactorImp, DiffusionTensorImp &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00584_source.html">dune/gdt/local/integrands/fv.hh</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:ab6e771d42648713f917f6e476258e503"><td class="memItemLeft" align="right" valign="top">typedef RhsEvaluationImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00346.html#ab6e771d42648713f917f6e476258e503">RhsEvaluationType</a></td></tr>
-<tr class="separator:ab6e771d42648713f917f6e476258e503"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac19f9126743ef0b576212a989250fca9"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-RhsEvaluationImp::EntityType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00346.html#ac19f9126743ef0b576212a989250fca9">EntityType</a></td></tr>
-<tr class="separator:ac19f9126743ef0b576212a989250fca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeebb44cdf0887c8254e3a676aa371ead"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-RhsEvaluationImp::DomainFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00346.html#aeebb44cdf0887c8254e3a676aa371ead">DomainFieldType</a></td></tr>
-<tr class="separator:aeebb44cdf0887c8254e3a676aa371ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dcfe4811fe227874fa524b801ad3cc0"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-<a class="el" href="a00345.html">LocalFvRhsJacobianIntegrand</a><br class="typebreak" />
-&lt; RhsEvaluationImp, SourceType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00346.html#a1dcfe4811fe227874fa524b801ad3cc0">derived_type</a></td></tr>
-<tr class="separator:a1dcfe4811fe227874fa524b801ad3cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f52a054e8d94b9c2fbf7da4cc290299"><td class="memItemLeft" align="right" valign="top">typedef std::tuple<br class="typebreak" />
-&lt; std::unique_ptr&lt; typename <br class="typebreak" />
-RhsEvaluationType::LocalfunctionType &gt;<br class="typebreak" />
-, std::unique_ptr&lt; typename <br class="typebreak" />
-SourceType::LocalfunctionType &gt;<br class="typebreak" />
-, typename <br class="typebreak" />
-SourceType::SpaceType::GridLayerType::ctype &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00346.html#a7f52a054e8d94b9c2fbf7da4cc290299">LocalfunctionTupleType</a></td></tr>
-<tr class="separator:a7f52a054e8d94b9c2fbf7da4cc290299"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:acf3e069e59352d8a2bbb4a2dd31ec643"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00346.html#acf3e069e59352d8a2bbb4a2dd31ec643">dimDomain</a> = RhsEvaluationImp::dimDomain</td></tr>
-<tr class="separator:acf3e069e59352d8a2bbb4a2dd31ec643"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
+<p>Traits for the Elliptic evaluation (variant for given diffusion factor and tensor).  
+ <a href="a00346.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00597_source.html">dune/gdt/local/integrands/elliptic.hh</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Dune::GDT::internal::LocalEllipticIntegrandTraits&lt; DiffusionFactorImp, DiffusionTensorImp &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="a01374.png" border="0" usemap="#_dune_1_1_g_d_t_1_1internal_1_1_local_elliptic_integrand_traits_3_01_diffusion_factor_imp_00_01_diffusion_tensor_imp_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1internal_1_1_local_elliptic_integrand_traits_3_01_diffusion_factor_imp_00_01_diffusion_tensor_imp_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1internal_1_1_local_elliptic_integrand_traits_3_01_diffusion_factor_imp_00_01_diffusion_tensor_imp_01_4_inherit__map">
+</map>
+</div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class RhsEvaluationImp, class SourceType&gt;<br />
-class Dune::GDT::internal::LocalFvRhsJacobianIntegrandTraits&lt; RhsEvaluationImp, SourceType &gt;</h3>
+<div class="textblock"><h3>template&lt;class DiffusionFactorImp, class DiffusionTensorImp&gt;<br />
+class Dune::GDT::internal::LocalEllipticIntegrandTraits&lt; DiffusionFactorImp, DiffusionTensorImp &gt;</h3>
 
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">RhsEvaluationImp</td><td>Right-hand side function derived from RhsEvaluationInterface </td></tr>
-    <tr><td class="paramname">SourceType</td><td><a class="el" href="a00102.html">DiscreteFunction</a> that contains the values u_i </td></tr>
-  </table>
-  </dd>
-</dl>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a1dcfe4811fe227874fa524b801ad3cc0"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a00345.html">LocalFvRhsJacobianIntegrand</a>&lt;RhsEvaluationImp, SourceType&gt; <a class="el" href="a00346.html">Dune::GDT::internal::LocalFvRhsJacobianIntegrandTraits</a>&lt; RhsEvaluationImp, SourceType &gt;::<a class="el" href="a00346.html#a1dcfe4811fe227874fa524b801ad3cc0">derived_type</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aeebb44cdf0887c8254e3a676aa371ead"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef RhsEvaluationImp::DomainFieldType <a class="el" href="a00346.html">Dune::GDT::internal::LocalFvRhsJacobianIntegrandTraits</a>&lt; RhsEvaluationImp, SourceType &gt;::<a class="el" href="a00346.html#aeebb44cdf0887c8254e3a676aa371ead">DomainFieldType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ac19f9126743ef0b576212a989250fca9"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef RhsEvaluationImp::EntityType <a class="el" href="a00346.html">Dune::GDT::internal::LocalFvRhsJacobianIntegrandTraits</a>&lt; RhsEvaluationImp, SourceType &gt;::<a class="el" href="a00346.html#ac19f9126743ef0b576212a989250fca9">EntityType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a7f52a054e8d94b9c2fbf7da4cc290299"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::tuple&lt;std::unique_ptr&lt;typename RhsEvaluationType::LocalfunctionType&gt;, std::unique_ptr&lt;typename SourceType::LocalfunctionType&gt;, typename SourceType::SpaceType::GridLayerType::ctype&gt; <a class="el" href="a00346.html">Dune::GDT::internal::LocalFvRhsJacobianIntegrandTraits</a>&lt; RhsEvaluationImp, SourceType &gt;::<a class="el" href="a00346.html#a7f52a054e8d94b9c2fbf7da4cc290299">LocalfunctionTupleType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab6e771d42648713f917f6e476258e503"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef RhsEvaluationImp <a class="el" href="a00346.html">Dune::GDT::internal::LocalFvRhsJacobianIntegrandTraits</a>&lt; RhsEvaluationImp, SourceType &gt;::<a class="el" href="a00346.html#ab6e771d42648713f917f6e476258e503">RhsEvaluationType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="acf3e069e59352d8a2bbb4a2dd31ec643"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const size_t <a class="el" href="a00346.html">Dune::GDT::internal::LocalFvRhsJacobianIntegrandTraits</a>&lt; RhsEvaluationImp, SourceType &gt;::dimDomain = RhsEvaluationImp::dimDomain</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00584_source.html">local/integrands/fv.hh</a></li>
+<p>Traits for the Elliptic evaluation (variant for given diffusion factor and tensor). </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="a00597_source.html">local/integrands/elliptic.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:20 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:11 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: sipdg.hh File Reference</title>
+<title>dune-gdt: l2-local.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -83,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_eaee94ab3c5b11ce8fcab1cb9d405304.html">src</a></li><li class="navelem"><a class="el" href="dir_58c354ae22a30254506a25a39957e8ba.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_16224573f43954b382d54ec1df2a2147.html">dune</a></li><li class="navelem"><a class="el" href="dir_f1992dd472896fb89117bdc8155a3e1c.html">gdt</a></li><li class="navelem"><a class="el" href="dir_7df66b530ab698acb840d3fba4a971eb.html">local</a></li><li class="navelem"><a class="el" href="dir_4af31a5fbf8e917922006326cc036fae.html">integrands</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_eaee94ab3c5b11ce8fcab1cb9d405304.html">src</a></li><li class="navelem"><a class="el" href="dir_58c354ae22a30254506a25a39957e8ba.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_16224573f43954b382d54ec1df2a2147.html">dune</a></li><li class="navelem"><a class="el" href="dir_f1992dd472896fb89117bdc8155a3e1c.html">gdt</a></li><li class="navelem"><a class="el" href="dir_e933303e01300794100a8d9c50f40ffb.html">prolongations</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -92,67 +92,94 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">sipdg.hh File Reference</div>  </div>
+<div class="title">prolongations/l2-local.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;tuple&gt;</code><br />
-<code>#include &lt;boost/numeric/conversion/cast.hpp&gt;</code><br />
-<code>#include &lt;dune/common/deprecated.hh&gt;</code><br />
-<code>#include &lt;dune/common/dynmatrix.hh&gt;</code><br />
-<code>#include &lt;dune/xt/common/color.hh&gt;</code><br />
-<code>#include &lt;dune/xt/common/timedlogging.hh&gt;</code><br />
-<code>#include &lt;dune/xt/common/type_traits.hh&gt;</code><br />
-<code>#include &lt;dune/xt/functions/interfaces.hh&gt;</code><br />
-<code>#include &quot;<a class="el" href="a00607_source.html">interfaces.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;dune/xt/common/memory.hh&gt;</code><br />
+<code>#include &lt;dune/xt/grid/type_traits.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00714_source.html">dune/gdt/discretefunction/reinterpret.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00605_source.html">dune/gdt/exceptions.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00535_source.html">dune/gdt/operators/base.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00664_source.html">dune/gdt/projections/l2-local.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00733_source.html">dune/gdt/type_traits.hh</a>&gt;</code><br />
 </div>
 <p><a href="a00665_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00174.html">Dune::GDT::LocalSipdgIntegrands::Inner&lt; LocalizableFunctionImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00272.html">Dune::GDT::L2LocalProlongationOperator&lt; GridLayerImp, FieldImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html">Dune::GDT::LocalSipdgIntegrands::BoundaryLHS&lt; LocalizableFunctionImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00273.html">Dune::GDT::internal::L2LocalProlongationOperatorTraits&lt; GridLayerImp, FieldImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html">Dune::GDT::LocalSipdgIntegrands::BoundaryRHS&lt; LocalizableDiffusionFunctionImp, LocalizableDirichletFunctionImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html">Dune::GDT::L2LocalProlongationLocalizableOperator&lt; GridLayerImp, SourceImp, RangeImp &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Carries out a prolongation (in a localized manner) using a local L2 projection.  <a href="a00271.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00176.html">Dune::GDT::LocalSipdgIntegrands::internal::InnerTraits&lt; LocalizableFunctionImp &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00049.html">Dune::GDT::LocalSipdgIntegrands::internal::BoundaryLHSTraits&lt; LocalizableFunctionImp &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html">Dune::GDT::LocalSipdgIntegrands::internal::BoundaryRHSTraits&lt; LocalizableDiffusionFunctionImp, LocalizableDirichletFunctionImp &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00174.html">Dune::GDT::LocalSipdgIntegrands::Inner&lt; LocalizableFunctionImp &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00047.html">Dune::GDT::LocalSipdgIntegrands::BoundaryLHS&lt; LocalizableFunctionImp &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html">Dune::GDT::LocalSipdgIntegrands::BoundaryRHS&lt; LocalizableDiffusionFunctionImp, LocalizableDirichletFunctionImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00272.html">Dune::GDT::L2LocalProlongationOperator&lt; GridLayerImp, FieldImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00702"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00702.html">Dune</a></td></tr>
+<tr class="memitem:a00760"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00760.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00703"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00703.html">Dune::GDT</a></td></tr>
+<tr class="memitem:a00761"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00761.html">Dune::GDT</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00710"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00710.html">Dune::GDT::LocalSipdgIntegrands</a></td></tr>
-<tr class="memdesc:a00710"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains local evaluations for the symmetric interior penalty discontinuous Galerkin (SIPDG) discretization. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00711"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00711.html">Dune::GDT::LocalSipdgIntegrands::internal</a></td></tr>
+<tr class="memitem:a00766"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00766.html">Dune::GDT::internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab6cd5a8c609a71fc12d58cd97eaccf0a"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00711.html#ab6cd5a8c609a71fc12d58cd97eaccf0a">Dune::GDT::LocalSipdgIntegrands::internal::default_beta</a> (const size_t dimDomain)</td></tr>
-<tr class="separator:ab6cd5a8c609a71fc12d58cd97eaccf0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac981c9eb368616c559af315a353908ae"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00711.html#ac981c9eb368616c559af315a353908ae">Dune::GDT::LocalSipdgIntegrands::internal::inner_sigma</a> (const size_t pol_order)</td></tr>
-<tr class="separator:ac981c9eb368616c559af315a353908ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2c02f8e1741d2dde464f4491aea3176"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00711.html#af2c02f8e1741d2dde464f4491aea3176">Dune::GDT::LocalSipdgIntegrands::internal::boundary_sigma</a> (const size_t pol_order)</td></tr>
-<tr class="separator:af2c02f8e1741d2dde464f4491aea3176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5a54eebb2c635b8f582ad3e43941b14"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType , class SourceSpaceType , class SourceVectorType , class RangeSpaceType , class RangeVectorType &gt; </td></tr>
+<tr class="memitem:af5a54eebb2c635b8f582ad3e43941b14"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak" />
+&lt; XT::Grid::is_layer<br class="typebreak" />
+&lt; GridLayerType &gt;::value <br class="typebreak" />
+&amp;&amp;is_space&lt; SourceSpaceType &gt;<br class="typebreak" />
+::value &amp;&amp;XT::LA::is_vector<br class="typebreak" />
+&lt; SourceVectorType &gt;::value <br class="typebreak" />
+&amp;&amp;is_space&lt; RangeSpaceType &gt;<br class="typebreak" />
+::value &amp;&amp;XT::LA::is_vector<br class="typebreak" />
+&lt; RangeVectorType &gt;::value, <br class="typebreak" />
+std::unique_ptr<br class="typebreak" />
+&lt; L2LocalProlongationLocalizableOperator<br class="typebreak" />
+&lt; GridLayerType, <br class="typebreak" />
+ConstDiscreteFunction<br class="typebreak" />
+&lt; SourceSpaceType, <br class="typebreak" />
+SourceVectorType &gt;<br class="typebreak" />
+, DiscreteFunction<br class="typebreak" />
+&lt; RangeSpaceType, <br class="typebreak" />
+RangeVectorType &gt; &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00761.html#af5a54eebb2c635b8f582ad3e43941b14">Dune::GDT::make_local_l2_prolongation_localizable_operator</a> (const GridLayerType &amp;grid_layer, const ConstDiscreteFunction&lt; SourceSpaceType, SourceVectorType &gt; &amp;source, DiscreteFunction&lt; RangeSpaceType, RangeVectorType &gt; &amp;range, const size_t over_integrate=0, const XT::Common::Parameter &amp;param={})</td></tr>
+<tr class="separator:af5a54eebb2c635b8f582ad3e43941b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b90a04cecdb9a4caa0dc6d876c0b0d1"><td class="memTemplParams" colspan="2">template&lt;class SourceSpaceType , class SourceVectorType , class RangeSpaceType , class RangeVectorType &gt; </td></tr>
+<tr class="memitem:a9b90a04cecdb9a4caa0dc6d876c0b0d1"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; is_space<br class="typebreak" />
+&lt; SourceSpaceType &gt;::value <br class="typebreak" />
+&amp;&amp;XT::LA::is_vector<br class="typebreak" />
+&lt; SourceVectorType &gt;::value <br class="typebreak" />
+&amp;&amp;is_space&lt; RangeSpaceType &gt;<br class="typebreak" />
+::value &amp;&amp;XT::LA::is_vector<br class="typebreak" />
+&lt; RangeVectorType &gt;::value, <br class="typebreak" />
+std::unique_ptr<br class="typebreak" />
+&lt; L2LocalProlongationLocalizableOperator<br class="typebreak" />
+&lt; typename <br class="typebreak" />
+RangeSpaceType::GridLayerType, <br class="typebreak" />
+ConstDiscreteFunction<br class="typebreak" />
+&lt; SourceSpaceType, <br class="typebreak" />
+SourceVectorType &gt;<br class="typebreak" />
+, DiscreteFunction<br class="typebreak" />
+&lt; RangeSpaceType, <br class="typebreak" />
+RangeVectorType &gt; &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00761.html#a9b90a04cecdb9a4caa0dc6d876c0b0d1">Dune::GDT::make_local_l2_prolongation_localizable_operator</a> (const ConstDiscreteFunction&lt; SourceSpaceType, SourceVectorType &gt; &amp;source, DiscreteFunction&lt; RangeSpaceType, RangeVectorType &gt; &amp;range, const size_t over_integrate=0, const XT::Common::Parameter &amp;param={})</td></tr>
+<tr class="separator:a9b90a04cecdb9a4caa0dc6d876c0b0d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae259c74e23bd82ed2bdb7bc190df8093"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType &gt; </td></tr>
+<tr class="memitem:ae259c74e23bd82ed2bdb7bc190df8093"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak" />
+&lt; XT::Grid::is_layer<br class="typebreak" />
+&lt; GridLayerType &gt;::value, <br class="typebreak" />
+std::unique_ptr<br class="typebreak" />
+&lt; L2LocalProlongationOperator<br class="typebreak" />
+&lt; GridLayerType &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00761.html#ae259c74e23bd82ed2bdb7bc190df8093">Dune::GDT::make_local_l2_prolongation_operator</a> (const GridLayerType &amp;grid_layer, const size_t over_integrate=0)</td></tr>
+<tr class="separator:ae259c74e23bd82ed2bdb7bc190df8093"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:18 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:09 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

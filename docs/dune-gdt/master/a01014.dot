@@ -1,23 +1,18 @@
-digraph "Dune::GDT::LocalOperatorInterface&lt; Traits &gt;"
+digraph "Dune::GDT::LaplaceOperator&lt; GridLayerType, Field &gt;"
 {
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="Dune::GDT::LocalOperator\lInterface\< Traits \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 [label="Dune::GDT::LaplaceOperator\l\< GridLayerType, Field \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
   Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="XT::CRTPInterface\<\l LocalOperatorInterface\l\< Traits \>, Traits \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
-  Node3 -> Node1 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="Dune::GDT::internal\l::IsLocalOperator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00234.html"];
-  Node1 -> Node4 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::LocalL2Projection\lOperatorTraits \>" ,fontname="Helvetica"];
-  Node4 [label="Dune::GDT::LocalOperator\lInterface\< internal::LocalL2\lProjectionOperatorTraits \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00360.html"];
+  Node2 [label="Dune::GDT::OperatorInterface\l\< internal::LaplaceOperatorTraits\l\< GridLayerType, Field \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00442.html"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="XT::CRTPInterface\<\l OperatorInterface\<\l internal::LaplaceOperatorTraits\l\< GridLayerType, Field \> \>,\l internal::LaplaceOperatorTraits\l\< GridLayerType, Field \> \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="ParametricInterface",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node2 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::LaplaceOperator\lTraits\< GridLayerType, Field \> \>" ,fontname="Helvetica"];
+  Node5 [label="Dune::GDT::OperatorInterface\l\< Traits \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00442.html"];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="XT::CRTPInterface\<\l OperatorInterface\<\l Traits \>, Traits \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
   Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="Dune::GDT::LocalL2Projection\lOperator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00351.html"];
-  Node1 -> Node6 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::LocalDirichlet\lProjectionOperatorTraits\l\< BoundaryInfoType \> \>" ,fontname="Helvetica"];
-  Node6 [label="Dune::GDT::LocalOperator\lInterface\< internal::LocalDirichlet\lProjectionOperatorTraits\< BoundaryInfo\lType \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00360.html"];
-  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node7 [label="Dune::GDT::LocalDirichlet\lProjectionOperator\< BoundaryInfo\lType \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00324.html"];
-  Node1 -> Node8 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::LocalLagrange\lProjectionOperatorTraits \>" ,fontname="Helvetica"];
-  Node8 [label="Dune::GDT::LocalOperator\lInterface\< internal::LocalLagrange\lProjectionOperatorTraits \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00360.html"];
-  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node9 [label="Dune::GDT::LocalLagrange\lProjectionOperator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00353.html"];
 }

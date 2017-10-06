@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['kineticlocalnumericalboundaryflux',['KineticLocalNumericalBoundaryFlux',['../a00239.html#ad506f3b7f528846b0d3b538781b6475b',1,'Dune::GDT::KineticLocalNumericalBoundaryFlux']]],
-  ['kineticlocalnumericalcouplingflux',['KineticLocalNumericalCouplingFlux',['../a00241.html#a27fe9e2e2c0482d31e451a561ddfbb8b',1,'Dune::GDT::KineticLocalNumericalCouplingFlux']]]
+  ['kineticfluximplementation',['KineticFluxImplementation',['../a00255.html#ac4e64b1cf5e694c86c66eca44bc3034e',1,'Dune::GDT::internal::KineticFluxImplementation']]],
+  ['kineticlocalnumericalboundaryflux',['KineticLocalNumericalBoundaryFlux',['../a00256.html#af2f227d306544091892d6cf97abdb121',1,'Dune::GDT::KineticLocalNumericalBoundaryFlux']]],
+  ['kineticlocalnumericalcouplingflux',['KineticLocalNumericalCouplingFlux',['../a00258.html#ad66445f9ed64a31748b16a3298b7f54b',1,'Dune::GDT::KineticLocalNumericalCouplingFlux']]]
 ];

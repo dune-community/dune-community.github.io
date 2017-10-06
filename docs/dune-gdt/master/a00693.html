@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: yasp_fem_common.cc File Reference</title>
+<title>dune-gdt: OS2015.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -83,19 +83,57 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_eaee94ab3c5b11ce8fcab1cb9d405304.html">src</a></li><li class="navelem"><a class="el" href="dir_58c354ae22a30254506a25a39957e8ba.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_16224573f43954b382d54ec1df2a2147.html">dune</a></li><li class="navelem"><a class="el" href="dir_f1992dd472896fb89117bdc8155a3e1c.html">gdt</a></li><li class="navelem"><a class="el" href="dir_91b47eb1f5534b791b2db4e72c4ced9d.html">operators</a></li><li class="navelem"><a class="el" href="dir_a7df9ae745501a4de0fabd95a044ee81.html">elliptic-ipdg.bindings</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_eaee94ab3c5b11ce8fcab1cb9d405304.html">src</a></li><li class="navelem"><a class="el" href="dir_58c354ae22a30254506a25a39957e8ba.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_16224573f43954b382d54ec1df2a2147.html">dune</a></li><li class="navelem"><a class="el" href="dir_f1992dd472896fb89117bdc8155a3e1c.html">gdt</a></li><li class="navelem"><a class="el" href="dir_c0688d8f58f2ac48be580c635590bfde.html">playground</a></li><li class="navelem"><a class="el" href="dir_91ea1522845b2d37af9283a337766159.html">operators</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">yasp_fem_common.cc File Reference</div>  </div>
+<div class="title">OS2015.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;config.h&quot;</code><br />
-</div></div><!-- contents -->
+<div class="textblock"><code>#include &lt;dune/common/typetraits.hh&gt;</code><br />
+<code>#include &lt;dune/geometry/quadraturerules.hh&gt;</code><br />
+<code>#include &lt;dune/geometry/referenceelements.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/fmatrix.hh&gt;</code><br />
+<code>#include &lt;dune/xt/la/container/eigen.hh&gt;</code><br />
+<code>#include &lt;dune/xt/la/eigen-solver.hh&gt;</code><br />
+<code>#include &lt;dune/xt/grid/boundaryinfo/interfaces.hh&gt;</code><br />
+<code>#include &lt;dune/xt/grid/entity.hh&gt;</code><br />
+<code>#include &lt;dune/xt/grid/type_traits.hh&gt;</code><br />
+<code>#include &lt;dune/xt/functions/derived.hh&gt;</code><br />
+<code>#include &lt;dune/xt/functions/interfaces/localizable-function.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00553_source.html">dune/gdt/discretefunction/default.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00643_source.html">dune/gdt/local/operators/integrals.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00678_source.html">dune/gdt/local/integrands/lambda.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00535_source.html">dune/gdt/operators/base.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00626_source.html">dune/gdt/operators/fluxreconstruction.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00584_source.html">dune/gdt/spaces/rt/dune-pdelab-wrapper.hh</a>&gt;</code><br />
+</div>
+<p><a href="a00693_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00460.html">Dune::GDT::OS2015::ResidualProduct&lt; ProductGridLayer, ReconstructionGridLayer &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00101.html">Dune::GDT::OS2015::DiffusiveFluxProduct&lt; ProductGridLayer, ReconstructionGridLayer &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00760"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00760.html">Dune</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00761"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00761.html">Dune::GDT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00772"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00772.html">Dune::GDT::OS2015</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:18 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:09 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

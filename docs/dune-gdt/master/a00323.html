@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: Dune::GDT::internal::LocalDiffusiveFluxEstimateStarOS2014IntegrandTraits&lt; DiffusionFactorType, DiffusionFactorHatType, DiffusionTensorType, DiffusiveFluxType &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::internal::LocalBoundaryTwoFormMatrixAssemblerWrapper&lt; AssemblerType, MatrixType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,23 +85,253 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00702.html">Dune</a></li><li class="navelem"><a class="el" href="a00703.html">GDT</a></li><li class="navelem"><a class="el" href="a00707.html">internal</a></li><li class="navelem"><a class="el" href="a00323.html">LocalDiffusiveFluxEstimateStarOS2014IntegrandTraits</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00760.html">Dune</a></li><li class="navelem"><a class="el" href="a00761.html">GDT</a></li><li class="navelem"><a class="el" href="a00766.html">internal</a></li><li class="navelem"><a class="el" href="a00323.html">LocalBoundaryTwoFormMatrixAssemblerWrapper</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a01365.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::LocalDiffusiveFluxEstimateStarOS2014IntegrandTraits&lt; DiffusionFactorType, DiffusionFactorHatType, DiffusionTensorType, DiffusiveFluxType &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::internal::LocalBoundaryTwoFormMatrixAssemblerWrapper&lt; AssemblerType, MatrixType &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00638_source.html">dune/gdt/playground/local/integrands/OS2014.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00743_source.html">dune/gdt/assembler/wrapper.hh</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Dune::GDT::internal::LocalBoundaryTwoFormMatrixAssemblerWrapper&lt; AssemblerType, MatrixType &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="a01366.png" border="0" usemap="#_dune_1_1_g_d_t_1_1internal_1_1_local_boundary_two_form_matrix_assembler_wrapper_3_01_assembler_type_00_01_matrix_type_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1internal_1_1_local_boundary_two_form_matrix_assembler_wrapper_3_01_assembler_type_00_01_matrix_type_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1internal_1_1_local_boundary_two_form_matrix_assembler_wrapper_3_01_assembler_type_00_01_matrix_type_01_4_inherit__map">
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ae3a6c4066cfeeba512e82f7b6f5c7af8"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+AssemblerType::TestSpaceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00323.html#ae3a6c4066cfeeba512e82f7b6f5c7af8">TestSpaceType</a></td></tr>
+<tr class="separator:ae3a6c4066cfeeba512e82f7b6f5c7af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ebdb49ea4d14ca9d8e654821e7c30df"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+AssemblerType::AnsatzSpaceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00323.html#a9ebdb49ea4d14ca9d8e654821e7c30df">AnsatzSpaceType</a></td></tr>
+<tr class="separator:a9ebdb49ea4d14ca9d8e654821e7c30df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a676ff96d6a8b83e32e20f94c61c56fc4"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+AssemblerType::GridLayerType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00323.html#a676ff96d6a8b83e32e20f94c61c56fc4">GridLayerType</a></td></tr>
+<tr class="separator:a676ff96d6a8b83e32e20f94c61c56fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a395bfdbee6a1cff9edc8d5fbbabef50f"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+<a class="el" href="a00320.html">LocalBoundaryTwoFormAssembler</a><br class="typebreak" />
+&lt; <a class="el" href="a00323.html#ae3a6c4066cfeeba512e82f7b6f5c7af8">TestSpaceType</a>, <br class="typebreak" />
+IntersectionType, MatrixType, <br class="typebreak" />
+<a class="el" href="a00323.html#a9ebdb49ea4d14ca9d8e654821e7c30df">AnsatzSpaceType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00323.html#a395bfdbee6a1cff9edc8d5fbbabef50f">LocalBoundaryTwoFormAssemblerType</a></td></tr>
+<tr class="separator:a395bfdbee6a1cff9edc8d5fbbabef50f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae34f8575982d8b7afec2978b4c8219c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00323.html#ae34f8575982d8b7afec2978b4c8219c1">LocalBoundaryTwoFormMatrixAssemblerWrapper</a> (const XT::Common::PerThreadValue&lt; const <a class="el" href="a00323.html#ae3a6c4066cfeeba512e82f7b6f5c7af8">TestSpaceType</a> &gt; &amp;test_space, const XT::Common::PerThreadValue&lt; const <a class="el" href="a00323.html#a9ebdb49ea4d14ca9d8e654821e7c30df">AnsatzSpaceType</a> &gt; &amp;ansatz_space, const XT::Grid::ApplyOn::WhichIntersection&lt; <a class="el" href="a00323.html#a676ff96d6a8b83e32e20f94c61c56fc4">GridLayerType</a> &gt; *where, const <a class="el" href="a00323.html#a395bfdbee6a1cff9edc8d5fbbabef50f">LocalBoundaryTwoFormAssemblerType</a> &amp;local_assembler, MatrixType &amp;matrix)</td></tr>
+<tr class="separator:ae34f8575982d8b7afec2978b4c8219c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae62e9cc2b80c659f772d14c639cd43af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00323.html#ae62e9cc2b80c659f772d14c639cd43af">apply_on</a> (const <a class="el" href="a00323.html#a676ff96d6a8b83e32e20f94c61c56fc4">GridLayerType</a> &amp;gv, const IntersectionType &amp;intersection) const overridefinal</td></tr>
+<tr class="separator:ae62e9cc2b80c659f772d14c639cd43af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7917a8c0c1c693887cfffb646fd4be2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00323.html#a7917a8c0c1c693887cfffb646fd4be2d">apply_local</a> (const IntersectionType &amp;intersection, const EntityType &amp;, const EntityType &amp;) overridefinal</td></tr>
+<tr class="separator:a7917a8c0c1c693887cfffb646fd4be2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a9ebdb49ea4d14ca9d8e654821e7c30df"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AssemblerType , class MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef AssemblerType::AnsatzSpaceType <a class="el" href="a00323.html">Dune::GDT::internal::LocalBoundaryTwoFormMatrixAssemblerWrapper</a>&lt; AssemblerType, MatrixType &gt;::<a class="el" href="a00323.html#a9ebdb49ea4d14ca9d8e654821e7c30df">AnsatzSpaceType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a676ff96d6a8b83e32e20f94c61c56fc4"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AssemblerType , class MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef AssemblerType::GridLayerType <a class="el" href="a00323.html">Dune::GDT::internal::LocalBoundaryTwoFormMatrixAssemblerWrapper</a>&lt; AssemblerType, MatrixType &gt;::<a class="el" href="a00323.html#a676ff96d6a8b83e32e20f94c61c56fc4">GridLayerType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a395bfdbee6a1cff9edc8d5fbbabef50f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AssemblerType , class MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00320.html">LocalBoundaryTwoFormAssembler</a>&lt;<a class="el" href="a00323.html#ae3a6c4066cfeeba512e82f7b6f5c7af8">TestSpaceType</a>, IntersectionType, MatrixType, <a class="el" href="a00323.html#a9ebdb49ea4d14ca9d8e654821e7c30df">AnsatzSpaceType</a>&gt; <a class="el" href="a00323.html">Dune::GDT::internal::LocalBoundaryTwoFormMatrixAssemblerWrapper</a>&lt; AssemblerType, MatrixType &gt;::<a class="el" href="a00323.html#a395bfdbee6a1cff9edc8d5fbbabef50f">LocalBoundaryTwoFormAssemblerType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae3a6c4066cfeeba512e82f7b6f5c7af8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AssemblerType , class MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef AssemblerType::TestSpaceType <a class="el" href="a00323.html">Dune::GDT::internal::LocalBoundaryTwoFormMatrixAssemblerWrapper</a>&lt; AssemblerType, MatrixType &gt;::<a class="el" href="a00323.html#ae3a6c4066cfeeba512e82f7b6f5c7af8">TestSpaceType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ae34f8575982d8b7afec2978b4c8219c1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AssemblerType , class MatrixType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00323.html">Dune::GDT::internal::LocalBoundaryTwoFormMatrixAssemblerWrapper</a>&lt; AssemblerType, MatrixType &gt;::<a class="el" href="a00323.html">LocalBoundaryTwoFormMatrixAssemblerWrapper</a> </td>
+          <td>(</td>
+          <td class="paramtype">const XT::Common::PerThreadValue&lt; const <a class="el" href="a00323.html#ae3a6c4066cfeeba512e82f7b6f5c7af8">TestSpaceType</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>test_space</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Common::PerThreadValue&lt; const <a class="el" href="a00323.html#a9ebdb49ea4d14ca9d8e654821e7c30df">AnsatzSpaceType</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ansatz_space</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Grid::ApplyOn::WhichIntersection&lt; <a class="el" href="a00323.html#a676ff96d6a8b83e32e20f94c61c56fc4">GridLayerType</a> &gt; *&#160;</td>
+          <td class="paramname"><em>where</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00323.html#a395bfdbee6a1cff9edc8d5fbbabef50f">LocalBoundaryTwoFormAssemblerType</a> &amp;&#160;</td>
+          <td class="paramname"><em>local_assembler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MatrixType &amp;&#160;</td>
+          <td class="paramname"><em>matrix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a7917a8c0c1c693887cfffb646fd4be2d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AssemblerType , class MatrixType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00323.html">Dune::GDT::internal::LocalBoundaryTwoFormMatrixAssemblerWrapper</a>&lt; AssemblerType, MatrixType &gt;::apply_local </td>
+          <td>(</td>
+          <td class="paramtype">const IntersectionType &amp;&#160;</td>
+          <td class="paramname"><em>intersection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const EntityType &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const EntityType &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae62e9cc2b80c659f772d14c639cd43af"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AssemblerType , class MatrixType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="a00323.html">Dune::GDT::internal::LocalBoundaryTwoFormMatrixAssemblerWrapper</a>&lt; AssemblerType, MatrixType &gt;::apply_on </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00323.html#a676ff96d6a8b83e32e20f94c61c56fc4">GridLayerType</a> &amp;&#160;</td>
+          <td class="paramname"><em>gv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const IntersectionType &amp;&#160;</td>
+          <td class="paramname"><em>intersection</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00638_source.html">OS2014.hh</a></li>
+<li><a class="el" href="a00743_source.html">wrapper.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:20 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:11 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

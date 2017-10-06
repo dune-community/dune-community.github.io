@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: Dune::GDT::LocalLagrangeProjectionOperator Class Reference</title>
+<title>dune-gdt: Dune::GDT::LocalFaceIntegrandInterface&lt; Traits, numArguments &gt; Singleton Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,245 +85,45 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00702.html">Dune</a></li><li class="navelem"><a class="el" href="a00703.html">GDT</a></li><li class="navelem"><a class="el" href="a00353.html">LocalLagrangeProjectionOperator</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00760.html">Dune</a></li><li class="navelem"><a class="el" href="a00761.html">GDT</a></li><li class="navelem"><a class="el" href="a00353.html">LocalFaceIntegrandInterface</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a01004.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::LocalLagrangeProjectionOperator Class Reference</div>  </div>
+<div class="title">Dune::GDT::LocalFaceIntegrandInterface&lt; Traits, numArguments &gt; Singleton Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00624_source.html">dune/gdt/local/operators/lagrange-projection.hh</a>&gt;</code></p>
+<p>Interface for local evaluations that depend on an intersection.  
+ <a href="a00353.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00656_source.html">dune/gdt/local/integrands/interfaces.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::LocalLagrangeProjectionOperator:</div>
+Inheritance diagram for Dune::GDT::LocalFaceIntegrandInterface&lt; Traits, numArguments &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01005.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_local_lagrange_projection_operator_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1_local_lagrange_projection_operator_inherit__map" id="_dune_1_1_g_d_t_1_1_local_lagrange_projection_operator_inherit__map">
+<div class="center"><img src="a01064.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_local_face_integrand_interface_3_01_traits_00_01num_arguments_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_local_face_integrand_interface_3_01_traits_00_01num_arguments_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_local_face_integrand_interface_3_01_traits_00_01num_arguments_01_4_inherit__map">
 </map>
 </div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a18e2a4fe4de41ae1e387340c769112d3"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-<a class="el" href="a00354.html">internal::LocalLagrangeProjectionOperatorTraits</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#a18e2a4fe4de41ae1e387340c769112d3">Traits</a></td></tr>
-<tr class="separator:a18e2a4fe4de41ae1e387340c769112d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85d71db8a2dfac84ac08489ca7167a67"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-<a class="el" href="a00354.html#abe5e10dfe542977120ba9bae8364d1b9">internal::LocalLagrangeProjectionOperatorTraits::derived_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00360.html#a85d71db8a2dfac84ac08489ca7167a67">derived_type</a></td></tr>
-<tr class="separator:a85d71db8a2dfac84ac08489ca7167a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a9df9749c2605ca7752732fb6cb9c66df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#a9df9749c2605ca7752732fb6cb9c66df">LocalLagrangeProjectionOperator</a> (const XT::Common::Parameter &amp;param={})</td></tr>
-<tr class="separator:a9df9749c2605ca7752732fb6cb9c66df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad61841a56fdcbfd1ab88a2c504ba4b18"><td class="memTemplParams" colspan="2">template&lt;class E , class D , size_t d, class R , class RangeSpaceType , class VectorType &gt; </td></tr>
-<tr class="memitem:ad61841a56fdcbfd1ab88a2c504ba4b18"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; StaticCheck&lt; E, <br class="typebreak" />
-D, d, R, 1, 1, RangeSpaceType, <br class="typebreak" />
-VectorType &gt;::value, void &gt;<br class="typebreak" />
-::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00353.html#ad61841a56fdcbfd1ab88a2c504ba4b18">apply</a> (const XT::Functions::LocalizableFunctionInterface&lt; E, D, d, R, 1, 1 &gt; &amp;source, <a class="el" href="a00326.html">LocalDiscreteFunction</a>&lt; RangeSpaceType, VectorType &gt; &amp;local_range) const </td></tr>
-<tr class="memdesc:ad61841a56fdcbfd1ab88a2c504ba4b18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the Lagrange projection locally.  <a href="#ad61841a56fdcbfd1ab88a2c504ba4b18">More...</a><br /></td></tr>
-<tr class="separator:ad61841a56fdcbfd1ab88a2c504ba4b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2e559681fb23c7eb1703209790a3307"><td class="memTemplParams" colspan="2">template&lt;class E , class D , size_t d, class R , size_t r, class RangeSpaceType , class VectorType &gt; </td></tr>
-<tr class="memitem:ab2e559681fb23c7eb1703209790a3307"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; StaticCheck&lt; E, <br class="typebreak" />
-D, d, R, r, 1, RangeSpaceType, <br class="typebreak" />
-VectorType &gt;::value, void &gt;<br class="typebreak" />
-::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00353.html#ab2e559681fb23c7eb1703209790a3307">apply</a> (const XT::Functions::LocalizableFunctionInterface&lt; E, D, d, R, r, 1 &gt; &amp;source, <a class="el" href="a00326.html">LocalDiscreteFunction</a>&lt; RangeSpaceType, VectorType &gt; &amp;local_range) const </td></tr>
-<tr class="memdesc:ab2e559681fb23c7eb1703209790a3307"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the Lagrange projection locally (for vector-valued functions)  <a href="#ab2e559681fb23c7eb1703209790a3307">More...</a><br /></td></tr>
-<tr class="separator:ab2e559681fb23c7eb1703209790a3307"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae34afd4624e88b6be3020139c41389f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00360.html#ae34afd4624e88b6be3020139c41389f4">apply</a> (const SourceType &amp;source, <a class="el" href="a00326.html">LocalDiscreteFunction</a>&lt; RangeSpaceType, VectorType &gt; &amp;local_range) const</td></tr>
-<tr class="memdesc:ae34afd4624e88b6be3020139c41389f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the local operator.  <a href="#ae34afd4624e88b6be3020139c41389f4">More...</a><br /></td></tr>
-<tr class="separator:ae34afd4624e88b6be3020139c41389f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a85d71db8a2dfac84ac08489ca7167a67"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a00354.html">internal::LocalLagrangeProjectionOperatorTraits</a> ::<a class="el" href="a00360.html#a85d71db8a2dfac84ac08489ca7167a67">derived_type</a> <a class="el" href="a00360.html">Dune::GDT::LocalOperatorInterface</a>&lt; <a class="el" href="a00354.html">internal::LocalLagrangeProjectionOperatorTraits</a>  &gt;::<a class="el" href="a00360.html#a85d71db8a2dfac84ac08489ca7167a67">derived_type</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class Traits, size_t numArguments&gt;<br />
+singleton Dune::GDT::LocalFaceIntegrandInterface&lt; Traits, numArguments &gt;</h3>
 
-</div>
-</div>
-<a class="anchor" id="a18e2a4fe4de41ae1e387340c769112d3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a00354.html">internal::LocalLagrangeProjectionOperatorTraits</a> <a class="el" href="a00353.html#a18e2a4fe4de41ae1e387340c769112d3">Dune::GDT::LocalLagrangeProjectionOperator::Traits</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a9df9749c2605ca7752732fb6cb9c66df"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Dune::GDT::LocalLagrangeProjectionOperator::LocalLagrangeProjectionOperator </td>
-          <td>(</td>
-          <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
-          <td class="paramname"><em>param</em> = <code>{}</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ae34afd4624e88b6be3020139c41389f4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00360.html">Dune::GDT::LocalOperatorInterface</a>&lt; <a class="el" href="a00354.html">internal::LocalLagrangeProjectionOperatorTraits</a>  &gt;::apply </td>
-          <td>(</td>
-          <td class="paramtype">const SourceType &amp;&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00326.html">LocalDiscreteFunction</a>&lt; RangeSpaceType, VectorType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>local_range</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Applies the local operator. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">source</td><td>Should be a XT::Functions::LocalizableFunctionInterface or a ConstDiscreteFunction. </td></tr>
+<p>Interface for local evaluations that depend on an intersection. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">numArguments</td><td>The number of local bases. </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a class="anchor" id="ad61841a56fdcbfd1ab88a2c504ba4b18"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class E , class D , size_t d, class R , class RangeSpaceType , class VectorType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::enable_if&lt;StaticCheck&lt;E, D, d, R, 1, 1, RangeSpaceType, VectorType&gt;::value, void&gt;::type Dune::GDT::LocalLagrangeProjectionOperator::apply </td>
-          <td>(</td>
-          <td class="paramtype">const XT::Functions::LocalizableFunctionInterface&lt; E, D, d, R, 1, 1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00326.html">LocalDiscreteFunction</a>&lt; RangeSpaceType, VectorType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>local_range</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Applies the Lagrange projection locally. </p>
-
-</div>
-</div>
-<a class="anchor" id="ab2e559681fb23c7eb1703209790a3307"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class E , class D , size_t d, class R , size_t r, class RangeSpaceType , class VectorType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::enable_if&lt;StaticCheck&lt;E, D, d, R, r, 1, RangeSpaceType, VectorType&gt;::value, void&gt;::type Dune::GDT::LocalLagrangeProjectionOperator::apply </td>
-          <td>(</td>
-          <td class="paramtype">const XT::Functions::LocalizableFunctionInterface&lt; E, D, d, R, r, 1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00326.html">LocalDiscreteFunction</a>&lt; RangeSpaceType, VectorType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>local_range</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Applies the Lagrange projection locally (for vector-valued functions) </p>
-<dl class="section attention"><dt>Attention</dt><dd>This is the old implementation which will throw a NotImplemented error. If you need this, test and correct the implementation! </dd></dl>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00624_source.html">lagrange-projection.hh</a></li>
+<dl class="section note"><dt>Note</dt><dd>All evaluations have to be copyable! </dd></dl>
+</div><hr/>The documentation for this singleton was generated from the following file:<ul>
+<li><a class="el" href="a00656_source.html">local/integrands/interfaces.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:19 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:10 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

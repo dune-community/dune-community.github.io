@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: Dune::GDT::Mapper::FemDofWrapper&lt; FemDofMapperImp &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::EllipticIpdgMatrixOperator&lt; DiffusionFactorType, DiffusionTensorType, RangeSpace, method, Matrix, GridLayer, SourceSpace, Field &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,23 +85,1813 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00702.html">Dune</a></li><li class="navelem"><a class="el" href="a00703.html">GDT</a></li><li class="navelem"><a class="el" href="a00712.html">Mapper</a></li><li class="navelem"><a class="el" href="a00133.html">FemDofWrapper</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00760.html">Dune</a></li><li class="navelem"><a class="el" href="a00761.html">GDT</a></li><li class="navelem"><a class="el" href="a00133.html">EllipticIpdgMatrixOperator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="a00863.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::Mapper::FemDofWrapper&lt; FemDofMapperImp &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::EllipticIpdgMatrixOperator&lt; DiffusionFactorType, DiffusionTensorType, RangeSpace, method, Matrix, GridLayer, SourceSpace, Field &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00526_source.html">dune/gdt/spaces/mapper/dune-fem-wrapper.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00594_source.html">dune/gdt/operators/elliptic-ipdg.hh</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Dune::GDT::EllipticIpdgMatrixOperator&lt; DiffusionFactorType, DiffusionTensorType, RangeSpace, method, Matrix, GridLayer, SourceSpace, Field &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00864.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_elliptic_ipdg_matrix_operator_3_01_diffusion_factor_type_00_01_diffusion_tensor_type_00_01_range_space_00_01method_00_01_matrix_00_01_grid_layer_00_01_source_space_00_01_field_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_elliptic_ipdg_matrix_operator_3_01_diffusion_factor_type_00_01_diffusion_tensor_type_00_01_range_space_00_01method_00_01_matrix_00_01_grid_layer_00_01_source_space_00_01_field_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_elliptic_ipdg_matrix_operator_3_01_diffusion_factor_type_00_01_diffusion_tensor_type_00_01_range_space_00_01method_00_01_matrix_00_01_grid_layer_00_01_source_space_00_01_field_01_4_inherit__map">
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a37cca0b456f64e9de901ca8837edaf7a"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+<a class="el" href="a00419.html">internal::MatrixOperatorBaseTraits</a><br class="typebreak" />
+&lt; Matrix, RangeSpace, <br class="typebreak" />
+GridLayer, SourceSpace, Field, <br class="typebreak" />
+pt, OuterRangeSpaceImp, <br class="typebreak" />
+OuterSourceSpaceImp &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#a37cca0b456f64e9de901ca8837edaf7a">Traits</a></td></tr>
+<tr class="separator:a37cca0b456f64e9de901ca8837edaf7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a761e5c86377a563b1d56271532a20519"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+BaseAssemblerType::TestSpaceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#a761e5c86377a563b1d56271532a20519">RangeSpaceType</a></td></tr>
+<tr class="separator:a761e5c86377a563b1d56271532a20519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f347043bbd37e5d16dc411f80fc900"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+BaseAssemblerType::AnsatzSpaceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#ab0f347043bbd37e5d16dc411f80fc900">SourceSpaceType</a></td></tr>
+<tr class="separator:ab0f347043bbd37e5d16dc411f80fc900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dd3ceeb1e1ce56f4381c8bc48a24424"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+BaseAssemblerType::OuterTestSpaceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#a0dd3ceeb1e1ce56f4381c8bc48a24424">OuterRangeSpaceType</a></td></tr>
+<tr class="separator:a0dd3ceeb1e1ce56f4381c8bc48a24424"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34f5b431907203f06b7a62a9cf2c38c2"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+BaseAssemblerType::OuterAnsatzSpaceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#a34f5b431907203f06b7a62a9cf2c38c2">OuterSourceSpaceType</a></td></tr>
+<tr class="separator:a34f5b431907203f06b7a62a9cf2c38c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac62501a8463e2955e9172aa4458943c6"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+OuterRangeSpaceType::BaseFunctionSetType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#ac62501a8463e2955e9172aa4458943c6">OuterRangeBaseType</a></td></tr>
+<tr class="separator:ac62501a8463e2955e9172aa4458943c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22041adaf66bf79ccd2c5a87f6f79e02"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+OuterSourceSpaceType::BaseFunctionSetType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#a22041adaf66bf79ccd2c5a87f6f79e02">OuterSourceBaseType</a></td></tr>
+<tr class="separator:a22041adaf66bf79ccd2c5a87f6f79e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9813e488baa29f7a453e45ddf4404431"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+XT::LA::SparsityPatternDefault&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#a9813e488baa29f7a453e45ddf4404431">PatternType</a></td></tr>
+<tr class="separator:a9813e488baa29f7a453e45ddf4404431"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb615dc74c3fc53d4dc81f5924f70310"><td class="memItemLeft" align="right" valign="top">typedef Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#abb615dc74c3fc53d4dc81f5924f70310">MatrixType</a></td></tr>
+<tr class="separator:abb615dc74c3fc53d4dc81f5924f70310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e841c775a89ff47fe08faa97ef22386"><td class="memItemLeft" align="right" valign="top">typedef Traits::FieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a></td></tr>
+<tr class="separator:a7e841c775a89ff47fe08faa97ef22386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7ab8db6061a613448bb8ce3269cdc79"><td class="memItemLeft" align="right" valign="top">typedef Traits::JacobianType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a></td></tr>
+<tr class="separator:af7ab8db6061a613448bb8ce3269cdc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a297fe211e3b06536d26d9ff3ee3cc2ee"><td class="memItemLeft" align="right" valign="top">typedef Traits::derived_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#a297fe211e3b06536d26d9ff3ee3cc2ee">derived_type</a></td></tr>
+<tr class="separator:a297fe211e3b06536d26d9ff3ee3cc2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a2d3f7ee969a577f9694b146135dcc212"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00133.html#a2d3f7ee969a577f9694b146135dcc212">EllipticIpdgMatrixOperator</a> (const <a class="el" href="a00133.html">ThisType</a> &amp;<a class="el" href="a00761.html#a5a9b3478d77a16697bf06fa3f949e0faa795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>)=delete</td></tr>
+<tr class="separator:a2d3f7ee969a577f9694b146135dcc212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eb4b78643b0612f59306627a06c55fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00133.html#a5eb4b78643b0612f59306627a06c55fc">EllipticIpdgMatrixOperator</a> (<a class="el" href="a00133.html">ThisType</a> &amp;<a class="el" href="a00761.html#a5a9b3478d77a16697bf06fa3f949e0faa795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>)=delete</td></tr>
+<tr class="separator:a5eb4b78643b0612f59306627a06c55fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39c0b020ab27bb627da292d1942b4c3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00133.html#a39c0b020ab27bb627da292d1942b4c3e">EllipticIpdgMatrixOperator</a> (<a class="el" href="a00133.html">ThisType</a> &amp;&amp;source)=delete</td></tr>
+<tr class="separator:a39c0b020ab27bb627da292d1942b4c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec0a8f15cfd5e825883bcf8df822d636"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00133.html">ThisType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00133.html#aec0a8f15cfd5e825883bcf8df822d636">operator=</a> (const <a class="el" href="a00133.html">ThisType</a> &amp;<a class="el" href="a00761.html#a5a9b3478d77a16697bf06fa3f949e0faa795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>)=delete</td></tr>
+<tr class="separator:aec0a8f15cfd5e825883bcf8df822d636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64762372a88cc74aaf90a3bb145bb687"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00133.html">ThisType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00133.html#a64762372a88cc74aaf90a3bb145bb687">operator=</a> (<a class="el" href="a00133.html">ThisType</a> &amp;&amp;source)=delete</td></tr>
+<tr class="separator:a64762372a88cc74aaf90a3bb145bb687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6a96b8edbd25a0aeaee503f2cf853bb"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00418.html#abb615dc74c3fc53d4dc81f5924f70310">MatrixType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#ac6a96b8edbd25a0aeaee503f2cf853bb">matrix</a> () const</td></tr>
+<tr class="separator:ac6a96b8edbd25a0aeaee503f2cf853bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae73454726fdbb8e395f6ab4782947bbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00418.html#abb615dc74c3fc53d4dc81f5924f70310">MatrixType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#ae73454726fdbb8e395f6ab4782947bbc">matrix</a> ()</td></tr>
+<tr class="separator:ae73454726fdbb8e395f6ab4782947bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90e653cd1dcbf9e073caa8ff098fd07d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00418.html#ab0f347043bbd37e5d16dc411f80fc900">SourceSpaceType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#a90e653cd1dcbf9e073caa8ff098fd07d">source_space</a> () const</td></tr>
+<tr class="separator:a90e653cd1dcbf9e073caa8ff098fd07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea68a2fb42e6228996d3ab2953a625e3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00418.html#a761e5c86377a563b1d56271532a20519">RangeSpaceType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#aea68a2fb42e6228996d3ab2953a625e3">range_space</a> () const</td></tr>
+<tr class="separator:aea68a2fb42e6228996d3ab2953a625e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05597f00436e47b1e66c2f0f4b6c4a4a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00418.html#a34f5b431907203f06b7a62a9cf2c38c2">OuterSourceSpaceType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#a05597f00436e47b1e66c2f0f4b6c4a4a">outer_source_space</a> () const</td></tr>
+<tr class="separator:a05597f00436e47b1e66c2f0f4b6c4a4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdba2020f21d8bf81d83d294d4489034"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00418.html#a0dd3ceeb1e1ce56f4381c8bc48a24424">OuterRangeSpaceType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#abdba2020f21d8bf81d83d294d4489034">outer_range_space</a> () const</td></tr>
+<tr class="separator:abdba2020f21d8bf81d83d294d4489034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7d9e21e47eecf68ce34edd95a4b9fe3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00133.html">ThisType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#ac7d9e21e47eecf68ce34edd95a4b9fe3">append</a> (const <a class="el" href="a00409.html">LocalVolumeTwoFormInterface</a>&lt; RangeBaseType, SourceBaseType, <a class="el" href="a00442.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a> &gt; &amp;local_volume_twoform, const XT::Grid::ApplyOn::WhichEntity&lt; GridLayerType &gt; *where=new XT::Grid::ApplyOn::AllEntities&lt; GridLayerType &gt;())</td></tr>
+<tr class="separator:ac7d9e21e47eecf68ce34edd95a4b9fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d8355920ae895f6c7f3df78b363495b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00133.html">ThisType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#a3d8355920ae895f6c7f3df78b363495b">append</a> (const <a class="el" href="a00332.html">LocalCouplingTwoFormInterface</a>&lt; RangeBaseType, IntersectionType, SourceBaseType, <a class="el" href="a00418.html#ac62501a8463e2955e9172aa4458943c6">OuterRangeBaseType</a>, <a class="el" href="a00418.html#a22041adaf66bf79ccd2c5a87f6f79e02">OuterSourceBaseType</a>, <a class="el" href="a00442.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a> &gt; &amp;local_coupling_twoform, const XT::Grid::ApplyOn::WhichIntersection&lt; GridLayerType &gt; *where=new XT::Grid::ApplyOn::InnerIntersectionsPrimally&lt; GridLayerType &gt;())</td></tr>
+<tr class="separator:a3d8355920ae895f6c7f3df78b363495b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a986cf84c28b33d566bc1eb3b1f1bb33c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00133.html">ThisType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#a986cf84c28b33d566bc1eb3b1f1bb33c">append</a> (const <a class="el" href="a00322.html">LocalBoundaryTwoFormInterface</a>&lt; RangeBaseType, IntersectionType, SourceBaseType, <a class="el" href="a00442.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a> &gt; &amp;local_boundary_twoform, const XT::Grid::ApplyOn::WhichIntersection&lt; GridLayerType &gt; *where=new XT::Grid::ApplyOn::InnerIntersectionsPrimally&lt; GridLayerType &gt;())</td></tr>
+<tr class="separator:a986cf84c28b33d566bc1eb3b1f1bb33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2561f05574abd4cad7fb5eeb0871e0f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#a2561f05574abd4cad7fb5eeb0871e0f1">apply</a> (const XT::LA::VectorInterface&lt; S &gt; &amp;source, XT::LA::VectorInterface&lt; R &gt; &amp;range, const Dune::XT::Common::Parameter &amp;={}) const</td></tr>
+<tr class="separator:a2561f05574abd4cad7fb5eeb0871e0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6009ba4fcc65e25e47d92360e7be358d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#a6009ba4fcc65e25e47d92360e7be358d">apply</a> (const <a class="el" href="a00071.html">ConstDiscreteFunction</a>&lt; <a class="el" href="a00418.html#ab0f347043bbd37e5d16dc411f80fc900">SourceSpaceType</a>, S &gt; &amp;source, <a class="el" href="a00107.html">DiscreteFunction</a>&lt; <a class="el" href="a00418.html#a761e5c86377a563b1d56271532a20519">RangeSpaceType</a>, R &gt; &amp;range, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
+<tr class="separator:a6009ba4fcc65e25e47d92360e7be358d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4a37d7a3bb949598850add18015d409"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00442.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#aa4a37d7a3bb949598850add18015d409">apply2</a> (const XT::LA::VectorInterface&lt; R &gt; &amp;range, const XT::LA::VectorInterface&lt; S &gt; &amp;source, const Dune::XT::Common::Parameter &amp;={}) const</td></tr>
+<tr class="separator:aa4a37d7a3bb949598850add18015d409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ba3c5ae0b11bc14c11f679a0003a81f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00442.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#a6ba3c5ae0b11bc14c11f679a0003a81f">apply2</a> (const <a class="el" href="a00071.html">ConstDiscreteFunction</a>&lt; <a class="el" href="a00418.html#a761e5c86377a563b1d56271532a20519">RangeSpaceType</a>, R &gt; &amp;range, const <a class="el" href="a00071.html">ConstDiscreteFunction</a>&lt; <a class="el" href="a00418.html#ab0f347043bbd37e5d16dc411f80fc900">SourceSpaceType</a>, S &gt; &amp;source, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
+<tr class="separator:a6ba3c5ae0b11bc14c11f679a0003a81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9579ea283b91e9cb41c0d13fa5f8f7c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00442.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#a9579ea283b91e9cb41c0d13fa5f8f7c3">jacobian</a> (const SourceType &amp;, const Dune::XT::Common::Parameter &amp;={}) const</td></tr>
+<tr class="separator:a9579ea283b91e9cb41c0d13fa5f8f7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44011fb5e5f55fd3a81cf648aa2842ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#a44011fb5e5f55fd3a81cf648aa2842ee">jacobian</a> (const SourceType &amp;, <a class="el" href="a00442.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a> &amp;jac, const Dune::XT::Common::Parameter &amp;={}) const</td></tr>
+<tr class="separator:a44011fb5e5f55fd3a81cf648aa2842ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d6b2f4aceb64310c97f84807d2111e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#a4d6b2f4aceb64310c97f84807d2111e2">apply_inverse</a> (const XT::LA::VectorInterface&lt; R &gt; &amp;range, XT::LA::VectorInterface&lt; S &gt; &amp;source, const XT::Common::Configuration &amp;opts, const Dune::XT::Common::Parameter &amp;={}) const</td></tr>
+<tr class="separator:a4d6b2f4aceb64310c97f84807d2111e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97fecd5b1f694a8ccfa03992bf1ff77c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#a97fecd5b1f694a8ccfa03992bf1ff77c">apply_inverse</a> (const <a class="el" href="a00071.html">ConstDiscreteFunction</a>&lt; <a class="el" href="a00418.html#a761e5c86377a563b1d56271532a20519">RangeSpaceType</a>, R &gt; &amp;range, <a class="el" href="a00071.html">ConstDiscreteFunction</a>&lt; <a class="el" href="a00418.html#ab0f347043bbd37e5d16dc411f80fc900">SourceSpaceType</a>, S &gt; &amp;source, const XT::Common::Configuration &amp;opts, const Dune::XT::Common::Parameter &amp;={}) const</td></tr>
+<tr class="separator:a97fecd5b1f694a8ccfa03992bf1ff77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a381c2e532c887efbde1602e1af424940"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#a381c2e532c887efbde1602e1af424940">invert_options</a> () const</td></tr>
+<tr class="separator:a381c2e532c887efbde1602e1af424940"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae635069847fb04d0620a9043323d669a"><td class="memItemLeft" align="right" valign="top">XT::Common::Configuration&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#ae635069847fb04d0620a9043323d669a">invert_options</a> (const std::string &amp;type) const</td></tr>
+<tr class="separator:ae635069847fb04d0620a9043323d669a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Ctors for given single diffusion</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><dl class="section see"><dt>See also</dt><dd>The Ctors of <a class="el" href="a00134.html">EllipticLocalizableProduct</a>. </dd></dl>
+</div></td></tr>
+<tr class="memitem:adfb8911d1442a95b637b8172aa36ce20"><td class="memTemplParams" colspan="2">template&lt;typename DiffusionImp , typename  = typename std::enable_if&lt;(std::is_same&lt;DiffusionTensorType, void&gt;::value)                                               &amp;&amp; (std::is_same&lt;DiffusionImp, DiffusionFactorType&gt;::value)                                               &amp;&amp; sizeof(DiffusionImp)&gt;::type, class... Args&gt; </td></tr>
+<tr class="memitem:adfb8911d1442a95b637b8172aa36ce20"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00133.html#adfb8911d1442a95b637b8172aa36ce20">EllipticIpdgMatrixOperator</a> (const XT::Grid::BoundaryInfo&lt; IntersectionType &gt; &amp;boundary_info, const DiffusionImp &amp;diffusion, Args &amp;&amp;...args)</td></tr>
+<tr class="separator:adfb8911d1442a95b637b8172aa36ce20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca52228a388f52d833c6054eda6d096e"><td class="memTemplParams" colspan="2">template&lt;typename DiffusionImp , typename  = typename std::enable_if&lt;(std::is_same&lt;DiffusionTensorType, void&gt;::value)                                               &amp;&amp; (std::is_same&lt;DiffusionImp, DiffusionFactorType&gt;::value)                                               &amp;&amp; sizeof(DiffusionImp)&gt;::type, class... Args&gt; </td></tr>
+<tr class="memitem:aca52228a388f52d833c6054eda6d096e"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00133.html#aca52228a388f52d833c6054eda6d096e">EllipticIpdgMatrixOperator</a> (const size_t over_integrate, const XT::Grid::BoundaryInfo&lt; IntersectionType &gt; &amp;boundary_info, const DiffusionImp &amp;diffusion, Args &amp;&amp;...args)</td></tr>
+<tr class="separator:aca52228a388f52d833c6054eda6d096e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Ctors for diffusion factor and tensor</div></td></tr>
+<tr class="memitem:ac1936c69c4c7ab96583ed6fe78dcb317"><td class="memTemplParams" colspan="2">template&lt;typename DiffusionFactorImp , typename DiffusionTensorImp , typename  = typename std::enable_if&lt;(!std::is_same&lt;DiffusionTensorType, void&gt;::value)                                               &amp;&amp; (std::is_same&lt;DiffusionFactorImp, DiffusionFactorType&gt;::value)                                               &amp;&amp; sizeof(DiffusionFactorImp)&gt;::type, class... Args&gt; </td></tr>
+<tr class="memitem:ac1936c69c4c7ab96583ed6fe78dcb317"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00133.html#ac1936c69c4c7ab96583ed6fe78dcb317">EllipticIpdgMatrixOperator</a> (const XT::Grid::BoundaryInfo&lt; IntersectionType &gt; &amp;boundary_info, const DiffusionFactorImp &amp;diffusion_factor, const DiffusionTensorImp &amp;diffusion_tensor, Args &amp;&amp;...args)</td></tr>
+<tr class="separator:ac1936c69c4c7ab96583ed6fe78dcb317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae17001aa043e5e27382c41ab3b2d742d"><td class="memTemplParams" colspan="2">template&lt;typename DiffusionFactorImp , typename DiffusionTensorImp , typename  = typename std::enable_if&lt;(!std::is_same&lt;DiffusionTensorType, void&gt;::value)                                               &amp;&amp; (std::is_same&lt;DiffusionFactorImp, DiffusionFactorType&gt;::value)                                               &amp;&amp; sizeof(DiffusionFactorImp)&gt;::type, class... Args&gt; </td></tr>
+<tr class="memitem:ae17001aa043e5e27382c41ab3b2d742d"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00133.html#ae17001aa043e5e27382c41ab3b2d742d">EllipticIpdgMatrixOperator</a> (const size_t over_integrate, const XT::Grid::BoundaryInfo&lt; IntersectionType &gt; &amp;boundary_info, const DiffusionFactorImp &amp;diffusion_factor, const DiffusionTensorImp &amp;diffusion_tensor, Args &amp;&amp;...args)</td></tr>
+<tr class="separator:ae17001aa043e5e27382c41ab3b2d742d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Methods that have to be implemented by any derived class</div></td></tr>
+<tr class="memitem:ad7a6deb78d9b17deeb539674aae55bd5"><td class="memTemplParams" colspan="2">template&lt;class SourceType , class RangeType &gt; </td></tr>
+<tr class="memitem:ad7a6deb78d9b17deeb539674aae55bd5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00442.html#ad7a6deb78d9b17deeb539674aae55bd5">apply</a> (const SourceType &amp;source, RangeType &amp;range, const Dune::XT::Common::Parameter &amp;param={}) const </td></tr>
+<tr class="separator:ad7a6deb78d9b17deeb539674aae55bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc13061fd719e2a80c8755f391dde7d3"><td class="memTemplParams" colspan="2">template&lt;class RangeType , class SourceType &gt; </td></tr>
+<tr class="memitem:afc13061fd719e2a80c8755f391dde7d3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00442.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00442.html#afc13061fd719e2a80c8755f391dde7d3">apply2</a> (const RangeType &amp;range, const SourceType &amp;source, const Dune::XT::Common::Parameter &amp;param={}) const </td></tr>
+<tr class="separator:afc13061fd719e2a80c8755f391dde7d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9652e5f4cac175cdbece27339cf27e8"><td class="memTemplParams" colspan="2">template&lt;class RangeType , class SourceType &gt; </td></tr>
+<tr class="memitem:ae9652e5f4cac175cdbece27339cf27e8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00442.html#ae9652e5f4cac175cdbece27339cf27e8">apply_inverse</a> (const RangeType &amp;range, SourceType &amp;source, const XT::Common::Configuration &amp;opts, const Dune::XT::Common::Parameter &amp;param={}) const </td></tr>
+<tr class="separator:ae9652e5f4cac175cdbece27339cf27e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Provided by the interface for convenience</div></td></tr>
+<tr class="memitem:a29f8d5d8be5b3de4aab5c8d1a48a211d"><td class="memTemplParams" colspan="2">template&lt;class RangeType , class SourceType &gt; </td></tr>
+<tr class="memitem:a29f8d5d8be5b3de4aab5c8d1a48a211d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00442.html#a29f8d5d8be5b3de4aab5c8d1a48a211d">apply_inverse</a> (const RangeType &amp;range, SourceType &amp;source, const std::string &amp;type, const Dune::XT::Common::Parameter &amp;param={}) const </td></tr>
+<tr class="separator:a29f8d5d8be5b3de4aab5c8d1a48a211d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d97680c7b18ce80e4fe7b0edf3b17e1"><td class="memTemplParams" colspan="2">template&lt;class RangeType , class SourceType &gt; </td></tr>
+<tr class="memitem:a2d97680c7b18ce80e4fe7b0edf3b17e1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00442.html#a2d97680c7b18ce80e4fe7b0edf3b17e1">apply_inverse</a> (const RangeType &amp;range, SourceType &amp;source, const Dune::XT::Common::Parameter &amp;param={}) const </td></tr>
+<tr class="separator:a2d97680c7b18ce80e4fe7b0edf3b17e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5378687b90665fdd4dffa8d6d0e11dd"><td class="memTemplParams" colspan="2">template&lt;class RangeType &gt; </td></tr>
+<tr class="memitem:ae5378687b90665fdd4dffa8d6d0e11dd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00442.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00442.html#ae5378687b90665fdd4dffa8d6d0e11dd">induced_norm</a> (const RangeType &amp;range, const Dune::XT::Common::Parameter &amp;param={}) const </td></tr>
+<tr class="separator:ae5378687b90665fdd4dffa8d6d0e11dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ad4cb3e10d50567378f2096729dec21b7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00418.html#a9813e488baa29f7a453e45ddf4404431">PatternType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#ad4cb3e10d50567378f2096729dec21b7">pattern</a> (const <a class="el" href="a00418.html#a761e5c86377a563b1d56271532a20519">RangeSpaceType</a> &amp;rng_spc, const <a class="el" href="a00418.html#ab0f347043bbd37e5d16dc411f80fc900">SourceSpaceType</a> &amp;src_spc, const GridLayerType &amp;grd_layr)</td></tr>
+<tr class="separator:ad4cb3e10d50567378f2096729dec21b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ca426f19a4cd9c0cf8db7630de2bf64"><td class="memItemLeft" align="right" valign="top">static std::enable_if<br class="typebreak" />
+&lt; std::is_same&lt; R, <br class="typebreak" />
+<a class="el" href="a00418.html#a761e5c86377a563b1d56271532a20519">RangeSpaceType</a> &gt;::value <br class="typebreak" />
+&amp;&amp;std::is_same&lt; R, <br class="typebreak" />
+<a class="el" href="a00418.html#ab0f347043bbd37e5d16dc411f80fc900">SourceSpaceType</a> &gt;::value <br class="typebreak" />
+&amp;&amp;std::is_same&lt; typename <br class="typebreak" />
+R::GridLayerType, <br class="typebreak" />
+GridLayerType &gt;::value, <br class="typebreak" />
+<a class="el" href="a00418.html#a9813e488baa29f7a453e45ddf4404431">PatternType</a> &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#a2ca426f19a4cd9c0cf8db7630de2bf64">pattern</a> (const R &amp;rng_spc)</td></tr>
+<tr class="separator:a2ca426f19a4cd9c0cf8db7630de2bf64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a454ff2d15af41024c87f164a923eed07"><td class="memItemLeft" align="right" valign="top">static std::enable_if<br class="typebreak" />
+&lt; std::is_same&lt; R, <br class="typebreak" />
+<a class="el" href="a00418.html#a761e5c86377a563b1d56271532a20519">RangeSpaceType</a> &gt;::value <br class="typebreak" />
+&amp;&amp;std::is_same&lt; S, <br class="typebreak" />
+<a class="el" href="a00418.html#ab0f347043bbd37e5d16dc411f80fc900">SourceSpaceType</a> &gt;::value <br class="typebreak" />
+&amp;&amp;std::is_same&lt; typename <br class="typebreak" />
+R::GridLayerType, <br class="typebreak" />
+GridLayerType &gt;::value, <br class="typebreak" />
+<a class="el" href="a00418.html#a9813e488baa29f7a453e45ddf4404431">PatternType</a> &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#a454ff2d15af41024c87f164a923eed07">pattern</a> (const R &amp;rng_spc, const S &amp;src_spc)</td></tr>
+<tr class="separator:a454ff2d15af41024c87f164a923eed07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad549746ce9fcfc74530778fac148ddbf"><td class="memItemLeft" align="right" valign="top">static std::enable_if<br class="typebreak" />
+&lt; std::is_same&lt; R, <br class="typebreak" />
+<a class="el" href="a00418.html#a761e5c86377a563b1d56271532a20519">RangeSpaceType</a> &gt;::value <br class="typebreak" />
+&amp;&amp;std::is_same&lt; R, <br class="typebreak" />
+<a class="el" href="a00418.html#ab0f347043bbd37e5d16dc411f80fc900">SourceSpaceType</a> &gt;::value <br class="typebreak" />
+&amp;&amp;std::is_same&lt; G, <br class="typebreak" />
+GridLayerType &gt;::value, <br class="typebreak" />
+<a class="el" href="a00418.html#a9813e488baa29f7a453e45ddf4404431">PatternType</a> &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#ad549746ce9fcfc74530778fac148ddbf">pattern</a> (const R &amp;rng_spc, const G &amp;grd_layr)</td></tr>
+<tr class="separator:ad549746ce9fcfc74530778fac148ddbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a3f2d56f143a8c7e64d70e78eeeeb45db"><td class="memItemLeft" align="right" valign="top">static const constexpr <br class="typebreak" />
+<a class="el" href="a00761.html#a09f2467105da4217b0ff3bb2e4790c7e">ChoosePattern</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00418.html#a3f2d56f143a8c7e64d70e78eeeeb45db">pattern_type</a></td></tr>
+<tr class="separator:a3f2d56f143a8c7e64d70e78eeeeb45db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a297fe211e3b06536d26d9ff3ee3cc2ee"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Traits::derived_type <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00418.html#a37cca0b456f64e9de901ca8837edaf7a">Traits</a> &gt;::<a class="el" href="a00442.html#a297fe211e3b06536d26d9ff3ee3cc2ee">derived_type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7e841c775a89ff47fe08faa97ef22386"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Traits::FieldType <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00418.html#a37cca0b456f64e9de901ca8837edaf7a">Traits</a> &gt;::<a class="el" href="a00442.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af7ab8db6061a613448bb8ce3269cdc79"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Traits::JacobianType <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00418.html#a37cca0b456f64e9de901ca8837edaf7a">Traits</a> &gt;::<a class="el" href="a00442.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abb615dc74c3fc53d4dc81f5924f70310"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Matrix  <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::<a class="el" href="a00418.html#abb615dc74c3fc53d4dc81f5924f70310">MatrixType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac62501a8463e2955e9172aa4458943c6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef OuterRangeSpaceType::BaseFunctionSetType <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::<a class="el" href="a00418.html#ac62501a8463e2955e9172aa4458943c6">OuterRangeBaseType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0dd3ceeb1e1ce56f4381c8bc48a24424"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef BaseAssemblerType::OuterTestSpaceType <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::<a class="el" href="a00418.html#a0dd3ceeb1e1ce56f4381c8bc48a24424">OuterRangeSpaceType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a22041adaf66bf79ccd2c5a87f6f79e02"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef OuterSourceSpaceType::BaseFunctionSetType <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::<a class="el" href="a00418.html#a22041adaf66bf79ccd2c5a87f6f79e02">OuterSourceBaseType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a34f5b431907203f06b7a62a9cf2c38c2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef BaseAssemblerType::OuterAnsatzSpaceType <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::<a class="el" href="a00418.html#a34f5b431907203f06b7a62a9cf2c38c2">OuterSourceSpaceType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9813e488baa29f7a453e45ddf4404431"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef XT::LA::SparsityPatternDefault <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::<a class="el" href="a00418.html#a9813e488baa29f7a453e45ddf4404431">PatternType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a761e5c86377a563b1d56271532a20519"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef BaseAssemblerType::TestSpaceType <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::<a class="el" href="a00418.html#a761e5c86377a563b1d56271532a20519">RangeSpaceType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab0f347043bbd37e5d16dc411f80fc900"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef BaseAssemblerType::AnsatzSpaceType <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::<a class="el" href="a00418.html#ab0f347043bbd37e5d16dc411f80fc900">SourceSpaceType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a37cca0b456f64e9de901ca8837edaf7a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00419.html">internal::MatrixOperatorBaseTraits</a>&lt;Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp&gt; <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::<a class="el" href="a00418.html#a37cca0b456f64e9de901ca8837edaf7a">Traits</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a2d3f7ee969a577f9694b146135dcc212"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiffusionFactorType , typename DiffusionTensorType , class RangeSpace , LocalEllipticIpdgIntegrands::Method method = LocalEllipticIpdgIntegrands::default_method, class Matrix  = typename XT::LA::Container&lt;typename RangeSpace::RangeFieldType&gt;::MatrixType, class GridLayer  = typename RangeSpace::GridLayerType, class SourceSpace  = RangeSpace, class Field  = typename Matrix::ScalarType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00133.html">Dune::GDT::EllipticIpdgMatrixOperator</a>&lt; DiffusionFactorType, DiffusionTensorType, RangeSpace, method, Matrix, GridLayer, SourceSpace, Field &gt;::<a class="el" href="a00133.html">EllipticIpdgMatrixOperator</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00133.html">ThisType</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a00418.html">MatrixOperatorBase</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5eb4b78643b0612f59306627a06c55fc"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiffusionFactorType , typename DiffusionTensorType , class RangeSpace , LocalEllipticIpdgIntegrands::Method method = LocalEllipticIpdgIntegrands::default_method, class Matrix  = typename XT::LA::Container&lt;typename RangeSpace::RangeFieldType&gt;::MatrixType, class GridLayer  = typename RangeSpace::GridLayerType, class SourceSpace  = RangeSpace, class Field  = typename Matrix::ScalarType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00133.html">Dune::GDT::EllipticIpdgMatrixOperator</a>&lt; DiffusionFactorType, DiffusionTensorType, RangeSpace, method, Matrix, GridLayer, SourceSpace, Field &gt;::<a class="el" href="a00133.html">EllipticIpdgMatrixOperator</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00133.html">ThisType</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a39c0b020ab27bb627da292d1942b4c3e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiffusionFactorType , typename DiffusionTensorType , class RangeSpace , LocalEllipticIpdgIntegrands::Method method = LocalEllipticIpdgIntegrands::default_method, class Matrix  = typename XT::LA::Container&lt;typename RangeSpace::RangeFieldType&gt;::MatrixType, class GridLayer  = typename RangeSpace::GridLayerType, class SourceSpace  = RangeSpace, class Field  = typename Matrix::ScalarType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00133.html">Dune::GDT::EllipticIpdgMatrixOperator</a>&lt; DiffusionFactorType, DiffusionTensorType, RangeSpace, method, Matrix, GridLayer, SourceSpace, Field &gt;::<a class="el" href="a00133.html">EllipticIpdgMatrixOperator</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00133.html">ThisType</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adfb8911d1442a95b637b8172aa36ce20"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiffusionFactorType , typename DiffusionTensorType , class RangeSpace , LocalEllipticIpdgIntegrands::Method method = LocalEllipticIpdgIntegrands::default_method, class Matrix  = typename XT::LA::Container&lt;typename RangeSpace::RangeFieldType&gt;::MatrixType, class GridLayer  = typename RangeSpace::GridLayerType, class SourceSpace  = RangeSpace, class Field  = typename Matrix::ScalarType&gt; </div>
+<div class="memtemplate">
+template&lt;typename DiffusionImp , typename  = typename std::enable_if&lt;(std::is_same&lt;DiffusionTensorType, void&gt;::value)                                               &amp;&amp; (std::is_same&lt;DiffusionImp, DiffusionFactorType&gt;::value)                                               &amp;&amp; sizeof(DiffusionImp)&gt;::type, class... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00133.html">Dune::GDT::EllipticIpdgMatrixOperator</a>&lt; DiffusionFactorType, DiffusionTensorType, RangeSpace, method, Matrix, GridLayer, SourceSpace, Field &gt;::<a class="el" href="a00133.html">EllipticIpdgMatrixOperator</a> </td>
+          <td>(</td>
+          <td class="paramtype">const XT::Grid::BoundaryInfo&lt; IntersectionType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>boundary_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DiffusionImp &amp;&#160;</td>
+          <td class="paramname"><em>diffusion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aca52228a388f52d833c6054eda6d096e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiffusionFactorType , typename DiffusionTensorType , class RangeSpace , LocalEllipticIpdgIntegrands::Method method = LocalEllipticIpdgIntegrands::default_method, class Matrix  = typename XT::LA::Container&lt;typename RangeSpace::RangeFieldType&gt;::MatrixType, class GridLayer  = typename RangeSpace::GridLayerType, class SourceSpace  = RangeSpace, class Field  = typename Matrix::ScalarType&gt; </div>
+<div class="memtemplate">
+template&lt;typename DiffusionImp , typename  = typename std::enable_if&lt;(std::is_same&lt;DiffusionTensorType, void&gt;::value)                                               &amp;&amp; (std::is_same&lt;DiffusionImp, DiffusionFactorType&gt;::value)                                               &amp;&amp; sizeof(DiffusionImp)&gt;::type, class... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00133.html">Dune::GDT::EllipticIpdgMatrixOperator</a>&lt; DiffusionFactorType, DiffusionTensorType, RangeSpace, method, Matrix, GridLayer, SourceSpace, Field &gt;::<a class="el" href="a00133.html">EllipticIpdgMatrixOperator</a> </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>over_integrate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Grid::BoundaryInfo&lt; IntersectionType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>boundary_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DiffusionImp &amp;&#160;</td>
+          <td class="paramname"><em>diffusion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac1936c69c4c7ab96583ed6fe78dcb317"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiffusionFactorType , typename DiffusionTensorType , class RangeSpace , LocalEllipticIpdgIntegrands::Method method = LocalEllipticIpdgIntegrands::default_method, class Matrix  = typename XT::LA::Container&lt;typename RangeSpace::RangeFieldType&gt;::MatrixType, class GridLayer  = typename RangeSpace::GridLayerType, class SourceSpace  = RangeSpace, class Field  = typename Matrix::ScalarType&gt; </div>
+<div class="memtemplate">
+template&lt;typename DiffusionFactorImp , typename DiffusionTensorImp , typename  = typename std::enable_if&lt;(!std::is_same&lt;DiffusionTensorType, void&gt;::value)                                               &amp;&amp; (std::is_same&lt;DiffusionFactorImp, DiffusionFactorType&gt;::value)                                               &amp;&amp; sizeof(DiffusionFactorImp)&gt;::type, class... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00133.html">Dune::GDT::EllipticIpdgMatrixOperator</a>&lt; DiffusionFactorType, DiffusionTensorType, RangeSpace, method, Matrix, GridLayer, SourceSpace, Field &gt;::<a class="el" href="a00133.html">EllipticIpdgMatrixOperator</a> </td>
+          <td>(</td>
+          <td class="paramtype">const XT::Grid::BoundaryInfo&lt; IntersectionType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>boundary_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DiffusionFactorImp &amp;&#160;</td>
+          <td class="paramname"><em>diffusion_factor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DiffusionTensorImp &amp;&#160;</td>
+          <td class="paramname"><em>diffusion_tensor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae17001aa043e5e27382c41ab3b2d742d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiffusionFactorType , typename DiffusionTensorType , class RangeSpace , LocalEllipticIpdgIntegrands::Method method = LocalEllipticIpdgIntegrands::default_method, class Matrix  = typename XT::LA::Container&lt;typename RangeSpace::RangeFieldType&gt;::MatrixType, class GridLayer  = typename RangeSpace::GridLayerType, class SourceSpace  = RangeSpace, class Field  = typename Matrix::ScalarType&gt; </div>
+<div class="memtemplate">
+template&lt;typename DiffusionFactorImp , typename DiffusionTensorImp , typename  = typename std::enable_if&lt;(!std::is_same&lt;DiffusionTensorType, void&gt;::value)                                               &amp;&amp; (std::is_same&lt;DiffusionFactorImp, DiffusionFactorType&gt;::value)                                               &amp;&amp; sizeof(DiffusionFactorImp)&gt;::type, class... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00133.html">Dune::GDT::EllipticIpdgMatrixOperator</a>&lt; DiffusionFactorType, DiffusionTensorType, RangeSpace, method, Matrix, GridLayer, SourceSpace, Field &gt;::<a class="el" href="a00133.html">EllipticIpdgMatrixOperator</a> </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>over_integrate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Grid::BoundaryInfo&lt; IntersectionType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>boundary_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DiffusionFactorImp &amp;&#160;</td>
+          <td class="paramname"><em>diffusion_factor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DiffusionTensorImp &amp;&#160;</td>
+          <td class="paramname"><em>diffusion_tensor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ac7d9e21e47eecf68ce34edd95a4b9fe3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00133.html">ThisType</a>&amp; <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::append </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00409.html">LocalVolumeTwoFormInterface</a>&lt; <a class="el" href="a00418.html#af7951eff8357269ef60058f7f3299b85">RangeBaseType</a>, <a class="el" href="a00418.html#aa1c0b14cf2d6d0cba2b83d8574f7c310">SourceBaseType</a>, <a class="el" href="a00442.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>local_volume_twoform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Grid::ApplyOn::WhichEntity&lt; GridLayerType &gt; *&#160;</td>
+          <td class="paramname"><em>where</em> = <code>new&#160;XT::Grid::ApplyOn::AllEntities&lt;GridLayerType&gt;()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3d8355920ae895f6c7f3df78b363495b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00133.html">ThisType</a>&amp; <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::append </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00332.html">LocalCouplingTwoFormInterface</a>&lt; <a class="el" href="a00418.html#af7951eff8357269ef60058f7f3299b85">RangeBaseType</a>, IntersectionType, <a class="el" href="a00418.html#aa1c0b14cf2d6d0cba2b83d8574f7c310">SourceBaseType</a>, <a class="el" href="a00418.html#ac62501a8463e2955e9172aa4458943c6">OuterRangeBaseType</a>, <a class="el" href="a00418.html#a22041adaf66bf79ccd2c5a87f6f79e02">OuterSourceBaseType</a>, <a class="el" href="a00442.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>local_coupling_twoform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Grid::ApplyOn::WhichIntersection&lt; GridLayerType &gt; *&#160;</td>
+          <td class="paramname"><em>where</em> = <code>new&#160;XT::Grid::ApplyOn::InnerIntersectionsPrimally&lt;GridLayerType&gt;()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a986cf84c28b33d566bc1eb3b1f1bb33c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00133.html">ThisType</a>&amp; <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::append </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00322.html">LocalBoundaryTwoFormInterface</a>&lt; <a class="el" href="a00418.html#af7951eff8357269ef60058f7f3299b85">RangeBaseType</a>, IntersectionType, <a class="el" href="a00418.html#aa1c0b14cf2d6d0cba2b83d8574f7c310">SourceBaseType</a>, <a class="el" href="a00442.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>local_boundary_twoform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Grid::ApplyOn::WhichIntersection&lt; GridLayerType &gt; *&#160;</td>
+          <td class="paramname"><em>where</em> = <code>new&#160;XT::Grid::ApplyOn::InnerIntersectionsPrimally&lt;GridLayerType&gt;()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad7a6deb78d9b17deeb539674aae55bd5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits&gt; </div>
+<div class="memtemplate">
+template&lt;class SourceType , class RangeType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00418.html#a37cca0b456f64e9de901ca8837edaf7a">Traits</a> &gt;::apply </td>
+          <td>(</td>
+          <td class="paramtype">const SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RangeType &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2561f05574abd4cad7fb5eeb0871e0f1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::apply </td>
+          <td>(</td>
+          <td class="paramtype">const XT::LA::VectorInterface&lt; S &gt; &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">XT::LA::VectorInterface&lt; R &gt; &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6009ba4fcc65e25e47d92360e7be358d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::apply </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00071.html">ConstDiscreteFunction</a>&lt; <a class="el" href="a00418.html#ab0f347043bbd37e5d16dc411f80fc900">SourceSpaceType</a>, S &gt; &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00107.html">DiscreteFunction</a>&lt; <a class="el" href="a00418.html#a761e5c86377a563b1d56271532a20519">RangeSpaceType</a>, R &gt; &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afc13061fd719e2a80c8755f391dde7d3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits&gt; </div>
+<div class="memtemplate">
+template&lt;class RangeType , class SourceType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00442.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a> <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00418.html#a37cca0b456f64e9de901ca8837edaf7a">Traits</a> &gt;::apply2 </td>
+          <td>(</td>
+          <td class="paramtype">const RangeType &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa4a37d7a3bb949598850add18015d409"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00442.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a> <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::apply2 </td>
+          <td>(</td>
+          <td class="paramtype">const XT::LA::VectorInterface&lt; R &gt; &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::LA::VectorInterface&lt; S &gt; &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6ba3c5ae0b11bc14c11f679a0003a81f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00442.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a> <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::apply2 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00071.html">ConstDiscreteFunction</a>&lt; <a class="el" href="a00418.html#a761e5c86377a563b1d56271532a20519">RangeSpaceType</a>, R &gt; &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00071.html">ConstDiscreteFunction</a>&lt; <a class="el" href="a00418.html#ab0f347043bbd37e5d16dc411f80fc900">SourceSpaceType</a>, S &gt; &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae9652e5f4cac175cdbece27339cf27e8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits&gt; </div>
+<div class="memtemplate">
+template&lt;class RangeType , class SourceType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00418.html#a37cca0b456f64e9de901ca8837edaf7a">Traits</a> &gt;::apply_inverse </td>
+          <td>(</td>
+          <td class="paramtype">const RangeType &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Common::Configuration &amp;&#160;</td>
+          <td class="paramname"><em>opts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a29f8d5d8be5b3de4aab5c8d1a48a211d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits&gt; </div>
+<div class="memtemplate">
+template&lt;class RangeType , class SourceType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00418.html#a37cca0b456f64e9de901ca8837edaf7a">Traits</a> &gt;::apply_inverse </td>
+          <td>(</td>
+          <td class="paramtype">const RangeType &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2d97680c7b18ce80e4fe7b0edf3b17e1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits&gt; </div>
+<div class="memtemplate">
+template&lt;class RangeType , class SourceType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00418.html#a37cca0b456f64e9de901ca8837edaf7a">Traits</a> &gt;::apply_inverse </td>
+          <td>(</td>
+          <td class="paramtype">const RangeType &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4d6b2f4aceb64310c97f84807d2111e2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::apply_inverse </td>
+          <td>(</td>
+          <td class="paramtype">const XT::LA::VectorInterface&lt; R &gt; &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">XT::LA::VectorInterface&lt; S &gt; &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Common::Configuration &amp;&#160;</td>
+          <td class="paramname"><em>opts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a97fecd5b1f694a8ccfa03992bf1ff77c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::apply_inverse </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00071.html">ConstDiscreteFunction</a>&lt; <a class="el" href="a00418.html#a761e5c86377a563b1d56271532a20519">RangeSpaceType</a>, R &gt; &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00071.html">ConstDiscreteFunction</a>&lt; <a class="el" href="a00418.html#ab0f347043bbd37e5d16dc411f80fc900">SourceSpaceType</a>, S &gt; &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Common::Configuration &amp;&#160;</td>
+          <td class="paramname"><em>opts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae5378687b90665fdd4dffa8d6d0e11dd"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits&gt; </div>
+<div class="memtemplate">
+template&lt;class RangeType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00442.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a> <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00418.html#a37cca0b456f64e9de901ca8837edaf7a">Traits</a> &gt;::induced_norm </td>
+          <td>(</td>
+          <td class="paramtype">const RangeType &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a381c2e532c887efbde1602e1af424940"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::invert_options </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae635069847fb04d0620a9043323d669a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XT::Common::Configuration <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::invert_options </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9579ea283b91e9cb41c0d13fa5f8f7c3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00442.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a> <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::jacobian </td>
+          <td>(</td>
+          <td class="paramtype">const SourceType &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a44011fb5e5f55fd3a81cf648aa2842ee"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::jacobian </td>
+          <td>(</td>
+          <td class="paramtype">const SourceType &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00442.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a> &amp;&#160;</td>
+          <td class="paramname"><em>jac</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac6a96b8edbd25a0aeaee503f2cf853bb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00418.html#abb615dc74c3fc53d4dc81f5924f70310">MatrixType</a>&amp; <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::matrix </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae73454726fdbb8e395f6ab4782947bbc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00418.html#abb615dc74c3fc53d4dc81f5924f70310">MatrixType</a>&amp; <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::matrix </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aec0a8f15cfd5e825883bcf8df822d636"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiffusionFactorType , typename DiffusionTensorType , class RangeSpace , LocalEllipticIpdgIntegrands::Method method = LocalEllipticIpdgIntegrands::default_method, class Matrix  = typename XT::LA::Container&lt;typename RangeSpace::RangeFieldType&gt;::MatrixType, class GridLayer  = typename RangeSpace::GridLayerType, class SourceSpace  = RangeSpace, class Field  = typename Matrix::ScalarType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00133.html">ThisType</a>&amp; <a class="el" href="a00133.html">Dune::GDT::EllipticIpdgMatrixOperator</a>&lt; DiffusionFactorType, DiffusionTensorType, RangeSpace, method, Matrix, GridLayer, SourceSpace, Field &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00133.html">ThisType</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a64762372a88cc74aaf90a3bb145bb687"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiffusionFactorType , typename DiffusionTensorType , class RangeSpace , LocalEllipticIpdgIntegrands::Method method = LocalEllipticIpdgIntegrands::default_method, class Matrix  = typename XT::LA::Container&lt;typename RangeSpace::RangeFieldType&gt;::MatrixType, class GridLayer  = typename RangeSpace::GridLayerType, class SourceSpace  = RangeSpace, class Field  = typename Matrix::ScalarType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00133.html">ThisType</a>&amp; <a class="el" href="a00133.html">Dune::GDT::EllipticIpdgMatrixOperator</a>&lt; DiffusionFactorType, DiffusionTensorType, RangeSpace, method, Matrix, GridLayer, SourceSpace, Field &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00133.html">ThisType</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abdba2020f21d8bf81d83d294d4489034"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00418.html#a0dd3ceeb1e1ce56f4381c8bc48a24424">OuterRangeSpaceType</a>&amp; <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::outer_range_space </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a05597f00436e47b1e66c2f0f4b6c4a4a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00418.html#a34f5b431907203f06b7a62a9cf2c38c2">OuterSourceSpaceType</a>&amp; <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::outer_source_space </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad4cb3e10d50567378f2096729dec21b7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="a00418.html#a9813e488baa29f7a453e45ddf4404431">PatternType</a> <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::pattern </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00418.html#a761e5c86377a563b1d56271532a20519">RangeSpaceType</a> &amp;&#160;</td>
+          <td class="paramname"><em>rng_spc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00418.html#ab0f347043bbd37e5d16dc411f80fc900">SourceSpaceType</a> &amp;&#160;</td>
+          <td class="paramname"><em>src_spc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GridLayerType &amp;&#160;</td>
+          <td class="paramname"><em>grd_layr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2ca426f19a4cd9c0cf8db7630de2bf64"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::enable_if&lt;std::is_same&lt;R, <a class="el" href="a00418.html#a761e5c86377a563b1d56271532a20519">RangeSpaceType</a>&gt;::value &amp;&amp; std::is_same&lt;R, <a class="el" href="a00418.html#ab0f347043bbd37e5d16dc411f80fc900">SourceSpaceType</a>&gt;::value &amp;&amp; std::is_same&lt;typename R::GridLayerType, GridLayerType&gt;::value, <a class="el" href="a00418.html#a9813e488baa29f7a453e45ddf4404431">PatternType</a>&gt;::type <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::pattern </td>
+          <td>(</td>
+          <td class="paramtype">const R &amp;&#160;</td>
+          <td class="paramname"><em>rng_spc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a454ff2d15af41024c87f164a923eed07"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::enable_if&lt;std::is_same&lt;R, <a class="el" href="a00418.html#a761e5c86377a563b1d56271532a20519">RangeSpaceType</a>&gt;::value &amp;&amp; std::is_same&lt;S, <a class="el" href="a00418.html#ab0f347043bbd37e5d16dc411f80fc900">SourceSpaceType</a>&gt;::value &amp;&amp; std::is_same&lt;typename R::GridLayerType, GridLayerType&gt;::value, <a class="el" href="a00418.html#a9813e488baa29f7a453e45ddf4404431">PatternType</a>&gt;::type <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::pattern </td>
+          <td>(</td>
+          <td class="paramtype">const R &amp;&#160;</td>
+          <td class="paramname"><em>rng_spc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const S &amp;&#160;</td>
+          <td class="paramname"><em>src_spc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad549746ce9fcfc74530778fac148ddbf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::enable_if&lt;std::is_same&lt;R, <a class="el" href="a00418.html#a761e5c86377a563b1d56271532a20519">RangeSpaceType</a>&gt;::value &amp;&amp; std::is_same&lt;R, <a class="el" href="a00418.html#ab0f347043bbd37e5d16dc411f80fc900">SourceSpaceType</a>&gt;::value &amp;&amp; std::is_same&lt;G, GridLayerType&gt;::value, <a class="el" href="a00418.html#a9813e488baa29f7a453e45ddf4404431">PatternType</a>&gt;::type <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::pattern </td>
+          <td>(</td>
+          <td class="paramtype">const R &amp;&#160;</td>
+          <td class="paramname"><em>rng_spc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const G &amp;&#160;</td>
+          <td class="paramname"><em>grd_layr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aea68a2fb42e6228996d3ab2953a625e3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00418.html#a761e5c86377a563b1d56271532a20519">RangeSpaceType</a>&amp; <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::range_space </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a90e653cd1dcbf9e073caa8ff098fd07d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00418.html#ab0f347043bbd37e5d16dc411f80fc900">SourceSpaceType</a>&amp; <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::source_space </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a3f2d56f143a8c7e64d70e78eeeeb45db"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const constexpr <a class="el" href="a00761.html#a09f2467105da4217b0ff3bb2e4790c7e">ChoosePattern</a> <a class="el" href="a00418.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::pattern_type</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00526_source.html">mapper/dune-fem-wrapper.hh</a></li>
+<li><a class="el" href="a00594_source.html">operators/elliptic-ipdg.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:20 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:10 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

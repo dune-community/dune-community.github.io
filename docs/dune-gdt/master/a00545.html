@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: elliptic-ipdg.hh File Reference</title>
+<title>dune-gdt: constraints.bindings.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -83,133 +83,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_eaee94ab3c5b11ce8fcab1cb9d405304.html">src</a></li><li class="navelem"><a class="el" href="dir_58c354ae22a30254506a25a39957e8ba.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_16224573f43954b382d54ec1df2a2147.html">dune</a></li><li class="navelem"><a class="el" href="dir_f1992dd472896fb89117bdc8155a3e1c.html">gdt</a></li><li class="navelem"><a class="el" href="dir_b88ba22195be87413f0714aa36685cef.html">functionals</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_eaee94ab3c5b11ce8fcab1cb9d405304.html">src</a></li><li class="navelem"><a class="el" href="dir_58c354ae22a30254506a25a39957e8ba.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_16224573f43954b382d54ec1df2a2147.html">dune</a></li><li class="navelem"><a class="el" href="dir_f1992dd472896fb89117bdc8155a3e1c.html">gdt</a></li><li class="navelem"><a class="el" href="dir_c10f7938b13dcbddf851adbb235e7250.html">spaces</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">functionals/elliptic-ipdg.hh File Reference</div>  </div>
+<div class="title">constraints.bindings.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;dune/xt/common/memory.hh&gt;</code><br />
-<code>#include &lt;dune/xt/grid/boundaryinfo.hh&gt;</code><br />
-<code>#include &lt;dune/xt/grid/type_traits.hh&gt;</code><br />
-<code>#include &lt;dune/xt/la/container.hh&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00550_source.html">dune/gdt/local/integrands/elliptic.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00546_source.html">dune/gdt/local/integrands/elliptic-ipdg.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00593_source.html">dune/gdt/local/functionals/integrals.hh</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="a00488_source.html">base.hh</a>&quot;</code><br />
-</div>
+
 <p><a href="a00545_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00125.html">Dune::GDT::EllipticIpdgDirichletVectorFunctional&lt; DirichletType, DiffusionFactorType, DiffusionTensorType, Space, method, Vector, GridLayer, Field &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:a00702"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00702.html">Dune</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00703"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00703.html">Dune::GDT</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a39dd434250d655456533847e0fd24550"><td class="memTemplParams" colspan="2">template&lt;class VectorType , LocalEllipticIpdgIntegrands::Method method, class DirichletType , class DiffusionFactorType , class DiffusionTensorType , class SpaceType &gt; </td></tr>
-<tr class="memitem:a39dd434250d655456533847e0fd24550"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak" />
-&lt; XT::LA::is_vector<br class="typebreak" />
-&lt; VectorType &gt;::value <br class="typebreak" />
-&amp;&amp;XT::Functions::is_localizable_function<br class="typebreak" />
-&lt; DirichletType &gt;::value <br class="typebreak" />
-&amp;&amp;XT::Functions::is_localizable_function<br class="typebreak" />
-&lt; DiffusionFactorType &gt;::value <br class="typebreak" />
-&amp;&amp;XT::Functions::is_localizable_function<br class="typebreak" />
-&lt; DiffusionTensorType &gt;::value <br class="typebreak" />
-&amp;&amp;is_space&lt; SpaceType &gt;::value, <br class="typebreak" />
-std::unique_ptr<br class="typebreak" />
-&lt; EllipticIpdgDirichletVectorFunctional<br class="typebreak" />
-&lt; DirichletType, <br class="typebreak" />
-DiffusionFactorType, <br class="typebreak" />
-DiffusionTensorType, SpaceType, <br class="typebreak" />
-method, VectorType &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00703.html#a39dd434250d655456533847e0fd24550">Dune::GDT::make_elliptic_ipdg_dirichlet_vector_functional</a> (const DirichletType &amp;dirichlet, const DiffusionFactorType &amp;diffusion_factor, const DiffusionTensorType &amp;diffusion_tensor, const XT::Grid::BoundaryInfo&lt; XT::Grid::extract_intersection_t&lt; typename SpaceType::GridLayerType &gt;&gt; &amp;boundary_info, const SpaceType &amp;space, const size_t over_integrate=0)</td></tr>
-<tr class="separator:a39dd434250d655456533847e0fd24550"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6b60716df2a7ff51cc279cefd611be4"><td class="memTemplParams" colspan="2">template&lt;class VectorType , class DirichletType , class DiffusionFactorType , class DiffusionTensorType , class SpaceType &gt; </td></tr>
-<tr class="memitem:ae6b60716df2a7ff51cc279cefd611be4"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak" />
-&lt; XT::LA::is_vector<br class="typebreak" />
-&lt; VectorType &gt;::value <br class="typebreak" />
-&amp;&amp;XT::Functions::is_localizable_function<br class="typebreak" />
-&lt; DirichletType &gt;::value <br class="typebreak" />
-&amp;&amp;XT::Functions::is_localizable_function<br class="typebreak" />
-&lt; DiffusionFactorType &gt;::value <br class="typebreak" />
-&amp;&amp;XT::Functions::is_localizable_function<br class="typebreak" />
-&lt; DiffusionTensorType &gt;::value <br class="typebreak" />
-&amp;&amp;is_space&lt; SpaceType &gt;::value, <br class="typebreak" />
-std::unique_ptr<br class="typebreak" />
-&lt; EllipticIpdgDirichletVectorFunctional<br class="typebreak" />
-&lt; DirichletType, <br class="typebreak" />
-DiffusionFactorType, <br class="typebreak" />
-DiffusionTensorType, SpaceType, <br class="typebreak" />
-LocalEllipticIpdgIntegrands::default_method, <br class="typebreak" />
-VectorType &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00703.html#ae6b60716df2a7ff51cc279cefd611be4">Dune::GDT::make_elliptic_ipdg_dirichlet_vector_functional</a> (const DirichletType &amp;dirichlet, const DiffusionFactorType &amp;diffusion_factor, const DiffusionTensorType &amp;diffusion_tensor, const XT::Grid::BoundaryInfo&lt; XT::Grid::extract_intersection_t&lt; typename SpaceType::GridLayerType &gt;&gt; &amp;boundary_info, const SpaceType &amp;space, const size_t over_integrate=0)</td></tr>
-<tr class="separator:ae6b60716df2a7ff51cc279cefd611be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a0e7e5137ef012766008a318adffd50"><td class="memTemplParams" colspan="2">template&lt;class VectorType , LocalEllipticIpdgIntegrands::Method method, class DirichletType , class DiffusionType , class SpaceType &gt; </td></tr>
-<tr class="memitem:a6a0e7e5137ef012766008a318adffd50"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak" />
-&lt; XT::LA::is_vector<br class="typebreak" />
-&lt; VectorType &gt;::value <br class="typebreak" />
-&amp;&amp;XT::Functions::is_localizable_function<br class="typebreak" />
-&lt; DirichletType &gt;::value <br class="typebreak" />
-&amp;&amp;XT::Functions::is_localizable_function<br class="typebreak" />
-&lt; DiffusionType &gt;::value <br class="typebreak" />
-&amp;&amp;is_space&lt; SpaceType &gt;::value, <br class="typebreak" />
-std::unique_ptr<br class="typebreak" />
-&lt; EllipticIpdgDirichletVectorFunctional<br class="typebreak" />
-&lt; DirichletType, DiffusionType, <br class="typebreak" />
-void, SpaceType, method, <br class="typebreak" />
-VectorType &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00703.html#a6a0e7e5137ef012766008a318adffd50">Dune::GDT::make_elliptic_ipdg_dirichlet_vector_functional</a> (const DirichletType &amp;dirichlet, const DiffusionType &amp;diffusion, const XT::Grid::BoundaryInfo&lt; XT::Grid::extract_intersection_t&lt; typename SpaceType::GridLayerType &gt;&gt; &amp;boundary_info, const SpaceType &amp;space, const size_t over_integrate=0)</td></tr>
-<tr class="separator:a6a0e7e5137ef012766008a318adffd50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d7ac26de7ce19c933a4961092550982"><td class="memTemplParams" colspan="2">template&lt;LocalEllipticIpdgIntegrands::Method method, class DirichletType , class DiffusionFactorType , class DiffusionTensorType , class VectorType , class SpaceType &gt; </td></tr>
-<tr class="memitem:a1d7ac26de7ce19c933a4961092550982"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak" />
-&lt; XT::Functions::is_localizable_function<br class="typebreak" />
-&lt; DirichletType &gt;::value <br class="typebreak" />
-&amp;&amp;XT::Functions::is_localizable_function<br class="typebreak" />
-&lt; DiffusionFactorType &gt;::value <br class="typebreak" />
-&amp;&amp;XT::Functions::is_localizable_function<br class="typebreak" />
-&lt; DiffusionTensorType &gt;::value <br class="typebreak" />
-&amp;&amp;XT::LA::is_vector<br class="typebreak" />
-&lt; VectorType &gt;::value <br class="typebreak" />
-&amp;&amp;is_space&lt; SpaceType &gt;::value, <br class="typebreak" />
-std::unique_ptr<br class="typebreak" />
-&lt; EllipticIpdgDirichletVectorFunctional<br class="typebreak" />
-&lt; DirichletType, <br class="typebreak" />
-DiffusionFactorType, <br class="typebreak" />
-DiffusionTensorType, SpaceType, <br class="typebreak" />
-method, VectorType &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00703.html#a1d7ac26de7ce19c933a4961092550982">Dune::GDT::make_elliptic_ipdg_dirichlet_vector_functional</a> (const DirichletType &amp;dirichlet, const DiffusionFactorType &amp;diffusion_factor, const DiffusionTensorType &amp;diffusion_tensor, const XT::Grid::BoundaryInfo&lt; XT::Grid::extract_intersection_t&lt; typename SpaceType::GridLayerType &gt;&gt; &amp;boundary_info, VectorType &amp;vector, const SpaceType &amp;space, const size_t over_integrate=0)</td></tr>
-<tr class="separator:a1d7ac26de7ce19c933a4961092550982"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0abcf8a0c7289b894ad73c92ec1aa235"><td class="memTemplParams" colspan="2">template&lt;LocalEllipticIpdgIntegrands::Method method, class DirichletType , class DiffusionType , class VectorType , class SpaceType &gt; </td></tr>
-<tr class="memitem:a0abcf8a0c7289b894ad73c92ec1aa235"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak" />
-&lt; XT::Functions::is_localizable_function<br class="typebreak" />
-&lt; DirichletType &gt;::value <br class="typebreak" />
-&amp;&amp;XT::Functions::is_localizable_function<br class="typebreak" />
-&lt; DiffusionType &gt;::value <br class="typebreak" />
-&amp;&amp;XT::LA::is_vector<br class="typebreak" />
-&lt; VectorType &gt;::value <br class="typebreak" />
-&amp;&amp;is_space&lt; SpaceType &gt;::value, <br class="typebreak" />
-std::unique_ptr<br class="typebreak" />
-&lt; EllipticIpdgDirichletVectorFunctional<br class="typebreak" />
-&lt; DirichletType, DiffusionType, <br class="typebreak" />
-void, SpaceType, method, <br class="typebreak" />
-VectorType &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00703.html#a0abcf8a0c7289b894ad73c92ec1aa235">Dune::GDT::make_elliptic_ipdg_dirichlet_vector_functional</a> (const DirichletType &amp;dirichlet, const DiffusionType &amp;diffusion, const XT::Grid::BoundaryInfo&lt; XT::Grid::extract_intersection_t&lt; typename SpaceType::GridLayerType &gt;&gt; &amp;boundary_info, VectorType &amp;vector, const SpaceType &amp;space, const size_t over_integrate=0)</td></tr>
-<tr class="separator:a0abcf8a0c7289b894ad73c92ec1aa235"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:18 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:09 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

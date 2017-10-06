@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: reinterpret.hh Source File</title>
+<title>dune-gdt: interfaces.hh Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -83,12 +83,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_eaee94ab3c5b11ce8fcab1cb9d405304.html">src</a></li><li class="navelem"><a class="el" href="dir_58c354ae22a30254506a25a39957e8ba.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_16224573f43954b382d54ec1df2a2147.html">dune</a></li><li class="navelem"><a class="el" href="dir_f1992dd472896fb89117bdc8155a3e1c.html">gdt</a></li><li class="navelem"><a class="el" href="dir_0e08db9718cdc017276840d0b5dc9bb6.html">discretefunction</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_eaee94ab3c5b11ce8fcab1cb9d405304.html">src</a></li><li class="navelem"><a class="el" href="dir_58c354ae22a30254506a25a39957e8ba.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_16224573f43954b382d54ec1df2a2147.html">dune</a></li><li class="navelem"><a class="el" href="dir_f1992dd472896fb89117bdc8155a3e1c.html">gdt</a></li><li class="navelem"><a class="el" href="dir_91b47eb1f5534b791b2db4e72c4ced9d.html">operators</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">reinterpret.hh</div>  </div>
+<div class="title">operators/interfaces.hh</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="a00658.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// This file is part of the dune-gdt project:</span></div>
@@ -98,50 +98,153 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//      or  GPL-2.0+ (http://opensource.org/licenses/gpl-license)</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//          with &quot;runtime exception&quot; (http://www.dune-project.org/license.html)</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// Authors:</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//   Felix Schindler (2015 - 2017)</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//   Felix Schindler (2014 - 2017)</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//   Rene Milk       (2016)</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef DUNE_GDT_DISCRETEFUNCTION_REINTERPRET_HH</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define DUNE_GDT_DISCRETEFUNCTION_REINTERPRET_HH</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;dune/xt/functions/reinterpret.hh&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00506.html">default.hh</a>&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00702.html">Dune</a> {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span>GDT {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//   Tobias Leibner  (2014, 2016)</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef DUNE_GDT_OPERATORS_INTERFACES_HH</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define DUNE_GDT_OPERATORS_INTERFACES_HH</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;type_traits&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;dune/common/deprecated.hh&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;dune/common/dynmatrix.hh&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;dune/common/fvector.hh&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> DiscreteFunctionType&gt;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="a00426.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00426.html">ReinterpretDiscreteFunction</a></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    : <span class="keyword">public</span> XT::Functions::ReinterpretFunction&lt;DiscreteFunctionType,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                                typename DiscreteFunctionType::SpaceType::GridLayerType&gt;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  static_assert(<a class="code" href="a00186.html">is_const_discrete_function&lt;DiscreteFunctionType&gt;::value</a>, <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">typedef</span> XT::Functions::ReinterpretFunction&lt;DiscreteFunctionType,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                             <span class="keyword">typename</span> DiscreteFunctionType::SpaceType::GridLayerType&gt;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      BaseType;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;dune/xt/common/crtp.hh&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;dune/xt/common/parameter.hh&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;dune/xt/functions/interfaces.hh&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;dune/xt/la/container/interfaces.hh&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;dune/xt/la/container/pattern.hh&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;dune/xt/la/solver.hh&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;dune/xt/common/configuration.hh&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00649.html">dune/gdt/spaces/interface.hh</a>&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00553.html">dune/gdt/discretefunction/default.hh</a>&gt;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <a class="code" href="a00426.html">ReinterpretDiscreteFunction</a>(<span class="keyword">const</span> DiscreteFunctionType&amp; source)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    : BaseType(source, source.space().grid_layer())</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}; <span class="comment">// class ReinterpretDiscreteFunction</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;} <span class="comment">// namespace GDT</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;} <span class="comment">// namespace Dune</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif // DUNE_GDT_DISCRETEFUNCTION_REINTERPRET_HH</span></div>
-<div class="ttc" id="a00506_html"><div class="ttname"><a href="a00506.html">default.hh</a></div></div>
-<div class="ttc" id="a00426_html"><div class="ttname"><a href="a00426.html">Dune::GDT::ReinterpretDiscreteFunction</a></div><div class="ttdef"><b>Definition:</b> reinterpret.hh:23</div></div>
-<div class="ttc" id="a00186_html"><div class="ttname"><a href="a00186.html">Dune::GDT::is_const_discrete_function</a></div><div class="ttdef"><b>Definition:</b> discretefunction/default.hh:466</div></div>
-<div class="ttc" id="a00702_html"><div class="ttname"><a href="a00702.html">Dune</a></div><div class="ttdef"><b>Definition:</b> codim0-matrix-datahandle.hh:8</div></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00760.html">Dune</a> {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>GDT {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span>internal {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="a00438.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00438.html">NoJacobian</a></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;} <span class="comment">// namespace internal</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Traits&gt;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="a00442.html">   50</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00442.html">OperatorInterface</a> : <span class="keyword">public</span> XT::CRTPInterface&lt;OperatorInterface&lt;Traits&gt;, Traits&gt;,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                          <span class="keyword">public</span> XT::Common::ParametricInterface</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="a00442.html#a297fe211e3b06536d26d9ff3ee3cc2ee">   54</a></span>&#160;  <span class="keyword">typedef</span> <span class="keyword">typename</span> Traits::derived_type <a class="code" href="a00442.html#a297fe211e3b06536d26d9ff3ee3cc2ee">derived_type</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="a00442.html#a7e841c775a89ff47fe08faa97ef22386">   55</a></span>&#160;  <span class="keyword">typedef</span> <span class="keyword">typename</span> Traits::FieldType <a class="code" href="a00442.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="a00442.html#af7ab8db6061a613448bb8ce3269cdc79">   56</a></span>&#160;  <span class="keyword">typedef</span> <span class="keyword">typename</span> Traits::JacobianType <a class="code" href="a00442.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> SourceType, <span class="keyword">class</span> RangeType&gt;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="a00442.html#ad7a6deb78d9b17deeb539674aae55bd5">   62</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00442.html#ad7a6deb78d9b17deeb539674aae55bd5">apply</a>(<span class="keyword">const</span> SourceType&amp; source, RangeType&amp; range, <span class="keyword">const</span> Dune::XT::Common::Parameter&amp; param = {}) <span class="keyword">const</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    CHECK_CRTP(this-&gt;as_imp().<a class="code" href="a00442.html#ad7a6deb78d9b17deeb539674aae55bd5">apply</a>(source, range, param));</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> RangeType, <span class="keyword">class</span> SourceType&gt;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  FieldType</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="a00442.html#afc13061fd719e2a80c8755f391dde7d3">   69</a></span>&#160;  <a class="code" href="a00442.html#afc13061fd719e2a80c8755f391dde7d3">apply2</a>(<span class="keyword">const</span> RangeType&amp; range, <span class="keyword">const</span> SourceType&amp; source, <span class="keyword">const</span> Dune::XT::Common::Parameter&amp; param = {}) <span class="keyword">const</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    CHECK_CRTP(this-&gt;as_imp().<a class="code" href="a00442.html#afc13061fd719e2a80c8755f391dde7d3">apply2</a>(range, source, param));</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">return</span> this-&gt;as_imp().apply2(range, source, param);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> SourceType&gt;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="a00442.html#ae117892cf6087e45662d242765530402">   76</a></span>&#160;  JacobianType <a class="code" href="a00442.html#ae117892cf6087e45662d242765530402">jacobian</a>(<span class="keyword">const</span> SourceType&amp; source, <span class="keyword">const</span> Dune::XT::Common::Parameter&amp; param = {}) <span class="keyword">const</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    CHECK_CRTP(this-&gt;as_imp().<a class="code" href="a00442.html#ae117892cf6087e45662d242765530402">jacobian</a>(source, param));</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> this-&gt;as_imp().jacobian(source, param);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> SourceType&gt;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="a00442.html#aacfda4614f16b470190a356a62717b01">   83</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00442.html#aacfda4614f16b470190a356a62717b01">jacobian</a>(<span class="keyword">const</span> SourceType&amp; source, JacobianType&amp; jac, <span class="keyword">const</span> Dune::XT::Common::Parameter&amp; param = {}) <span class="keyword">const</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    CHECK_CRTP(this-&gt;as_imp().<a class="code" href="a00442.html#ae117892cf6087e45662d242765530402">jacobian</a>(source, jac, param));</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> RangeType, <span class="keyword">class</span> SourceType&gt;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="a00442.html#ae9652e5f4cac175cdbece27339cf27e8">   89</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00442.html#ae9652e5f4cac175cdbece27339cf27e8">apply_inverse</a>(<span class="keyword">const</span> RangeType&amp; range,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                     SourceType&amp; source,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                     <span class="keyword">const</span> XT::Common::Configuration&amp; opts,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                     <span class="keyword">const</span> Dune::XT::Common::Parameter&amp; param = {}) <span class="keyword">const</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    CHECK_AND_CALL_CRTP(this-&gt;as_imp().<a class="code" href="a00442.html#ae9652e5f4cac175cdbece27339cf27e8">apply_inverse</a>(range, source, opts, param));</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="a00442.html#a73c1ab8a58b54d058dbcb9cb4a3dfbcf">   97</a></span>&#160;  std::vector&lt;std::string&gt; <a class="code" href="a00442.html#a73c1ab8a58b54d058dbcb9cb4a3dfbcf">invert_options</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    CHECK_CRTP(this-&gt;as_imp().<a class="code" href="a00442.html#a73c1ab8a58b54d058dbcb9cb4a3dfbcf">invert_options</a>());</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">return</span> this-&gt;as_imp().invert_options();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="a00442.html#a16e9651ae77ff0e3ec7b91b827e84a25">  103</a></span>&#160;  XT::Common::Configuration <a class="code" href="a00442.html#a16e9651ae77ff0e3ec7b91b827e84a25">invert_options</a>(<span class="keyword">const</span> std::string&amp; type)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    CHECK_CRTP(this-&gt;as_imp().<a class="code" href="a00442.html#a73c1ab8a58b54d058dbcb9cb4a3dfbcf">invert_options</a>(type));</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">return</span> this-&gt;as_imp().invert_options(type);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> RangeType, <span class="keyword">class</span> SourceType&gt;</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="a00442.html#a29f8d5d8be5b3de4aab5c8d1a48a211d">  114</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00442.html#a29f8d5d8be5b3de4aab5c8d1a48a211d">apply_inverse</a>(<span class="keyword">const</span> RangeType&amp; range,</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                     SourceType&amp; source,</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                     <span class="keyword">const</span> std::string&amp; type,</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                     <span class="keyword">const</span> Dune::XT::Common::Parameter&amp; param = {}) <span class="keyword">const</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="a00442.html#ae9652e5f4cac175cdbece27339cf27e8">apply_inverse</a>(range, source, <a class="code" href="a00442.html#a73c1ab8a58b54d058dbcb9cb4a3dfbcf">invert_options</a>(type), param);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> RangeType, <span class="keyword">class</span> SourceType&gt;</div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="a00442.html#a2d97680c7b18ce80e4fe7b0edf3b17e1">  123</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00442.html#a2d97680c7b18ce80e4fe7b0edf3b17e1">apply_inverse</a>(<span class="keyword">const</span> RangeType&amp; range, SourceType&amp; source, <span class="keyword">const</span> Dune::XT::Common::Parameter&amp; param = {}) <span class="keyword">const</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">auto</span> type = <a class="code" href="a00442.html#a73c1ab8a58b54d058dbcb9cb4a3dfbcf">invert_options</a>();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <a class="code" href="a00442.html#ae9652e5f4cac175cdbece27339cf27e8">apply_inverse</a>(range, source, type.size() &gt; 0 ? type[0] : <span class="stringliteral">&quot;&quot;</span>, param);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> RangeType&gt;</div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="a00442.html#ae5378687b90665fdd4dffa8d6d0e11dd">  130</a></span>&#160;  FieldType <a class="code" href="a00442.html#ae5378687b90665fdd4dffa8d6d0e11dd">induced_norm</a>(<span class="keyword">const</span> RangeType&amp; range, <span class="keyword">const</span> Dune::XT::Common::Parameter&amp; param = {}) <span class="keyword">const</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">return</span> std::sqrt(<a class="code" href="a00442.html#afc13061fd719e2a80c8755f391dde7d3">apply2</a>(range, range, param));</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}; <span class="comment">// class OperatorInterface</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;} <span class="comment">// namespace GDT</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;} <span class="comment">// namespace Dune</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor">#endif // DUNE_GDT_OPERATORS_INTERFACES_HH</span></div>
+<div class="ttc" id="a00442_html_a73c1ab8a58b54d058dbcb9cb4a3dfbcf"><div class="ttname"><a href="a00442.html#a73c1ab8a58b54d058dbcb9cb4a3dfbcf">Dune::GDT::OperatorInterface::invert_options</a></div><div class="ttdeci">std::vector&lt; std::string &gt; invert_options() const </div><div class="ttdef"><b>Definition:</b> operators/interfaces.hh:97</div></div>
+<div class="ttc" id="a00442_html"><div class="ttname"><a href="a00442.html">Dune::GDT::OperatorInterface</a></div><div class="ttdef"><b>Definition:</b> operators/interfaces.hh:50</div></div>
+<div class="ttc" id="a00442_html_ae5378687b90665fdd4dffa8d6d0e11dd"><div class="ttname"><a href="a00442.html#ae5378687b90665fdd4dffa8d6d0e11dd">Dune::GDT::OperatorInterface::induced_norm</a></div><div class="ttdeci">FieldType induced_norm(const RangeType &amp;range, const Dune::XT::Common::Parameter &amp;param={}) const </div><div class="ttdef"><b>Definition:</b> operators/interfaces.hh:130</div></div>
+<div class="ttc" id="a00442_html_af7ab8db6061a613448bb8ce3269cdc79"><div class="ttname"><a href="a00442.html#af7ab8db6061a613448bb8ce3269cdc79">Dune::GDT::OperatorInterface::JacobianType</a></div><div class="ttdeci">Traits::JacobianType JacobianType</div><div class="ttdef"><b>Definition:</b> operators/interfaces.hh:56</div></div>
+<div class="ttc" id="a00442_html_ad7a6deb78d9b17deeb539674aae55bd5"><div class="ttname"><a href="a00442.html#ad7a6deb78d9b17deeb539674aae55bd5">Dune::GDT::OperatorInterface::apply</a></div><div class="ttdeci">void apply(const SourceType &amp;source, RangeType &amp;range, const Dune::XT::Common::Parameter &amp;param={}) const </div><div class="ttdef"><b>Definition:</b> operators/interfaces.hh:62</div></div>
+<div class="ttc" id="a00442_html_ae9652e5f4cac175cdbece27339cf27e8"><div class="ttname"><a href="a00442.html#ae9652e5f4cac175cdbece27339cf27e8">Dune::GDT::OperatorInterface::apply_inverse</a></div><div class="ttdeci">void apply_inverse(const RangeType &amp;range, SourceType &amp;source, const XT::Common::Configuration &amp;opts, const Dune::XT::Common::Parameter &amp;param={}) const </div><div class="ttdef"><b>Definition:</b> operators/interfaces.hh:89</div></div>
+<div class="ttc" id="a00442_html_a297fe211e3b06536d26d9ff3ee3cc2ee"><div class="ttname"><a href="a00442.html#a297fe211e3b06536d26d9ff3ee3cc2ee">Dune::GDT::OperatorInterface::derived_type</a></div><div class="ttdeci">Traits::derived_type derived_type</div><div class="ttdef"><b>Definition:</b> operators/interfaces.hh:54</div></div>
+<div class="ttc" id="a00442_html_aacfda4614f16b470190a356a62717b01"><div class="ttname"><a href="a00442.html#aacfda4614f16b470190a356a62717b01">Dune::GDT::OperatorInterface::jacobian</a></div><div class="ttdeci">void jacobian(const SourceType &amp;source, JacobianType &amp;jac, const Dune::XT::Common::Parameter &amp;param={}) const </div><div class="ttdef"><b>Definition:</b> operators/interfaces.hh:83</div></div>
+<div class="ttc" id="a00438_html"><div class="ttname"><a href="a00438.html">Dune::GDT::internal::NoJacobian</a></div><div class="ttdef"><b>Definition:</b> operators/interfaces.hh:37</div></div>
+<div class="ttc" id="a00442_html_afc13061fd719e2a80c8755f391dde7d3"><div class="ttname"><a href="a00442.html#afc13061fd719e2a80c8755f391dde7d3">Dune::GDT::OperatorInterface::apply2</a></div><div class="ttdeci">FieldType apply2(const RangeType &amp;range, const SourceType &amp;source, const Dune::XT::Common::Parameter &amp;param={}) const </div><div class="ttdef"><b>Definition:</b> operators/interfaces.hh:69</div></div>
+<div class="ttc" id="a00442_html_a7e841c775a89ff47fe08faa97ef22386"><div class="ttname"><a href="a00442.html#a7e841c775a89ff47fe08faa97ef22386">Dune::GDT::OperatorInterface::FieldType</a></div><div class="ttdeci">Traits::FieldType FieldType</div><div class="ttdef"><b>Definition:</b> operators/interfaces.hh:55</div></div>
+<div class="ttc" id="a00442_html_a16e9651ae77ff0e3ec7b91b827e84a25"><div class="ttname"><a href="a00442.html#a16e9651ae77ff0e3ec7b91b827e84a25">Dune::GDT::OperatorInterface::invert_options</a></div><div class="ttdeci">XT::Common::Configuration invert_options(const std::string &amp;type) const </div><div class="ttdef"><b>Definition:</b> operators/interfaces.hh:103</div></div>
+<div class="ttc" id="a00649_html"><div class="ttname"><a href="a00649.html">interface.hh</a></div></div>
+<div class="ttc" id="a00442_html_a2d97680c7b18ce80e4fe7b0edf3b17e1"><div class="ttname"><a href="a00442.html#a2d97680c7b18ce80e4fe7b0edf3b17e1">Dune::GDT::OperatorInterface::apply_inverse</a></div><div class="ttdeci">void apply_inverse(const RangeType &amp;range, SourceType &amp;source, const Dune::XT::Common::Parameter &amp;param={}) const </div><div class="ttdef"><b>Definition:</b> operators/interfaces.hh:123</div></div>
+<div class="ttc" id="a00760_html"><div class="ttname"><a href="a00760.html">Dune</a></div><div class="ttdef"><b>Definition:</b> codim0-matrix-datahandle.hh:8</div></div>
+<div class="ttc" id="a00442_html_ae117892cf6087e45662d242765530402"><div class="ttname"><a href="a00442.html#ae117892cf6087e45662d242765530402">Dune::GDT::OperatorInterface::jacobian</a></div><div class="ttdeci">JacobianType jacobian(const SourceType &amp;source, const Dune::XT::Common::Parameter &amp;param={}) const </div><div class="ttdef"><b>Definition:</b> operators/interfaces.hh:76</div></div>
+<div class="ttc" id="a00553_html"><div class="ttname"><a href="a00553.html">default.hh</a></div></div>
+<div class="ttc" id="a00442_html_a29f8d5d8be5b3de4aab5c8d1a48a211d"><div class="ttname"><a href="a00442.html#a29f8d5d8be5b3de4aab5c8d1a48a211d">Dune::GDT::OperatorInterface::apply_inverse</a></div><div class="ttdeci">void apply_inverse(const RangeType &amp;range, SourceType &amp;source, const std::string &amp;type, const Dune::XT::Common::Parameter &amp;param={}) const </div><div class="ttdef"><b>Definition:</b> operators/interfaces.hh:114</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:18 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:07 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

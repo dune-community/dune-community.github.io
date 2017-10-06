@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: Dune::GDT::ContainerBasedStationaryDiscretizationInterface&lt; Traits &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::DarcyOperator&lt; GridLayerImp, FunctionImp &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,73 +85,108 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00702.html">Dune</a></li><li class="navelem"><a class="el" href="a00703.html">GDT</a></li><li class="navelem"><a class="el" href="a00079.html">ContainerBasedStationaryDiscretizationInterface</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00760.html">Dune</a></li><li class="navelem"><a class="el" href="a00761.html">GDT</a></li><li class="navelem"><a class="el" href="a00079.html">DarcyOperator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00768.html">List of all members</a>  </div>
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="a00829.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::ContainerBasedStationaryDiscretizationInterface&lt; Traits &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::DarcyOperator&lt; GridLayerImp, FunctionImp &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00603_source.html">dune/gdt/discretizations/interfaces.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00547_source.html">dune/gdt/operators/darcy.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::ContainerBasedStationaryDiscretizationInterface&lt; Traits &gt;:</div>
+Inheritance diagram for Dune::GDT::DarcyOperator&lt; GridLayerImp, FunctionImp &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00769.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_container_based_stationary_discretization_interface_3_01_traits_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1_container_based_stationary_discretization_interface_3_01_traits_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_container_based_stationary_discretization_interface_3_01_traits_01_4_inherit__map">
+<div class="center"><img src="a00830.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_darcy_operator_3_01_grid_layer_imp_00_01_function_imp_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_darcy_operator_3_01_grid_layer_imp_00_01_function_imp_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_darcy_operator_3_01_grid_layer_imp_00_01_function_imp_01_4_inherit__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a9d93d7965fc704761bea14a36ec19af5"><td class="memItemLeft" align="right" valign="top">typedef Traits::MatrixType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00079.html#a9d93d7965fc704761bea14a36ec19af5">MatrixType</a></td></tr>
-<tr class="separator:a9d93d7965fc704761bea14a36ec19af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3df6c50bfc99c3afa038f9a9af4b0dfb"><td class="memItemLeft" align="right" valign="top">typedef Traits::VectorType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00079.html#a3df6c50bfc99c3afa038f9a9af4b0dfb">VectorType</a></td></tr>
-<tr class="separator:a3df6c50bfc99c3afa038f9a9af4b0dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7139f17d1c03e0d867c7be4751d116b3"><td class="memItemLeft" align="right" valign="top">typedef Traits::ProblemType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00449.html#a7139f17d1c03e0d867c7be4751d116b3">ProblemType</a></td></tr>
-<tr class="separator:a7139f17d1c03e0d867c7be4751d116b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3818860eb029ce02e97707444006935e"><td class="memItemLeft" align="right" valign="top">typedef Traits::AnsatzSpaceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00449.html#a3818860eb029ce02e97707444006935e">AnsatzSpaceType</a></td></tr>
-<tr class="separator:a3818860eb029ce02e97707444006935e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97b9d353a68cd5e118cf9ad2735f1281"><td class="memItemLeft" align="right" valign="top">typedef Traits::TestSpaceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00449.html#a97b9d353a68cd5e118cf9ad2735f1281">TestSpaceType</a></td></tr>
-<tr class="separator:a97b9d353a68cd5e118cf9ad2735f1281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5149b5fd2a2551b9084de6647ac31024"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+<a class="el" href="a00080.html">internal::DarcyOperatorTraits</a><br class="typebreak" />
+&lt; GridLayerImp, FunctionImp &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00079.html#a5149b5fd2a2551b9084de6647ac31024">Traits</a></td></tr>
+<tr class="separator:a5149b5fd2a2551b9084de6647ac31024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e3b651161bf363ae1a68330365550a8"><td class="memItemLeft" align="right" valign="top">typedef Traits::GridLayerType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00079.html#a8e3b651161bf363ae1a68330365550a8">GridLayerType</a></td></tr>
+<tr class="separator:a8e3b651161bf363ae1a68330365550a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af72542ca7a7b4e6fa17d38e128641c6f"><td class="memItemLeft" align="right" valign="top">typedef Traits::FieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00079.html#af72542ca7a7b4e6fa17d38e128641c6f">FieldType</a></td></tr>
+<tr class="separator:af72542ca7a7b4e6fa17d38e128641c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad568de9cb18553574a0a09402175f5b0"><td class="memItemLeft" align="right" valign="top">typedef Traits::JacobianType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00079.html#ad568de9cb18553574a0a09402175f5b0">JacobianType</a></td></tr>
+<tr class="separator:ad568de9cb18553574a0a09402175f5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b21f8d3ed0b7741b543fcb335892ef4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00079.html#a9b21f8d3ed0b7741b543fcb335892ef4">EntityType</a> = XT::Grid::extract_entity_t&lt; <a class="el" href="a00079.html#a8e3b651161bf363ae1a68330365550a8">GridLayerType</a> &gt;</td></tr>
+<tr class="separator:a9b21f8d3ed0b7741b543fcb335892ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67cd7c3e563b8bac3bb03d7f6997cfa5"><td class="memItemLeft" align="right" valign="top">typedef GridLayerType::ctype&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00079.html#a67cd7c3e563b8bac3bb03d7f6997cfa5">DomainFieldType</a></td></tr>
+<tr class="separator:a67cd7c3e563b8bac3bb03d7f6997cfa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a297fe211e3b06536d26d9ff3ee3cc2ee"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+<a class="el" href="a00080.html">internal::DarcyOperatorTraits</a><br class="typebreak" />
+&lt; GridLayerImp, FunctionImp &gt;<br class="typebreak" />
+::<a class="el" href="a00442.html#a297fe211e3b06536d26d9ff3ee3cc2ee">derived_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00442.html#a297fe211e3b06536d26d9ff3ee3cc2ee">derived_type</a></td></tr>
+<tr class="separator:a297fe211e3b06536d26d9ff3ee3cc2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9f3f29c66c58aeb8ad7187a7e6402a03"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00449.html#a3df6c50bfc99c3afa038f9a9af4b0dfb">VectorType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00079.html#a9f3f29c66c58aeb8ad7187a7e6402a03">dirichlet_shift</a> () const </td></tr>
-<tr class="memdesc:a9f3f29c66c58aeb8ad7187a7e6402a03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Dirichlet shift.  <a href="#a9f3f29c66c58aeb8ad7187a7e6402a03">More...</a><br /></td></tr>
-<tr class="separator:a9f3f29c66c58aeb8ad7187a7e6402a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Have to be implemented by any derived class.</div></td></tr>
-<tr class="memitem:a89f1d5934e023e746aad7e1d873e8043"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00079.html#a9d93d7965fc704761bea14a36ec19af5">MatrixType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00079.html#a89f1d5934e023e746aad7e1d873e8043">system_matrix</a> () const </td></tr>
-<tr class="separator:a89f1d5934e023e746aad7e1d873e8043"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2eb49dafb8a2c5c29b6dc26a07ac8b8a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00449.html#a3df6c50bfc99c3afa038f9a9af4b0dfb">VectorType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00079.html#a2eb49dafb8a2c5c29b6dc26a07ac8b8a">rhs_vector</a> () const </td></tr>
-<tr class="separator:a2eb49dafb8a2c5c29b6dc26a07ac8b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14ce2d088da71173c34cf3041d70ca93"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00079.html#a14ce2d088da71173c34cf3041d70ca93">has_dirichlet_shift</a> () const </td></tr>
-<tr class="separator:a14ce2d088da71173c34cf3041d70ca93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Provided by the interface for convenience.</div></td></tr>
-<tr class="memitem:a55fa3d47be2dccc5e44b09ccadfeb5ed"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00079.html#a55fa3d47be2dccc5e44b09ccadfeb5ed">solver_types</a> () const </td></tr>
-<tr class="separator:a55fa3d47be2dccc5e44b09ccadfeb5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35d8733e237317d1fd07a9825b405301"><td class="memItemLeft" align="right" valign="top">XT::Common::Configuration&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00079.html#a35d8733e237317d1fd07a9825b405301">solver_options</a> (const std::string type=&quot;&quot;) const </td></tr>
-<tr class="separator:a35d8733e237317d1fd07a9825b405301"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd5d24a2a82333b61e48f8f84dd57777"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00079.html#acd5d24a2a82333b61e48f8f84dd57777">solve</a> (<a class="el" href="a00449.html#a3df6c50bfc99c3afa038f9a9af4b0dfb">VectorType</a> &amp;solution, const XT::Common::Configuration &amp;options) const </td></tr>
-<tr class="separator:acd5d24a2a82333b61e48f8f84dd57777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abccf049fe7fc06cc3e5f500f0841e4d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00079.html#abccf049fe7fc06cc3e5f500f0841e4d6">DarcyOperator</a> (const <a class="el" href="a00079.html#a8e3b651161bf363ae1a68330365550a8">GridLayerType</a> &amp;grd_vw, const FunctionImp &amp;function)</td></tr>
+<tr class="separator:abccf049fe7fc06cc3e5f500f0841e4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3a259e9b46126f2048f5dec36d670d1"><td class="memTemplParams" colspan="2">template&lt;class S , class V , size_t r, size_t rC&gt; </td></tr>
+<tr class="memitem:ae3a259e9b46126f2048f5dec36d670d1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00079.html#ae3a259e9b46126f2048f5dec36d670d1">apply</a> (const XT::Functions::LocalizableFunctionInterface&lt; <a class="el" href="a00079.html#a9b21f8d3ed0b7741b543fcb335892ef4">EntityType</a>, <a class="el" href="a00079.html#a67cd7c3e563b8bac3bb03d7f6997cfa5">DomainFieldType</a>, <a class="el" href="a00079.html#a5d183daf2845cea5bfc2bcec9e9a0314">dimDomain</a>, <a class="el" href="a00079.html#af72542ca7a7b4e6fa17d38e128641c6f">FieldType</a>, r, rC &gt; &amp;source, <a class="el" href="a00107.html">DiscreteFunction</a>&lt; S, V &gt; &amp;range, const Dune::XT::Common::Parameter &amp;param={}) const </td></tr>
+<tr class="memdesc:ae3a259e9b46126f2048f5dec36d670d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the operator.  <a href="#ae3a259e9b46126f2048f5dec36d670d1">More...</a><br /></td></tr>
+<tr class="separator:ae3a259e9b46126f2048f5dec36d670d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a298b87692dc06dd835f9af8278ee5083"><td class="memTemplParams" colspan="2">template&lt;class SourceType &gt; </td></tr>
+<tr class="memitem:a298b87692dc06dd835f9af8278ee5083"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00079.html#ad568de9cb18553574a0a09402175f5b0">JacobianType</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00079.html#a298b87692dc06dd835f9af8278ee5083">jacobian</a> (const SourceType &amp;, const Dune::XT::Common::Parameter &amp;={}) const </td></tr>
+<tr class="separator:a298b87692dc06dd835f9af8278ee5083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade6b4b70a10c051f3560f2cf15bc453a"><td class="memTemplParams" colspan="2">template&lt;class SourceType &gt; </td></tr>
+<tr class="memitem:ade6b4b70a10c051f3560f2cf15bc453a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00079.html#ade6b4b70a10c051f3560f2cf15bc453a">jacobian</a> (const SourceType &amp;, <a class="el" href="a00079.html#ad568de9cb18553574a0a09402175f5b0">JacobianType</a> &amp;, const Dune::XT::Common::Parameter &amp;={}) const </td></tr>
+<tr class="separator:ade6b4b70a10c051f3560f2cf15bc453a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Methods that have to be implemented by any derived class</div></td></tr>
+<tr class="memitem:ad7a6deb78d9b17deeb539674aae55bd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00442.html#ad7a6deb78d9b17deeb539674aae55bd5">apply</a> (const SourceType &amp;source, RangeType &amp;range, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
+<tr class="separator:ad7a6deb78d9b17deeb539674aae55bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc13061fd719e2a80c8755f391dde7d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00079.html#af72542ca7a7b4e6fa17d38e128641c6f">FieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00442.html#afc13061fd719e2a80c8755f391dde7d3">apply2</a> (const RangeType &amp;range, const SourceType &amp;source, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
+<tr class="separator:afc13061fd719e2a80c8755f391dde7d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacfda4614f16b470190a356a62717b01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00442.html#aacfda4614f16b470190a356a62717b01">jacobian</a> (const SourceType &amp;source, <a class="el" href="a00079.html#ad568de9cb18553574a0a09402175f5b0">JacobianType</a> &amp;jac, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
+<tr class="separator:aacfda4614f16b470190a356a62717b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9652e5f4cac175cdbece27339cf27e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00442.html#ae9652e5f4cac175cdbece27339cf27e8">apply_inverse</a> (const RangeType &amp;range, SourceType &amp;source, const XT::Common::Configuration &amp;opts, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
+<tr class="separator:ae9652e5f4cac175cdbece27339cf27e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73c1ab8a58b54d058dbcb9cb4a3dfbcf"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00442.html#a73c1ab8a58b54d058dbcb9cb4a3dfbcf">invert_options</a> () const</td></tr>
+<tr class="separator:a73c1ab8a58b54d058dbcb9cb4a3dfbcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16e9651ae77ff0e3ec7b91b827e84a25"><td class="memItemLeft" align="right" valign="top">XT::Common::Configuration&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00442.html#a16e9651ae77ff0e3ec7b91b827e84a25">invert_options</a> (const std::string &amp;type) const</td></tr>
+<tr class="separator:a16e9651ae77ff0e3ec7b91b827e84a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Provided by the interface for convenience</div></td></tr>
+<tr class="memitem:a29f8d5d8be5b3de4aab5c8d1a48a211d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00442.html#a29f8d5d8be5b3de4aab5c8d1a48a211d">apply_inverse</a> (const RangeType &amp;range, SourceType &amp;source, const std::string &amp;type, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
+<tr class="separator:a29f8d5d8be5b3de4aab5c8d1a48a211d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d97680c7b18ce80e4fe7b0edf3b17e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00442.html#a2d97680c7b18ce80e4fe7b0edf3b17e1">apply_inverse</a> (const RangeType &amp;range, SourceType &amp;source, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
+<tr class="separator:a2d97680c7b18ce80e4fe7b0edf3b17e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5378687b90665fdd4dffa8d6d0e11dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00079.html#af72542ca7a7b4e6fa17d38e128641c6f">FieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00442.html#ae5378687b90665fdd4dffa8d6d0e11dd">induced_norm</a> (const RangeType &amp;range, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
+<tr class="separator:ae5378687b90665fdd4dffa8d6d0e11dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a5d183daf2845cea5bfc2bcec9e9a0314"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00079.html#a5d183daf2845cea5bfc2bcec9e9a0314">dimDomain</a> = GridLayerType::dimension</td></tr>
+<tr class="separator:a5d183daf2845cea5bfc2bcec9e9a0314"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a3818860eb029ce02e97707444006935e"></a>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class GridLayerImp, class FunctionImp&gt;<br />
+class Dune::GDT::DarcyOperator&lt; GridLayerImp, FunctionImp &gt;</h3>
+
+<dl class="section note"><dt>Note</dt><dd>Only works for scalar valued function atm. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="a00778.html#_todo000027">Todo:</a></b></dt><dd>add make_darcy_operator </dd></dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a297fe211e3b06536d26d9ff3ee3cc2ee"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef Traits::AnsatzSpaceType <a class="el" href="a00449.html">Dune::GDT::StationaryDiscretizationInterface</a>&lt; Traits &gt;::<a class="el" href="a00449.html#a3818860eb029ce02e97707444006935e">AnsatzSpaceType</a></td>
+          <td class="memname">typedef <a class="el" href="a00080.html">internal::DarcyOperatorTraits</a>&lt; GridLayerImp, FunctionImp &gt; ::<a class="el" href="a00442.html#a297fe211e3b06536d26d9ff3ee3cc2ee">derived_type</a> <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00080.html">internal::DarcyOperatorTraits</a>&lt; GridLayerImp, FunctionImp &gt;  &gt;::<a class="el" href="a00442.html#a297fe211e3b06536d26d9ff3ee3cc2ee">derived_type</a></td>
         </tr>
       </table>
   </td>
@@ -163,93 +198,201 @@ template&lt;class Traits&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a9d93d7965fc704761bea14a36ec19af5"></a>
+<a class="anchor" id="a67cd7c3e563b8bac3bb03d7f6997cfa5"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Traits&gt; </div>
+template&lt;class GridLayerImp , class FunctionImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef Traits::MatrixType <a class="el" href="a00079.html">Dune::GDT::ContainerBasedStationaryDiscretizationInterface</a>&lt; Traits &gt;::<a class="el" href="a00079.html#a9d93d7965fc704761bea14a36ec19af5">MatrixType</a></td>
+          <td class="memname">typedef GridLayerType::ctype <a class="el" href="a00079.html">Dune::GDT::DarcyOperator</a>&lt; GridLayerImp, FunctionImp &gt;::<a class="el" href="a00079.html#a67cd7c3e563b8bac3bb03d7f6997cfa5">DomainFieldType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a7139f17d1c03e0d867c7be4751d116b3"></a>
+<a class="anchor" id="a9b21f8d3ed0b7741b543fcb335892ef4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Traits&gt; </div>
+template&lt;class GridLayerImp , class FunctionImp &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a00079.html">Dune::GDT::DarcyOperator</a>&lt; GridLayerImp, FunctionImp &gt;::<a class="el" href="a00079.html#a9b21f8d3ed0b7741b543fcb335892ef4">EntityType</a> =  XT::Grid::extract_entity_t&lt;<a class="el" href="a00079.html#a8e3b651161bf363ae1a68330365550a8">GridLayerType</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af72542ca7a7b4e6fa17d38e128641c6f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class FunctionImp &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Traits::FieldType <a class="el" href="a00079.html">Dune::GDT::DarcyOperator</a>&lt; GridLayerImp, FunctionImp &gt;::<a class="el" href="a00079.html#af72542ca7a7b4e6fa17d38e128641c6f">FieldType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8e3b651161bf363ae1a68330365550a8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class FunctionImp &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Traits::GridLayerType <a class="el" href="a00079.html">Dune::GDT::DarcyOperator</a>&lt; GridLayerImp, FunctionImp &gt;::<a class="el" href="a00079.html#a8e3b651161bf363ae1a68330365550a8">GridLayerType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad568de9cb18553574a0a09402175f5b0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class FunctionImp &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Traits::JacobianType <a class="el" href="a00079.html">Dune::GDT::DarcyOperator</a>&lt; GridLayerImp, FunctionImp &gt;::<a class="el" href="a00079.html#ad568de9cb18553574a0a09402175f5b0">JacobianType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5149b5fd2a2551b9084de6647ac31024"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class FunctionImp &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00080.html">internal::DarcyOperatorTraits</a>&lt;GridLayerImp, FunctionImp&gt; <a class="el" href="a00079.html">Dune::GDT::DarcyOperator</a>&lt; GridLayerImp, FunctionImp &gt;::<a class="el" href="a00079.html#a5149b5fd2a2551b9084de6647ac31024">Traits</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="abccf049fe7fc06cc3e5f500f0841e4d6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class FunctionImp &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef Traits::ProblemType <a class="el" href="a00449.html">Dune::GDT::StationaryDiscretizationInterface</a>&lt; Traits &gt;::<a class="el" href="a00449.html#a7139f17d1c03e0d867c7be4751d116b3">ProblemType</a></td>
+          <td class="memname"><a class="el" href="a00079.html">Dune::GDT::DarcyOperator</a>&lt; GridLayerImp, FunctionImp &gt;::<a class="el" href="a00079.html">DarcyOperator</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00079.html#a8e3b651161bf363ae1a68330365550a8">GridLayerType</a> &amp;&#160;</td>
+          <td class="paramname"><em>grd_vw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FunctionImp &amp;&#160;</td>
+          <td class="paramname"><em>function</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a97b9d353a68cd5e118cf9ad2735f1281"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef Traits::TestSpaceType <a class="el" href="a00449.html">Dune::GDT::StationaryDiscretizationInterface</a>&lt; Traits &gt;::<a class="el" href="a00449.html#a97b9d353a68cd5e118cf9ad2735f1281">TestSpaceType</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a3df6c50bfc99c3afa038f9a9af4b0dfb"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef Traits::VectorType <a class="el" href="a00449.html">Dune::GDT::StationaryDiscretizationInterface</a>&lt; Traits &gt;::<a class="el" href="a00449.html#a3df6c50bfc99c3afa038f9a9af4b0dfb">VectorType</a></td>
-        </tr>
-      </table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a9f3f29c66c58aeb8ad7187a7e6402a03"></a>
+<a class="anchor" id="ad7a6deb78d9b17deeb539674aae55bd5"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a00449.html#a3df6c50bfc99c3afa038f9a9af4b0dfb">VectorType</a>&amp; <a class="el" href="a00079.html">Dune::GDT::ContainerBasedStationaryDiscretizationInterface</a>&lt; Traits &gt;::dirichlet_shift </td>
+          <td class="memname">void <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00080.html">internal::DarcyOperatorTraits</a>&lt; GridLayerImp, FunctionImp &gt;  &gt;::apply </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RangeType &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae3a259e9b46126f2048f5dec36d670d1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class FunctionImp &gt; </div>
+<div class="memtemplate">
+template&lt;class S , class V , size_t r, size_t rC&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00079.html">Dune::GDT::DarcyOperator</a>&lt; GridLayerImp, FunctionImp &gt;::apply </td>
+          <td>(</td>
+          <td class="paramtype">const XT::Functions::LocalizableFunctionInterface&lt; <a class="el" href="a00079.html#a9b21f8d3ed0b7741b543fcb335892ef4">EntityType</a>, <a class="el" href="a00079.html#a67cd7c3e563b8bac3bb03d7f6997cfa5">DomainFieldType</a>, <a class="el" href="a00079.html#a5d183daf2845cea5bfc2bcec9e9a0314">dimDomain</a>, <a class="el" href="a00079.html#af72542ca7a7b4e6fa17d38e128641c6f">FieldType</a>, r, rC &gt; &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00107.html">DiscreteFunction</a>&lt; S, V &gt; &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -259,81 +402,327 @@ template&lt;class Traits&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the Dirichlet shift. </p>
-<dl class="section note"><dt>Note</dt><dd>This method has to be implemented, if <a class="el" href="a00079.html#a14ce2d088da71173c34cf3041d70ca93">has_dirichlet_shift()</a> returns false! </dd></dl>
+<p>Applies the operator. </p>
+<dl class="section note"><dt>Note</dt><dd>See redirect_apply for the implementation (depending on the type of the range space). </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>redirect_apply </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a14ce2d088da71173c34cf3041d70ca93"></a>
+<a class="anchor" id="afc13061fd719e2a80c8755f391dde7d3"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="a00079.html">Dune::GDT::ContainerBasedStationaryDiscretizationInterface</a>&lt; Traits &gt;::has_dirichlet_shift </td>
+          <td class="memname"><a class="el" href="a00079.html#af72542ca7a7b4e6fa17d38e128641c6f">FieldType</a> <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00080.html">internal::DarcyOperatorTraits</a>&lt; GridLayerImp, FunctionImp &gt;  &gt;::apply2 </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const RangeType &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a2eb49dafb8a2c5c29b6dc26a07ac8b8a"></a>
+<a class="anchor" id="ae9652e5f4cac175cdbece27339cf27e8"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a00449.html#a3df6c50bfc99c3afa038f9a9af4b0dfb">VectorType</a>&amp; <a class="el" href="a00079.html">Dune::GDT::ContainerBasedStationaryDiscretizationInterface</a>&lt; Traits &gt;::rhs_vector </td>
+          <td class="memname">void <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00080.html">internal::DarcyOperatorTraits</a>&lt; GridLayerImp, FunctionImp &gt;  &gt;::apply_inverse </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const RangeType &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="acd5d24a2a82333b61e48f8f84dd57777"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00079.html">Dune::GDT::ContainerBasedStationaryDiscretizationInterface</a>&lt; Traits &gt;::solve </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00449.html#a3df6c50bfc99c3afa038f9a9af4b0dfb">VectorType</a> &amp;&#160;</td>
-          <td class="paramname"><em>solution</em>, </td>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const XT::Common::Configuration &amp;&#160;</td>
-          <td class="paramname"><em>options</em>&#160;</td>
+          <td class="paramname"><em>opts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a29f8d5d8be5b3de4aab5c8d1a48a211d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00080.html">internal::DarcyOperatorTraits</a>&lt; GridLayerImp, FunctionImp &gt;  &gt;::apply_inverse </td>
+          <td>(</td>
+          <td class="paramtype">const RangeType &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2d97680c7b18ce80e4fe7b0edf3b17e1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00080.html">internal::DarcyOperatorTraits</a>&lt; GridLayerImp, FunctionImp &gt;  &gt;::apply_inverse </td>
+          <td>(</td>
+          <td class="paramtype">const RangeType &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae5378687b90665fdd4dffa8d6d0e11dd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00079.html#af72542ca7a7b4e6fa17d38e128641c6f">FieldType</a> <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00080.html">internal::DarcyOperatorTraits</a>&lt; GridLayerImp, FunctionImp &gt;  &gt;::induced_norm </td>
+          <td>(</td>
+          <td class="paramtype">const RangeType &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a73c1ab8a58b54d058dbcb9cb4a3dfbcf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00080.html">internal::DarcyOperatorTraits</a>&lt; GridLayerImp, FunctionImp &gt;  &gt;::invert_options </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a16e9651ae77ff0e3ec7b91b827e84a25"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XT::Common::Configuration <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00080.html">internal::DarcyOperatorTraits</a>&lt; GridLayerImp, FunctionImp &gt;  &gt;::invert_options </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aacfda4614f16b470190a356a62717b01"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00080.html">internal::DarcyOperatorTraits</a>&lt; GridLayerImp, FunctionImp &gt;  &gt;::jacobian </td>
+          <td>(</td>
+          <td class="paramtype">const SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00442.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a> &amp;&#160;</td>
+          <td class="paramname"><em>jac</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a298b87692dc06dd835f9af8278ee5083"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class FunctionImp &gt; </div>
+<div class="memtemplate">
+template&lt;class SourceType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00079.html#ad568de9cb18553574a0a09402175f5b0">JacobianType</a> <a class="el" href="a00079.html">Dune::GDT::DarcyOperator</a>&lt; GridLayerImp, FunctionImp &gt;::jacobian </td>
+          <td>(</td>
+          <td class="paramtype">const SourceType &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -350,21 +739,39 @@ template&lt;class Traits&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a35d8733e237317d1fd07a9825b405301"></a>
+<a class="anchor" id="ade6b4b70a10c051f3560f2cf15bc453a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Traits&gt; </div>
+template&lt;class GridLayerImp , class FunctionImp &gt; </div>
+<div class="memtemplate">
+template&lt;class SourceType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">XT::Common::Configuration <a class="el" href="a00079.html">Dune::GDT::ContainerBasedStationaryDiscretizationInterface</a>&lt; Traits &gt;::solver_options </td>
+          <td class="memname">void <a class="el" href="a00079.html">Dune::GDT::DarcyOperator</a>&lt; GridLayerImp, FunctionImp &gt;::jacobian </td>
           <td>(</td>
-          <td class="paramtype">const std::string&#160;</td>
-          <td class="paramname"><em>type</em> = <code>&quot;&quot;</code></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const SourceType &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00079.html#ad568de9cb18553574a0a09402175f5b0">JacobianType</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -376,50 +783,23 @@ template&lt;class Traits&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a55fa3d47be2dccc5e44b09ccadfeb5ed"></a>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a5d183daf2845cea5bfc2bcec9e9a0314"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Traits&gt; </div>
+template&lt;class GridLayerImp , class FunctionImp &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::string&gt; <a class="el" href="a00079.html">Dune::GDT::ContainerBasedStationaryDiscretizationInterface</a>&lt; Traits &gt;::solver_types </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="memname">const size_t <a class="el" href="a00079.html">Dune::GDT::DarcyOperator</a>&lt; GridLayerImp, FunctionImp &gt;::dimDomain = GridLayerType::dimension</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a89f1d5934e023e746aad7e1d873e8043"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="a00079.html#a9d93d7965fc704761bea14a36ec19af5">MatrixType</a>&amp; <a class="el" href="a00079.html">Dune::GDT::ContainerBasedStationaryDiscretizationInterface</a>&lt; Traits &gt;::system_matrix </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -427,12 +807,12 @@ template&lt;class Traits&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00603_source.html">discretizations/interfaces.hh</a></li>
+<li><a class="el" href="a00547_source.html">darcy.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:18 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:10 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

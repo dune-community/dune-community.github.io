@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: Dune::GDT::internal::LocalFvRhsNewtonIntegrandTraits&lt; RhsEvaluationImp, SourceType &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::LocalFaceFunctionalAssemblerFunctor&lt; TestSpaceType, VectorType, GridLayerType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,159 +85,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00702.html">Dune</a></li><li class="navelem"><a class="el" href="a00703.html">GDT</a></li><li class="navelem"><a class="el" href="a00707.html">internal</a></li><li class="navelem"><a class="el" href="a00348.html">LocalFvRhsNewtonIntegrandTraits</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00760.html">Dune</a></li><li class="navelem"><a class="el" href="a00761.html">GDT</a></li><li class="navelem"><a class="el" href="a00348.html">LocalFaceFunctionalAssemblerFunctor</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="a01272.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::LocalFvRhsNewtonIntegrandTraits&lt; RhsEvaluationImp, SourceType &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::LocalFaceFunctionalAssemblerFunctor&lt; TestSpaceType, VectorType, GridLayerType &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00584_source.html">dune/gdt/local/integrands/fv.hh</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a2971b028cbd312527a5f181e1f64b38a"><td class="memItemLeft" align="right" valign="top">typedef RhsEvaluationImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00348.html#a2971b028cbd312527a5f181e1f64b38a">RhsEvaluationType</a></td></tr>
-<tr class="separator:a2971b028cbd312527a5f181e1f64b38a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeffa74ee45634c42196ff44895ed89c9"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-RhsEvaluationImp::EntityType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00348.html#aeffa74ee45634c42196ff44895ed89c9">EntityType</a></td></tr>
-<tr class="separator:aeffa74ee45634c42196ff44895ed89c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7da3acef9feab94f2436d3aa3ef3445"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-RhsEvaluationImp::DomainFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00348.html#ae7da3acef9feab94f2436d3aa3ef3445">DomainFieldType</a></td></tr>
-<tr class="separator:ae7da3acef9feab94f2436d3aa3ef3445"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cf901f9ae04a102ba8f164d87a2ffc6"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-<a class="el" href="a00347.html">LocalFvRhsNewtonIntegrand</a><br class="typebreak" />
-&lt; RhsEvaluationImp, SourceType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00348.html#a0cf901f9ae04a102ba8f164d87a2ffc6">derived_type</a></td></tr>
-<tr class="separator:a0cf901f9ae04a102ba8f164d87a2ffc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9ec28d4c170fef1b4682d547ad0fee8"><td class="memItemLeft" align="right" valign="top">typedef std::tuple&lt; size_t, <br class="typebreak" />
-std::unique_ptr&lt; typename <br class="typebreak" />
-SourceType::LocalfunctionType &gt;<br class="typebreak" />
-, typename <br class="typebreak" />
-SourceType::SpaceType::GridLayerType::ctype &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00348.html#aa9ec28d4c170fef1b4682d547ad0fee8">LocalfunctionTupleType</a></td></tr>
-<tr class="separator:aa9ec28d4c170fef1b4682d547ad0fee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:ae904e45ff467c1b889293b609389a1f8"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00348.html#ae904e45ff467c1b889293b609389a1f8">dimDomain</a> = RhsEvaluationImp::dimDomain</td></tr>
-<tr class="separator:ae904e45ff467c1b889293b609389a1f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
+<p><code>#include &lt;<a class="el" href="a00686_source.html">dune/gdt/assembler/local-assemblers.hh</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Dune::GDT::LocalFaceFunctionalAssemblerFunctor&lt; TestSpaceType, VectorType, GridLayerType &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="a01061.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_local_face_functional_assembler_functor_3_01_test_space_type_00_01_vector_type_00_01_grid_layer_type_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_local_face_functional_assembler_functor_3_01_test_space_type_00_01_vector_type_00_01_grid_layer_type_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_local_face_functional_assembler_functor_3_01_test_space_type_00_01_vector_type_00_01_grid_layer_type_01_4_inherit__map">
+</map>
+</div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class RhsEvaluationImp, class SourceType&gt;<br />
-class Dune::GDT::internal::LocalFvRhsNewtonIntegrandTraits&lt; RhsEvaluationImp, SourceType &gt;</h3>
+<div class="textblock"><h3>template&lt;class TestSpaceType, class VectorType, class GridLayerType = typename TestSpaceType::GridLayerType&gt;<br />
+class Dune::GDT::LocalFaceFunctionalAssemblerFunctor&lt; TestSpaceType, VectorType, GridLayerType &gt;</h3>
 
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">RhsEvaluationImp</td><td>Right-hand side function derived from RhsEvaluationInterface </td></tr>
-    <tr><td class="paramname">SourceType</td><td><a class="el" href="a00102.html">DiscreteFunction</a> that contains the values u_i </td></tr>
-  </table>
-  </dd>
-</dl>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a0cf901f9ae04a102ba8f164d87a2ffc6"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a00347.html">LocalFvRhsNewtonIntegrand</a>&lt;RhsEvaluationImp, SourceType&gt; <a class="el" href="a00348.html">Dune::GDT::internal::LocalFvRhsNewtonIntegrandTraits</a>&lt; RhsEvaluationImp, SourceType &gt;::<a class="el" href="a00348.html#a0cf901f9ae04a102ba8f164d87a2ffc6">derived_type</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae7da3acef9feab94f2436d3aa3ef3445"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef RhsEvaluationImp::DomainFieldType <a class="el" href="a00348.html">Dune::GDT::internal::LocalFvRhsNewtonIntegrandTraits</a>&lt; RhsEvaluationImp, SourceType &gt;::<a class="el" href="a00348.html#ae7da3acef9feab94f2436d3aa3ef3445">DomainFieldType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aeffa74ee45634c42196ff44895ed89c9"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef RhsEvaluationImp::EntityType <a class="el" href="a00348.html">Dune::GDT::internal::LocalFvRhsNewtonIntegrandTraits</a>&lt; RhsEvaluationImp, SourceType &gt;::<a class="el" href="a00348.html#aeffa74ee45634c42196ff44895ed89c9">EntityType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aa9ec28d4c170fef1b4682d547ad0fee8"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::tuple&lt;size_t, std::unique_ptr&lt;typename SourceType::LocalfunctionType&gt;, typename SourceType::SpaceType::GridLayerType::ctype&gt; <a class="el" href="a00348.html">Dune::GDT::internal::LocalFvRhsNewtonIntegrandTraits</a>&lt; RhsEvaluationImp, SourceType &gt;::<a class="el" href="a00348.html#aa9ec28d4c170fef1b4682d547ad0fee8">LocalfunctionTupleType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2971b028cbd312527a5f181e1f64b38a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef RhsEvaluationImp <a class="el" href="a00348.html">Dune::GDT::internal::LocalFvRhsNewtonIntegrandTraits</a>&lt; RhsEvaluationImp, SourceType &gt;::<a class="el" href="a00348.html#a2971b028cbd312527a5f181e1f64b38a">RhsEvaluationType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ae904e45ff467c1b889293b609389a1f8"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const size_t <a class="el" href="a00348.html">Dune::GDT::internal::LocalFvRhsNewtonIntegrandTraits</a>&lt; RhsEvaluationImp, SourceType &gt;::dimDomain = RhsEvaluationImp::dimDomain</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00584_source.html">local/integrands/fv.hh</a></li>
+<dl class="todo"><dt><b><a class="el" href="a00778.html#_todo000006">Todo:</a></b></dt><dd><dl class="section attention"><dt>Attention</dt><dd>Rename <a class="el" href="a00348.html">LocalFaceFunctionalAssemblerFunctor</a> -&gt; <a class="el" href="a00347.html">LocalFaceFunctionalAssembler</a> after removing the latter! </dd></dl>
+</dd></dl>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="a00686_source.html">local-assemblers.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:20 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:10 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

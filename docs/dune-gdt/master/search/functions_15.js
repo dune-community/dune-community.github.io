@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['weightedl2localizableproduct',['WeightedL2LocalizableProduct',['../a00461.html#a2ecf1d2236a65c76b0c41055adb74579',1,'Dune::GDT::WeightedL2LocalizableProduct::WeightedL2LocalizableProduct(const WeightFunctionType &amp;weight, GridLayer grd_layr, const Range &amp;rng, const Source &amp;src, const XT::Common::Parameter &amp;param={})'],['../a00461.html#acefe6c76bd8a94a4565d9420184b7863',1,'Dune::GDT::WeightedL2LocalizableProduct::WeightedL2LocalizableProduct(const size_t over_integrate, const WeightFunctionType &amp;weight, GridLayer grd_layr, const Range &amp;rng, const Source &amp;src, const XT::Common::Parameter &amp;param={})']]],
-  ['weightedl2matrixoperator',['WeightedL2MatrixOperator',['../a00462.html#a302edab811e6e3d02bd1727cf990732b',1,'Dune::GDT::WeightedL2MatrixOperator::WeightedL2MatrixOperator(const WeightFunctionType &amp;weight, Args &amp;&amp;...args)'],['../a00462.html#a5de8724628ae422113afe2509342fa2f',1,'Dune::GDT::WeightedL2MatrixOperator::WeightedL2MatrixOperator(const size_t over_integrate, const WeightFunctionType &amp;weight, Args &amp;&amp;...args)']]],
-  ['weightedl2operator',['WeightedL2Operator',['../a00463.html#a6c0ceb8b442ae221745b658863f0e42b',1,'Dune::GDT::WeightedL2Operator']]]
+  ['_7egodunovfluximplementation',['~GodunovFluxImplementation',['../a00177.html#ab3affe1c3299cfcbe25733f5adafbc32',1,'Dune::GDT::internal::GodunovFluxImplementation']]],
+  ['_7elaxfriedrichsfluximplementation',['~LaxFriedrichsFluxImplementation',['../a00296.html#a6e7365d49aa9d8c79375948dea2bc9c0',1,'Dune::GDT::internal::LaxFriedrichsFluxImplementation']]],
+  ['_7elocaldofvector',['~LocalDoFVector',['../a00344.html#a3bb4f203827468bb5184f6ba7f54c6ad',1,'Dune::GDT::LocalDoFVector']]],
+  ['_7elocalreconstructionfvoperator',['~LocalReconstructionFvOperator',['../a00393.html#a1bdfab3707bf800eb98fd88e9404e121',1,'Dune::GDT::LocalReconstructionFvOperator']]],
+  ['_7etimestepperinterface',['~TimeStepperInterface',['../a00501.html#a0afdc13c4080764674f0deaf9249e37c',1,'Dune::GDT::TimeStepperInterface']]]
 ];

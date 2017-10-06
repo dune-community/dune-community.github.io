@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: Dune::GDT::SpaceProvider&lt; G, layer, SpaceType::block_fv, backend, p, R, r, rC, g &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::internal::MustaLocalNumericalCouplingFluxTraits&lt; AnalyticalFluxImp, LocalizableFunctionImp &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,71 +85,79 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00702.html">Dune</a></li><li class="navelem"><a class="el" href="a00703.html">GDT</a></li><li class="navelem"><a class="el" href="a00437.html">SpaceProvider< G, layer, SpaceType::block_fv, backend, p, R, r, rC, g ></a></li>  </ul>
+<li class="navelem"><a class="el" href="a00760.html">Dune</a></li><li class="navelem"><a class="el" href="a00761.html">GDT</a></li><li class="navelem"><a class="el" href="a00766.html">internal</a></li><li class="navelem"><a class="el" href="a00437.html">MustaLocalNumericalCouplingFluxTraits</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="a01080.html">List of all members</a>  </div>
+<a href="a01402.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::SpaceProvider&lt; G, layer, SpaceType::block_fv, backend, p, R, r, rC, g &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::internal::MustaLocalNumericalCouplingFluxTraits&lt; AnalyticalFluxImp, LocalizableFunctionImp &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00669_source.html">dune/gdt/spaces.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00689_source.html">dune/gdt/local/fluxes/musta.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::SpaceProvider&lt; G, layer, SpaceType::block_fv, backend, p, R, r, rC, g &gt;:</div>
+Inheritance diagram for Dune::GDT::internal::MustaLocalNumericalCouplingFluxTraits&lt; AnalyticalFluxImp, LocalizableFunctionImp &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01081.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_space_provider_3_01_g_00_01layer_00_01_space_type_1_1block__fv_00_01backend_00_01p_00_01_r_00_01r_00_01r_c_00_01g_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1_space_provider_3_01_g_00_01layer_00_01_space_type_1_1block__fv_00_01backend_00_01p_00_01_r_00_01r_00_01r_c_00_01g_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_space_provider_3_01_g_00_01layer_00_01_space_type_1_1block__fv_00_01backend_00_01p_00_01_r_00_01r_00_01r_c_00_01g_01_4_inherit__map">
+<div class="center"><img src="a01403.png" border="0" usemap="#_dune_1_1_g_d_t_1_1internal_1_1_musta_local_numerical_coupling_flux_traits_3_01_analytical_flux_imp_00_01_localizable_function_imp_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1internal_1_1_musta_local_numerical_coupling_flux_traits_3_01_analytical_flux_imp_00_01_localizable_function_imp_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1internal_1_1_musta_local_numerical_coupling_flux_traits_3_01_analytical_flux_imp_00_01_localizable_function_imp_01_4_inherit__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a8ee0202a2443d35ecb8850640980b000"><td class="memItemLeft" align="right" valign="top">typedef XT::Grid::Layer&lt; G, <br class="typebreak" />
-<a class="el" href="a00038.html#a47d18505694f163f7193d600ce991a46">grid_layer</a>, <a class="el" href="a00038.html#a243c13bb772672906fa70188c2c9108d">layer_backend</a> &gt;<br class="typebreak" />
-::<a class="el" href="a00038.html#a72bc831be7cc6eafd9431b3a3a35d091">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00038.html#a8ee0202a2443d35ecb8850640980b000">GridLayerType</a></td></tr>
-<tr class="separator:a8ee0202a2443d35ecb8850640980b000"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed7396d13d2899b7d1785c190f755c21"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00044.html">GDT::BlockSpace</a><br class="typebreak" />
-&lt; LocalType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00038.html#aed7396d13d2899b7d1785c190f755c21">Type</a></td></tr>
-<tr class="separator:aed7396d13d2899b7d1785c190f755c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72bc831be7cc6eafd9431b3a3a35d091"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00038.html#aed7396d13d2899b7d1785c190f755c21">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00038.html#a72bc831be7cc6eafd9431b3a3a35d091">type</a></td></tr>
-<tr class="separator:a72bc831be7cc6eafd9431b3a3a35d091"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a7c3163b21bde33ec6835d5b527f53a4d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00038.html#aed7396d13d2899b7d1785c190f755c21">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00038.html#a7c3163b21bde33ec6835d5b527f53a4d">create</a> (<a class="el" href="a00038.html#a8ee0202a2443d35ecb8850640980b000">GridLayerType</a>)</td></tr>
-<tr class="separator:a7c3163b21bde33ec6835d5b527f53a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c46f5870e446e3821d26dcdb172f746"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00038.html#aed7396d13d2899b7d1785c190f755c21">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00038.html#a5c46f5870e446e3821d26dcdb172f746">create</a> (XT::Grid::GridProvider&lt; G, DdGridType &gt; &amp;, const int=0)</td></tr>
-<tr class="separator:a5c46f5870e446e3821d26dcdb172f746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39ce6cc7d77e6ed4e53e96cbef868e63"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+<a class="el" href="a00436.html">MustaLocalNumericalCouplingFlux</a><br class="typebreak" />
+&lt; AnalyticalFluxImp, <br class="typebreak" />
+LocalizableFunctionImp &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00437.html#a39ce6cc7d77e6ed4e53e96cbef868e63">derived_type</a></td></tr>
+<tr class="separator:a39ce6cc7d77e6ed4e53e96cbef868e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25c1afdb1a0cf3c8c63b468d3831f301"><td class="memItemLeft" align="right" valign="top">typedef AnalyticalFluxImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00181.html#a25c1afdb1a0cf3c8c63b468d3831f301">AnalyticalFluxType</a></td></tr>
+<tr class="separator:a25c1afdb1a0cf3c8c63b468d3831f301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab92f9099fca3acd1c19a3b7604f7dfae"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+AnalyticalFluxType::EntityType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00181.html#ab92f9099fca3acd1c19a3b7604f7dfae">EntityType</a></td></tr>
+<tr class="separator:ab92f9099fca3acd1c19a3b7604f7dfae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e971fe360066b2306c0e03da1f3995f"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+AnalyticalFluxType::DomainFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00181.html#a7e971fe360066b2306c0e03da1f3995f">DomainFieldType</a></td></tr>
+<tr class="separator:a7e971fe360066b2306c0e03da1f3995f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a051968fb1affcaa8f6daa0fb7ae19458"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+AnalyticalFluxType::DomainType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00181.html#a051968fb1affcaa8f6daa0fb7ae19458">DomainType</a></td></tr>
+<tr class="separator:a051968fb1affcaa8f6daa0fb7ae19458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3b1d5db7829cc9da3a49e128b337fda"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+AnalyticalFluxType::RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00181.html#ab3b1d5db7829cc9da3a49e128b337fda">RangeFieldType</a></td></tr>
+<tr class="separator:ab3b1d5db7829cc9da3a49e128b337fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21d4a86df91a58434ec3a76b9c3f68d8"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+AnalyticalFluxType::StateRangeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00181.html#a21d4a86df91a58434ec3a76b9c3f68d8">RangeType</a></td></tr>
+<tr class="separator:a21d4a86df91a58434ec3a76b9c3f68d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd92ef81cec9f220aa07c63b4b3e7de7"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+AnalyticalFluxType::LocalfunctionType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00181.html#acd92ef81cec9f220aa07c63b4b3e7de7">AnalyticalFluxLocalfunctionType</a></td></tr>
+<tr class="separator:acd92ef81cec9f220aa07c63b4b3e7de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8c5272bdd9cae7a85e2ad1c64a64a29"><td class="memItemLeft" align="right" valign="top">typedef std::tuple<br class="typebreak" />
+&lt; std::shared_ptr<br class="typebreak" />
+&lt; <a class="el" href="a00181.html#acd92ef81cec9f220aa07c63b4b3e7de7">AnalyticalFluxLocalfunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00181.html#aa8c5272bdd9cae7a85e2ad1c64a64a29">LocalfunctionTupleType</a></td></tr>
+<tr class="separator:aa8c5272bdd9cae7a85e2ad1c64a64a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a387951c02d09494eeea8511164bf386a"><td class="memItemLeft" align="right" valign="top">static const constexpr <a class="el" href="a00703.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00038.html#a387951c02d09494eeea8511164bf386a">space_type</a></td></tr>
-<tr class="separator:a387951c02d09494eeea8511164bf386a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6249f70855c6c667ac1e07c89ce2b697"><td class="memItemLeft" align="right" valign="top">static const constexpr <a class="el" href="a00703.html#afd9e79bf2e05d76e877c835fa352f045">Backends</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00038.html#a6249f70855c6c667ac1e07c89ce2b697">space_backend</a></td></tr>
-<tr class="separator:a6249f70855c6c667ac1e07c89ce2b697"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47d18505694f163f7193d600ce991a46"><td class="memItemLeft" align="right" valign="top">static const constexpr <br class="typebreak" />
-XT::Grid::Layers&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00038.html#a47d18505694f163f7193d600ce991a46">grid_layer</a></td></tr>
-<tr class="separator:a47d18505694f163f7193d600ce991a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a243c13bb772672906fa70188c2c9108d"><td class="memItemLeft" align="right" valign="top">static const constexpr <br class="typebreak" />
-XT::Grid::Backends&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00038.html#a243c13bb772672906fa70188c2c9108d">layer_backend</a></td></tr>
-<tr class="separator:a243c13bb772672906fa70188c2c9108d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4681675dc11f77b57dd95c3cd639b414"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00181.html#a4681675dc11f77b57dd95c3cd639b414">dimDomain</a> = AnalyticalFluxType::dimDomain</td></tr>
+<tr class="separator:a4681675dc11f77b57dd95c3cd639b414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca65b08093dd2cf8a646b0368d48a749"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00181.html#aca65b08093dd2cf8a646b0368d48a749">dimRange</a> = AnalyticalFluxType::dimRange</td></tr>
+<tr class="separator:aca65b08093dd2cf8a646b0368d48a749"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a8ee0202a2443d35ecb8850640980b000"></a>
+<a class="anchor" id="acd92ef81cec9f220aa07c63b4b3e7de7"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class AnalyticalFluxImp&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef XT::Grid::Layer&lt;G , <a class="el" href="a00038.html#a47d18505694f163f7193d600ce991a46">grid_layer</a>, <a class="el" href="a00038.html#a243c13bb772672906fa70188c2c9108d">layer_backend</a>&gt;::<a class="el" href="a00038.html#a72bc831be7cc6eafd9431b3a3a35d091">type</a> <a class="el" href="a00038.html">Dune::GDT::BlockFvSpaceProvider</a>&lt; G , layer_type, backend_type, R , dimRange, dimRangeCols, grid_backend_type &gt;::<a class="el" href="a00038.html#a8ee0202a2443d35ecb8850640980b000">GridLayerType</a></td>
+          <td class="memname">typedef AnalyticalFluxType::LocalfunctionType <a class="el" href="a00181.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::<a class="el" href="a00181.html#acd92ef81cec9f220aa07c63b4b3e7de7">AnalyticalFluxLocalfunctionType</a></td>
         </tr>
       </table>
   </td>
@@ -161,15 +169,17 @@ XT::Grid::Backends&#160;</td><td class="memItemRight" valign="bottom"><a class="
 
 </div>
 </div>
-<a class="anchor" id="aed7396d13d2899b7d1785c190f755c21"></a>
+<a class="anchor" id="a25c1afdb1a0cf3c8c63b468d3831f301"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class AnalyticalFluxImp&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00044.html">GDT::BlockSpace</a>&lt;LocalType&gt; <a class="el" href="a00038.html">Dune::GDT::BlockFvSpaceProvider</a>&lt; G , layer_type, backend_type, R , dimRange, dimRangeCols, grid_backend_type &gt;::<a class="el" href="a00038.html#aed7396d13d2899b7d1785c190f755c21">Type</a></td>
+          <td class="memname">typedef AnalyticalFluxImp <a class="el" href="a00181.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::<a class="el" href="a00181.html#a25c1afdb1a0cf3c8c63b468d3831f301">AnalyticalFluxType</a></td>
         </tr>
       </table>
   </td>
@@ -181,15 +191,31 @@ XT::Grid::Backends&#160;</td><td class="memItemRight" valign="bottom"><a class="
 
 </div>
 </div>
-<a class="anchor" id="a72bc831be7cc6eafd9431b3a3a35d091"></a>
+<a class="anchor" id="a39ce6cc7d77e6ed4e53e96cbef868e63"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class AnalyticalFluxImp , class LocalizableFunctionImp &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00436.html">MustaLocalNumericalCouplingFlux</a>&lt;AnalyticalFluxImp, LocalizableFunctionImp&gt; <a class="el" href="a00437.html">Dune::GDT::internal::MustaLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp, LocalizableFunctionImp &gt;::<a class="el" href="a00181.html#a725b875d9dbe7a3901932cd6f7c688b7">derived_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7e971fe360066b2306c0e03da1f3995f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AnalyticalFluxImp&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00038.html#aed7396d13d2899b7d1785c190f755c21">Type</a> <a class="el" href="a00038.html">Dune::GDT::BlockFvSpaceProvider</a>&lt; G , layer_type, backend_type, R , dimRange, dimRangeCols, grid_backend_type &gt;::<a class="el" href="a00038.html#a72bc831be7cc6eafd9431b3a3a35d091">type</a></td>
+          <td class="memname">typedef AnalyticalFluxType::DomainFieldType <a class="el" href="a00181.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::<a class="el" href="a00181.html#a7e971fe360066b2306c0e03da1f3995f">DomainFieldType</a></td>
         </tr>
       </table>
   </td>
@@ -201,59 +227,110 @@ XT::Grid::Backends&#160;</td><td class="memItemRight" valign="bottom"><a class="
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a7c3163b21bde33ec6835d5b527f53a4d"></a>
+<a class="anchor" id="a051968fb1affcaa8f6daa0fb7ae19458"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class AnalyticalFluxImp&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="a00038.html#aed7396d13d2899b7d1785c190f755c21">Type</a> <a class="el" href="a00038.html">Dune::GDT::BlockFvSpaceProvider</a>&lt; G , layer_type, backend_type, R , dimRange, dimRangeCols, grid_backend_type &gt;::create </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00038.html#a8ee0202a2443d35ecb8850640980b000">GridLayerType</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">typedef AnalyticalFluxType::DomainType <a class="el" href="a00181.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::<a class="el" href="a00181.html#a051968fb1affcaa8f6daa0fb7ae19458">DomainType</a></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a5c46f5870e446e3821d26dcdb172f746"></a>
+<a class="anchor" id="ab92f9099fca3acd1c19a3b7604f7dfae"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class AnalyticalFluxImp&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="a00038.html#aed7396d13d2899b7d1785c190f755c21">Type</a> <a class="el" href="a00038.html">Dune::GDT::BlockFvSpaceProvider</a>&lt; G , layer_type, backend_type, R , dimRange, dimRangeCols, grid_backend_type &gt;::create </td>
-          <td>(</td>
-          <td class="paramtype">XT::Grid::GridProvider&lt; G , DdGridType &gt; &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">typedef AnalyticalFluxType::EntityType <a class="el" href="a00181.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::<a class="el" href="a00181.html#ab92f9099fca3acd1c19a3b7604f7dfae">EntityType</a></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa8c5272bdd9cae7a85e2ad1c64a64a29"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AnalyticalFluxImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tuple&lt;std::shared_ptr&lt;<a class="el" href="a00181.html#acd92ef81cec9f220aa07c63b4b3e7de7">AnalyticalFluxLocalfunctionType</a>&gt; &gt; <a class="el" href="a00181.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::<a class="el" href="a00181.html#aa8c5272bdd9cae7a85e2ad1c64a64a29">LocalfunctionTupleType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab3b1d5db7829cc9da3a49e128b337fda"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AnalyticalFluxImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef AnalyticalFluxType::RangeFieldType <a class="el" href="a00181.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::<a class="el" href="a00181.html#ab3b1d5db7829cc9da3a49e128b337fda">RangeFieldType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a21d4a86df91a58434ec3a76b9c3f68d8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AnalyticalFluxImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef AnalyticalFluxType::StateRangeType <a class="el" href="a00181.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::<a class="el" href="a00181.html#a21d4a86df91a58434ec3a76b9c3f68d8">RangeType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -261,15 +338,17 @@ XT::Grid::Backends&#160;</td><td class="memItemRight" valign="bottom"><a class="
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a47d18505694f163f7193d600ce991a46"></a>
+<a class="anchor" id="a4681675dc11f77b57dd95c3cd639b414"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class AnalyticalFluxImp&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const constexpr XT::Grid::Layers <a class="el" href="a00038.html">Dune::GDT::BlockFvSpaceProvider</a>&lt; G , layer_type, backend_type, R , dimRange, dimRangeCols, grid_backend_type &gt;::grid_layer</td>
+          <td class="memname">const size_t <a class="el" href="a00181.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::dimDomain = AnalyticalFluxType::dimDomain</td>
         </tr>
       </table>
   </td>
@@ -281,55 +360,17 @@ XT::Grid::Backends&#160;</td><td class="memItemRight" valign="bottom"><a class="
 
 </div>
 </div>
-<a class="anchor" id="a243c13bb772672906fa70188c2c9108d"></a>
+<a class="anchor" id="aca65b08093dd2cf8a646b0368d48a749"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class AnalyticalFluxImp&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const constexpr XT::Grid::Backends <a class="el" href="a00038.html">Dune::GDT::BlockFvSpaceProvider</a>&lt; G , layer_type, backend_type, R , dimRange, dimRangeCols, grid_backend_type &gt;::layer_backend</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a6249f70855c6c667ac1e07c89ce2b697"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const constexpr <a class="el" href="a00703.html#afd9e79bf2e05d76e877c835fa352f045">Backends</a> <a class="el" href="a00038.html">Dune::GDT::BlockFvSpaceProvider</a>&lt; G , layer_type, backend_type, R , dimRange, dimRangeCols, grid_backend_type &gt;::space_backend</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a387951c02d09494eeea8511164bf386a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const constexpr <a class="el" href="a00703.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> <a class="el" href="a00038.html">Dune::GDT::BlockFvSpaceProvider</a>&lt; G , layer_type, backend_type, R , dimRange, dimRangeCols, grid_backend_type &gt;::space_type</td>
+          <td class="memname">const size_t <a class="el" href="a00181.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::dimRange = AnalyticalFluxType::dimRange</td>
         </tr>
       </table>
   </td>
@@ -342,12 +383,12 @@ XT::Grid::Backends&#160;</td><td class="memItemRight" valign="bottom"><a class="
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00669_source.html">spaces.hh</a></li>
+<li><a class="el" href="a00689_source.html">local/fluxes/musta.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:19 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:11 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

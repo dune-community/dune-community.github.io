@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: rosenbrock.hh File Reference</title>
+<title>dune-gdt: kinetic.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -83,59 +83,68 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_eaee94ab3c5b11ce8fcab1cb9d405304.html">src</a></li><li class="navelem"><a class="el" href="dir_58c354ae22a30254506a25a39957e8ba.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_16224573f43954b382d54ec1df2a2147.html">dune</a></li><li class="navelem"><a class="el" href="dir_f1992dd472896fb89117bdc8155a3e1c.html">gdt</a></li><li class="navelem"><a class="el" href="dir_c0688d8f58f2ac48be580c635590bfde.html">playground</a></li><li class="navelem"><a class="el" href="dir_0e9b29016191d51171bff26d65ec04e7.html">timestepper</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_eaee94ab3c5b11ce8fcab1cb9d405304.html">src</a></li><li class="navelem"><a class="el" href="dir_58c354ae22a30254506a25a39957e8ba.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_16224573f43954b382d54ec1df2a2147.html">dune</a></li><li class="navelem"><a class="el" href="dir_f1992dd472896fb89117bdc8155a3e1c.html">gdt</a></li><li class="navelem"><a class="el" href="dir_7df66b530ab698acb840d3fba4a971eb.html">local</a></li><li class="navelem"><a class="el" href="dir_d11b86b133e4ec0cf3d7e9282f3e5c58.html">fluxes</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">rosenbrock.hh File Reference</div>  </div>
+<div class="title">local/fluxes/kinetic.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;utility&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00609_source.html">dune/gdt/operators/interfaces.hh</a>&gt;</code><br />
-<code>#include &lt;dune/xt/common/memory.hh&gt;</code><br />
-<code>#include &lt;dune/xt/common/string.hh&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00602_source.html">dune/gdt/timestepper/interface.hh</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;tuple&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;dune/common/dynmatrix.hh&gt;</code><br />
+<code>#include &lt;dune/common/typetraits.hh&gt;</code><br />
+<code>#include &lt;dune/geometry/referenceelements.hh&gt;</code><br />
+<code>#include &lt;dune/grid/yaspgrid.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/fmatrix.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/parameter.hh&gt;</code><br />
+<code>#include &lt;dune/xt/functions/interfaces.hh&gt;</code><br />
+<code>#include &lt;dune/xt/functions/constant.hh&gt;</code><br />
+<code>#include &lt;dune/xt/la/container/eigen.hh&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00654_source.html">interfaces.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00599_source.html">entropybased.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00639_source.html">godunov.hh</a>&quot;</code><br />
 </div>
 <p><a href="a00660_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00427.html">Dune::GDT::internal::RosenbrockButcherArrayProvider&lt; RangeFieldType, method &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00258.html">Dune::GDT::KineticLocalNumericalCouplingFlux&lt; AnalyticalFluxImp, BasisfunctionImp, GridLayerImp, quadratureDim &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kinetic flux evaluation for inner intersections and periodic boundary intersections.  <a href="a00258.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00428.html">Dune::GDT::internal::RosenbrockButcherArrayProvider&lt; RangeFieldType, RosenbrockTimeStepperMethods::GRK4A &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html">Dune::GDT::KineticLocalNumericalBoundaryFlux&lt; AnalyticalFluxImp, BoundaryValueImp, BasisfunctionImp, GridLayerImp, quadratureDim &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kinetic flux evaluation for Dirichlet boundary intersections.  <a href="a00256.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00429.html">Dune::GDT::internal::RosenbrockButcherArrayProvider&lt; RangeFieldType, RosenbrockTimeStepperMethods::GRK4T &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00259.html">Dune::GDT::internal::KineticLocalNumericalCouplingFluxTraits&lt; AnalyticalFluxImp, BasisfunctionImp, GridLayerImp, quadratureDim &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00430.html">Dune::GDT::RosenbrockTimeStepper&lt; OperatorImp, DiscreteFunctionImp, SolverImp, method &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time stepper using Rosenbrock-type methods.  <a href="a00430.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00257.html">Dune::GDT::internal::KineticLocalNumericalBoundaryFluxTraits&lt; AnalyticalFluxImp, BoundaryValueImp, BasisfunctionImp, GridLayerImp, quadratureDim &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00255.html">Dune::GDT::internal::KineticFluxImplementation&lt; Traits &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00258.html">Dune::GDT::KineticLocalNumericalCouplingFlux&lt; AnalyticalFluxImp, BasisfunctionImp, GridLayerImp, quadratureDim &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kinetic flux evaluation for inner intersections and periodic boundary intersections.  <a href="a00258.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00256.html">Dune::GDT::KineticLocalNumericalBoundaryFlux&lt; AnalyticalFluxImp, BoundaryValueImp, BasisfunctionImp, GridLayerImp, quadratureDim &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kinetic flux evaluation for Dirichlet boundary intersections.  <a href="a00256.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00702"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00702.html">Dune</a></td></tr>
+<tr class="memitem:a00760"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00760.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00703"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00703.html">Dune::GDT</a></td></tr>
+<tr class="memitem:a00761"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00761.html">Dune::GDT</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00707"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00707.html">Dune::GDT::internal</a></td></tr>
+<tr class="memitem:a00766"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00766.html">Dune::GDT::internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a5a9b3478d77a16697bf06fa3f949e0fa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00703.html#a5a9b3478d77a16697bf06fa3f949e0fa">Dune::GDT::RosenbrockTimeStepperMethods</a> { <a class="el" href="a00703.html#a5a9b3478d77a16697bf06fa3f949e0faaefc42475d5c88b4e9d7e08dfeda6ef8b">Dune::GDT::RosenbrockTimeStepperMethods::GRK4A</a>, 
-<a class="el" href="a00703.html#a5a9b3478d77a16697bf06fa3f949e0faa9ed047981c608fb1716e2edee87aa5fc">Dune::GDT::RosenbrockTimeStepperMethods::GRK4T</a>, 
-<a class="el" href="a00703.html#a5a9b3478d77a16697bf06fa3f949e0faa795f3202b17cb6bc3d4b771d8c6c9eaf">Dune::GDT::RosenbrockTimeStepperMethods::other</a>
- }</td></tr>
-<tr class="separator:a5a9b3478d77a16697bf06fa3f949e0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:18 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:09 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

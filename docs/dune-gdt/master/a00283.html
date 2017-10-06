@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: Dune::GDT::internal::LaxFriedrichsLocalDirichletNumericalBoundaryFluxTraits&lt; AnalyticalFluxImp, BoundaryValueImp, LocalizableFunctionImp &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::L2ProlongationOperator&lt; GridLayerImp, FieldImp &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,89 +85,98 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00702.html">Dune</a></li><li class="navelem"><a class="el" href="a00703.html">GDT</a></li><li class="navelem"><a class="el" href="a00707.html">internal</a></li><li class="navelem"><a class="el" href="a00283.html">LaxFriedrichsLocalDirichletNumericalBoundaryFluxTraits</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00760.html">Dune</a></li><li class="navelem"><a class="el" href="a00761.html">GDT</a></li><li class="navelem"><a class="el" href="a00283.html">L2ProlongationOperator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="a01243.html">List of all members</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a00997.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::LaxFriedrichsLocalDirichletNumericalBoundaryFluxTraits&lt; AnalyticalFluxImp, BoundaryValueImp, LocalizableFunctionImp &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::L2ProlongationOperator&lt; GridLayerImp, FieldImp &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00629_source.html">dune/gdt/local/fluxes/laxfriedrichs.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00674_source.html">dune/gdt/prolongations/l2.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::internal::LaxFriedrichsLocalDirichletNumericalBoundaryFluxTraits&lt; AnalyticalFluxImp, BoundaryValueImp, LocalizableFunctionImp &gt;:</div>
+Inheritance diagram for Dune::GDT::L2ProlongationOperator&lt; GridLayerImp, FieldImp &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01244.png" border="0" usemap="#_dune_1_1_g_d_t_1_1internal_1_1_lax_friedrichs_local_dirichlet_numerical_boundary_flux_traits_3_01_analytical_flux_imp_00_01_boundary_value_imp_00_01_localizable_function_imp_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1internal_1_1_lax_friedrichs_local_dirichlet_numerical_boundary_flux_traits_3_01_analytical_flux_imp_00_01_boundary_value_imp_00_01_localizable_function_imp_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1internal_1_1_lax_friedrichs_local_dirichlet_numerical_boundary_flux_traits_3_01_analytical_flux_imp_00_01_boundary_value_imp_00_01_localizable_function_imp_01_4_inherit__map">
+<div class="center"><img src="a00998.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_l2_prolongation_operator_3_01_grid_layer_imp_00_01_field_imp_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_l2_prolongation_operator_3_01_grid_layer_imp_00_01_field_imp_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_l2_prolongation_operator_3_01_grid_layer_imp_00_01_field_imp_01_4_inherit__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:af0bbc6abd791b87c5b3f7e16f512e009"><td class="memItemLeft" align="right" valign="top">typedef BoundaryValueImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00283.html#af0bbc6abd791b87c5b3f7e16f512e009">BoundaryValueType</a></td></tr>
-<tr class="separator:af0bbc6abd791b87c5b3f7e16f512e009"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c3ee9d2012a2e4775ef8ef4e28fa341"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-BoundaryValueType::LocalfunctionType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00283.html#a1c3ee9d2012a2e4775ef8ef4e28fa341">BoundaryValueLocalfunctionType</a></td></tr>
-<tr class="separator:a1c3ee9d2012a2e4775ef8ef4e28fa341"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6045dc726a37d668c065ca18a1d46139"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-<a class="el" href="a00282.html">LaxFriedrichsLocalDirichletNumericalBoundaryFlux</a><br class="typebreak" />
-&lt; AnalyticalFluxImp, <br class="typebreak" />
-BoundaryValueImp, <br class="typebreak" />
-LocalizableFunctionImp &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00283.html#a6045dc726a37d668c065ca18a1d46139">derived_type</a></td></tr>
-<tr class="separator:a6045dc726a37d668c065ca18a1d46139"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55879163950cada5f20b1234b2b9c43d"><td class="memItemLeft" align="right" valign="top">typedef std::tuple<br class="typebreak" />
-&lt; std::shared_ptr<br class="typebreak" />
-&lt; <a class="el" href="a00169.html#acd92ef81cec9f220aa07c63b4b3e7de7">AnalyticalFluxLocalfunctionType</a> &gt;<br class="typebreak" />
-, std::shared_ptr<br class="typebreak" />
-&lt; LocalfunctionType &gt;<br class="typebreak" />
-, std::shared_ptr<br class="typebreak" />
-&lt; <a class="el" href="a00283.html#a1c3ee9d2012a2e4775ef8ef4e28fa341">BoundaryValueLocalfunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00283.html#a55879163950cada5f20b1234b2b9c43d">LocalfunctionTupleType</a></td></tr>
-<tr class="separator:a55879163950cada5f20b1234b2b9c43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25c1afdb1a0cf3c8c63b468d3831f301"><td class="memItemLeft" align="right" valign="top">typedef AnalyticalFluxImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html#a25c1afdb1a0cf3c8c63b468d3831f301">AnalyticalFluxType</a></td></tr>
-<tr class="separator:a25c1afdb1a0cf3c8c63b468d3831f301"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab92f9099fca3acd1c19a3b7604f7dfae"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-AnalyticalFluxType::EntityType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html#ab92f9099fca3acd1c19a3b7604f7dfae">EntityType</a></td></tr>
-<tr class="separator:ab92f9099fca3acd1c19a3b7604f7dfae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e971fe360066b2306c0e03da1f3995f"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-AnalyticalFluxType::DomainFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html#a7e971fe360066b2306c0e03da1f3995f">DomainFieldType</a></td></tr>
-<tr class="separator:a7e971fe360066b2306c0e03da1f3995f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a051968fb1affcaa8f6daa0fb7ae19458"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-AnalyticalFluxType::DomainType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html#a051968fb1affcaa8f6daa0fb7ae19458">DomainType</a></td></tr>
-<tr class="separator:a051968fb1affcaa8f6daa0fb7ae19458"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3b1d5db7829cc9da3a49e128b337fda"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-AnalyticalFluxType::RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html#ab3b1d5db7829cc9da3a49e128b337fda">RangeFieldType</a></td></tr>
-<tr class="separator:ab3b1d5db7829cc9da3a49e128b337fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21d4a86df91a58434ec3a76b9c3f68d8"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-AnalyticalFluxType::StateRangeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html#a21d4a86df91a58434ec3a76b9c3f68d8">RangeType</a></td></tr>
-<tr class="separator:a21d4a86df91a58434ec3a76b9c3f68d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd92ef81cec9f220aa07c63b4b3e7de7"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-AnalyticalFluxType::LocalfunctionType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html#acd92ef81cec9f220aa07c63b4b3e7de7">AnalyticalFluxLocalfunctionType</a></td></tr>
-<tr class="separator:acd92ef81cec9f220aa07c63b4b3e7de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00b39c5c7d6a25016edeb46b4eaf2501"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+<a class="el" href="a00284.html">internal::L2ProlongationOperatorTraits</a><br class="typebreak" />
+&lt; GridLayerImp, FieldImp &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00283.html#a00b39c5c7d6a25016edeb46b4eaf2501">Traits</a></td></tr>
+<tr class="separator:a00b39c5c7d6a25016edeb46b4eaf2501"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1463163dbf1d8ff6ad833cc597a97bb7"><td class="memItemLeft" align="right" valign="top">typedef GridLayerImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00283.html#a1463163dbf1d8ff6ad833cc597a97bb7">GridLayerType</a></td></tr>
+<tr class="separator:a1463163dbf1d8ff6ad833cc597a97bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e841c775a89ff47fe08faa97ef22386"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00284.html#a990836108f8fe41ddb3f114a205fb99f">Traits::FieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00283.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a></td></tr>
+<tr class="separator:a7e841c775a89ff47fe08faa97ef22386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a297fe211e3b06536d26d9ff3ee3cc2ee"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+<a class="el" href="a00284.html">internal::L2ProlongationOperatorTraits</a><br class="typebreak" />
+&lt; GridLayerImp, FieldImp &gt;<br class="typebreak" />
+::<a class="el" href="a00442.html#a297fe211e3b06536d26d9ff3ee3cc2ee">derived_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00442.html#a297fe211e3b06536d26d9ff3ee3cc2ee">derived_type</a></td></tr>
+<tr class="separator:a297fe211e3b06536d26d9ff3ee3cc2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7ab8db6061a613448bb8ce3269cdc79"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+<a class="el" href="a00284.html">internal::L2ProlongationOperatorTraits</a><br class="typebreak" />
+&lt; GridLayerImp, FieldImp &gt;<br class="typebreak" />
+::<a class="el" href="a00442.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00442.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a></td></tr>
+<tr class="separator:af7ab8db6061a613448bb8ce3269cdc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a4681675dc11f77b57dd95c3cd639b414"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html#a4681675dc11f77b57dd95c3cd639b414">dimDomain</a> = AnalyticalFluxType::dimDomain</td></tr>
-<tr class="separator:a4681675dc11f77b57dd95c3cd639b414"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca65b08093dd2cf8a646b0368d48a749"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html#aca65b08093dd2cf8a646b0368d48a749">dimRange</a> = AnalyticalFluxType::dimRange</td></tr>
-<tr class="separator:aca65b08093dd2cf8a646b0368d48a749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0bd2e8c293ef53ec16a0969252fb6e3a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00283.html#a0bd2e8c293ef53ec16a0969252fb6e3a">L2ProlongationOperator</a> (const size_t over_integrate, <a class="el" href="a00283.html#a1463163dbf1d8ff6ad833cc597a97bb7">GridLayerType</a> grid_layer)</td></tr>
+<tr class="separator:a0bd2e8c293ef53ec16a0969252fb6e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef7fa95aa4b4726c147597147677b08d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00283.html#aef7fa95aa4b4726c147597147677b08d">L2ProlongationOperator</a> (<a class="el" href="a00283.html#a1463163dbf1d8ff6ad833cc597a97bb7">GridLayerType</a> grid_layer)</td></tr>
+<tr class="separator:aef7fa95aa4b4726c147597147677b08d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51dac447b34b2dc241344c3370962e15"><td class="memTemplParams" colspan="2">template&lt;class SS , class SV , class RS , class RV &gt; </td></tr>
+<tr class="memitem:a51dac447b34b2dc241344c3370962e15"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00283.html#a51dac447b34b2dc241344c3370962e15">apply</a> (const <a class="el" href="a00071.html">ConstDiscreteFunction</a>&lt; SS, SV &gt; &amp;source, <a class="el" href="a00107.html">DiscreteFunction</a>&lt; RS, RV &gt; &amp;range, const XT::Common::Parameter &amp;param={}) const </td></tr>
+<tr class="separator:a51dac447b34b2dc241344c3370962e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77b679cd83eed055a3532c0bfe73ffb1"><td class="memTemplParams" colspan="2">template&lt;class RangeType , class SourceType &gt; </td></tr>
+<tr class="memitem:a77b679cd83eed055a3532c0bfe73ffb1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00283.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00283.html#a77b679cd83eed055a3532c0bfe73ffb1">apply2</a> (const RangeType &amp;, const SourceType &amp;, const XT::Common::Parameter &amp;={}) const </td></tr>
+<tr class="separator:a77b679cd83eed055a3532c0bfe73ffb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47c84171128bc2721a829fe70c40cd58"><td class="memTemplParams" colspan="2">template&lt;class RangeType , class SourceType &gt; </td></tr>
+<tr class="memitem:a47c84171128bc2721a829fe70c40cd58"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00283.html#a47c84171128bc2721a829fe70c40cd58">apply_inverse</a> (const RangeType &amp;, SourceType &amp;, const XT::Common::Configuration &amp;) const </td></tr>
+<tr class="separator:a47c84171128bc2721a829fe70c40cd58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafd5db34719333bd5e5214830fbfb604"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00283.html#aafd5db34719333bd5e5214830fbfb604">invert_options</a> () const </td></tr>
+<tr class="separator:aafd5db34719333bd5e5214830fbfb604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf21ba7c1a7ff6ffd3706af1f78ea541"><td class="memItemLeft" align="right" valign="top">XT::Common::Configuration&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00283.html#abf21ba7c1a7ff6ffd3706af1f78ea541">invert_options</a> (const std::string &amp;) const </td></tr>
+<tr class="separator:abf21ba7c1a7ff6ffd3706af1f78ea541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Methods that have to be implemented by any derived class</div></td></tr>
+<tr class="memitem:ad7a6deb78d9b17deeb539674aae55bd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00442.html#ad7a6deb78d9b17deeb539674aae55bd5">apply</a> (const SourceType &amp;source, RangeType &amp;range, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
+<tr class="separator:ad7a6deb78d9b17deeb539674aae55bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc13061fd719e2a80c8755f391dde7d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00283.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00442.html#afc13061fd719e2a80c8755f391dde7d3">apply2</a> (const RangeType &amp;range, const SourceType &amp;source, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
+<tr class="separator:afc13061fd719e2a80c8755f391dde7d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae117892cf6087e45662d242765530402"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00442.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00442.html#ae117892cf6087e45662d242765530402">jacobian</a> (const SourceType &amp;source, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
+<tr class="separator:ae117892cf6087e45662d242765530402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacfda4614f16b470190a356a62717b01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00442.html#aacfda4614f16b470190a356a62717b01">jacobian</a> (const SourceType &amp;source, <a class="el" href="a00442.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a> &amp;jac, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
+<tr class="separator:aacfda4614f16b470190a356a62717b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9652e5f4cac175cdbece27339cf27e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00442.html#ae9652e5f4cac175cdbece27339cf27e8">apply_inverse</a> (const RangeType &amp;range, SourceType &amp;source, const XT::Common::Configuration &amp;opts, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
+<tr class="separator:ae9652e5f4cac175cdbece27339cf27e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Provided by the interface for convenience</div></td></tr>
+<tr class="memitem:a29f8d5d8be5b3de4aab5c8d1a48a211d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00442.html#a29f8d5d8be5b3de4aab5c8d1a48a211d">apply_inverse</a> (const RangeType &amp;range, SourceType &amp;source, const std::string &amp;type, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
+<tr class="separator:a29f8d5d8be5b3de4aab5c8d1a48a211d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d97680c7b18ce80e4fe7b0edf3b17e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00442.html#a2d97680c7b18ce80e4fe7b0edf3b17e1">apply_inverse</a> (const RangeType &amp;range, SourceType &amp;source, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
+<tr class="separator:a2d97680c7b18ce80e4fe7b0edf3b17e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5378687b90665fdd4dffa8d6d0e11dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00283.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00442.html#ae5378687b90665fdd4dffa8d6d0e11dd">induced_norm</a> (const RangeType &amp;range, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
+<tr class="separator:ae5378687b90665fdd4dffa8d6d0e11dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="acd92ef81cec9f220aa07c63b4b3e7de7"></a>
+<a class="anchor" id="a297fe211e3b06536d26d9ff3ee3cc2ee"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class AnalyticalFluxImp&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef AnalyticalFluxType::LocalfunctionType <a class="el" href="a00169.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::<a class="el" href="a00169.html#acd92ef81cec9f220aa07c63b4b3e7de7">AnalyticalFluxLocalfunctionType</a></td>
+          <td class="memname">typedef <a class="el" href="a00284.html">internal::L2ProlongationOperatorTraits</a>&lt; GridLayerImp, FieldImp &gt; ::<a class="el" href="a00442.html#a297fe211e3b06536d26d9ff3ee3cc2ee">derived_type</a> <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00284.html">internal::L2ProlongationOperatorTraits</a>&lt; GridLayerImp, FieldImp &gt;  &gt;::<a class="el" href="a00442.html#a297fe211e3b06536d26d9ff3ee3cc2ee">derived_type</a></td>
         </tr>
       </table>
   </td>
@@ -179,17 +188,43 @@ template&lt;class AnalyticalFluxImp&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a25c1afdb1a0cf3c8c63b468d3831f301"></a>
+<a class="anchor" id="a7e841c775a89ff47fe08faa97ef22386"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp&gt; </div>
+template&lt;class GridLayerImp , class FieldImp &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00284.html#a990836108f8fe41ddb3f114a205fb99f">Traits::FieldType</a> <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00283.html#a00b39c5c7d6a25016edeb46b4eaf2501">Traits</a> &gt;::<a class="el" href="a00283.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1463163dbf1d8ff6ad833cc597a97bb7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class FieldImp &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef GridLayerImp <a class="el" href="a00283.html">Dune::GDT::L2ProlongationOperator</a>&lt; GridLayerImp, FieldImp &gt;::<a class="el" href="a00283.html#a1463163dbf1d8ff6ad833cc597a97bb7">GridLayerType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af7ab8db6061a613448bb8ce3269cdc79"></a>
+<div class="memitem">
+<div class="memproto">
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef AnalyticalFluxImp <a class="el" href="a00169.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::<a class="el" href="a00169.html#a25c1afdb1a0cf3c8c63b468d3831f301">AnalyticalFluxType</a></td>
+          <td class="memname">typedef <a class="el" href="a00284.html">internal::L2ProlongationOperatorTraits</a>&lt; GridLayerImp, FieldImp &gt; ::<a class="el" href="a00442.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a> <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00284.html">internal::L2ProlongationOperatorTraits</a>&lt; GridLayerImp, FieldImp &gt;  &gt;::<a class="el" href="a00442.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a></td>
         </tr>
       </table>
   </td>
@@ -201,211 +236,581 @@ template&lt;class AnalyticalFluxImp&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a1c3ee9d2012a2e4775ef8ef4e28fa341"></a>
+<a class="anchor" id="a00b39c5c7d6a25016edeb46b4eaf2501"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp, class BoundaryValueImp, class LocalizableFunctionImp&gt; </div>
+template&lt;class GridLayerImp , class FieldImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef BoundaryValueType::LocalfunctionType <a class="el" href="a00283.html">Dune::GDT::internal::LaxFriedrichsLocalDirichletNumericalBoundaryFluxTraits</a>&lt; AnalyticalFluxImp, BoundaryValueImp, LocalizableFunctionImp &gt;::<a class="el" href="a00283.html#a1c3ee9d2012a2e4775ef8ef4e28fa341">BoundaryValueLocalfunctionType</a></td>
+          <td class="memname">typedef <a class="el" href="a00284.html">internal::L2ProlongationOperatorTraits</a>&lt;GridLayerImp, FieldImp&gt; <a class="el" href="a00283.html">Dune::GDT::L2ProlongationOperator</a>&lt; GridLayerImp, FieldImp &gt;::<a class="el" href="a00283.html#a00b39c5c7d6a25016edeb46b4eaf2501">Traits</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="af0bbc6abd791b87c5b3f7e16f512e009"></a>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a0bd2e8c293ef53ec16a0969252fb6e3a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp, class BoundaryValueImp, class LocalizableFunctionImp&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef BoundaryValueImp <a class="el" href="a00283.html">Dune::GDT::internal::LaxFriedrichsLocalDirichletNumericalBoundaryFluxTraits</a>&lt; AnalyticalFluxImp, BoundaryValueImp, LocalizableFunctionImp &gt;::<a class="el" href="a00283.html#af0bbc6abd791b87c5b3f7e16f512e009">BoundaryValueType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a6045dc726a37d668c065ca18a1d46139"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class AnalyticalFluxImp, class BoundaryValueImp, class LocalizableFunctionImp&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a00282.html">LaxFriedrichsLocalDirichletNumericalBoundaryFlux</a>&lt;AnalyticalFluxImp, BoundaryValueImp, LocalizableFunctionImp&gt; <a class="el" href="a00283.html">Dune::GDT::internal::LaxFriedrichsLocalDirichletNumericalBoundaryFluxTraits</a>&lt; AnalyticalFluxImp, BoundaryValueImp, LocalizableFunctionImp &gt;::<a class="el" href="a00169.html#a725b875d9dbe7a3901932cd6f7c688b7">derived_type</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a7e971fe360066b2306c0e03da1f3995f"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class AnalyticalFluxImp&gt; </div>
+template&lt;class GridLayerImp , class FieldImp &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef AnalyticalFluxType::DomainFieldType <a class="el" href="a00169.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::<a class="el" href="a00169.html#a7e971fe360066b2306c0e03da1f3995f">DomainFieldType</a></td>
+          <td class="memname"><a class="el" href="a00283.html">Dune::GDT::L2ProlongationOperator</a>&lt; GridLayerImp, FieldImp &gt;::<a class="el" href="a00283.html">L2ProlongationOperator</a> </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>over_integrate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00283.html#a1463163dbf1d8ff6ad833cc597a97bb7">GridLayerType</a>&#160;</td>
+          <td class="paramname"><em>grid_layer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a051968fb1affcaa8f6daa0fb7ae19458"></a>
+<a class="anchor" id="aef7fa95aa4b4726c147597147677b08d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp&gt; </div>
+template&lt;class GridLayerImp , class FieldImp &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef AnalyticalFluxType::DomainType <a class="el" href="a00169.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::<a class="el" href="a00169.html#a051968fb1affcaa8f6daa0fb7ae19458">DomainType</a></td>
+          <td class="memname"><a class="el" href="a00283.html">Dune::GDT::L2ProlongationOperator</a>&lt; GridLayerImp, FieldImp &gt;::<a class="el" href="a00283.html">L2ProlongationOperator</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00283.html#a1463163dbf1d8ff6ad833cc597a97bb7">GridLayerType</a>&#160;</td>
+          <td class="paramname"><em>grid_layer</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="ab92f9099fca3acd1c19a3b7604f7dfae"></a>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ad7a6deb78d9b17deeb539674aae55bd5"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class AnalyticalFluxImp&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef AnalyticalFluxType::EntityType <a class="el" href="a00169.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::<a class="el" href="a00169.html#ab92f9099fca3acd1c19a3b7604f7dfae">EntityType</a></td>
+          <td class="memname">void <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00284.html">internal::L2ProlongationOperatorTraits</a>&lt; GridLayerImp, FieldImp &gt;  &gt;::apply </td>
+          <td>(</td>
+          <td class="paramtype">const SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RangeType &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a55879163950cada5f20b1234b2b9c43d"></a>
+<a class="anchor" id="a51dac447b34b2dc241344c3370962e15"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp, class BoundaryValueImp, class LocalizableFunctionImp&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::tuple&lt;std::shared_ptr&lt;<a class="el" href="a00169.html#acd92ef81cec9f220aa07c63b4b3e7de7">AnalyticalFluxLocalfunctionType</a>&gt;, std::shared_ptr&lt;LocalfunctionType&gt;, std::shared_ptr&lt;<a class="el" href="a00283.html#a1c3ee9d2012a2e4775ef8ef4e28fa341">BoundaryValueLocalfunctionType</a>&gt; &gt; <a class="el" href="a00283.html">Dune::GDT::internal::LaxFriedrichsLocalDirichletNumericalBoundaryFluxTraits</a>&lt; AnalyticalFluxImp, BoundaryValueImp, LocalizableFunctionImp &gt;::<a class="el" href="a00169.html#aa8c5272bdd9cae7a85e2ad1c64a64a29">LocalfunctionTupleType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab3b1d5db7829cc9da3a49e128b337fda"></a>
-<div class="memitem">
-<div class="memproto">
+template&lt;class GridLayerImp , class FieldImp &gt; </div>
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp&gt; </div>
+template&lt;class SS , class SV , class RS , class RV &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef AnalyticalFluxType::RangeFieldType <a class="el" href="a00169.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::<a class="el" href="a00169.html#ab3b1d5db7829cc9da3a49e128b337fda">RangeFieldType</a></td>
+          <td class="memname">void <a class="el" href="a00283.html">Dune::GDT::L2ProlongationOperator</a>&lt; GridLayerImp, FieldImp &gt;::apply </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00071.html">ConstDiscreteFunction</a>&lt; SS, SV &gt; &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00107.html">DiscreteFunction</a>&lt; RS, RV &gt; &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a21d4a86df91a58434ec3a76b9c3f68d8"></a>
+<a class="anchor" id="afc13061fd719e2a80c8755f391dde7d3"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class AnalyticalFluxImp&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef AnalyticalFluxType::StateRangeType <a class="el" href="a00169.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::<a class="el" href="a00169.html#a21d4a86df91a58434ec3a76b9c3f68d8">RangeType</a></td>
+          <td class="memname"><a class="el" href="a00283.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a> <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00284.html">internal::L2ProlongationOperatorTraits</a>&lt; GridLayerImp, FieldImp &gt;  &gt;::apply2 </td>
+          <td>(</td>
+          <td class="paramtype">const RangeType &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a4681675dc11f77b57dd95c3cd639b414"></a>
+<a class="anchor" id="a77b679cd83eed055a3532c0bfe73ffb1"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp&gt; </div>
+template&lt;class GridLayerImp , class FieldImp &gt; </div>
+<div class="memtemplate">
+template&lt;class RangeType , class SourceType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t <a class="el" href="a00169.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::dimDomain = AnalyticalFluxType::dimDomain</td>
+          <td class="memname"><a class="el" href="a00283.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a> <a class="el" href="a00283.html">Dune::GDT::L2ProlongationOperator</a>&lt; GridLayerImp, FieldImp &gt;::apply2 </td>
+          <td>(</td>
+          <td class="paramtype">const RangeType &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const SourceType &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="aca65b08093dd2cf8a646b0368d48a749"></a>
+<a class="anchor" id="ae9652e5f4cac175cdbece27339cf27e8"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class AnalyticalFluxImp&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t <a class="el" href="a00169.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::dimRange = AnalyticalFluxType::dimRange</td>
+          <td class="memname">void <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00284.html">internal::L2ProlongationOperatorTraits</a>&lt; GridLayerImp, FieldImp &gt;  &gt;::apply_inverse </td>
+          <td>(</td>
+          <td class="paramtype">const RangeType &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Common::Configuration &amp;&#160;</td>
+          <td class="paramname"><em>opts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a29f8d5d8be5b3de4aab5c8d1a48a211d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00284.html">internal::L2ProlongationOperatorTraits</a>&lt; GridLayerImp, FieldImp &gt;  &gt;::apply_inverse </td>
+          <td>(</td>
+          <td class="paramtype">const RangeType &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2d97680c7b18ce80e4fe7b0edf3b17e1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00284.html">internal::L2ProlongationOperatorTraits</a>&lt; GridLayerImp, FieldImp &gt;  &gt;::apply_inverse </td>
+          <td>(</td>
+          <td class="paramtype">const RangeType &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a47c84171128bc2721a829fe70c40cd58"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class FieldImp &gt; </div>
+<div class="memtemplate">
+template&lt;class RangeType , class SourceType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00283.html">Dune::GDT::L2ProlongationOperator</a>&lt; GridLayerImp, FieldImp &gt;::apply_inverse </td>
+          <td>(</td>
+          <td class="paramtype">const RangeType &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SourceType &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Common::Configuration &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae5378687b90665fdd4dffa8d6d0e11dd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00283.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a> <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00284.html">internal::L2ProlongationOperatorTraits</a>&lt; GridLayerImp, FieldImp &gt;  &gt;::induced_norm </td>
+          <td>(</td>
+          <td class="paramtype">const RangeType &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aafd5db34719333bd5e5214830fbfb604"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class FieldImp &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; <a class="el" href="a00283.html">Dune::GDT::L2ProlongationOperator</a>&lt; GridLayerImp, FieldImp &gt;::invert_options </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abf21ba7c1a7ff6ffd3706af1f78ea541"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class FieldImp &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XT::Common::Configuration <a class="el" href="a00283.html">Dune::GDT::L2ProlongationOperator</a>&lt; GridLayerImp, FieldImp &gt;::invert_options </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae117892cf6087e45662d242765530402"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00442.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a> <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00284.html">internal::L2ProlongationOperatorTraits</a>&lt; GridLayerImp, FieldImp &gt;  &gt;::jacobian </td>
+          <td>(</td>
+          <td class="paramtype">const SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aacfda4614f16b470190a356a62717b01"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a00284.html">internal::L2ProlongationOperatorTraits</a>&lt; GridLayerImp, FieldImp &gt;  &gt;::jacobian </td>
+          <td>(</td>
+          <td class="paramtype">const SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00442.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a> &amp;&#160;</td>
+          <td class="paramname"><em>jac</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -413,12 +818,12 @@ template&lt;class AnalyticalFluxImp&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00629_source.html">local/fluxes/laxfriedrichs.hh</a></li>
+<li><a class="el" href="a00674_source.html">prolongations/l2.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:20 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:10 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

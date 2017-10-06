@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: Dune::GDT::internal::ChooseLimiter&lt; SlopeLimiters::superbee &gt; Struct Template Reference</title>
+<title>dune-gdt: Dune::GDT::CommunicationChooser&lt; ViewImp, is_parallel &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,61 +85,66 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00702.html">Dune</a></li><li class="navelem"><a class="el" href="a00703.html">GDT</a></li><li class="navelem"><a class="el" href="a00707.html">internal</a></li><li class="navelem"><a class="el" href="a00070.html">ChooseLimiter< SlopeLimiters::superbee ></a></li>  </ul>
+<li class="navelem"><a class="el" href="a00760.html">Dune</a></li><li class="navelem"><a class="el" href="a00761.html">GDT</a></li><li class="navelem"><a class="el" href="a00070.html">CommunicationChooser</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="a01174.html">List of all members</a>  </div>
+<a href="a00821.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::ChooseLimiter&lt; SlopeLimiters::superbee &gt; Struct Template Reference</div>  </div>
+<div class="title">Dune::GDT::CommunicationChooser&lt; ViewImp, is_parallel &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00666_source.html">dune/gdt/operators/fv/slopelimiters.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00697_source.html">dune/gdt/spaces/parallel.hh</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a21900bba4a7ab2b930fd27ea932fe50e"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+Dune::XT::SequentialCommunication&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00070.html#a21900bba4a7ab2b930fd27ea932fe50e">Type</a></td></tr>
+<tr class="separator:a21900bba4a7ab2b930fd27ea932fe50e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a3ac33466cdc65ee0236e8827cb2d8988"><td class="memTemplParams" colspan="2">template&lt;class VectorType &gt; </td></tr>
-<tr class="memitem:a3ac33466cdc65ee0236e8827cb2d8988"><td class="memTemplItemLeft" align="right" valign="top">static VectorType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00070.html#a3ac33466cdc65ee0236e8827cb2d8988">limit</a> (const VectorType &amp;slope_left, const VectorType &amp;slope_right, const VectorType &amp;slope_center)</td></tr>
-<tr class="separator:a3ac33466cdc65ee0236e8827cb2d8988"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af615a9de46cc8c02a6160fbcfb4b95dc"><td class="memTemplParams" colspan="2">template&lt;class VectorType &gt; </td></tr>
-<tr class="memitem:af615a9de46cc8c02a6160fbcfb4b95dc"><td class="memTemplItemLeft" align="right" valign="top">static VectorType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00070.html#af615a9de46cc8c02a6160fbcfb4b95dc">maxmod</a> (const VectorType &amp;slope_left, const VectorType &amp;slope_right)</td></tr>
-<tr class="separator:af615a9de46cc8c02a6160fbcfb4b95dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a657ff812a00455cb7341963915a8b3ca"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00070.html#a21900bba4a7ab2b930fd27ea932fe50e">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00070.html#a657ff812a00455cb7341963915a8b3ca">create</a> (const ViewImp &amp;)</td></tr>
+<tr class="separator:a657ff812a00455cb7341963915a8b3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5933a3f2e0e1309554f679e99a378e3c"><td class="memTemplParams" colspan="2">template&lt;class SpaceBackend &gt; </td></tr>
+<tr class="memitem:a5933a3f2e0e1309554f679e99a378e3c"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00070.html#a5933a3f2e0e1309554f679e99a378e3c">prepare</a> (const SpaceBackend &amp;, <a class="el" href="a00070.html#a21900bba4a7ab2b930fd27ea932fe50e">Type</a> &amp;)</td></tr>
+<tr class="separator:a5933a3f2e0e1309554f679e99a378e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a3ac33466cdc65ee0236e8827cb2d8988"></a>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a21900bba4a7ab2b930fd27ea932fe50e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class VectorType &gt; </div>
+template&lt;class ViewImp , bool is_parallel = Dune::XT::UseParallelCommunication&lt;typename ViewImp::Grid::CollectiveCommunication&gt;::value&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Dune::XT::SequentialCommunication <a class="el" href="a00070.html">Dune::GDT::CommunicationChooser</a>&lt; ViewImp, is_parallel &gt;::<a class="el" href="a00070.html#a21900bba4a7ab2b930fd27ea932fe50e">Type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a657ff812a00455cb7341963915a8b3ca"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ViewImp , bool is_parallel = Dune::XT::UseParallelCommunication&lt;typename ViewImp::Grid::CollectiveCommunication&gt;::value&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static VectorType <a class="el" href="a00066.html">Dune::GDT::internal::ChooseLimiter</a>&lt; <a class="el" href="a00703.html#af68dfb986d335b9416add6ef64dfad58adbd796f5b863bc36af8381e5e641ce0e">SlopeLimiters::superbee</a> &gt;::limit </td>
+          <td class="memname">static <a class="el" href="a00070.html#a21900bba4a7ab2b930fd27ea932fe50e">Type</a>* <a class="el" href="a00070.html">Dune::GDT::CommunicationChooser</a>&lt; ViewImp, is_parallel &gt;::create </td>
           <td>(</td>
-          <td class="paramtype">const VectorType &amp;&#160;</td>
-          <td class="paramname"><em>slope_left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const ViewImp &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">const VectorType &amp;&#160;</td>
-          <td class="paramname"><em>slope_right</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const VectorType &amp;&#160;</td>
-          <td class="paramname"><em>slope_center</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -151,26 +156,28 @@ template&lt;class VectorType &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="af615a9de46cc8c02a6160fbcfb4b95dc"></a>
+<a class="anchor" id="a5933a3f2e0e1309554f679e99a378e3c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class VectorType &gt; </div>
+template&lt;class ViewImp , bool is_parallel = Dune::XT::UseParallelCommunication&lt;typename ViewImp::Grid::CollectiveCommunication&gt;::value&gt; </div>
+<div class="memtemplate">
+template&lt;class SpaceBackend &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static VectorType <a class="el" href="a00066.html">Dune::GDT::internal::ChooseLimiter</a>&lt; <a class="el" href="a00703.html#af68dfb986d335b9416add6ef64dfad58adbd796f5b863bc36af8381e5e641ce0e">SlopeLimiters::superbee</a> &gt;::maxmod </td>
+          <td class="memname">static bool <a class="el" href="a00070.html">Dune::GDT::CommunicationChooser</a>&lt; ViewImp, is_parallel &gt;::prepare </td>
           <td>(</td>
-          <td class="paramtype">const VectorType &amp;&#160;</td>
-          <td class="paramname"><em>slope_left</em>, </td>
+          <td class="paramtype">const SpaceBackend &amp;&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const VectorType &amp;&#160;</td>
-          <td class="paramname"><em>slope_right</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00070.html#a21900bba4a7ab2b930fd27ea932fe50e">Type</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -188,12 +195,12 @@ template&lt;class VectorType &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="a00666_source.html">slopelimiters.hh</a></li>
+<li><a class="el" href="a00697_source.html">parallel.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:19 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:10 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

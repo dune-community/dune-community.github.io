@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: Dune::GDT::internal::LocalVolumeFunctionalWrapper&lt; AssemblerType, VectorType &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::LocalizableProductBase&lt; GridLayerImp, RangeImp, SourceImp, FieldImp &gt; Singleton Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,241 +85,125 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00702.html">Dune</a></li><li class="navelem"><a class="el" href="a00703.html">GDT</a></li><li class="navelem"><a class="el" href="a00707.html">internal</a></li><li class="navelem"><a class="el" href="a00369.html">LocalVolumeFunctionalWrapper</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00760.html">Dune</a></li><li class="navelem"><a class="el" href="a00761.html">GDT</a></li><li class="navelem"><a class="el" href="a00369.html">LocalizableProductBase</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a01278.html">List of all members</a>  </div>
+<a href="a01083.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::LocalVolumeFunctionalWrapper&lt; AssemblerType, VectorType &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::LocalizableProductBase&lt; GridLayerImp, RangeImp, SourceImp, FieldImp &gt; Singleton Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00685_source.html">dune/gdt/assembler/wrapper.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00535_source.html">dune/gdt/operators/base.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::internal::LocalVolumeFunctionalWrapper&lt; AssemblerType, VectorType &gt;:</div>
+Inheritance diagram for Dune::GDT::LocalizableProductBase&lt; GridLayerImp, RangeImp, SourceImp, FieldImp &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01279.png" border="0" usemap="#_dune_1_1_g_d_t_1_1internal_1_1_local_volume_functional_wrapper_3_01_assembler_type_00_01_vector_type_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1internal_1_1_local_volume_functional_wrapper_3_01_assembler_type_00_01_vector_type_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1internal_1_1_local_volume_functional_wrapper_3_01_assembler_type_00_01_vector_type_01_4_inherit__map">
+<div class="center"><img src="a01084.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_localizable_product_base_3_01_grid_layer_imp_00_01_range_imp_00_01_source_imp_00_01_field_imp_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_localizable_product_base_3_01_grid_layer_imp_00_01_range_imp_00_01_source_imp_00_01_field_imp_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_localizable_product_base_3_01_grid_layer_imp_00_01_range_imp_00_01_source_imp_00_01_field_imp_01_4_inherit__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a54880fe210c640f9a54e5abba67f4169"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-AssemblerType::TestSpaceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00369.html#a54880fe210c640f9a54e5abba67f4169">TestSpaceType</a></td></tr>
-<tr class="separator:a54880fe210c640f9a54e5abba67f4169"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac1aa39441b9a9d005691cb5d781362d"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-AssemblerType::GridLayerType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00369.html#aac1aa39441b9a9d005691cb5d781362d">GridLayerType</a></td></tr>
-<tr class="separator:aac1aa39441b9a9d005691cb5d781362d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34585b8a8d2cfb25119609582b77ffe9"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-<a class="el" href="a00367.html">LocalVolumeFunctionalInterface</a><br class="typebreak" />
-&lt; typename <br class="typebreak" />
-TestSpaceType::BaseFunctionSetType, <br class="typebreak" />
-typename <br class="typebreak" />
-VectorType::ScalarType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00369.html#a34585b8a8d2cfb25119609582b77ffe9">LocalVolumeFunctionalType</a></td></tr>
-<tr class="separator:a34585b8a8d2cfb25119609582b77ffe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8ce5613e1e8a0f82db8702795505b9a"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-<a class="el" href="a00365.html">LocalVolumeFunctionalAssembler</a><br class="typebreak" />
-&lt; <a class="el" href="a00368.html#aeb33b2f3f2481496982d21dad46a6192">TestSpaceType</a>, VectorType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00368.html#af8ce5613e1e8a0f82db8702795505b9a">LocalVolumeFunctionalAssemblerType</a></td></tr>
-<tr class="separator:af8ce5613e1e8a0f82db8702795505b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:ab2ebdf71bf814ec0a86692fbf455d355"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00369.html#ab2ebdf71bf814ec0a86692fbf455d355">LocalVolumeFunctionalWrapper</a> (const XT::Common::PerThreadValue&lt; const <a class="el" href="a00368.html#aeb33b2f3f2481496982d21dad46a6192">TestSpaceType</a> &gt; &amp;test_space, const XT::Grid::ApplyOn::WhichEntity&lt; <a class="el" href="a00368.html#a6078d3fc0d461277796a8ad1d3e8675e">GridLayerType</a> &gt; *where, const <a class="el" href="a00369.html#a34585b8a8d2cfb25119609582b77ffe9">LocalVolumeFunctionalType</a> &amp;local_functional, VectorType &amp;vector)</td></tr>
-<tr class="separator:ab2ebdf71bf814ec0a86692fbf455d355"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cd2814b3c8e6aa6688e680906d54d2b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00368.html#a6cd2814b3c8e6aa6688e680906d54d2b">apply_on</a> (const <a class="el" href="a00368.html#a6078d3fc0d461277796a8ad1d3e8675e">GridLayerType</a> &amp;gv, const EntityType &amp;entity) const overridefinal</td></tr>
-<tr class="separator:a6cd2814b3c8e6aa6688e680906d54d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8474a64f5c97aa67efb0072d28d17cc0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00368.html#a8474a64f5c97aa67efb0072d28d17cc0">apply_local</a> (const EntityType &amp;entity) overridefinal</td></tr>
-<tr class="separator:a8474a64f5c97aa67efb0072d28d17cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a932953ffee3b983bbd95b9d4e935e9fc"><td class="memItemLeft" align="right" valign="top">typedef RangeImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00369.html#a932953ffee3b983bbd95b9d4e935e9fc">RangeType</a></td></tr>
+<tr class="separator:a932953ffee3b983bbd95b9d4e935e9fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9765e7eb011b59244b523eeeb45c10de"><td class="memItemLeft" align="right" valign="top">typedef SourceImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00369.html#a9765e7eb011b59244b523eeeb45c10de">SourceType</a></td></tr>
+<tr class="separator:a9765e7eb011b59244b523eeeb45c10de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30f2fac0f75667200e075d7f2e069991"><td class="memItemLeft" align="right" valign="top">typedef FieldImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00369.html#a30f2fac0f75667200e075d7f2e069991">FieldType</a></td></tr>
+<tr class="separator:a30f2fac0f75667200e075d7f2e069991"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b698fe959db26108b1b232ef34f1657"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+RangeType::LocalfunctionType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00369.html#a7b698fe959db26108b1b232ef34f1657">LocalRangeType</a></td></tr>
+<tr class="separator:a7b698fe959db26108b1b232ef34f1657"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0cca65212dd82f90b2dc7bb430d4bf8"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+SourceType::LocalfunctionType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00369.html#ac0cca65212dd82f90b2dc7bb430d4bf8">LocalSourceType</a></td></tr>
+<tr class="separator:ac0cca65212dd82f90b2dc7bb430d4bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="aac1aa39441b9a9d005691cb5d781362d"></a>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class GridLayerImp, class RangeImp, class SourceImp = RangeImp, class FieldImp = typename RangeImp::RangeFieldType&gt;<br />
+singleton Dune::GDT::LocalizableProductBase&lt; GridLayerImp, RangeImp, SourceImp, FieldImp &gt;</h3>
+
+<dl class="todo"><dt><b><a class="el" href="a00778.html#_todo000024">Todo:</a></b></dt><dd>Check parallel case: there is probably/definitely communication missing in apply2! </dd></dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a30f2fac0f75667200e075d7f2e069991"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AssemblerType , class VectorType &gt; </div>
+template&lt;class GridLayerImp, class RangeImp, class SourceImp = RangeImp, class FieldImp = typename RangeImp::RangeFieldType&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef AssemblerType::GridLayerType <a class="el" href="a00369.html">Dune::GDT::internal::LocalVolumeFunctionalWrapper</a>&lt; AssemblerType, VectorType &gt;::<a class="el" href="a00368.html#a6078d3fc0d461277796a8ad1d3e8675e">GridLayerType</a></td>
+          <td class="memname">typedef FieldImp <a class="el" href="a00369.html">Dune::GDT::LocalizableProductBase</a>&lt; GridLayerImp, RangeImp, SourceImp, FieldImp &gt;::<a class="el" href="a00369.html#a30f2fac0f75667200e075d7f2e069991">FieldType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="af8ce5613e1e8a0f82db8702795505b9a"></a>
+<a class="anchor" id="a7b698fe959db26108b1b232ef34f1657"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AssemblerType , class VectorType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;class GridLayerImp, class RangeImp, class SourceImp = RangeImp, class FieldImp = typename RangeImp::RangeFieldType&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00365.html">LocalVolumeFunctionalAssembler</a>&lt;<a class="el" href="a00368.html#aeb33b2f3f2481496982d21dad46a6192">TestSpaceType</a>, VectorType&gt; <a class="el" href="a00368.html">Dune::GDT::internal::LocalVolumeFunctionalVectorAssemblerWrapper</a>&lt; AssemblerType, VectorType &gt;::<a class="el" href="a00368.html#af8ce5613e1e8a0f82db8702795505b9a">LocalVolumeFunctionalAssemblerType</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a34585b8a8d2cfb25119609582b77ffe9"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class AssemblerType , class VectorType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a00367.html">LocalVolumeFunctionalInterface</a>&lt;typename TestSpaceType::BaseFunctionSetType, typename VectorType::ScalarType&gt; <a class="el" href="a00369.html">Dune::GDT::internal::LocalVolumeFunctionalWrapper</a>&lt; AssemblerType, VectorType &gt;::<a class="el" href="a00369.html#a34585b8a8d2cfb25119609582b77ffe9">LocalVolumeFunctionalType</a></td>
+          <td class="memname">typedef RangeType::LocalfunctionType <a class="el" href="a00369.html">Dune::GDT::LocalizableProductBase</a>&lt; GridLayerImp, RangeImp, SourceImp, FieldImp &gt;::<a class="el" href="a00369.html#a7b698fe959db26108b1b232ef34f1657">LocalRangeType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a54880fe210c640f9a54e5abba67f4169"></a>
+<a class="anchor" id="ac0cca65212dd82f90b2dc7bb430d4bf8"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AssemblerType , class VectorType &gt; </div>
+template&lt;class GridLayerImp, class RangeImp, class SourceImp = RangeImp, class FieldImp = typename RangeImp::RangeFieldType&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef AssemblerType::TestSpaceType <a class="el" href="a00369.html">Dune::GDT::internal::LocalVolumeFunctionalWrapper</a>&lt; AssemblerType, VectorType &gt;::<a class="el" href="a00368.html#aeb33b2f3f2481496982d21dad46a6192">TestSpaceType</a></td>
+          <td class="memname">typedef SourceType::LocalfunctionType <a class="el" href="a00369.html">Dune::GDT::LocalizableProductBase</a>&lt; GridLayerImp, RangeImp, SourceImp, FieldImp &gt;::<a class="el" href="a00369.html#ac0cca65212dd82f90b2dc7bb430d4bf8">LocalSourceType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ab2ebdf71bf814ec0a86692fbf455d355"></a>
+<a class="anchor" id="a932953ffee3b983bbd95b9d4e935e9fc"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AssemblerType , class VectorType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;class GridLayerImp, class RangeImp, class SourceImp = RangeImp, class FieldImp = typename RangeImp::RangeFieldType&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00369.html">Dune::GDT::internal::LocalVolumeFunctionalWrapper</a>&lt; AssemblerType, VectorType &gt;::<a class="el" href="a00369.html">LocalVolumeFunctionalWrapper</a> </td>
-          <td>(</td>
-          <td class="paramtype">const XT::Common::PerThreadValue&lt; const <a class="el" href="a00368.html#aeb33b2f3f2481496982d21dad46a6192">TestSpaceType</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>test_space</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XT::Grid::ApplyOn::WhichEntity&lt; <a class="el" href="a00368.html#a6078d3fc0d461277796a8ad1d3e8675e">GridLayerType</a> &gt; *&#160;</td>
-          <td class="paramname"><em>where</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="a00369.html#a34585b8a8d2cfb25119609582b77ffe9">LocalVolumeFunctionalType</a> &amp;&#160;</td>
-          <td class="paramname"><em>local_functional</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">VectorType &amp;&#160;</td>
-          <td class="paramname"><em>vector</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">typedef RangeImp <a class="el" href="a00369.html">Dune::GDT::LocalizableProductBase</a>&lt; GridLayerImp, RangeImp, SourceImp, FieldImp &gt;::<a class="el" href="a00369.html#a932953ffee3b983bbd95b9d4e935e9fc">RangeType</a></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a8474a64f5c97aa67efb0072d28d17cc0"></a>
+<a class="anchor" id="a9765e7eb011b59244b523eeeb45c10de"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AssemblerType , class VectorType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;class GridLayerImp, class RangeImp, class SourceImp = RangeImp, class FieldImp = typename RangeImp::RangeFieldType&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00368.html">Dune::GDT::internal::LocalVolumeFunctionalVectorAssemblerWrapper</a>&lt; AssemblerType, VectorType &gt;::apply_local </td>
-          <td>(</td>
-          <td class="paramtype">const EntityType &amp;&#160;</td>
-          <td class="paramname"><em>entity</em></td><td>)</td>
-          <td></td>
+          <td class="memname">typedef SourceImp <a class="el" href="a00369.html">Dune::GDT::LocalizableProductBase</a>&lt; GridLayerImp, RangeImp, SourceImp, FieldImp &gt;::<a class="el" href="a00369.html#a9765e7eb011b59244b523eeeb45c10de">SourceType</a></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a6cd2814b3c8e6aa6688e680906d54d2b"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class AssemblerType , class VectorType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="a00368.html">Dune::GDT::internal::LocalVolumeFunctionalVectorAssemblerWrapper</a>&lt; AssemblerType, VectorType &gt;::apply_on </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00368.html#a6078d3fc0d461277796a8ad1d3e8675e">GridLayerType</a> &amp;&#160;</td>
-          <td class="paramname"><em>gv</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const EntityType &amp;&#160;</td>
-          <td class="paramname"><em>entity</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00685_source.html">wrapper.hh</a></li>
+<hr/>The documentation for this singleton was generated from the following file:<ul>
+<li><a class="el" href="a00535_source.html">operators/base.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:20 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:10 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

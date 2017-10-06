@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: Dune::GDT::internal::is_cg_space_helper&lt; S &gt; Struct Template Reference</title>
+<title>dune-gdt: Dune::GDT::internal::HyperbolicFvDefaultDiscretizationTraits&lt; TestCaseImp, FvSpaceImp, numerical_flux, reconstruction_order, time_stepper_method, rhs_time_stepper_method, time_stepper_splitting_method, slope_limiter &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,143 +85,157 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00702.html">Dune</a></li><li class="navelem"><a class="el" href="a00703.html">GDT</a></li><li class="navelem"><a class="el" href="a00707.html">internal</a></li><li class="navelem"><a class="el" href="a00185.html">is_cg_space_helper</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00760.html">Dune</a></li><li class="navelem"><a class="el" href="a00761.html">GDT</a></li><li class="navelem"><a class="el" href="a00766.html">internal</a></li><li class="navelem"><a class="el" href="a00185.html">HyperbolicFvDefaultDiscretizationTraits</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="a01207.html">List of all members</a>  </div>
+<a href="#pub-types">Public Types</a> &#124;
+<a href="a01314.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::is_cg_space_helper&lt; S &gt; Struct Template Reference</div>  </div>
+<div class="title">Dune::GDT::internal::HyperbolicFvDefaultDiscretizationTraits&lt; TestCaseImp, FvSpaceImp, numerical_flux, reconstruction_order, time_stepper_method, rhs_time_stepper_method, time_stepper_splitting_method, slope_limiter &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00597_source.html">dune/gdt/spaces/cg/interface.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00632_source.html">dune/gdt/discretizations/default/fv.hh</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:ac5ca071432ab73d4b983ce45075b2b0d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00185.html#ac5ca071432ab73d4b983ce45075b2b0d">DXTC_has_typedef_initialize_once</a> (Traits)</td></tr>
-<tr class="separator:ac5ca071432ab73d4b983ce45075b2b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac09a8f6d4ec4cfe30b06f83e1530237c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00185.html#ac09a8f6d4ec4cfe30b06f83e1530237c">DXTC_has_static_member_initialize_once</a> (dimDomain)</td></tr>
-<tr class="separator:ac09a8f6d4ec4cfe30b06f83e1530237c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6adc8ca5bbba9e9991749b14f8004cf2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00185.html#a6adc8ca5bbba9e9991749b14f8004cf2">DXTC_has_static_member_initialize_once</a> (dimRange)</td></tr>
-<tr class="separator:a6adc8ca5bbba9e9991749b14f8004cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1067f7710a50ebf81684a0122f6c598d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00185.html#a1067f7710a50ebf81684a0122f6c598d">DXTC_has_static_member_initialize_once</a> (dimRangeCols)</td></tr>
-<tr class="separator:a1067f7710a50ebf81684a0122f6c598d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a1173cfbbc43623dc1fac63fb738534cb"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00185.html#a1173cfbbc43623dc1fac63fb738534cb">is_candidate</a></td></tr>
-<tr class="separator:a1173cfbbc43623dc1fac63fb738534cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ae96426f66f7d3644b2a99a32a4d93f42"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+<a class="el" href="a00184.html">HyperbolicFvDefaultDiscretization</a><br class="typebreak" />
+&lt; TestCaseImp, FvSpaceImp, <br class="typebreak" />
+numerical_flux, <br class="typebreak" />
+reconstruction_order, <br class="typebreak" />
+time_stepper_method, <br class="typebreak" />
+rhs_time_stepper_method, <br class="typebreak" />
+time_stepper_splitting_method, <br class="typebreak" />
+slope_limiter, <br class="typebreak" />
+<a class="el" href="a00185.html">HyperbolicFvDefaultDiscretizationTraits</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00185.html#ae96426f66f7d3644b2a99a32a4d93f42">derived_type</a></td></tr>
+<tr class="separator:ae96426f66f7d3644b2a99a32a4d93f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e31985902a19dd34f2c61b9935f94fe"><td class="memItemLeft" align="right" valign="top">typedef TestCaseImp::ProblemType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00185.html#a1e31985902a19dd34f2c61b9935f94fe">ProblemType</a></td></tr>
+<tr class="separator:a1e31985902a19dd34f2c61b9935f94fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a290c327e94fa8d99efb95ab47fcadb4f"><td class="memItemLeft" align="right" valign="top">typedef FvSpaceImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00185.html#a290c327e94fa8d99efb95ab47fcadb4f">SpaceType</a></td></tr>
+<tr class="separator:a290c327e94fa8d99efb95ab47fcadb4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada96d01a3cb236c164f21081f25291cb"><td class="memItemLeft" align="right" valign="top">typedef SpaceType::RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00185.html#ada96d01a3cb236c164f21081f25291cb">RangeFieldType</a></td></tr>
+<tr class="separator:ada96d01a3cb236c164f21081f25291cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b85ba832e66a5318df433072dddaf6f"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+Dune::XT::LA::CommonDenseVector<br class="typebreak" />
+&lt; <a class="el" href="a00185.html#ada96d01a3cb236c164f21081f25291cb">RangeFieldType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00185.html#a7b85ba832e66a5318df433072dddaf6f">VectorType</a></td></tr>
+<tr class="separator:a7b85ba832e66a5318df433072dddaf6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51a7e6e74841c61d587889e0688b20b0"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00107.html">DiscreteFunction</a><br class="typebreak" />
+&lt; <a class="el" href="a00185.html#a290c327e94fa8d99efb95ab47fcadb4f">SpaceType</a>, <a class="el" href="a00185.html#a7b85ba832e66a5318df433072dddaf6f">VectorType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00185.html#a51a7e6e74841c61d587889e0688b20b0">DiscreteFunctionType</a></td></tr>
+<tr class="separator:a51a7e6e74841c61d587889e0688b20b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0155ee79998379074d9f6162bad223e"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; double, <br class="typebreak" />
+<a class="el" href="a00185.html#a51a7e6e74841c61d587889e0688b20b0">DiscreteFunctionType</a>, <br class="typebreak" />
+<a class="el" href="a00147.html">Dune::GDT::internal::FloatCmpLt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00185.html#ae0155ee79998379074d9f6162bad223e">DiscreteSolutionType</a></td></tr>
+<tr class="separator:ae0155ee79998379074d9f6162bad223e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac09a8f6d4ec4cfe30b06f83e1530237c"></a>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="ae96426f66f7d3644b2a99a32a4d93f42"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class S &gt; </div>
+template&lt;class TestCaseImp , class FvSpaceImp , NumericalFluxes numerical_flux, size_t reconstruction_order, TimeStepperMethods time_stepper_method, TimeStepperMethods rhs_time_stepper_method, TimeStepperSplittingMethods time_stepper_splitting_method, SlopeLimiters slope_limiter&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00185.html">Dune::GDT::internal::is_cg_space_helper</a>&lt; S &gt;::DXTC_has_static_member_initialize_once </td>
-          <td>(</td>
-          <td class="paramtype">dimDomain&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">typedef <a class="el" href="a00184.html">HyperbolicFvDefaultDiscretization</a>&lt;TestCaseImp, FvSpaceImp, numerical_flux, reconstruction_order, time_stepper_method, rhs_time_stepper_method, time_stepper_splitting_method, slope_limiter, <a class="el" href="a00185.html">HyperbolicFvDefaultDiscretizationTraits</a>&gt; <a class="el" href="a00185.html">Dune::GDT::internal::HyperbolicFvDefaultDiscretizationTraits</a>&lt; TestCaseImp, FvSpaceImp, numerical_flux, reconstruction_order, time_stepper_method, rhs_time_stepper_method, time_stepper_splitting_method, slope_limiter &gt;::<a class="el" href="a00185.html#ae96426f66f7d3644b2a99a32a4d93f42">derived_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a6adc8ca5bbba9e9991749b14f8004cf2"></a>
+<a class="anchor" id="a51a7e6e74841c61d587889e0688b20b0"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class S &gt; </div>
+template&lt;class TestCaseImp , class FvSpaceImp , NumericalFluxes numerical_flux, size_t reconstruction_order, TimeStepperMethods time_stepper_method, TimeStepperMethods rhs_time_stepper_method, TimeStepperSplittingMethods time_stepper_splitting_method, SlopeLimiters slope_limiter&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00185.html">Dune::GDT::internal::is_cg_space_helper</a>&lt; S &gt;::DXTC_has_static_member_initialize_once </td>
-          <td>(</td>
-          <td class="paramtype">dimRange&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">typedef <a class="el" href="a00107.html">DiscreteFunction</a>&lt;<a class="el" href="a00185.html#a290c327e94fa8d99efb95ab47fcadb4f">SpaceType</a>, <a class="el" href="a00185.html#a7b85ba832e66a5318df433072dddaf6f">VectorType</a>&gt; <a class="el" href="a00185.html">Dune::GDT::internal::HyperbolicFvDefaultDiscretizationTraits</a>&lt; TestCaseImp, FvSpaceImp, numerical_flux, reconstruction_order, time_stepper_method, rhs_time_stepper_method, time_stepper_splitting_method, slope_limiter &gt;::<a class="el" href="a00185.html#a51a7e6e74841c61d587889e0688b20b0">DiscreteFunctionType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a1067f7710a50ebf81684a0122f6c598d"></a>
+<a class="anchor" id="ae0155ee79998379074d9f6162bad223e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class S &gt; </div>
+template&lt;class TestCaseImp , class FvSpaceImp , NumericalFluxes numerical_flux, size_t reconstruction_order, TimeStepperMethods time_stepper_method, TimeStepperMethods rhs_time_stepper_method, TimeStepperSplittingMethods time_stepper_splitting_method, SlopeLimiters slope_limiter&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00185.html">Dune::GDT::internal::is_cg_space_helper</a>&lt; S &gt;::DXTC_has_static_member_initialize_once </td>
-          <td>(</td>
-          <td class="paramtype">dimRangeCols&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">typedef std::map&lt;double, <a class="el" href="a00185.html#a51a7e6e74841c61d587889e0688b20b0">DiscreteFunctionType</a>, <a class="el" href="a00147.html">Dune::GDT::internal::FloatCmpLt</a>&gt; <a class="el" href="a00185.html">Dune::GDT::internal::HyperbolicFvDefaultDiscretizationTraits</a>&lt; TestCaseImp, FvSpaceImp, numerical_flux, reconstruction_order, time_stepper_method, rhs_time_stepper_method, time_stepper_splitting_method, slope_limiter &gt;::<a class="el" href="a00185.html#ae0155ee79998379074d9f6162bad223e">DiscreteSolutionType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="ac5ca071432ab73d4b983ce45075b2b0d"></a>
+<a class="anchor" id="a1e31985902a19dd34f2c61b9935f94fe"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class S &gt; </div>
+template&lt;class TestCaseImp , class FvSpaceImp , NumericalFluxes numerical_flux, size_t reconstruction_order, TimeStepperMethods time_stepper_method, TimeStepperMethods rhs_time_stepper_method, TimeStepperSplittingMethods time_stepper_splitting_method, SlopeLimiters slope_limiter&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00185.html">Dune::GDT::internal::is_cg_space_helper</a>&lt; S &gt;::DXTC_has_typedef_initialize_once </td>
-          <td>(</td>
-          <td class="paramtype">Traits&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">typedef TestCaseImp::ProblemType <a class="el" href="a00185.html">Dune::GDT::internal::HyperbolicFvDefaultDiscretizationTraits</a>&lt; TestCaseImp, FvSpaceImp, numerical_flux, reconstruction_order, time_stepper_method, rhs_time_stepper_method, time_stepper_splitting_method, slope_limiter &gt;::<a class="el" href="a00185.html#a1e31985902a19dd34f2c61b9935f94fe">ProblemType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a1173cfbbc43623dc1fac63fb738534cb"></a>
+<a class="anchor" id="ada96d01a3cb236c164f21081f25291cb"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class S &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;class TestCaseImp , class FvSpaceImp , NumericalFluxes numerical_flux, size_t reconstruction_order, TimeStepperMethods time_stepper_method, TimeStepperMethods rhs_time_stepper_method, TimeStepperSplittingMethods time_stepper_splitting_method, SlopeLimiters slope_limiter&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const bool <a class="el" href="a00185.html">Dune::GDT::internal::is_cg_space_helper</a>&lt; S &gt;::is_candidate</td>
+          <td class="memname">typedef SpaceType::RangeFieldType <a class="el" href="a00185.html">Dune::GDT::internal::HyperbolicFvDefaultDiscretizationTraits</a>&lt; TestCaseImp, FvSpaceImp, numerical_flux, reconstruction_order, time_stepper_method, rhs_time_stepper_method, time_stepper_splitting_method, slope_limiter &gt;::<a class="el" href="a00185.html#ada96d01a3cb236c164f21081f25291cb">RangeFieldType</a></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= DXTC_has_typedef(Traits)&lt;S&gt;::value &amp;&amp; DXTC_has_static_member(dimDomain)&lt;S&gt;::value</div>
-<div class="line">                                   &amp;&amp; DXTC_has_static_member(dimRange)&lt;S&gt;::value</div>
-<div class="line">                                   &amp;&amp; DXTC_has_static_member(dimRangeCols)&lt;S&gt;::value</div>
-</div><!-- fragment -->
+
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="a00597_source.html">spaces/cg/interface.hh</a></li>
+<a class="anchor" id="a290c327e94fa8d99efb95ab47fcadb4f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TestCaseImp , class FvSpaceImp , NumericalFluxes numerical_flux, size_t reconstruction_order, TimeStepperMethods time_stepper_method, TimeStepperMethods rhs_time_stepper_method, TimeStepperSplittingMethods time_stepper_splitting_method, SlopeLimiters slope_limiter&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef FvSpaceImp <a class="el" href="a00185.html">Dune::GDT::internal::HyperbolicFvDefaultDiscretizationTraits</a>&lt; TestCaseImp, FvSpaceImp, numerical_flux, reconstruction_order, time_stepper_method, rhs_time_stepper_method, time_stepper_splitting_method, slope_limiter &gt;::<a class="el" href="a00185.html#a290c327e94fa8d99efb95ab47fcadb4f">SpaceType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7b85ba832e66a5318df433072dddaf6f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TestCaseImp , class FvSpaceImp , NumericalFluxes numerical_flux, size_t reconstruction_order, TimeStepperMethods time_stepper_method, TimeStepperMethods rhs_time_stepper_method, TimeStepperSplittingMethods time_stepper_splitting_method, SlopeLimiters slope_limiter&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Dune::XT::LA::CommonDenseVector&lt;<a class="el" href="a00185.html#ada96d01a3cb236c164f21081f25291cb">RangeFieldType</a>&gt; <a class="el" href="a00185.html">Dune::GDT::internal::HyperbolicFvDefaultDiscretizationTraits</a>&lt; TestCaseImp, FvSpaceImp, numerical_flux, reconstruction_order, time_stepper_method, rhs_time_stepper_method, time_stepper_splitting_method, slope_limiter &gt;::<a class="el" href="a00185.html#a7b85ba832e66a5318df433072dddaf6f">VectorType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="a00632_source.html">discretizations/default/fv.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:19 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:11 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

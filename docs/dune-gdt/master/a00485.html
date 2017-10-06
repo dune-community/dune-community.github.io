@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: assembler.hh File Reference</title>
+<title>dune-gdt: Dune::GDT::SpaceProvider&lt; G, layer, SpaceType::dg, backend, p, R, r, rC, g &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -41,8 +41,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -63,8 +63,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -83,68 +85,271 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_eaee94ab3c5b11ce8fcab1cb9d405304.html">src</a></li><li class="navelem"><a class="el" href="dir_58c354ae22a30254506a25a39957e8ba.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_16224573f43954b382d54ec1df2a2147.html">dune</a></li><li class="navelem"><a class="el" href="dir_f1992dd472896fb89117bdc8155a3e1c.html">gdt</a></li><li class="navelem"><a class="el" href="dir_7df66b530ab698acb840d3fba4a971eb.html">local</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00760.html">Dune</a></li><li class="navelem"><a class="el" href="a00761.html">GDT</a></li><li class="navelem"><a class="el" href="a00485.html">SpaceProvider< G, layer, SpaceType::dg, backend, p, R, r, rC, g ></a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="a01197.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">assembler.hh File Reference</div>  </div>
+<div class="title">Dune::GDT::SpaceProvider&lt; G, layer, SpaceType::dg, backend, p, R, r, rC, g &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;dune/common/dynmatrix.hh&gt;</code><br />
-<code>#include &lt;dune/common/dynvector.hh&gt;</code><br />
-<code>#include &lt;dune/xt/functions/interfaces.hh&gt;</code><br />
-<code>#include &lt;dune/xt/grid/walker/apply-on.hh&gt;</code><br />
-<code>#include &lt;dune/xt/grid/walker/wrapper.hh&gt;</code><br />
-<code>#include &lt;dune/xt/la/container/interfaces.hh&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00506_source.html">dune/gdt/discretefunction/default.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00518_source.html">dune/gdt/local/discretefunction.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00608_source.html">dune/gdt/local/operators/interfaces.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00606_source.html">dune/gdt/local/functionals/interfaces.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00600_source.html">dune/gdt/spaces/interface.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00675_source.html">dune/gdt/type_traits.hh</a>&gt;</code><br />
-<code>#include &lt;dune/xt/common/disable_warnings.hh&gt;</code><br />
-<code>#include &lt;dune/xt/common/reenable_warnings.hh&gt;</code><br />
+
+<p><code>#include &lt;<a class="el" href="a00727_source.html">dune/gdt/spaces.hh</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Dune::GDT::SpaceProvider&lt; G, layer, SpaceType::dg, backend, p, R, r, rC, g &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="a01198.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_space_provider_3_01_g_00_01layer_00_01_space_type_1_1dg_00_01backend_00_01p_00_01_r_00_01r_00_01r_c_00_01g_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_space_provider_3_01_g_00_01layer_00_01_space_type_1_1dg_00_01backend_00_01p_00_01_r_00_01r_00_01r_c_00_01g_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_space_provider_3_01_g_00_01layer_00_01_space_type_1_1dg_00_01backend_00_01p_00_01_r_00_01r_00_01r_c_00_01g_01_4_inherit__map">
+</map>
 </div>
-<p><a href="a00485_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00377.html">Dune::GDT::LocalVolumeTwoFormAssembler&lt; TestSpace, Matrix, AnsatzSpace &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00375.html">Dune::GDT::LocalVolumeTwoFormAccumulator&lt; GridLayerImp, TestFunctionType, AnsatzFunctionType, FieldType &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00359.html">Dune::GDT::LocalOperatorApplicator&lt; GridLayerType, LocalOperatorType, SourceType, RangeType &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00361.html">Dune::GDT::LocalOperatorJacobianAssembler&lt; GridViewType, LocalOperatorType, SourceType, RangeType &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00313.html">Dune::GDT::LocalCouplingTwoFormAssembler&lt; TestSpace, Intersection, Matrix, AnsatzSpace, OuterTestSpace, OuterAnsatzSpace &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00311.html">Dune::GDT::LocalCouplingOperatorApplicator&lt; GridLayerType, LocalOperatorType, SourceType, RangeType &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00303.html">Dune::GDT::LocalBoundaryTwoFormAssembler&lt; TestSpace, Intersection, Matrix, AnsatzSpace &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00301.html">Dune::GDT::LocalBoundaryOperatorApplicator&lt; GridLayerType, LocalOperatorType, SourceType, RangeType &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00365.html">Dune::GDT::LocalVolumeFunctionalAssembler&lt; TestSpace, Vector &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00330.html">Dune::GDT::LocalFaceFunctionalAssembler&lt; TestSpace, Intersection, Vector &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ae1c62ee70df1aecfd314108d73b2edab"><td class="memItemLeft" align="right" valign="top">typedef XT::Grid::Layer&lt; G, <br class="typebreak" />
+layer_type, <a class="el" href="a00095.html#a4bfa987ac1e4f4f565bac16f3f2c5265">layer_backend</a> &gt;<br class="typebreak" />
+::<a class="el" href="a00095.html#ae3fc14ae87ffa8998905a02fec4fc813">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#ae1c62ee70df1aecfd314108d73b2edab">GridLayerType</a></td></tr>
+<tr class="separator:ae1c62ee70df1aecfd314108d73b2edab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc8ef1cba51a2c173ca5ea8b66585c1a"><td class="memItemLeft" align="right" valign="top">typedef SpaceChooser&lt; G, <br class="typebreak" />
+polOrder, R, dimRange, <br class="typebreak" />
+dimRangeCols, backend_type &gt;<br class="typebreak" />
+::<a class="el" href="a00095.html#abc8ef1cba51a2c173ca5ea8b66585c1a">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#abc8ef1cba51a2c173ca5ea8b66585c1a">Type</a></td></tr>
+<tr class="separator:abc8ef1cba51a2c173ca5ea8b66585c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3fc14ae87ffa8998905a02fec4fc813"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00095.html#abc8ef1cba51a2c173ca5ea8b66585c1a">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#ae3fc14ae87ffa8998905a02fec4fc813">type</a></td></tr>
+<tr class="separator:ae3fc14ae87ffa8998905a02fec4fc813"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:a00702"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00702.html">Dune</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00703"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00703.html">Dune::GDT</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a9e1c516b25dc04fa3751bc7986a8784c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00095.html#abc8ef1cba51a2c173ca5ea8b66585c1a">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#a9e1c516b25dc04fa3751bc7986a8784c">create</a> (<a class="el" href="a00095.html#ae1c62ee70df1aecfd314108d73b2edab">GridLayerType</a> <a class="el" href="a00095.html#a6506ae08f3495bffcaa141c0539b76f8">grid_layer</a>)</td></tr>
+<tr class="separator:a9e1c516b25dc04fa3751bc7986a8784c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afae14f4b2491c79d2d933c342f07299d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00095.html#abc8ef1cba51a2c173ca5ea8b66585c1a">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#afae14f4b2491c79d2d933c342f07299d">create</a> (XT::Grid::GridProvider&lt; G, DdGridType &gt; &amp;grid_provider, const int level=0)</td></tr>
+<tr class="separator:afae14f4b2491c79d2d933c342f07299d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a8e0d390a9ab495b8a473d9d95dc7091b"><td class="memItemLeft" align="right" valign="top">static const constexpr <a class="el" href="a00761.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#a8e0d390a9ab495b8a473d9d95dc7091b">space_type</a></td></tr>
+<tr class="separator:a8e0d390a9ab495b8a473d9d95dc7091b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aacfad5102b79ce7b242717a7e7117d"><td class="memItemLeft" align="right" valign="top">static const constexpr <a class="el" href="a00761.html#afd9e79bf2e05d76e877c835fa352f045">Backends</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#a9aacfad5102b79ce7b242717a7e7117d">space_backend</a></td></tr>
+<tr class="separator:a9aacfad5102b79ce7b242717a7e7117d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6506ae08f3495bffcaa141c0539b76f8"><td class="memItemLeft" align="right" valign="top">static const constexpr <br class="typebreak" />
+XT::Grid::Layers&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#a6506ae08f3495bffcaa141c0539b76f8">grid_layer</a></td></tr>
+<tr class="separator:a6506ae08f3495bffcaa141c0539b76f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bfa987ac1e4f4f565bac16f3f2c5265"><td class="memItemLeft" align="right" valign="top">static const constexpr <br class="typebreak" />
+XT::Grid::Backends&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#a4bfa987ac1e4f4f565bac16f3f2c5265">layer_backend</a></td></tr>
+<tr class="separator:a4bfa987ac1e4f4f565bac16f3f2c5265"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="ae1c62ee70df1aecfd314108d73b2edab"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef XT::Grid::Layer&lt;G , layer_type, <a class="el" href="a00095.html#a4bfa987ac1e4f4f565bac16f3f2c5265">layer_backend</a>&gt;::<a class="el" href="a00095.html#ae3fc14ae87ffa8998905a02fec4fc813">type</a> <a class="el" href="a00095.html">Dune::GDT::DgSpaceProvider</a>&lt; G , layer_type, backend_type, polOrder, R , dimRange, dimRangeCols, grid_backend_type &gt;::<a class="el" href="a00095.html#ae1c62ee70df1aecfd314108d73b2edab">GridLayerType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abc8ef1cba51a2c173ca5ea8b66585c1a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef SpaceChooser&lt;G , polOrder, R , dimRange, dimRangeCols, backend_type&gt;::<a class="el" href="a00095.html#abc8ef1cba51a2c173ca5ea8b66585c1a">Type</a> <a class="el" href="a00095.html">Dune::GDT::DgSpaceProvider</a>&lt; G , layer_type, backend_type, polOrder, R , dimRange, dimRangeCols, grid_backend_type &gt;::<a class="el" href="a00095.html#abc8ef1cba51a2c173ca5ea8b66585c1a">Type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae3fc14ae87ffa8998905a02fec4fc813"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00095.html#abc8ef1cba51a2c173ca5ea8b66585c1a">Type</a> <a class="el" href="a00095.html">Dune::GDT::DgSpaceProvider</a>&lt; G , layer_type, backend_type, polOrder, R , dimRange, dimRangeCols, grid_backend_type &gt;::<a class="el" href="a00095.html#ae3fc14ae87ffa8998905a02fec4fc813">type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a9e1c516b25dc04fa3751bc7986a8784c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="a00095.html#abc8ef1cba51a2c173ca5ea8b66585c1a">Type</a> <a class="el" href="a00095.html">Dune::GDT::DgSpaceProvider</a>&lt; G , layer_type, backend_type, polOrder, R , dimRange, dimRangeCols, grid_backend_type &gt;::create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00095.html#ae1c62ee70df1aecfd314108d73b2edab">GridLayerType</a>&#160;</td>
+          <td class="paramname"><em>grid_layer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afae14f4b2491c79d2d933c342f07299d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="a00095.html#abc8ef1cba51a2c173ca5ea8b66585c1a">Type</a> <a class="el" href="a00095.html">Dune::GDT::DgSpaceProvider</a>&lt; G , layer_type, backend_type, polOrder, R , dimRange, dimRangeCols, grid_backend_type &gt;::create </td>
+          <td>(</td>
+          <td class="paramtype">XT::Grid::GridProvider&lt; G , DdGridType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>grid_provider</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>level</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a6506ae08f3495bffcaa141c0539b76f8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const constexpr XT::Grid::Layers <a class="el" href="a00095.html">Dune::GDT::DgSpaceProvider</a>&lt; G , layer_type, backend_type, polOrder, R , dimRange, dimRangeCols, grid_backend_type &gt;::grid_layer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4bfa987ac1e4f4f565bac16f3f2c5265"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const constexpr XT::Grid::Backends <a class="el" href="a00095.html">Dune::GDT::DgSpaceProvider</a>&lt; G , layer_type, backend_type, polOrder, R , dimRange, dimRangeCols, grid_backend_type &gt;::layer_backend</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9aacfad5102b79ce7b242717a7e7117d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const constexpr <a class="el" href="a00761.html#afd9e79bf2e05d76e877c835fa352f045">Backends</a> <a class="el" href="a00095.html">Dune::GDT::DgSpaceProvider</a>&lt; G , layer_type, backend_type, polOrder, R , dimRange, dimRangeCols, grid_backend_type &gt;::space_backend</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8e0d390a9ab495b8a473d9d95dc7091b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const constexpr <a class="el" href="a00761.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> <a class="el" href="a00095.html">Dune::GDT::DgSpaceProvider</a>&lt; G , layer_type, backend_type, polOrder, R , dimRange, dimRangeCols, grid_backend_type &gt;::space_type</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="a00727_source.html">spaces.hh</a></li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:18 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:11 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

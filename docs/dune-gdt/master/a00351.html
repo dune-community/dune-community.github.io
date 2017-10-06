@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: Dune::GDT::LocalL2ProjectionOperator Class Reference</title>
+<title>dune-gdt: Dune::GDT::internal::LocalFaceFunctionalWrapper&lt; AssemblerType, VectorType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,70 +85,99 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00702.html">Dune</a></li><li class="navelem"><a class="el" href="a00703.html">GDT</a></li><li class="navelem"><a class="el" href="a00351.html">LocalL2ProjectionOperator</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00760.html">Dune</a></li><li class="navelem"><a class="el" href="a00761.html">GDT</a></li><li class="navelem"><a class="el" href="a00766.html">internal</a></li><li class="navelem"><a class="el" href="a00351.html">LocalFaceFunctionalWrapper</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a01002.html">List of all members</a>  </div>
+<a href="a01377.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::LocalL2ProjectionOperator Class Reference</div>  </div>
+<div class="title">Dune::GDT::internal::LocalFaceFunctionalWrapper&lt; AssemblerType, VectorType &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00617_source.html">dune/gdt/local/operators/l2-projection.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00743_source.html">dune/gdt/assembler/wrapper.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::LocalL2ProjectionOperator:</div>
+Inheritance diagram for Dune::GDT::internal::LocalFaceFunctionalWrapper&lt; AssemblerType, VectorType &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01003.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_local_l2_projection_operator_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1_local_l2_projection_operator_inherit__map" id="_dune_1_1_g_d_t_1_1_local_l2_projection_operator_inherit__map">
+<div class="center"><img src="a01378.png" border="0" usemap="#_dune_1_1_g_d_t_1_1internal_1_1_local_face_functional_wrapper_3_01_assembler_type_00_01_vector_type_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1internal_1_1_local_face_functional_wrapper_3_01_assembler_type_00_01_vector_type_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1internal_1_1_local_face_functional_wrapper_3_01_assembler_type_00_01_vector_type_01_4_inherit__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a8f4468a34acfed1ba4457178478eb008"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-<a class="el" href="a00352.html">internal::LocalL2ProjectionOperatorTraits</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00351.html#a8f4468a34acfed1ba4457178478eb008">Traits</a></td></tr>
-<tr class="separator:a8f4468a34acfed1ba4457178478eb008"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85d71db8a2dfac84ac08489ca7167a67"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-<a class="el" href="a00352.html#a984f2c8ea3f1732f7ab285f63eca0363">internal::LocalL2ProjectionOperatorTraits::derived_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00360.html#a85d71db8a2dfac84ac08489ca7167a67">derived_type</a></td></tr>
-<tr class="separator:a85d71db8a2dfac84ac08489ca7167a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f3bb329d8fd83658032c0ebbfc502fa"><td class="memItemLeft" align="right" valign="top">typedef VectorType::ScalarType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00351.html#a3f3bb329d8fd83658032c0ebbfc502fa">FieldType</a></td></tr>
+<tr class="separator:a3f3bb329d8fd83658032c0ebbfc502fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5b787af722e898f74a8672160501e82"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+<a class="el" href="a00349.html">LocalFaceFunctionalInterface</a><br class="typebreak" />
+&lt; typename <br class="typebreak" />
+TestSpaceType::BaseFunctionSetType, <br class="typebreak" />
+IntersectionType, <a class="el" href="a00351.html#a3f3bb329d8fd83658032c0ebbfc502fa">FieldType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00351.html#ae5b787af722e898f74a8672160501e82">LocalFaceFunctionalType</a></td></tr>
+<tr class="separator:ae5b787af722e898f74a8672160501e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2147aad78da564d5611ab38d41855b45"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+AssemblerType::TestSpaceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00351.html#a2147aad78da564d5611ab38d41855b45">TestSpaceType</a></td></tr>
+<tr class="separator:a2147aad78da564d5611ab38d41855b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8346ae79d4fd8fbc2e0b198e721d300c"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+AssemblerType::GridLayerType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00351.html#a8346ae79d4fd8fbc2e0b198e721d300c">GridLayerType</a></td></tr>
+<tr class="separator:a8346ae79d4fd8fbc2e0b198e721d300c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7e41fbd0a15bb998acdcd4361b704d0"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+<a class="el" href="a00347.html">LocalFaceFunctionalAssembler</a><br class="typebreak" />
+&lt; <a class="el" href="a00350.html#a2147aad78da564d5611ab38d41855b45">TestSpaceType</a>, <br class="typebreak" />
+IntersectionType, VectorType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00350.html#af7e41fbd0a15bb998acdcd4361b704d0">LocalFaceFunctionalAssemblerType</a></td></tr>
+<tr class="separator:af7e41fbd0a15bb998acdcd4361b704d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad6fef5a2406105f662c31d4ea4b3b7b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00351.html#ad6fef5a2406105f662c31d4ea4b3b7b9">LocalL2ProjectionOperator</a> (const size_t over_integrate=0, const XT::Common::Parameter &amp;param={})</td></tr>
-<tr class="separator:ad6fef5a2406105f662c31d4ea4b3b7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab96ed64d4f28677fb0368415af1a4119"><td class="memTemplParams" colspan="2">template&lt;class E , class D , size_t d, class R , size_t r, size_t rC, class RangeSpaceType , class VectorType &gt; </td></tr>
-<tr class="memitem:ab96ed64d4f28677fb0368415af1a4119"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; StaticCheck&lt; E, <br class="typebreak" />
-D, d, R, r, rC, RangeSpaceType, <br class="typebreak" />
-VectorType &gt;::value <br class="typebreak" />
-&amp;&amp;!<a class="el" href="a00194.html">is_fv_space</a>&lt; RangeSpaceType &gt;<br class="typebreak" />
-::value, void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00351.html#ab96ed64d4f28677fb0368415af1a4119">apply</a> (const XT::Functions::LocalizableFunctionInterface&lt; E, D, d, R, r, rC &gt; &amp;source, <a class="el" href="a00326.html">LocalDiscreteFunction</a>&lt; RangeSpaceType, VectorType &gt; &amp;local_range) const </td></tr>
-<tr class="separator:ab96ed64d4f28677fb0368415af1a4119"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a273ebe5003c168e57228ff43302ea3d2"><td class="memTemplParams" colspan="2">template&lt;class E , class D , size_t d, class R , size_t r, size_t rC, class RangeSpaceType , class VectorType &gt; </td></tr>
-<tr class="memitem:a273ebe5003c168e57228ff43302ea3d2"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; StaticCheck&lt; E, <br class="typebreak" />
-D, d, R, r, rC, RangeSpaceType, <br class="typebreak" />
-VectorType &gt;::value <br class="typebreak" />
-&amp;&amp;<a class="el" href="a00194.html">is_fv_space</a>&lt; RangeSpaceType &gt;<br class="typebreak" />
-::value, void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00351.html#a273ebe5003c168e57228ff43302ea3d2">apply</a> (const XT::Functions::LocalizableFunctionInterface&lt; E, D, d, R, r, rC &gt; &amp;source, <a class="el" href="a00326.html">LocalDiscreteFunction</a>&lt; RangeSpaceType, VectorType &gt; &amp;local_range) const </td></tr>
-<tr class="separator:a273ebe5003c168e57228ff43302ea3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae34afd4624e88b6be3020139c41389f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00360.html#ae34afd4624e88b6be3020139c41389f4">apply</a> (const SourceType &amp;source, <a class="el" href="a00326.html">LocalDiscreteFunction</a>&lt; RangeSpaceType, VectorType &gt; &amp;local_range) const</td></tr>
-<tr class="memdesc:ae34afd4624e88b6be3020139c41389f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the local operator.  <a href="#ae34afd4624e88b6be3020139c41389f4">More...</a><br /></td></tr>
-<tr class="separator:ae34afd4624e88b6be3020139c41389f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accdd73ef55378233f348e670e4eb8883"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00351.html#accdd73ef55378233f348e670e4eb8883">LocalFaceFunctionalWrapper</a> (const XT::Common::PerThreadValue&lt; const <a class="el" href="a00350.html#a2147aad78da564d5611ab38d41855b45">TestSpaceType</a> &gt; &amp;test_space, const XT::Grid::ApplyOn::WhichIntersection&lt; <a class="el" href="a00350.html#a8346ae79d4fd8fbc2e0b198e721d300c">GridLayerType</a> &gt; *where, const <a class="el" href="a00351.html#ae5b787af722e898f74a8672160501e82">LocalFaceFunctionalType</a> &amp;local_face_functional, VectorType &amp;vector)</td></tr>
+<tr class="separator:accdd73ef55378233f348e670e4eb8883"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a852dfac1b8708e9a2d5d41ad6f1a693a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00350.html#a852dfac1b8708e9a2d5d41ad6f1a693a">apply_on</a> (const <a class="el" href="a00350.html#a8346ae79d4fd8fbc2e0b198e721d300c">GridLayerType</a> &amp;gv, const IntersectionType &amp;intersection) const overridefinal</td></tr>
+<tr class="separator:a852dfac1b8708e9a2d5d41ad6f1a693a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91734ade16ee3c30a3318f9922f75fe7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00350.html#a91734ade16ee3c30a3318f9922f75fe7">apply_local</a> (const IntersectionType &amp;intersection, const EntityType &amp;, const EntityType &amp;) overridefinal</td></tr>
+<tr class="separator:a91734ade16ee3c30a3318f9922f75fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a85d71db8a2dfac84ac08489ca7167a67"></a>
+<a class="anchor" id="a3f3bb329d8fd83658032c0ebbfc502fa"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class AssemblerType , class VectorType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef VectorType::ScalarType <a class="el" href="a00351.html">Dune::GDT::internal::LocalFaceFunctionalWrapper</a>&lt; AssemblerType, VectorType &gt;::<a class="el" href="a00351.html#a3f3bb329d8fd83658032c0ebbfc502fa">FieldType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8346ae79d4fd8fbc2e0b198e721d300c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AssemblerType , class VectorType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef AssemblerType::GridLayerType <a class="el" href="a00350.html">Dune::GDT::internal::LocalFaceFunctionalVectorAssemblerWrapper</a>&lt; AssemblerType, VectorType &gt;::<a class="el" href="a00350.html#a8346ae79d4fd8fbc2e0b198e721d300c">GridLayerType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af7e41fbd0a15bb998acdcd4361b704d0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AssemblerType , class VectorType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00352.html">internal::LocalL2ProjectionOperatorTraits</a> ::<a class="el" href="a00360.html#a85d71db8a2dfac84ac08489ca7167a67">derived_type</a> <a class="el" href="a00360.html">Dune::GDT::LocalOperatorInterface</a>&lt; <a class="el" href="a00352.html">internal::LocalL2ProjectionOperatorTraits</a>  &gt;::<a class="el" href="a00360.html#a85d71db8a2dfac84ac08489ca7167a67">derived_type</a></td>
+          <td class="memname">typedef <a class="el" href="a00347.html">LocalFaceFunctionalAssembler</a>&lt;<a class="el" href="a00350.html#a2147aad78da564d5611ab38d41855b45">TestSpaceType</a>, IntersectionType, VectorType&gt; <a class="el" href="a00350.html">Dune::GDT::internal::LocalFaceFunctionalVectorAssemblerWrapper</a>&lt; AssemblerType, VectorType &gt;::<a class="el" href="a00350.html#af7e41fbd0a15bb998acdcd4361b704d0">LocalFaceFunctionalAssemblerType</a></td>
         </tr>
       </table>
   </td>
@@ -160,12 +189,28 @@ VectorType &gt;::value <br class="typebreak" />
 
 </div>
 </div>
-<a class="anchor" id="a8f4468a34acfed1ba4457178478eb008"></a>
+<a class="anchor" id="ae5b787af722e898f74a8672160501e82"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class AssemblerType , class VectorType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00352.html">internal::LocalL2ProjectionOperatorTraits</a> <a class="el" href="a00351.html#a8f4468a34acfed1ba4457178478eb008">Dune::GDT::LocalL2ProjectionOperator::Traits</a></td>
+          <td class="memname">typedef <a class="el" href="a00349.html">LocalFaceFunctionalInterface</a>&lt;typename TestSpaceType::BaseFunctionSetType, IntersectionType, <a class="el" href="a00351.html#a3f3bb329d8fd83658032c0ebbfc502fa">FieldType</a>&gt; <a class="el" href="a00351.html">Dune::GDT::internal::LocalFaceFunctionalWrapper</a>&lt; AssemblerType, VectorType &gt;::<a class="el" href="a00351.html#ae5b787af722e898f74a8672160501e82">LocalFaceFunctionalType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2147aad78da564d5611ab38d41855b45"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AssemblerType , class VectorType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef AssemblerType::TestSpaceType <a class="el" href="a00350.html">Dune::GDT::internal::LocalFaceFunctionalVectorAssemblerWrapper</a>&lt; AssemblerType, VectorType &gt;::<a class="el" href="a00350.html#a2147aad78da564d5611ab38d41855b45">TestSpaceType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -173,24 +218,38 @@ VectorType &gt;::value <br class="typebreak" />
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ad6fef5a2406105f662c31d4ea4b3b7b9"></a>
+<a class="anchor" id="accdd73ef55378233f348e670e4eb8883"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class AssemblerType , class VectorType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Dune::GDT::LocalL2ProjectionOperator::LocalL2ProjectionOperator </td>
+          <td class="memname"><a class="el" href="a00351.html">Dune::GDT::internal::LocalFaceFunctionalWrapper</a>&lt; AssemblerType, VectorType &gt;::<a class="el" href="a00351.html">LocalFaceFunctionalWrapper</a> </td>
           <td>(</td>
-          <td class="paramtype">const size_t&#160;</td>
-          <td class="paramname"><em>over_integrate</em> = <code>0</code>, </td>
+          <td class="paramtype">const XT::Common::PerThreadValue&lt; const <a class="el" href="a00350.html#a2147aad78da564d5611ab38d41855b45">TestSpaceType</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>test_space</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
-          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+          <td class="paramtype">const XT::Grid::ApplyOn::WhichIntersection&lt; <a class="el" href="a00350.html#a8346ae79d4fd8fbc2e0b198e721d300c">GridLayerType</a> &gt; *&#160;</td>
+          <td class="paramname"><em>where</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00351.html#ae5b787af722e898f74a8672160501e82">LocalFaceFunctionalType</a> &amp;&#160;</td>
+          <td class="paramname"><em>local_face_functional</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VectorType &amp;&#160;</td>
+          <td class="paramname"><em>vector</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -208,104 +267,68 @@ VectorType &gt;::value <br class="typebreak" />
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ae34afd4624e88b6be3020139c41389f4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00360.html">Dune::GDT::LocalOperatorInterface</a>&lt; <a class="el" href="a00352.html">internal::LocalL2ProjectionOperatorTraits</a>  &gt;::apply </td>
-          <td>(</td>
-          <td class="paramtype">const SourceType &amp;&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00326.html">LocalDiscreteFunction</a>&lt; RangeSpaceType, VectorType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>local_range</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Applies the local operator. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">source</td><td>Should be a XT::Functions::LocalizableFunctionInterface or a ConstDiscreteFunction. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ab96ed64d4f28677fb0368415af1a4119"></a>
+<a class="anchor" id="a91734ade16ee3c30a3318f9922f75fe7"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class E , class D , size_t d, class R , size_t r, size_t rC, class RangeSpaceType , class VectorType &gt; </div>
+template&lt;class AssemblerType , class VectorType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::enable_if&lt;StaticCheck&lt;E, D, d, R, r, rC, RangeSpaceType, VectorType&gt;::value &amp;&amp; !<a class="el" href="a00194.html">is_fv_space</a>&lt;RangeSpaceType&gt;::value, void&gt;::type Dune::GDT::LocalL2ProjectionOperator::apply </td>
+          <td class="memname">void <a class="el" href="a00350.html">Dune::GDT::internal::LocalFaceFunctionalVectorAssemblerWrapper</a>&lt; AssemblerType, VectorType &gt;::apply_local </td>
           <td>(</td>
-          <td class="paramtype">const XT::Functions::LocalizableFunctionInterface&lt; E, D, d, R, r, rC &gt; &amp;&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
+          <td class="paramtype">const IntersectionType &amp;&#160;</td>
+          <td class="paramname"><em>intersection</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00326.html">LocalDiscreteFunction</a>&lt; RangeSpaceType, VectorType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>local_range</em>&#160;</td>
+          <td class="paramtype">const EntityType &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const EntityType &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a273ebe5003c168e57228ff43302ea3d2"></a>
+<a class="anchor" id="a852dfac1b8708e9a2d5d41ad6f1a693a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class E , class D , size_t d, class R , size_t r, size_t rC, class RangeSpaceType , class VectorType &gt; </div>
+template&lt;class AssemblerType , class VectorType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::enable_if&lt;StaticCheck&lt;E, D, d, R, r, rC, RangeSpaceType, VectorType&gt;::value &amp;&amp; <a class="el" href="a00194.html">is_fv_space</a>&lt;RangeSpaceType&gt;::value, void&gt;::type Dune::GDT::LocalL2ProjectionOperator::apply </td>
+          <td class="memname">bool <a class="el" href="a00350.html">Dune::GDT::internal::LocalFaceFunctionalVectorAssemblerWrapper</a>&lt; AssemblerType, VectorType &gt;::apply_on </td>
           <td>(</td>
-          <td class="paramtype">const XT::Functions::LocalizableFunctionInterface&lt; E, D, d, R, r, rC &gt; &amp;&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
+          <td class="paramtype">const <a class="el" href="a00350.html#a8346ae79d4fd8fbc2e0b198e721d300c">GridLayerType</a> &amp;&#160;</td>
+          <td class="paramname"><em>gv</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00326.html">LocalDiscreteFunction</a>&lt; RangeSpaceType, VectorType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>local_range</em>&#160;</td>
+          <td class="paramtype">const IntersectionType &amp;&#160;</td>
+          <td class="paramname"><em>intersection</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -315,7 +338,7 @@ template&lt;class E , class D , size_t d, class R , size_t r, size_t rC, class R
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -323,12 +346,12 @@ template&lt;class E , class D , size_t d, class R , size_t r, size_t rC, class R
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00617_source.html">l2-projection.hh</a></li>
+<li><a class="el" href="a00743_source.html">wrapper.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:19 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:11 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: Dune::GDT::internal::LocalVolumeTwoFormMatrixAssemblerWrapper&lt; AssemblerType, MatrixType &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::LocalLambdaOperator&lt; S, RS, RV &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,105 +85,117 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00702.html">Dune</a></li><li class="navelem"><a class="el" href="a00703.html">GDT</a></li><li class="navelem"><a class="el" href="a00707.html">internal</a></li><li class="navelem"><a class="el" href="a00380.html">LocalVolumeTwoFormMatrixAssemblerWrapper</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00760.html">Dune</a></li><li class="navelem"><a class="el" href="a00761.html">GDT</a></li><li class="navelem"><a class="el" href="a00380.html">LocalLambdaOperator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a01280.html">List of all members</a>  </div>
+<a href="a01095.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::LocalVolumeTwoFormMatrixAssemblerWrapper&lt; AssemblerType, MatrixType &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::LocalLambdaOperator&lt; S, RS, RV &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00685_source.html">dune/gdt/assembler/wrapper.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00679_source.html">dune/gdt/local/operators/lambda.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::internal::LocalVolumeTwoFormMatrixAssemblerWrapper&lt; AssemblerType, MatrixType &gt;:</div>
+Inheritance diagram for Dune::GDT::LocalLambdaOperator&lt; S, RS, RV &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01281.png" border="0" usemap="#_dune_1_1_g_d_t_1_1internal_1_1_local_volume_two_form_matrix_assembler_wrapper_3_01_assembler_type_00_01_matrix_type_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1internal_1_1_local_volume_two_form_matrix_assembler_wrapper_3_01_assembler_type_00_01_matrix_type_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1internal_1_1_local_volume_two_form_matrix_assembler_wrapper_3_01_assembler_type_00_01_matrix_type_01_4_inherit__map">
+<div class="center"><img src="a01096.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_local_lambda_operator_3_01_s_00_01_r_s_00_01_r_v_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_local_lambda_operator_3_01_s_00_01_r_s_00_01_r_v_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_local_lambda_operator_3_01_s_00_01_r_s_00_01_r_v_01_4_inherit__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a738001bbbbc1335ff40c1c00eaa96a4b"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-AssemblerType::TestSpaceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00380.html#a738001bbbbc1335ff40c1c00eaa96a4b">TestSpaceType</a></td></tr>
-<tr class="separator:a738001bbbbc1335ff40c1c00eaa96a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ee49cafe80b7e0a026bd8e1c552a713"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-AssemblerType::AnsatzSpaceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00380.html#a6ee49cafe80b7e0a026bd8e1c552a713">AnsatzSpaceType</a></td></tr>
-<tr class="separator:a6ee49cafe80b7e0a026bd8e1c552a713"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac089932313bba3c871dc54a5419e1601"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-AssemblerType::GridLayerType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00380.html#ac089932313bba3c871dc54a5419e1601">GridLayerType</a></td></tr>
-<tr class="separator:ac089932313bba3c871dc54a5419e1601"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab67364410d9c3fca98ce46d5d214c4ee"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-<a class="el" href="a00377.html">LocalVolumeTwoFormAssembler</a><br class="typebreak" />
-&lt; <a class="el" href="a00380.html#a738001bbbbc1335ff40c1c00eaa96a4b">TestSpaceType</a>, MatrixType, <br class="typebreak" />
-<a class="el" href="a00380.html#a6ee49cafe80b7e0a026bd8e1c552a713">AnsatzSpaceType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00380.html#ab67364410d9c3fca98ce46d5d214c4ee">LocalVolumeTwoFormAssemblerType</a></td></tr>
-<tr class="separator:ab67364410d9c3fca98ce46d5d214c4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abac42eea3ecde8991231561d4c806d96"><td class="memItemLeft" align="right" valign="top">typedef S&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00380.html#abac42eea3ecde8991231561d4c806d96">SourceType</a></td></tr>
+<tr class="separator:abac42eea3ecde8991231561d4c806d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aec4ddc3960f4032934a61c68a83c1e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00343.html">LocalDiscreteFunction</a><br class="typebreak" />
+&lt; RS, RV &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00380.html#a4aec4ddc3960f4032934a61c68a83c1e">LocalRangeType</a></td></tr>
+<tr class="separator:a4aec4ddc3960f4032934a61c68a83c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c4338ace96bbc80fc4f4c4d4b430274"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(const <br class="typebreak" />
+<a class="el" href="a00380.html#abac42eea3ecde8991231561d4c806d96">SourceType</a> &amp;, <a class="el" href="a00380.html#a4aec4ddc3960f4032934a61c68a83c1e">LocalRangeType</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00380.html#a5c4338ace96bbc80fc4f4c4d4b430274">LocalLambdaType</a></td></tr>
+<tr class="separator:a5c4338ace96bbc80fc4f4c4d4b430274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85d71db8a2dfac84ac08489ca7167a67"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+<a class="el" href="a00381.html">internal::LocalLambdaOperatorTraits</a><br class="typebreak" />
+&lt; S, RS, RV &gt;::<a class="el" href="a00389.html#a85d71db8a2dfac84ac08489ca7167a67">derived_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00389.html#a85d71db8a2dfac84ac08489ca7167a67">derived_type</a></td></tr>
+<tr class="separator:a85d71db8a2dfac84ac08489ca7167a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a78cfffcce3edfe7c7676650772fd2b7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00380.html#a78cfffcce3edfe7c7676650772fd2b7b">LocalVolumeTwoFormMatrixAssemblerWrapper</a> (const XT::Common::PerThreadValue&lt; const <a class="el" href="a00380.html#a738001bbbbc1335ff40c1c00eaa96a4b">TestSpaceType</a> &gt; &amp;test_space, const XT::Common::PerThreadValue&lt; const <a class="el" href="a00380.html#a6ee49cafe80b7e0a026bd8e1c552a713">AnsatzSpaceType</a> &gt; &amp;ansatz_space, const XT::Grid::ApplyOn::WhichEntity&lt; <a class="el" href="a00380.html#ac089932313bba3c871dc54a5419e1601">GridLayerType</a> &gt; *where, const <a class="el" href="a00380.html#ab67364410d9c3fca98ce46d5d214c4ee">LocalVolumeTwoFormAssemblerType</a> &amp;local_assembler, MatrixType &amp;matrix)</td></tr>
-<tr class="separator:a78cfffcce3edfe7c7676650772fd2b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac99d0e78d5e78630403fc86826bcd6fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00380.html#ac99d0e78d5e78630403fc86826bcd6fe">apply_on</a> (const <a class="el" href="a00380.html#ac089932313bba3c871dc54a5419e1601">GridLayerType</a> &amp;gv, const EntityType &amp;entity) const overridefinal</td></tr>
-<tr class="separator:ac99d0e78d5e78630403fc86826bcd6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7109e109f09e41d05883483bcc84ee7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00380.html#a7109e109f09e41d05883483bcc84ee7a">apply_local</a> (const EntityType &amp;entity) overridefinal</td></tr>
-<tr class="separator:a7109e109f09e41d05883483bcc84ee7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ee071f1264f5280daafcf8d24c022d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00380.html#a6ee071f1264f5280daafcf8d24c022d2">LocalLambdaOperator</a> (<a class="el" href="a00380.html#a5c4338ace96bbc80fc4f4c4d4b430274">LocalLambdaType</a> local_lambda)</td></tr>
+<tr class="separator:a6ee071f1264f5280daafcf8d24c022d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03af894afdc6a8102cfdf764925e2a1d"><td class="memTemplParams" colspan="2">template&lt;class UnknownSourceType , class UnknownLocalRangeType &gt; </td></tr>
+<tr class="memitem:a03af894afdc6a8102cfdf764925e2a1d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00380.html#a03af894afdc6a8102cfdf764925e2a1d">apply</a> (const UnknownSourceType &amp;, UnknownLocalRangeType &amp;) const </td></tr>
+<tr class="separator:a03af894afdc6a8102cfdf764925e2a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a852facdc41392c2d12a3ce44b2fc934c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00380.html#a852facdc41392c2d12a3ce44b2fc934c">apply</a> (const <a class="el" href="a00380.html#abac42eea3ecde8991231561d4c806d96">SourceType</a> &amp;source, <a class="el" href="a00380.html#a4aec4ddc3960f4032934a61c68a83c1e">LocalRangeType</a> &amp;local_range) const </td></tr>
+<tr class="separator:a852facdc41392c2d12a3ce44b2fc934c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25bbebfb2ae164ad5f455828f8820e0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00380.html#a25bbebfb2ae164ad5f455828f8820e0e">LocalLambdaOperator</a> (const <a class="el" href="a00380.html">ThisType</a> &amp;)=default</td></tr>
+<tr class="separator:a25bbebfb2ae164ad5f455828f8820e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51857d99c96f63b6e9e5952b3632edee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00380.html#a51857d99c96f63b6e9e5952b3632edee">LocalLambdaOperator</a> (<a class="el" href="a00380.html">ThisType</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a51857d99c96f63b6e9e5952b3632edee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae34afd4624e88b6be3020139c41389f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00389.html#ae34afd4624e88b6be3020139c41389f4">apply</a> (const <a class="el" href="a00380.html#abac42eea3ecde8991231561d4c806d96">SourceType</a> &amp;source, <a class="el" href="a00343.html">LocalDiscreteFunction</a>&lt; RangeSpaceType, VectorType &gt; &amp;local_range) const</td></tr>
+<tr class="memdesc:ae34afd4624e88b6be3020139c41389f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the local operator.  <a href="#ae34afd4624e88b6be3020139c41389f4">More...</a><br /></td></tr>
+<tr class="separator:ae34afd4624e88b6be3020139c41389f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a6ee49cafe80b7e0a026bd8e1c552a713"></a>
+<a class="anchor" id="a85d71db8a2dfac84ac08489ca7167a67"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00381.html">internal::LocalLambdaOperatorTraits</a>&lt; S, RS, RV &gt; ::<a class="el" href="a00389.html#a85d71db8a2dfac84ac08489ca7167a67">derived_type</a> <a class="el" href="a00389.html">Dune::GDT::LocalOperatorInterface</a>&lt; <a class="el" href="a00381.html">internal::LocalLambdaOperatorTraits</a>&lt; S, RS, RV &gt;  &gt;::<a class="el" href="a00389.html#a85d71db8a2dfac84ac08489ca7167a67">derived_type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5c4338ace96bbc80fc4f4c4d4b430274"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AssemblerType , class MatrixType &gt; </div>
+template&lt;class S, class RS, class RV&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef AssemblerType::AnsatzSpaceType <a class="el" href="a00380.html">Dune::GDT::internal::LocalVolumeTwoFormMatrixAssemblerWrapper</a>&lt; AssemblerType, MatrixType &gt;::<a class="el" href="a00380.html#a6ee49cafe80b7e0a026bd8e1c552a713">AnsatzSpaceType</a></td>
+          <td class="memname">typedef std::function&lt;void(const <a class="el" href="a00380.html#abac42eea3ecde8991231561d4c806d96">SourceType</a>&amp;, <a class="el" href="a00380.html#a4aec4ddc3960f4032934a61c68a83c1e">LocalRangeType</a>&amp;)&gt; <a class="el" href="a00380.html">Dune::GDT::LocalLambdaOperator</a>&lt; S, RS, RV &gt;::<a class="el" href="a00380.html#a5c4338ace96bbc80fc4f4c4d4b430274">LocalLambdaType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="ac089932313bba3c871dc54a5419e1601"></a>
+<a class="anchor" id="a4aec4ddc3960f4032934a61c68a83c1e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AssemblerType , class MatrixType &gt; </div>
+template&lt;class S, class RS, class RV&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef AssemblerType::GridLayerType <a class="el" href="a00380.html">Dune::GDT::internal::LocalVolumeTwoFormMatrixAssemblerWrapper</a>&lt; AssemblerType, MatrixType &gt;::<a class="el" href="a00380.html#ac089932313bba3c871dc54a5419e1601">GridLayerType</a></td>
+          <td class="memname">typedef <a class="el" href="a00343.html">LocalDiscreteFunction</a>&lt;RS, RV&gt; <a class="el" href="a00380.html">Dune::GDT::LocalLambdaOperator</a>&lt; S, RS, RV &gt;::<a class="el" href="a00380.html#a4aec4ddc3960f4032934a61c68a83c1e">LocalRangeType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="ab67364410d9c3fca98ce46d5d214c4ee"></a>
+<a class="anchor" id="abac42eea3ecde8991231561d4c806d96"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AssemblerType , class MatrixType &gt; </div>
+template&lt;class S, class RS, class RV&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00377.html">LocalVolumeTwoFormAssembler</a>&lt;<a class="el" href="a00380.html#a738001bbbbc1335ff40c1c00eaa96a4b">TestSpaceType</a>, MatrixType, <a class="el" href="a00380.html#a6ee49cafe80b7e0a026bd8e1c552a713">AnsatzSpaceType</a>&gt; <a class="el" href="a00380.html">Dune::GDT::internal::LocalVolumeTwoFormMatrixAssemblerWrapper</a>&lt; AssemblerType, MatrixType &gt;::<a class="el" href="a00380.html#ab67364410d9c3fca98ce46d5d214c4ee">LocalVolumeTwoFormAssemblerType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a738001bbbbc1335ff40c1c00eaa96a4b"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class AssemblerType , class MatrixType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef AssemblerType::TestSpaceType <a class="el" href="a00380.html">Dune::GDT::internal::LocalVolumeTwoFormMatrixAssemblerWrapper</a>&lt; AssemblerType, MatrixType &gt;::<a class="el" href="a00380.html#a738001bbbbc1335ff40c1c00eaa96a4b">TestSpaceType</a></td>
+          <td class="memname">typedef S <a class="el" href="a00380.html">Dune::GDT::LocalLambdaOperator</a>&lt; S, RS, RV &gt;::<a class="el" href="a00380.html#abac42eea3ecde8991231561d4c806d96">SourceType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -191,49 +203,21 @@ template&lt;class AssemblerType , class MatrixType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a78cfffcce3edfe7c7676650772fd2b7b"></a>
+<a class="anchor" id="a6ee071f1264f5280daafcf8d24c022d2"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AssemblerType , class MatrixType &gt; </div>
+template&lt;class S, class RS, class RV&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00380.html">Dune::GDT::internal::LocalVolumeTwoFormMatrixAssemblerWrapper</a>&lt; AssemblerType, MatrixType &gt;::<a class="el" href="a00380.html">LocalVolumeTwoFormMatrixAssemblerWrapper</a> </td>
+          <td class="memname"><a class="el" href="a00380.html">Dune::GDT::LocalLambdaOperator</a>&lt; S, RS, RV &gt;::<a class="el" href="a00380.html">LocalLambdaOperator</a> </td>
           <td>(</td>
-          <td class="paramtype">const XT::Common::PerThreadValue&lt; const <a class="el" href="a00380.html#a738001bbbbc1335ff40c1c00eaa96a4b">TestSpaceType</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>test_space</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="a00380.html#a5c4338ace96bbc80fc4f4c4d4b430274">LocalLambdaType</a>&#160;</td>
+          <td class="paramname"><em>local_lambda</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const XT::Common::PerThreadValue&lt; const <a class="el" href="a00380.html#a6ee49cafe80b7e0a026bd8e1c552a713">AnsatzSpaceType</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>ansatz_space</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XT::Grid::ApplyOn::WhichEntity&lt; <a class="el" href="a00380.html#ac089932313bba3c871dc54a5419e1601">GridLayerType</a> &gt; *&#160;</td>
-          <td class="paramname"><em>where</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="a00380.html#ab67364410d9c3fca98ce46d5d214c4ee">LocalVolumeTwoFormAssemblerType</a> &amp;&#160;</td>
-          <td class="paramname"><em>local_assembler</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">MatrixType &amp;&#160;</td>
-          <td class="paramname"><em>matrix</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -245,53 +229,77 @@ template&lt;class AssemblerType , class MatrixType &gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a7109e109f09e41d05883483bcc84ee7a"></a>
+<a class="anchor" id="a25bbebfb2ae164ad5f455828f8820e0e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AssemblerType , class MatrixType &gt; </div>
+template&lt;class S, class RS, class RV&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00380.html">Dune::GDT::internal::LocalVolumeTwoFormMatrixAssemblerWrapper</a>&lt; AssemblerType, MatrixType &gt;::apply_local </td>
+          <td class="memname"><a class="el" href="a00380.html">Dune::GDT::LocalLambdaOperator</a>&lt; S, RS, RV &gt;::<a class="el" href="a00380.html">LocalLambdaOperator</a> </td>
           <td>(</td>
-          <td class="paramtype">const EntityType &amp;&#160;</td>
-          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="a00380.html">ThisType</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="ac99d0e78d5e78630403fc86826bcd6fe"></a>
+<a class="anchor" id="a51857d99c96f63b6e9e5952b3632edee"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AssemblerType , class MatrixType &gt; </div>
+template&lt;class S, class RS, class RV&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="a00380.html">Dune::GDT::internal::LocalVolumeTwoFormMatrixAssemblerWrapper</a>&lt; AssemblerType, MatrixType &gt;::apply_on </td>
+          <td class="memname"><a class="el" href="a00380.html">Dune::GDT::LocalLambdaOperator</a>&lt; S, RS, RV &gt;::<a class="el" href="a00380.html">LocalLambdaOperator</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00380.html#ac089932313bba3c871dc54a5419e1601">GridLayerType</a> &amp;&#160;</td>
-          <td class="paramname"><em>gv</em>, </td>
+          <td class="paramtype"><a class="el" href="a00380.html">ThisType</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ae34afd4624e88b6be3020139c41389f4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00389.html">Dune::GDT::LocalOperatorInterface</a>&lt; <a class="el" href="a00381.html">internal::LocalLambdaOperatorTraits</a>&lt; S, RS, RV &gt;  &gt;::apply </td>
+          <td>(</td>
+          <td class="paramtype">const SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const EntityType &amp;&#160;</td>
-          <td class="paramname"><em>entity</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00343.html">LocalDiscreteFunction</a>&lt; RangeSpaceType, VectorType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>local_range</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -301,7 +309,89 @@ template&lt;class AssemblerType , class MatrixType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Applies the local operator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Should be a XT::Functions::LocalizableFunctionInterface or a ConstDiscreteFunction. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a03af894afdc6a8102cfdf764925e2a1d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class S, class RS, class RV&gt; </div>
+<div class="memtemplate">
+template&lt;class UnknownSourceType , class UnknownLocalRangeType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00380.html">Dune::GDT::LocalLambdaOperator</a>&lt; S, RS, RV &gt;::apply </td>
+          <td>(</td>
+          <td class="paramtype">const UnknownSourceType &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UnknownLocalRangeType &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a852facdc41392c2d12a3ce44b2fc934c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class S, class RS, class RV&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00380.html">Dune::GDT::LocalLambdaOperator</a>&lt; S, RS, RV &gt;::apply </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00380.html#abac42eea3ecde8991231561d4c806d96">SourceType</a> &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00380.html#a4aec4ddc3960f4032934a61c68a83c1e">LocalRangeType</a> &amp;&#160;</td>
+          <td class="paramname"><em>local_range</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -309,12 +399,12 @@ template&lt;class AssemblerType , class MatrixType &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00685_source.html">wrapper.hh</a></li>
+<li><a class="el" href="a00679_source.html">operators/lambda.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:20 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:10 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

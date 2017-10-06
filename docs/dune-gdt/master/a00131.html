@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: Dune::GDT::EntropyBasedLocalFlux&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::internal::DynamicTupleGetter&lt; I &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,380 +85,61 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00702.html">Dune</a></li><li class="navelem"><a class="el" href="a00703.html">GDT</a></li><li class="navelem"><a class="el" href="a00131.html">EntropyBasedLocalFlux</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00760.html">Dune</a></li><li class="navelem"><a class="el" href="a00761.html">GDT</a></li><li class="navelem"><a class="el" href="a00766.html">internal</a></li><li class="navelem"><a class="el" href="a00131.html">DynamicTupleGetter</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="a00804.html">List of all members</a>  </div>
+<a href="a01295.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::EntropyBasedLocalFlux&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::internal::DynamicTupleGetter&lt; I &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00552_source.html">dune/gdt/local/fluxes/entropybased.hh</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for Dune::GDT::EntropyBasedLocalFlux&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00805.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_entropy_based_local_flux_3_01_basisfunction_type_00_01_grid_layer_type_00_01_u_00_01quadrature_dim_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1_entropy_based_local_flux_3_01_basisfunction_type_00_01_grid_layer_type_00_01_u_00_01quadrature_dim_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_entropy_based_local_flux_3_01_basisfunction_type_00_01_grid_layer_type_00_01_u_00_01quadrature_dim_01_4_inherit__map">
-</map>
-</div>
+<p><code>#include &lt;<a class="el" href="a00705_source.html">dune/gdt/spaces/mapper/product.hh</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00340.html">Localfunction</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:aaca4be48fd929bd8ceefcde13e9427f4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#aaca4be48fd929bd8ceefcde13e9427f4">MatrixType</a> = FieldMatrix&lt; RangeFieldType, dimRange, dimRange &gt;</td></tr>
-<tr class="separator:aaca4be48fd929bd8ceefcde13e9427f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0849a05faf34681de1895e96cb0acfad"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a0849a05faf34681de1895e96cb0acfad">BasisValuesMatrixType</a> = std::vector&lt; StateRangeType &gt;</td></tr>
-<tr class="separator:a0849a05faf34681de1895e96cb0acfad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66116827ebbf3d30fbc6b623e45c0f06"><td class="memItemLeft" align="right" valign="top">typedef Dune::QuadratureRule<br class="typebreak" />
-&lt; DomainFieldType, <br class="typebreak" />
-<a class="el" href="a00131.html#a4975b8fb67d4afc53f5e9db086045d6c">dimQuadrature</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a66116827ebbf3d30fbc6b623e45c0f06">QuadratureRuleType</a></td></tr>
-<tr class="separator:a66116827ebbf3d30fbc6b623e45c0f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:add23a90629b7c4b5f81a93ee3e446ea2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#add23a90629b7c4b5f81a93ee3e446ea2">EntropyBasedLocalFlux</a> (const BasisfunctionType &amp;basis_functions, const GridLayerType &amp;grid_layer, const <a class="el" href="a00131.html#a66116827ebbf3d30fbc6b623e45c0f06">QuadratureRuleType</a> &amp;quadrature, const RangeFieldType tau=1e-9, const RangeFieldType epsilon_gamma=0.01, const RangeFieldType chi=0.5, const RangeFieldType xi=1e-3, const std::vector&lt; RangeFieldType &gt; r_sequence={0, 1e-8, 1e-6, 1e-4, 1e-3, 1e-2, 5e-2, 0.1, 0.5}, const size_t k_0=50, const size_t k_max=200, const RangeFieldType epsilon=std::pow(2,-52), const MatrixType &amp;T_minus_one=internal::unit_matrix&lt; dimRange &gt;(), const std::string name=static_id())</td></tr>
-<tr class="separator:add23a90629b7c4b5f81a93ee3e446ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62a80b082df3b999465352fd82127a45"><td class="memItemLeft" align="right" valign="top">std::unique_ptr<br class="typebreak" />
-&lt; LocalfunctionType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a62a80b082df3b999465352fd82127a45">local_function</a> (const EntityType &amp;entity) const </td></tr>
-<tr class="separator:a62a80b082df3b999465352fd82127a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ea28c8dcbd908f173ffa0ef406383f7"><td class="memItemLeft" align="right" valign="top">StateRangeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a7ea28c8dcbd908f173ffa0ef406383f7">evaluate_kinetic_integral</a> (const EntityType &amp;entity, const DomainType &amp;x_local_entity, const StateRangeType &amp;u_i, const EntityType &amp;neighbor, const DomainType &amp;x_local_neighbor, const StateRangeType u_j, const DomainType &amp;n_ij, const XT::Common::Parameter &amp;param, const XT::Common::Parameter &amp;param_neighbor) const </td></tr>
-<tr class="separator:a7ea28c8dcbd908f173ffa0ef406383f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a37299e0595a225f187b33be244e45c83"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a37299e0595a225f187b33be244e45c83">static_id</a> ()</td></tr>
-<tr class="separator:a37299e0595a225f187b33be244e45c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a5c2a56571ecdd7241714b007f4124f3e"><td class="memItemLeft" align="right" valign="top">const GridLayerType::IndexSet &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a5c2a56571ecdd7241714b007f4124f3e">index_set_</a></td></tr>
-<tr class="separator:a5c2a56571ecdd7241714b007f4124f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ad719440572ab99d8c45ecee79fc421"><td class="memItemLeft" align="right" valign="top">const BasisfunctionType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a2ad719440572ab99d8c45ecee79fc421">basis_functions_</a></td></tr>
-<tr class="separator:a2ad719440572ab99d8c45ecee79fc421"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca6b17827924b4293b7e51221924ac7a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00131.html#a66116827ebbf3d30fbc6b623e45c0f06">QuadratureRuleType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#aca6b17827924b4293b7e51221924ac7a">quadrature_</a></td></tr>
-<tr class="separator:aca6b17827924b4293b7e51221924ac7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d3c9fddcc42abfd2584abda44554be2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00131.html#a0849a05faf34681de1895e96cb0acfad">BasisValuesMatrixType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a4d3c9fddcc42abfd2584abda44554be2">M_</a></td></tr>
-<tr class="separator:a4d3c9fddcc42abfd2584abda44554be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33a539fd633c75a0774a7d70e751a4d5"><td class="memItemLeft" align="right" valign="top">const RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a33a539fd633c75a0774a7d70e751a4d5">tau_</a></td></tr>
-<tr class="separator:a33a539fd633c75a0774a7d70e751a4d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a000ee4f8efb1729e15fa68499f2e7fb1"><td class="memItemLeft" align="right" valign="top">const RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a000ee4f8efb1729e15fa68499f2e7fb1">epsilon_gamma_</a></td></tr>
-<tr class="separator:a000ee4f8efb1729e15fa68499f2e7fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79818df96b5a85a93c26f183f73afb31"><td class="memItemLeft" align="right" valign="top">const RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a79818df96b5a85a93c26f183f73afb31">chi_</a></td></tr>
-<tr class="separator:a79818df96b5a85a93c26f183f73afb31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1753e7b1a8294c272515ae6f99d24e9"><td class="memItemLeft" align="right" valign="top">const RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#ad1753e7b1a8294c272515ae6f99d24e9">xi_</a></td></tr>
-<tr class="separator:ad1753e7b1a8294c272515ae6f99d24e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a321714b1b032b125bfec99e7295ed033"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; RangeFieldType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a321714b1b032b125bfec99e7295ed033">r_sequence_</a></td></tr>
-<tr class="separator:a321714b1b032b125bfec99e7295ed033"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e8a6a64e169013739eae3ca4fab0946"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a8e8a6a64e169013739eae3ca4fab0946">k_0_</a></td></tr>
-<tr class="separator:a8e8a6a64e169013739eae3ca4fab0946"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac6d8f23436a983bce347b1404418c93"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#aac6d8f23436a983bce347b1404418c93">k_max_</a></td></tr>
-<tr class="separator:aac6d8f23436a983bce347b1404418c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac5d9b1888b25ec6fa8588c9b66cb8c7"><td class="memItemLeft" align="right" valign="top">const RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#aac5d9b1888b25ec6fa8588c9b66cb8c7">epsilon_</a></td></tr>
-<tr class="separator:aac5d9b1888b25ec6fa8588c9b66cb8c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaa2ceb4d1208df089c67da266f358de"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00131.html#aaca4be48fd929bd8ceefcde13e9427f4">MatrixType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#aeaa2ceb4d1208df089c67da266f358de">T_minus_one_</a></td></tr>
-<tr class="separator:aeaa2ceb4d1208df089c67da266f358de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b9d3738b4c93db5de93d3beb28e60a8"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a4b9d3738b4c93db5de93d3beb28e60a8">name_</a></td></tr>
-<tr class="separator:a4b9d3738b4c93db5de93d3beb28e60a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e0395b93e962a3f28a23e831088e81b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr<br class="typebreak" />
-&lt; std::pair&lt; StateRangeType, <br class="typebreak" />
-StateRangeType &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a3e0395b93e962a3f28a23e831088e81b">alpha_cache_</a></td></tr>
-<tr class="separator:a3e0395b93e962a3f28a23e831088e81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99cf7ab3b40c406474ce72b37e965bc7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr<br class="typebreak" />
-&lt; StateRangeType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a99cf7ab3b40c406474ce72b37e965bc7">beta_cache_</a></td></tr>
-<tr class="separator:a99cf7ab3b40c406474ce72b37e965bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39c578323bf49845f7d5f6658c435f04"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr<br class="typebreak" />
-&lt; <a class="el" href="a00131.html#aaca4be48fd929bd8ceefcde13e9427f4">MatrixType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a39c578323bf49845f7d5f6658c435f04">T_cache_</a></td></tr>
-<tr class="separator:a39c578323bf49845f7d5f6658c435f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a4975b8fb67d4afc53f5e9db086045d6c"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a4975b8fb67d4afc53f5e9db086045d6c">dimQuadrature</a> = quadratureDim</td></tr>
-<tr class="separator:a4975b8fb67d4afc53f5e9db086045d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14b3f9396ca0bf8f87679d267d8dfc89"><td class="memTemplParams" colspan="2">template&lt;class EntityType , typename... TupleArgs&gt; </td></tr>
+<tr class="memitem:a14b3f9396ca0bf8f87679d267d8dfc89"><td class="memTemplItemLeft" align="right" valign="top">static std::enable_if&lt; I==sizeof...(TupleArgs), <br class="typebreak" />
+size_t &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00131.html#a14b3f9396ca0bf8f87679d267d8dfc89">numDofs</a> (const std::tuple&lt; TupleArgs...&gt; &amp;, const size_t, const EntityType &amp;)</td></tr>
+<tr class="separator:a14b3f9396ca0bf8f87679d267d8dfc89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class BasisfunctionType, class GridLayerType, class U, size_t quadratureDim = BasisfunctionType::dimDomain&gt;<br />
-class Dune::GDT::EntropyBasedLocalFlux&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;</h3>
-
-<p>Analytical flux {f}({u}) = &lt;  {m} G_{{}({u})} &gt;, for the notation see Alldredge, Hauck, O'Leary, Tits, "Adaptive change of basis in entropy-based moment closures for linear kinetic
-equations" </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a0849a05faf34681de1895e96cb0acfad"></a>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a14b3f9396ca0bf8f87679d267d8dfc89"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class BasisfunctionType , class GridLayerType , class U , size_t quadratureDim = BasisfunctionType::dimDomain&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="a00131.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;::<a class="el" href="a00131.html#a0849a05faf34681de1895e96cb0acfad">BasisValuesMatrixType</a> =  std::vector&lt;StateRangeType&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aaca4be48fd929bd8ceefcde13e9427f4"></a>
-<div class="memitem">
-<div class="memproto">
+template&lt;size_t I = 0&gt; </div>
 <div class="memtemplate">
-template&lt;class BasisfunctionType , class GridLayerType , class U , size_t quadratureDim = BasisfunctionType::dimDomain&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="a00131.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;::<a class="el" href="a00131.html#aaca4be48fd929bd8ceefcde13e9427f4">MatrixType</a> =  FieldMatrix&lt;RangeFieldType, dimRange, dimRange&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a66116827ebbf3d30fbc6b623e45c0f06"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BasisfunctionType , class GridLayerType , class U , size_t quadratureDim = BasisfunctionType::dimDomain&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef Dune::QuadratureRule&lt;DomainFieldType, <a class="el" href="a00131.html#a4975b8fb67d4afc53f5e9db086045d6c">dimQuadrature</a>&gt; <a class="el" href="a00131.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;::<a class="el" href="a00131.html#a66116827ebbf3d30fbc6b623e45c0f06">QuadratureRuleType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="add23a90629b7c4b5f81a93ee3e446ea2"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BasisfunctionType , class GridLayerType , class U , size_t quadratureDim = BasisfunctionType::dimDomain&gt; </div>
+template&lt;class EntityType , typename... TupleArgs&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00131.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;::<a class="el" href="a00131.html">EntropyBasedLocalFlux</a> </td>
+          <td class="memname">static std::enable_if&lt;I == sizeof...(TupleArgs), size_t&gt;::type <a class="el" href="a00131.html">Dune::GDT::internal::DynamicTupleGetter</a>&lt; I &gt;::numDofs </td>
           <td>(</td>
-          <td class="paramtype">const BasisfunctionType &amp;&#160;</td>
-          <td class="paramname"><em>basis_functions</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const GridLayerType &amp;&#160;</td>
-          <td class="paramname"><em>grid_layer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="a00131.html#a66116827ebbf3d30fbc6b623e45c0f06">QuadratureRuleType</a> &amp;&#160;</td>
-          <td class="paramname"><em>quadrature</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const RangeFieldType&#160;</td>
-          <td class="paramname"><em>tau</em> = <code>1e-9</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const RangeFieldType&#160;</td>
-          <td class="paramname"><em>epsilon_gamma</em> = <code>0.01</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const RangeFieldType&#160;</td>
-          <td class="paramname"><em>chi</em> = <code>0.5</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const RangeFieldType&#160;</td>
-          <td class="paramname"><em>xi</em> = <code>1e-3</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; RangeFieldType &gt;&#160;</td>
-          <td class="paramname"><em>r_sequence</em> = <code>{0,&#160;1e-8,&#160;1e-6,&#160;1e-4,&#160;1e-3,&#160;1e-2,&#160;5e-2,&#160;0.1,&#160;0.5}</code>, </td>
+          <td class="paramtype">const std::tuple&lt; TupleArgs...&gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const size_t&#160;</td>
-          <td class="paramname"><em>k_0</em> = <code>50</code>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const size_t&#160;</td>
-          <td class="paramname"><em>k_max</em> = <code>200</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const RangeFieldType&#160;</td>
-          <td class="paramname"><em>epsilon</em> = <code>std::pow(2,&#160;-52)</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="a00131.html#aaca4be48fd929bd8ceefcde13e9427f4">MatrixType</a> &amp;&#160;</td>
-          <td class="paramname"><em>T_minus_one</em> = <code><a class="el" href="a00707.html#a7759f514b95da8157ed7e9bd268b8937">internal::unit_matrix</a>&lt;dimRange&gt;()</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string&#160;</td>
-          <td class="paramname"><em>name</em> = <code><a class="el" href="a00131.html#a37299e0595a225f187b33be244e45c83">static_id</a>()</code>&#160;</td>
+          <td class="paramtype">const EntityType &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a7ea28c8dcbd908f173ffa0ef406383f7"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BasisfunctionType , class GridLayerType , class U , size_t quadratureDim = BasisfunctionType::dimDomain&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">StateRangeType <a class="el" href="a00131.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;::evaluate_kinetic_integral </td>
-          <td>(</td>
-          <td class="paramtype">const EntityType &amp;&#160;</td>
-          <td class="paramname"><em>entity</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const DomainType &amp;&#160;</td>
-          <td class="paramname"><em>x_local_entity</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const StateRangeType &amp;&#160;</td>
-          <td class="paramname"><em>u_i</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const EntityType &amp;&#160;</td>
-          <td class="paramname"><em>neighbor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const DomainType &amp;&#160;</td>
-          <td class="paramname"><em>x_local_neighbor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const StateRangeType&#160;</td>
-          <td class="paramname"><em>u_j</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const DomainType &amp;&#160;</td>
-          <td class="paramname"><em>n_ij</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
-          <td class="paramname"><em>param</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
-          <td class="paramname"><em>param_neighbor</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a62a80b082df3b999465352fd82127a45"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BasisfunctionType , class GridLayerType , class U , size_t quadratureDim = BasisfunctionType::dimDomain&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;LocalfunctionType&gt; <a class="el" href="a00131.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;::local_function </td>
-          <td>(</td>
-          <td class="paramtype">const EntityType &amp;&#160;</td>
-          <td class="paramname"><em>entity</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a37299e0595a225f187b33be244e45c83"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BasisfunctionType , class GridLayerType , class U , size_t quadratureDim = BasisfunctionType::dimDomain&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static std::string <a class="el" href="a00131.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;::static_id </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
         </tr>
       </table>
   </td>
@@ -470,298 +151,13 @@ template&lt;class BasisfunctionType , class GridLayerType , class U , size_t qua
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a3e0395b93e962a3f28a23e831088e81b"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BasisfunctionType , class GridLayerType , class U , size_t quadratureDim = BasisfunctionType::dimDomain&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;std::unique_ptr&lt;std::pair&lt;StateRangeType, StateRangeType&gt; &gt; &gt; <a class="el" href="a00131.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;::alpha_cache_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">mutable</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2ad719440572ab99d8c45ecee79fc421"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BasisfunctionType , class GridLayerType , class U , size_t quadratureDim = BasisfunctionType::dimDomain&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const BasisfunctionType&amp; <a class="el" href="a00131.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;::basis_functions_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a99cf7ab3b40c406474ce72b37e965bc7"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BasisfunctionType , class GridLayerType , class U , size_t quadratureDim = BasisfunctionType::dimDomain&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;std::unique_ptr&lt;StateRangeType&gt; &gt; <a class="el" href="a00131.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;::beta_cache_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">mutable</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a79818df96b5a85a93c26f183f73afb31"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BasisfunctionType , class GridLayerType , class U , size_t quadratureDim = BasisfunctionType::dimDomain&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const RangeFieldType <a class="el" href="a00131.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;::chi_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a4975b8fb67d4afc53f5e9db086045d6c"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BasisfunctionType , class GridLayerType , class U , size_t quadratureDim = BasisfunctionType::dimDomain&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const size_t <a class="el" href="a00131.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;::dimQuadrature = quadratureDim</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aac5d9b1888b25ec6fa8588c9b66cb8c7"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BasisfunctionType , class GridLayerType , class U , size_t quadratureDim = BasisfunctionType::dimDomain&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const RangeFieldType <a class="el" href="a00131.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;::epsilon_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a000ee4f8efb1729e15fa68499f2e7fb1"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BasisfunctionType , class GridLayerType , class U , size_t quadratureDim = BasisfunctionType::dimDomain&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const RangeFieldType <a class="el" href="a00131.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;::epsilon_gamma_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a5c2a56571ecdd7241714b007f4124f3e"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BasisfunctionType , class GridLayerType , class U , size_t quadratureDim = BasisfunctionType::dimDomain&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const GridLayerType::IndexSet&amp; <a class="el" href="a00131.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;::index_set_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a8e8a6a64e169013739eae3ca4fab0946"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BasisfunctionType , class GridLayerType , class U , size_t quadratureDim = BasisfunctionType::dimDomain&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const size_t <a class="el" href="a00131.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;::k_0_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aac6d8f23436a983bce347b1404418c93"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BasisfunctionType , class GridLayerType , class U , size_t quadratureDim = BasisfunctionType::dimDomain&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const size_t <a class="el" href="a00131.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;::k_max_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a4d3c9fddcc42abfd2584abda44554be2"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BasisfunctionType , class GridLayerType , class U , size_t quadratureDim = BasisfunctionType::dimDomain&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00131.html#a0849a05faf34681de1895e96cb0acfad">BasisValuesMatrixType</a> <a class="el" href="a00131.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;::M_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a4b9d3738b4c93db5de93d3beb28e60a8"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BasisfunctionType , class GridLayerType , class U , size_t quadratureDim = BasisfunctionType::dimDomain&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::string <a class="el" href="a00131.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;::name_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aca6b17827924b4293b7e51221924ac7a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BasisfunctionType , class GridLayerType , class U , size_t quadratureDim = BasisfunctionType::dimDomain&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="a00131.html#a66116827ebbf3d30fbc6b623e45c0f06">QuadratureRuleType</a> <a class="el" href="a00131.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;::quadrature_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a321714b1b032b125bfec99e7295ed033"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BasisfunctionType , class GridLayerType , class U , size_t quadratureDim = BasisfunctionType::dimDomain&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::vector&lt;RangeFieldType&gt; <a class="el" href="a00131.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;::r_sequence_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a39c578323bf49845f7d5f6658c435f04"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BasisfunctionType , class GridLayerType , class U , size_t quadratureDim = BasisfunctionType::dimDomain&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;std::unique_ptr&lt;<a class="el" href="a00131.html#aaca4be48fd929bd8ceefcde13e9427f4">MatrixType</a>&gt; &gt; <a class="el" href="a00131.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;::T_cache_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">mutable</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aeaa2ceb4d1208df089c67da266f358de"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BasisfunctionType , class GridLayerType , class U , size_t quadratureDim = BasisfunctionType::dimDomain&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="a00131.html#aaca4be48fd929bd8ceefcde13e9427f4">MatrixType</a> <a class="el" href="a00131.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;::T_minus_one_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a33a539fd633c75a0774a7d70e751a4d5"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BasisfunctionType , class GridLayerType , class U , size_t quadratureDim = BasisfunctionType::dimDomain&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const RangeFieldType <a class="el" href="a00131.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;::tau_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ad1753e7b1a8294c272515ae6f99d24e9"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BasisfunctionType , class GridLayerType , class U , size_t quadratureDim = BasisfunctionType::dimDomain&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const RangeFieldType <a class="el" href="a00131.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;::xi_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00552_source.html">entropybased.hh</a></li>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="a00705_source.html">spaces/mapper/product.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:19 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:11 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: Dune::GDT::internal::ChooseLimiter&lt; SlopeLimiters::no_slope &gt; Struct Template Reference</title>
+<title>dune-gdt: Dune::GDT::internal::ChooseLimiter&lt; SlopeLimiters::superbee &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,28 +85,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00702.html">Dune</a></li><li class="navelem"><a class="el" href="a00703.html">GDT</a></li><li class="navelem"><a class="el" href="a00707.html">internal</a></li><li class="navelem"><a class="el" href="a00069.html">ChooseLimiter< SlopeLimiters::no_slope ></a></li>  </ul>
+<li class="navelem"><a class="el" href="a00760.html">Dune</a></li><li class="navelem"><a class="el" href="a00761.html">GDT</a></li><li class="navelem"><a class="el" href="a00766.html">internal</a></li><li class="navelem"><a class="el" href="a00069.html">ChooseLimiter< SlopeLimiters::superbee ></a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="a01173.html">List of all members</a>  </div>
+<a href="a01284.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::ChooseLimiter&lt; SlopeLimiters::no_slope &gt; Struct Template Reference</div>  </div>
+<div class="title">Dune::GDT::internal::ChooseLimiter&lt; SlopeLimiters::superbee &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00666_source.html">dune/gdt/operators/fv/slopelimiters.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00724_source.html">dune/gdt/operators/fv/slopelimiters.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad9f1267fdccffea3606357aa330f62ef"><td class="memTemplParams" colspan="2">template&lt;class VectorType &gt; </td></tr>
-<tr class="memitem:ad9f1267fdccffea3606357aa330f62ef"><td class="memTemplItemLeft" align="right" valign="top">static VectorType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00069.html#ad9f1267fdccffea3606357aa330f62ef">limit</a> (const VectorType &amp;, const VectorType &amp;, const VectorType &amp;)</td></tr>
-<tr class="separator:ad9f1267fdccffea3606357aa330f62ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ac33466cdc65ee0236e8827cb2d8988"><td class="memTemplParams" colspan="2">template&lt;class VectorType &gt; </td></tr>
+<tr class="memitem:a3ac33466cdc65ee0236e8827cb2d8988"><td class="memTemplItemLeft" align="right" valign="top">static VectorType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00069.html#a3ac33466cdc65ee0236e8827cb2d8988">limit</a> (const VectorType &amp;slope_left, const VectorType &amp;slope_right, const VectorType &amp;slope_center)</td></tr>
+<tr class="separator:a3ac33466cdc65ee0236e8827cb2d8988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af615a9de46cc8c02a6160fbcfb4b95dc"><td class="memTemplParams" colspan="2">template&lt;class VectorType &gt; </td></tr>
+<tr class="memitem:af615a9de46cc8c02a6160fbcfb4b95dc"><td class="memTemplItemLeft" align="right" valign="top">static VectorType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00069.html#af615a9de46cc8c02a6160fbcfb4b95dc">maxmod</a> (const VectorType &amp;slope_left, const VectorType &amp;slope_right)</td></tr>
+<tr class="separator:af615a9de46cc8c02a6160fbcfb4b95dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ad9f1267fdccffea3606357aa330f62ef"></a>
+<a class="anchor" id="a3ac33466cdc65ee0236e8827cb2d8988"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -116,22 +119,58 @@ template&lt;class VectorType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static VectorType <a class="el" href="a00066.html">Dune::GDT::internal::ChooseLimiter</a>&lt; <a class="el" href="a00703.html#af68dfb986d335b9416add6ef64dfad58a358f8b55910c75c446a7f3418fa87362">SlopeLimiters::no_slope</a> &gt;::limit </td>
+          <td class="memname">static VectorType <a class="el" href="a00065.html">Dune::GDT::internal::ChooseLimiter</a>&lt; <a class="el" href="a00761.html#af68dfb986d335b9416add6ef64dfad58adbd796f5b863bc36af8381e5e641ce0e">SlopeLimiters::superbee</a> &gt;::limit </td>
           <td>(</td>
           <td class="paramtype">const VectorType &amp;&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>slope_left</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const VectorType &amp;&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>slope_right</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const VectorType &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramname"><em>slope_center</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af615a9de46cc8c02a6160fbcfb4b95dc"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class VectorType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static VectorType <a class="el" href="a00065.html">Dune::GDT::internal::ChooseLimiter</a>&lt; <a class="el" href="a00761.html#af68dfb986d335b9416add6ef64dfad58adbd796f5b863bc36af8381e5e641ce0e">SlopeLimiters::superbee</a> &gt;::maxmod </td>
+          <td>(</td>
+          <td class="paramtype">const VectorType &amp;&#160;</td>
+          <td class="paramname"><em>slope_left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const VectorType &amp;&#160;</td>
+          <td class="paramname"><em>slope_right</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -149,12 +188,12 @@ template&lt;class VectorType &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="a00666_source.html">slopelimiters.hh</a></li>
+<li><a class="el" href="a00724_source.html">slopelimiters.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:19 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:11 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

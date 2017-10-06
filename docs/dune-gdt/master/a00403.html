@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: Dune::GDT::internal::MustaLocalDirichletNumericalBoundaryFluxTraits&lt; AnalyticalFluxImp, BoundaryValueImp, LocalizableFunctionImp &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::LocalVolumeIntegrandInterface&lt; Traits, 1 &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,351 +85,357 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00702.html">Dune</a></li><li class="navelem"><a class="el" href="a00703.html">GDT</a></li><li class="navelem"><a class="el" href="a00707.html">internal</a></li><li class="navelem"><a class="el" href="a00403.html">MustaLocalDirichletNumericalBoundaryFluxTraits</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00760.html">Dune</a></li><li class="navelem"><a class="el" href="a00761.html">GDT</a></li><li class="navelem"><a class="el" href="a00403.html">LocalVolumeIntegrandInterface< Traits, 1 ></a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="a01289.html">List of all members</a>  </div>
+<a href="#pro-types">Protected Types</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
+<a href="a01120.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::MustaLocalDirichletNumericalBoundaryFluxTraits&lt; AnalyticalFluxImp, BoundaryValueImp, LocalizableFunctionImp &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::LocalVolumeIntegrandInterface&lt; Traits, 1 &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00636_source.html">dune/gdt/local/fluxes/musta.hh</a>&gt;</code></p>
+<p>Interface for unary codim 0 evaluations.  
+ <a href="a00403.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00656_source.html">dune/gdt/local/integrands/interfaces.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::internal::MustaLocalDirichletNumericalBoundaryFluxTraits&lt; AnalyticalFluxImp, BoundaryValueImp, LocalizableFunctionImp &gt;:</div>
+Inheritance diagram for Dune::GDT::LocalVolumeIntegrandInterface&lt; Traits, 1 &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01290.png" border="0" usemap="#_dune_1_1_g_d_t_1_1internal_1_1_musta_local_dirichlet_numerical_boundary_flux_traits_3_01_analytical_flux_imp_00_01_boundary_value_imp_00_01_localizable_function_imp_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1internal_1_1_musta_local_dirichlet_numerical_boundary_flux_traits_3_01_analytical_flux_imp_00_01_boundary_value_imp_00_01_localizable_function_imp_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1internal_1_1_musta_local_dirichlet_numerical_boundary_flux_traits_3_01_analytical_flux_imp_00_01_boundary_value_imp_00_01_localizable_function_imp_01_4_inherit__map">
+<div class="center"><img src="a01121.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_local_volume_integrand_interface_3_01_traits_00_011_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_local_volume_integrand_interface_3_01_traits_00_011_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_local_volume_integrand_interface_3_01_traits_00_011_01_4_inherit__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ad68919b82dc0333af9563962dd1aa129"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-<a class="el" href="a00402.html">MustaLocalDirichletNumericalBoundaryFlux</a><br class="typebreak" />
-&lt; AnalyticalFluxImp, <br class="typebreak" />
-BoundaryValueImp, <br class="typebreak" />
-LocalizableFunctionImp &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00403.html#ad68919b82dc0333af9563962dd1aa129">derived_type</a></td></tr>
-<tr class="separator:ad68919b82dc0333af9563962dd1aa129"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0bbc6abd791b87c5b3f7e16f512e009"><td class="memItemLeft" align="right" valign="top">typedef BoundaryValueImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00283.html#af0bbc6abd791b87c5b3f7e16f512e009">BoundaryValueType</a></td></tr>
-<tr class="separator:af0bbc6abd791b87c5b3f7e16f512e009"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c3ee9d2012a2e4775ef8ef4e28fa341"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-BoundaryValueType::LocalfunctionType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00283.html#a1c3ee9d2012a2e4775ef8ef4e28fa341">BoundaryValueLocalfunctionType</a></td></tr>
-<tr class="separator:a1c3ee9d2012a2e4775ef8ef4e28fa341"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55879163950cada5f20b1234b2b9c43d"><td class="memItemLeft" align="right" valign="top">typedef std::tuple<br class="typebreak" />
-&lt; std::shared_ptr<br class="typebreak" />
-&lt; <a class="el" href="a00169.html#acd92ef81cec9f220aa07c63b4b3e7de7">AnalyticalFluxLocalfunctionType</a> &gt;<br class="typebreak" />
-, std::shared_ptr<br class="typebreak" />
-&lt; LocalfunctionType &gt;<br class="typebreak" />
-, std::shared_ptr<br class="typebreak" />
-&lt; <a class="el" href="a00283.html#a1c3ee9d2012a2e4775ef8ef4e28fa341">BoundaryValueLocalfunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00283.html#a55879163950cada5f20b1234b2b9c43d">LocalfunctionTupleType</a></td></tr>
-<tr class="separator:a55879163950cada5f20b1234b2b9c43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25c1afdb1a0cf3c8c63b468d3831f301"><td class="memItemLeft" align="right" valign="top">typedef AnalyticalFluxImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html#a25c1afdb1a0cf3c8c63b468d3831f301">AnalyticalFluxType</a></td></tr>
-<tr class="separator:a25c1afdb1a0cf3c8c63b468d3831f301"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab92f9099fca3acd1c19a3b7604f7dfae"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-AnalyticalFluxType::EntityType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html#ab92f9099fca3acd1c19a3b7604f7dfae">EntityType</a></td></tr>
-<tr class="separator:ab92f9099fca3acd1c19a3b7604f7dfae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e971fe360066b2306c0e03da1f3995f"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-AnalyticalFluxType::DomainFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html#a7e971fe360066b2306c0e03da1f3995f">DomainFieldType</a></td></tr>
-<tr class="separator:a7e971fe360066b2306c0e03da1f3995f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a051968fb1affcaa8f6daa0fb7ae19458"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-AnalyticalFluxType::DomainType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html#a051968fb1affcaa8f6daa0fb7ae19458">DomainType</a></td></tr>
-<tr class="separator:a051968fb1affcaa8f6daa0fb7ae19458"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3b1d5db7829cc9da3a49e128b337fda"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-AnalyticalFluxType::RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html#ab3b1d5db7829cc9da3a49e128b337fda">RangeFieldType</a></td></tr>
-<tr class="separator:ab3b1d5db7829cc9da3a49e128b337fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21d4a86df91a58434ec3a76b9c3f68d8"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-AnalyticalFluxType::StateRangeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html#a21d4a86df91a58434ec3a76b9c3f68d8">RangeType</a></td></tr>
-<tr class="separator:a21d4a86df91a58434ec3a76b9c3f68d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd92ef81cec9f220aa07c63b4b3e7de7"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-AnalyticalFluxType::LocalfunctionType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html#acd92ef81cec9f220aa07c63b4b3e7de7">AnalyticalFluxLocalfunctionType</a></td></tr>
-<tr class="separator:acd92ef81cec9f220aa07c63b4b3e7de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14b96cc15fd787503fcd55cad3658417"><td class="memItemLeft" align="right" valign="top">typedef Traits::derived_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00403.html#a14b96cc15fd787503fcd55cad3658417">derived_type</a></td></tr>
+<tr class="separator:a14b96cc15fd787503fcd55cad3658417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fb3cc16c2ff9f824b462d169f8fc278"><td class="memItemLeft" align="right" valign="top">typedef Traits::EntityType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00403.html#a2fb3cc16c2ff9f824b462d169f8fc278">EntityType</a></td></tr>
+<tr class="separator:a2fb3cc16c2ff9f824b462d169f8fc278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47196b666bf563ebaad6883237bfdf9b"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+Traits::LocalfunctionTupleType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00403.html#a47196b666bf563ebaad6883237bfdf9b">LocalfunctionTupleType</a></td></tr>
+<tr class="separator:a47196b666bf563ebaad6883237bfdf9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc116fe53e26a421963c8367a9f21360"><td class="memItemLeft" align="right" valign="top">typedef Traits::DomainFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00403.html#acc116fe53e26a421963c8367a9f21360">DomainFieldType</a></td></tr>
+<tr class="separator:acc116fe53e26a421963c8367a9f21360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a160cf3d9501d722d3ca986f9a89a1341"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00403.html#a47196b666bf563ebaad6883237bfdf9b">LocalfunctionTupleType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00403.html#a160cf3d9501d722d3ca986f9a89a1341">localFunctions</a> (const <a class="el" href="a00403.html#a2fb3cc16c2ff9f824b462d169f8fc278">EntityType</a> &amp;entity) const </td></tr>
+<tr class="separator:a160cf3d9501d722d3ca986f9a89a1341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade54bc21b9cb5336acd580559003611b"><td class="memTemplParams" colspan="2">template&lt;class R , size_t r, size_t rC&gt; </td></tr>
+<tr class="memitem:ade54bc21b9cb5336acd580559003611b"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00403.html#ade54bc21b9cb5336acd580559003611b">order</a> (const <a class="el" href="a00403.html#a47196b666bf563ebaad6883237bfdf9b">LocalfunctionTupleType</a> &amp;localFunctionsTuple, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a00403.html#a54775b6b5207af4f332a832fe4bbcae7">E</a>, <a class="el" href="a00403.html#a64ec5e83711e9615301c1bbc3b7b4c41">D</a>, <a class="el" href="a00403.html#a6628a1e33ac5402a3a917bf20996404a">d</a>, R, r, rC &gt; &amp;testBase) const </td></tr>
+<tr class="memdesc:ade54bc21b9cb5336acd580559003611b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the needed integration order.  <a href="#ade54bc21b9cb5336acd580559003611b">More...</a><br /></td></tr>
+<tr class="separator:ade54bc21b9cb5336acd580559003611b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff3bd6813bc953b2e518ae97df5799ca"><td class="memTemplParams" colspan="2">template&lt;class R , size_t r, size_t rC&gt; </td></tr>
+<tr class="memitem:aff3bd6813bc953b2e518ae97df5799ca"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00403.html#aff3bd6813bc953b2e518ae97df5799ca">evaluate</a> (const <a class="el" href="a00403.html#a47196b666bf563ebaad6883237bfdf9b">LocalfunctionTupleType</a> &amp;localFunctionsTuple, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a00403.html#a54775b6b5207af4f332a832fe4bbcae7">E</a>, <a class="el" href="a00403.html#a64ec5e83711e9615301c1bbc3b7b4c41">D</a>, <a class="el" href="a00403.html#a6628a1e33ac5402a3a917bf20996404a">d</a>, R, r, rC &gt; &amp;testBase, const Dune::FieldVector&lt; <a class="el" href="a00403.html#a64ec5e83711e9615301c1bbc3b7b4c41">D</a>, <a class="el" href="a00403.html#a6628a1e33ac5402a3a917bf20996404a">d</a> &gt; &amp;localPoint, Dune::DynamicVector&lt; R &gt; &amp;ret) const </td></tr>
+<tr class="memdesc:aff3bd6813bc953b2e518ae97df5799ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a unary codim 0 evaluation.  <a href="#aff3bd6813bc953b2e518ae97df5799ca">More...</a><br /></td></tr>
+<tr class="separator:aff3bd6813bc953b2e518ae97df5799ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a4681675dc11f77b57dd95c3cd639b414"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html#a4681675dc11f77b57dd95c3cd639b414">dimDomain</a> = AnalyticalFluxType::dimDomain</td></tr>
-<tr class="separator:a4681675dc11f77b57dd95c3cd639b414"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca65b08093dd2cf8a646b0368d48a749"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00169.html#aca65b08093dd2cf8a646b0368d48a749">dimRange</a> = AnalyticalFluxType::dimRange</td></tr>
-<tr class="separator:aca65b08093dd2cf8a646b0368d48a749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc00eea2b7479b68f56c684708584a71"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00403.html#acc00eea2b7479b68f56c684708584a71">dimDomain</a> = Traits::dimDomain</td></tr>
+<tr class="separator:acc00eea2b7479b68f56c684708584a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:a54775b6b5207af4f332a832fe4bbcae7"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00403.html#a2fb3cc16c2ff9f824b462d169f8fc278">EntityType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00403.html#a54775b6b5207af4f332a832fe4bbcae7">E</a></td></tr>
+<tr class="separator:a54775b6b5207af4f332a832fe4bbcae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64ec5e83711e9615301c1bbc3b7b4c41"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00403.html#acc116fe53e26a421963c8367a9f21360">DomainFieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00403.html#a64ec5e83711e9615301c1bbc3b7b4c41">D</a></td></tr>
+<tr class="separator:a64ec5e83711e9615301c1bbc3b7b4c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:a6628a1e33ac5402a3a917bf20996404a"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00403.html#a6628a1e33ac5402a3a917bf20996404a">d</a> = <a class="el" href="a00403.html#acc00eea2b7479b68f56c684708584a71">dimDomain</a></td></tr>
+<tr class="separator:a6628a1e33ac5402a3a917bf20996404a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="acd92ef81cec9f220aa07c63b4b3e7de7"></a>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class Traits&gt;<br />
+class Dune::GDT::LocalVolumeIntegrandInterface&lt; Traits, 1 &gt;</h3>
+
+<p>Interface for unary codim 0 evaluations. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a64ec5e83711e9615301c1bbc3b7b4c41"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp&gt; </div>
+template&lt;class Traits &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef AnalyticalFluxType::LocalfunctionType <a class="el" href="a00169.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::<a class="el" href="a00169.html#acd92ef81cec9f220aa07c63b4b3e7de7">AnalyticalFluxLocalfunctionType</a></td>
+          <td class="memname">typedef <a class="el" href="a00403.html#acc116fe53e26a421963c8367a9f21360">DomainFieldType</a> <a class="el" href="a00402.html">Dune::GDT::LocalVolumeIntegrandInterface</a>&lt; Traits, 1 &gt;::<a class="el" href="a00403.html#a64ec5e83711e9615301c1bbc3b7b4c41">D</a></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a25c1afdb1a0cf3c8c63b468d3831f301"></a>
+<a class="anchor" id="a14b96cc15fd787503fcd55cad3658417"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;class Traits &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef AnalyticalFluxImp <a class="el" href="a00169.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::<a class="el" href="a00169.html#a25c1afdb1a0cf3c8c63b468d3831f301">AnalyticalFluxType</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1c3ee9d2012a2e4775ef8ef4e28fa341"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class AnalyticalFluxImp, class BoundaryValueImp, class LocalizableFunctionImp&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef BoundaryValueType::LocalfunctionType <a class="el" href="a00283.html">Dune::GDT::internal::LaxFriedrichsLocalDirichletNumericalBoundaryFluxTraits</a>&lt; AnalyticalFluxImp, BoundaryValueImp, LocalizableFunctionImp &gt;::<a class="el" href="a00283.html#a1c3ee9d2012a2e4775ef8ef4e28fa341">BoundaryValueLocalfunctionType</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="af0bbc6abd791b87c5b3f7e16f512e009"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class AnalyticalFluxImp, class BoundaryValueImp, class LocalizableFunctionImp&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef BoundaryValueImp <a class="el" href="a00283.html">Dune::GDT::internal::LaxFriedrichsLocalDirichletNumericalBoundaryFluxTraits</a>&lt; AnalyticalFluxImp, BoundaryValueImp, LocalizableFunctionImp &gt;::<a class="el" href="a00283.html#af0bbc6abd791b87c5b3f7e16f512e009">BoundaryValueType</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ad68919b82dc0333af9563962dd1aa129"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class AnalyticalFluxImp , class BoundaryValueImp , class LocalizableFunctionImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a00402.html">MustaLocalDirichletNumericalBoundaryFlux</a>&lt;AnalyticalFluxImp, BoundaryValueImp, LocalizableFunctionImp&gt; <a class="el" href="a00403.html">Dune::GDT::internal::MustaLocalDirichletNumericalBoundaryFluxTraits</a>&lt; AnalyticalFluxImp, BoundaryValueImp, LocalizableFunctionImp &gt;::<a class="el" href="a00169.html#a725b875d9dbe7a3901932cd6f7c688b7">derived_type</a></td>
+          <td class="memname">typedef Traits::derived_type <a class="el" href="a00402.html">Dune::GDT::LocalVolumeIntegrandInterface</a>&lt; Traits, 1 &gt;::<a class="el" href="a00403.html#a14b96cc15fd787503fcd55cad3658417">derived_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a7e971fe360066b2306c0e03da1f3995f"></a>
+<a class="anchor" id="acc116fe53e26a421963c8367a9f21360"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp&gt; </div>
+template&lt;class Traits &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Traits::DomainFieldType <a class="el" href="a00402.html">Dune::GDT::LocalVolumeIntegrandInterface</a>&lt; Traits, 1 &gt;::<a class="el" href="a00403.html#acc116fe53e26a421963c8367a9f21360">DomainFieldType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a54775b6b5207af4f332a832fe4bbcae7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef AnalyticalFluxType::DomainFieldType <a class="el" href="a00169.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::<a class="el" href="a00169.html#a7e971fe360066b2306c0e03da1f3995f">DomainFieldType</a></td>
+          <td class="memname">typedef <a class="el" href="a00403.html#a2fb3cc16c2ff9f824b462d169f8fc278">EntityType</a> <a class="el" href="a00402.html">Dune::GDT::LocalVolumeIntegrandInterface</a>&lt; Traits, 1 &gt;::<a class="el" href="a00403.html#a54775b6b5207af4f332a832fe4bbcae7">E</a></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a051968fb1affcaa8f6daa0fb7ae19458"></a>
+<a class="anchor" id="a2fb3cc16c2ff9f824b462d169f8fc278"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp&gt; </div>
+template&lt;class Traits &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Traits::EntityType <a class="el" href="a00402.html">Dune::GDT::LocalVolumeIntegrandInterface</a>&lt; Traits, 1 &gt;::<a class="el" href="a00403.html#a2fb3cc16c2ff9f824b462d169f8fc278">EntityType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a47196b666bf563ebaad6883237bfdf9b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Traits::LocalfunctionTupleType <a class="el" href="a00402.html">Dune::GDT::LocalVolumeIntegrandInterface</a>&lt; Traits, 1 &gt;::<a class="el" href="a00403.html#a47196b666bf563ebaad6883237bfdf9b">LocalfunctionTupleType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aff3bd6813bc953b2e518ae97df5799ca"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits &gt; </div>
+<div class="memtemplate">
+template&lt;class R , size_t r, size_t rC&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef AnalyticalFluxType::DomainType <a class="el" href="a00169.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::<a class="el" href="a00169.html#a051968fb1affcaa8f6daa0fb7ae19458">DomainType</a></td>
+          <td class="memname">void <a class="el" href="a00402.html">Dune::GDT::LocalVolumeIntegrandInterface</a>&lt; Traits, 1 &gt;::evaluate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00403.html#a47196b666bf563ebaad6883237bfdf9b">LocalfunctionTupleType</a> &amp;&#160;</td>
+          <td class="paramname"><em>localFunctionsTuple</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a00403.html#a54775b6b5207af4f332a832fe4bbcae7">E</a>, <a class="el" href="a00403.html#a64ec5e83711e9615301c1bbc3b7b4c41">D</a>, <a class="el" href="a00403.html#a6628a1e33ac5402a3a917bf20996404a">d</a>, R, r, rC &gt; &amp;&#160;</td>
+          <td class="paramname"><em>testBase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::FieldVector&lt; <a class="el" href="a00403.html#a64ec5e83711e9615301c1bbc3b7b4c41">D</a>, <a class="el" href="a00403.html#a6628a1e33ac5402a3a917bf20996404a">d</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>localPoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Dune::DynamicVector&lt; R &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes a unary codim 0 evaluation. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">R</td><td>RangeFieldType </td></tr>
+    <tr><td class="paramname">r</td><td>dimRange of the testBase </td></tr>
+    <tr><td class="paramname">rC</td><td>dimRangeRows of the testBase </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Attention</dt><dd>ret is assumed to be zero! </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a160cf3d9501d722d3ca986f9a89a1341"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00403.html#a47196b666bf563ebaad6883237bfdf9b">LocalfunctionTupleType</a> <a class="el" href="a00402.html">Dune::GDT::LocalVolumeIntegrandInterface</a>&lt; Traits, 1 &gt;::localFunctions </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00403.html#a2fb3cc16c2ff9f824b462d169f8fc278">EntityType</a> &amp;&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="ab92f9099fca3acd1c19a3b7604f7dfae"></a>
+<a class="anchor" id="ade54bc21b9cb5336acd580559003611b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp&gt; </div>
+template&lt;class Traits &gt; </div>
+<div class="memtemplate">
+template&lt;class R , size_t r, size_t rC&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef AnalyticalFluxType::EntityType <a class="el" href="a00169.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::<a class="el" href="a00169.html#ab92f9099fca3acd1c19a3b7604f7dfae">EntityType</a></td>
+          <td class="memname">size_t <a class="el" href="a00402.html">Dune::GDT::LocalVolumeIntegrandInterface</a>&lt; Traits, 1 &gt;::order </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00403.html#a47196b666bf563ebaad6883237bfdf9b">LocalfunctionTupleType</a> &amp;&#160;</td>
+          <td class="paramname"><em>localFunctionsTuple</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a00403.html#a54775b6b5207af4f332a832fe4bbcae7">E</a>, <a class="el" href="a00403.html#a64ec5e83711e9615301c1bbc3b7b4c41">D</a>, <a class="el" href="a00403.html#a6628a1e33ac5402a3a917bf20996404a">d</a>, R, r, rC &gt; &amp;&#160;</td>
+          <td class="paramname"><em>testBase</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a55879163950cada5f20b1234b2b9c43d"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class AnalyticalFluxImp, class BoundaryValueImp, class LocalizableFunctionImp&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::tuple&lt;std::shared_ptr&lt;<a class="el" href="a00169.html#acd92ef81cec9f220aa07c63b4b3e7de7">AnalyticalFluxLocalfunctionType</a>&gt;, std::shared_ptr&lt;LocalfunctionType&gt;, std::shared_ptr&lt;<a class="el" href="a00283.html#a1c3ee9d2012a2e4775ef8ef4e28fa341">BoundaryValueLocalfunctionType</a>&gt; &gt; <a class="el" href="a00283.html">Dune::GDT::internal::LaxFriedrichsLocalDirichletNumericalBoundaryFluxTraits</a>&lt; AnalyticalFluxImp, BoundaryValueImp, LocalizableFunctionImp &gt;::<a class="el" href="a00169.html#aa8c5272bdd9cae7a85e2ad1c64a64a29">LocalfunctionTupleType</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab3b1d5db7829cc9da3a49e128b337fda"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class AnalyticalFluxImp&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef AnalyticalFluxType::RangeFieldType <a class="el" href="a00169.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::<a class="el" href="a00169.html#ab3b1d5db7829cc9da3a49e128b337fda">RangeFieldType</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a21d4a86df91a58434ec3a76b9c3f68d8"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class AnalyticalFluxImp&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef AnalyticalFluxType::StateRangeType <a class="el" href="a00169.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::<a class="el" href="a00169.html#a21d4a86df91a58434ec3a76b9c3f68d8">RangeType</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Computes the needed integration order. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">R</td><td>RangeFieldType </td></tr>
+    <tr><td class="paramname">r</td><td>dimRange of the testBase </td></tr>
+    <tr><td class="paramname">rC</td><td>dimRangeRows of the testBase </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a4681675dc11f77b57dd95c3cd639b414"></a>
+<a class="anchor" id="a6628a1e33ac5402a3a917bf20996404a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp&gt; </div>
+template&lt;class Traits &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t <a class="el" href="a00169.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::dimDomain = AnalyticalFluxType::dimDomain</td>
+          <td class="memname">const size_t <a class="el" href="a00402.html">Dune::GDT::LocalVolumeIntegrandInterface</a>&lt; Traits, 1 &gt;::d = <a class="el" href="a00403.html#acc00eea2b7479b68f56c684708584a71">dimDomain</a></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="aca65b08093dd2cf8a646b0368d48a749"></a>
+<a class="anchor" id="acc00eea2b7479b68f56c684708584a71"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp&gt; </div>
+template&lt;class Traits &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t <a class="el" href="a00169.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits</a>&lt; AnalyticalFluxImp &gt;::dimRange = AnalyticalFluxType::dimRange</td>
+          <td class="memname">const size_t <a class="el" href="a00402.html">Dune::GDT::LocalVolumeIntegrandInterface</a>&lt; Traits, 1 &gt;::dimDomain = Traits::dimDomain</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -437,12 +443,12 @@ template&lt;class AnalyticalFluxImp&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00636_source.html">local/fluxes/musta.hh</a></li>
+<li><a class="el" href="a00656_source.html">local/integrands/interfaces.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:20 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:10 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -1,9 +1,11 @@
-digraph "Dune::GDT::EntropyBasedLocalFlux&lt; BasisfunctionType, GridLayerType, U, quadratureDim &gt;"
+digraph "Dune::GDT::BlockCgSpaceProvider&lt; GridType, layer_type, backend_type, polOrder, RangeFieldType, dimRange, dimRangeCols, grid_backend_type &gt;"
 {
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="Dune::GDT::EntropyBasedLocal\lFlux\< BasisfunctionType,\l GridLayerType, U, quadratureDim \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="XT::Functions::Localizable\lFluxFunctionInterface\<\l GridLayerType::template\l Codim\< 0 \>::Entity, Basisfunction\lType::DomainFieldType, BasisfunctionType\l::dimFlux, U, 0, BasisfunctionType::\lRangeFieldType, BasisfunctionType::dimRange,\l BasisfunctionType::dimFlux \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 [label="Dune::GDT::BlockCgSpaceProvider\l\< GridType, layer_type, backend\l_type, polOrder, RangeFieldType,\l dimRange, dimRangeCols, grid_backend_type \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< G, layer, backend,\l p, R, r, rC, g \>" ,fontname="Helvetica"];
+  Node2 [label="Dune::GDT::BlockCgSpaceProvider\l\< G, layer, backend, p, R,\l r, rC, g \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00035.html"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Dune::GDT::SpaceProvider\l\< G, layer, SpaceType::\lblock_cg, backend, p, R,\l r, rC, g \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00480.html"];
 }

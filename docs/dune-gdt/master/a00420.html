@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: Dune::GDT::ProductSpaceInterface&lt; Traits, domainDim, rangeDim, rangeDimCols &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::MatrixSolveFunctor&lt; GridLayerType, MatrixType, DiscreteFunctionType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,35 +85,111 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00702.html">Dune</a></li><li class="navelem"><a class="el" href="a00703.html">GDT</a></li><li class="navelem"><a class="el" href="a00420.html">ProductSpaceInterface</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00760.html">Dune</a></li><li class="navelem"><a class="el" href="a00761.html">GDT</a></li><li class="navelem"><a class="el" href="a00420.html">MatrixSolveFunctor</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a01138.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::ProductSpaceInterface&lt; Traits, domainDim, rangeDim, rangeDimCols &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::MatrixSolveFunctor&lt; GridLayerType, MatrixType, DiscreteFunctionType &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00600_source.html">dune/gdt/spaces/interface.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00717_source.html">dune/gdt/operators/fv/rhs.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::ProductSpaceInterface&lt; Traits, domainDim, rangeDim, rangeDimCols &gt;:</div>
+Inheritance diagram for Dune::GDT::MatrixSolveFunctor&lt; GridLayerType, MatrixType, DiscreteFunctionType &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01060.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_product_space_interface_3_01_traits_00_01domain_dim_00_01range_dim_00_01range_dim_cols_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1_product_space_interface_3_01_traits_00_01domain_dim_00_01range_dim_00_01range_dim_cols_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_product_space_interface_3_01_traits_00_01domain_dim_00_01range_dim_00_01range_dim_cols_01_4_inherit__map">
+<div class="center"><img src="a01139.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_matrix_solve_functor_3_01_grid_layer_type_00_01_matrix_type_00_01_discrete_function_type_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_matrix_solve_functor_3_01_grid_layer_type_00_01_matrix_type_00_01_discrete_function_type_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_matrix_solve_functor_3_01_grid_layer_type_00_01_matrix_type_00_01_discrete_function_type_01_4_inherit__map">
 </map>
 </div>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class Traits, size_t domainDim, size_t rangeDim, size_t rangeDimCols = 1&gt;<br />
-class Dune::GDT::ProductSpaceInterface&lt; Traits, domainDim, rangeDim, rangeDimCols &gt;</h3>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae6a944205da398d525c4f1b0c0b70803"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00420.html#ae6a944205da398d525c4f1b0c0b70803">MatrixSolveFunctor</a> (const std::vector&lt; MatrixType &gt; &amp;matrices, const DiscreteFunctionType &amp;rhs, DiscreteFunctionType &amp;solution)</td></tr>
+<tr class="separator:ae6a944205da398d525c4f1b0c0b70803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade532f433afe0acddc44f0155bfee3a1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00420.html#ade532f433afe0acddc44f0155bfee3a1">apply_local</a> (const EntityType &amp;entity)</td></tr>
+<tr class="separator:ade532f433afe0acddc44f0155bfee3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ae6a944205da398d525c4f1b0c0b70803"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerType , class MatrixType , class DiscreteFunctionType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00420.html">Dune::GDT::MatrixSolveFunctor</a>&lt; GridLayerType, MatrixType, DiscreteFunctionType &gt;::<a class="el" href="a00420.html">MatrixSolveFunctor</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; MatrixType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>matrices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DiscreteFunctionType &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DiscreteFunctionType &amp;&#160;</td>
+          <td class="paramname"><em>solution</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
-<p>Interface for function spaces that can be written as a product of several function spaces with the same domain. For example, a function space containing all functions f: {R}^d  {R}^r can also be seen as r times the function space containing all functions f: {R}^d  {R}. rangeDim and rangeDimCols are the respective dimensions of the product function space. If rangeDimCols is not the same for all factors, e.g. if the functions map to {R}  {R}^{2  2}, the range is regarded as a vector, i.e. rangeDimCols has to be specified as 1 and the dimensions have to be added up in rangeDim. In the example, this gives rangeDim = 5; </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00600_source.html">spaces/interface.hh</a></li>
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ade532f433afe0acddc44f0155bfee3a1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerType , class MatrixType , class DiscreteFunctionType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="a00420.html">Dune::GDT::MatrixSolveFunctor</a>&lt; GridLayerType, MatrixType, DiscreteFunctionType &gt;::apply_local </td>
+          <td>(</td>
+          <td class="paramtype">const EntityType &amp;&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="a00717_source.html">rhs.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:19 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:10 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: Dune::GDT::internal::GodunovFluxImplementation&lt; Traits &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::internal::FvProductSpaceTraits&lt; GridLayerImp, RangeFieldImp, rangeDim, rangeDimCols &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,498 +85,127 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00702.html">Dune</a></li><li class="navelem"><a class="el" href="a00703.html">GDT</a></li><li class="navelem"><a class="el" href="a00707.html">internal</a></li><li class="navelem"><a class="el" href="a00165.html">GodunovFluxImplementation</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00760.html">Dune</a></li><li class="navelem"><a class="el" href="a00761.html">GDT</a></li><li class="navelem"><a class="el" href="a00766.html">internal</a></li><li class="navelem"><a class="el" href="a00165.html">FvProductSpaceTraits</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="a01198.html">List of all members</a>  </div>
+<a href="a01305.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::GodunovFluxImplementation&lt; Traits &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::internal::FvProductSpaceTraits&lt; GridLayerImp, RangeFieldImp, rangeDim, rangeDimCols &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00590_source.html">dune/gdt/local/fluxes/godunov.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00704_source.html">dune/gdt/spaces/fv/product.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::internal::GodunovFluxImplementation&lt; Traits &gt;:</div>
+Inheritance diagram for Dune::GDT::internal::FvProductSpaceTraits&lt; GridLayerImp, RangeFieldImp, rangeDim, rangeDimCols &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01199.png" border="0" usemap="#_dune_1_1_g_d_t_1_1internal_1_1_godunov_flux_implementation_3_01_traits_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1internal_1_1_godunov_flux_implementation_3_01_traits_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1internal_1_1_godunov_flux_implementation_3_01_traits_01_4_inherit__map">
+<div class="center"><img src="a01306.png" border="0" usemap="#_dune_1_1_g_d_t_1_1internal_1_1_fv_product_space_traits_3_01_grid_layer_imp_00_01_range_field_imp_00_01range_dim_00_01range_dim_cols_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1internal_1_1_fv_product_space_traits_3_01_grid_layer_imp_00_01_range_field_imp_00_01range_dim_00_01range_dim_cols_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1internal_1_1_fv_product_space_traits_3_01_grid_layer_imp_00_01_range_field_imp_00_01range_dim_00_01range_dim_cols_01_4_inherit__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a6abe99a2cfa2da803a638fc99881548a"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-Traits::LocalfunctionTupleType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html#a6abe99a2cfa2da803a638fc99881548a">LocalfunctionTupleType</a></td></tr>
-<tr class="separator:a6abe99a2cfa2da803a638fc99881548a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ef08fe7414ebda96a4f696109d4e9ac"><td class="memItemLeft" align="right" valign="top">typedef Traits::EntityType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html#a5ef08fe7414ebda96a4f696109d4e9ac">EntityType</a></td></tr>
-<tr class="separator:a5ef08fe7414ebda96a4f696109d4e9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4372153d1da42f48da24f5b6a979677d"><td class="memItemLeft" align="right" valign="top">typedef Traits::DomainFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html#a4372153d1da42f48da24f5b6a979677d">DomainFieldType</a></td></tr>
-<tr class="separator:a4372153d1da42f48da24f5b6a979677d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a106aef4489654949205d25e4fd5c6808"><td class="memItemLeft" align="right" valign="top">typedef Traits::RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html#a106aef4489654949205d25e4fd5c6808">RangeFieldType</a></td></tr>
-<tr class="separator:a106aef4489654949205d25e4fd5c6808"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39d46b3c59946ec60c6e091adab3364a"><td class="memItemLeft" align="right" valign="top">typedef Traits::AnalyticalFluxType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html#a39d46b3c59946ec60c6e091adab3364a">AnalyticalFluxType</a></td></tr>
-<tr class="separator:a39d46b3c59946ec60c6e091adab3364a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae31d6bd1f9a55b1bedf9359461c431c9"><td class="memItemLeft" align="right" valign="top">typedef Traits::DomainType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html#ae31d6bd1f9a55b1bedf9359461c431c9">DomainType</a></td></tr>
-<tr class="separator:ae31d6bd1f9a55b1bedf9359461c431c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a292670fab63247c46b26aa266691128e"><td class="memItemLeft" align="right" valign="top">typedef Traits::RangeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html#a292670fab63247c46b26aa266691128e">RangeType</a></td></tr>
-<tr class="separator:a292670fab63247c46b26aa266691128e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2c3a3e2d56f120e84e83a52e38474f0"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-Traits::AnalyticalFluxLocalfunctionType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html#af2c3a3e2d56f120e84e83a52e38474f0">AnalyticalFluxLocalfunctionType</a></td></tr>
-<tr class="separator:af2c3a3e2d56f120e84e83a52e38474f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea706fd4d78aa853857eb0fab942a4d5"><td class="memItemLeft" align="right" valign="top">typedef Dune::FieldMatrix<br class="typebreak" />
-&lt; <a class="el" href="a00165.html#a106aef4489654949205d25e4fd5c6808">RangeFieldType</a>, <a class="el" href="a00165.html#a0aa964bd43bded651686e0241c47da40">dimRange</a>, <br class="typebreak" />
-<a class="el" href="a00165.html#a0aa964bd43bded651686e0241c47da40">dimRange</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html#aea706fd4d78aa853857eb0fab942a4d5">MatrixType</a></td></tr>
-<tr class="separator:aea706fd4d78aa853857eb0fab942a4d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3764b39a8adb00f19f28e4921c16877e"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-XT::LA::CommonSparseMatrix<br class="typebreak" />
-&lt; <a class="el" href="a00165.html#a106aef4489654949205d25e4fd5c6808">RangeFieldType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html#a3764b39a8adb00f19f28e4921c16877e">SparseMatrixType</a></td></tr>
-<tr class="separator:a3764b39a8adb00f19f28e4921c16877e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61d6e2eeaec7bcb82739cf3de676be17"><td class="memItemLeft" align="right" valign="top">typedef XT::LA::EigenSolver<br class="typebreak" />
-&lt; <a class="el" href="a00165.html#aea706fd4d78aa853857eb0fab942a4d5">MatrixType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html#a61d6e2eeaec7bcb82739cf3de676be17">EigenSolverType</a></td></tr>
-<tr class="separator:a61d6e2eeaec7bcb82739cf3de676be17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae76a8980603dd67bd5349e0dadc55e98"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-AnalyticalFluxLocalfunctionType::StateRangeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html#ae76a8980603dd67bd5349e0dadc55e98">StateRangeType</a></td></tr>
-<tr class="separator:ae76a8980603dd67bd5349e0dadc55e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45afe766c38162f8c151f920c503ac05"><td class="memItemLeft" align="right" valign="top">typedef Dune::FieldVector<br class="typebreak" />
-&lt; <a class="el" href="a00165.html#aea706fd4d78aa853857eb0fab942a4d5">MatrixType</a>, <a class="el" href="a00165.html#a71daa1521fa0e6f25ca19ab2a0f78688">dimDomain</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html#a45afe766c38162f8c151f920c503ac05">JacobianRangeType</a></td></tr>
-<tr class="separator:a45afe766c38162f8c151f920c503ac05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e5ef54dd48cb220c04be1499e33da71"><td class="memItemLeft" align="right" valign="top">typedef FieldVector<br class="typebreak" />
-&lt; <a class="el" href="a00165.html#a3764b39a8adb00f19f28e4921c16877e">SparseMatrixType</a>, <a class="el" href="a00165.html#a71daa1521fa0e6f25ca19ab2a0f78688">dimDomain</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html#a7e5ef54dd48cb220c04be1499e33da71">JacobiansType</a></td></tr>
-<tr class="separator:a7e5ef54dd48cb220c04be1499e33da71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:aee043a134abcf87afbdfeb211f7d3a02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html#aee043a134abcf87afbdfeb211f7d3a02">GodunovFluxImplementation</a> (const <a class="el" href="a00165.html#a39d46b3c59946ec60c6e091adab3364a">AnalyticalFluxType</a> &amp;<a class="el" href="a00165.html#a1756dcfc3e9e64446a78b6b26b9ca0fd">analytical_flux</a>, XT::Common::Parameter param, const bool is_linear=false, const bool boundary=false)</td></tr>
-<tr class="separator:aee043a134abcf87afbdfeb211f7d3a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3affe1c3299cfcbe25733f5adafbc32"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html#ab3affe1c3299cfcbe25733f5adafbc32">~GodunovFluxImplementation</a> ()</td></tr>
-<tr class="separator:ab3affe1c3299cfcbe25733f5adafbc32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01345a92df8129d2a0aaf2826cfd0d2f"><td class="memTemplParams" colspan="2">template&lt;class IntersectionType &gt; </td></tr>
-<tr class="memitem:a01345a92df8129d2a0aaf2826cfd0d2f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00165.html#a292670fab63247c46b26aa266691128e">RangeType</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00165.html#a01345a92df8129d2a0aaf2826cfd0d2f">evaluate</a> (const <a class="el" href="a00165.html#a6abe99a2cfa2da803a638fc99881548a">LocalfunctionTupleType</a> &amp;local_functions_tuple, const IntersectionType &amp;intersection, const Dune::FieldVector&lt; <a class="el" href="a00165.html#a4372153d1da42f48da24f5b6a979677d">DomainFieldType</a>, <a class="el" href="a00165.html#a71daa1521fa0e6f25ca19ab2a0f78688">dimDomain</a>-1 &gt; &amp;x_in_intersection_coords, const <a class="el" href="a00165.html#ae31d6bd1f9a55b1bedf9359461c431c9">DomainType</a> &amp;x_in_inside_coords, const <a class="el" href="a00165.html#ae31d6bd1f9a55b1bedf9359461c431c9">DomainType</a> &amp;, const <a class="el" href="a00165.html#a292670fab63247c46b26aa266691128e">RangeType</a> &amp;u_i, const <a class="el" href="a00165.html#a292670fab63247c46b26aa266691128e">RangeType</a> &amp;u_j) const </td></tr>
-<tr class="separator:a01345a92df8129d2a0aaf2826cfd0d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1756dcfc3e9e64446a78b6b26b9ca0fd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00165.html#a39d46b3c59946ec60c6e091adab3364a">AnalyticalFluxType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html#a1756dcfc3e9e64446a78b6b26b9ca0fd">analytical_flux</a> () const </td></tr>
-<tr class="separator:a1756dcfc3e9e64446a78b6b26b9ca0fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a3fb1d301b2ed71831217e2e7d680f508"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html#a3fb1d301b2ed71831217e2e7d680f508">reset</a> ()</td></tr>
-<tr class="separator:a3fb1d301b2ed71831217e2e7d680f508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87c67320338198a83550e822f059f5a6"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00162.html">FvProductSpace</a><br class="typebreak" />
+&lt; GridLayerImp, RangeFieldImp, <br class="typebreak" />
+rangeDim, rangeDimCols &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html#a87c67320338198a83550e822f059f5a6">derived_type</a></td></tr>
+<tr class="separator:a87c67320338198a83550e822f059f5a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1c64284deb7f1d2624c8c22f8726c01"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00166.html">Dune::GDT::FvSpace</a><br class="typebreak" />
+&lt; GridLayerType, <br class="typebreak" />
+RangeFieldType, <br class="typebreak" />
+1, <a class="el" href="a00165.html#a33875b1d5eefb742b908e61361139544">dimRangeCols</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html#ad1c64284deb7f1d2624c8c22f8726c01">FactorSpaceType</a></td></tr>
+<tr class="separator:ad1c64284deb7f1d2624c8c22f8726c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af10dfe074e74b8f8aba98c8cdf5b3ee9"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+Dune::XT::Common::make_identical_tuple<br class="typebreak" />
+&lt; <a class="el" href="a00165.html#ad1c64284deb7f1d2624c8c22f8726c01">FactorSpaceType</a>, <a class="el" href="a00165.html#ab430bf5e47e1ce3f19af1e9bc5b882df">dimRange</a> &gt;<br class="typebreak" />
+::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html#af10dfe074e74b8f8aba98c8cdf5b3ee9">SpaceTupleType</a></td></tr>
+<tr class="separator:af10dfe074e74b8f8aba98c8cdf5b3ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac086d7bf3642163bd7a1233b4d67e351"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+<a class="el" href="a00159.html">Dune::GDT::FvProductMapper</a><br class="typebreak" />
+&lt; GridLayerType, <a class="el" href="a00165.html#ab430bf5e47e1ce3f19af1e9bc5b882df">dimRange</a>, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html#ac086d7bf3642163bd7a1233b4d67e351">MapperType</a></td></tr>
+<tr class="separator:ac086d7bf3642163bd7a1233b4d67e351"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a71daa1521fa0e6f25ca19ab2a0f78688"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html#a71daa1521fa0e6f25ca19ab2a0f78688">dimDomain</a> = Traits::dimDomain</td></tr>
-<tr class="separator:a71daa1521fa0e6f25ca19ab2a0f78688"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0aa964bd43bded651686e0241c47da40"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html#a0aa964bd43bded651686e0241c47da40">dimRange</a> = Traits::dimRange</td></tr>
-<tr class="separator:a0aa964bd43bded651686e0241c47da40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b0269a60bd0c44c4d8327262c763f5e"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html#a1b0269a60bd0c44c4d8327262c763f5e">dimDomain</a> = GridLayerType::dimension</td></tr>
+<tr class="separator:a1b0269a60bd0c44c4d8327262c763f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab430bf5e47e1ce3f19af1e9bc5b882df"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html#ab430bf5e47e1ce3f19af1e9bc5b882df">dimRange</a> = rangeDim</td></tr>
+<tr class="separator:ab430bf5e47e1ce3f19af1e9bc5b882df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33875b1d5eefb742b908e61361139544"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00165.html#a33875b1d5eefb742b908e61361139544">dimRangeCols</a> = rangeDimCols</td></tr>
+<tr class="separator:a33875b1d5eefb742b908e61361139544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="af2c3a3e2d56f120e84e83a52e38474f0"></a>
+<a class="anchor" id="a87c67320338198a83550e822f059f5a6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Traits&gt; </div>
+template&lt;class GridLayerImp, class RangeFieldImp, size_t rangeDim, size_t rangeDimCols&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef Traits::AnalyticalFluxLocalfunctionType <a class="el" href="a00165.html">Dune::GDT::internal::GodunovFluxImplementation</a>&lt; Traits &gt;::<a class="el" href="a00165.html#af2c3a3e2d56f120e84e83a52e38474f0">AnalyticalFluxLocalfunctionType</a></td>
+          <td class="memname">typedef <a class="el" href="a00162.html">FvProductSpace</a>&lt;GridLayerImp, RangeFieldImp, rangeDim, rangeDimCols&gt; <a class="el" href="a00165.html">Dune::GDT::internal::FvProductSpaceTraits</a>&lt; GridLayerImp, RangeFieldImp, rangeDim, rangeDimCols &gt;::<a class="el" href="a00165.html#a87c67320338198a83550e822f059f5a6">derived_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a39d46b3c59946ec60c6e091adab3364a"></a>
+<a class="anchor" id="ad1c64284deb7f1d2624c8c22f8726c01"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Traits&gt; </div>
+template&lt;class GridLayerImp, class RangeFieldImp, size_t rangeDim, size_t rangeDimCols&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef Traits::AnalyticalFluxType <a class="el" href="a00165.html">Dune::GDT::internal::GodunovFluxImplementation</a>&lt; Traits &gt;::<a class="el" href="a00165.html#a39d46b3c59946ec60c6e091adab3364a">AnalyticalFluxType</a></td>
+          <td class="memname">typedef <a class="el" href="a00166.html">Dune::GDT::FvSpace</a>&lt;GridLayerType, RangeFieldType, 1, <a class="el" href="a00165.html#a33875b1d5eefb742b908e61361139544">dimRangeCols</a>&gt; <a class="el" href="a00165.html">Dune::GDT::internal::FvProductSpaceTraits</a>&lt; GridLayerImp, RangeFieldImp, rangeDim, rangeDimCols &gt;::<a class="el" href="a00165.html#ad1c64284deb7f1d2624c8c22f8726c01">FactorSpaceType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a4372153d1da42f48da24f5b6a979677d"></a>
+<a class="anchor" id="ac086d7bf3642163bd7a1233b4d67e351"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Traits&gt; </div>
+template&lt;class GridLayerImp, class RangeFieldImp, size_t rangeDim, size_t rangeDimCols&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef Traits::DomainFieldType <a class="el" href="a00165.html">Dune::GDT::internal::GodunovFluxImplementation</a>&lt; Traits &gt;::<a class="el" href="a00165.html#a4372153d1da42f48da24f5b6a979677d">DomainFieldType</a></td>
+          <td class="memname">typedef <a class="el" href="a00159.html">Dune::GDT::FvProductMapper</a>&lt;GridLayerType, <a class="el" href="a00165.html#ab430bf5e47e1ce3f19af1e9bc5b882df">dimRange</a>, 1&gt; <a class="el" href="a00165.html">Dune::GDT::internal::FvProductSpaceTraits</a>&lt; GridLayerImp, RangeFieldImp, rangeDim, rangeDimCols &gt;::<a class="el" href="a00165.html#ac086d7bf3642163bd7a1233b4d67e351">MapperType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="ae31d6bd1f9a55b1bedf9359461c431c9"></a>
+<a class="anchor" id="af10dfe074e74b8f8aba98c8cdf5b3ee9"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Traits&gt; </div>
+template&lt;class GridLayerImp, class RangeFieldImp, size_t rangeDim, size_t rangeDimCols&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef Traits::DomainType <a class="el" href="a00165.html">Dune::GDT::internal::GodunovFluxImplementation</a>&lt; Traits &gt;::<a class="el" href="a00165.html#ae31d6bd1f9a55b1bedf9359461c431c9">DomainType</a></td>
+          <td class="memname">typedef Dune::XT::Common::make_identical_tuple&lt;<a class="el" href="a00165.html#ad1c64284deb7f1d2624c8c22f8726c01">FactorSpaceType</a>, <a class="el" href="a00165.html#ab430bf5e47e1ce3f19af1e9bc5b882df">dimRange</a>&gt;::type <a class="el" href="a00165.html">Dune::GDT::internal::FvProductSpaceTraits</a>&lt; GridLayerImp, RangeFieldImp, rangeDim, rangeDimCols &gt;::<a class="el" href="a00165.html#af10dfe074e74b8f8aba98c8cdf5b3ee9">SpaceTupleType</a></td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a61d6e2eeaec7bcb82739cf3de676be17"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef XT::LA::EigenSolver&lt;<a class="el" href="a00165.html#aea706fd4d78aa853857eb0fab942a4d5">MatrixType</a>&gt; <a class="el" href="a00165.html">Dune::GDT::internal::GodunovFluxImplementation</a>&lt; Traits &gt;::<a class="el" href="a00165.html#a61d6e2eeaec7bcb82739cf3de676be17">EigenSolverType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a5ef08fe7414ebda96a4f696109d4e9ac"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef Traits::EntityType <a class="el" href="a00165.html">Dune::GDT::internal::GodunovFluxImplementation</a>&lt; Traits &gt;::<a class="el" href="a00165.html#a5ef08fe7414ebda96a4f696109d4e9ac">EntityType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a45afe766c38162f8c151f920c503ac05"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef Dune::FieldVector&lt;<a class="el" href="a00165.html#aea706fd4d78aa853857eb0fab942a4d5">MatrixType</a>, <a class="el" href="a00165.html#a71daa1521fa0e6f25ca19ab2a0f78688">dimDomain</a>&gt; <a class="el" href="a00165.html">Dune::GDT::internal::GodunovFluxImplementation</a>&lt; Traits &gt;::<a class="el" href="a00165.html#a45afe766c38162f8c151f920c503ac05">JacobianRangeType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a7e5ef54dd48cb220c04be1499e33da71"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef FieldVector&lt;<a class="el" href="a00165.html#a3764b39a8adb00f19f28e4921c16877e">SparseMatrixType</a>, <a class="el" href="a00165.html#a71daa1521fa0e6f25ca19ab2a0f78688">dimDomain</a>&gt; <a class="el" href="a00165.html">Dune::GDT::internal::GodunovFluxImplementation</a>&lt; Traits &gt;::<a class="el" href="a00165.html#a7e5ef54dd48cb220c04be1499e33da71">JacobiansType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a6abe99a2cfa2da803a638fc99881548a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef Traits::LocalfunctionTupleType <a class="el" href="a00165.html">Dune::GDT::internal::GodunovFluxImplementation</a>&lt; Traits &gt;::<a class="el" href="a00165.html#a6abe99a2cfa2da803a638fc99881548a">LocalfunctionTupleType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aea706fd4d78aa853857eb0fab942a4d5"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef Dune::FieldMatrix&lt;<a class="el" href="a00165.html#a106aef4489654949205d25e4fd5c6808">RangeFieldType</a>, <a class="el" href="a00165.html#a0aa964bd43bded651686e0241c47da40">dimRange</a>, <a class="el" href="a00165.html#a0aa964bd43bded651686e0241c47da40">dimRange</a>&gt; <a class="el" href="a00165.html">Dune::GDT::internal::GodunovFluxImplementation</a>&lt; Traits &gt;::<a class="el" href="a00165.html#aea706fd4d78aa853857eb0fab942a4d5">MatrixType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a106aef4489654949205d25e4fd5c6808"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef Traits::RangeFieldType <a class="el" href="a00165.html">Dune::GDT::internal::GodunovFluxImplementation</a>&lt; Traits &gt;::<a class="el" href="a00165.html#a106aef4489654949205d25e4fd5c6808">RangeFieldType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a292670fab63247c46b26aa266691128e"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef Traits::RangeType <a class="el" href="a00165.html">Dune::GDT::internal::GodunovFluxImplementation</a>&lt; Traits &gt;::<a class="el" href="a00165.html#a292670fab63247c46b26aa266691128e">RangeType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a3764b39a8adb00f19f28e4921c16877e"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef XT::LA::CommonSparseMatrix&lt;<a class="el" href="a00165.html#a106aef4489654949205d25e4fd5c6808">RangeFieldType</a>&gt; <a class="el" href="a00165.html">Dune::GDT::internal::GodunovFluxImplementation</a>&lt; Traits &gt;::<a class="el" href="a00165.html#a3764b39a8adb00f19f28e4921c16877e">SparseMatrixType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae76a8980603dd67bd5349e0dadc55e98"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef AnalyticalFluxLocalfunctionType::StateRangeType <a class="el" href="a00165.html">Dune::GDT::internal::GodunovFluxImplementation</a>&lt; Traits &gt;::<a class="el" href="a00165.html#ae76a8980603dd67bd5349e0dadc55e98">StateRangeType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="aee043a134abcf87afbdfeb211f7d3a02"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00165.html">Dune::GDT::internal::GodunovFluxImplementation</a>&lt; Traits &gt;::<a class="el" href="a00165.html">GodunovFluxImplementation</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00165.html#a39d46b3c59946ec60c6e091adab3364a">AnalyticalFluxType</a> &amp;&#160;</td>
-          <td class="paramname"><em>analytical_flux</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">XT::Common::Parameter&#160;</td>
-          <td class="paramname"><em>param</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const bool&#160;</td>
-          <td class="paramname"><em>is_linear</em> = <code>false</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const bool&#160;</td>
-          <td class="paramname"><em>boundary</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab3affe1c3299cfcbe25733f5adafbc32"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00165.html">Dune::GDT::internal::GodunovFluxImplementation</a>&lt; Traits &gt;::~<a class="el" href="a00165.html">GodunovFluxImplementation</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a1756dcfc3e9e64446a78b6b26b9ca0fd"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="a00165.html#a39d46b3c59946ec60c6e091adab3364a">AnalyticalFluxType</a>&amp; <a class="el" href="a00165.html">Dune::GDT::internal::GodunovFluxImplementation</a>&lt; Traits &gt;::analytical_flux </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a01345a92df8129d2a0aaf2826cfd0d2f"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits&gt; </div>
-<div class="memtemplate">
-template&lt;class IntersectionType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00165.html#a292670fab63247c46b26aa266691128e">RangeType</a> <a class="el" href="a00165.html">Dune::GDT::internal::GodunovFluxImplementation</a>&lt; Traits &gt;::evaluate </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00165.html#a6abe99a2cfa2da803a638fc99881548a">LocalfunctionTupleType</a> &amp;&#160;</td>
-          <td class="paramname"><em>local_functions_tuple</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const IntersectionType &amp;&#160;</td>
-          <td class="paramname"><em>intersection</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Dune::FieldVector&lt; <a class="el" href="a00165.html#a4372153d1da42f48da24f5b6a979677d">DomainFieldType</a>, <a class="el" href="a00165.html#a71daa1521fa0e6f25ca19ab2a0f78688">dimDomain</a>-1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>x_in_intersection_coords</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="a00165.html#ae31d6bd1f9a55b1bedf9359461c431c9">DomainType</a> &amp;&#160;</td>
-          <td class="paramname"><em>x_in_inside_coords</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="a00165.html#ae31d6bd1f9a55b1bedf9359461c431c9">DomainType</a> &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="a00165.html#a292670fab63247c46b26aa266691128e">RangeType</a> &amp;&#160;</td>
-          <td class="paramname"><em>u_i</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="a00165.html#a292670fab63247c46b26aa266691128e">RangeType</a> &amp;&#160;</td>
-          <td class="paramname"><em>u_j</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a3fb1d301b2ed71831217e2e7d680f508"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void <a class="el" href="a00165.html">Dune::GDT::internal::GodunovFluxImplementation</a>&lt; Traits &gt;::reset </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a71daa1521fa0e6f25ca19ab2a0f78688"></a>
+<a class="anchor" id="a1b0269a60bd0c44c4d8327262c763f5e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Traits&gt; </div>
+template&lt;class GridLayerImp, class RangeFieldImp, size_t rangeDim, size_t rangeDimCols&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr size_t <a class="el" href="a00165.html">Dune::GDT::internal::GodunovFluxImplementation</a>&lt; Traits &gt;::dimDomain = Traits::dimDomain</td>
+          <td class="memname">const size_t <a class="el" href="a00165.html">Dune::GDT::internal::FvProductSpaceTraits</a>&lt; GridLayerImp, RangeFieldImp, rangeDim, rangeDimCols &gt;::dimDomain = GridLayerType::dimension</td>
         </tr>
       </table>
   </td>
@@ -588,17 +217,39 @@ template&lt;class Traits&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a0aa964bd43bded651686e0241c47da40"></a>
+<a class="anchor" id="ab430bf5e47e1ce3f19af1e9bc5b882df"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Traits&gt; </div>
+template&lt;class GridLayerImp, class RangeFieldImp, size_t rangeDim, size_t rangeDimCols&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t <a class="el" href="a00165.html">Dune::GDT::internal::GodunovFluxImplementation</a>&lt; Traits &gt;::dimRange = Traits::dimRange</td>
+          <td class="memname">const size_t <a class="el" href="a00165.html">Dune::GDT::internal::FvProductSpaceTraits</a>&lt; GridLayerImp, RangeFieldImp, rangeDim, rangeDimCols &gt;::dimRange = rangeDim</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a33875b1d5eefb742b908e61361139544"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp, class RangeFieldImp, size_t rangeDim, size_t rangeDimCols&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t <a class="el" href="a00165.html">Dune::GDT::internal::FvProductSpaceTraits</a>&lt; GridLayerImp, RangeFieldImp, rangeDim, rangeDimCols &gt;::dimRangeCols = rangeDimCols</td>
         </tr>
       </table>
   </td>
@@ -611,12 +262,12 @@ template&lt;class Traits&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00590_source.html">local/fluxes/godunov.hh</a></li>
+<li><a class="el" href="a00704_source.html">spaces/fv/product.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:19 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:11 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

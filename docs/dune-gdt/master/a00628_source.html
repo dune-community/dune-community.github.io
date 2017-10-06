@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: laplace.hh Source File</title>
+<title>dune-gdt: force.hh Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -83,12 +83,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_eaee94ab3c5b11ce8fcab1cb9d405304.html">src</a></li><li class="navelem"><a class="el" href="dir_58c354ae22a30254506a25a39957e8ba.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_16224573f43954b382d54ec1df2a2147.html">dune</a></li><li class="navelem"><a class="el" href="dir_f1992dd472896fb89117bdc8155a3e1c.html">gdt</a></li><li class="navelem"><a class="el" href="dir_91b47eb1f5534b791b2db4e72c4ced9d.html">operators</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_eaee94ab3c5b11ce8fcab1cb9d405304.html">src</a></li><li class="navelem"><a class="el" href="dir_58c354ae22a30254506a25a39957e8ba.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_16224573f43954b382d54ec1df2a2147.html">dune</a></li><li class="navelem"><a class="el" href="dir_f1992dd472896fb89117bdc8155a3e1c.html">gdt</a></li><li class="navelem"><a class="el" href="dir_91b47eb1f5534b791b2db4e72c4ced9d.html">operators</a></li><li class="navelem"><a class="el" href="dir_2aea60d8179215910741717bf9fb1687.html">fv</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">laplace.hh</div>  </div>
+<div class="title">operators/fv/force.hh</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="a00628.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// This file is part of the dune-gdt project:</span></div>
@@ -98,424 +98,174 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//      or  GPL-2.0+ (http://opensource.org/licenses/gpl-license)</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//          with &quot;runtime exception&quot; (http://www.dune-project.org/license.html)</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// Authors:</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//   Felix Schindler (2015 - 2017)</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//   Felix Schindler (2016 - 2017)</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//   Rene Milk       (2016 - 2017)</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef DUNE_GDT_OPERATORS_LAPLACE_HH</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define DUNE_GDT_OPERATORS_LAPLACE_HH</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;limits&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;type_traits&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;dune/xt/common/memory.hh&gt;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;dune/xt/functions/constant.hh&gt;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;dune/xt/grid/type_traits.hh&gt;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00551.html">elliptic.hh</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//   Tobias Leibner  (2016)</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef DUNE_GDT_OPERATORS_FV_FORCE_HH</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define DUNE_GDT_OPERATORS_FV_FORCE_HH</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00627.html">dune/gdt/local/fluxes/force.hh</a>&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00658.html">dune/gdt/operators/interfaces.hh</a>&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00536.html">base.hh</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00760.html">Dune</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span>GDT {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00702.html">Dune</a> {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span>GDT {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// ///////////////////////// //</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">// LaplaceLocalizableProduct //</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// ///////////////////////// //</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Gr<span class="keywordtype">id</span>Layer, <span class="keyword">class</span> Range, <span class="keyword">class</span> Source = Range, <span class="keyword">class</span> Field = <span class="keyword">typename</span> Range::RangeFieldType&gt;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="a00275.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00275.html">LaplaceLocalizableProduct</a></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    : XT::Common::ConstStorageProvider&lt;XT::Functions::ConstantFunction&lt;XT::Grid::extract_entity_t&lt;GridLayer&gt;,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                                                       typename GridLayer::ctype,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                                       GridLayer::dimension,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                                                       Field,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                                                       1&gt;&gt;,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keyword">public</span> <a class="code" href="a00127.html">EllipticLocalizableProduct</a>&lt;XT::Functions::ConstantFunction&lt;XT::Grid::extract_entity_t&lt;GridLayer&gt;,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                                                        typename GridLayer::ctype,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                                                        GridLayer::dimension,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                                                        Field,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                                                        1&gt;,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                        void,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                        GridLayer,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                        Range,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                        Source,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                        Field&gt;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class </span>AnalyticalFluxImp,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;          <span class="keyword">class </span>BoundaryValueImp,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;          <span class="keyword">class </span>LocalizableFunctionImp,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;          <span class="keywordtype">size_t</span> polOrder,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;          <a class="code" href="a00761.html#af68dfb986d335b9416add6ef64dfad58">SlopeLimiters</a> slope_lim,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;          <span class="keyword">class </span>RealizabilityLimiterImp,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;          <span class="keyword">class </span>Traits&gt;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="a00006.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00006.html">AdvectionForceOperator</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span>internal {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class </span>AnalyticalFluxImp,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;          <span class="keyword">class </span>BoundaryValueImp,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;          <span class="keyword">class </span>LocalizableFunctionImp,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;          <span class="keywordtype">size_t</span> reconstruction_order,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;          <a class="code" href="a00761.html#af68dfb986d335b9416add6ef64dfad58">SlopeLimiters</a> slope_lim,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;          <span class="keyword">class </span>RealizabilityLimiterImp&gt;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="a00007.html">   43</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00007.html">AdvectionForceOperatorTraits</a> : <span class="keyword">public</span> <a class="code" href="a00030.html">AdvectionTraitsBase</a>&lt;AnalyticalFluxImp,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                                BoundaryValueImp,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                                                reconstruction_order,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                                                slope_lim,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                                RealizabilityLimiterImp&gt;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">typedef</span> XT::Common::ConstStorageProvider&lt;XT::Functions::ConstantFunction&lt;XT::Grid::extract_entity_t&lt;GridLayer&gt;,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                                                           <span class="keyword">typename</span> GridLayer::ctype,</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                                                           GridLayer::dimension,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                                                           Field,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                                                           1&gt;&gt;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      FunctionProvider;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="a00127.html">EllipticLocalizableProduct&lt;XT::Functions::ConstantFunction&lt;XT::Grid::extract_entity_t&lt;GridLayer&gt;</a>,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                                                     <span class="keyword">typename</span> GridLayer::ctype,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                                                     GridLayer::dimension,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                                                     Field,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                                                     1&gt;,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                     void,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                     GridLayer,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                     Range,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                     Source,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                     Field&gt;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <a class="code" href="a00127.html">BaseType</a>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="comment">// We suffer from the same problem as in L2LocalizableProduct, see there for an explanation.</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">template</span> &lt;<span class="keywordtype">bool</span> anything&gt;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">struct </span>tag</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">explicit</span> tag(<span class="keywordtype">int</span>)</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  };</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span>... Args&gt;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a00275.html">LaplaceLocalizableProduct</a>(tag&lt;false&gt;, Args&amp;&amp;... args)</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    : FunctionProvider(1.)</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    , BaseType(FunctionProvider::access(), std::forward&lt;Args&gt;(args)...)</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span>... Args&gt;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">explicit</span> LaplaceLocalizableProduct(tag&lt;true&gt;, <span class="keyword">const</span> <span class="keywordtype">size_t</span> over_integrate, Args&amp;&amp;... args)</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    : FunctionProvider(1.)</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    , BaseType(over_integrate, FunctionProvider::access(), std::forward&lt;Args&gt;(args)...)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> possibly_int_t,</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keyword">class</span>... Args,</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keyword">typename</span> std::enable_if&lt;!std::is_same&lt;possibly_int_t, tag&lt;true&gt;&gt;::value</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                        &amp;&amp; !std::is_same&lt;possibly_int_t, tag&lt;false&gt;&gt;::value,</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                                    <span class="keywordtype">int</span>&gt;::type = 0&gt;</div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="a00275.html#a61d0d34c514951f46ac026ddda2a6b30">  108</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a00275.html#a61d0d34c514951f46ac026ddda2a6b30">LaplaceLocalizableProduct</a>(possibly_int_t&amp;&amp; possibly_over_integrate, Args&amp;&amp;... args)</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    : LaplaceLocalizableProduct(tag&lt;<a class="code" href="a00715.html">std</a>::numeric_limits&lt;typename <a class="code" href="a00715.html">std</a>::decay&lt;possibly_int_t&gt;::type&gt;::is_integer&gt;(0),</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                                <a class="code" href="a00715.html">std</a>::forward&lt;possibly_int_t&gt;(possibly_over_integrate),</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                                <a class="code" href="a00715.html">std</a>::forward&lt;Args&gt;(args)...)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  static_assert(XT::Functions::is_localizable_function&lt;LocalizableFunctionImp&gt;::value,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="stringliteral">&quot;LocalizableFunctionImp has to be derived from XT::Functions::LocalizableFunctionInterface!&quot;</span>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="a00030.html">AdvectionTraitsBase</a>&lt;AnalyticalFluxImp,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                              BoundaryValueImp,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                              reconstruction_order,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                              slope_lim,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                              RealizabilityLimiterImp&gt;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      BaseType;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">typedef</span> LocalizableFunctionImp LocalizableFunctionType;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code" href="a00150.html">Dune::GDT::ForceLocalNumericalCouplingFlux&lt;AnalyticalFluxImp, LocalizableFunctionType&gt;</a></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      NumericalCouplingFluxType;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code" href="a00148.html">Dune::GDT::ForceLocalDirichletNumericalBoundaryFlux</a>&lt;AnalyticalFluxImp,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                                                       BoundaryValueImp,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                                       LocalizableFunctionType&gt;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      NumericalBoundaryFluxType;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="a00006.html">AdvectionForceOperator</a>&lt;AnalyticalFluxImp,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                 BoundaryValueImp,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                 LocalizableFunctionImp,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                 reconstruction_order,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                 slope_lim,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                 RealizabilityLimiterImp,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                 <a class="code" href="a00007.html">AdvectionForceOperatorTraits</a>&gt;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      derived_type;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}; <span class="comment">// class AdvectionForceOperatorTraits</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;} <span class="comment">// namespace internal</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class </span>AnalyticalFluxImp,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;          <span class="keyword">class </span>BoundaryValueImp,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;          <span class="keyword">class </span>LocalizableFunctionImp,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;          <span class="keywordtype">size_t</span> polOrder = 0,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;          <a class="code" href="a00761.html#af68dfb986d335b9416add6ef64dfad58">SlopeLimiters</a> slope_lim = <a class="code" href="a00761.html#af68dfb986d335b9416add6ef64dfad58adbc1048da08be92092fbaf26e4561b4d">SlopeLimiters::minmod</a>,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;          <span class="keyword">class </span>RealizabilityLimiterImp = <a class="code" href="a00440.html">NonLimitingRealizabilityLimiter&lt;typename AnalyticalFluxImp::EntityType&gt;</a>,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;          <span class="keyword">class </span>Traits = <a class="code" href="a00007.html">internal::AdvectionForceOperatorTraits</a>&lt;AnalyticalFluxImp,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                                                BoundaryValueImp,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                                                LocalizableFunctionImp,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                                                polOrder,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                                                slope_lim,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                                                RealizabilityLimiterImp&gt;&gt;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">class </span><a class="code" href="a00006.html">AdvectionForceOperator</a> : <span class="keyword">public</span> <a class="code" href="a00442.html">Dune::GDT::OperatorInterface</a>&lt;Traits&gt;, <span class="keyword">public</span> <a class="code" href="a00021.html">AdvectionOperatorBase</a>&lt;Traits&gt;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="a00021.html">AdvectionOperatorBase&lt;Traits&gt;</a> BaseType;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keyword">using</span> <span class="keyword">typename</span> <a class="code" href="a00021.html#a270254c610a70e336ce45acea247d628">BaseType::AnalyticalFluxType</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keyword">using</span> <span class="keyword">typename</span> <a class="code" href="a00021.html#a62f38fe0439aecc8ee0b60d360c3b8eb">BaseType::BoundaryValueType</a>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keyword">using</span> <span class="keyword">typename</span> <a class="code" href="a00021.html#a88f74c901b9d18a0e857a682ee9aefd2">BaseType::DomainType</a>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keyword">using</span> <span class="keyword">typename</span> <a class="code" href="a00021.html#afe4227602cb68411b916b7f9e32cec64">BaseType::OnedQuadratureType</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keyword">using</span> <span class="keyword">typename</span> <a class="code" href="a00021.html#ab81c9839ac60ac5a2d8fe319d9d3a5ce">BaseType::RangeFieldType</a>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="a00006.html#a964587745e7e9a1e864458f78931f107">  103</a></span>&#160;  <span class="keyword">typedef</span> <span class="keyword">typename</span> Traits::LocalizableFunctionType <a class="code" href="a00006.html#a964587745e7e9a1e864458f78931f107">LocalizableFunctionType</a>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="a00006.html#aaa307d6e6554bbd20f0607df47a65b09">  105</a></span>&#160;  <a class="code" href="a00006.html#aaa307d6e6554bbd20f0607df47a65b09">AdvectionForceOperator</a>(<span class="keyword">const</span> <a class="code" href="a00021.html#a270254c610a70e336ce45acea247d628">AnalyticalFluxType</a>&amp; analytical_flux,</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                         <span class="keyword">const</span> <a class="code" href="a00021.html#a62f38fe0439aecc8ee0b60d360c3b8eb">BoundaryValueType</a>&amp; boundary_values,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                         <span class="keyword">const</span> LocalizableFunctionType&amp; dx,</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                         <span class="keyword">const</span> <span class="keywordtype">bool</span> is_linear = <span class="keyword">false</span>)</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    : BaseType(analytical_flux, boundary_values, is_linear)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    , dx_(dx)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    , is_linear_(is_linear)</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  {</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}; <span class="comment">// class LaplaceLocalizableProduct</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">// //////////////////////////////// //</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">// make_laplace_localizable_product //</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">// //////////////////////////////// //</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Gr<span class="keywordtype">id</span>LayerType, <span class="keyword">class</span> RangeType, <span class="keyword">class</span> SourceType&gt;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">typename</span> std::enable_if&lt;XT::Grid::is_layer&lt;GridLayerType&gt;::value</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                            &amp;&amp; XT::Functions::is_localizable_function&lt;RangeType&gt;::value</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                            &amp;&amp; XT::Functions::is_localizable_function&lt;SourceType&gt;::value,</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                        std::unique_ptr&lt;LaplaceLocalizableProduct&lt;GridLayerType, RangeType, SourceType&gt;&gt;&gt;::type</div>
-<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="a00703.html#a7129f2ce7fb2ad7bb8403d0e2378e1d1">  129</a></span>&#160;<a class="code" href="a00703.html#a7129f2ce7fb2ad7bb8403d0e2378e1d1">make_laplace_localizable_product</a>(<span class="keyword">const</span> GridLayerType&amp; grid_layer,</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                                 <span class="keyword">const</span> RangeType&amp; range,</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                                 <span class="keyword">const</span> SourceType&amp; source,</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                                 <span class="keyword">const</span> <span class="keywordtype">size_t</span> over_integrate = 0,</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                                 <span class="keyword">const</span> XT::Common::Parameter&amp; param = {})</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;{</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordflow">return</span> Dune::XT::Common::make_unique&lt;LaplaceLocalizableProduct&lt;GridLayerType, RangeType, SourceType&gt;&gt;(</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;      over_integrate, grid_layer, range, source, param);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment">// ///////////////////// //</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="comment">// LaplaceMatrixOperator //</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment">// ///////////////////// //</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class </span>RangeSpace,</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;          <span class="keyword">class </span>Matrix = <span class="keyword">typename</span> XT::LA::Container&lt;typename RangeSpace::RangeFieldType&gt;::MatrixType,</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;          <span class="keyword">class </span>GridLayer = <span class="keyword">typename</span> RangeSpace::GridLayerType,</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;          <span class="keyword">class </span>SourceSpace = RangeSpace,</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;          <span class="keyword">class </span>Field = <span class="keyword">typename</span> RangeSpace::RangeFieldType&gt;</div>
-<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="a00276.html">  149</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00276.html">LaplaceMatrixOperator</a></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    : XT::Common::ConstStorageProvider&lt;XT::Functions::ConstantFunction&lt;XT::Grid::extract_entity_t&lt;GridLayer&gt;,</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                                                                       typename GridLayer::ctype,</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                                                                       GridLayer::dimension,</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                                                                       Field,</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                                                                       1&gt;&gt;,</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      <span class="keyword">public</span> <a class="code" href="a00128.html">EllipticMatrixOperator</a>&lt;XT::Functions::ConstantFunction&lt;XT::Grid::extract_entity_t&lt;GridLayer&gt;,</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                                                                    typename GridLayer::ctype,</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                                                                    GridLayer::dimension,</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                                                                    Field,</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                                                                    1&gt;,</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                                    void,</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                                    RangeSpace,</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                                    Matrix,</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                                    GridLayer,</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                                    SourceSpace,</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                                    Field&gt;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;{</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keyword">typedef</span> XT::Common::ConstStorageProvider&lt;XT::Functions::ConstantFunction&lt;XT::Grid::extract_entity_t&lt;GridLayer&gt;,</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                                                                           <span class="keyword">typename</span> GridLayer::ctype,</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                                                                           GridLayer::dimension,</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                                                                           Field,</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                                                                           1&gt;&gt;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      FunctionProvider;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="a00128.html">EllipticMatrixOperator&lt;XT::Functions::ConstantFunction&lt;XT::Grid::extract_entity_t&lt;GridLayer&gt;</a>,</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                                                                 <span class="keyword">typename</span> GridLayer::ctype,</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                                                                 GridLayer::dimension,</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                                                                 Field,</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                                                                 1&gt;,</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                                 void,</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                                 RangeSpace,</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                                 Matrix,</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                                 GridLayer,</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                                 SourceSpace,</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                                 Field&gt;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;      <a class="code" href="a00128.html">BaseType</a>;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="comment">// We suffer from the same problem as in L2LocalizableProduct, see there for an explanation.</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keyword">template</span> &lt;<span class="keywordtype">bool</span> anything&gt;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keyword">struct </span>tag</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  {</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keyword">explicit</span> tag(<span class="keywordtype">int</span>)</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    {</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    }</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  };</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span>... Args&gt;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a00276.html">LaplaceMatrixOperator</a>(tag&lt;false&gt;, Args&amp;&amp;... args)</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    : FunctionProvider(1.)</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    , BaseType(FunctionProvider::access(), std::forward&lt;Args&gt;(args)...)</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  {</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  }</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span>... Args&gt;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keyword">explicit</span> LaplaceMatrixOperator(tag&lt;true&gt;, <span class="keyword">const</span> <span class="keywordtype">size_t</span> over_integrate, Args&amp;&amp;... args)</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    : FunctionProvider(1.)</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    , BaseType(over_integrate, FunctionProvider::access(), std::forward&lt;Args&gt;(args)...)</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  {</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  }</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> possibly_int_t,</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <span class="keyword">class</span>... Args,</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            <span class="keyword">typename</span> std::enable_if&lt;!std::is_same&lt;possibly_int_t, tag&lt;true&gt;&gt;::value</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                                        &amp;&amp; !std::is_same&lt;possibly_int_t, tag&lt;false&gt;&gt;::value,</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                                    <span class="keywordtype">int</span>&gt;::type = 0&gt;</div>
-<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="a00276.html#a433cb9f95db36a19825674fd1bff8e27">  229</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a00276.html#a433cb9f95db36a19825674fd1bff8e27">LaplaceMatrixOperator</a>(possibly_int_t&amp;&amp; possibly_over_integrate, Args&amp;&amp;... args)</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    : LaplaceMatrixOperator(tag&lt;<a class="code" href="a00715.html">std</a>::numeric_limits&lt;typename <a class="code" href="a00715.html">std</a>::decay&lt;possibly_int_t&gt;::type&gt;::is_integer&gt;(0),</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                            <a class="code" href="a00715.html">std</a>::forward&lt;possibly_int_t&gt;(possibly_over_integrate),</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                            <a class="code" href="a00715.html">std</a>::forward&lt;Args&gt;(args)...)</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  {</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  }</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;}; <span class="comment">// class LaplaceMatrixOperator</span></div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="comment">// /////////////////////// //</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="comment">// make_laplace_matrix_operator //</span></div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="comment">// /////////////////////// //</span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="comment">// without matrix</span></div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> MatrixType, <span class="keyword">class</span> SpaceType&gt;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="keyword">typename</span> std::enable_if&lt;XT::LA::is_matrix&lt;MatrixType&gt;::value &amp;&amp; is_space&lt;SpaceType&gt;::value,</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                        std::unique_ptr&lt;LaplaceMatrixOperator&lt;SpaceType, MatrixType&gt;&gt;&gt;::type</div>
-<div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="a00703.html#ac58267637036be6ee37f0e48d1162ab0">  255</a></span>&#160;<a class="code" href="a00703.html#ac58267637036be6ee37f0e48d1162ab0">make_laplace_matrix_operator</a>(<span class="keyword">const</span> <a class="code" href="a00703.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>&amp; space, <span class="keyword">const</span> <span class="keywordtype">size_t</span> over_integrate = 0)</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;{</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  <span class="keywordflow">return</span> Dune::XT::Common::make_unique&lt;LaplaceMatrixOperator&lt;SpaceType, MatrixType&gt;&gt;(over_integrate, space);</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;}</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> MatrixType, <span class="keyword">class</span> SpaceType, <span class="keyword">class</span> Gr<span class="keywordtype">id</span>LayerType&gt;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="keyword">typename</span> std::enable_if&lt;XT::LA::is_matrix&lt;MatrixType&gt;::value &amp;&amp; is_space&lt;SpaceType&gt;::value</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                            &amp;&amp; XT::Grid::is_layer&lt;GridLayerType&gt;::value,</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                        std::unique_ptr&lt;LaplaceMatrixOperator&lt;SpaceType, MatrixType, GridLayerType&gt;&gt;&gt;::type</div>
-<div class="line"><a name="l00272"></a><span class="lineno"><a class="line" href="a00703.html#ab45e793f951853fe2462720fbdb0efe2">  272</a></span>&#160;<a class="code" href="a00703.html#ac58267637036be6ee37f0e48d1162ab0">make_laplace_matrix_operator</a>(<span class="keyword">const</span> <a class="code" href="a00703.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>&amp; space, <span class="keyword">const</span> GridLayerType&amp; grid_layer, <span class="keyword">const</span> <span class="keywordtype">size_t</span> over_integrate = 0)</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;{</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <span class="keywordflow">return</span> Dune::XT::Common::make_unique&lt;LaplaceMatrixOperator&lt;SpaceType, MatrixType, GridLayerType&gt;&gt;(</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      over_integrate, space, grid_layer);</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;}</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> MatrixType, <span class="keyword">class</span> RangeSpaceType, <span class="keyword">class</span> SourceSpaceType, <span class="keyword">class</span> Gr<span class="keywordtype">id</span>LayerType&gt;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="keyword">typename</span> std::</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    enable_if&lt;XT::LA::is_matrix&lt;MatrixType&gt;::value &amp;&amp; is_space&lt;RangeSpaceType&gt;::value</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                  &amp;&amp; is_space&lt;SourceSpaceType&gt;::value</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                  &amp;&amp; XT::Grid::is_layer&lt;GridLayerType&gt;::value,</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;              std::unique_ptr&lt;LaplaceMatrixOperator&lt;RangeSpaceType, MatrixType, GridLayerType, SourceSpaceType&gt;&gt;&gt;::type</div>
-<div class="line"><a name="l00291"></a><span class="lineno"><a class="line" href="a00703.html#a187c2435913bbaefd577916a044eeaff">  291</a></span>&#160;    <a class="code" href="a00703.html#ac58267637036be6ee37f0e48d1162ab0">make_laplace_matrix_operator</a>(<span class="keyword">const</span> RangeSpaceType&amp; range_space,</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                                 <span class="keyword">const</span> SourceSpaceType&amp; source_space,</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                                 <span class="keyword">const</span> GridLayerType&amp; grid_layer,</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                                 <span class="keyword">const</span> <span class="keywordtype">size_t</span> over_integrate = 0)</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;{</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  <span class="keywordflow">return</span> Dune::XT::Common::</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      make_unique&lt;LaplaceMatrixOperator&lt;RangeSpaceType, MatrixType, GridLayerType, SourceSpaceType&gt;&gt;(</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;          over_integrate, range_space, source_space, grid_layer);</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;}</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="comment">// with matrix</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> MatrixType, <span class="keyword">class</span> SpaceType&gt;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="keyword">typename</span> std::enable_if&lt;XT::LA::is_matrix&lt;MatrixType&gt;::value &amp;&amp; is_space&lt;SpaceType&gt;::value,</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                        std::unique_ptr&lt;LaplaceMatrixOperator&lt;SpaceType, MatrixType&gt;&gt;&gt;::type</div>
-<div class="line"><a name="l00310"></a><span class="lineno"><a class="line" href="a00703.html#a73a1412fbe2dd31bb9c7c48f943fecb8">  310</a></span>&#160;<a class="code" href="a00703.html#ac58267637036be6ee37f0e48d1162ab0">make_laplace_matrix_operator</a>(MatrixType&amp; matrix, <span class="keyword">const</span> <a class="code" href="a00703.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>&amp; space, <span class="keyword">const</span> <span class="keywordtype">size_t</span> over_integrate = 0)</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;{</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  <span class="keywordflow">return</span> Dune::XT::Common::make_unique&lt;LaplaceMatrixOperator&lt;SpaceType, MatrixType&gt;&gt;(over_integrate, matrix, space);</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;}</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> MatrixType, <span class="keyword">class</span> SpaceType, <span class="keyword">class</span> Gr<span class="keywordtype">id</span>LayerType&gt;</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="keyword">typename</span> std::enable_if&lt;XT::LA::is_matrix&lt;MatrixType&gt;::value &amp;&amp; is_space&lt;SpaceType&gt;::value</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                            &amp;&amp; XT::Grid::is_layer&lt;GridLayerType&gt;::value,</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                        std::unique_ptr&lt;LaplaceMatrixOperator&lt;SpaceType, MatrixType, GridLayerType&gt;&gt;&gt;::type</div>
-<div class="line"><a name="l00322"></a><span class="lineno"><a class="line" href="a00703.html#aa2f40f54739e0f5758158c62af274630">  322</a></span>&#160;<a class="code" href="a00703.html#ac58267637036be6ee37f0e48d1162ab0">make_laplace_matrix_operator</a>(MatrixType&amp; matrix,</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                             <span class="keyword">const</span> <a class="code" href="a00703.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>&amp; space,</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                             <span class="keyword">const</span> GridLayerType&amp; grid_layer,</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                             <span class="keyword">const</span> <span class="keywordtype">size_t</span> over_integrate = 0)</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;{</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;  <span class="keywordflow">return</span> Dune::XT::Common::make_unique&lt;LaplaceMatrixOperator&lt;SpaceType, MatrixType, GridLayerType&gt;&gt;(</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;      over_integrate, matrix, space, grid_layer);</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;}</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> MatrixType, <span class="keyword">class</span> RangeSpaceType, <span class="keyword">class</span> SourceSpaceType, <span class="keyword">class</span> Gr<span class="keywordtype">id</span>LayerType&gt;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="keyword">typename</span> std::</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    enable_if&lt;XT::LA::is_matrix&lt;MatrixType&gt;::value &amp;&amp; is_space&lt;RangeSpaceType&gt;::value</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                  &amp;&amp; is_space&lt;SourceSpaceType&gt;::value</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                  &amp;&amp; XT::Grid::is_layer&lt;GridLayerType&gt;::value,</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;              std::unique_ptr&lt;LaplaceMatrixOperator&lt;RangeSpaceType, MatrixType, GridLayerType, SourceSpaceType&gt;&gt;&gt;::type</div>
-<div class="line"><a name="l00340"></a><span class="lineno"><a class="line" href="a00703.html#a5bfd627da92f1aa70984f784203f0f57">  340</a></span>&#160;    <a class="code" href="a00703.html#ac58267637036be6ee37f0e48d1162ab0">make_laplace_matrix_operator</a>(MatrixType&amp; matrix,</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                                 <span class="keyword">const</span> RangeSpaceType&amp; range_space,</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                                 <span class="keyword">const</span> SourceSpaceType&amp; source_space,</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                                 <span class="keyword">const</span> GridLayerType&amp; grid_layer,</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                                 <span class="keyword">const</span> <span class="keywordtype">size_t</span> over_integrate = 0)</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;{</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  <span class="keywordflow">return</span> Dune::XT::Common::</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;      make_unique&lt;LaplaceMatrixOperator&lt;RangeSpaceType, MatrixType, GridLayerType, SourceSpaceType&gt;&gt;(</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;          over_integrate, matrix, range_space, source_space, grid_layer);</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;}</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="comment">// /////////////// //</span></div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="comment">// LaplaceOperator //</span></div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="comment">// /////////////// //</span></div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="comment">// forward, needed for the traits</span></div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Gr<span class="keywordtype">id</span>Layer, <span class="keyword">class</span> Field = <span class="keywordtype">double</span>&gt;</div>
-<div class="line"><a name="l00358"></a><span class="lineno"><a class="line" href="a00277.html">  358</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00277.html">LaplaceOperator</a>;</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="keyword">namespace </span>internal {</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Gr<span class="keywordtype">id</span>LayerType, <span class="keyword">class</span> Field&gt;</div>
-<div class="line"><a name="l00365"></a><span class="lineno"><a class="line" href="a00278.html">  365</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00278.html">LaplaceOperatorTraits</a></div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;{</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00368"></a><span class="lineno"><a class="line" href="a00278.html#a32bbb4123c2bc062045798235d37f7fe">  368</a></span>&#160;  <span class="keyword">typedef</span> <a class="code" href="a00277.html">LaplaceOperator&lt;GridLayerType, Field&gt;</a> <a class="code" href="a00278.html#a32bbb4123c2bc062045798235d37f7fe">derived_type</a>;</div>
-<div class="line"><a name="l00369"></a><span class="lineno"><a class="line" href="a00278.html#aa377cfe6e608237ad85ec7dcfb645b2e">  369</a></span>&#160;  <span class="keyword">typedef</span> <a class="code" href="a00406.html">NoJacobian</a> <a class="code" href="a00278.html#aa377cfe6e608237ad85ec7dcfb645b2e">JacobianType</a>;</div>
-<div class="line"><a name="l00370"></a><span class="lineno"><a class="line" href="a00278.html#ac57bb3d1313f0158dd99c102a32891f8">  370</a></span>&#160;  <span class="keyword">typedef</span> Field <a class="code" href="a00278.html#ac57bb3d1313f0158dd99c102a32891f8">FieldType</a>;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;};</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;} <span class="comment">// namespace internal</span></div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Gr<span class="keywordtype">id</span>LayerType, <span class="keyword">class</span> Field&gt;</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="keyword">class </span><a class="code" href="a00277.html">LaplaceOperator</a> : <span class="keyword">public</span> <a class="code" href="a00410.html">OperatorInterface</a>&lt;internal::LaplaceOperatorTraits&lt;GridLayerType, Field&gt;&gt;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;{</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="a00410.html">OperatorInterface&lt;internal::LaplaceOperatorTraits&lt;GridLayerType, Field&gt;</a>&gt; BaseType;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  <span class="keyword">using</span> <span class="keyword">typename</span> <a class="code" href="a00410.html#a7e841c775a89ff47fe08faa97ef22386">BaseType::FieldType</a>;</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span>... Args&gt;</div>
-<div class="line"><a name="l00386"></a><span class="lineno"><a class="line" href="a00277.html#ab0e57ba7439c7d53b921e66307fa286b">  386</a></span>&#160;  <a class="code" href="a00277.html#ab0e57ba7439c7d53b921e66307fa286b">LaplaceOperator</a>(GridLayerType grid_layer, <span class="keyword">const</span> <span class="keywordtype">size_t</span> over_integrate = 0)</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    : grid_layer_(grid_layer)</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    , over_integrate_(over_integrate)</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  {</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;  }</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> SourceSpaceType, <span class="keyword">class</span> VectorType, <span class="keyword">class</span> RangeSpaceType&gt;</div>
-<div class="line"><a name="l00393"></a><span class="lineno"><a class="line" href="a00277.html#a686adb732e24b67252f55d26c389a24a">  393</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00277.html#a686adb732e24b67252f55d26c389a24a">apply</a>(<span class="keyword">const</span> <a class="code" href="a00102.html">DiscreteFunction&lt;SourceSpaceType, VectorType&gt;</a>&amp; source,</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;             <a class="code" href="a00102.html">DiscreteFunction&lt;RangeSpaceType, VectorType&gt;</a>&amp; range,</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;             <span class="keyword">const</span> XT::Common::Parameter&amp; param = {}) <span class="keyword">const</span></div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;  {</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> XT::LA::Container&lt;<span class="keyword">typename</span> VectorType::ScalarType,</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                                       VectorType::Traits::sparse_matrix_type&gt;::MatrixType MatrixType;</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keyword">auto</span> op = make_laplace_matrix_operator&lt;MatrixType&gt;(source.space(), range.space(), grid_layer_, over_integrate_);</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    op-&gt;apply(source, range, param);</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;  }</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> E, <span class="keyword">class</span> D, <span class="keywordtype">size_t</span> d, <span class="keyword">class</span> R, <span class="keywordtype">size_t</span> r, <span class="keywordtype">size_t</span> rC&gt;</div>
-<div class="line"><a name="l00404"></a><span class="lineno"><a class="line" href="a00277.html#a0e155928ee731c641f5e55cf8e547dbc">  404</a></span>&#160;  <a class="code" href="a00277.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a> <a class="code" href="a00277.html#a0e155928ee731c641f5e55cf8e547dbc">apply2</a>(<span class="keyword">const</span> XT::Functions::LocalizableFunctionInterface&lt;E, D, d, R, r, rC&gt;&amp; range,</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                   <span class="keyword">const</span> XT::Functions::LocalizableFunctionInterface&lt;E, D, d, R, r, rC&gt;&amp; source,</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                   <span class="keyword">const</span> XT::Common::Parameter&amp; param = {}) <span class="keyword">const</span></div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;  {</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <span class="keyword">auto</span> product = <a class="code" href="a00703.html#a7129f2ce7fb2ad7bb8403d0e2378e1d1">make_laplace_localizable_product</a>(grid_layer_, range, source, over_integrate_, param);</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="keywordflow">return</span> product-&gt;apply2();</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;  }</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;  <span class="keyword">using</span> <a class="code" href="a00410.html#ae9652e5f4cac175cdbece27339cf27e8">BaseType::apply_inverse</a>;</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> RangeType, <span class="keyword">class</span> SourceType&gt;</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;  <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00416"></a><span class="lineno"><a class="line" href="a00277.html#af4b79607cee606dd9fdec5d000f8ee3b">  416</a></span>&#160;  <a class="code" href="a00277.html#af4b79607cee606dd9fdec5d000f8ee3b">apply_inverse</a>(<span class="keyword">const</span> RangeType&amp; <span class="comment">/*range*/</span>, SourceType&amp; <span class="comment">/*source*/</span>, <span class="keyword">const</span> XT::Common::Configuration&amp; <span class="comment">/*opts*/</span>)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    DUNE_THROW(NotImplemented, <span class="stringliteral">&quot;yet&quot;</span>);</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;  }</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;</div>
-<div class="line"><a name="l00421"></a><span class="lineno"><a class="line" href="a00277.html#ac59911b26ab3c6146c183a196b4fc4b2">  421</a></span>&#160;  std::vector&lt;std::string&gt; <a class="code" href="a00277.html#ac59911b26ab3c6146c183a196b4fc4b2">invert_options</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    DUNE_THROW(NotImplemented, <span class="stringliteral">&quot;yet&quot;</span>);</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <span class="keywordflow">return</span> {<span class="stringliteral">&quot;depends_on_the_vector_type_of_the_discrete_function&quot;</span>};</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;  }</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;</div>
-<div class="line"><a name="l00427"></a><span class="lineno"><a class="line" href="a00277.html#ab3fedebbae20edfc524cd2e80f054163">  427</a></span>&#160;  XT::Common::Configuration <a class="code" href="a00277.html#ab3fedebbae20edfc524cd2e80f054163">invert_options</a>(<span class="keyword">const</span> std::string&amp; <span class="comment">/*type*/</span>)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    DUNE_THROW(NotImplemented, <span class="stringliteral">&quot;yet&quot;</span>);</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;  }</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;  GridLayerType grid_layer_;</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> over_integrate_;</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;}; <span class="comment">// class LaplaceOperator</span></div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="comment">// ///////////////////// //</span></div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="comment">// make_laplace_operator //</span></div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="comment">// ///////////////////// //</span></div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Gr<span class="keywordtype">id</span>LayerType&gt;</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="keyword">typename</span> std::enable_if&lt;XT::Grid::is_layer&lt;GridLayerType&gt;::value, std::unique_ptr&lt;LaplaceOperator&lt;GridLayerType&gt;&gt;&gt;::type</div>
-<div class="line"><a name="l00444"></a><span class="lineno"><a class="line" href="a00703.html#a614c77184eaff56d640da03fc408d27b">  444</a></span>&#160;<a class="code" href="a00703.html#a614c77184eaff56d640da03fc408d27b">make_laplace_operator</a>(<span class="keyword">const</span> GridLayerType&amp; grid_layer, <span class="keyword">const</span> <span class="keywordtype">size_t</span> over_integrate = 0)</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;{</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;  <span class="keywordflow">return</span> Dune::XT::Common::make_unique&lt;LaplaceOperator&lt;GridLayerType&gt;&gt;(grid_layer, over_integrate);</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;}</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;} <span class="comment">// namespace GDT</span></div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;} <span class="comment">// namespace Dune</span></div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="preprocessor">#endif // DUNE_GDT_OPERATORS_LAPLACE_HH</span></div>
-<div class="ttc" id="a00275_html_a61d0d34c514951f46ac026ddda2a6b30"><div class="ttname"><a href="a00275.html#a61d0d34c514951f46ac026ddda2a6b30">Dune::GDT::LaplaceLocalizableProduct::LaplaceLocalizableProduct</a></div><div class="ttdeci">LaplaceLocalizableProduct(possibly_int_t &amp;&amp;possibly_over_integrate, Args &amp;&amp;...args)</div><div class="ttdoc">Creates a localizable Laplace product (aka a localizable semi-H1 product). </div><div class="ttdef"><b>Definition:</b> laplace.hh:108</div></div>
-<div class="ttc" id="a00277_html_ac59911b26ab3c6146c183a196b4fc4b2"><div class="ttname"><a href="a00277.html#ac59911b26ab3c6146c183a196b4fc4b2">Dune::GDT::LaplaceOperator::invert_options</a></div><div class="ttdeci">std::vector&lt; std::string &gt; invert_options() const </div><div class="ttdef"><b>Definition:</b> laplace.hh:421</div></div>
-<div class="ttc" id="a00410_html"><div class="ttname"><a href="a00410.html">Dune::GDT::OperatorInterface</a></div><div class="ttdef"><b>Definition:</b> operators/interfaces.hh:50</div></div>
-<div class="ttc" id="a00278_html_a32bbb4123c2bc062045798235d37f7fe"><div class="ttname"><a href="a00278.html#a32bbb4123c2bc062045798235d37f7fe">Dune::GDT::internal::LaplaceOperatorTraits::derived_type</a></div><div class="ttdeci">LaplaceOperator&lt; GridLayerType, Field &gt; derived_type</div><div class="ttdef"><b>Definition:</b> laplace.hh:368</div></div>
-<div class="ttc" id="a00703_html_a1dc558b2ff4b8e95434d41c4e51f6b92"><div class="ttname"><a href="a00703.html#a1dc558b2ff4b8e95434d41c4e51f6b92">Dune::GDT::SpaceType</a></div><div class="ttdeci">SpaceType</div><div class="ttdef"><b>Definition:</b> spaces/interface.hh:65</div></div>
-<div class="ttc" id="a00127_html"><div class="ttname"><a href="a00127.html">Dune::GDT::EllipticLocalizableProduct</a></div><div class="ttdef"><b>Definition:</b> operators/elliptic.hh:45</div></div>
-<div class="ttc" id="a00715_html"><div class="ttname"><a href="a00715.html">std</a></div><div class="ttdoc">STL namespace. </div></div>
-<div class="ttc" id="a00277_html_ab3fedebbae20edfc524cd2e80f054163"><div class="ttname"><a href="a00277.html#ab3fedebbae20edfc524cd2e80f054163">Dune::GDT::LaplaceOperator::invert_options</a></div><div class="ttdeci">XT::Common::Configuration invert_options(const std::string &amp;) const </div><div class="ttdef"><b>Definition:</b> laplace.hh:427</div></div>
-<div class="ttc" id="a00276_html"><div class="ttname"><a href="a00276.html">Dune::GDT::LaplaceMatrixOperator</a></div><div class="ttdef"><b>Definition:</b> laplace.hh:149</div></div>
-<div class="ttc" id="a00276_html_a433cb9f95db36a19825674fd1bff8e27"><div class="ttname"><a href="a00276.html#a433cb9f95db36a19825674fd1bff8e27">Dune::GDT::LaplaceMatrixOperator::LaplaceMatrixOperator</a></div><div class="ttdeci">LaplaceMatrixOperator(possibly_int_t &amp;&amp;possibly_over_integrate, Args &amp;&amp;...args)</div><div class="ttdoc">Creates a matrix-based Laplace operator. </div><div class="ttdef"><b>Definition:</b> laplace.hh:229</div></div>
-<div class="ttc" id="a00703_html_a614c77184eaff56d640da03fc408d27b"><div class="ttname"><a href="a00703.html#a614c77184eaff56d640da03fc408d27b">Dune::GDT::make_laplace_operator</a></div><div class="ttdeci">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value, std::unique_ptr&lt; LaplaceOperator&lt; GridLayerType &gt; &gt; &gt;::type make_laplace_operator(const GridLayerType &amp;grid_layer, const size_t over_integrate=0)</div><div class="ttdef"><b>Definition:</b> laplace.hh:444</div></div>
-<div class="ttc" id="a00277_html_a686adb732e24b67252f55d26c389a24a"><div class="ttname"><a href="a00277.html#a686adb732e24b67252f55d26c389a24a">Dune::GDT::LaplaceOperator::apply</a></div><div class="ttdeci">void apply(const DiscreteFunction&lt; SourceSpaceType, VectorType &gt; &amp;source, DiscreteFunction&lt; RangeSpaceType, VectorType &gt; &amp;range, const XT::Common::Parameter &amp;param={}) const </div><div class="ttdef"><b>Definition:</b> laplace.hh:393</div></div>
-<div class="ttc" id="a00406_html"><div class="ttname"><a href="a00406.html">Dune::GDT::internal::NoJacobian</a></div><div class="ttdef"><b>Definition:</b> operators/interfaces.hh:37</div></div>
-<div class="ttc" id="a00277_html_a0e155928ee731c641f5e55cf8e547dbc"><div class="ttname"><a href="a00277.html#a0e155928ee731c641f5e55cf8e547dbc">Dune::GDT::LaplaceOperator::apply2</a></div><div class="ttdeci">FieldType apply2(const XT::Functions::LocalizableFunctionInterface&lt; E, D, d, R, r, rC &gt; &amp;range, const XT::Functions::LocalizableFunctionInterface&lt; E, D, d, R, r, rC &gt; &amp;source, const XT::Common::Parameter &amp;param={}) const </div><div class="ttdef"><b>Definition:</b> laplace.hh:404</div></div>
-<div class="ttc" id="a00275_html"><div class="ttname"><a href="a00275.html">Dune::GDT::LaplaceLocalizableProduct</a></div><div class="ttdef"><b>Definition:</b> laplace.hh:32</div></div>
-<div class="ttc" id="a00278_html_ac57bb3d1313f0158dd99c102a32891f8"><div class="ttname"><a href="a00278.html#ac57bb3d1313f0158dd99c102a32891f8">Dune::GDT::internal::LaplaceOperatorTraits::FieldType</a></div><div class="ttdeci">Field FieldType</div><div class="ttdef"><b>Definition:</b> laplace.hh:370</div></div>
-<div class="ttc" id="a00277_html_af4b79607cee606dd9fdec5d000f8ee3b"><div class="ttname"><a href="a00277.html#af4b79607cee606dd9fdec5d000f8ee3b">Dune::GDT::LaplaceOperator::apply_inverse</a></div><div class="ttdeci">void apply_inverse(const RangeType &amp;, SourceType &amp;, const XT::Common::Configuration &amp;) const </div><div class="ttdef"><b>Definition:</b> laplace.hh:416</div></div>
-<div class="ttc" id="a00703_html_a7129f2ce7fb2ad7bb8403d0e2378e1d1"><div class="ttname"><a href="a00703.html#a7129f2ce7fb2ad7bb8403d0e2378e1d1">Dune::GDT::make_laplace_localizable_product</a></div><div class="ttdeci">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value &amp;&amp;XT::Functions::is_localizable_function&lt; RangeType &gt;::value &amp;&amp;XT::Functions::is_localizable_function&lt; SourceType &gt;::value, std::unique_ptr&lt; LaplaceLocalizableProduct&lt; GridLayerType, RangeType, SourceType &gt; &gt; &gt;::type make_laplace_localizable_product(const GridLayerType &amp;grid_layer, const RangeType &amp;range, const SourceType &amp;source, const size_t over_integrate=0, const XT::Common::Parameter &amp;param={})</div><div class="ttdef"><b>Definition:</b> laplace.hh:129</div></div>
-<div class="ttc" id="a00410_html_a7e841c775a89ff47fe08faa97ef22386"><div class="ttname"><a href="a00410.html#a7e841c775a89ff47fe08faa97ef22386">Dune::GDT::OperatorInterface&lt; internal::LaplaceOperatorTraits&lt; GridLayerType, Field &gt; &gt;::FieldType</a></div><div class="ttdeci">internal::LaplaceOperatorTraits&lt; GridLayerType, Field &gt;::FieldType FieldType</div><div class="ttdef"><b>Definition:</b> operators/interfaces.hh:54</div></div>
-<div class="ttc" id="a00277_html_a7e841c775a89ff47fe08faa97ef22386"><div class="ttname"><a href="a00277.html#a7e841c775a89ff47fe08faa97ef22386">Dune::GDT::LaplaceOperator::FieldType</a></div><div class="ttdeci">Traits::FieldType FieldType</div><div class="ttdef"><b>Definition:</b> operators/interfaces.hh:54</div></div>
-<div class="ttc" id="a00278_html"><div class="ttname"><a href="a00278.html">Dune::GDT::internal::LaplaceOperatorTraits</a></div><div class="ttdef"><b>Definition:</b> laplace.hh:365</div></div>
-<div class="ttc" id="a00277_html_ab0e57ba7439c7d53b921e66307fa286b"><div class="ttname"><a href="a00277.html#ab0e57ba7439c7d53b921e66307fa286b">Dune::GDT::LaplaceOperator::LaplaceOperator</a></div><div class="ttdeci">LaplaceOperator(GridLayerType grid_layer, const size_t over_integrate=0)</div><div class="ttdef"><b>Definition:</b> laplace.hh:386</div></div>
-<div class="ttc" id="a00277_html"><div class="ttname"><a href="a00277.html">Dune::GDT::LaplaceOperator</a></div><div class="ttdef"><b>Definition:</b> laplace.hh:358</div></div>
-<div class="ttc" id="a00278_html_aa377cfe6e608237ad85ec7dcfb645b2e"><div class="ttname"><a href="a00278.html#aa377cfe6e608237ad85ec7dcfb645b2e">Dune::GDT::internal::LaplaceOperatorTraits::JacobianType</a></div><div class="ttdeci">NoJacobian JacobianType</div><div class="ttdef"><b>Definition:</b> laplace.hh:369</div></div>
-<div class="ttc" id="a00128_html"><div class="ttname"><a href="a00128.html">Dune::GDT::EllipticMatrixOperator</a></div><div class="ttdef"><b>Definition:</b> operators/elliptic.hh:190</div></div>
-<div class="ttc" id="a00551_html"><div class="ttname"><a href="a00551.html">elliptic.hh</a></div></div>
-<div class="ttc" id="a00703_html_ac58267637036be6ee37f0e48d1162ab0"><div class="ttname"><a href="a00703.html#ac58267637036be6ee37f0e48d1162ab0">Dune::GDT::make_laplace_matrix_operator</a></div><div class="ttdeci">std::enable_if&lt; XT::LA::is_matrix&lt; MatrixType &gt;::value &amp;&amp;is_space&lt; SpaceType &gt;::value, std::unique_ptr&lt; LaplaceMatrixOperator&lt; SpaceType, MatrixType &gt; &gt; &gt;::type make_laplace_matrix_operator(const SpaceType &amp;space, const size_t over_integrate=0)</div><div class="ttdoc">Creates a Laplace matrix operator (MatrixType has to be supllied, a matrix is created automatically...</div><div class="ttdef"><b>Definition:</b> laplace.hh:255</div></div>
-<div class="ttc" id="a00102_html"><div class="ttname"><a href="a00102.html">Dune::GDT::DiscreteFunction</a></div><div class="ttdef"><b>Definition:</b> discretefunction/default.hh:320</div></div>
-<div class="ttc" id="a00702_html"><div class="ttname"><a href="a00702.html">Dune</a></div><div class="ttdef"><b>Definition:</b> codim0-matrix-datahandle.hh:8</div></div>
-<div class="ttc" id="a00410_html_ae9652e5f4cac175cdbece27339cf27e8"><div class="ttname"><a href="a00410.html#ae9652e5f4cac175cdbece27339cf27e8">Dune::GDT::OperatorInterface&lt; internal::LaplaceOperatorTraits&lt; GridLayerType, Field &gt; &gt;::apply_inverse</a></div><div class="ttdeci">void apply_inverse(const RangeType &amp;range, SourceType &amp;source, const XT::Common::Configuration &amp;opts, const Dune::XT::Common::Parameter &amp;param={}) const</div><div class="ttdef"><b>Definition:</b> operators/interfaces.hh:88</div></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="a00006.html#a41746bbe69c9e6b10b6eea18026ee8ca">  115</a></span>&#160;  <a class="code" href="a00006.html#a41746bbe69c9e6b10b6eea18026ee8ca">AdvectionForceOperator</a>(<span class="keyword">const</span> <a class="code" href="a00021.html#a270254c610a70e336ce45acea247d628">AnalyticalFluxType</a>&amp; analytical_flux,</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                         <span class="keyword">const</span> <a class="code" href="a00021.html#a62f38fe0439aecc8ee0b60d360c3b8eb">BoundaryValueType</a>&amp; boundary_values,</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                         <span class="keyword">const</span> LocalizableFunctionType&amp; dx,</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                         <span class="keyword">const</span> <a class="code" href="a00021.html#afe4227602cb68411b916b7f9e32cec64">OnedQuadratureType</a>&amp; quadrature_1d,</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                         <span class="keyword">const</span> std::shared_ptr&lt;RealizabilityLimiterImp&gt;&amp; realizability_limiter = <span class="keyword">nullptr</span>,</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                         <span class="keyword">const</span> <span class="keywordtype">bool</span> is_linear = <span class="keyword">false</span>,</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                         <span class="keyword">const</span> <a class="code" href="a00006.html#ab81c9839ac60ac5a2d8fe319d9d3a5ce">RangeFieldType</a> alpha = BoundaryValueImp::dimDomain)</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    : BaseType(analytical_flux, boundary_values, is_linear, quadrature_1d, realizability_limiter)</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    , dx_(dx)</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    , is_linear_(is_linear)</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    , alpha_(alpha)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> SourceType, <span class="keyword">class</span> RangeType&gt;</div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="a00006.html#a0ea128644a5a87c6501628c0339f87b7">  131</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00006.html#a0ea128644a5a87c6501628c0339f87b7">apply</a>(<span class="keyword">const</span> SourceType&amp; source, RangeType&amp; range, <span class="keyword">const</span> XT::Common::Parameter&amp; param)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <a class="code" href="a00021.html#a42f5ab5ef98a5d31f6649a10cf56f69d">BaseType::apply</a>(source, range, param, dx_, is_linear_, alpha_);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keyword">const</span> LocalizableFunctionType&amp; dx_;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">bool</span> is_linear_;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keyword">const</span> <a class="code" href="a00021.html#ab81c9839ac60ac5a2d8fe319d9d3a5ce">RangeFieldType</a> alpha_;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}; <span class="comment">// class AdvectionForceOperator</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;} <span class="comment">// namespace GDT</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;} <span class="comment">// namespace Dune</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#endif // DUNE_GDT_OPERATORS_FV_FORCE_HH</span></div>
+<div class="ttc" id="a00536_html"><div class="ttname"><a href="a00536.html">base.hh</a></div></div>
+<div class="ttc" id="a00006_html_ab81c9839ac60ac5a2d8fe319d9d3a5ce"><div class="ttname"><a href="a00006.html#ab81c9839ac60ac5a2d8fe319d9d3a5ce">Dune::GDT::AdvectionForceOperator::RangeFieldType</a></div><div class="ttdeci">Traits::RangeFieldType RangeFieldType</div><div class="ttdef"><b>Definition:</b> operators/fv/base.hh:282</div></div>
+<div class="ttc" id="a00627_html"><div class="ttname"><a href="a00627.html">force.hh</a></div></div>
+<div class="ttc" id="a00442_html"><div class="ttname"><a href="a00442.html">Dune::GDT::OperatorInterface</a></div><div class="ttdef"><b>Definition:</b> operators/interfaces.hh:50</div></div>
+<div class="ttc" id="a00030_html"><div class="ttname"><a href="a00030.html">Dune::GDT::internal::AdvectionTraitsBase</a></div><div class="ttdef"><b>Definition:</b> operators/fv/base.hh:43</div></div>
+<div class="ttc" id="a00021_html_a62f38fe0439aecc8ee0b60d360c3b8eb"><div class="ttname"><a href="a00021.html#a62f38fe0439aecc8ee0b60d360c3b8eb">Dune::GDT::AdvectionOperatorBase::BoundaryValueType</a></div><div class="ttdeci">Traits::BoundaryValueType BoundaryValueType</div><div class="ttdef"><b>Definition:</b> operators/fv/base.hh:279</div></div>
+<div class="ttc" id="a00021_html"><div class="ttname"><a href="a00021.html">Dune::GDT::AdvectionOperatorBase</a></div><div class="ttdef"><b>Definition:</b> operators/fv/base.hh:275</div></div>
+<div class="ttc" id="a00150_html"><div class="ttname"><a href="a00150.html">Dune::GDT::ForceLocalNumericalCouplingFlux</a></div><div class="ttdoc">Lax-Friedrichs flux evaluation for inner intersections and periodic boundary intersections. </div><div class="ttdef"><b>Definition:</b> local/fluxes/force.hh:27</div></div>
+<div class="ttc" id="a00006_html"><div class="ttname"><a href="a00006.html">Dune::GDT::AdvectionForceOperator</a></div><div class="ttdef"><b>Definition:</b> operators/fv/force.hh:31</div></div>
+<div class="ttc" id="a00006_html_aaa307d6e6554bbd20f0607df47a65b09"><div class="ttname"><a href="a00006.html#aaa307d6e6554bbd20f0607df47a65b09">Dune::GDT::AdvectionForceOperator::AdvectionForceOperator</a></div><div class="ttdeci">AdvectionForceOperator(const AnalyticalFluxType &amp;analytical_flux, const BoundaryValueType &amp;boundary_values, const LocalizableFunctionType &amp;dx, const bool is_linear=false)</div><div class="ttdef"><b>Definition:</b> operators/fv/force.hh:105</div></div>
+<div class="ttc" id="a00761_html_af68dfb986d335b9416add6ef64dfad58"><div class="ttname"><a href="a00761.html#af68dfb986d335b9416add6ef64dfad58">Dune::GDT::SlopeLimiters</a></div><div class="ttdeci">SlopeLimiters</div><div class="ttdef"><b>Definition:</b> slopelimiters.hh:21</div></div>
+<div class="ttc" id="a00658_html"><div class="ttname"><a href="a00658.html">interfaces.hh</a></div></div>
+<div class="ttc" id="a00021_html_ab81c9839ac60ac5a2d8fe319d9d3a5ce"><div class="ttname"><a href="a00021.html#ab81c9839ac60ac5a2d8fe319d9d3a5ce">Dune::GDT::AdvectionOperatorBase::RangeFieldType</a></div><div class="ttdeci">Traits::RangeFieldType RangeFieldType</div><div class="ttdef"><b>Definition:</b> operators/fv/base.hh:282</div></div>
+<div class="ttc" id="a00761_html_af68dfb986d335b9416add6ef64dfad58adbc1048da08be92092fbaf26e4561b4d"><div class="ttname"><a href="a00761.html#af68dfb986d335b9416add6ef64dfad58adbc1048da08be92092fbaf26e4561b4d">Dune::GDT::SlopeLimiters::minmod</a></div></div>
+<div class="ttc" id="a00021_html_a88f74c901b9d18a0e857a682ee9aefd2"><div class="ttname"><a href="a00021.html#a88f74c901b9d18a0e857a682ee9aefd2">Dune::GDT::AdvectionOperatorBase::DomainType</a></div><div class="ttdeci">Traits::DomainType DomainType</div><div class="ttdef"><b>Definition:</b> operators/fv/base.hh:281</div></div>
+<div class="ttc" id="a00440_html"><div class="ttname"><a href="a00440.html">Dune::GDT::NonLimitingRealizabilityLimiter</a></div><div class="ttdef"><b>Definition:</b> realizability.hh:35</div></div>
+<div class="ttc" id="a00006_html_a964587745e7e9a1e864458f78931f107"><div class="ttname"><a href="a00006.html#a964587745e7e9a1e864458f78931f107">Dune::GDT::AdvectionForceOperator::LocalizableFunctionType</a></div><div class="ttdeci">Traits::LocalizableFunctionType LocalizableFunctionType</div><div class="ttdef"><b>Definition:</b> operators/fv/force.hh:103</div></div>
+<div class="ttc" id="a00006_html_a41746bbe69c9e6b10b6eea18026ee8ca"><div class="ttname"><a href="a00006.html#a41746bbe69c9e6b10b6eea18026ee8ca">Dune::GDT::AdvectionForceOperator::AdvectionForceOperator</a></div><div class="ttdeci">AdvectionForceOperator(const AnalyticalFluxType &amp;analytical_flux, const BoundaryValueType &amp;boundary_values, const LocalizableFunctionType &amp;dx, const OnedQuadratureType &amp;quadrature_1d, const std::shared_ptr&lt; RealizabilityLimiterImp &gt; &amp;realizability_limiter=nullptr, const bool is_linear=false, const RangeFieldType alpha=BoundaryValueImp::dimDomain)</div><div class="ttdef"><b>Definition:</b> operators/fv/force.hh:115</div></div>
+<div class="ttc" id="a00021_html_afe4227602cb68411b916b7f9e32cec64"><div class="ttname"><a href="a00021.html#afe4227602cb68411b916b7f9e32cec64">Dune::GDT::AdvectionOperatorBase::OnedQuadratureType</a></div><div class="ttdeci">Dune::QuadratureRule&lt; DomainFieldType, 1 &gt; OnedQuadratureType</div><div class="ttdef"><b>Definition:</b> operators/fv/base.hh:292</div></div>
+<div class="ttc" id="a00760_html"><div class="ttname"><a href="a00760.html">Dune</a></div><div class="ttdef"><b>Definition:</b> codim0-matrix-datahandle.hh:8</div></div>
+<div class="ttc" id="a00021_html_a42f5ab5ef98a5d31f6649a10cf56f69d"><div class="ttname"><a href="a00021.html#a42f5ab5ef98a5d31f6649a10cf56f69d">Dune::GDT::AdvectionOperatorBase::apply</a></div><div class="ttdeci">void apply(const SourceType &amp;source, RangeType &amp;range, const XT::Common::Parameter &amp;param, Args &amp;&amp;...args) const </div><div class="ttdef"><b>Definition:</b> operators/fv/base.hh:322</div></div>
+<div class="ttc" id="a00006_html_a0ea128644a5a87c6501628c0339f87b7"><div class="ttname"><a href="a00006.html#a0ea128644a5a87c6501628c0339f87b7">Dune::GDT::AdvectionForceOperator::apply</a></div><div class="ttdeci">void apply(const SourceType &amp;source, RangeType &amp;range, const XT::Common::Parameter &amp;param) const </div><div class="ttdef"><b>Definition:</b> operators/fv/force.hh:131</div></div>
+<div class="ttc" id="a00148_html"><div class="ttname"><a href="a00148.html">Dune::GDT::ForceLocalDirichletNumericalBoundaryFlux</a></div><div class="ttdoc">Lax-Friedrichs flux evaluation for Dirichlet boundary intersections. </div><div class="ttdef"><b>Definition:</b> local/fluxes/force.hh:30</div></div>
+<div class="ttc" id="a00007_html"><div class="ttname"><a href="a00007.html">Dune::GDT::internal::AdvectionForceOperatorTraits</a></div><div class="ttdef"><b>Definition:</b> operators/fv/force.hh:43</div></div>
+<div class="ttc" id="a00021_html_a270254c610a70e336ce45acea247d628"><div class="ttname"><a href="a00021.html#a270254c610a70e336ce45acea247d628">Dune::GDT::AdvectionOperatorBase::AnalyticalFluxType</a></div><div class="ttdeci">Traits::AnalyticalFluxType AnalyticalFluxType</div><div class="ttdef"><b>Definition:</b> operators/fv/base.hh:278</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:17 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:07 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

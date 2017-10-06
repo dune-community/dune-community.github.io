@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: Dune::GDT::LocalEllipticIpdgIntegrands::internal::method_dependent_typename&lt; method &gt; Struct Template Reference</title>
+<title>dune-gdt: Dune::GDT::LocalReconstructionFvOperator&lt; GridLayerType, AnalyticalFluxType, BoundaryValueType, polOrder, slope_limiter &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,47 +85,200 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00702.html">Dune</a></li><li class="navelem"><a class="el" href="a00703.html">GDT</a></li><li class="navelem"><a class="el" href="a00708.html">LocalEllipticIpdgIntegrands</a></li><li class="navelem"><a class="el" href="a00709.html">internal</a></li><li class="navelem"><a class="el" href="a00393.html">method_dependent_typename</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00760.html">Dune</a></li><li class="navelem"><a class="el" href="a00761.html">GDT</a></li><li class="navelem"><a class="el" href="a00393.html">LocalReconstructionFvOperator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
-<a href="a01321.html">List of all members</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="a01111.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::LocalEllipticIpdgIntegrands::internal::method_dependent_typename&lt; method &gt; Struct Template Reference</div>  </div>
+<div class="title">Dune::GDT::LocalReconstructionFvOperator&lt; GridLayerType, AnalyticalFluxType, BoundaryValueType, polOrder, slope_limiter &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00546_source.html">dune/gdt/local/integrands/elliptic-ipdg.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00713_source.html">dune/gdt/operators/fv/reconstruction.hh</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Dune::GDT::LocalReconstructionFvOperator&lt; GridLayerType, AnalyticalFluxType, BoundaryValueType, polOrder, slope_limiter &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="a01112.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_local_reconstruction_fv_operator_3_01_grid_layer_type_00_01_analytical_flux_type_00_01_boundary_value_type_00_01pol_order_00_01slope__limiter_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_local_reconstruction_fv_operator_3_01_grid_layer_type_00_01_analytical_flux_type_00_01_boundary_value_type_00_01pol_order_00_01slope__limiter_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_local_reconstruction_fv_operator_3_01_grid_layer_type_00_01_analytical_flux_type_00_01_boundary_value_type_00_01pol_order_00_01slope__limiter_01_4_inherit__map">
+</map>
+</div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a0e67c94c4ea42d6ba514b5658546db04"><td class="memItemLeft" align="right" valign="top">typedef void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00393.html#a0e67c94c4ea42d6ba514b5658546db04">type</a></td></tr>
-<tr class="separator:a0e67c94c4ea42d6ba514b5658546db04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0124ea970080dd713fe0128f5fc34ce8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00393.html#a0124ea970080dd713fe0128f5fc34ce8">LocalReconstructionFvOperator</a> (const std::vector&lt; RangeType &gt; &amp;source_values, const AnalyticalFluxType &amp;analytical_flux, const BoundaryValueType &amp;boundary_values, const GridLayerType &amp;grid_layer, const XT::Common::Parameter &amp;param, const bool is_linear, const QuadratureType &amp;quadrature, std::vector&lt; std::map&lt; DomainType, RangeType, XT::Common::FieldVectorLess &gt;&gt; &amp;reconstructed_values)</td></tr>
+<tr class="separator:a0124ea970080dd713fe0128f5fc34ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bdfab3707bf800eb98fd88e9404e121"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00393.html#a1bdfab3707bf800eb98fd88e9404e121">~LocalReconstructionFvOperator</a> ()</td></tr>
+<tr class="separator:a1bdfab3707bf800eb98fd88e9404e121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f9503a96873eb9d29a2b3c76fb7bf81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00393.html#a9f9503a96873eb9d29a2b3c76fb7bf81">apply_local</a> (const EntityType &amp;entity)</td></tr>
+<tr class="separator:a9f9503a96873eb9d29a2b3c76fb7bf81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:add116caa0e260a8853ac80b365356445"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00393.html#add116caa0e260a8853ac80b365356445">reset</a> ()</td></tr>
+<tr class="separator:add116caa0e260a8853ac80b365356445"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a0e67c94c4ea42d6ba514b5658546db04"></a>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a0124ea970080dd713fe0128f5fc34ce8"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;Method method&gt; </div>
+template&lt;class GridLayerType, class AnalyticalFluxType, class BoundaryValueType, size_t polOrder, SlopeLimiters slope_limiter&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void <a class="el" href="a00393.html">Dune::GDT::LocalEllipticIpdgIntegrands::internal::method_dependent_typename</a>&lt; method &gt;::<a class="el" href="a00393.html#a0e67c94c4ea42d6ba514b5658546db04">type</a></td>
+          <td class="memname"><a class="el" href="a00393.html">Dune::GDT::LocalReconstructionFvOperator</a>&lt; GridLayerType, AnalyticalFluxType, BoundaryValueType, polOrder, slope_limiter &gt;::<a class="el" href="a00393.html">LocalReconstructionFvOperator</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; RangeType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>source_values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AnalyticalFluxType &amp;&#160;</td>
+          <td class="paramname"><em>analytical_flux</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const BoundaryValueType &amp;&#160;</td>
+          <td class="paramname"><em>boundary_values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GridLayerType &amp;&#160;</td>
+          <td class="paramname"><em>grid_layer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>is_linear</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QuadratureType &amp;&#160;</td>
+          <td class="paramname"><em>quadrature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::map&lt; DomainType, RangeType, XT::Common::FieldVectorLess &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>reconstructed_values</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="a00546_source.html">local/integrands/elliptic-ipdg.hh</a></li>
+<a class="anchor" id="a1bdfab3707bf800eb98fd88e9404e121"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerType, class AnalyticalFluxType, class BoundaryValueType, size_t polOrder, SlopeLimiters slope_limiter&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00393.html">Dune::GDT::LocalReconstructionFvOperator</a>&lt; GridLayerType, AnalyticalFluxType, BoundaryValueType, polOrder, slope_limiter &gt;::~<a class="el" href="a00393.html">LocalReconstructionFvOperator</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a9f9503a96873eb9d29a2b3c76fb7bf81"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerType, class AnalyticalFluxType, class BoundaryValueType, size_t polOrder, SlopeLimiters slope_limiter&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00393.html">Dune::GDT::LocalReconstructionFvOperator</a>&lt; GridLayerType, AnalyticalFluxType, BoundaryValueType, polOrder, slope_limiter &gt;::apply_local </td>
+          <td>(</td>
+          <td class="paramtype">const EntityType &amp;&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="add116caa0e260a8853ac80b365356445"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerType, class AnalyticalFluxType, class BoundaryValueType, size_t polOrder, SlopeLimiters slope_limiter&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="a00393.html">Dune::GDT::LocalReconstructionFvOperator</a>&lt; GridLayerType, AnalyticalFluxType, BoundaryValueType, polOrder, slope_limiter &gt;::reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="a00713_source.html">reconstruction.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:20 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:10 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

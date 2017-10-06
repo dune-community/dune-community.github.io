@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['hyperbolicfvdefaultdiscretization',['HyperbolicFvDefaultDiscretization',['../a00171.html',1,'Dune::GDT']]],
-  ['hyperbolicfvdefaultdiscretizationtraits',['HyperbolicFvDefaultDiscretizationTraits',['../a00172.html',1,'Dune::GDT::internal']]]
+  ['hdivsemiproduct',['HdivSemiProduct',['../a00183.html',1,'Dune::GDT::RS2017']]],
+  ['hyperbolicfvdefaultdiscretization',['HyperbolicFvDefaultDiscretization',['../a00184.html',1,'Dune::GDT']]],
+  ['hyperbolicfvdefaultdiscretizationtraits',['HyperbolicFvDefaultDiscretizationTraits',['../a00185.html',1,'Dune::GDT::internal']]]
 ];

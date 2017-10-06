@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: Dune::GDT::LocalEllipticIpdgIntegrands Namespace Reference</title>
+<title>dune-gdt: projections.bindings.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -40,9 +40,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -63,8 +63,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="namespaces.html"><span>Namespace&#160;List</span></a></li>
-      <li><a href="namespacemembers.html"><span>Namespace&#160;Members</span></a></li>
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -83,134 +83,619 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00702.html">Dune</a></li><li class="navelem"><a class="el" href="a00703.html">GDT</a></li><li class="navelem"><a class="el" href="a00708.html">LocalEllipticIpdgIntegrands</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_eaee94ab3c5b11ce8fcab1cb9d405304.html">src</a></li><li class="navelem"><a class="el" href="dir_58c354ae22a30254506a25a39957e8ba.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_16224573f43954b382d54ec1df2a2147.html">dune</a></li><li class="navelem"><a class="el" href="dir_f1992dd472896fb89117bdc8155a3e1c.html">gdt</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::LocalEllipticIpdgIntegrands Namespace Reference</div>  </div>
+<div class="title">projections.bindings.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Contains local integrands for the family of interior penalty discontinuous Galerkin (IPDG) discretization schemes.  
-<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;dune/pybindxi/pybind11.h&gt;</code><br />
+<code>#include &lt;dune/xt/grid/grids.bindings.hh&gt;</code><br />
+<code>#include &lt;dune/xt/la/container.bindings.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00726_source.html">dune/gdt/spaces.bindings.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00733_source.html">dune/gdt/type_traits.hh</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00709_source.html">projections.hh</a>&quot;</code><br />
+</div>
+<p><a href="a00708_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:a00709"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00709.html">internal</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html">BoundaryLHS</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00050.html">BoundaryRHS</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00173.html">Inner</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00394.html">method_name</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00395.html">method_name&lt; Method::ipdg &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00396.html">method_name&lt; Method::nipdg &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00397.html">method_name&lt; Method::sipdg &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00398.html">method_name&lt; Method::swipdg &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00399.html">method_name&lt; Method::swipdg_affine_factor &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00400.html">method_name&lt; Method::swipdg_affine_tensor &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00453.html">Dune::GDT::bindings::project&lt; SP, V &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a408b56cd5789f645c7fe625bb6af2f6e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00708.html#a408b56cd5789f645c7fe625bb6af2f6e">Method</a> { <br />
-&#160;&#160;<a class="el" href="a00708.html#a408b56cd5789f645c7fe625bb6af2f6eabf5ba5d8e773d57a00a419a88c3c5622">Method::ipdg</a>, 
-<a class="el" href="a00708.html#a408b56cd5789f645c7fe625bb6af2f6eac4fd21f6762632ad8f00284c5a118c60">Method::nipdg</a>, 
-<a class="el" href="a00708.html#a408b56cd5789f645c7fe625bb6af2f6eab9cdc2105185e2b7b2f70faabc252bef">Method::sipdg</a>, 
-<a class="el" href="a00708.html#a408b56cd5789f645c7fe625bb6af2f6ea4a233dd12d6ac9daa4f0e6b20144ab00">Method::swipdg</a>, 
-<br />
-&#160;&#160;<a class="el" href="a00708.html#a408b56cd5789f645c7fe625bb6af2f6eacb7be482a5ab86ccc7765b5c2419e6e7">Method::swipdg_affine_factor</a>, 
-<a class="el" href="a00708.html#a408b56cd5789f645c7fe625bb6af2f6ea497c40545b4e6621d1f09e8478f9508c">Method::swipdg_affine_tensor</a>
-<br />
- }</td></tr>
-<tr class="separator:a408b56cd5789f645c7fe625bb6af2f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00760"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00760.html">Dune</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00761"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00761.html">Dune::GDT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00764"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00764.html">Dune::GDT::bindings</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a6f1c29074ab80702c5e50abbdb5ba4b8"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="a00708.html#a408b56cd5789f645c7fe625bb6af2f6e">Method</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00708.html#a6f1c29074ab80702c5e50abbdb5ba4b8">default_method</a> = <a class="el" href="a00708.html#a408b56cd5789f645c7fe625bb6af2f6ea4a233dd12d6ac9daa4f0e6b20144ab00">Method::swipdg</a></td></tr>
-<tr class="separator:a6f1c29074ab80702c5e50abbdb5ba4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a5d7cac8c05c61c907126b2ee4be7b720"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00708.html#a5d7cac8c05c61c907126b2ee4be7b720">_DUNE_GDT_PROJECTIONS_BIND</a>(_m, _GRID, _g_layer, _s_backend, _s_type, _p, _la)</td></tr>
+<tr class="separator:a5d7cac8c05c61c907126b2ee4be7b720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66485505afeebc288ffc80c39137af34"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00708.html#a66485505afeebc288ffc80c39137af34">_DUNE_GDT_PROJECTIONS_BIND_ALBERTA</a>(_m, _g_layer, _s_backend, _s_type, _p, _la)</td></tr>
+<tr class="separator:a66485505afeebc288ffc80c39137af34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa12365129626ddd63e1e2afeca2a3205"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00708.html#aa12365129626ddd63e1e2afeca2a3205">_DUNE_GDT_PROJECTIONS_BIND_ALU</a>(_m, _g_layer, _s_backend, _s_type, _p, _la)</td></tr>
+<tr class="separator:aa12365129626ddd63e1e2afeca2a3205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c18c0fe8f632efd71e78302151fa0ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00708.html#a5c18c0fe8f632efd71e78302151fa0ce">_DUNE_GDT_PROJECTIONS_BIND_UG</a>(_m, _g_layer, _s_backend, _s_type, _p, _la)</td></tr>
+<tr class="separator:a5c18c0fe8f632efd71e78302151fa0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8741b3dd23ce853275d870223d6ddf8a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00708.html#a8741b3dd23ce853275d870223d6ddf8a">_DUNE_GDT_PROJECTIONS_BIND_YASP</a>(_m, _g_layer, _s_backend, _s_type, _p, _la)</td></tr>
+<tr class="separator:a8741b3dd23ce853275d870223d6ddf8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acacc7aed0382d2ce322af998e14d86cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00708.html#acacc7aed0382d2ce322af998e14d86cd">_DUNE_GDT_PROJECTIONS_BIND_ALL_GRIDS</a>(_m, _g_layer, _s_backend, _s_type, _p, _la)</td></tr>
+<tr class="separator:acacc7aed0382d2ce322af998e14d86cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5550d822d78013dd01811b72327b4c6e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00708.html#a5550d822d78013dd01811b72327b4c6e">_DUNE_GDT_PROJECTIONS_BIND_DEFAULT</a>(_m, _la)</td></tr>
+<tr class="separator:a5550d822d78013dd01811b72327b4c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5898d0cb2dace2dea3eaec826d737a0a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00708.html#a5898d0cb2dace2dea3eaec826d737a0a">_DUNE_GDT_PROJECTIONS_BIND_FEM</a>(_m, _la)</td></tr>
+<tr class="separator:a5898d0cb2dace2dea3eaec826d737a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab67844887e8d9d69eaa47302f37b1cc9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00708.html#ab67844887e8d9d69eaa47302f37b1cc9">_DUNE_GDT_PROJECTIONS_BIND_FUNCTIONS</a>(_m, _la)</td></tr>
+<tr class="separator:ab67844887e8d9d69eaa47302f37b1cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae68fc63bb7d0e4ecaa1f43f169722395"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00708.html#ae68fc63bb7d0e4ecaa1f43f169722395">_DUNE_GDT_PROJECTIONS_BIND_PDELAB</a>(_m, _la)</td></tr>
+<tr class="separator:ae68fc63bb7d0e4ecaa1f43f169722395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af44308e1367cef1d600c587b99342978"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00708.html#af44308e1367cef1d600c587b99342978">_DUNE_GDT_PROJECTIONS_BIND_ALL_SPACES</a>(_m, _la)</td></tr>
+<tr class="separator:af44308e1367cef1d600c587b99342978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30f93e92618b57e7a237e9b27fa7dae9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00708.html#a30f93e92618b57e7a237e9b27fa7dae9">_DUNE_GDT_PROJECTIONS_BIND_COMMON</a>(_m)</td></tr>
+<tr class="separator:a30f93e92618b57e7a237e9b27fa7dae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8217899157899c0980e6f58e29355413"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00708.html#a8217899157899c0980e6f58e29355413">_DUNE_GDT_PROJECTIONS_BIND_EIGEN</a>(_m)</td></tr>
+<tr class="separator:a8217899157899c0980e6f58e29355413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81b3d36181e592eceeb6106a0dbb9039"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00708.html#a81b3d36181e592eceeb6106a0dbb9039">_DUNE_GDT_PROJECTIONS_BIND_ISTL</a>(_m)</td></tr>
+<tr class="separator:a81b3d36181e592eceeb6106a0dbb9039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfe1015cc7fbe6dcb2580c43771356ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00708.html#abfe1015cc7fbe6dcb2580c43771356ac">DUNE_GDT_PROJECTIONS_BIND</a>(_m)</td></tr>
+<tr class="separator:abfe1015cc7fbe6dcb2580c43771356ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Contains local integrands for the family of interior penalty discontinuous Galerkin (IPDG) discretization schemes. </p>
-<p>For the choice of penalization and the role of the user input see Epshteyn, Riviere (2007): "Estimation of penalty parameters for symmetric interior penalty Galerkin methods" For the choice of the weighting see Ern, Stephansen, Zunino (2007): "A discontinuous Galerkin method
-            with weighted averages for advection-diffusion equations with locally small and anisotropic diffusivity" </p>
-</div><h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="a408b56cd5789f645c7fe625bb6af2f6e"></a>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a5d7cac8c05c61c907126b2ee4be7b720"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="a00708.html#a408b56cd5789f645c7fe625bb6af2f6e">Dune::GDT::LocalEllipticIpdgIntegrands::Method</a></td>
+          <td class="memname">#define _DUNE_GDT_PROJECTIONS_BIND</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_m, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_GRID, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_g_layer, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_s_backend, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_s_type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_p, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_la&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a408b56cd5789f645c7fe625bb6af2f6eabf5ba5d8e773d57a00a419a88c3c5622"></a>ipdg&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a408b56cd5789f645c7fe625bb6af2f6eac4fd21f6762632ad8f00284c5a118c60"></a>nipdg&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a408b56cd5789f645c7fe625bb6af2f6eab9cdc2105185e2b7b2f70faabc252bef"></a>sipdg&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a408b56cd5789f645c7fe625bb6af2f6ea4a233dd12d6ac9daa4f0e6b20144ab00"></a>swipdg&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a408b56cd5789f645c7fe625bb6af2f6eacb7be482a5ab86ccc7765b5c2419e6e7"></a>swipdg_affine_factor&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a408b56cd5789f645c7fe625bb6af2f6ea497c40545b4e6621d1f09e8478f9508c"></a>swipdg_affine_tensor&#160;</td><td class="fielddoc">
-</td></tr>
-</table>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="a00453.html">Dune::GDT::bindings::project</a>&lt;<a class="code" href="a00479.html">Dune::GDT::SpaceProvider</a>&lt;_GRID,                                                         \</div>
+<div class="line">                                                        Dune::XT::Grid::Layers::_g_layer,                              \</div>
+<div class="line">                                                        Dune::GDT::SpaceType::_s_type,                                 \</div>
+<div class="line">                                                        Dune::GDT::Backends::_s_backend,                               \</div>
+<div class="line">                                                        _p,                                                            \</div>
+<div class="line">                                                        double,                                                        \</div>
+<div class="line">                                                        1,                                                             \</div>
+<div class="line">                                                        1&gt;,                                                            \</div>
+<div class="line">                               typename Dune::XT::LA::Container&lt;double,                                                \</div>
+<div class="line">                                                                Dune::XT::LA::Backends::_la&gt;::VectorType&gt;::bind(_m)</div>
+<div class="ttc" id="a00479_html"><div class="ttname"><a href="a00479.html">Dune::GDT::SpaceProvider</a></div><div class="ttdef"><b>Definition:</b> spaces.hh:31</div></div>
+<div class="ttc" id="a00453_html"><div class="ttname"><a href="a00453.html">Dune::GDT::bindings::project</a></div><div class="ttdef"><b>Definition:</b> projections.bindings.hh:30</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a66485505afeebc288ffc80c39137af34"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _DUNE_GDT_PROJECTIONS_BIND_ALBERTA</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_m, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_g_layer, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_s_backend, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_s_type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_p, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_la&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a6f1c29074ab80702c5e50abbdb5ba4b8"></a>
+<a class="anchor" id="acacc7aed0382d2ce322af998e14d86cd"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="a00708.html#a408b56cd5789f645c7fe625bb6af2f6e">Method</a> Dune::GDT::LocalEllipticIpdgIntegrands::default_method = <a class="el" href="a00708.html#a408b56cd5789f645c7fe625bb6af2f6ea4a233dd12d6ac9daa4f0e6b20144ab00">Method::swipdg</a></td>
+          <td class="memname">#define _DUNE_GDT_PROJECTIONS_BIND_ALL_GRIDS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_m, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_g_layer, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_s_backend, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_s_type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_p, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_la&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="a00708.html#a66485505afeebc288ffc80c39137af34">_DUNE_GDT_PROJECTIONS_BIND_ALBERTA</a>(_m, _g_layer, _s_backend, _s_type, _p, _la);                                      <a class="code" href="a00708.html#aa12365129626ddd63e1e2afeca2a3205">\</a></div>
+<div class="line"><a class="code" href="a00708.html#aa12365129626ddd63e1e2afeca2a3205">  _DUNE_GDT_PROJECTIONS_BIND_ALU</a>(_m, _g_layer, _s_backend, _s_type, _p, _la);                                          <a class="code" href="a00708.html#a5c18c0fe8f632efd71e78302151fa0ce">\</a></div>
+<div class="line"><a class="code" href="a00708.html#a5c18c0fe8f632efd71e78302151fa0ce">  _DUNE_GDT_PROJECTIONS_BIND_UG</a>(_m, _g_layer, _s_backend, _s_type, _p, _la);                                           <a class="code" href="a00708.html#a8741b3dd23ce853275d870223d6ddf8a">\</a></div>
+<div class="line"><a class="code" href="a00708.html#a8741b3dd23ce853275d870223d6ddf8a">  _DUNE_GDT_PROJECTIONS_BIND_YASP</a>(_m, _g_layer, _s_backend, _s_type, _p, _la)</div>
+<div class="ttc" id="a00708_html_aa12365129626ddd63e1e2afeca2a3205"><div class="ttname"><a href="a00708.html#aa12365129626ddd63e1e2afeca2a3205">_DUNE_GDT_PROJECTIONS_BIND_ALU</a></div><div class="ttdeci">#define _DUNE_GDT_PROJECTIONS_BIND_ALU(_m, _g_layer, _s_backend, _s_type, _p, _la)</div><div class="ttdef"><b>Definition:</b> projections.bindings.hh:86</div></div>
+<div class="ttc" id="a00708_html_a66485505afeebc288ffc80c39137af34"><div class="ttname"><a href="a00708.html#a66485505afeebc288ffc80c39137af34">_DUNE_GDT_PROJECTIONS_BIND_ALBERTA</a></div><div class="ttdeci">#define _DUNE_GDT_PROJECTIONS_BIND_ALBERTA(_m, _g_layer, _s_backend, _s_type, _p, _la)</div><div class="ttdef"><b>Definition:</b> projections.bindings.hh:79</div></div>
+<div class="ttc" id="a00708_html_a8741b3dd23ce853275d870223d6ddf8a"><div class="ttname"><a href="a00708.html#a8741b3dd23ce853275d870223d6ddf8a">_DUNE_GDT_PROJECTIONS_BIND_YASP</a></div><div class="ttdeci">#define _DUNE_GDT_PROJECTIONS_BIND_YASP(_m, _g_layer, _s_backend, _s_type, _p, _la)</div><div class="ttdef"><b>Definition:</b> projections.bindings.hh:95</div></div>
+<div class="ttc" id="a00708_html_a5c18c0fe8f632efd71e78302151fa0ce"><div class="ttname"><a href="a00708.html#a5c18c0fe8f632efd71e78302151fa0ce">_DUNE_GDT_PROJECTIONS_BIND_UG</a></div><div class="ttdeci">#define _DUNE_GDT_PROJECTIONS_BIND_UG(_m, _g_layer, _s_backend, _s_type, _p, _la)</div><div class="ttdef"><b>Definition:</b> projections.bindings.hh:92</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="af44308e1367cef1d600c587b99342978"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _DUNE_GDT_PROJECTIONS_BIND_ALL_SPACES</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_m, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_la&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="a00708.html#a5550d822d78013dd01811b72327b4c6e">_DUNE_GDT_PROJECTIONS_BIND_DEFAULT</a>(_m, _la);                                                                         <a class="code" href="a00708.html#a5898d0cb2dace2dea3eaec826d737a0a">\</a></div>
+<div class="line"><a class="code" href="a00708.html#a5898d0cb2dace2dea3eaec826d737a0a">  _DUNE_GDT_PROJECTIONS_BIND_FEM</a>(_m, _la);                                                                             <a class="code" href="a00708.html#ab67844887e8d9d69eaa47302f37b1cc9">\</a></div>
+<div class="line"><a class="code" href="a00708.html#ab67844887e8d9d69eaa47302f37b1cc9">  _DUNE_GDT_PROJECTIONS_BIND_FUNCTIONS</a>(_m, _la);                                                                       <a class="code" href="a00708.html#ae68fc63bb7d0e4ecaa1f43f169722395">\</a></div>
+<div class="line"><a class="code" href="a00708.html#ae68fc63bb7d0e4ecaa1f43f169722395">  _DUNE_GDT_PROJECTIONS_BIND_PDELAB</a>(_m, _la)</div>
+<div class="ttc" id="a00708_html_a5550d822d78013dd01811b72327b4c6e"><div class="ttname"><a href="a00708.html#a5550d822d78013dd01811b72327b4c6e">_DUNE_GDT_PROJECTIONS_BIND_DEFAULT</a></div><div class="ttdeci">#define _DUNE_GDT_PROJECTIONS_BIND_DEFAULT(_m, _la)</div><div class="ttdef"><b>Definition:</b> projections.bindings.hh:107</div></div>
+<div class="ttc" id="a00708_html_ae68fc63bb7d0e4ecaa1f43f169722395"><div class="ttname"><a href="a00708.html#ae68fc63bb7d0e4ecaa1f43f169722395">_DUNE_GDT_PROJECTIONS_BIND_PDELAB</a></div><div class="ttdeci">#define _DUNE_GDT_PROJECTIONS_BIND_PDELAB(_m, _la)</div><div class="ttdef"><b>Definition:</b> projections.bindings.hh:132</div></div>
+<div class="ttc" id="a00708_html_a5898d0cb2dace2dea3eaec826d737a0a"><div class="ttname"><a href="a00708.html#a5898d0cb2dace2dea3eaec826d737a0a">_DUNE_GDT_PROJECTIONS_BIND_FEM</a></div><div class="ttdeci">#define _DUNE_GDT_PROJECTIONS_BIND_FEM(_m, _la)</div><div class="ttdef"><b>Definition:</b> projections.bindings.hh:120</div></div>
+<div class="ttc" id="a00708_html_ab67844887e8d9d69eaa47302f37b1cc9"><div class="ttname"><a href="a00708.html#ab67844887e8d9d69eaa47302f37b1cc9">_DUNE_GDT_PROJECTIONS_BIND_FUNCTIONS</a></div><div class="ttdeci">#define _DUNE_GDT_PROJECTIONS_BIND_FUNCTIONS(_m, _la)</div><div class="ttdef"><b>Definition:</b> projections.bindings.hh:126</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aa12365129626ddd63e1e2afeca2a3205"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _DUNE_GDT_PROJECTIONS_BIND_ALU</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_m, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_g_layer, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_s_backend, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_s_type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_p, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_la&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
+</div>
+</div>
+<a class="anchor" id="a30f93e92618b57e7a237e9b27fa7dae9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _DUNE_GDT_PROJECTIONS_BIND_COMMON</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_m</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5550d822d78013dd01811b72327b4c6e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _DUNE_GDT_PROJECTIONS_BIND_DEFAULT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_m, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_la&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="a00708.html#acacc7aed0382d2ce322af998e14d86cd">_DUNE_GDT_PROJECTIONS_BIND_ALL_GRIDS</a>(_m, leaf, gdt, fv, 0, _la);                                                     <a class="code" href="a00708.html#acacc7aed0382d2ce322af998e14d86cd">\</a></div>
+<div class="line"><a class="code" href="a00708.html#acacc7aed0382d2ce322af998e14d86cd">  _DUNE_GDT_PROJECTIONS_BIND_ALL_GRIDS</a>(_m, level, gdt, fv, 0, _la)</div>
+<div class="ttc" id="a00708_html_acacc7aed0382d2ce322af998e14d86cd"><div class="ttname"><a href="a00708.html#acacc7aed0382d2ce322af998e14d86cd">_DUNE_GDT_PROJECTIONS_BIND_ALL_GRIDS</a></div><div class="ttdeci">#define _DUNE_GDT_PROJECTIONS_BIND_ALL_GRIDS(_m, _g_layer, _s_backend, _s_type, _p, _la)</div><div class="ttdef"><b>Definition:</b> projections.bindings.hh:99</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a8217899157899c0980e6f58e29355413"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _DUNE_GDT_PROJECTIONS_BIND_EIGEN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_m</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5898d0cb2dace2dea3eaec826d737a0a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _DUNE_GDT_PROJECTIONS_BIND_FEM</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_m, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_la&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab67844887e8d9d69eaa47302f37b1cc9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _DUNE_GDT_PROJECTIONS_BIND_FUNCTIONS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_m, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_la&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a81b3d36181e592eceeb6106a0dbb9039"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _DUNE_GDT_PROJECTIONS_BIND_ISTL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_m</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae68fc63bb7d0e4ecaa1f43f169722395"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _DUNE_GDT_PROJECTIONS_BIND_PDELAB</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_m, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_la&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5c18c0fe8f632efd71e78302151fa0ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _DUNE_GDT_PROJECTIONS_BIND_UG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_m, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_g_layer, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_s_backend, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_s_type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_p, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_la&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8741b3dd23ce853275d870223d6ddf8a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _DUNE_GDT_PROJECTIONS_BIND_YASP</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_m, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_g_layer, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_s_backend, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_s_type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_p, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_la&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="a00708.html#a5d7cac8c05c61c907126b2ee4be7b720">_DUNE_GDT_PROJECTIONS_BIND</a>(_m, YASP_1D_EQUIDISTANT_OFFSET, _g_layer, _s_backend, _s_type, _p, _la);                  <a class="code" href="a00708.html#a5d7cac8c05c61c907126b2ee4be7b720">\</a></div>
+<div class="line"><a class="code" href="a00708.html#a5d7cac8c05c61c907126b2ee4be7b720">  _DUNE_GDT_PROJECTIONS_BIND</a>(_m, YASP_2D_EQUIDISTANT_OFFSET, _g_layer, _s_backend, _s_type, _p, _la)</div>
+<div class="ttc" id="a00708_html_a5d7cac8c05c61c907126b2ee4be7b720"><div class="ttname"><a href="a00708.html#a5d7cac8c05c61c907126b2ee4be7b720">_DUNE_GDT_PROJECTIONS_BIND</a></div><div class="ttdeci">#define _DUNE_GDT_PROJECTIONS_BIND(_m, _GRID, _g_layer, _s_backend, _s_type, _p, _la)</div><div class="ttdef"><b>Definition:</b> projections.bindings.hh:62</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="abfe1015cc7fbe6dcb2580c43771356ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DUNE_GDT_PROJECTIONS_BIND</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_m</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="a00708.html#a30f93e92618b57e7a237e9b27fa7dae9">_DUNE_GDT_PROJECTIONS_BIND_COMMON</a>(_m);                                                                               <a class="code" href="a00708.html#a8217899157899c0980e6f58e29355413">\</a></div>
+<div class="line"><a class="code" href="a00708.html#a8217899157899c0980e6f58e29355413">  _DUNE_GDT_PROJECTIONS_BIND_EIGEN</a>(_m);                                                                                <a class="code" href="a00708.html#a81b3d36181e592eceeb6106a0dbb9039">\</a></div>
+<div class="line"><a class="code" href="a00708.html#a81b3d36181e592eceeb6106a0dbb9039">  _DUNE_GDT_PROJECTIONS_BIND_ISTL</a>(_m)</div>
+<div class="ttc" id="a00708_html_a81b3d36181e592eceeb6106a0dbb9039"><div class="ttname"><a href="a00708.html#a81b3d36181e592eceeb6106a0dbb9039">_DUNE_GDT_PROJECTIONS_BIND_ISTL</a></div><div class="ttdeci">#define _DUNE_GDT_PROJECTIONS_BIND_ISTL(_m)</div><div class="ttdef"><b>Definition:</b> projections.bindings.hh:155</div></div>
+<div class="ttc" id="a00708_html_a8217899157899c0980e6f58e29355413"><div class="ttname"><a href="a00708.html#a8217899157899c0980e6f58e29355413">_DUNE_GDT_PROJECTIONS_BIND_EIGEN</a></div><div class="ttdeci">#define _DUNE_GDT_PROJECTIONS_BIND_EIGEN(_m)</div><div class="ttdef"><b>Definition:</b> projections.bindings.hh:149</div></div>
+<div class="ttc" id="a00708_html_a30f93e92618b57e7a237e9b27fa7dae9"><div class="ttname"><a href="a00708.html#a30f93e92618b57e7a237e9b27fa7dae9">_DUNE_GDT_PROJECTIONS_BIND_COMMON</a></div><div class="ttdeci">#define _DUNE_GDT_PROJECTIONS_BIND_COMMON(_m)</div><div class="ttdef"><b>Definition:</b> projections.bindings.hh:144</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:20 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:09 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

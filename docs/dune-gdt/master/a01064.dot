@@ -1,9 +1,48 @@
-digraph "Dune::GDT::ReconstructedLocalizableFunction&lt; GridViewImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;"
+digraph "Dune::GDT::LocalFaceIntegrandInterface&lt; Traits, numArguments &gt;"
 {
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="Dune::GDT::Reconstructed\lLocalizableFunction\< GridView\lImp, DomainFieldImp, domainDim,\l RangeFieldImp, rangeDim, rangeDimCols \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="XT::Functions::Localizable\lFunctionInterface\< GridViewImp\l::template Codim\< 0 \>::Entity,\l DomainFieldImp, domainDim, RangeFieldImp,\l rangeDim, rangeDimCols \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 [label="Dune::GDT::LocalFaceIntegrand\lInterface\< Traits, numArguments \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::LocalLambdaQuaternary\lFaceIntegrandTraits\< E, I,\l R, rT, rCT, rA, rCA \>, 4 \>" ,fontname="Helvetica"];
+  Node2 [label="Dune::GDT::LocalFaceIntegrand\lInterface\< internal::LocalLambda\lQuaternaryFaceIntegrandTraits\l\< E, I, R, rT, rCT, rA, rCA \>, 4 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00353.html"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Dune::GDT::LocalLambdaQuaternary\lFaceIntegrand\< E, I, R, rT,\l rCT, rA, rCA \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00382.html"];
+  Node1 -> Node4 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< TraitsImp, 1 \>" ,fontname="Helvetica"];
+  Node4 [label="Dune::GDT::LocalFaceIntegrand\lInterface\< TraitsImp, 1 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00353.html"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Dune::GDT::LocalProductIntegrand\l\< LocalizableFunctionImp, TraitsImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00391.html",tooltip="Computes a product evaluation. "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Dune::GDT::LocalFVProduct\lIntegrand\< LocalizableFunction\lImp, TraitsImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00359.html",tooltip="Computes a product evaluation for a finite volume basis. "];
+  Node1 -> Node7 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::BoundaryRHSTraits\l\< DirichletImp, DiffusionFactorImp,\l DiffusionTensorImp, method \>, 1 \>" ,fontname="Helvetica"];
+  Node7 [label="Dune::GDT::LocalFaceIntegrand\lInterface\< internal::BoundaryRHSTraits\l\< DirichletImp, DiffusionFactorImp,\l DiffusionTensorImp, method \>, 1 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00353.html"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Dune::GDT::LocalElliptic\lIpdgIntegrands::BoundaryRHS\l\< DirichletImp, DiffusionFactorImp,\l DiffusionTensorImp, method \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00049.html"];
+  Node1 -> Node9 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::InnerTraits\l\< DiffusionFactorImp,\l DiffusionTensorImp, method \>, 4 \>" ,fontname="Helvetica"];
+  Node9 [label="Dune::GDT::LocalFaceIntegrand\lInterface\< internal::InnerTraits\l\< DiffusionFactorImp, DiffusionTensorImp,\l method \>, 4 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00353.html"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Dune::GDT::LocalElliptic\lIpdgIntegrands::Inner\l\< DiffusionFactorImp, Diffusion\lTensorImp, method \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00186.html"];
+  Node1 -> Node11 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< TraitsImp, 2 \>" ,fontname="Helvetica"];
+  Node11 [label="Dune::GDT::LocalFaceIntegrand\lInterface\< TraitsImp, 2 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00353.html"];
+  Node11 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node12 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::InnerTraits\l\< LocalizableFunctionImp\l \>, 4 \>" ,fontname="Helvetica"];
+  Node12 [label="Dune::GDT::LocalFaceIntegrand\lInterface\< internal::InnerTraits\l\< LocalizableFunctionImp \>, 4 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00353.html"];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="Dune::GDT::LocalSipdgIntegrands\l::Inner\< LocalizableFunctionImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00187.html"];
+  Node1 -> Node14 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::BoundaryRHSTraits\l\< LocalizableDiffusionFunctionImp,\l LocalizableDirichletFunctionImp \>, 1 \>" ,fontname="Helvetica"];
+  Node14 [label="Dune::GDT::LocalFaceIntegrand\lInterface\< internal::BoundaryRHSTraits\l\< LocalizableDiffusionFunctionImp,\l LocalizableDirichletFunctionImp \>, 1 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00353.html"];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="Dune::GDT::LocalSipdgIntegrands\l::BoundaryRHS\< LocalizableDiffusion\lFunctionImp, LocalizableDirichletFunctionImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00050.html"];
+  Node1 -> Node16 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::LocalLambdaBinary\lFaceIntegrandTraits\< E, I,\l R, rT, rCT, rA, rCA \>, 2 \>" ,fontname="Helvetica"];
+  Node16 [label="Dune::GDT::LocalFaceIntegrand\lInterface\< internal::LocalLambda\lBinaryFaceIntegrandTraits\< E,\l I, R, rT, rCT, rA, rCA \>, 2 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00353.html"];
+  Node16 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="Dune::GDT::LocalLambdaBinary\lFaceIntegrand\< E, I, R,\l rT, rCT, rA, rCA \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00374.html"];
+  Node1 -> Node18 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::BoundaryLHSTraits\l\< DiffusionFactorImp, DiffusionTensor\lImp, method \>, 2 \>" ,fontname="Helvetica"];
+  Node18 [label="Dune::GDT::LocalFaceIntegrand\lInterface\< internal::BoundaryLHSTraits\l\< DiffusionFactorImp, DiffusionTensorImp,\l method \>, 2 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00353.html"];
+  Node18 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="Dune::GDT::LocalElliptic\lIpdgIntegrands::BoundaryLHS\l\< DiffusionFactorImp, DiffusionTensor\lImp, method \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00045.html"];
+  Node1 -> Node20 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::BoundaryLHSTraits\l\< LocalizableFunctionImp \>, 2 \>" ,fontname="Helvetica"];
+  Node20 [label="Dune::GDT::LocalFaceIntegrand\lInterface\< internal::BoundaryLHSTraits\l\< LocalizableFunctionImp \>, 2 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00353.html"];
+  Node20 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="Dune::GDT::LocalSipdgIntegrands\l::BoundaryLHS\< LocalizableFunctionImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00046.html"];
 }

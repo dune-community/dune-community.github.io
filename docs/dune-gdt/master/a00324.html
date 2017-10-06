@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: Dune::GDT::LocalDirichletProjectionOperator&lt; BoundaryInfoType &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::internal::LocalBoundaryTwoFormWrapper&lt; AssemblerType, MatrixType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,66 +85,105 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00702.html">Dune</a></li><li class="navelem"><a class="el" href="a00703.html">GDT</a></li><li class="navelem"><a class="el" href="a00324.html">LocalDirichletProjectionOperator</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00760.html">Dune</a></li><li class="navelem"><a class="el" href="a00761.html">GDT</a></li><li class="navelem"><a class="el" href="a00766.html">internal</a></li><li class="navelem"><a class="el" href="a00324.html">LocalBoundaryTwoFormWrapper</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00972.html">List of all members</a>  </div>
+<a href="a01367.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::LocalDirichletProjectionOperator&lt; BoundaryInfoType &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::internal::LocalBoundaryTwoFormWrapper&lt; AssemblerType, MatrixType &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00514_source.html">dune/gdt/local/operators/dirichlet-projection.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00743_source.html">dune/gdt/assembler/wrapper.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::LocalDirichletProjectionOperator&lt; BoundaryInfoType &gt;:</div>
+Inheritance diagram for Dune::GDT::internal::LocalBoundaryTwoFormWrapper&lt; AssemblerType, MatrixType &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00973.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_local_dirichlet_projection_operator_3_01_boundary_info_type_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1_local_dirichlet_projection_operator_3_01_boundary_info_type_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_local_dirichlet_projection_operator_3_01_boundary_info_type_01_4_inherit__map">
+<div class="center"><img src="a01368.png" border="0" usemap="#_dune_1_1_g_d_t_1_1internal_1_1_local_boundary_two_form_wrapper_3_01_assembler_type_00_01_matrix_type_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1internal_1_1_local_boundary_two_form_wrapper_3_01_assembler_type_00_01_matrix_type_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1internal_1_1_local_boundary_two_form_wrapper_3_01_assembler_type_00_01_matrix_type_01_4_inherit__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a6592220a905c88a04c9a43fea7a1bc5c"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-<a class="el" href="a00325.html">internal::LocalDirichletProjectionOperatorTraits</a><br class="typebreak" />
-&lt; BoundaryInfoType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00324.html#a6592220a905c88a04c9a43fea7a1bc5c">Traits</a></td></tr>
-<tr class="separator:a6592220a905c88a04c9a43fea7a1bc5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85d71db8a2dfac84ac08489ca7167a67"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-<a class="el" href="a00325.html">internal::LocalDirichletProjectionOperatorTraits</a><br class="typebreak" />
-&lt; BoundaryInfoType &gt;<br class="typebreak" />
-::<a class="el" href="a00360.html#a85d71db8a2dfac84ac08489ca7167a67">derived_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00360.html#a85d71db8a2dfac84ac08489ca7167a67">derived_type</a></td></tr>
-<tr class="separator:a85d71db8a2dfac84ac08489ca7167a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a283fb72fb43768d90c751c4b89f473b2"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+AssemblerType::TestSpaceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00324.html#a283fb72fb43768d90c751c4b89f473b2">TestSpaceType</a></td></tr>
+<tr class="separator:a283fb72fb43768d90c751c4b89f473b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1df1b376052145f03b3cd7e360a3b704"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+AssemblerType::AnsatzSpaceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00324.html#a1df1b376052145f03b3cd7e360a3b704">AnsatzSpaceType</a></td></tr>
+<tr class="separator:a1df1b376052145f03b3cd7e360a3b704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6f8a94147f05e02a1238521df5f0438"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+AssemblerType::GridLayerType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00324.html#aa6f8a94147f05e02a1238521df5f0438">GridLayerType</a></td></tr>
+<tr class="separator:aa6f8a94147f05e02a1238521df5f0438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc0b6edd360740b521dede47064eb2c4"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+<a class="el" href="a00322.html">LocalBoundaryTwoFormInterface</a><br class="typebreak" />
+&lt; typename <br class="typebreak" />
+TestSpaceType::BaseFunctionSetType, <br class="typebreak" />
+XT::Grid::extract_intersection_t<br class="typebreak" />
+&lt; <a class="el" href="a00323.html#a676ff96d6a8b83e32e20f94c61c56fc4">GridLayerType</a> &gt;, typename <br class="typebreak" />
+AnsatzSpaceType::BaseFunctionSetType, <br class="typebreak" />
+typename <br class="typebreak" />
+MatrixType::ScalarType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00324.html#afc0b6edd360740b521dede47064eb2c4">LocalBoundaryTwoFormType</a></td></tr>
+<tr class="separator:afc0b6edd360740b521dede47064eb2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a395bfdbee6a1cff9edc8d5fbbabef50f"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+<a class="el" href="a00320.html">LocalBoundaryTwoFormAssembler</a><br class="typebreak" />
+&lt; <a class="el" href="a00323.html#ae3a6c4066cfeeba512e82f7b6f5c7af8">TestSpaceType</a>, <br class="typebreak" />
+IntersectionType, MatrixType, <br class="typebreak" />
+<a class="el" href="a00323.html#a9ebdb49ea4d14ca9d8e654821e7c30df">AnsatzSpaceType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00323.html#a395bfdbee6a1cff9edc8d5fbbabef50f">LocalBoundaryTwoFormAssemblerType</a></td></tr>
+<tr class="separator:a395bfdbee6a1cff9edc8d5fbbabef50f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af8071458bcd34c557dbdb255e11742b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00324.html#af8071458bcd34c557dbdb255e11742b6">LocalDirichletProjectionOperator</a> (const BoundaryInfoType &amp;boundary_info)</td></tr>
-<tr class="separator:af8071458bcd34c557dbdb255e11742b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28a5c418f896d18ae3e6b5b9bc8ab05c"><td class="memTemplParams" colspan="2">template&lt;class E , class D , size_t d, class R , size_t r, size_t rC, class RS , class V &gt; </td></tr>
-<tr class="memitem:a28a5c418f896d18ae3e6b5b9bc8ab05c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00324.html#a28a5c418f896d18ae3e6b5b9bc8ab05c">apply</a> (const XT::Functions::LocalizableFunctionInterface&lt; E, D, d, R, r, rC &gt; &amp;source, <a class="el" href="a00326.html">LocalDiscreteFunction</a>&lt; RS, V &gt; &amp;local_range) const </td></tr>
-<tr class="separator:a28a5c418f896d18ae3e6b5b9bc8ab05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae34afd4624e88b6be3020139c41389f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00360.html#ae34afd4624e88b6be3020139c41389f4">apply</a> (const SourceType &amp;source, <a class="el" href="a00326.html">LocalDiscreteFunction</a>&lt; RangeSpaceType, VectorType &gt; &amp;local_range) const</td></tr>
-<tr class="memdesc:ae34afd4624e88b6be3020139c41389f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the local operator.  <a href="#ae34afd4624e88b6be3020139c41389f4">More...</a><br /></td></tr>
-<tr class="separator:ae34afd4624e88b6be3020139c41389f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f2ae9b5c9b1fffd76b994092b72324d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00324.html#a8f2ae9b5c9b1fffd76b994092b72324d">LocalBoundaryTwoFormWrapper</a> (const XT::Common::PerThreadValue&lt; const <a class="el" href="a00323.html#ae3a6c4066cfeeba512e82f7b6f5c7af8">TestSpaceType</a> &gt; &amp;test_space, const XT::Common::PerThreadValue&lt; const <a class="el" href="a00323.html#a9ebdb49ea4d14ca9d8e654821e7c30df">AnsatzSpaceType</a> &gt; &amp;ansatz_space, const XT::Grid::ApplyOn::WhichIntersection&lt; <a class="el" href="a00323.html#a676ff96d6a8b83e32e20f94c61c56fc4">GridLayerType</a> &gt; *where, const <a class="el" href="a00324.html#afc0b6edd360740b521dede47064eb2c4">LocalBoundaryTwoFormType</a> &amp;local_twoform, MatrixType &amp;matrix)</td></tr>
+<tr class="separator:a8f2ae9b5c9b1fffd76b994092b72324d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae62e9cc2b80c659f772d14c639cd43af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00323.html#ae62e9cc2b80c659f772d14c639cd43af">apply_on</a> (const <a class="el" href="a00323.html#a676ff96d6a8b83e32e20f94c61c56fc4">GridLayerType</a> &amp;gv, const IntersectionType &amp;intersection) const overridefinal</td></tr>
+<tr class="separator:ae62e9cc2b80c659f772d14c639cd43af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7917a8c0c1c693887cfffb646fd4be2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00323.html#a7917a8c0c1c693887cfffb646fd4be2d">apply_local</a> (const IntersectionType &amp;intersection, const EntityType &amp;, const EntityType &amp;) overridefinal</td></tr>
+<tr class="separator:a7917a8c0c1c693887cfffb646fd4be2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class BoundaryInfoType&gt;<br />
-class Dune::GDT::LocalDirichletProjectionOperator&lt; BoundaryInfoType &gt;</h3>
-
-<dl class="section note"><dt>Note</dt><dd>Only sets the Dirichlet DoFs and thus assumes, that all (other) DoFs have been set to 0 beforehand </dd></dl>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a85d71db8a2dfac84ac08489ca7167a67"></a>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a1df1b376052145f03b3cd7e360a3b704"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class AssemblerType , class MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef AssemblerType::AnsatzSpaceType <a class="el" href="a00324.html">Dune::GDT::internal::LocalBoundaryTwoFormWrapper</a>&lt; AssemblerType, MatrixType &gt;::<a class="el" href="a00323.html#a9ebdb49ea4d14ca9d8e654821e7c30df">AnsatzSpaceType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa6f8a94147f05e02a1238521df5f0438"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AssemblerType , class MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef AssemblerType::GridLayerType <a class="el" href="a00324.html">Dune::GDT::internal::LocalBoundaryTwoFormWrapper</a>&lt; AssemblerType, MatrixType &gt;::<a class="el" href="a00323.html#a676ff96d6a8b83e32e20f94c61c56fc4">GridLayerType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a395bfdbee6a1cff9edc8d5fbbabef50f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AssemblerType , class MatrixType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00325.html">internal::LocalDirichletProjectionOperatorTraits</a>&lt; BoundaryInfoType &gt; ::<a class="el" href="a00360.html#a85d71db8a2dfac84ac08489ca7167a67">derived_type</a> <a class="el" href="a00360.html">Dune::GDT::LocalOperatorInterface</a>&lt; <a class="el" href="a00325.html">internal::LocalDirichletProjectionOperatorTraits</a>&lt; BoundaryInfoType &gt;  &gt;::<a class="el" href="a00360.html#a85d71db8a2dfac84ac08489ca7167a67">derived_type</a></td>
+          <td class="memname">typedef <a class="el" href="a00320.html">LocalBoundaryTwoFormAssembler</a>&lt;<a class="el" href="a00323.html#ae3a6c4066cfeeba512e82f7b6f5c7af8">TestSpaceType</a>, IntersectionType, MatrixType, <a class="el" href="a00323.html#a9ebdb49ea4d14ca9d8e654821e7c30df">AnsatzSpaceType</a>&gt; <a class="el" href="a00323.html">Dune::GDT::internal::LocalBoundaryTwoFormMatrixAssemblerWrapper</a>&lt; AssemblerType, MatrixType &gt;::<a class="el" href="a00323.html#a395bfdbee6a1cff9edc8d5fbbabef50f">LocalBoundaryTwoFormAssemblerType</a></td>
         </tr>
       </table>
   </td>
@@ -156,14 +195,28 @@ class Dune::GDT::LocalDirichletProjectionOperator&lt; BoundaryInfoType &gt;</h3>
 
 </div>
 </div>
-<a class="anchor" id="a6592220a905c88a04c9a43fea7a1bc5c"></a>
+<a class="anchor" id="afc0b6edd360740b521dede47064eb2c4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class BoundaryInfoType&gt; </div>
+template&lt;class AssemblerType , class MatrixType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00325.html">internal::LocalDirichletProjectionOperatorTraits</a>&lt;BoundaryInfoType&gt; <a class="el" href="a00324.html">Dune::GDT::LocalDirichletProjectionOperator</a>&lt; BoundaryInfoType &gt;::<a class="el" href="a00324.html#a6592220a905c88a04c9a43fea7a1bc5c">Traits</a></td>
+          <td class="memname">typedef <a class="el" href="a00322.html">LocalBoundaryTwoFormInterface</a>&lt;typename TestSpaceType::BaseFunctionSetType, XT::Grid::extract_intersection_t&lt;<a class="el" href="a00323.html#a676ff96d6a8b83e32e20f94c61c56fc4">GridLayerType</a>&gt;, typename AnsatzSpaceType::BaseFunctionSetType, typename MatrixType::ScalarType&gt; <a class="el" href="a00324.html">Dune::GDT::internal::LocalBoundaryTwoFormWrapper</a>&lt; AssemblerType, MatrixType &gt;::<a class="el" href="a00324.html#afc0b6edd360740b521dede47064eb2c4">LocalBoundaryTwoFormType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a283fb72fb43768d90c751c4b89f473b2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AssemblerType , class MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef AssemblerType::TestSpaceType <a class="el" href="a00324.html">Dune::GDT::internal::LocalBoundaryTwoFormWrapper</a>&lt; AssemblerType, MatrixType &gt;::<a class="el" href="a00323.html#ae3a6c4066cfeeba512e82f7b6f5c7af8">TestSpaceType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -171,21 +224,49 @@ template&lt;class BoundaryInfoType&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="af8071458bcd34c557dbdb255e11742b6"></a>
+<a class="anchor" id="a8f2ae9b5c9b1fffd76b994092b72324d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class BoundaryInfoType&gt; </div>
+template&lt;class AssemblerType , class MatrixType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00324.html">Dune::GDT::LocalDirichletProjectionOperator</a>&lt; BoundaryInfoType &gt;::<a class="el" href="a00324.html">LocalDirichletProjectionOperator</a> </td>
+          <td class="memname"><a class="el" href="a00324.html">Dune::GDT::internal::LocalBoundaryTwoFormWrapper</a>&lt; AssemblerType, MatrixType &gt;::<a class="el" href="a00324.html">LocalBoundaryTwoFormWrapper</a> </td>
           <td>(</td>
-          <td class="paramtype">const BoundaryInfoType &amp;&#160;</td>
-          <td class="paramname"><em>boundary_info</em></td><td>)</td>
+          <td class="paramtype">const XT::Common::PerThreadValue&lt; const <a class="el" href="a00323.html#ae3a6c4066cfeeba512e82f7b6f5c7af8">TestSpaceType</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>test_space</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const XT::Common::PerThreadValue&lt; const <a class="el" href="a00323.html#a9ebdb49ea4d14ca9d8e654821e7c30df">AnsatzSpaceType</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ansatz_space</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Grid::ApplyOn::WhichIntersection&lt; <a class="el" href="a00323.html#a676ff96d6a8b83e32e20f94c61c56fc4">GridLayerType</a> &gt; *&#160;</td>
+          <td class="paramname"><em>where</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00324.html#afc0b6edd360740b521dede47064eb2c4">LocalBoundaryTwoFormType</a> &amp;&#160;</td>
+          <td class="paramname"><em>local_twoform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MatrixType &amp;&#160;</td>
+          <td class="paramname"><em>matrix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -198,28 +279,68 @@ template&lt;class BoundaryInfoType&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a28a5c418f896d18ae3e6b5b9bc8ab05c"></a>
+<a class="anchor" id="a7917a8c0c1c693887cfffb646fd4be2d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class BoundaryInfoType&gt; </div>
-<div class="memtemplate">
-template&lt;class E , class D , size_t d, class R , size_t r, size_t rC, class RS , class V &gt; </div>
+template&lt;class AssemblerType , class MatrixType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00324.html">Dune::GDT::LocalDirichletProjectionOperator</a>&lt; BoundaryInfoType &gt;::apply </td>
+          <td class="memname">void <a class="el" href="a00323.html">Dune::GDT::internal::LocalBoundaryTwoFormMatrixAssemblerWrapper</a>&lt; AssemblerType, MatrixType &gt;::apply_local </td>
           <td>(</td>
-          <td class="paramtype">const XT::Functions::LocalizableFunctionInterface&lt; E, D, d, R, r, rC &gt; &amp;&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
+          <td class="paramtype">const IntersectionType &amp;&#160;</td>
+          <td class="paramname"><em>intersection</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00326.html">LocalDiscreteFunction</a>&lt; RS, V &gt; &amp;&#160;</td>
-          <td class="paramname"><em>local_range</em>&#160;</td>
+          <td class="paramtype">const EntityType &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const EntityType &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae62e9cc2b80c659f772d14c639cd43af"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AssemblerType , class MatrixType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="a00323.html">Dune::GDT::internal::LocalBoundaryTwoFormMatrixAssemblerWrapper</a>&lt; AssemblerType, MatrixType &gt;::apply_on </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00323.html#a676ff96d6a8b83e32e20f94c61c56fc4">GridLayerType</a> &amp;&#160;</td>
+          <td class="paramname"><em>gv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const IntersectionType &amp;&#160;</td>
+          <td class="paramname"><em>intersection</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -229,62 +350,20 @@ template&lt;class E , class D , size_t d, class R , size_t r, size_t rC, class R
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae34afd4624e88b6be3020139c41389f4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00360.html">Dune::GDT::LocalOperatorInterface</a>&lt; <a class="el" href="a00325.html">internal::LocalDirichletProjectionOperatorTraits</a>&lt; BoundaryInfoType &gt;  &gt;::apply </td>
-          <td>(</td>
-          <td class="paramtype">const SourceType &amp;&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00326.html">LocalDiscreteFunction</a>&lt; RangeSpaceType, VectorType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>local_range</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Applies the local operator. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">source</td><td>Should be a XT::Functions::LocalizableFunctionInterface or a ConstDiscreteFunction. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00514_source.html">dirichlet-projection.hh</a></li>
+<li><a class="el" href="a00743_source.html">wrapper.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:19 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:11 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

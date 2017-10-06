@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: Dune::GDT::BaseFunctionSet::internal::ProductDefaultTraits&lt; BaseFunctionSetImps &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::MatrixApplyFunctor&lt; GridLayerType, MatrixType, DiscreteFunctionType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,84 +85,111 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00702.html">Dune</a></li><li class="navelem"><a class="el" href="a00703.html">GDT</a></li><li class="navelem"><a class="el" href="a00704.html">BaseFunctionSet</a></li><li class="navelem"><a class="el" href="a00705.html">internal</a></li><li class="navelem"><a class="el" href="a00415.html">ProductDefaultTraits</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00760.html">Dune</a></li><li class="navelem"><a class="el" href="a00761.html">GDT</a></li><li class="navelem"><a class="el" href="a00415.html">MatrixApplyFunctor</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
-<a href="a01126.html">List of all members</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a01130.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::BaseFunctionSet::internal::ProductDefaultTraits&lt; BaseFunctionSetImps &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::MatrixApplyFunctor&lt; GridLayerType, MatrixType, DiscreteFunctionType &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00647_source.html">dune/gdt/spaces/basefunctionset/product.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00717_source.html">dune/gdt/operators/fv/rhs.hh</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Dune::GDT::MatrixApplyFunctor&lt; GridLayerType, MatrixType, DiscreteFunctionType &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="a01131.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_matrix_apply_functor_3_01_grid_layer_type_00_01_matrix_type_00_01_discrete_function_type_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_matrix_apply_functor_3_01_grid_layer_type_00_01_matrix_type_00_01_discrete_function_type_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_matrix_apply_functor_3_01_grid_layer_type_00_01_matrix_type_00_01_discrete_function_type_01_4_inherit__map">
+</map>
+</div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a8dd6ab14b19605eb06a82f8b6c7b8c4e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00414.html">ProductDefault</a><br class="typebreak" />
-&lt; BaseFunctionSetImps...&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00415.html#a8dd6ab14b19605eb06a82f8b6c7b8c4e">derived_type</a></td></tr>
-<tr class="separator:a8dd6ab14b19605eb06a82f8b6c7b8c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a0bb1bf2b1ff4204329b6dc336791e4"><td class="memItemLeft" align="right" valign="top">typedef double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00415.html#a8a0bb1bf2b1ff4204329b6dc336791e4">BackendType</a></td></tr>
-<tr class="separator:a8a0bb1bf2b1ff4204329b6dc336791e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd5399473c1b99a728494202fc8b465a"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-XT::Common::tuple_element<br class="typebreak" />
-&lt; 0, std::tuple<br class="typebreak" />
-&lt; BaseFunctionSetImps...&gt;<br class="typebreak" />
- &gt;::type::EntityType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00415.html#abd5399473c1b99a728494202fc8b465a">EntityType</a></td></tr>
-<tr class="separator:abd5399473c1b99a728494202fc8b465a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0ee7768e3796426e50dce9ffb0628624"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00415.html#a0ee7768e3796426e50dce9ffb0628624">MatrixApplyFunctor</a> (const std::vector&lt; MatrixType &gt; &amp;matrices, const DiscreteFunctionType &amp;vector, DiscreteFunctionType &amp;result)</td></tr>
+<tr class="separator:a0ee7768e3796426e50dce9ffb0628624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a802116fdaec6be8b63e30e1c94c2a03c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00415.html#a802116fdaec6be8b63e30e1c94c2a03c">apply_local</a> (const EntityType &amp;entity)</td></tr>
+<tr class="separator:a802116fdaec6be8b63e30e1c94c2a03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a8a0bb1bf2b1ff4204329b6dc336791e4"></a>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a0ee7768e3796426e50dce9ffb0628624"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class... BaseFunctionSetImps&gt; </div>
+template&lt;class GridLayerType , class MatrixType , class DiscreteFunctionType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef double <a class="el" href="a00415.html">Dune::GDT::BaseFunctionSet::internal::ProductDefaultTraits</a>&lt; BaseFunctionSetImps &gt;::<a class="el" href="a00415.html#a8a0bb1bf2b1ff4204329b6dc336791e4">BackendType</a></td>
+          <td class="memname"><a class="el" href="a00415.html">Dune::GDT::MatrixApplyFunctor</a>&lt; GridLayerType, MatrixType, DiscreteFunctionType &gt;::<a class="el" href="a00415.html">MatrixApplyFunctor</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; MatrixType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>matrices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DiscreteFunctionType &amp;&#160;</td>
+          <td class="paramname"><em>vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DiscreteFunctionType &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a8dd6ab14b19605eb06a82f8b6c7b8c4e"></a>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a802116fdaec6be8b63e30e1c94c2a03c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class... BaseFunctionSetImps&gt; </div>
+template&lt;class GridLayerType , class MatrixType , class DiscreteFunctionType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00414.html">ProductDefault</a>&lt;BaseFunctionSetImps...&gt; <a class="el" href="a00415.html">Dune::GDT::BaseFunctionSet::internal::ProductDefaultTraits</a>&lt; BaseFunctionSetImps &gt;::<a class="el" href="a00415.html#a8dd6ab14b19605eb06a82f8b6c7b8c4e">derived_type</a></td>
+          <td class="memname">virtual void <a class="el" href="a00415.html">Dune::GDT::MatrixApplyFunctor</a>&lt; GridLayerType, MatrixType, DiscreteFunctionType &gt;::apply_local </td>
+          <td>(</td>
+          <td class="paramtype">const EntityType &amp;&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="abd5399473c1b99a728494202fc8b465a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class... BaseFunctionSetImps&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef XT::Common::tuple_element&lt;0, std::tuple&lt;BaseFunctionSetImps...&gt; &gt;::type::EntityType <a class="el" href="a00415.html">Dune::GDT::BaseFunctionSet::internal::ProductDefaultTraits</a>&lt; BaseFunctionSetImps &gt;::<a class="el" href="a00415.html#abd5399473c1b99a728494202fc8b465a">EntityType</a></td>
-        </tr>
-      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00647_source.html">spaces/basefunctionset/product.hh</a></li>
+<li><a class="el" href="a00717_source.html">rhs.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:19 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:10 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

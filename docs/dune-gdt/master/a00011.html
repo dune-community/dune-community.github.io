@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>dune-gdt: Dune::GDT::internal::AdvectionKineticOperatorTraits&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::internal::AdvectionKineticOperatorTraits&lt; AnalyticalFluxImp, BoundaryValueImp, BasisfunctionImp, GridLayerImp, quadratureDim, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,80 +85,86 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00702.html">Dune</a></li><li class="navelem"><a class="el" href="a00703.html">GDT</a></li><li class="navelem"><a class="el" href="a00707.html">internal</a></li><li class="navelem"><a class="el" href="a00011.html">AdvectionKineticOperatorTraits</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00760.html">Dune</a></li><li class="navelem"><a class="el" href="a00761.html">GDT</a></li><li class="navelem"><a class="el" href="a00766.html">internal</a></li><li class="navelem"><a class="el" href="a00011.html">AdvectionKineticOperatorTraits</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="a01139.html">List of all members</a>  </div>
+<a href="a01250.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::AdvectionKineticOperatorTraits&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::internal::AdvectionKineticOperatorTraits&lt; AnalyticalFluxImp, BoundaryValueImp, BasisfunctionImp, GridLayerImp, quadratureDim, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00612_source.html">dune/gdt/operators/fv/kinetic.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00661_source.html">dune/gdt/operators/fv/kinetic.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::internal::AdvectionKineticOperatorTraits&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;:</div>
+Inheritance diagram for Dune::GDT::internal::AdvectionKineticOperatorTraits&lt; AnalyticalFluxImp, BoundaryValueImp, BasisfunctionImp, GridLayerImp, quadratureDim, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01140.png" border="0" usemap="#_dune_1_1_g_d_t_1_1internal_1_1_advection_kinetic_operator_traits_3_01_analytical_flux_imp_00_01_boundary_value_imp_00_01reconstruction__order_00_01slope__lim_00_01_realizability_limiter_imp_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1internal_1_1_advection_kinetic_operator_traits_3_01_analytical_flux_imp_00_01_boundary_value_imp_00_01reconstruction__order_00_01slope__lim_00_01_realizability_limiter_imp_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1internal_1_1_advection_kinetic_operator_traits_3_01_analytical_flux_imp_00_01_boundary_value_imp_00_01reconstruction__order_00_01slope__lim_00_01_realizability_limiter_imp_01_4_inherit__map">
+<div class="center"><img src="a01251.png" border="0" usemap="#_dune_1_1_g_d_t_1_1internal_1_1_advection_kinetic_operator_traits_3_01_analytical_flux_imp_00_01_boundary_value_imp_00_01_basisfunction_imp_00_01_grid_layer_imp_00_01quadrature_dim_00_01reconstruction__order_00_01slope__lim_00_01_realizability_limiter_imp_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1internal_1_1_advection_kinetic_operator_traits_3_01_analytical_flux_imp_00_01_boundary_value_imp_00_01_basisfunction_imp_00_01_grid_layer_imp_00_01quadrature_dim_00_01reconstruction__order_00_01slope__lim_00_01_realizability_limiter_imp_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1internal_1_1_advection_kinetic_operator_traits_3_01_analytical_flux_imp_00_01_boundary_value_imp_00_01_basisfunction_imp_00_01_grid_layer_imp_00_01quadrature_dim_00_01reconstruction__order_00_01slope__lim_00_01_realizability_limiter_imp_01_4_inherit__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a4423fdc04e2b4bad48b8952fd7b118b5"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-<a class="el" href="a00241.html">Dune::GDT::KineticLocalNumericalCouplingFlux</a><br class="typebreak" />
-&lt; AnalyticalFluxImp &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00011.html#a4423fdc04e2b4bad48b8952fd7b118b5">NumericalCouplingFluxType</a></td></tr>
-<tr class="separator:a4423fdc04e2b4bad48b8952fd7b118b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a833c22e3beb540c2d29e76c4a87f53cc"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-<a class="el" href="a00239.html">Dune::GDT::KineticLocalNumericalBoundaryFlux</a><br class="typebreak" />
+<tr class="memitem:a5fe2d7cc03ba346a461a57b3df3311e5"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+<a class="el" href="a00258.html">Dune::GDT::KineticLocalNumericalCouplingFlux</a><br class="typebreak" />
 &lt; AnalyticalFluxImp, <br class="typebreak" />
-BoundaryValueImp &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00011.html#a833c22e3beb540c2d29e76c4a87f53cc">NumericalBoundaryFluxType</a></td></tr>
-<tr class="separator:a833c22e3beb540c2d29e76c4a87f53cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a065ce4982e09e56f961187f6067813ce"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+BasisfunctionImp, GridLayerImp, <br class="typebreak" />
+quadratureDim &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00011.html#a5fe2d7cc03ba346a461a57b3df3311e5">NumericalCouplingFluxType</a></td></tr>
+<tr class="separator:a5fe2d7cc03ba346a461a57b3df3311e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75671685ac734214c540692088e409ac"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+<a class="el" href="a00256.html">Dune::GDT::KineticLocalNumericalBoundaryFlux</a><br class="typebreak" />
+&lt; AnalyticalFluxImp, <br class="typebreak" />
+BoundaryValueImp, <br class="typebreak" />
+BasisfunctionImp, GridLayerImp, <br class="typebreak" />
+quadratureDim &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00011.html#a75671685ac734214c540692088e409ac">NumericalBoundaryFluxType</a></td></tr>
+<tr class="separator:a75671685ac734214c540692088e409ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0a08b092f42fe2174646b4c74eb98f1"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
 <a class="el" href="a00010.html">AdvectionKineticOperator</a><br class="typebreak" />
 &lt; AnalyticalFluxImp, <br class="typebreak" />
 BoundaryValueImp, <br class="typebreak" />
+BasisfunctionImp, GridLayerImp, <br class="typebreak" />
+quadratureDim, <br class="typebreak" />
 reconstruction_order, <br class="typebreak" />
 slope_lim, <br class="typebreak" />
 RealizabilityLimiterImp, <br class="typebreak" />
-<a class="el" href="a00011.html">AdvectionKineticOperatorTraits</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00011.html#a065ce4982e09e56f961187f6067813ce">derived_type</a></td></tr>
-<tr class="separator:a065ce4982e09e56f961187f6067813ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a259d8be516b265459b98e261be6b8afc"><td class="memItemLeft" align="right" valign="top">typedef AnalyticalFluxImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#a259d8be516b265459b98e261be6b8afc">AnalyticalFluxType</a></td></tr>
+<a class="el" href="a00011.html">AdvectionKineticOperatorTraits</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00011.html#ab0a08b092f42fe2174646b4c74eb98f1">derived_type</a></td></tr>
+<tr class="separator:ab0a08b092f42fe2174646b4c74eb98f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a259d8be516b265459b98e261be6b8afc"><td class="memItemLeft" align="right" valign="top">typedef AnalyticalFluxImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#a259d8be516b265459b98e261be6b8afc">AnalyticalFluxType</a></td></tr>
 <tr class="separator:a259d8be516b265459b98e261be6b8afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab28e7f1a50e9a6b989d27162d60f74fa"><td class="memItemLeft" align="right" valign="top">typedef BoundaryValueImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#ab28e7f1a50e9a6b989d27162d60f74fa">BoundaryValueType</a></td></tr>
+<tr class="memitem:ab28e7f1a50e9a6b989d27162d60f74fa"><td class="memItemLeft" align="right" valign="top">typedef BoundaryValueImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#ab28e7f1a50e9a6b989d27162d60f74fa">BoundaryValueType</a></td></tr>
 <tr class="separator:ab28e7f1a50e9a6b989d27162d60f74fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a669e2d708dfbba033e45a436b4100092"><td class="memItemLeft" align="right" valign="top">typedef RealizabilityLimiterImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#a669e2d708dfbba033e45a436b4100092">RealizabilityLimiterType</a></td></tr>
+<tr class="memitem:a669e2d708dfbba033e45a436b4100092"><td class="memItemLeft" align="right" valign="top">typedef RealizabilityLimiterImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#a669e2d708dfbba033e45a436b4100092">RealizabilityLimiterType</a></td></tr>
 <tr class="separator:a669e2d708dfbba033e45a436b4100092"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad59fd87afd20e5e5e2f44073c860d2cf"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-BoundaryValueImp::DomainFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#ad59fd87afd20e5e5e2f44073c860d2cf">DomainFieldType</a></td></tr>
+BoundaryValueImp::DomainFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#ad59fd87afd20e5e5e2f44073c860d2cf">DomainFieldType</a></td></tr>
 <tr class="separator:ad59fd87afd20e5e5e2f44073c860d2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a818b6454ab65f9f171641d12d2a3be56"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-BoundaryValueImp::RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#a818b6454ab65f9f171641d12d2a3be56">RangeFieldType</a></td></tr>
+BoundaryValueImp::RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#a818b6454ab65f9f171641d12d2a3be56">RangeFieldType</a></td></tr>
 <tr class="separator:a818b6454ab65f9f171641d12d2a3be56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09d10b5a5c6ceffb7f34cc3786c6e47e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00031.html#a818b6454ab65f9f171641d12d2a3be56">RangeFieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#a09d10b5a5c6ceffb7f34cc3786c6e47e">FieldType</a></td></tr>
+<tr class="memitem:a09d10b5a5c6ceffb7f34cc3786c6e47e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00030.html#a818b6454ab65f9f171641d12d2a3be56">RangeFieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#a09d10b5a5c6ceffb7f34cc3786c6e47e">FieldType</a></td></tr>
 <tr class="separator:a09d10b5a5c6ceffb7f34cc3786c6e47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a123bc73d6f189f637a428f6f62eb8a84"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-BoundaryValueImp::DomainType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#a123bc73d6f189f637a428f6f62eb8a84">DomainType</a></td></tr>
+BoundaryValueImp::DomainType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#a123bc73d6f189f637a428f6f62eb8a84">DomainType</a></td></tr>
 <tr class="separator:a123bc73d6f189f637a428f6f62eb8a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91453ff80c7e5b6dfb44f527b073e71d"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-AnalyticalFluxType::PartialURangeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#a91453ff80c7e5b6dfb44f527b073e71d">JacobianType</a></td></tr>
+AnalyticalFluxType::PartialURangeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#a91453ff80c7e5b6dfb44f527b073e71d">JacobianType</a></td></tr>
 <tr class="separator:a91453ff80c7e5b6dfb44f527b073e71d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:af9272bd983e754956917a28a2d020559"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#af9272bd983e754956917a28a2d020559">polOrder</a> = reconstruction_order</td></tr>
+<tr class="memitem:af9272bd983e754956917a28a2d020559"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#af9272bd983e754956917a28a2d020559">polOrder</a> = reconstruction_order</td></tr>
 <tr class="separator:af9272bd983e754956917a28a2d020559"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04f60e6a23c994d773e582758a3ec6d4"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00703.html#af68dfb986d335b9416add6ef64dfad58">SlopeLimiters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#a04f60e6a23c994d773e582758a3ec6d4">slope_limiter</a> = slope_lim</td></tr>
+<tr class="memitem:a04f60e6a23c994d773e582758a3ec6d4"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00761.html#af68dfb986d335b9416add6ef64dfad58">SlopeLimiters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#a04f60e6a23c994d773e582758a3ec6d4">slope_limiter</a> = slope_lim</td></tr>
 <tr class="separator:a04f60e6a23c994d773e582758a3ec6d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8143a9a0b4f54b30155c8db3f0101e5"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#af8143a9a0b4f54b30155c8db3f0101e5">dimDomain</a> = AnalyticalFluxType::dimDomain</td></tr>
+<tr class="memitem:af8143a9a0b4f54b30155c8db3f0101e5"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#af8143a9a0b4f54b30155c8db3f0101e5">dimDomain</a> = AnalyticalFluxType::dimDomain</td></tr>
 <tr class="separator:af8143a9a0b4f54b30155c8db3f0101e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea2182b0bf2a6c42447157d4096ec239"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#aea2182b0bf2a6c42447157d4096ec239">dimRange</a> = AnalyticalFluxType::dimRange</td></tr>
+<tr class="memitem:aea2182b0bf2a6c42447157d4096ec239"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#aea2182b0bf2a6c42447157d4096ec239">dimRange</a> = AnalyticalFluxType::dimRange</td></tr>
 <tr class="separator:aea2182b0bf2a6c42447157d4096ec239"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e5c8626e6373b2913e41ce09e630574"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#a7e5c8626e6373b2913e41ce09e630574">dimRangeCols</a> = 1</td></tr>
+<tr class="memitem:a7e5c8626e6373b2913e41ce09e630574"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#a7e5c8626e6373b2913e41ce09e630574">dimRangeCols</a> = 1</td></tr>
 <tr class="separator:a7e5c8626e6373b2913e41ce09e630574"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
@@ -172,7 +178,7 @@ template&lt;class AnalyticalFluxImp , class BoundaryValueImp , size_t reconstruc
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef AnalyticalFluxImp <a class="el" href="a00031.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::<a class="el" href="a00031.html#a259d8be516b265459b98e261be6b8afc">AnalyticalFluxType</a></td>
+          <td class="memname">typedef AnalyticalFluxImp <a class="el" href="a00030.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::<a class="el" href="a00030.html#a259d8be516b265459b98e261be6b8afc">AnalyticalFluxType</a></td>
         </tr>
       </table>
   </td>
@@ -194,7 +200,7 @@ template&lt;class AnalyticalFluxImp , class BoundaryValueImp , size_t reconstruc
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef BoundaryValueImp <a class="el" href="a00031.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::<a class="el" href="a00031.html#ab28e7f1a50e9a6b989d27162d60f74fa">BoundaryValueType</a></td>
+          <td class="memname">typedef BoundaryValueImp <a class="el" href="a00030.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::<a class="el" href="a00030.html#ab28e7f1a50e9a6b989d27162d60f74fa">BoundaryValueType</a></td>
         </tr>
       </table>
   </td>
@@ -206,14 +212,14 @@ template&lt;class AnalyticalFluxImp , class BoundaryValueImp , size_t reconstruc
 
 </div>
 </div>
-<a class="anchor" id="a065ce4982e09e56f961187f6067813ce"></a>
+<a class="anchor" id="ab0a08b092f42fe2174646b4c74eb98f1"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp , class BoundaryValueImp , size_t reconstruction_order, SlopeLimiters slope_lim, class RealizabilityLimiterImp &gt; </div>
+template&lt;class AnalyticalFluxImp , class BoundaryValueImp , class BasisfunctionImp , class GridLayerImp , size_t quadratureDim, size_t reconstruction_order, SlopeLimiters slope_lim, class RealizabilityLimiterImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00010.html">AdvectionKineticOperator</a>&lt;AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp, <a class="el" href="a00011.html">AdvectionKineticOperatorTraits</a>&gt; <a class="el" href="a00011.html">Dune::GDT::internal::AdvectionKineticOperatorTraits</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::<a class="el" href="a00011.html#a065ce4982e09e56f961187f6067813ce">derived_type</a></td>
+          <td class="memname">typedef <a class="el" href="a00010.html">AdvectionKineticOperator</a>&lt;AnalyticalFluxImp, BoundaryValueImp, BasisfunctionImp, GridLayerImp, quadratureDim, reconstruction_order, slope_lim, RealizabilityLimiterImp, <a class="el" href="a00011.html">AdvectionKineticOperatorTraits</a>&gt; <a class="el" href="a00011.html">Dune::GDT::internal::AdvectionKineticOperatorTraits</a>&lt; AnalyticalFluxImp, BoundaryValueImp, BasisfunctionImp, GridLayerImp, quadratureDim, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::<a class="el" href="a00011.html#ab0a08b092f42fe2174646b4c74eb98f1">derived_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -230,7 +236,7 @@ template&lt;class AnalyticalFluxImp , class BoundaryValueImp , size_t reconstruc
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef BoundaryValueImp::DomainFieldType <a class="el" href="a00031.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::<a class="el" href="a00031.html#ad59fd87afd20e5e5e2f44073c860d2cf">DomainFieldType</a></td>
+          <td class="memname">typedef BoundaryValueImp::DomainFieldType <a class="el" href="a00030.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::<a class="el" href="a00030.html#ad59fd87afd20e5e5e2f44073c860d2cf">DomainFieldType</a></td>
         </tr>
       </table>
   </td>
@@ -252,7 +258,7 @@ template&lt;class AnalyticalFluxImp , class BoundaryValueImp , size_t reconstruc
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef BoundaryValueImp::DomainType <a class="el" href="a00031.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::<a class="el" href="a00031.html#a123bc73d6f189f637a428f6f62eb8a84">DomainType</a></td>
+          <td class="memname">typedef BoundaryValueImp::DomainType <a class="el" href="a00030.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::<a class="el" href="a00030.html#a123bc73d6f189f637a428f6f62eb8a84">DomainType</a></td>
         </tr>
       </table>
   </td>
@@ -274,7 +280,7 @@ template&lt;class AnalyticalFluxImp , class BoundaryValueImp , size_t reconstruc
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00031.html#a818b6454ab65f9f171641d12d2a3be56">RangeFieldType</a> <a class="el" href="a00031.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::<a class="el" href="a00031.html#a09d10b5a5c6ceffb7f34cc3786c6e47e">FieldType</a></td>
+          <td class="memname">typedef <a class="el" href="a00030.html#a818b6454ab65f9f171641d12d2a3be56">RangeFieldType</a> <a class="el" href="a00030.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::<a class="el" href="a00030.html#a09d10b5a5c6ceffb7f34cc3786c6e47e">FieldType</a></td>
         </tr>
       </table>
   </td>
@@ -296,7 +302,7 @@ template&lt;class AnalyticalFluxImp , class BoundaryValueImp , size_t reconstruc
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef AnalyticalFluxType::PartialURangeType <a class="el" href="a00031.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::<a class="el" href="a00031.html#a91453ff80c7e5b6dfb44f527b073e71d">JacobianType</a></td>
+          <td class="memname">typedef AnalyticalFluxType::PartialURangeType <a class="el" href="a00030.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::<a class="el" href="a00030.html#a91453ff80c7e5b6dfb44f527b073e71d">JacobianType</a></td>
         </tr>
       </table>
   </td>
@@ -308,28 +314,28 @@ template&lt;class AnalyticalFluxImp , class BoundaryValueImp , size_t reconstruc
 
 </div>
 </div>
-<a class="anchor" id="a833c22e3beb540c2d29e76c4a87f53cc"></a>
+<a class="anchor" id="a75671685ac734214c540692088e409ac"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp , class BoundaryValueImp , size_t reconstruction_order, SlopeLimiters slope_lim, class RealizabilityLimiterImp &gt; </div>
+template&lt;class AnalyticalFluxImp , class BoundaryValueImp , class BasisfunctionImp , class GridLayerImp , size_t quadratureDim, size_t reconstruction_order, SlopeLimiters slope_lim, class RealizabilityLimiterImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00239.html">Dune::GDT::KineticLocalNumericalBoundaryFlux</a>&lt;AnalyticalFluxImp, BoundaryValueImp&gt; <a class="el" href="a00011.html">Dune::GDT::internal::AdvectionKineticOperatorTraits</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::<a class="el" href="a00011.html#a833c22e3beb540c2d29e76c4a87f53cc">NumericalBoundaryFluxType</a></td>
+          <td class="memname">typedef <a class="el" href="a00256.html">Dune::GDT::KineticLocalNumericalBoundaryFlux</a>&lt;AnalyticalFluxImp, BoundaryValueImp, BasisfunctionImp, GridLayerImp, quadratureDim&gt; <a class="el" href="a00011.html">Dune::GDT::internal::AdvectionKineticOperatorTraits</a>&lt; AnalyticalFluxImp, BoundaryValueImp, BasisfunctionImp, GridLayerImp, quadratureDim, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::<a class="el" href="a00011.html#a75671685ac734214c540692088e409ac">NumericalBoundaryFluxType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a4423fdc04e2b4bad48b8952fd7b118b5"></a>
+<a class="anchor" id="a5fe2d7cc03ba346a461a57b3df3311e5"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp , class BoundaryValueImp , size_t reconstruction_order, SlopeLimiters slope_lim, class RealizabilityLimiterImp &gt; </div>
+template&lt;class AnalyticalFluxImp , class BoundaryValueImp , class BasisfunctionImp , class GridLayerImp , size_t quadratureDim, size_t reconstruction_order, SlopeLimiters slope_lim, class RealizabilityLimiterImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00241.html">Dune::GDT::KineticLocalNumericalCouplingFlux</a>&lt;AnalyticalFluxImp&gt; <a class="el" href="a00011.html">Dune::GDT::internal::AdvectionKineticOperatorTraits</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::<a class="el" href="a00011.html#a4423fdc04e2b4bad48b8952fd7b118b5">NumericalCouplingFluxType</a></td>
+          <td class="memname">typedef Dune::GDT:: <a class="el" href="a00258.html">KineticLocalNumericalCouplingFlux</a>&lt;AnalyticalFluxImp, BasisfunctionImp, GridLayerImp, quadratureDim&gt; <a class="el" href="a00011.html">Dune::GDT::internal::AdvectionKineticOperatorTraits</a>&lt; AnalyticalFluxImp, BoundaryValueImp, BasisfunctionImp, GridLayerImp, quadratureDim, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::<a class="el" href="a00011.html#a5fe2d7cc03ba346a461a57b3df3311e5">NumericalCouplingFluxType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -346,7 +352,7 @@ template&lt;class AnalyticalFluxImp , class BoundaryValueImp , size_t reconstruc
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef BoundaryValueImp::RangeFieldType <a class="el" href="a00031.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::<a class="el" href="a00031.html#a818b6454ab65f9f171641d12d2a3be56">RangeFieldType</a></td>
+          <td class="memname">typedef BoundaryValueImp::RangeFieldType <a class="el" href="a00030.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::<a class="el" href="a00030.html#a818b6454ab65f9f171641d12d2a3be56">RangeFieldType</a></td>
         </tr>
       </table>
   </td>
@@ -368,7 +374,7 @@ template&lt;class AnalyticalFluxImp , class BoundaryValueImp , size_t reconstruc
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef RealizabilityLimiterImp <a class="el" href="a00031.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::<a class="el" href="a00031.html#a669e2d708dfbba033e45a436b4100092">RealizabilityLimiterType</a></td>
+          <td class="memname">typedef RealizabilityLimiterImp <a class="el" href="a00030.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::<a class="el" href="a00030.html#a669e2d708dfbba033e45a436b4100092">RealizabilityLimiterType</a></td>
         </tr>
       </table>
   </td>
@@ -391,7 +397,7 @@ template&lt;class AnalyticalFluxImp , class BoundaryValueImp , size_t reconstruc
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t <a class="el" href="a00031.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::dimDomain = AnalyticalFluxType::dimDomain</td>
+          <td class="memname">const size_t <a class="el" href="a00030.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::dimDomain = AnalyticalFluxType::dimDomain</td>
         </tr>
       </table>
   </td>
@@ -413,7 +419,7 @@ template&lt;class AnalyticalFluxImp , class BoundaryValueImp , size_t reconstruc
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t <a class="el" href="a00031.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::dimRange = AnalyticalFluxType::dimRange</td>
+          <td class="memname">const size_t <a class="el" href="a00030.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::dimRange = AnalyticalFluxType::dimRange</td>
         </tr>
       </table>
   </td>
@@ -435,7 +441,7 @@ template&lt;class AnalyticalFluxImp , class BoundaryValueImp , size_t reconstruc
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t <a class="el" href="a00031.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::dimRangeCols = 1</td>
+          <td class="memname">const size_t <a class="el" href="a00030.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::dimRangeCols = 1</td>
         </tr>
       </table>
   </td>
@@ -457,7 +463,7 @@ template&lt;class AnalyticalFluxImp , class BoundaryValueImp , size_t reconstruc
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t <a class="el" href="a00031.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::polOrder = reconstruction_order</td>
+          <td class="memname">const size_t <a class="el" href="a00030.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::polOrder = reconstruction_order</td>
         </tr>
       </table>
   </td>
@@ -479,7 +485,7 @@ template&lt;class AnalyticalFluxImp , class BoundaryValueImp , size_t reconstruc
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a00703.html#af68dfb986d335b9416add6ef64dfad58">SlopeLimiters</a> <a class="el" href="a00031.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::slope_limiter = slope_lim</td>
+          <td class="memname">const <a class="el" href="a00761.html#af68dfb986d335b9416add6ef64dfad58">SlopeLimiters</a> <a class="el" href="a00030.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp, reconstruction_order, slope_lim, RealizabilityLimiterImp &gt;::slope_limiter = slope_lim</td>
         </tr>
       </table>
   </td>
@@ -492,12 +498,12 @@ template&lt;class AnalyticalFluxImp , class BoundaryValueImp , size_t reconstruc
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00612_source.html">operators/fv/kinetic.hh</a></li>
+<li><a class="el" href="a00661_source.html">operators/fv/kinetic.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 10 2017 10:57:19 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 6 2017 10:26:11 for dune-gdt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
