@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: tools.hh File Reference</title>
+<title>dune-gdt: parallel_helper.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -67,32 +67,32 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">tools.hh File Reference</div>  </div>
+<div class="title">parallel_helper.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;type_traits&gt;</code><br />
-<code>#include &quot;<a class="el" href="a04832_source.html">interface.hh</a>&quot;</code><br />
-<code>#include &lt;dune/xt/grid/type_traits.hh&gt;</code><br />
+<div class="textblock"><code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;dune/common/parallel/mpihelper.hh&gt;</code><br />
+<code>#include &lt;dune/common/stdstreams.hh&gt;</code><br />
+<code>#include &lt;dune/common/typetraits.hh&gt;</code><br />
+<code>#include &lt;dune/xt/la/container/vector-interface.hh&gt;</code><br />
+<code>#include &lt;dune/xt/la/container/istl.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04981_source.html">dune/gdt/spaces/interface.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00431_source.html">dune/gdt/spaces/datahandles.hh</a>&gt;</code><br />
+<code>#include &lt;dune/istl/owneroverlapcopy.hh&gt;</code><br />
+<code>#include &lt;dune/xt/la/container/common.hh&gt;</code><br />
 </div>
 <p><a href="a00455_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03096.html">Dune::GDT::SpaceTools::LeafGridPartView&lt; GridType, view &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03100.html">Dune::GDT::SpaceTools::LevelGridPartView&lt; GridType, view &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03104.html">Dune::GDT::SpaceTools::GridPartView&lt; SpaceType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03113.html">Dune::GDT::GenericParallelHelper&lt; SpaceType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00494"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00494.html">Dune</a></td></tr>
+<tr class="memitem:a00503"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00503.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00495"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00495.html">Dune::GDT</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00508"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00508.html">Dune::GDT::SpaceTools</a></td></tr>
+<tr class="memitem:a00504"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00504.html">Dune::GDT</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

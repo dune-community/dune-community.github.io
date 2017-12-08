@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Todo List</title>
+<title>dune-gdt: implicit-rungekutta.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -57,79 +57,54 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_af7047e8b8f103b627ea592a78989197.html">timestepper</a></li>  </ul>
+</div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">Todo List </div>  </div>
+<div class="title">implicit-rungekutta.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><dl class="reflist">
-<dt><a class="anchor" id="_todo000027"></a>Class <a class="el" href="a02052.html">Dune::GDT::DarcyOperator&lt; GridLayerImp, FunctionImp &gt;</a>  </dt>
-<dd>add make_darcy_operator  </dd>
-<dt><a class="anchor" id="_todo000028"></a>Class <a class="el" href="a02100.html">Dune::GDT::DiffusiveFluxReconstructionOperator&lt; GridLayerType, LocalizableFunctionType, void, method &gt;</a>  </dt>
-<dd><p class="startdd">Add more static checks that GridLayerType and LocalizableFunctionType match. </p>
-<p class="enddd">Derive from operator interfaces.  </p>
-</dd>
-<dt><a class="anchor" id="_todo000008"></a>Class <a class="el" href="a01312.html">Dune::GDT::EllipticIpdgDirichletVectorFunctional&lt; DirichletType, DiffusionFactorType, DiffusionTensorType, Space, method, Vector, GridLayer, Field &gt;</a>  </dt>
-<dd>Add tests!  </dd>
-<dt><a class="anchor" id="_todo000023"></a>Class <a class="el" href="a01944.html">Dune::GDT::internal::IsLocalBoundaryOperator</a>  </dt>
-<dd>drop and implement the is_... properly  </dd>
-<dt><a class="anchor" id="_todo000022"></a>Class <a class="el" href="a01940.html">Dune::GDT::internal::IsLocalCouplingOperator</a>  </dt>
-<dd>drop and implement the is_... properly  </dd>
-<dt><a class="anchor" id="_todo000021"></a>Class <a class="el" href="a01936.html">Dune::GDT::internal::IsLocalOperator</a>  </dt>
-<dd>drop and implement the is_... properly  </dd>
-<dt><a class="anchor" id="_todo000017"></a>Class <a class="el" href="a01904.html">Dune::GDT::internal::LocalDirichletProjectionOperatorTraits&lt; BoundaryInfoType &gt;</a>  </dt>
-<dd>Check BoundaryInfoType!  </dd>
-<dt><a class="anchor" id="_todo000020"></a>Class <a class="el" href="a01980.html">Dune::GDT::is_local_boundary_operator&lt; T &gt;</a>  </dt>
-<dd>move to <a class="el" href="a00485.html">type_traits.hh</a>  </dd>
-<dt><a class="anchor" id="_todo000019"></a>Class <a class="el" href="a01976.html">Dune::GDT::is_local_coupling_operator&lt; T &gt;</a>  </dt>
-<dd>move to <a class="el" href="a00485.html">type_traits.hh</a>  </dd>
-<dt><a class="anchor" id="_todo000018"></a>Class <a class="el" href="a01972.html">Dune::GDT::is_local_operator&lt; T &gt;</a>  </dt>
-<dd>move to <a class="el" href="a00485.html">type_traits.hh</a>  </dd>
-<dt><a class="anchor" id="_todo000010"></a>Class <a class="el" href="a01324.html">Dune::GDT::L2FaceVectorFunctional&lt; FunctionType, Space, Vector, GridLayer, Field &gt;</a>  </dt>
-<dd>Unit tests are missing for this class.  </dd>
-<dt><a class="anchor" id="_todo000009"></a>Class <a class="el" href="a01320.html">Dune::GDT::L2VolumeVectorFunctional&lt; FunctionType, Space, Vector, GridLayer, Field &gt;</a>  </dt>
-<dd>Unit tests are missing for this class.  </dd>
-<dt><a class="anchor" id="_todo000030"></a>Class <a class="el" href="a02608.html">Dune::GDT::LagrangeProjectionLocalizableOperator&lt; GridLayerImp, SourceImp, RangeImp &gt;</a>  </dt>
-<dd>Add a check if the range space provides Lagrange points (after implementing the appropriate interface/mixin for those spaces).  </dd>
-<dt><a class="anchor" id="_todo000014"></a>Class <a class="el" href="a01352.html">Dune::GDT::LocalBoundaryTwoFormAssembler&lt; TestSpace, Intersection, Matrix, AnsatzSpace &gt;</a>  </dt>
-<dd></dd>
-<dt><a class="anchor" id="_todo000004"></a>Class <a class="el" href="a01072.html">Dune::GDT::LocalBoundaryTwoFormAssemblerFunctor&lt; TestSpaceType, MatrixType, GridLayerType, AnsatzSpaceType &gt;</a>  </dt>
-<dd></dd>
-<dt><a class="anchor" id="_todo000013"></a>Class <a class="el" href="a01344.html">Dune::GDT::LocalCouplingTwoFormAssembler&lt; TestSpace, Intersection, Matrix, AnsatzSpace, OuterTestSpace, OuterAnsatzSpace &gt;</a>  </dt>
-<dd></dd>
-<dt><a class="anchor" id="_todo000003"></a>Class <a class="el" href="a01068.html">Dune::GDT::LocalCouplingTwoFormAssemblerFunctor&lt; TestSpaceType, MatrixType, GridLayerType, AnsatzSpaceType, OuterTestSpaceType, OuterAnsatzSpaceType &gt;</a>  </dt>
-<dd></dd>
-<dt><a class="anchor" id="_todo000016"></a>Class <a class="el" href="a01364.html">Dune::GDT::LocalFaceFunctionalAssembler&lt; TestSpace, Intersection, Vector &gt;</a>  </dt>
-<dd></dd>
-<dt><a class="anchor" id="_todo000006"></a>Class <a class="el" href="a01080.html">Dune::GDT::LocalFaceFunctionalAssemblerFunctor&lt; TestSpaceType, VectorType, GridLayerType &gt;</a>  </dt>
-<dd></dd>
-<dt><a class="anchor" id="_todo000024"></a>Class <a class="el" href="a02032.html">Dune::GDT::LocalizableProductBase&lt; GridLayerImp, RangeImp, SourceImp, FieldImp &gt;</a>  </dt>
-<dd>Check parallel case: there is probably/definitely communication missing in apply2!  </dd>
-<dt><a class="anchor" id="_todo000015"></a>Class <a class="el" href="a01360.html">Dune::GDT::LocalVolumeFunctionalAssembler&lt; TestSpace, Vector &gt;</a>  </dt>
-<dd></dd>
-<dt><a class="anchor" id="_todo000005"></a>Class <a class="el" href="a01076.html">Dune::GDT::LocalVolumeFunctionalAssemblerFunctor&lt; TestSpaceType, VectorType, GridLayerType &gt;</a>  </dt>
-<dd></dd>
-<dt><a class="anchor" id="_todo000012"></a>Class <a class="el" href="a01332.html">Dune::GDT::LocalVolumeTwoFormAccumulator&lt; GridLayerImp, TestFunctionType, AnsatzFunctionType, FieldType &gt;</a>  </dt>
-<dd></dd>
-<dt><a class="anchor" id="_todo000001"></a>Class <a class="el" href="a01060.html">Dune::GDT::LocalVolumeTwoFormAccumulatorFunctor&lt; GL, TestFunctionType, AnsatzFunctionType, FieldType &gt;</a>  </dt>
-<dd></dd>
-<dt><a class="anchor" id="_todo000011"></a>Class <a class="el" href="a01328.html">Dune::GDT::LocalVolumeTwoFormAssembler&lt; TestSpace, Matrix, AnsatzSpace &gt;</a>  </dt>
-<dd></dd>
-<dt><a class="anchor" id="_todo000002"></a>Class <a class="el" href="a01064.html">Dune::GDT::LocalVolumeTwoFormAssemblerFunctor&lt; TestSpaceType, MatrixType, GridLayerType, AnsatzSpaceType &gt;</a>  </dt>
-<dd></dd>
-<dt><a class="anchor" id="_todo000031"></a>Class <a class="el" href="a03004.html">Dune::GDT::MapperInterface&lt; Traits &gt;</a>  </dt>
-<dd>Add note that each implementation has to document which of globalIndices or mapToGlobal is more efficient!  </dd>
-<dt><a class="anchor" id="_todo000025"></a>Class <a class="el" href="a02024.html">Dune::GDT::MatrixOperatorBase&lt; MatrixImp, RangeSpaceImp, GridLayerImp, SourceSpaceImp, FieldImp, pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;</a>  </dt>
-<dd>add static checks of dimensions  </dd>
-<dt><a class="anchor" id="_todo000026"></a>Member <a class="el" href="a02024.html#a3cf552580afa4ae1a60ffb3e0da93e7b">Dune::GDT::MatrixOperatorBase&lt; MatrixImp, RangeSpaceImp, GridLayerImp, SourceSpaceImp, FieldImp, pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::MatrixOperatorBase</a>  (Args &amp;&amp;... args)</dt>
-<dd>Guard against copy and move ctor (Args = ThisType)!  </dd>
-<dt><a class="anchor" id="_todo000029"></a>Class <a class="el" href="a02528.html">Dune::GDT::RosenbrockTimeStepper&lt; OperatorImp, DiscreteFunctionImp, SolverImp, method &gt;</a>  </dt>
-<dd>Implement concept of jacobian/time derivative of operator and finish implementation of this method.  </dd>
-<dt><a class="anchor" id="_todo000007"></a>Member <a class="el" href="a01304.html#ae98b04a97cc33d510f14092a6e819280">Dune::GDT::VectorFunctionalBase&lt; VectorImp, SpaceImp, GridLayerImp, FieldImp &gt;::VectorFunctionalBase</a>  (Args &amp;&amp;... args)</dt>
-<dd>Guard against copy and move ctor (Args = ThisType)! </dd>
-</dl>
-</div></div><!-- contents -->
+<div class="textblock"><code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;dune/xt/common/exceptions.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/memory.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/string.hh&gt;</code><br />
+<code>#include &lt;dune/xt/la/container.hh&gt;</code><br />
+<code>#include &lt;dune/xt/la/container/pattern.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00002_source.html">dune/gdt/assembler/codim0-matrix-datahandle.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a05008_source.html">dune/gdt/operators/interfaces.hh</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="a04987_source.html">interface.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00479_source.html">explicit-rungekutta.hh</a>&quot;</code><br />
+</div>
+<p><a href="a00488_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03285.html">Dune::GDT::internal::ButcherArrayProvider&lt; RangeFieldType, TimeStepperMethods::implicit_euler &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03289.html">Dune::GDT::internal::ButcherArrayProvider&lt; RangeFieldType, TimeStepperMethods::implicit_midpoint &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03293.html">Dune::GDT::internal::ButcherArrayProvider&lt; RangeFieldType, TimeStepperMethods::trapezoidal_rule &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03297.html">Dune::GDT::DiagonallyImplicitRungeKuttaTimeStepper&lt; OperatorImp, DiscreteFunctionImp, method, container_backend &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time stepper using diagonally implicit Runge Kutta methods.  <a href="a03297.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00503"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00503.html">Dune</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00504"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00504.html">Dune::GDT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00505"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00505.html">Dune::GDT::internal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

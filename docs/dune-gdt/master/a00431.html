@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: dg.bindings.hh File Reference</title>
+<title>dune-gdt: datahandles.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,61 +64,61 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">dg.bindings.hh File Reference</div>  </div>
+<div class="title">datahandles.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;dune/xt/grid/grids.bindings.hh&gt;</code><br />
-<code>#include &quot;<a class="el" href="a00434_source.html">dg.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00443_source.html">interface.bindings.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="a00449_source.html">dune/gdt/spaces/localview.hh</a>&gt;</code><br />
 </div>
 <p><a href="a00431_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ab67434b6ed1edfb88c4a41fda7e4a5f8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00431.html#ab67434b6ed1edfb88c4a41fda7e4a5f8">_DUNE_GDT_SPACES_DG_BIND_FEM_ALL</a>(_m)</td></tr>
-<tr class="separator:ab67434b6ed1edfb88c4a41fda7e4a5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa74a68a1325ed97c10fba069cc2c29a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00431.html#aaa74a68a1325ed97c10fba069cc2c29a">DUNE_GDT_SPACES_DG_BIND</a>(_m)&#160;&#160;&#160;<a class="el" href="a00431.html#ab67434b6ed1edfb88c4a41fda7e4a5f8">_DUNE_GDT_SPACES_DG_BIND_FEM_ALL</a>(_m)</td></tr>
-<tr class="separator:aaa74a68a1325ed97c10fba069cc2c29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02817.html">Dune::GDT::DOFDataCommunicationDescriptor&lt; E &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02821.html">Dune::GDT::EntityDataCommunicationDescriptor&lt; E &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02825.html">Dune::GDT::SpaceDataHandle&lt; SpaceType, VectorType, GatherScatter, CommunicationDescriptor &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02829.html">Dune::GDT::DataGatherScatter&lt; GatherScatter &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02833.html">Dune::GDT::DataEntityGatherScatter&lt; GatherScatter &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02837.html">Dune::GDT::MinGatherScatter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02841.html">Dune::GDT::MinDataHandle&lt; SpaceType, VectorType &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02845.html">Dune::GDT::GhostGatherScatter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">GatherScatter functor for marking ghost DOFs.  <a href="a02845.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02849.html">Dune::GDT::GhostDataHandle&lt; SpaceType, VectorType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data handle for marking ghost DOFs.  <a href="a02849.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02853.html">Dune::GDT::DisjointPartitioningGatherScatter&lt; RankIndex &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">GatherScatter functor for creating a disjoint DOF partitioning.  <a href="a02853.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02857.html">Dune::GDT::DisjointPartitioningDataHandle&lt; SpaceType, VectorType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">GatherScatter data handle for creating a disjoint DOF partitioning.  <a href="a02857.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02861.html">Dune::GDT::SharedDOFGatherScatter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">GatherScatter functor for marking shared DOFs.  <a href="a02861.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02865.html">Dune::GDT::SharedDOFDataHandle&lt; SpaceType, VectorType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data handle for marking shared DOFs.  <a href="a02865.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02869.html">Dune::GDT::SpaceNeighborDataHandle&lt; SpaceType, RankIndex &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data handle for collecting set of neighboring MPI ranks.  <a href="a02869.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00503"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00503.html">Dune</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00504"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00504.html">Dune::GDT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ab67434b6ed1edfb88c4a41fda7e4a5f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab67434b6ed1edfb88c4a41fda7e4a5f8">&#9670;&nbsp;</a></span>_DUNE_GDT_SPACES_DG_BIND_FEM_ALL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define _DUNE_GDT_SPACES_DG_BIND_FEM_ALL</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_m</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aaa74a68a1325ed97c10fba069cc2c29a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa74a68a1325ed97c10fba069cc2c29a">&#9670;&nbsp;</a></span>DUNE_GDT_SPACES_DG_BIND</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DUNE_GDT_SPACES_DG_BIND</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_m</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="a00431.html#ab67434b6ed1edfb88c4a41fda7e4a5f8">_DUNE_GDT_SPACES_DG_BIND_FEM_ALL</a>(_m)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Member List</title>
+<title>dune-gdt: Dune::GDT::LocalCouplingFvOperator&lt; NumericalFluxType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,19 +59,256 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00494.html">Dune</a></li><li class="navelem"><a class="el" href="a00495.html">GDT</a></li><li class="navelem"><a class="el" href="a00496.html">internal</a></li><li class="navelem"><a class="el" href="a01920.html">LocalBoundaryFvOperatorTraits</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00503.html">Dune</a></li><li class="navelem"><a class="el" href="a00504.html">GDT</a></li><li class="navelem"><a class="el" href="a01917.html">LocalCouplingFvOperator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="a01914.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::LocalBoundaryFvOperatorTraits&lt; NumericalFluxType &gt; Member List</div>  </div>
+<div class="title">Dune::GDT::LocalCouplingFvOperator&lt; NumericalFluxType &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a01920.html">Dune::GDT::internal::LocalBoundaryFvOperatorTraits&lt; NumericalFluxType &gt;</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a01920.html#a1b6c34014e66f7ffdfc44e240aa75244">derived_type</a> typedef</td><td class="entry"><a class="el" href="a01920.html">Dune::GDT::internal::LocalBoundaryFvOperatorTraits&lt; NumericalFluxType &gt;</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<p><code>#include &lt;<a class="el" href="a04942_source.html">dune/gdt/local/operators/fv.hh</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Dune::GDT::LocalCouplingFvOperator&lt; NumericalFluxType &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="a01916.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_local_coupling_fv_operator_3_01_numerical_flux_type_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_local_coupling_fv_operator_3_01_numerical_flux_type_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_local_coupling_fv_operator_3_01_numerical_flux_type_01_4_inherit__map">
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ad5aff64e1780d1ab43497ee2407d301e"><td class="memItemLeft" align="right" valign="top">typedef NumericalFluxType::RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01917.html#ad5aff64e1780d1ab43497ee2407d301e">RangeFieldType</a></td></tr>
+<tr class="separator:ad5aff64e1780d1ab43497ee2407d301e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6b42e2fde58c53197bb84c1658fcd32"><td class="memItemLeft" align="right" valign="top">typedef Dune::QuadratureRule&lt; <a class="el" href="a01917.html#ad5aff64e1780d1ab43497ee2407d301e">RangeFieldType</a>, <a class="el" href="a01917.html#a1db7ca45b4d6feebfa2dd9092e8ec8cf">dimDomain</a> - 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01917.html#aa6b42e2fde58c53197bb84c1658fcd32">QuadratureType</a></td></tr>
+<tr class="separator:aa6b42e2fde58c53197bb84c1658fcd32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ee954a82cb65f79baddf3e0cf5a2e67"><td class="memItemLeft" align="right" valign="top">typedef Dune::XT::Common::FieldVector&lt; <a class="el" href="a01917.html#ad5aff64e1780d1ab43497ee2407d301e">RangeFieldType</a>, <a class="el" href="a01917.html#a7488c4a5637d367d0aff4216aaf7214a">dimRange</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01917.html#a6ee954a82cb65f79baddf3e0cf5a2e67">ResultType</a></td></tr>
+<tr class="separator:a6ee954a82cb65f79baddf3e0cf5a2e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0e8813f28e7184e8672eca188ba6382c"><td class="memTemplParams" colspan="2">template&lt;class... Args&gt; </td></tr>
+<tr class="memitem:a0e8813f28e7184e8672eca188ba6382c"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01917.html#a0e8813f28e7184e8672eca188ba6382c">LocalCouplingFvOperator</a> (const <a class="el" href="a01917.html#aa6b42e2fde58c53197bb84c1658fcd32">QuadratureType</a> &amp;quadrature, Args &amp;&amp;... args)</td></tr>
+<tr class="separator:a0e8813f28e7184e8672eca188ba6382c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57c7b3d52e2300cd6fed9cea31b81db8"><td class="memTemplParams" colspan="2">template&lt;class SourceType , class IntersectionType , class SpaceType , class VectorType &gt; </td></tr>
+<tr class="memitem:a57c7b3d52e2300cd6fed9cea31b81db8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01917.html#a57c7b3d52e2300cd6fed9cea31b81db8">apply</a> (const SourceType &amp;source, const IntersectionType &amp;intersection, <a class="el" href="a01381.html">LocalDiscreteFunction</a>&lt; <a class="el" href="a00504.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType &gt; &amp;local_range_entity, <a class="el" href="a01381.html">LocalDiscreteFunction</a>&lt; <a class="el" href="a00504.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType &gt; &amp;local_range_neighbor, const XT::Common::Parameter &amp;={}) const</td></tr>
+<tr class="separator:a57c7b3d52e2300cd6fed9cea31b81db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a1db7ca45b4d6feebfa2dd9092e8ec8cf"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01917.html#a1db7ca45b4d6feebfa2dd9092e8ec8cf">dimDomain</a> = NumericalFluxType::dimDomain</td></tr>
+<tr class="separator:a1db7ca45b4d6feebfa2dd9092e8ec8cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7488c4a5637d367d0aff4216aaf7214a"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01917.html#a7488c4a5637d367d0aff4216aaf7214a">dimRange</a> = NumericalFluxType::dimRange</td></tr>
+<tr class="separator:a7488c4a5637d367d0aff4216aaf7214a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="aa6b42e2fde58c53197bb84c1658fcd32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6b42e2fde58c53197bb84c1658fcd32">&#9670;&nbsp;</a></span>QuadratureType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class NumericalFluxType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Dune::QuadratureRule&lt;<a class="el" href="a01917.html#ad5aff64e1780d1ab43497ee2407d301e">RangeFieldType</a>, <a class="el" href="a01917.html#a1db7ca45b4d6feebfa2dd9092e8ec8cf">dimDomain</a> - 1&gt; <a class="el" href="a01917.html">Dune::GDT::LocalCouplingFvOperator</a>&lt; NumericalFluxType &gt;::<a class="el" href="a01917.html#aa6b42e2fde58c53197bb84c1658fcd32">QuadratureType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad5aff64e1780d1ab43497ee2407d301e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5aff64e1780d1ab43497ee2407d301e">&#9670;&nbsp;</a></span>RangeFieldType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class NumericalFluxType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef NumericalFluxType::RangeFieldType <a class="el" href="a01917.html">Dune::GDT::LocalCouplingFvOperator</a>&lt; NumericalFluxType &gt;::<a class="el" href="a01917.html#ad5aff64e1780d1ab43497ee2407d301e">RangeFieldType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ee954a82cb65f79baddf3e0cf5a2e67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ee954a82cb65f79baddf3e0cf5a2e67">&#9670;&nbsp;</a></span>ResultType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class NumericalFluxType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Dune::XT::Common::FieldVector&lt;<a class="el" href="a01917.html#ad5aff64e1780d1ab43497ee2407d301e">RangeFieldType</a>, <a class="el" href="a01917.html#a7488c4a5637d367d0aff4216aaf7214a">dimRange</a>&gt; <a class="el" href="a01917.html">Dune::GDT::LocalCouplingFvOperator</a>&lt; NumericalFluxType &gt;::<a class="el" href="a01917.html#a6ee954a82cb65f79baddf3e0cf5a2e67">ResultType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a0e8813f28e7184e8672eca188ba6382c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e8813f28e7184e8672eca188ba6382c">&#9670;&nbsp;</a></span>LocalCouplingFvOperator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class NumericalFluxType &gt; </div>
+<div class="memtemplate">
+template&lt;class... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a01917.html">Dune::GDT::LocalCouplingFvOperator</a>&lt; NumericalFluxType &gt;::<a class="el" href="a01917.html">LocalCouplingFvOperator</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a01917.html#aa6b42e2fde58c53197bb84c1658fcd32">QuadratureType</a> &amp;&#160;</td>
+          <td class="paramname"><em>quadrature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a57c7b3d52e2300cd6fed9cea31b81db8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57c7b3d52e2300cd6fed9cea31b81db8">&#9670;&nbsp;</a></span>apply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class NumericalFluxType &gt; </div>
+<div class="memtemplate">
+template&lt;class SourceType , class IntersectionType , class SpaceType , class VectorType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a01917.html">Dune::GDT::LocalCouplingFvOperator</a>&lt; NumericalFluxType &gt;::apply </td>
+          <td>(</td>
+          <td class="paramtype">const SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const IntersectionType &amp;&#160;</td>
+          <td class="paramname"><em>intersection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a01381.html">LocalDiscreteFunction</a>&lt; <a class="el" href="a00504.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>local_range_entity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a01381.html">LocalDiscreteFunction</a>&lt; <a class="el" href="a00504.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>local_range_neighbor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1db7ca45b4d6feebfa2dd9092e8ec8cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1db7ca45b4d6feebfa2dd9092e8ec8cf">&#9670;&nbsp;</a></span>dimDomain</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class NumericalFluxType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t <a class="el" href="a01917.html">Dune::GDT::LocalCouplingFvOperator</a>&lt; NumericalFluxType &gt;::dimDomain = NumericalFluxType::dimDomain</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7488c4a5637d367d0aff4216aaf7214a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7488c4a5637d367d0aff4216aaf7214a">&#9670;&nbsp;</a></span>dimRange</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class NumericalFluxType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t <a class="el" href="a01917.html">Dune::GDT::LocalCouplingFvOperator</a>&lt; NumericalFluxType &gt;::dimRange = NumericalFluxType::dimRange</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="a04942_source.html">local/operators/fv.hh</a></li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
