@@ -6,7 +6,7 @@ var searchData=
   ['solutiontype',['SolutionType',['../a03237.html#a0d4d552bf13b4ffdd86b7f72f3c11090',1,'Dune::GDT::AdaptiveRungeKuttaTimeStepper::SolutionType()'],['../a03305.html#a90c1fb06905211ebbef64431e474cb86',1,'Dune::GDT::TimeStepperInterface::SolutionType()']]],
   ['solvermatrixdatahandletype',['SolverMatrixDataHandleType',['../a03297.html#a2e4009ed302a724c8cdd52730a722ab0',1,'Dune::GDT::DiagonallyImplicitRungeKuttaTimeStepper']]],
   ['solvermatrixtype',['SolverMatrixType',['../a03297.html#acf5d9a9ebb15b3051bbfb07541b046af',1,'Dune::GDT::DiagonallyImplicitRungeKuttaTimeStepper']]],
-  ['solvertype',['SolverType',['../a02537.html#aa147aeacece44623a89e12f86d696c30',1,'Dune::GDT::RosenbrockTimeStepper::SolverType()'],['../a03297.html#a071a85c7b3d620e24242a7af47154881',1,'Dune::GDT::DiagonallyImplicitRungeKuttaTimeStepper::SolverType()']]],
+  ['solvertype',['SolverType',['../a02537.html#aa147aeacece44623a89e12f86d696c30',1,'Dune::GDT::RosenbrockTimeStepper::SolverType()'],['../a03297.html#a0ae5a94c7cfa0302b79eb15e00579dd5',1,'Dune::GDT::DiagonallyImplicitRungeKuttaTimeStepper::SolverType()']]],
   ['solvervectortype',['SolverVectorType',['../a03297.html#a60af57515d55b13ce9f261eb21a9ee1e',1,'Dune::GDT::DiagonallyImplicitRungeKuttaTimeStepper']]],
   ['sourcebasetype',['SourceBaseType',['../a02033.html#aa1c0b14cf2d6d0cba2b83d8574f7c310',1,'Dune::GDT::MatrixOperatorBase']]],
   ['sourcespacetype',['SourceSpaceType',['../a02033.html#ab0f347043bbd37e5d16dc411f80fc900',1,'Dune::GDT::MatrixOperatorBase']]],

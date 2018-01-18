@@ -106,7 +106,7 @@ $(function() {
 </li>
 <li>DataType
 : <a class="el" href="a01165.html#a25673fb946e55cf36edcf2bfe77c0bc3">Dune::GDT::DiscreteFunctionDataHandle&lt; DiscreteFunctionType &gt;</a>
-, <a class="el" href="a02817.html#a4de29df20cd5dd187d23c0be4b256eed">Dune::GDT::DOFDataCommunicationDescriptor&lt; E &gt;</a>
+, <a class="el" href="a02817.html#af854cb3f51125aeb1531f2002c8a08ed">Dune::GDT::DofDataCommunicationDescriptor&lt; E &gt;</a>
 , <a class="el" href="a02821.html#ab7cc30b2a0a4472f33fe5a6b2a3f993c">Dune::GDT::EntityDataCommunicationDescriptor&lt; E &gt;</a>
 , <a class="el" href="a01065.html#adf7da2e53f222144cce9f20c566b3fc9">Dune::GDT::MatrixDataHandle&lt; MatrixType, SpaceType &gt;</a>
 , <a class="el" href="a02157.html#a5aae4e4b1777912bf067fc17035b0153">Dune::GDT::ReconstructionDataHandle&lt; ReconstructedValuesType, GridLayerType &gt;</a>
@@ -416,10 +416,33 @@ $(function() {
 , <a class="el" href="a01257.html#ae0155ee79998379074d9f6162bad223e">Dune::GDT::internal::HyperbolicFvDefaultDiscretizationTraits&lt; TestCaseImp, FvSpaceImp, numerical_flux, reconstruction_order, time_stepper_method, rhs_time_stepper_method, time_stepper_splitting_method, slope_limiter &gt;</a>
 </li>
 <li>DisjointPartitioningDataHandle()
-: <a class="el" href="a02857.html#af2052f3df64d39e794564a99845f4b93">Dune::GDT::DisjointPartitioningDataHandle&lt; SpaceType, VectorType &gt;</a>
+: <a class="el" href="a02857.html#a4fc41deb49d00f6cd08323748026e8ce">Dune::GDT::DisjointPartitioningDataHandle&lt; SpaceType, VectorType &gt;</a>
 </li>
 <li>DisjointPartitioningGatherScatter()
 : <a class="el" href="a02853.html#ab2337b1af5c3a57e1a8990daa4c27cb2">Dune::GDT::DisjointPartitioningGatherScatter&lt; RankIndex &gt;</a>
+</li>
+<li>dof_communicator()
+: <a class="el" href="a02441.html#a5d25943ac105dfa7dd887b2011c561b9">Dune::GDT::BlockSpace&lt; LocalSpaceImp &gt;</a>
+, <a class="el" href="a03117.html#ad5137e11e5bd2252316b2316a04a24b1">Dune::GDT::DefaultProductSpace&lt; SpaceImps &gt;</a>
+, <a class="el" href="a02953.html#a976c7ad8576c6b0d57689ddc8b95f9a8">Dune::GDT::FvProductSpace&lt; GridLayerImp, RangeFieldImp, rangeDim, 1 &gt;</a>
+, <a class="el" href="a02925.html#a61dfbe58013fbd7a1a9347b9c38f2ae4">Dune::GDT::FvSpace&lt; GridLayerImp, RangeFieldImp, rangeDim, 1 &gt;</a>
+, <a class="el" href="a02505.html#aa75edf2f14917d2dfcc38fdab8592c0f">Dune::GDT::RestrictedSpace&lt; UnrestrictedSpace, RestrictionGridLayer &gt;</a>
+, <a class="el" href="a00499.html#ga90fb2d85c657c9012795fd5063814067">Dune::GDT::SpaceInterface&lt; Traits, domainDim, rangeDim, rangeDimCols &gt;</a>
+</li>
+<li>DofCommunicationChooserType
+: <a class="el" href="a02441.html#a46ee5b55a3c95b3287236d799f149d46">Dune::GDT::BlockSpace&lt; LocalSpaceImp &gt;</a>
+, <a class="el" href="a02445.html#ace819fe549426a4fd8755354d7dc5932">Dune::GDT::internal::BlockSpaceTraits&lt; LocalSpaceType &gt;</a>
+, <a class="el" href="a03137.html#a42e6f0b24612cd118a2b6b9349906a6a">Dune::GDT::internal::DefaultProductSpaceTraits&lt; SpaceImps &gt;</a>
+, <a class="el" href="a02921.html#a756d833a8547564e7b621adcdf6589b1">Dune::GDT::internal::FvSpaceTraits&lt; GridLayerImp, RangeFieldImp, rangeDim, rangeDimCols &gt;</a>
+</li>
+<li>DofCommunicatorType
+: <a class="el" href="a02441.html#a09c92e94906b99d0c54203749066eaf8">Dune::GDT::BlockSpace&lt; LocalSpaceImp &gt;</a>
+, <a class="el" href="a03297.html#a8e3d57cd3fba9c4434ece9f9124afb54">Dune::GDT::DiagonallyImplicitRungeKuttaTimeStepper&lt; OperatorImp, DiscreteFunctionImp, method, container_backend &gt;</a>
+, <a class="el" href="a02445.html#ac63c8683ee8ec09074c3828153989ed5">Dune::GDT::internal::BlockSpaceTraits&lt; LocalSpaceType &gt;</a>
+, <a class="el" href="a03137.html#a8d6b1a30e46ea044f83bfefb0c14b9c1">Dune::GDT::internal::DefaultProductSpaceTraits&lt; SpaceImps &gt;</a>
+, <a class="el" href="a02921.html#a18793a9a7d550da8cd99175de68ad3bc">Dune::GDT::internal::FvSpaceTraits&lt; GridLayerImp, RangeFieldImp, rangeDim, rangeDimCols &gt;</a>
+, <a class="el" href="a02509.html#af213363a1325a884f6a88f2540210fae">Dune::GDT::internal::RestrictedSpaceTraits&lt; UnrestrictedSpace, RestrictionGridLayer &gt;</a>
+, <a class="el" href="a03017.html#a9f447d5ba0b0dfe55122b407e6b593d8">Dune::GDT::SpaceInterface&lt; Traits, domainDim, rangeDim, rangeDimCols &gt;</a>
 </li>
 <li>dofs_valid()
 : <a class="el" href="a01169.html#a749d73001fe9eac4c2c96ce02d7d2000">Dune::GDT::ConstDiscreteFunction&lt; SpaceImp, VectorImp &gt;</a>
@@ -520,13 +543,13 @@ $(function() {
 , <a class="el" href="a03017.html#ada40ae3649f9292fbdaa307b1cf29217">Dune::GDT::SpaceInterface&lt; Traits, domainDim, rangeDim, rangeDimCols &gt;</a>
 </li>
 <li>DuneFemLocalfunctionsWrapper()
-: <a class="el" href="a02709.html#ab65586ea692372cb61a661d35b42a4f3">Dune::GDT::BaseFunctionSet::DuneFemLocalfunctionsWrapper&lt; BaseFunctionSetMapImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, 1 &gt;</a>
+: <a class="el" href="a02709.html#ad5ba08a9046d7c8b3f850716df8c6c3a">Dune::GDT::BaseFunctionSet::DuneFemLocalfunctionsWrapper&lt; BaseFunctionSetMapImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, 1 &gt;</a>
 </li>
 <li>DunePdelabTaylorHoodSpaceWrapper()
 : <a class="el" href="a03165.html#a753805ca7d2733b85a988e24f6776dce">Dune::GDT::DunePdelabTaylorHoodSpaceWrapper&lt; GridViewImp, polynomialOrder, domainDim, RangeFieldImp &gt;</a>
 </li>
 <li>DXTC_has_static_member_initialize_once()
-: <a class="el" href="a02881.html#a93982bd9018aeeb8e9de6d974a7f6a8a">Dune::GDT::internal::is_dg_space_helper&lt; S &gt;</a>
+: <a class="el" href="a02881.html#ae5522caff062d48888c4461a8109bb10">Dune::GDT::internal::is_dg_space_helper&lt; S &gt;</a>
 , <a class="el" href="a02933.html#aceb9c5f7c59c8deee082e5e89c351e77">Dune::GDT::internal::is_fv_space_helper&lt; S &gt;</a>
 , <a class="el" href="a03349.html#a9159ea06830b531dfa20bca88956c7e5">Dune::GDT::internal::is_matrix_operator_helper&lt; Tt &gt;</a>
 , <a class="el" href="a03313.html#afc71b4b4c2146161c473245217061eea">Dune::GDT::internal::is_space_helper&lt; S &gt;</a>
@@ -537,11 +560,11 @@ $(function() {
 , <a class="el" href="a01205.html#a6e1b2d3c44f87ac026469abd17fa97fa">Dune::GDT::internal::is_const_discrete_function_helper&lt; D &gt;</a>
 , <a class="el" href="a02881.html#aebb2c524f8bda4b635caecfe2e69f7ea">Dune::GDT::internal::is_dg_space_helper&lt; S &gt;</a>
 , <a class="el" href="a02933.html#adcfa989d96976b20da7d4d9a674a4872">Dune::GDT::internal::is_fv_space_helper&lt; S &gt;</a>
-, <a class="el" href="a03345.html#ad9760e4b633c27881dbc1ee2f70285c0">Dune::GDT::internal::is_localizable_product_helper&lt; Tt &gt;</a>
-, <a class="el" href="a03349.html#ab88b8000fd107b9a443f43792c58c998">Dune::GDT::internal::is_matrix_operator_helper&lt; Tt &gt;</a>
+, <a class="el" href="a03345.html#a13aed02bd2f89d6b9150f4a585137661">Dune::GDT::internal::is_localizable_product_helper&lt; Tt &gt;</a>
+, <a class="el" href="a03349.html#a2bd4655eac6ab970a0cd54364a1fb537">Dune::GDT::internal::is_matrix_operator_helper&lt; Tt &gt;</a>
 , <a class="el" href="a03341.html#a653999e00a905b741f45f9121720017f">Dune::GDT::internal::is_operator_helper&lt; Tt &gt;</a>
 , <a class="el" href="a03337.html#a47b7c3082678a258cea059f96aeeba24">Dune::GDT::internal::is_quaternary_face_integrand_helper&lt; Tt &gt;</a>
-, <a class="el" href="a03317.html#a7a2c0760610c8680e869981259227f80">Dune::GDT::internal::is_restricted_space_helper&lt; S &gt;</a>
+, <a class="el" href="a03317.html#a085897c71d27aca2dca13da868bb1949">Dune::GDT::internal::is_restricted_space_helper&lt; S &gt;</a>
 , <a class="el" href="a03313.html#ae5f9cd0be286dfd756ec9ce9a50fe76f">Dune::GDT::internal::is_space_helper&lt; S &gt;</a>
 , <a class="el" href="a01281.html#a9ca028b3bdef2179deb5fdca374e5303">Dune::GDT::internal::is_stationary_discretization_helper&lt; D &gt;</a>
 , <a class="el" href="a03329.html#afb949ec2609f2957620ba746bfa94ead">Dune::GDT::internal::is_unary_face_integrand_helper&lt; Tt &gt;</a>

@@ -88,10 +88,10 @@ Public Types</h2></td></tr>
 <tr class="separator:ae5d6fa8d1dbdf881bc83cc7b23e52513"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b675cc3e4dfbeb9966dd6bfb24d3a81"><td class="memItemLeft" align="right" valign="top">typedef LocalSpaceType::RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02445.html#a6b675cc3e4dfbeb9966dd6bfb24d3a81">RangeFieldType</a></td></tr>
 <tr class="separator:a6b675cc3e4dfbeb9966dd6bfb24d3a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89eb3d83f28694aac273695a0f1ac042"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02445.html#a89eb3d83f28694aac273695a0f1ac042">CommunicationChooserType</a> = <a class="el" href="a03109.html">CommunicationChooser</a>&lt; <a class="el" href="a02445.html#ae5d6fa8d1dbdf881bc83cc7b23e52513">GridLayerType</a>, true &gt;</td></tr>
-<tr class="separator:a89eb3d83f28694aac273695a0f1ac042"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad11b9735ef710f059daa997b54c9b279"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02445.html#ad11b9735ef710f059daa997b54c9b279">CommunicatorType</a> = typename CommunicationChooserType::type</td></tr>
-<tr class="separator:ad11b9735ef710f059daa997b54c9b279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace819fe549426a4fd8755354d7dc5932"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02445.html#ace819fe549426a4fd8755354d7dc5932">DofCommunicationChooserType</a> = <a class="el" href="a03109.html">DofCommunicationChooser</a>&lt; <a class="el" href="a02445.html#ae5d6fa8d1dbdf881bc83cc7b23e52513">GridLayerType</a>, true &gt;</td></tr>
+<tr class="separator:ace819fe549426a4fd8755354d7dc5932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac63c8683ee8ec09074c3828153989ed5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02445.html#ac63c8683ee8ec09074c3828153989ed5">DofCommunicatorType</a> = typename DofCommunicationChooserType::type</td></tr>
+<tr class="separator:ac63c8683ee8ec09074c3828153989ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -139,38 +139,6 @@ template&lt;class LocalSpaceType &gt; </div>
 
 </div>
 </div>
-<a id="a89eb3d83f28694aac273695a0f1ac042"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89eb3d83f28694aac273695a0f1ac042">&#9670;&nbsp;</a></span>CommunicationChooserType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class LocalSpaceType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="a02445.html">Dune::GDT::internal::BlockSpaceTraits</a>&lt; LocalSpaceType &gt;::<a class="el" href="a02445.html#a89eb3d83f28694aac273695a0f1ac042">CommunicationChooserType</a> =  <a class="el" href="a03109.html">CommunicationChooser</a>&lt;<a class="el" href="a02445.html#ae5d6fa8d1dbdf881bc83cc7b23e52513">GridLayerType</a>, true&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad11b9735ef710f059daa997b54c9b279"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad11b9735ef710f059daa997b54c9b279">&#9670;&nbsp;</a></span>CommunicatorType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class LocalSpaceType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="a02445.html">Dune::GDT::internal::BlockSpaceTraits</a>&lt; LocalSpaceType &gt;::<a class="el" href="a02445.html#ad11b9735ef710f059daa997b54c9b279">CommunicatorType</a> =  typename CommunicationChooserType::type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aa93ab4c47f1119a425c9b62494c7cb9f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa93ab4c47f1119a425c9b62494c7cb9f">&#9670;&nbsp;</a></span>derived_type</h2>
 
@@ -181,6 +149,38 @@ template&lt;class LocalSpaceType &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">typedef <a class="el" href="a02441.html">BlockSpace</a>&lt;LocalSpaceType&gt; <a class="el" href="a02445.html">Dune::GDT::internal::BlockSpaceTraits</a>&lt; LocalSpaceType &gt;::<a class="el" href="a02445.html#aa93ab4c47f1119a425c9b62494c7cb9f">derived_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ace819fe549426a4fd8755354d7dc5932"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace819fe549426a4fd8755354d7dc5932">&#9670;&nbsp;</a></span>DofCommunicationChooserType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class LocalSpaceType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a02445.html">Dune::GDT::internal::BlockSpaceTraits</a>&lt; LocalSpaceType &gt;::<a class="el" href="a02445.html#ace819fe549426a4fd8755354d7dc5932">DofCommunicationChooserType</a> =  <a class="el" href="a03109.html">DofCommunicationChooser</a>&lt;<a class="el" href="a02445.html#ae5d6fa8d1dbdf881bc83cc7b23e52513">GridLayerType</a>, true&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac63c8683ee8ec09074c3828153989ed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac63c8683ee8ec09074c3828153989ed5">&#9670;&nbsp;</a></span>DofCommunicatorType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class LocalSpaceType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a02445.html">Dune::GDT::internal::BlockSpaceTraits</a>&lt; LocalSpaceType &gt;::<a class="el" href="a02445.html#ac63c8683ee8ec09074c3828153989ed5">DofCommunicatorType</a> =  typename DofCommunicationChooserType::type</td>
         </tr>
       </table>
 </div><div class="memdoc">

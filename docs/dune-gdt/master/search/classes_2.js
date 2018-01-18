@@ -9,7 +9,6 @@ var searchData=
   ['chooselimiter_3c_20slopelimiters_3a_3aminmod_20_3e',['ChooseLimiter&lt; SlopeLimiters::minmod &gt;',['../a02273.html',1,'Dune::GDT::internal']]],
   ['chooselimiter_3c_20slopelimiters_3a_3ano_5fslope_20_3e',['ChooseLimiter&lt; SlopeLimiters::no_slope &gt;',['../a02285.html',1,'Dune::GDT::internal']]],
   ['chooselimiter_3c_20slopelimiters_3a_3asuperbee_20_3e',['ChooseLimiter&lt; SlopeLimiters::superbee &gt;',['../a02277.html',1,'Dune::GDT::internal']]],
-  ['communicationchooser',['CommunicationChooser',['../a03109.html',1,'Dune::GDT']]],
   ['constdiscretefunction',['ConstDiscreteFunction',['../a01169.html',1,'Dune::GDT']]],
   ['constlocaldiscretefunction',['ConstLocalDiscreteFunction',['../a01377.html',1,'Dune::GDT']]],
   ['constlocaldofvector',['ConstLocalDoFVector',['../a01385.html',1,'Dune::GDT']]],

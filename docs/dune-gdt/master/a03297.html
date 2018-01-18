@@ -97,10 +97,10 @@ Public Types</h2></td></tr>
 <tr class="separator:acf5d9a9ebb15b3051bbfb07541b046af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60af57515d55b13ce9f261eb21a9ee1e"><td class="memItemLeft" align="right" valign="top">typedef XT::LA::Container&lt; <a class="el" href="a03297.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>, container_backend &gt;::<a class="el" href="a03297.html#a931b3e4c301aa87a80856b7c006c72dd">VectorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03297.html#a60af57515d55b13ce9f261eb21a9ee1e">SolverVectorType</a></td></tr>
 <tr class="separator:a60af57515d55b13ce9f261eb21a9ee1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14188c0b72856e20120a0e1569d549c5"><td class="memItemLeft" align="right" valign="top">typedef DiscreteFunctionType::SpaceType::CommunicatorType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03297.html#a14188c0b72856e20120a0e1569d549c5">CommunicatorType</a></td></tr>
-<tr class="separator:a14188c0b72856e20120a0e1569d549c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a071a85c7b3d620e24242a7af47154881"><td class="memItemLeft" align="right" valign="top">typedef XT::LA::Solver&lt; <a class="el" href="a03297.html#acf5d9a9ebb15b3051bbfb07541b046af">SolverMatrixType</a>, <a class="el" href="a03297.html#a14188c0b72856e20120a0e1569d549c5">CommunicatorType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03297.html#a071a85c7b3d620e24242a7af47154881">SolverType</a></td></tr>
-<tr class="separator:a071a85c7b3d620e24242a7af47154881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e3d57cd3fba9c4434ece9f9124afb54"><td class="memItemLeft" align="right" valign="top">typedef DiscreteFunctionType::SpaceType::DofCommunicatorType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03297.html#a8e3d57cd3fba9c4434ece9f9124afb54">DofCommunicatorType</a></td></tr>
+<tr class="separator:a8e3d57cd3fba9c4434ece9f9124afb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ae5a94c7cfa0302b79eb15e00579dd5"><td class="memItemLeft" align="right" valign="top">typedef XT::LA::Solver&lt; <a class="el" href="a03297.html#acf5d9a9ebb15b3051bbfb07541b046af">SolverMatrixType</a>, <a class="el" href="a03297.html#a8e3d57cd3fba9c4434ece9f9124afb54">DofCommunicatorType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03297.html#a0ae5a94c7cfa0302b79eb15e00579dd5">SolverType</a></td></tr>
+<tr class="separator:a0ae5a94c7cfa0302b79eb15e00579dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e4009ed302a724c8cdd52730a722ab0"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01065.html">Dune::GDT::MatrixDataHandle</a>&lt; <a class="el" href="a03297.html#acf5d9a9ebb15b3051bbfb07541b046af">SolverMatrixType</a>, typename DiscreteFunctionType::SpaceType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03297.html#a2e4009ed302a724c8cdd52730a722ab0">SolverMatrixDataHandleType</a></td></tr>
 <tr class="separator:a2e4009ed302a724c8cdd52730a722ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9defaa03400e9598d19f48dc817082f1"><td class="memItemLeft" align="right" valign="top">typedef DiscreteFunctionImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03297.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a></td></tr>
@@ -184,22 +184,6 @@ class Dune::GDT::DiagonallyImplicitRungeKuttaTimeStepper&lt; OperatorImp, Discre
   </dd>
 </dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a14188c0b72856e20120a0e1569d549c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14188c0b72856e20120a0e1569d549c5">&#9670;&nbsp;</a></span>CommunicatorType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class OperatorImp , class DiscreteFunctionImp , TimeStepperMethods method = TimeStepperMethods::implicit_euler, XT::LA::Backends container_backend = XT::LA::default_sparse_backend&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef DiscreteFunctionType::SpaceType::CommunicatorType <a class="el" href="a03297.html">Dune::GDT::DiagonallyImplicitRungeKuttaTimeStepper</a>&lt; OperatorImp, DiscreteFunctionImp, method, container_backend &gt;::<a class="el" href="a03297.html#a14188c0b72856e20120a0e1569d549c5">CommunicatorType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ae220a1c0a58613846f70f9de50339bc2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae220a1c0a58613846f70f9de50339bc2">&#9670;&nbsp;</a></span>DataHandleType</h2>
 
@@ -226,6 +210,22 @@ template&lt;class OperatorImp , class DiscreteFunctionImp , TimeStepperMethods m
       <table class="memname">
         <tr>
           <td class="memname">typedef DiscreteFunctionImp <a class="el" href="a03305.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::<a class="el" href="a03297.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e3d57cd3fba9c4434ece9f9124afb54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e3d57cd3fba9c4434ece9f9124afb54">&#9670;&nbsp;</a></span>DofCommunicatorType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class OperatorImp , class DiscreteFunctionImp , TimeStepperMethods method = TimeStepperMethods::implicit_euler, XT::LA::Backends container_backend = XT::LA::default_sparse_backend&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef DiscreteFunctionType::SpaceType::DofCommunicatorType <a class="el" href="a03297.html">Dune::GDT::DiagonallyImplicitRungeKuttaTimeStepper</a>&lt; OperatorImp, DiscreteFunctionImp, method, container_backend &gt;::<a class="el" href="a03297.html#a8e3d57cd3fba9c4434ece9f9124afb54">DofCommunicatorType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -344,8 +344,8 @@ template&lt;class OperatorImp , class DiscreteFunctionImp , TimeStepperMethods m
 
 </div>
 </div>
-<a id="a071a85c7b3d620e24242a7af47154881"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a071a85c7b3d620e24242a7af47154881">&#9670;&nbsp;</a></span>SolverType</h2>
+<a id="a0ae5a94c7cfa0302b79eb15e00579dd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ae5a94c7cfa0302b79eb15e00579dd5">&#9670;&nbsp;</a></span>SolverType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -353,7 +353,7 @@ template&lt;class OperatorImp , class DiscreteFunctionImp , TimeStepperMethods m
 template&lt;class OperatorImp , class DiscreteFunctionImp , TimeStepperMethods method = TimeStepperMethods::implicit_euler, XT::LA::Backends container_backend = XT::LA::default_sparse_backend&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef XT::LA::Solver&lt;<a class="el" href="a03297.html#acf5d9a9ebb15b3051bbfb07541b046af">SolverMatrixType</a>, <a class="el" href="a03297.html#a14188c0b72856e20120a0e1569d549c5">CommunicatorType</a>&gt; <a class="el" href="a03297.html">Dune::GDT::DiagonallyImplicitRungeKuttaTimeStepper</a>&lt; OperatorImp, DiscreteFunctionImp, method, container_backend &gt;::<a class="el" href="a03297.html#a071a85c7b3d620e24242a7af47154881">SolverType</a></td>
+          <td class="memname">typedef XT::LA::Solver&lt;<a class="el" href="a03297.html#acf5d9a9ebb15b3051bbfb07541b046af">SolverMatrixType</a>, <a class="el" href="a03297.html#a8e3d57cd3fba9c4434ece9f9124afb54">DofCommunicatorType</a>&gt; <a class="el" href="a03297.html">Dune::GDT::DiagonallyImplicitRungeKuttaTimeStepper</a>&lt; OperatorImp, DiscreteFunctionImp, method, container_backend &gt;::<a class="el" href="a03297.html#a0ae5a94c7cfa0302b79eb15e00579dd5">SolverType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">

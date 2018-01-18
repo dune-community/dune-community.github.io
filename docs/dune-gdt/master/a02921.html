@@ -100,10 +100,10 @@ Public Types</h2></td></tr>
 <tr class="separator:a86a8a841cae9e7d73b185c63acc20e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a458c83311b54d6254139a47e95575704"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02725.html">BaseFunctionSet::FiniteVolume</a>&lt; <a class="el" href="a02921.html#a299856772fff9444ba7968dac8a3ade5">EntityType</a>, typename GridLayerType::ctype, GridLayerType::dimension, <a class="el" href="a02921.html#abbff19db99e8e2aab0c7fdd23c1dad27">RangeFieldType</a>, rangeDim, rangeDimCols &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02921.html#a458c83311b54d6254139a47e95575704">BaseFunctionSetType</a></td></tr>
 <tr class="separator:a458c83311b54d6254139a47e95575704"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb6bbd9bbe2ea02ea5630793d6b190d8"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a03109.html">CommunicationChooser</a>&lt; <a class="el" href="a02921.html#ad43ac1c7576a6147635de1f71276b49b">GridLayerType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02921.html#adb6bbd9bbe2ea02ea5630793d6b190d8">CommunicationChooserType</a></td></tr>
-<tr class="separator:adb6bbd9bbe2ea02ea5630793d6b190d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab129c517cfc7965a0c56528d639cb07b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a03109.html#a21900bba4a7ab2b930fd27ea932fe50e">CommunicationChooserType::Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02921.html#ab129c517cfc7965a0c56528d639cb07b">CommunicatorType</a></td></tr>
-<tr class="separator:ab129c517cfc7965a0c56528d639cb07b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a756d833a8547564e7b621adcdf6589b1"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a03109.html">DofCommunicationChooser</a>&lt; <a class="el" href="a02921.html#ad43ac1c7576a6147635de1f71276b49b">GridLayerType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02921.html#a756d833a8547564e7b621adcdf6589b1">DofCommunicationChooserType</a></td></tr>
+<tr class="separator:a756d833a8547564e7b621adcdf6589b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18793a9a7d550da8cd99175de68ad3bc"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a03109.html#a4a8775537c267ec00e1834115d1e7c1d">DofCommunicationChooserType::Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02921.html#a18793a9a7d550da8cd99175de68ad3bc">DofCommunicatorType</a></td></tr>
+<tr class="separator:a18793a9a7d550da8cd99175de68ad3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -156,38 +156,6 @@ template&lt;class GridLayerImp , class RangeFieldImp , size_t rangeDim, size_t r
 
 </div>
 </div>
-<a id="adb6bbd9bbe2ea02ea5630793d6b190d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb6bbd9bbe2ea02ea5630793d6b190d8">&#9670;&nbsp;</a></span>CommunicationChooserType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridLayerImp , class RangeFieldImp , size_t rangeDim, size_t rangeDimCols&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a03109.html">CommunicationChooser</a>&lt;<a class="el" href="a02921.html#ad43ac1c7576a6147635de1f71276b49b">GridLayerType</a>&gt; <a class="el" href="a02921.html">Dune::GDT::internal::FvSpaceTraits</a>&lt; GridLayerImp, RangeFieldImp, rangeDim, rangeDimCols &gt;::<a class="el" href="a02921.html#adb6bbd9bbe2ea02ea5630793d6b190d8">CommunicationChooserType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab129c517cfc7965a0c56528d639cb07b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab129c517cfc7965a0c56528d639cb07b">&#9670;&nbsp;</a></span>CommunicatorType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridLayerImp , class RangeFieldImp , size_t rangeDim, size_t rangeDimCols&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a03109.html#a21900bba4a7ab2b930fd27ea932fe50e">CommunicationChooserType::Type</a> <a class="el" href="a02921.html">Dune::GDT::internal::FvSpaceTraits</a>&lt; GridLayerImp, RangeFieldImp, rangeDim, rangeDimCols &gt;::<a class="el" href="a02921.html#ab129c517cfc7965a0c56528d639cb07b">CommunicatorType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aaed93fe9d201b886c3e4bf36238f19c0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaed93fe9d201b886c3e4bf36238f19c0">&#9670;&nbsp;</a></span>derived_type</h2>
 
@@ -198,6 +166,38 @@ template&lt;class GridLayerImp , class RangeFieldImp , size_t rangeDim, size_t r
       <table class="memname">
         <tr>
           <td class="memname">typedef <a class="el" href="a02917.html">FvSpace</a>&lt;GridLayerImp, RangeFieldImp, rangeDim, rangeDimCols&gt; <a class="el" href="a02921.html">Dune::GDT::internal::FvSpaceTraits</a>&lt; GridLayerImp, RangeFieldImp, rangeDim, rangeDimCols &gt;::<a class="el" href="a02921.html#aaed93fe9d201b886c3e4bf36238f19c0">derived_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a756d833a8547564e7b621adcdf6589b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a756d833a8547564e7b621adcdf6589b1">&#9670;&nbsp;</a></span>DofCommunicationChooserType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class RangeFieldImp , size_t rangeDim, size_t rangeDimCols&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a03109.html">DofCommunicationChooser</a>&lt;<a class="el" href="a02921.html#ad43ac1c7576a6147635de1f71276b49b">GridLayerType</a>&gt; <a class="el" href="a02921.html">Dune::GDT::internal::FvSpaceTraits</a>&lt; GridLayerImp, RangeFieldImp, rangeDim, rangeDimCols &gt;::<a class="el" href="a02921.html#a756d833a8547564e7b621adcdf6589b1">DofCommunicationChooserType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a18793a9a7d550da8cd99175de68ad3bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18793a9a7d550da8cd99175de68ad3bc">&#9670;&nbsp;</a></span>DofCommunicatorType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class RangeFieldImp , size_t rangeDim, size_t rangeDimCols&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a03109.html#a4a8775537c267ec00e1834115d1e7c1d">DofCommunicationChooserType::Type</a> <a class="el" href="a02921.html">Dune::GDT::internal::FvSpaceTraits</a>&lt; GridLayerImp, RangeFieldImp, rangeDim, rangeDimCols &gt;::<a class="el" href="a02921.html#a18793a9a7d550da8cd99175de68ad3bc">DofCommunicatorType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">

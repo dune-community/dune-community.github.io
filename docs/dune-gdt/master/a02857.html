@@ -93,9 +93,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af2052f3df64d39e794564a99845f4b93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02857.html#af2052f3df64d39e794564a99845f4b93">DisjointPartitioningDataHandle</a> (const <a class="el" href="a00504.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &amp;space_, VectorType &amp;v_, bool init_vector=true)</td></tr>
-<tr class="memdesc:af2052f3df64d39e794564a99845f4b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="a02857.html" title="GatherScatter data handle for creating a disjoint DOF partitioning. ">DisjointPartitioningDataHandle</a>.  <a href="#af2052f3df64d39e794564a99845f4b93">More...</a><br /></td></tr>
-<tr class="separator:af2052f3df64d39e794564a99845f4b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fc41deb49d00f6cd08323748026e8ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02857.html#a4fc41deb49d00f6cd08323748026e8ce">DisjointPartitioningDataHandle</a> (const <a class="el" href="a00504.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &amp;space, VectorType &amp;v, bool init_vector=true)</td></tr>
+<tr class="memdesc:a4fc41deb49d00f6cd08323748026e8ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="a02857.html" title="GatherScatter data handle for creating a disjoint DOF partitioning. ">DisjointPartitioningDataHandle</a>.  <a href="#a4fc41deb49d00f6cd08323748026e8ce">More...</a><br /></td></tr>
+<tr class="separator:a4fc41deb49d00f6cd08323748026e8ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93b89c477beb37d74f337ca7d0606371"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02825.html#a93b89c477beb37d74f337ca7d0606371">contains</a> (int dim, int codim) const</td></tr>
 <tr class="memdesc:a93b89c477beb37d74f337ca7d0606371"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if data for this codim should be communicated  <a href="#a93b89c477beb37d74f337ca7d0606371">More...</a><br /></td></tr>
 <tr class="separator:a93b89c477beb37d74f337ca7d0606371"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,8 +163,8 @@ class Dune::GDT::DisjointPartitioningDataHandle&lt; SpaceType, VectorType &gt;</
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af2052f3df64d39e794564a99845f4b93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2052f3df64d39e794564a99845f4b93">&#9670;&nbsp;</a></span>DisjointPartitioningDataHandle()</h2>
+<a id="a4fc41deb49d00f6cd08323748026e8ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fc41deb49d00f6cd08323748026e8ce">&#9670;&nbsp;</a></span>DisjointPartitioningDataHandle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -178,13 +178,13 @@ template&lt;class SpaceType, class VectorType&gt; </div>
           <td class="memname"><a class="el" href="a02857.html">Dune::GDT::DisjointPartitioningDataHandle</a>&lt; <a class="el" href="a00504.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType &gt;::<a class="el" href="a02857.html">DisjointPartitioningDataHandle</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00504.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &amp;&#160;</td>
-          <td class="paramname"><em>space_</em>, </td>
+          <td class="paramname"><em>space</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">VectorType &amp;&#160;</td>
-          <td class="paramname"><em>v_</em>, </td>
+          <td class="paramname"><em>v</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -209,8 +209,8 @@ template&lt;class SpaceType, class VectorType&gt; </div>
 <p>Creates a new <a class="el" href="a02857.html" title="GatherScatter data handle for creating a disjoint DOF partitioning. ">DisjointPartitioningDataHandle</a> and by default initializes the result vector with the current MPI rank. If you have already done that externally, you can skip the initialization.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">space_</td><td>The GridFunctionSpace to operate on. </td></tr>
-    <tr><td class="paramname">v_</td><td>The result vector. </td></tr>
+    <tr><td class="paramname">space</td><td>The GridFunctionSpace to operate on. </td></tr>
+    <tr><td class="paramname">v</td><td>The result vector. </td></tr>
     <tr><td class="paramname">init_vector</td><td>Flag to control whether the result vector will be initialized. </td></tr>
   </table>
   </dd>

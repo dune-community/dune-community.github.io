@@ -93,9 +93,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad4286753820ea9877b5bf383be1d03ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02865.html#ad4286753820ea9877b5bf383be1d03ce">SharedDOFDataHandle</a> (const <a class="el" href="a00504.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &amp;space_, VectorType &amp;v_, bool init_vector=true)</td></tr>
-<tr class="memdesc:ad4286753820ea9877b5bf383be1d03ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="a02865.html" title="Data handle for marking shared DOFs. ">SharedDOFDataHandle</a>.  <a href="#ad4286753820ea9877b5bf383be1d03ce">More...</a><br /></td></tr>
-<tr class="separator:ad4286753820ea9877b5bf383be1d03ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33126980da47261dea94f8ab23ee5281"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02865.html#a33126980da47261dea94f8ab23ee5281">SharedDOFDataHandle</a> (const <a class="el" href="a00504.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &amp;space, VectorType &amp;v, bool init_vector=true)</td></tr>
+<tr class="memdesc:a33126980da47261dea94f8ab23ee5281"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="a02865.html" title="Data handle for marking shared DOFs. ">SharedDOFDataHandle</a>.  <a href="#a33126980da47261dea94f8ab23ee5281">More...</a><br /></td></tr>
+<tr class="separator:a33126980da47261dea94f8ab23ee5281"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93b89c477beb37d74f337ca7d0606371"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02825.html#a93b89c477beb37d74f337ca7d0606371">contains</a> (int dim, int codim) const</td></tr>
 <tr class="memdesc:a93b89c477beb37d74f337ca7d0606371"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if data for this codim should be communicated  <a href="#a93b89c477beb37d74f337ca7d0606371">More...</a><br /></td></tr>
 <tr class="separator:a93b89c477beb37d74f337ca7d0606371"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,8 +163,8 @@ class Dune::GDT::SharedDOFDataHandle&lt; SpaceType, VectorType &gt;</h3>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad4286753820ea9877b5bf383be1d03ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4286753820ea9877b5bf383be1d03ce">&#9670;&nbsp;</a></span>SharedDOFDataHandle()</h2>
+<a id="a33126980da47261dea94f8ab23ee5281"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33126980da47261dea94f8ab23ee5281">&#9670;&nbsp;</a></span>SharedDOFDataHandle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -178,13 +178,13 @@ template&lt;class SpaceType, class VectorType&gt; </div>
           <td class="memname"><a class="el" href="a02865.html">Dune::GDT::SharedDOFDataHandle</a>&lt; <a class="el" href="a00504.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType &gt;::<a class="el" href="a02865.html">SharedDOFDataHandle</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00504.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &amp;&#160;</td>
-          <td class="paramname"><em>space_</em>, </td>
+          <td class="paramname"><em>space</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">VectorType &amp;&#160;</td>
-          <td class="paramname"><em>v_</em>, </td>
+          <td class="paramname"><em>v</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -209,8 +209,8 @@ template&lt;class SpaceType, class VectorType&gt; </div>
 <p>Creates a new <a class="el" href="a02865.html" title="Data handle for marking shared DOFs. ">SharedDOFDataHandle</a> and by default initializes the result vector with the correct value of false. If you have already done that externally, you can skip the initialization.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">space_</td><td>The GridFunctionSpace to operate on. </td></tr>
-    <tr><td class="paramname">v_</td><td>The result vector. </td></tr>
+    <tr><td class="paramname">space</td><td>The GridFunctionSpace to operate on. </td></tr>
+    <tr><td class="paramname">v</td><td>The result vector. </td></tr>
     <tr><td class="paramname">init_vector</td><td>Flag to control whether the result vector will be initialized. </td></tr>
   </table>
   </dd>

@@ -96,8 +96,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga946c36d13abbeb5f2d47cbdff85cee07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae6eb5417acee20da0c045355aa975cb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a03017.html#aa23341718ce8908c238218ba600404ef">BaseFunctionSetType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00499.html#gae6eb5417acee20da0c045355aa975cb8">Dune::GDT::SpaceInterface&lt; Traits, domainDim, rangeDim, rangeDimCols &gt;::base_function_set</a> (const <a class="el" href="a03017.html#a69a2804414ed68581c896fb27231c861">EntityType</a> &amp;entity) const</td></tr>
 <tr class="separator:gae6eb5417acee20da0c045355aa975cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5b31c1916ede9ec101c0451872501d9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a03017.html#a058688408599e782739c619968084ae9">CommunicatorType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00499.html#ga5b31c1916ede9ec101c0451872501d9e">Dune::GDT::SpaceInterface&lt; Traits, domainDim, rangeDim, rangeDimCols &gt;::communicator</a> () const</td></tr>
-<tr class="separator:ga5b31c1916ede9ec101c0451872501d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90fb2d85c657c9012795fd5063814067"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a03017.html#a9f447d5ba0b0dfe55122b407e6b593d8">DofCommunicatorType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00499.html#ga90fb2d85c657c9012795fd5063814067">Dune::GDT::SpaceInterface&lt; Traits, domainDim, rangeDim, rangeDimCols &gt;::dof_communicator</a> () const</td></tr>
+<tr class="separator:ga90fb2d85c657c9012795fd5063814067"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8636a400269fc49e2ac231493df92ba0"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00499.html#ga8636a400269fc49e2ac231493df92ba0">Dune::GDT::SpaceInterface&lt; Traits, domainDim, rangeDim, rangeDimCols &gt;::associates_data_with</a> (int codim)</td></tr>
 <tr class="memdesc:ga8636a400269fc49e2ac231493df92ba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">communication data handles may require to know this to setup buffers and trnasmission patterns  <a href="#ga8636a400269fc49e2ac231493df92ba0">More...</a><br /></td></tr>
 <tr class="separator:ga8636a400269fc49e2ac231493df92ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,33 +206,6 @@ template&lt;class Traits, size_t domainDim, size_t rangeDim, size_t rangeDimCols
 
 </div>
 </div>
-<a id="ga5b31c1916ede9ec101c0451872501d9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5b31c1916ede9ec101c0451872501d9e">&#9670;&nbsp;</a></span>communicator()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits, size_t domainDim, size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a03017.html#a058688408599e782739c619968084ae9">CommunicatorType</a>&amp; <a class="el" href="a03017.html">Dune::GDT::SpaceInterface</a>&lt; Traits, domainDim, rangeDim, rangeDimCols &gt;::communicator </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga7e090ad87de4bc9a283ad100eadf4cbd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga7e090ad87de4bc9a283ad100eadf4cbd">&#9670;&nbsp;</a></span>compute_pattern()</h2>
 
@@ -273,6 +246,33 @@ template&lt;class GL , class S , size_t d, size_t r, size_t rC&gt; </div>
 
 <p>Computes the appropriate sparsity pattern. </p>
 <dl class="section note"><dt>Note</dt><dd>This method can be implemented in a derived class by a forward to one of the methods provided by this class, namely <a class="el" href="a00500.html#gaba6092c1e7d72b7358f369e983a1166c">compute_volume_pattern()</a>, <a class="el" href="a00500.html#ga420494c7ae746c05929f8c745b93c7e8">compute_face_pattern()</a> or <a class="el" href="a00500.html#gab4aa0fefbbab01d95ceb9eb9b7f15be5">compute_face_and_volume_pattern()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="ga90fb2d85c657c9012795fd5063814067"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga90fb2d85c657c9012795fd5063814067">&#9670;&nbsp;</a></span>dof_communicator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits, size_t domainDim, size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a03017.html#a9f447d5ba0b0dfe55122b407e6b593d8">DofCommunicatorType</a>&amp; <a class="el" href="a03017.html">Dune::GDT::SpaceInterface</a>&lt; Traits, domainDim, rangeDim, rangeDimCols &gt;::dof_communicator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
