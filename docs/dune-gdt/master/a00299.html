@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: rhs.hh File Reference</title>
+<title>dune-gdt: cg.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_8eae17099f455a1cfbd2c25e13098b8a.html">operators</a></li><li class="navelem"><a class="el" href="dir_8fbd9d79de26bd0c08e4e5fb2ef2e7c5.html">fv</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_43d0cc378a1b7044a9ebea179385123e.html">spaces</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -67,40 +67,33 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">rhs.hh File Reference</div>  </div>
+<div class="title">cg.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;type_traits&gt;</code><br />
-<code>#include &lt;dune/xt/grid/walker/functors.hh&gt;</code><br />
-<code>#include &lt;dune/xt/la/container/interfaces.hh&gt;</code><br />
-<code>#include &lt;<a class="el" href="a04771_source.html">dune/gdt/functionals/base.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a04963_source.html">dune/gdt/local/functionals/integrals.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a04939_source.html">dune/gdt/local/integrands/fv.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a04774_source.html">dune/gdt/operators/base.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a04966_source.html">dune/gdt/local/operators/integrals.hh</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;dune/common/deprecated.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/type_traits.hh&gt;</code><br />
+<code>#include &lt;dune/xt/grid/layers.hh&gt;</code><br />
+<code>#include &lt;dune/xt/grid/gridprovider/provider.hh&gt;</code><br />
+<code>#include &quot;<a class="el" href="a04847_source.html">interface.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a04742_source.html">cg/default.hh</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="a00257_source.html">dune/gdt/playground/spaces/block.hh</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00302_source.html">cg.lib.hh</a>&quot;</code><br />
 </div>
 <p><a href="a00299_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02253.html">Dune::GDT::AdvectionRhsOperator&lt; RhsEvaluationImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02622.html">Dune::GDT::CgSpaceProvider&lt; GridType, layer_type, backend_type, polOrder, RangeFieldType, dimRange, dimRangeCols, grid_backend_type &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02257.html">Dune::GDT::internal::AdvectionRhsOperatorTraits&lt; RhsEvaluationImp &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02261.html">Dune::GDT::MatrixSolveFunctor&lt; GridLayerType, MatrixType, DiscreteFunctionType &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02265.html">Dune::GDT::MatrixApplyFunctor&lt; GridLayerType, MatrixType, DiscreteFunctionType &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02253.html">Dune::GDT::AdvectionRhsOperator&lt; RhsEvaluationImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02634.html">Dune::GDT::BlockCgSpaceProvider&lt; GridType, layer_type, backend_type, polOrder, RangeFieldType, dimRange, dimRangeCols, grid_backend_type &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00503"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00503.html">Dune</a></td></tr>
+<tr class="memitem:a00380"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00380.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00504"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00504.html">Dune::GDT</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00505"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00505.html">Dune::GDT::internal</a></td></tr>
+<tr class="memitem:a00381"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00381.html">Dune::GDT</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

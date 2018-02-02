@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: discretefunction.hh File Reference</title>
+<title>dune-gdt: entropybased.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,41 +59,56 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_e5964b6fd5a6d82d96e1215fe4a1a66d.html">local</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_e5964b6fd5a6d82d96e1215fe4a1a66d.html">local</a></li><li class="navelem"><a class="el" href="dir_b3c312569a7138f19b17aa14076f1d0d.html">fluxes</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">discretefunction.hh File Reference</div>  </div>
+<div class="title">entropybased.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;type_traits&gt;</code><br />
-<code>#include &lt;dune/common/deprecated.hh&gt;</code><br />
+<div class="textblock"><code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;unordered_map&gt;</code><br />
+<code>#include &lt;dune/grid/utility/globalindexset.hh&gt;</code><br />
 <code>#include &lt;dune/xt/common/memory.hh&gt;</code><br />
-<code>#include &lt;dune/xt/functions/interfaces.hh&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00128_source.html">dune/gdt/local/dof-vector.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a04981_source.html">dune/gdt/spaces/interface.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a04978_source.html">dune/gdt/spaces/fv/interface.hh</a>&gt;</code><br />
+<code>#include &lt;dune/xt/common/math.hh&gt;</code><br />
+<code>#include &lt;dune/xt/la/algorithms.hh&gt;</code><br />
+<code>#include &lt;dune/xt/la/container/common.hh&gt;</code><br />
+<code>#include &lt;dune/xt/la/container/unit_matrices.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04862_source.html">dune/gdt/local/fluxes/interfaces.hh</a>&gt;</code><br />
+<code>#include &lt;dune/gdt/test/hyperbolic/problems/momentmodels/basisfunctions/hatfunctions.hh&gt;</code><br />
 </div>
 <p><a href="a00125_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01377.html">Dune::GDT::ConstLocalDiscreteFunction&lt; SpaceImp, VectorImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01274.html">Dune::GDT::EntropyBasedLocalFlux&lt; BasisfunctionImp, GridLayerImp, U, quadratureDim &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01381.html">Dune::GDT::LocalDiscreteFunction&lt; SpaceImp, VectorImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01278.html">Dune::GDT::EntropyBasedLocalFlux&lt; BasisfunctionImp, GridLayerImp, U, quadratureDim &gt;::Localfunction</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01290.html">Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::HatFunctions&lt; typename U::DomainFieldType, 1, typename U::RangeFieldType, U::dimRange, 1, 1 &gt;, GridLayerImp, U, 1 &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01294.html">Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::HatFunctions&lt; typename U::DomainFieldType, 1, typename U::RangeFieldType, U::dimRange, 1, 1 &gt;, GridLayerImp, U, 1 &gt;::Localfunction</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00503"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00503.html">Dune</a></td></tr>
+<tr class="memitem:a00380"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00380.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00504"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00504.html">Dune::GDT</a></td></tr>
+<tr class="memitem:a00381"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00381.html">Dune::GDT</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a81e5609284c505b10ffff369ba619308"><td class="memTemplParams" colspan="2">template&lt;class MatrixType , size_t size&gt; </td></tr>
+<tr class="memitem:a81e5609284c505b10ffff369ba619308"><td class="memTemplItemLeft" align="right" valign="top">static const std::unique_ptr&lt; const MatrixType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00381.html#a81e5609284c505b10ffff369ba619308">Dune::GDT::unit_matrix</a> = XT::LA::UnitMatrix&lt;MatrixType&gt;::get(size, 0)</td></tr>
+<tr class="separator:a81e5609284c505b10ffff369ba619308"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

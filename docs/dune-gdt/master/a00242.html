@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: yasp_fem_eigen.cc File Reference</title>
+<title>dune-gdt: OS2015.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,16 +59,58 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_8eae17099f455a1cfbd2c25e13098b8a.html">operators</a></li><li class="navelem"><a class="el" href="dir_87b18a23d9e51f5817cb49ca1cea9468.html">elliptic-ipdg.bindings</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_1eea3f25d96e3194dad91b986d4f2dcc.html">playground</a></li><li class="navelem"><a class="el" href="dir_740a4dbb7f0adb66affc16f39ba226c0.html">operators</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">yasp_fem_eigen.cc File Reference</div>  </div>
+<div class="title">OS2015.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;config.h&quot;</code><br />
-</div></div><!-- contents -->
+<div class="textblock"><code>#include &lt;dune/common/typetraits.hh&gt;</code><br />
+<code>#include &lt;dune/geometry/quadraturerules.hh&gt;</code><br />
+<code>#include &lt;dune/geometry/referenceelements.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/fmatrix.hh&gt;</code><br />
+<code>#include &lt;dune/xt/la/container/eigen.hh&gt;</code><br />
+<code>#include &lt;dune/xt/la/eigen-solver.hh&gt;</code><br />
+<code>#include &lt;dune/xt/grid/boundaryinfo/interfaces.hh&gt;</code><br />
+<code>#include &lt;dune/xt/grid/entity.hh&gt;</code><br />
+<code>#include &lt;dune/xt/grid/type_traits.hh&gt;</code><br />
+<code>#include &lt;dune/xt/functions/derived.hh&gt;</code><br />
+<code>#include &lt;dune/xt/functions/interfaces/localizable-function.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04733_source.html">dune/gdt/discretefunction/default.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04832_source.html">dune/gdt/local/operators/integrals.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04928_source.html">dune/gdt/local/integrands/lambda.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04718_source.html">dune/gdt/operators/base.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00191_source.html">dune/gdt/operators/fluxreconstruction.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04754_source.html">dune/gdt/spaces/rt/default.hh</a>&gt;</code><br />
+</div>
+<p><a href="a00242_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02274.html">Dune::GDT::OS2015::internal::ResidualProductBase&lt; ProductGridLayer, ReconstructionGridLayer &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02278.html">Dune::GDT::OS2015::ResidualProduct&lt; ProductGridLayer, ReconstructionGridLayer &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02282.html">Dune::GDT::OS2015::DiffusiveFluxProduct&lt; ProductGridLayer, ReconstructionGridLayer &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00380"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00380.html">Dune</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00381"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00381.html">Dune::GDT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00389"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00389.html">Dune::GDT::OS2015</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00390"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00390.html">Dune::GDT::OS2015::internal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

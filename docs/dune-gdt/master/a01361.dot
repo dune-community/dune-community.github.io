@@ -1,0 +1,39 @@
+digraph "Dune::GDT::LocalNumericalBoundaryFluxInterface&lt; Traits &gt;"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="Dune::GDT::LocalNumerical\lBoundaryFluxInterface\<\l Traits \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="XT::CRTPInterface\<\l LocalNumericalBoundaryFlux\lInterface\< Traits \>, Traits \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node2 -> Node0 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Dune::GDT::internal\l::IsNumericalBoundaryFlux",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01346.html"];
+  Node0 -> Node3 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::KineticLocal\lNumericalBoundaryFluxTraits\l\< AnalyticalFluxImp, BoundaryValue\lImp, BasisfunctionImp, GridLayerImp,\l quadratureDim \> \>" ,fontname="Helvetica"];
+  Node3 [label="Dune::GDT::LocalNumerical\lBoundaryFluxInterface\<\l internal::KineticLocalNumerical\lBoundaryFluxTraits\< AnalyticalFluxImp,\l BoundaryValueImp, BasisfunctionImp,\l GridLayerImp, quadratureDim \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01362.html"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Dune::GDT::KineticLocalNumerical\lBoundaryFlux\< AnalyticalFluxImp,\l BoundaryValueImp, BasisfunctionImp,\l GridLayerImp, quadratureDim \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01378.html",tooltip="Kinetic flux evaluation for Dirichlet boundary intersections. "];
+  Node0 -> Node5 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::ForceLocalDirichlet\lNumericalBoundaryFluxTraits\l\< AnalyticalFluxImp, BoundaryValueImp,\l LocalizableFunctionImp \> \>" ,fontname="Helvetica"];
+  Node5 [label="Dune::GDT::LocalNumerical\lBoundaryFluxInterface\<\l internal::ForceLocalDirichletNumerical\lBoundaryFluxTraits\< AnalyticalFluxImp,\l BoundaryValueImp, LocalizableFunctionImp \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01362.html"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Dune::GDT::ForceLocalDirichlet\lNumericalBoundaryFlux\< Analytical\lFluxImp, BoundaryValueImp, LocalizableFunctionImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01302.html",tooltip="Lax-Friedrichs flux evaluation for Dirichlet boundary intersections. "];
+  Node0 -> Node7 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::LaxFriedrichs\lLocalAbsorbingNumericalBoundary\lFluxTraits\< AnalyticalFluxImp,\l LocalizableFunctionImp \> \>" ,fontname="Helvetica"];
+  Node7 [label="Dune::GDT::LocalNumerical\lBoundaryFluxInterface\<\l internal::LaxFriedrichsLocalAbsorbing\lNumericalBoundaryFluxTraits\< AnalyticalFlux\lImp, LocalizableFunctionImp \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01362.html"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Dune::GDT::LaxFriedrichs\lLocalAbsorbingNumericalBoundary\lFlux\< AnalyticalFluxImp, Localizable\lFunctionImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01402.html",tooltip="Lax-Friedrichs flux evaluation for absorbing boundary conditions on boundary intersections. "];
+  Node0 -> Node9 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::GodunovLocal\lDirichletNumericalBoundaryFlux\lTraits\< AnalyticalFluxImp,\l BoundaryValueImp \> \>" ,fontname="Helvetica"];
+  Node9 [label="Dune::GDT::LocalNumerical\lBoundaryFluxInterface\<\l internal::GodunovLocalDirichlet\lNumericalBoundaryFluxTraits\<\l AnalyticalFluxImp, BoundaryValueImp \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01362.html"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Dune::GDT::GodunovLocalDirichlet\lNumericalBoundaryFlux\< AnalyticalFlux\lImp, BoundaryValueImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01318.html",tooltip="Godunov flux evaluation for Dirichlet boundary intersections. "];
+  Node0 -> Node11 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::LaxWendroffLocal\lDirichletNumericalBoundaryFluxTraits\l\< AnalyticalFluxImp, BoundaryValueImp,\l LocalizableFunctionImp \> \>" ,fontname="Helvetica"];
+  Node11 [label="Dune::GDT::LocalNumerical\lBoundaryFluxInterface\<\l internal::LaxWendroffLocalDirichlet\lNumericalBoundaryFluxTraits\< AnalyticalFlux\lImp, BoundaryValueImp, LocalizableFunctionImp \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01362.html"];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Dune::GDT::LaxWendroffLocal\lDirichletNumericalBoundaryFlux\l\< AnalyticalFluxImp, BoundaryValueImp,\l LocalizableFunctionImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01434.html",tooltip="Lax-Wendroff flux evaluation for Dirichlet boundary intersections. "];
+  Node0 -> Node13 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::MustaLocalDirichlet\lNumericalBoundaryFluxTraits\l\< AnalyticalFluxImp, BoundaryValueImp,\l LocalizableFunctionImp \> \>" ,fontname="Helvetica"];
+  Node13 [label="Dune::GDT::LocalNumerical\lBoundaryFluxInterface\<\l internal::MustaLocalDirichletNumerical\lBoundaryFluxTraits\< AnalyticalFluxImp,\l BoundaryValueImp, LocalizableFunctionImp \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01362.html"];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="Dune::GDT::MustaLocalDirichlet\lNumericalBoundaryFlux\< Analytical\lFluxImp, BoundaryValueImp, LocalizableFunctionImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01454.html",tooltip="MUSTA flux evaluation for Dirichlet boundary intersections. "];
+  Node0 -> Node15 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::LaxFriedrichs\lLocalDirichletNumericalBoundary\lFluxTraits\< AnalyticalFluxImp,\l BoundaryValueImp, LocalizableFunctionImp \> \>" ,fontname="Helvetica"];
+  Node15 [label="Dune::GDT::LocalNumerical\lBoundaryFluxInterface\<\l internal::LaxFriedrichsLocalDirichlet\lNumericalBoundaryFluxTraits\< AnalyticalFlux\lImp, BoundaryValueImp, LocalizableFunctionImp \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01362.html"];
+  Node15 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="Dune::GDT::LaxFriedrichs\lLocalDirichletNumericalBoundary\lFlux\< AnalyticalFluxImp, BoundaryValue\lImp, LocalizableFunctionImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01398.html",tooltip="Lax-Friedrichs flux evaluation for Dirichlet boundary intersections. "];
+}
