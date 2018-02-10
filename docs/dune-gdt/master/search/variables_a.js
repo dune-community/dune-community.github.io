@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['m_5f',['M_',['../a01274.html#a2d2ff3d604e5a6359e1c58c0610e0289',1,'Dune::GDT::EntropyBasedLocalFlux']]],
-  ['mutexes_5f',['mutexes_',['../a01274.html#a414734b5394e4272a87cdf5cc358001d',1,'Dune::GDT::EntropyBasedLocalFlux::mutexes_()'],['../a01290.html#aa4ba32c85a23ea3f295261ff72ce6bfd',1,'Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::HatFunctions&lt; typename U::DomainFieldType, 1, typename U::RangeFieldType, U::dimRange, 1, 1 &gt;, GridLayerImp, U, 1 &gt;::mutexes_()']]]
+  ['name_5f',['name_',['../a01136.html#a75aac5e5d0646a6df7e5323a25c85f02',1,'Dune::GDT::EntropyBasedLocalFlux::name_()'],['../a01152.html#a91889b2a7cf53e007abd8334a8b915db',1,'Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::HatFunctions&lt; typename U::DomainFieldType, 1, typename U::RangeFieldType, U::dimRange, 1, 1 &gt;, GridLayerImp, U, 1 &gt;::name_()']]],
+  ['needs_5fgrid_5fview',['needs_grid_view',['../a02124.html#a62e2be0069570220b8d831cfac575db8',1,'Dune::GDT::internal::BlockSpaceTraits::needs_grid_view()'],['../a02560.html#ad65666a03b58de73e306cef542a1b212',1,'Dune::GDT::internal::FvSpaceTraits::needs_grid_view()'],['../a02788.html#ab1deac3ee7d432a65effa129f278ee8a',1,'Dune::GDT::internal::DefaultProductSpaceTraits::needs_grid_view()']]],
+  ['num_5ffactors',['num_factors',['../a02648.html#aaa72e384b82c61396a75c1d77d773747',1,'Dune::GDT::ProductSpaceInterface']]]
 ];

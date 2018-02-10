@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['unit_5fmatrix',['unit_matrix',['../a00381.html#a81e5609284c505b10ffff369ba619308',1,'Dune::GDT']]]
+  ['v_5fpoints_5f',['v_points_',['../a01152.html#aeb3cead9ad5e9c26cfc860532a9aaa3d',1,'Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::HatFunctions&lt; typename U::DomainFieldType, 1, typename U::RangeFieldType, U::dimRange, 1, 1 &gt;, GridLayerImp, U, 1 &gt;']]],
+  ['value',['value',['../a02780.html#a5bf05e5686e5e5566de4a5f93fc0cebe',1,'Dune::GDT::internal::allContinuous::value()'],['../a02784.html#a5f8df22815491ce3431a364ccc2bab06',1,'Dune::GDT::internal::allContinuous&lt; LastSpaceType &gt;::value()']]]
 ];

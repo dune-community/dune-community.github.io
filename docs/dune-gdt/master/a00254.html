@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: block.bindings.hh File Reference</title>
+<title>dune-gdt: Dune::GDT::LocalSipdgIntegrands::internal Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,270 +59,115 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_1eea3f25d96e3194dad91b986d4f2dcc.html">playground</a></li><li class="navelem"><a class="el" href="dir_4ffd1a13c5d71df01de237c0b18f9ccc.html">spaces</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a00253.html">LocalSipdgIntegrands</a></li><li class="navelem"><a class="el" href="a00254.html">internal</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">block.bindings.hh File Reference</div>  </div>
+<div class="title">Dune::GDT::LocalSipdgIntegrands::internal Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;dune/pybindxi/pybind11.h&gt;</code><br />
-<code>#include &lt;dune/grid/common/rangegenerators.hh&gt;</code><br />
-<code>#include &lt;dune/xt/common/numeric_cast.hh&gt;</code><br />
-<code>#include &lt;dune/xt/common/string.hh&gt;</code><br />
-<code>#include &lt;dune/xt/la/container.hh&gt;</code><br />
-<code>#include &lt;dune/xt/grid/gridprovider/provider.hh&gt;</code><br />
-<code>#include &lt;dune/xt/grid/dd/subdomains/grid.hh&gt;</code><br />
-<code>#include &lt;dune/xt/grid/grids.bindings.hh&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00020_source.html">dune/gdt/assembler/system.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a04733_source.html">dune/gdt/discretefunction/default.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00287_source.html">dune/gdt/projections.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00347_source.html">dune/gdt/spaces.bindings.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00371_source.html">dune/gdt/type_traits.hh</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="a00257_source.html">block.hh</a>&quot;</code><br />
-</div>
-<p><a href="a00254_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02310.html">Dune::GDT::bindings::BlockMapper&lt; SP &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01644.html">BoundaryLHSTraits</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02314.html">Dune::GDT::bindings::BlockSpace&lt; SP &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01648.html">BoundaryRHSTraits</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:a00380"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00380.html">Dune</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00381"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00381.html">Dune::GDT</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00392"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00392.html">Dune::GDT::bindings</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01640.html">InnerTraits</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a36f38fd3930a46465a5839598b94a4e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00254.html#a36f38fd3930a46465a5839598b94a4e8">_DUNE_GDT_SPACES_BLOCK_BIND</a>(_m,  _GRID,  _s_type,  _s_backend,  _p)</td></tr>
-<tr class="separator:a36f38fd3930a46465a5839598b94a4e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3689de8a36731aa79a5377e5fadfaf20"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00254.html#a3689de8a36731aa79a5377e5fadfaf20">_DUNE_GDT_SPACES_BLOCK_BIND_ALU</a>(_m,  _s_type,  _s_backend,  _p)</td></tr>
-<tr class="separator:a3689de8a36731aa79a5377e5fadfaf20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a154c486a0c531bb050572666cc63f83e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00254.html#a154c486a0c531bb050572666cc63f83e">_DUNE_GDT_SPACES_BLOCK_BIND_YASP</a>(_m,  _s_type,  _s_backend,  _p)</td></tr>
-<tr class="separator:a154c486a0c531bb050572666cc63f83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f34f07a84e060736d7ba5b1da147948"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00254.html#a5f34f07a84e060736d7ba5b1da147948">_DUNE_GDT_SPACES_BLOCK_BIND_ALL_GRIDS</a>(_m,  _s_type,  _s_backend,  _p)</td></tr>
-<tr class="separator:a5f34f07a84e060736d7ba5b1da147948"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a741be2c9687eba0115afc756f5d24b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00254.html#a6a741be2c9687eba0115afc756f5d24b">DUNE_GDT_SPACES_BLOCK_BIND</a>(_m)&#160;&#160;&#160;<a class="el" href="a00254.html#a5f34f07a84e060736d7ba5b1da147948">_DUNE_GDT_SPACES_BLOCK_BIND_ALL_GRIDS</a>(_m, dg, gdt, 1)</td></tr>
-<tr class="separator:a6a741be2c9687eba0115afc756f5d24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62b0ad6d996e2b37b4004f308e3af0d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00254.html#a62b0ad6d996e2b37b4004f308e3af0d0">_DUNE_GDT_SPACES_BLOCK_BIND_FEM</a>(_m)&#160;&#160;&#160;<a class="el" href="a00254.html#a5f34f07a84e060736d7ba5b1da147948">_DUNE_GDT_SPACES_BLOCK_BIND_ALL_GRIDS</a>(_m, dg, gdt, 1)</td></tr>
-<tr class="separator:a62b0ad6d996e2b37b4004f308e3af0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ab6cd5a8c609a71fc12d58cd97eaccf0a"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00254.html#ab6cd5a8c609a71fc12d58cd97eaccf0a">default_beta</a> (const size_t dimDomain)</td></tr>
+<tr class="separator:ab6cd5a8c609a71fc12d58cd97eaccf0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac981c9eb368616c559af315a353908ae"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00254.html#ac981c9eb368616c559af315a353908ae">inner_sigma</a> (const size_t pol_order)</td></tr>
+<tr class="separator:ac981c9eb368616c559af315a353908ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2c02f8e1741d2dde464f4491aea3176"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00254.html#af2c02f8e1741d2dde464f4491aea3176">boundary_sigma</a> (const size_t pol_order)</td></tr>
+<tr class="separator:af2c02f8e1741d2dde464f4491aea3176"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a36f38fd3930a46465a5839598b94a4e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36f38fd3930a46465a5839598b94a4e8">&#9670;&nbsp;</a></span>_DUNE_GDT_SPACES_BLOCK_BIND</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="af2c02f8e1741d2dde464f4491aea3176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2c02f8e1741d2dde464f4491aea3176">&#9670;&nbsp;</a></span>boundary_sigma()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">#define _DUNE_GDT_SPACES_BLOCK_BIND</td>
+          <td class="memname">static double Dune::GDT::LocalSipdgIntegrands::internal::boundary_sigma </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_m, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>pol_order</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_GRID, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_s_type, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_s_backend, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_p&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="a02314.html">Dune::GDT::bindings::BlockSpace</a>&lt;<a class="code" href="a03066.html">Dune::GDT::SpaceProvider</a>&lt;_GRID,                                                      \</div><div class="line">                                                           Dune::XT::Grid::Layers::dd_subdomain,                       \</div><div class="line">                                                           Dune::GDT::SpaceType::_s_type,                              \</div><div class="line">                                                           Dune::GDT::Backends::_s_backend,                            \</div><div class="line">                                                           _p,                                                         \</div><div class="line">                                                           double,                                                     \</div><div class="line">                                                           1,                                                          \</div><div class="line">                                                           1&gt;&gt;::bind(_m)</div><div class="ttc" id="a02314_html"><div class="ttname"><a href="a02314.html">Dune::GDT::bindings::BlockSpace</a></div><div class="ttdef"><b>Definition:</b> block.bindings.hh:199</div></div>
-<div class="ttc" id="a03066_html"><div class="ttname"><a href="a03066.html">Dune::GDT::SpaceProvider</a></div><div class="ttdef"><b>Definition:</b> spaces.hh:33</div></div>
-</div><!-- fragment -->
+<dl class="section note"><dt>Note</dt><dd>see Epshteyn, Riviere, 2007 </dd></dl>
+
 </div>
 </div>
-<a id="a5f34f07a84e060736d7ba5b1da147948"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f34f07a84e060736d7ba5b1da147948">&#9670;&nbsp;</a></span>_DUNE_GDT_SPACES_BLOCK_BIND_ALL_GRIDS</h2>
+<a id="ab6cd5a8c609a71fc12d58cd97eaccf0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6cd5a8c609a71fc12d58cd97eaccf0a">&#9670;&nbsp;</a></span>default_beta()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">#define _DUNE_GDT_SPACES_BLOCK_BIND_ALL_GRIDS</td>
+          <td class="memname">static double Dune::GDT::LocalSipdgIntegrands::internal::default_beta </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_m, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>dimDomain</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_s_type, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_s_backend, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_p&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="a00254.html#a3689de8a36731aa79a5377e5fadfaf20">_DUNE_GDT_SPACES_BLOCK_BIND_ALU</a>(_m, _s_type, _s_backend, _p);                                                        \</div><div class="line">  _DUNE_GDT_SPACES_BLOCK_BIND_YASP(_m, _s_type, _s_backend, _p)</div><div class="ttc" id="a00254_html_a3689de8a36731aa79a5377e5fadfaf20"><div class="ttname"><a href="a00254.html#a3689de8a36731aa79a5377e5fadfaf20">_DUNE_GDT_SPACES_BLOCK_BIND_ALU</a></div><div class="ttdeci">#define _DUNE_GDT_SPACES_BLOCK_BIND_ALU(_m, _s_type, _s_backend, _p)</div><div class="ttdef"><b>Definition:</b> block.bindings.hh:431</div></div>
-</div><!-- fragment -->
+<dl class="section note"><dt>Note</dt><dd>see Epshteyn, Riviere, 2007 </dd></dl>
+
 </div>
 </div>
-<a id="a3689de8a36731aa79a5377e5fadfaf20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3689de8a36731aa79a5377e5fadfaf20">&#9670;&nbsp;</a></span>_DUNE_GDT_SPACES_BLOCK_BIND_ALU</h2>
+<a id="ac981c9eb368616c559af315a353908ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac981c9eb368616c559af315a353908ae">&#9670;&nbsp;</a></span>inner_sigma()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">#define _DUNE_GDT_SPACES_BLOCK_BIND_ALU</td>
+          <td class="memname">static double Dune::GDT::LocalSipdgIntegrands::internal::inner_sigma </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_m, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>pol_order</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_s_type, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_s_backend, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_p&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a62b0ad6d996e2b37b4004f308e3af0d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62b0ad6d996e2b37b4004f308e3af0d0">&#9670;&nbsp;</a></span>_DUNE_GDT_SPACES_BLOCK_BIND_FEM</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define _DUNE_GDT_SPACES_BLOCK_BIND_FEM</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_m</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="a00254.html#a5f34f07a84e060736d7ba5b1da147948">_DUNE_GDT_SPACES_BLOCK_BIND_ALL_GRIDS</a>(_m, dg, gdt, 1)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a154c486a0c531bb050572666cc63f83e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a154c486a0c531bb050572666cc63f83e">&#9670;&nbsp;</a></span>_DUNE_GDT_SPACES_BLOCK_BIND_YASP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define _DUNE_GDT_SPACES_BLOCK_BIND_YASP</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_m, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_s_type, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_s_backend, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_p&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="a00254.html#a36f38fd3930a46465a5839598b94a4e8">_DUNE_GDT_SPACES_BLOCK_BIND</a>(_m, YASP_1D_EQUIDISTANT_OFFSET, _s_type, _s_backend, _p);                                \</div><div class="line">  _DUNE_GDT_SPACES_BLOCK_BIND(_m, YASP_2D_EQUIDISTANT_OFFSET, _s_type, _s_backend, _p)</div><div class="ttc" id="a00254_html_a36f38fd3930a46465a5839598b94a4e8"><div class="ttname"><a href="a00254.html#a36f38fd3930a46465a5839598b94a4e8">_DUNE_GDT_SPACES_BLOCK_BIND</a></div><div class="ttdeci">#define _DUNE_GDT_SPACES_BLOCK_BIND(_m, _GRID, _s_type, _s_backend, _p)</div><div class="ttdef"><b>Definition:</b> block.bindings.hh:417</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a6a741be2c9687eba0115afc756f5d24b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a741be2c9687eba0115afc756f5d24b">&#9670;&nbsp;</a></span>DUNE_GDT_SPACES_BLOCK_BIND</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DUNE_GDT_SPACES_BLOCK_BIND</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_m</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="a00254.html#a5f34f07a84e060736d7ba5b1da147948">_DUNE_GDT_SPACES_BLOCK_BIND_ALL_GRIDS</a>(_m, dg, gdt, 1)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<dl class="section note"><dt>Note</dt><dd>see Epshteyn, Riviere, 2007 </dd></dl>
 
 </div>
 </div>

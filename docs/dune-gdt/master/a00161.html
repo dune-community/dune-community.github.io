@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: sipdg.hh File Reference</title>
+<title>dune-gdt: restricted.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,71 +59,44 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_e5964b6fd5a6d82d96e1215fe4a1a66d.html">local</a></li><li class="navelem"><a class="el" href="dir_13333c67dd5bfe26178e02e0e92e587e.html">integrands</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_1eea3f25d96e3194dad91b986d4f2dcc.html">playground</a></li><li class="navelem"><a class="el" href="dir_4ffd1a13c5d71df01de237c0b18f9ccc.html">spaces</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">sipdg.hh File Reference</div>  </div>
+<div class="title">restricted.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;tuple&gt;</code><br />
-<code>#include &lt;boost/numeric/conversion/cast.hpp&gt;</code><br />
-<code>#include &lt;dune/common/deprecated.hh&gt;</code><br />
-<code>#include &lt;dune/common/dynmatrix.hh&gt;</code><br />
-<code>#include &lt;dune/xt/common/color.hh&gt;</code><br />
-<code>#include &lt;dune/xt/common/timedlogging.hh&gt;</code><br />
-<code>#include &lt;dune/xt/common/type_traits.hh&gt;</code><br />
-<code>#include &lt;dune/xt/functions/interfaces.hh&gt;</code><br />
-<code>#include &quot;<a class="el" href="a04868_source.html">interfaces.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;dune/xt/la/type_traits.hh&gt;</code><br />
+<code>#include &lt;dune/xt/grid/layers.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00053_source.html">dune/gdt/exceptions.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04576_source.html">dune/gdt/spaces/interface.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00239_source.html">dune/gdt/type_traits.hh</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="a04684_source.html">mapper/restricted.hh</a>&quot;</code><br />
 </div>
 <p><a href="a00161_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01766.html">Dune::GDT::LocalSipdgIntegrands::Inner&lt; LocalizableFunctionImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02152.html">Dune::GDT::RestrictedSpace&lt; UnrestrictedSpace, RestrictionGridLayer &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01770.html">Dune::GDT::LocalSipdgIntegrands::BoundaryLHS&lt; LocalizableFunctionImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02156.html">Dune::GDT::internal::RestrictedSpaceTraits&lt; UnrestrictedSpace, RestrictionGridLayer &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01774.html">Dune::GDT::LocalSipdgIntegrands::BoundaryRHS&lt; LocalizableDiffusionFunctionImp, LocalizableDirichletFunctionImp &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01778.html">Dune::GDT::LocalSipdgIntegrands::internal::InnerTraits&lt; LocalizableFunctionImp &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01782.html">Dune::GDT::LocalSipdgIntegrands::internal::BoundaryLHSTraits&lt; LocalizableFunctionImp &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01786.html">Dune::GDT::LocalSipdgIntegrands::internal::BoundaryRHSTraits&lt; LocalizableDiffusionFunctionImp, LocalizableDirichletFunctionImp &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01766.html">Dune::GDT::LocalSipdgIntegrands::Inner&lt; LocalizableFunctionImp &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01770.html">Dune::GDT::LocalSipdgIntegrands::BoundaryLHS&lt; LocalizableFunctionImp &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01774.html">Dune::GDT::LocalSipdgIntegrands::BoundaryRHS&lt; LocalizableDiffusionFunctionImp, LocalizableDirichletFunctionImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02152.html">Dune::GDT::RestrictedSpace&lt; UnrestrictedSpace, RestrictionGridLayer &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00380"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00380.html">Dune</a></td></tr>
+<tr class="memitem:a00248"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00248.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00381"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00381.html">Dune::GDT</a></td></tr>
+<tr class="memitem:a00249"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00249.html">Dune::GDT</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00385"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00385.html">Dune::GDT::LocalSipdgIntegrands</a></td></tr>
-<tr class="memdesc:a00385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains local evaluations for the symmetric interior penalty discontinuous Galerkin (SIPDG) discretization. <br /></td></tr>
+<tr class="memitem:a00250"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00250.html">Dune::GDT::internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00386"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00386.html">Dune::GDT::LocalSipdgIntegrands::internal</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ab6cd5a8c609a71fc12d58cd97eaccf0a"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00386.html#ab6cd5a8c609a71fc12d58cd97eaccf0a">Dune::GDT::LocalSipdgIntegrands::internal::default_beta</a> (const size_t dimDomain)</td></tr>
-<tr class="separator:ab6cd5a8c609a71fc12d58cd97eaccf0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac981c9eb368616c559af315a353908ae"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00386.html#ac981c9eb368616c559af315a353908ae">Dune::GDT::LocalSipdgIntegrands::internal::inner_sigma</a> (const size_t pol_order)</td></tr>
-<tr class="separator:ac981c9eb368616c559af315a353908ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2c02f8e1741d2dde464f4491aea3176"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00386.html#af2c02f8e1741d2dde464f4491aea3176">Dune::GDT::LocalSipdgIntegrands::internal::boundary_sigma</a> (const size_t pol_order)</td></tr>
-<tr class="separator:af2c02f8e1741d2dde464f4491aea3176"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

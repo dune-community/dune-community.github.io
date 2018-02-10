@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: l2-projection.hh File Reference</title>
+<title>dune-gdt: dirichlet.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,47 +59,43 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_e5964b6fd5a6d82d96e1215fe4a1a66d.html">local</a></li><li class="navelem"><a class="el" href="dir_897d860e0e1e77b53d604c7cb60fd2d2.html">operators</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_422e9240d05ce838e6f6483d1fde367d.html">projections</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">l2-projection.hh File Reference</div>  </div>
+<div class="title">dirichlet.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;type_traits&gt;</code><br />
-<code>#include &lt;dune/xt/functions/interfaces.hh&gt;</code><br />
-<code>#include &lt;dune/xt/functions/constant.hh&gt;</code><br />
-<code>#include &lt;dune/xt/la/container/common.hh&gt;</code><br />
-<code>#include &lt;dune/xt/la/solver.hh&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00113_source.html">dune/gdt/local/discretefunction.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00071_source.html">dune/gdt/exceptions.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a04952_source.html">dune/gdt/local/integrands/product.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a04829_source.html">dune/gdt/local/functionals/integrals.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a04844_source.html">dune/gdt/spaces/fv/interface.hh</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="a04832_source.html">integrals.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a04871_source.html">interfaces.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;dune/xt/common/memory.hh&gt;</code><br />
+<code>#include &lt;dune/xt/grid/type_traits.hh&gt;</code><br />
+<code>#include &lt;dune/xt/grid/layers.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00113_source.html">dune/gdt/local/operators/dirichlet-projection.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04465_source.html">dune/gdt/operators/base.hh</a>&gt;</code><br />
 </div>
 <p><a href="a00167_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01874.html">Dune::GDT::internal::LocalL2ProjectionOperatorTraits</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01878.html">Dune::GDT::LocalL2ProjectionOperator</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02188.html">Dune::GDT::DirichletProjectionLocalizableOperator&lt; GridLayerImp, SourceImp, RangeImp, FieldImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00380"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00380.html">Dune</a></td></tr>
+<tr class="memitem:a00248"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00248.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00381"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00381.html">Dune::GDT</a></td></tr>
+<tr class="memitem:a00249"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00249.html">Dune::GDT</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00382"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00382.html">Dune::GDT::internal</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a8f639f3b2734291a3ab3c17c8894fdcb"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType , class SourceType , class RangeType &gt; </td></tr>
+<tr class="memitem:a8f639f3b2734291a3ab3c17c8894fdcb"><td class="memTemplItemLeft" align="right" valign="top">std::unique_ptr&lt; DirichletProjectionLocalizableOperator&lt; GridLayerType, SourceType, RangeType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00249.html#a8f639f3b2734291a3ab3c17c8894fdcb">Dune::GDT::make_localizable_dirichlet_projection_operator</a> (const GridLayerType &amp;grid_layer, const XT::Grid::BoundaryInfo&lt; XT::Grid::extract_intersection_t&lt; GridLayerType &gt;&gt; &amp;boundary_info, const SourceType &amp;source, RangeType &amp;range)</td></tr>
+<tr class="separator:a8f639f3b2734291a3ab3c17c8894fdcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['walked_5f',['walked_',['../a01922.html#a4b05a832befa52a1fa184c7bafadef55',1,'Dune::GDT::LocalizableProductBase::walked_()'],['../a01938.html#a738d49975ce1b51d01816298b005cdbf',1,'Dune::GDT::LocalizableOperatorBase::walked_()']]],
-  ['wrap_5fbuffer',['wrap_buffer',['../a02650.html#a5d13c360264bfee54b109e047d0097e0',1,'Dune::GDT::DofDataCommunicationDescriptor::wrap_buffer()'],['../a02654.html#a6d8e085686206f640d1188751dffd479',1,'Dune::GDT::EntityDataCommunicationDescriptor::wrap_buffer()']]]
+  ['xi_5f',['xi_',['../a01136.html#a9c26f6a8d8d6113d9d7e49bd40def111',1,'Dune::GDT::EntropyBasedLocalFlux::xi_()'],['../a01152.html#abf16dd332b1fa75c2165df1a6261d267',1,'Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::HatFunctions&lt; typename U::DomainFieldType, 1, typename U::RangeFieldType, U::dimRange, 1, 1 &gt;, GridLayerImp, U, 1 &gt;::xi_()']]]
 ];
