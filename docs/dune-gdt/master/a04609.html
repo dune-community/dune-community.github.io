@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: kinetic.hh File Reference</title>
+<title>dune-gdt: l2-global.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,63 +59,65 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_e5964b6fd5a6d82d96e1215fe4a1a66d.html">local</a></li><li class="navelem"><a class="el" href="dir_b3c312569a7138f19b17aa14076f1d0d.html">fluxes</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_422e9240d05ce838e6f6483d1fde367d.html">projections</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">local/fluxes/kinetic.hh File Reference</div>  </div>
+<div class="title">projections/l2-global.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;tuple&gt;</code><br />
-<code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;dune/common/dynmatrix.hh&gt;</code><br />
-<code>#include &lt;dune/common/typetraits.hh&gt;</code><br />
-<code>#include &lt;dune/geometry/referenceelements.hh&gt;</code><br />
-<code>#include &lt;dune/grid/yaspgrid.hh&gt;</code><br />
-<code>#include &lt;dune/xt/common/fmatrix.hh&gt;</code><br />
-<code>#include &lt;dune/xt/common/parameter.hh&gt;</code><br />
-<code>#include &lt;dune/xt/functions/interfaces.hh&gt;</code><br />
-<code>#include &lt;dune/xt/functions/constant.hh&gt;</code><br />
-<code>#include &lt;dune/xt/la/container/eigen.hh&gt;</code><br />
-<code>#include &quot;<a class="el" href="a04591_source.html">interfaces.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00074_source.html">entropybased.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a04552_source.html">godunov.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;dune/xt/common/timedlogging.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/type_traits.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/memory.hh&gt;</code><br />
+<code>#include &lt;dune/xt/la/container.hh&gt;</code><br />
+<code>#include &lt;dune/xt/la/solver.hh&gt;</code><br />
+<code>#include &lt;dune/xt/grid/type_traits.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00053_source.html">dune/gdt/exceptions.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04474_source.html">dune/gdt/discretefunction/default.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04621_source.html">dune/gdt/functionals/l2.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04459_source.html">dune/gdt/operators/base.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04597_source.html">dune/gdt/operators/interfaces.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04624_source.html">dune/gdt/operators/l2.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00242_source.html">dune/gdt/type_traits.hh</a>&gt;</code><br />
 </div>
 <p><a href="a04609_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01236.html">Dune::GDT::KineticLocalNumericalCouplingFlux&lt; AnalyticalFluxImp, BasisfunctionImp, GridLayerImp, quadratureDim &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kinetic flux evaluation for inner intersections and periodic boundary intersections.  <a href="a01236.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02263.html">Dune::GDT::L2GlobalProjectionOperator&lt; GridLayerImp, FieldImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01240.html">Dune::GDT::KineticLocalNumericalBoundaryFlux&lt; AnalyticalFluxImp, BoundaryValueImp, BasisfunctionImp, GridLayerImp, quadratureDim &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kinetic flux evaluation for Dirichlet boundary intersections.  <a href="a01240.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02267.html">Dune::GDT::internal::L2GlobalProjectionOperatorTraits&lt; GridLayerImp, FieldImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01244.html">Dune::GDT::internal::KineticLocalNumericalCouplingFluxTraits&lt; AnalyticalFluxImp, BasisfunctionImp, GridLayerImp, quadratureDim &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02271.html">Dune::GDT::L2GlobalProjectionLocalizableOperator&lt; GridLayerImp, SourceImp, RangeImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01248.html">Dune::GDT::internal::KineticLocalNumericalBoundaryFluxTraits&lt; AnalyticalFluxImp, BoundaryValueImp, BasisfunctionImp, GridLayerImp, quadratureDim &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01252.html">Dune::GDT::internal::KineticFluxImplementation&lt; Traits &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01236.html">Dune::GDT::KineticLocalNumericalCouplingFlux&lt; AnalyticalFluxImp, BasisfunctionImp, GridLayerImp, quadratureDim &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kinetic flux evaluation for inner intersections and periodic boundary intersections.  <a href="a01236.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01240.html">Dune::GDT::KineticLocalNumericalBoundaryFlux&lt; AnalyticalFluxImp, BoundaryValueImp, BasisfunctionImp, GridLayerImp, quadratureDim &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kinetic flux evaluation for Dirichlet boundary intersections.  <a href="a01240.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02263.html">Dune::GDT::L2GlobalProjectionOperator&lt; GridLayerImp, FieldImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00248"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00248.html">Dune</a></td></tr>
+<tr class="memitem:a00251"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00249"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00249.html">Dune::GDT</a></td></tr>
+<tr class="memitem:a00252"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00252.html">Dune::GDT</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00250"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00250.html">Dune::GDT::internal</a></td></tr>
+<tr class="memitem:a00253"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00253.html">Dune::GDT::internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ab6adbf86b5d86a023e2e8e93cbcbc6d5"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType , class SourceType , class SpaceType , class VectorType &gt; </td></tr>
+<tr class="memitem:ab6adbf86b5d86a023e2e8e93cbcbc6d5"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value &amp;&amp;XT::Functions::is_localizable_function&lt; SourceType &gt;::value &amp;&amp;is_space&lt; SpaceType &gt;::value &amp;&amp;XT::LA::is_vector&lt; VectorType &gt;::value, std::unique_ptr&lt; L2GlobalProjectionLocalizableOperator&lt; GridLayerType, SourceType, DiscreteFunction&lt; SpaceType, VectorType &gt; &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00252.html#ab6adbf86b5d86a023e2e8e93cbcbc6d5">Dune::GDT::make_global_l2_projection_localizable_operator</a> (const GridLayerType &amp;grid_layer, const SourceType &amp;source, DiscreteFunction&lt; SpaceType, VectorType &gt; &amp;range, const size_t over_integrate=0)</td></tr>
+<tr class="separator:ab6adbf86b5d86a023e2e8e93cbcbc6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada5f8915864e0699caf07017b3f0bbd9"><td class="memTemplParams" colspan="2">template&lt;class SourceType , class SpaceType , class VectorType &gt; </td></tr>
+<tr class="memitem:ada5f8915864e0699caf07017b3f0bbd9"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Functions::is_localizable_function&lt; SourceType &gt;::value &amp;&amp;is_space&lt; SpaceType &gt;::value &amp;&amp;XT::LA::is_vector&lt; VectorType &gt;::value, std::unique_ptr&lt; L2GlobalProjectionLocalizableOperator&lt; typename SpaceType::GridLayerType, SourceType, DiscreteFunction&lt; SpaceType, VectorType &gt; &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00252.html#ada5f8915864e0699caf07017b3f0bbd9">Dune::GDT::make_global_l2_projection_localizable_operator</a> (const SourceType &amp;source, DiscreteFunction&lt; SpaceType, VectorType &gt; &amp;range, const size_t over_integrate=0)</td></tr>
+<tr class="separator:ada5f8915864e0699caf07017b3f0bbd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc211dfec7d3c46b5d59c7b1403bdf5"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType &gt; </td></tr>
+<tr class="memitem:a1dc211dfec7d3c46b5d59c7b1403bdf5"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value, std::unique_ptr&lt; L2GlobalProjectionOperator&lt; GridLayerType &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00252.html#a1dc211dfec7d3c46b5d59c7b1403bdf5">Dune::GDT::make_global_l2_projection_operator</a> (const GridLayerType &amp;grid_layer, const size_t over_integrate=0)</td></tr>
+<tr class="separator:a1dc211dfec7d3c46b5d59c7b1403bdf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

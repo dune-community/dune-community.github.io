@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['kineticfluximplementation',['KineticFluxImplementation',['../a01252.html#ac4e64b1cf5e694c86c66eca44bc3034e',1,'Dune::GDT::internal::KineticFluxImplementation']]],
-  ['kineticlocalnumericalboundaryflux',['KineticLocalNumericalBoundaryFlux',['../a01240.html#af2f227d306544091892d6cf97abdb121',1,'Dune::GDT::KineticLocalNumericalBoundaryFlux']]],
-  ['kineticlocalnumericalcouplingflux',['KineticLocalNumericalCouplingFlux',['../a01236.html#ad66445f9ed64a31748b16a3298b7f54b',1,'Dune::GDT::KineticLocalNumericalCouplingFlux']]]
+  ['kineticfluximplementation',['KineticFluxImplementation',['../a01303.html#ac4e64b1cf5e694c86c66eca44bc3034e',1,'Dune::GDT::internal::KineticFluxImplementation']]],
+  ['kineticlocalnumericalcouplingflux',['KineticLocalNumericalCouplingFlux',['../a01287.html#a26e5f5ebbc4fa0a4f5965b57d2547557',1,'Dune::GDT::KineticLocalNumericalCouplingFlux']]],
+  ['kineticlocalnumericaldirichletboundaryflux',['KineticLocalNumericalDirichletBoundaryFlux',['../a01291.html#af8e4d2e3521632a768ffe91213265204',1,'Dune::GDT::KineticLocalNumericalDirichletBoundaryFlux']]]
 ];

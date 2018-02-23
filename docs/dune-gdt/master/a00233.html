@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: implicit-rungekutta.hh File Reference</title>
+<title>dune-gdt: fractional-step.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -67,41 +67,30 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">implicit-rungekutta.hh File Reference</div>  </div>
+<div class="title">fractional-step.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;utility&gt;</code><br />
-<code>#include &lt;dune/xt/common/exceptions.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04597_source.html">dune/gdt/operators/interfaces.hh</a>&gt;</code><br />
 <code>#include &lt;dune/xt/common/memory.hh&gt;</code><br />
 <code>#include &lt;dune/xt/common/string.hh&gt;</code><br />
 <code>#include &lt;dune/xt/la/container.hh&gt;</code><br />
-<code>#include &lt;dune/xt/la/container/pattern.hh&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00002_source.html">dune/gdt/assembler/codim0-matrix-datahandle.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a04603_source.html">dune/gdt/operators/interfaces.hh</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="a04582_source.html">interface.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00224_source.html">explicit-rungekutta.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a04576_source.html">interface.hh</a>&quot;</code><br />
 </div>
 <p><a href="a00233_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02960.html">Dune::GDT::internal::ButcherArrayProvider&lt; RangeFieldType, TimeStepperMethods::implicit_euler &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03023.html">Dune::GDT::FractionalTimeStepper&lt; FirstStepperImp, SecondStepperImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02964.html">Dune::GDT::internal::ButcherArrayProvider&lt; RangeFieldType, TimeStepperMethods::implicit_midpoint &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02968.html">Dune::GDT::internal::ButcherArrayProvider&lt; RangeFieldType, TimeStepperMethods::trapezoidal_rule &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02972.html">Dune::GDT::DiagonallyImplicitRungeKuttaTimeStepper&lt; OperatorImp, DiscreteFunctionImp, method, container_backend &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time stepper using diagonally implicit Runge Kutta methods.  <a href="a02972.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03027.html">Dune::GDT::StrangSplittingTimeStepper&lt; FirstStepperImp, SecondStepperImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00248"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00248.html">Dune</a></td></tr>
+<tr class="memitem:a00251"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00249"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00249.html">Dune::GDT</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00250"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00250.html">Dune::GDT::internal</a></td></tr>
+<tr class="memitem:a00252"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00252.html">Dune::GDT</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

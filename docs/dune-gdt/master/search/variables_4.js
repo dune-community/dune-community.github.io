@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['elliptic_5f',['elliptic_',['../a01388.html#af4662c8c0e971127ac1b74caa098d082',1,'Dune::GDT::LocalEllipticIpdgIntegrands::BoundaryRHS']]],
-  ['epsilon_5f',['epsilon_',['../a01136.html#a8b954b4218c73a75670bc0e60a7be320',1,'Dune::GDT::EntropyBasedLocalFlux::epsilon_()'],['../a01152.html#aa9e3f141068f686628b5f240ab348c1c',1,'Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::HatFunctions&lt; typename U::DomainFieldType, 1, typename U::RangeFieldType, U::dimRange, 1, 1 &gt;, GridLayerImp, U, 1 &gt;::epsilon_()']]],
-  ['epsilon_5fgamma_5f',['epsilon_gamma_',['../a01136.html#ab3540d4d58e3e2234ae2c5beb83ca605',1,'Dune::GDT::EntropyBasedLocalFlux::epsilon_gamma_()'],['../a01152.html#ac7e4263f20db8e1f1bf5ed86c219ebae',1,'Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::HatFunctions&lt; typename U::DomainFieldType, 1, typename U::RangeFieldType, U::dimRange, 1, 1 &gt;, GridLayerImp, U, 1 &gt;::epsilon_gamma_()']]]
+  ['elliptic_5f',['elliptic_',['../a01431.html#af4662c8c0e971127ac1b74caa098d082',1,'Dune::GDT::LocalEllipticIpdgIntegrands::BoundaryRHS']]],
+  ['epsilon_5f',['epsilon_',['../a01171.html#ac42ca28685bf1b0b320a185878fa4cc4',1,'Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::PiecewiseMonomials&lt; typename U::DomainFieldType, domainDim, typename U::RangeFieldType, U::dimRange, 1 &gt;, GridLayerImp, U, domainDim &gt;::Localfunction::epsilon_()'],['../a02003.html#a1dfe00a1bf974c0a8be11a6d9ce7b87e',1,'Dune::GDT::RealizabilityLimiterBase::epsilon_()']]],
+  ['epsilon_5fgamma_5f',['epsilon_gamma_',['../a01171.html#a490619ab3e7ae33edeae7ae0e7ef3277',1,'Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::PiecewiseMonomials&lt; typename U::DomainFieldType, domainDim, typename U::RangeFieldType, U::dimRange, 1 &gt;, GridLayerImp, U, domainDim &gt;::Localfunction']]]
 ];

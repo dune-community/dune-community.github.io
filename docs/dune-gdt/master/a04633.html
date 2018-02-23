@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: l2.hh File Reference</title>
+<title>dune-gdt: lagrange.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,56 +68,58 @@ $(function() {
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">projections/l2.hh File Reference</div>  </div>
+<div class="title">projections/lagrange.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;dune/xt/grid/type_traits.hh&gt;</code><br />
-<code>#include &lt;<a class="el" href="a04480_source.html">dune/gdt/discretefunction/default.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00239_source.html">dune/gdt/type_traits.hh</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="a04621_source.html">l2-local.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a04615_source.html">l2-global.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;dune/xt/common/type_traits.hh&gt;</code><br />
+<code>#include &lt;dune/xt/grid/type_traits.hh&gt;</code><br />
+<code>#include &lt;dune/xt/la/container/vector-interface.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04474_source.html">dune/gdt/discretefunction/default.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00119_source.html">dune/gdt/local/operators/lagrange-projection.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04570_source.html">dune/gdt/spaces/interface.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04459_source.html">dune/gdt/operators/base.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04597_source.html">dune/gdt/operators/interfaces.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00242_source.html">dune/gdt/type_traits.hh</a>&gt;</code><br />
 </div>
 <p><a href="a04633_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02232.html">Dune::GDT::L2ProjectionOperator&lt; GridLayerImp, FieldImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02335.html">Dune::GDT::LagrangeProjectionLocalizableOperator&lt; GridLayerImp, SourceImp, RangeImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02236.html">Dune::GDT::internal::L2ProjectionLocalizableOperatorTraits&lt; GridLayerType, SourceType, RangeType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02339.html">Dune::GDT::LagrangeProjectionOperator&lt; GridLayerImp, FieldImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02248.html">Dune::GDT::internal::L2ProjectionOperatorTraits&lt; GridLayerType, FieldImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02343.html">Dune::GDT::internal::LagrangeProjectionOperatorTraits&lt; GridLayerImp, FieldImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02252.html">Dune::GDT::L2ProjectionLocalizableOperator&lt; GridLayerImp, SourceImp, RangeImp &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02232.html">Dune::GDT::L2ProjectionOperator&lt; GridLayerImp, FieldImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02339.html">Dune::GDT::LagrangeProjectionOperator&lt; GridLayerImp, FieldImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00248"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00248.html">Dune</a></td></tr>
+<tr class="memitem:a00251"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00249"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00249.html">Dune::GDT</a></td></tr>
+<tr class="memitem:a00252"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00252.html">Dune::GDT</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00250"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00250.html">Dune::GDT::internal</a></td></tr>
+<tr class="memitem:a00253"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00253.html">Dune::GDT::internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abb37c26aebc4f0de53587319f55a017b"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType , class SourceType , class SpaceType , class VectorType &gt; </td></tr>
-<tr class="memitem:abb37c26aebc4f0de53587319f55a017b"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value &amp;&amp;XT::Functions::is_localizable_function&lt; SourceType &gt;::value &amp;&amp;is_space&lt; SpaceType &gt;::value &amp;&amp;XT::LA::is_vector&lt; VectorType &gt;::value, std::unique_ptr&lt; L2ProjectionLocalizableOperator&lt; GridLayerType, SourceType, DiscreteFunction&lt; SpaceType, VectorType &gt; &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00249.html#abb37c26aebc4f0de53587319f55a017b">Dune::GDT::make_l2_projection_localizable_operator</a> (const GridLayerType &amp;grid_layer, const SourceType &amp;source, DiscreteFunction&lt; SpaceType, VectorType &gt; &amp;range, const size_t over_integrate=0)</td></tr>
-<tr class="separator:abb37c26aebc4f0de53587319f55a017b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1fda08c8477972bb5135da2513518dc"><td class="memTemplParams" colspan="2">template&lt;class SourceType , class SpaceType , class VectorType &gt; </td></tr>
-<tr class="memitem:aa1fda08c8477972bb5135da2513518dc"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Functions::is_localizable_function&lt; SourceType &gt;::value &amp;&amp;is_space&lt; SpaceType &gt;::value &amp;&amp;XT::LA::is_vector&lt; VectorType &gt;::value, std::unique_ptr&lt; L2ProjectionLocalizableOperator&lt; typename SpaceType::GridLayerType, SourceType, DiscreteFunction&lt; SpaceType, VectorType &gt; &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00249.html#aa1fda08c8477972bb5135da2513518dc">Dune::GDT::make_l2_projection_localizable_operator</a> (const SourceType &amp;source, DiscreteFunction&lt; SpaceType, VectorType &gt; &amp;range, const size_t over_integrate=0)</td></tr>
-<tr class="separator:aa1fda08c8477972bb5135da2513518dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53207d499f1a26958db4d5efb6ba6bdb"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType &gt; </td></tr>
-<tr class="memitem:a53207d499f1a26958db4d5efb6ba6bdb"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value, std::unique_ptr&lt; L2ProjectionOperator&lt; GridLayerType &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00249.html#a53207d499f1a26958db4d5efb6ba6bdb">Dune::GDT::make_l2_projection_operator</a> (const GridLayerType &amp;grid_layer, const size_t over_integrate=0)</td></tr>
-<tr class="separator:a53207d499f1a26958db4d5efb6ba6bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a739fd9a05d811357d4e054e61017b4be"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType , class SourceType , class SpaceType , class VectorType &gt; </td></tr>
-<tr class="memitem:a739fd9a05d811357d4e054e61017b4be"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value &amp;&amp;XT::Functions::is_localizable_function&lt; SourceType &gt;::value &amp;&amp;is_space&lt; SpaceType &gt;::value &amp;&amp;XT::LA::is_vector&lt; VectorType &gt;::value, void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00249.html#a739fd9a05d811357d4e054e61017b4be">Dune::GDT::project_l2</a> (const GridLayerType &amp;grid_layer, const SourceType &amp;source, DiscreteFunction&lt; SpaceType, VectorType &gt; &amp;range, const size_t over_integrate=0, const XT::Common::Parameter &amp;param={})</td></tr>
-<tr class="separator:a739fd9a05d811357d4e054e61017b4be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ce48b8d05bd6a7e3c9f4fb215eb0b93"><td class="memTemplParams" colspan="2">template&lt;class SourceType , class SpaceType , class VectorType &gt; </td></tr>
-<tr class="memitem:a3ce48b8d05bd6a7e3c9f4fb215eb0b93"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Functions::is_localizable_function&lt; SourceType &gt;::value &amp;&amp;is_space&lt; SpaceType &gt;::value &amp;&amp;XT::LA::is_vector&lt; VectorType &gt;::value, void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00249.html#a3ce48b8d05bd6a7e3c9f4fb215eb0b93">Dune::GDT::project_l2</a> (const SourceType &amp;source, DiscreteFunction&lt; SpaceType, VectorType &gt; &amp;range, const size_t over_integrate=0, const XT::Common::Parameter &amp;param={})</td></tr>
-<tr class="separator:a3ce48b8d05bd6a7e3c9f4fb215eb0b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d5160a18176f922670606c9fabaaeed"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType , class SourceType , class SpaceType , class VectorType &gt; </td></tr>
+<tr class="memitem:a5d5160a18176f922670606c9fabaaeed"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value &amp;&amp;XT::Functions::is_localizable_function&lt; SourceType &gt;::value &amp;&amp;is_space&lt; SpaceType &gt;::value &amp;&amp;XT::LA::is_vector&lt; VectorType &gt;::value, std::unique_ptr&lt; LagrangeProjectionLocalizableOperator&lt; GridLayerType, SourceType, DiscreteFunction&lt; SpaceType, VectorType &gt; &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00252.html#a5d5160a18176f922670606c9fabaaeed">Dune::GDT::make_lagrange_projection_localizable_operator</a> (const GridLayerType &amp;grid_layer, const SourceType &amp;source, DiscreteFunction&lt; SpaceType, VectorType &gt; &amp;range, const XT::Common::Parameter &amp;param={})</td></tr>
+<tr class="separator:a5d5160a18176f922670606c9fabaaeed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80017c8590156bbc14e3b5809d9b5706"><td class="memTemplParams" colspan="2">template&lt;class SourceType , class SpaceType , class VectorType &gt; </td></tr>
+<tr class="memitem:a80017c8590156bbc14e3b5809d9b5706"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Functions::is_localizable_function&lt; SourceType &gt;::value &amp;&amp;is_space&lt; SpaceType &gt;::value &amp;&amp;XT::LA::is_vector&lt; VectorType &gt;::value, std::unique_ptr&lt; LagrangeProjectionLocalizableOperator&lt; typename SpaceType::GridLayerType, SourceType, DiscreteFunction&lt; SpaceType, VectorType &gt; &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00252.html#a80017c8590156bbc14e3b5809d9b5706">Dune::GDT::make_lagrange_projection_localizable_operator</a> (const SourceType &amp;source, DiscreteFunction&lt; SpaceType, VectorType &gt; &amp;range, const XT::Common::Parameter &amp;param={})</td></tr>
+<tr class="separator:a80017c8590156bbc14e3b5809d9b5706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bd9942fa032bb572db38180e9602c4e"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType &gt; </td></tr>
+<tr class="memitem:a6bd9942fa032bb572db38180e9602c4e"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value, std::unique_ptr&lt; LagrangeProjectionOperator&lt; GridLayerType &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00252.html#a6bd9942fa032bb572db38180e9602c4e">Dune::GDT::make_lagrange_projection_operator</a> (const GridLayerType &amp;grid_layer)</td></tr>
+<tr class="separator:a6bd9942fa032bb572db38180e9602c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48d76b5da36129c1d49c8e677e830218"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType , class SourceType , class SpaceType , class VectorType &gt; </td></tr>
+<tr class="memitem:a48d76b5da36129c1d49c8e677e830218"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value &amp;&amp;XT::Functions::is_localizable_function&lt; SourceType &gt;::value &amp;&amp;is_space&lt; SpaceType &gt;::value &amp;&amp;XT::LA::is_vector&lt; VectorType &gt;::value, void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00252.html#a48d76b5da36129c1d49c8e677e830218">Dune::GDT::project_lagrange</a> (const GridLayerType &amp;grid_layer, const SourceType &amp;source, DiscreteFunction&lt; SpaceType, VectorType &gt; &amp;range, const XT::Common::Parameter &amp;param={})</td></tr>
+<tr class="separator:a48d76b5da36129c1d49c8e677e830218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abda2ed2cfc25f129a952054c203923a3"><td class="memTemplParams" colspan="2">template&lt;class SourceType , class SpaceType , class VectorType &gt; </td></tr>
+<tr class="memitem:abda2ed2cfc25f129a952054c203923a3"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Functions::is_localizable_function&lt; SourceType &gt;::value &amp;&amp;is_space&lt; SpaceType &gt;::value &amp;&amp;XT::LA::is_vector&lt; VectorType &gt;::value, void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00252.html#abda2ed2cfc25f129a952054c203923a3">Dune::GDT::project_lagrange</a> (const SourceType &amp;source, DiscreteFunction&lt; SpaceType, VectorType &gt; &amp;range, const XT::Common::Parameter &amp;param={})</td></tr>
+<tr class="separator:abda2ed2cfc25f129a952054c203923a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
