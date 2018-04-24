@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: yasp_2d_equidistant_offset.cc File Reference</title>
+<title>dune-gdt: musta.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,83 +59,53 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_4c554f9d783d63f5e41bbf46d8f2008d.html">assembler</a></li><li class="navelem"><a class="el" href="dir_6e529196474358cb89d99b8b6f3c1d67.html">system.lib</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_e5964b6fd5a6d82d96e1215fe4a1a66d.html">local</a></li><li class="navelem"><a class="el" href="dir_b3c312569a7138f19b17aa14076f1d0d.html">fluxes</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">assembler/system.lib/yasp_2d_equidistant_offset.cc File Reference</div>  </div>
+<div class="title">local/fluxes/musta.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;config.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="a00026_source.html">../system.lib.hh</a>&quot;</code><br />
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a449c926e5e2ef49fea62eea2a3fdeee7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04690.html#a449c926e5e2ef49fea62eea2a3fdeee7">DUNE_GDT_ASSEMBLER_SYSTEM_LIB_DD_SUBDOMAIN</a> (template, YASP_2D_EQUIDISTANT_OFFSET, cg, gdt, 1, 1, 1)</td></tr>
-<tr class="separator:a449c926e5e2ef49fea62eea2a3fdeee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<div class="textblock"><code>#include &lt;tuple&gt;</code><br />
+<code>#include &quot;<a class="el" href="a04618_source.html">interfaces.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a04678_source.html">laxfriedrichs.hh</a>&quot;</code><br />
+</div>
+<p><a href="a04690_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01305.html">Dune::GDT::MustaLocalNumericalCouplingFlux&lt; AnalyticalFluxImp, LocalizableFunctionImp &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lax-Friedrichs flux evaluation for inner intersections and periodic boundary intersections.  <a href="a01305.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01309.html">Dune::GDT::MustaLocalDirichletNumericalBoundaryFlux&lt; AnalyticalFluxImp, BoundaryValueImp, LocalizableFunctionImp &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">MUSTA flux evaluation for Dirichlet boundary intersections.  <a href="a01309.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01313.html">Dune::GDT::internal::MustaLocalNumericalCouplingFluxTraits&lt; AnalyticalFluxImp, LocalizableFunctionImp &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01317.html">Dune::GDT::internal::MustaLocalDirichletNumericalBoundaryFluxTraits&lt; AnalyticalFluxImp, BoundaryValueImp, LocalizableFunctionImp &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01321.html">Dune::GDT::internal::MustaFluxImplementation&lt; Traits &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01305.html">Dune::GDT::MustaLocalNumericalCouplingFlux&lt; AnalyticalFluxImp, LocalizableFunctionImp &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lax-Friedrichs flux evaluation for inner intersections and periodic boundary intersections.  <a href="a01305.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01309.html">Dune::GDT::MustaLocalDirichletNumericalBoundaryFlux&lt; AnalyticalFluxImp, BoundaryValueImp, LocalizableFunctionImp &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">MUSTA flux evaluation for Dirichlet boundary intersections.  <a href="a01309.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00245"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00245.html">Dune</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00246"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00246.html">Dune::GDT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00247"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00247.html">Dune::GDT::internal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a449c926e5e2ef49fea62eea2a3fdeee7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a449c926e5e2ef49fea62eea2a3fdeee7">&#9670;&nbsp;</a></span>DUNE_GDT_ASSEMBLER_SYSTEM_LIB_DD_SUBDOMAIN()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">DUNE_GDT_ASSEMBLER_SYSTEM_LIB_DD_SUBDOMAIN </td>
-          <td>(</td>
-          <td class="paramtype">template&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">YASP_2D_EQUIDISTANT_OFFSET&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">cg&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">gdt&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">1&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">1&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">1&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

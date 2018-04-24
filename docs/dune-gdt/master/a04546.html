@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: godunov.hh File Reference</title>
+<title>dune-gdt: enums.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,55 +59,41 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_e5964b6fd5a6d82d96e1215fe4a1a66d.html">local</a></li><li class="navelem"><a class="el" href="dir_b3c312569a7138f19b17aa14076f1d0d.html">fluxes</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_8eae17099f455a1cfbd2c25e13098b8a.html">operators</a></li><li class="navelem"><a class="el" href="dir_8fbd9d79de26bd0c08e4e5fb2ef2e7c5.html">fv</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
-<div class="title">local/fluxes/godunov.hh File Reference</div>  </div>
+<div class="title">operators/fv/enums.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;tuple&gt;</code><br />
-<code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;dune/xt/common/memory.hh&gt;</code><br />
-<code>#include &lt;dune/xt/functions/interfaces.hh&gt;</code><br />
-<code>#include &lt;dune/xt/la/algorithms/qr.hh&gt;</code><br />
-<code>#include &lt;dune/xt/la/eigen-solver.hh&gt;</code><br />
-<code>#include &quot;<a class="el" href="a04585_source.html">interfaces.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a04456_source.html">base.hh</a>&quot;</code><br />
-</div>
+
 <p><a href="a04546_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01227.html">Dune::GDT::GodunovLocalNumericalCouplingFlux&lt; AnalyticalFluxImp, Traits &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01231.html">Dune::GDT::GodunovLocalDirichletNumericalBoundaryFlux&lt; AnalyticalFluxImp, BoundaryValueImp, BoundaryInfoImp, Traits &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Godunov flux evaluation for Dirichlet boundary intersections.  <a href="a01231.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01235.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits&lt; AnalyticalFluxImp &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01239.html">Dune::GDT::internal::GodunovLocalDirichletNumericalBoundaryFluxTraits&lt; AnalyticalFluxImp, BoundaryValueImp, BoundaryInfoImp &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01243.html">Dune::GDT::internal::GodunovFluxImplementation&lt; Traits &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01227.html">Dune::GDT::GodunovLocalNumericalCouplingFlux&lt; AnalyticalFluxImp, Traits &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01231.html">Dune::GDT::GodunovLocalDirichletNumericalBoundaryFlux&lt; AnalyticalFluxImp, BoundaryValueImp, BoundaryInfoImp, Traits &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Godunov flux evaluation for Dirichlet boundary intersections.  <a href="a01231.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00251"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html">Dune</a></td></tr>
+<tr class="memitem:a00245"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00245.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00252"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00252.html">Dune::GDT</a></td></tr>
+<tr class="memitem:a00246"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00246.html">Dune::GDT</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00253"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00253.html">Dune::GDT::internal</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a7d8c92722e087cefba1ac46ec1fa76f0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00246.html#a7d8c92722e087cefba1ac46ec1fa76f0">Dune::GDT::NumericalFluxes</a> { <br />
+&#160;&#160;<a class="el" href="a00246.html#a7d8c92722e087cefba1ac46ec1fa76f0aae254d63f2381cc183c11594873793e0">Dune::GDT::NumericalFluxes::force</a>, 
+<a class="el" href="a00246.html#a7d8c92722e087cefba1ac46ec1fa76f0a9399d693b7ac38875e19f1c38c4e4439">Dune::GDT::NumericalFluxes::godunov</a>, 
+<a class="el" href="a00246.html#a7d8c92722e087cefba1ac46ec1fa76f0a0f43c03a9e7ebc152cbaae416314ad69">Dune::GDT::NumericalFluxes::kinetic</a>, 
+<a class="el" href="a00246.html#a7d8c92722e087cefba1ac46ec1fa76f0a088da8a28ff265eb3b7e18ae1fc24274">Dune::GDT::NumericalFluxes::laxfriedrichs</a>, 
+<br />
+&#160;&#160;<a class="el" href="a00246.html#a7d8c92722e087cefba1ac46ec1fa76f0a03070545f77a8199923fb2e80550deb2">Dune::GDT::NumericalFluxes::laxwendroff</a>, 
+<a class="el" href="a00246.html#a7d8c92722e087cefba1ac46ec1fa76f0aa5aea357904deb91ca3777416848e6b0">Dune::GDT::NumericalFluxes::local_laxfriedrichs</a>, 
+<a class="el" href="a00246.html#a7d8c92722e087cefba1ac46ec1fa76f0a230d6f2fbb1b2f868241b805b6f837e7">Dune::GDT::NumericalFluxes::musta</a>
+<br />
+ }</td></tr>
+<tr class="separator:a7d8c92722e087cefba1ac46ec1fa76f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

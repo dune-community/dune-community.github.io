@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: fv.hh File Reference</title>
+<title>dune-gdt: elliptic-ipdg.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -65,52 +65,101 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">local/integrands/fv.hh File Reference</div>  </div>
+<div class="title">local/integrands/elliptic-ipdg.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;tuple&gt;</code><br />
 <code>#include &lt;boost/numeric/conversion/cast.hpp&gt;</code><br />
-<code>#include &lt;dune/common/dynmatrix.hh&gt;</code><br />
-<code>#include &lt;dune/common/typetraits.hh&gt;</code><br />
-<code>#include &lt;dune/xt/common/fmatrix.hh&gt;</code><br />
-<code>#include &lt;dune/xt/common/memory.hh&gt;</code><br />
-<code>#include &lt;dune/xt/functions/constant.hh&gt;</code><br />
+<code>#include &lt;dune/common/densematrix.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/timedlogging.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/type_traits.hh&gt;</code><br />
 <code>#include &lt;dune/xt/functions/interfaces.hh&gt;</code><br />
-<code>#include &quot;<a class="el" href="a04591_source.html">interfaces.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a04534_source.html">elliptic.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a04624_source.html">interfaces.hh</a>&quot;</code><br />
 </div>
 <p><a href="a04528_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01571.html">Dune::GDT::LocalFvRhsIntegrand&lt; RhsEvaluationImp, SourceType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01341.html">Dune::GDT::LocalEllipticIpdgIntegrands::internal::method_dependent_typename&lt; method &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01575.html">Dune::GDT::LocalFvRhsJacobianIntegrand&lt; RhsEvaluationImp, SourceType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01345.html">Dune::GDT::LocalEllipticIpdgIntegrands::method_name&lt; method &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01579.html">Dune::GDT::LocalFvRhsNewtonIntegrand&lt; RhsEvaluationImp, SourceType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01349.html">Dune::GDT::LocalEllipticIpdgIntegrands::method_name&lt; Method::ipdg &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01583.html">Dune::GDT::internal::LocalFvRhsIntegrandTraits&lt; RhsEvaluationImp, SourceType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01353.html">Dune::GDT::LocalEllipticIpdgIntegrands::method_name&lt; Method::nipdg &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01587.html">Dune::GDT::internal::LocalFvRhsJacobianIntegrandTraits&lt; RhsEvaluationImp, SourceType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01357.html">Dune::GDT::LocalEllipticIpdgIntegrands::method_name&lt; Method::sipdg &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01591.html">Dune::GDT::internal::LocalFvRhsNewtonIntegrandTraits&lt; RhsEvaluationImp, SourceType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01361.html">Dune::GDT::LocalEllipticIpdgIntegrands::method_name&lt; Method::swipdg &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01571.html">Dune::GDT::LocalFvRhsIntegrand&lt; RhsEvaluationImp, SourceType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01365.html">Dune::GDT::LocalEllipticIpdgIntegrands::method_name&lt; Method::swipdg_affine_factor &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01575.html">Dune::GDT::LocalFvRhsJacobianIntegrand&lt; RhsEvaluationImp, SourceType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01369.html">Dune::GDT::LocalEllipticIpdgIntegrands::method_name&lt; Method::swipdg_affine_tensor &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01579.html">Dune::GDT::LocalFvRhsNewtonIntegrand&lt; RhsEvaluationImp, SourceType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01373.html">Dune::GDT::LocalEllipticIpdgIntegrands::Inner&lt; DiffusionFactorImp, DiffusionTensorImp, method &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01377.html">Dune::GDT::LocalEllipticIpdgIntegrands::BoundaryLHS&lt; DiffusionFactorImp, DiffusionTensorImp, method &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01381.html">Dune::GDT::LocalEllipticIpdgIntegrands::BoundaryRHS&lt; DirichletImp, DiffusionFactorImp, DiffusionTensorImp, method &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01385.html">Dune::GDT::LocalEllipticIpdgIntegrands::internal::InnerTraits&lt; DiffusionFactorImp, DiffusionTensorImp, method &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01389.html">Dune::GDT::LocalEllipticIpdgIntegrands::internal::BoundaryLHSTraits&lt; DiffusionFactorImp, DiffusionTensorImp, method &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01393.html">Dune::GDT::LocalEllipticIpdgIntegrands::internal::BoundaryRHSTraits&lt; DirichletImp, DiffusionFactorImp, DiffusionTensorImp, method &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01373.html">Dune::GDT::LocalEllipticIpdgIntegrands::Inner&lt; DiffusionFactorImp, DiffusionTensorImp, method &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01377.html">Dune::GDT::LocalEllipticIpdgIntegrands::BoundaryLHS&lt; DiffusionFactorImp, DiffusionTensorImp, method &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01381.html">Dune::GDT::LocalEllipticIpdgIntegrands::BoundaryRHS&lt; DirichletImp, DiffusionFactorImp, DiffusionTensorImp, method &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00251"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html">Dune</a></td></tr>
+<tr class="memitem:a00245"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00245.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00252"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00252.html">Dune::GDT</a></td></tr>
+<tr class="memitem:a00246"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00246.html">Dune::GDT</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00253"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00253.html">Dune::GDT::internal</a></td></tr>
+<tr class="memitem:a00248"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00248.html">Dune::GDT::LocalEllipticIpdgIntegrands</a></td></tr>
+<tr class="memdesc:a00248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains local integrands for the family of interior penalty discontinuous Galerkin (IPDG) discretization schemes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00249"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00249.html">Dune::GDT::LocalEllipticIpdgIntegrands::internal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a408b56cd5789f645c7fe625bb6af2f6e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00248.html#a408b56cd5789f645c7fe625bb6af2f6e">Dune::GDT::LocalEllipticIpdgIntegrands::Method</a> { <br />
+&#160;&#160;<a class="el" href="a00248.html#a408b56cd5789f645c7fe625bb6af2f6eabf5ba5d8e773d57a00a419a88c3c5622">Dune::GDT::LocalEllipticIpdgIntegrands::Method::ipdg</a>, 
+<a class="el" href="a00248.html#a408b56cd5789f645c7fe625bb6af2f6eac4fd21f6762632ad8f00284c5a118c60">Dune::GDT::LocalEllipticIpdgIntegrands::Method::nipdg</a>, 
+<a class="el" href="a00248.html#a408b56cd5789f645c7fe625bb6af2f6eab9cdc2105185e2b7b2f70faabc252bef">Dune::GDT::LocalEllipticIpdgIntegrands::Method::sipdg</a>, 
+<a class="el" href="a00248.html#a408b56cd5789f645c7fe625bb6af2f6ea4a233dd12d6ac9daa4f0e6b20144ab00">Dune::GDT::LocalEllipticIpdgIntegrands::Method::swipdg</a>, 
+<br />
+&#160;&#160;<a class="el" href="a00248.html#a408b56cd5789f645c7fe625bb6af2f6eacb7be482a5ab86ccc7765b5c2419e6e7">Dune::GDT::LocalEllipticIpdgIntegrands::Method::swipdg_affine_factor</a>, 
+<a class="el" href="a00248.html#a408b56cd5789f645c7fe625bb6af2f6ea497c40545b4e6621d1f09e8478f9508c">Dune::GDT::LocalEllipticIpdgIntegrands::Method::swipdg_affine_tensor</a>
+<br />
+ }</td></tr>
+<tr class="separator:a408b56cd5789f645c7fe625bb6af2f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:abcb890fac1b4d3bc75757ba05c25885b"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00249.html#abcb890fac1b4d3bc75757ba05c25885b">Dune::GDT::LocalEllipticIpdgIntegrands::internal::default_beta</a> (const size_t dimDomain)</td></tr>
+<tr class="separator:abcb890fac1b4d3bc75757ba05c25885b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a423eadfa2109df40bb6b3209a023bfbd"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00249.html#a423eadfa2109df40bb6b3209a023bfbd">Dune::GDT::LocalEllipticIpdgIntegrands::internal::inner_sigma</a> (const size_t pol_order)</td></tr>
+<tr class="separator:a423eadfa2109df40bb6b3209a023bfbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58a022a07f4dd9fcccfa31756f7cf41b"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00249.html#a58a022a07f4dd9fcccfa31756f7cf41b">Dune::GDT::LocalEllipticIpdgIntegrands::internal::boundary_sigma</a> (const size_t pol_order)</td></tr>
+<tr class="separator:a58a022a07f4dd9fcccfa31756f7cf41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a6f1c29074ab80702c5e50abbdb5ba4b8"><td class="memItemLeft" align="right" valign="top">static constexpr Method&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00248.html#a6f1c29074ab80702c5e50abbdb5ba4b8">Dune::GDT::LocalEllipticIpdgIntegrands::default_method</a> = Method::swipdg</td></tr>
+<tr class="separator:a6f1c29074ab80702c5e50abbdb5ba4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

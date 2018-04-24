@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: l2.hh File Reference</title>
+<title>dune-gdt: interfaces.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,65 +59,63 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_422e9240d05ce838e6f6483d1fde367d.html">projections</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_e5964b6fd5a6d82d96e1215fe4a1a66d.html">local</a></li><li class="navelem"><a class="el" href="dir_897d860e0e1e77b53d604c7cb60fd2d2.html">operators</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">projections/l2.hh File Reference</div>  </div>
+<div class="title">local/operators/interfaces.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;dune/xt/grid/type_traits.hh&gt;</code><br />
-<code>#include &lt;<a class="el" href="a04474_source.html">dune/gdt/discretefunction/default.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00242_source.html">dune/gdt/type_traits.hh</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="a04615_source.html">l2-local.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a04609_source.html">l2-global.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;dune/common/dynmatrix.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/crtp.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/parameter.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/type_traits.hh&gt;</code><br />
+<code>#include &lt;dune/xt/functions/interfaces.hh&gt;</code><br />
+<code>#include &lt;dune/xt/functions/type_traits.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00053_source.html">dune/gdt/local/discretefunction.hh</a>&gt;</code><br />
 </div>
 <p><a href="a04627_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02303.html">Dune::GDT::L2ProjectionOperator&lt; GridLayerImp, FieldImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01681.html">Dune::GDT::internal::IsLocalOperator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02307.html">Dune::GDT::internal::L2ProjectionLocalizableOperatorTraits&lt; GridLayerType, SourceType, RangeType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01685.html">Dune::GDT::internal::IsLocalCouplingOperator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02319.html">Dune::GDT::internal::L2ProjectionOperatorTraits&lt; GridLayerType, FieldImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01689.html">Dune::GDT::internal::IsLocalBoundaryOperator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02323.html">Dune::GDT::L2ProjectionLocalizableOperator&lt; GridLayerImp, SourceImp, RangeImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01693.html">Dune::GDT::LocalOperatorInterface&lt; Traits &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02303.html">Dune::GDT::L2ProjectionOperator&lt; GridLayerImp, FieldImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01697.html">Dune::GDT::LocalCouplingOperatorInterface&lt; Traits &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01701.html">Dune::GDT::LocalBoundaryOperatorInterface&lt; Traits &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01705.html">Dune::GDT::LocalVolumeTwoFormInterface&lt; TestBase, AnsatzBase, Field &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01709.html">Dune::GDT::LocalCouplingTwoFormInterface&lt; TestBaseEntity, Intersection, AnsatzBaseEntity, TestBaseNeighbor, AnsatzBaseNeighbor, Field &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01713.html">Dune::GDT::LocalBoundaryTwoFormInterface&lt; TestBase, Intersection, AnsatzBase, Field &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01717.html">Dune::GDT::is_local_operator&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01721.html">Dune::GDT::is_local_coupling_operator&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01725.html">Dune::GDT::is_local_boundary_operator&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00251"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html">Dune</a></td></tr>
+<tr class="memitem:a00245"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00245.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00252"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00252.html">Dune::GDT</a></td></tr>
+<tr class="memitem:a00246"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00246.html">Dune::GDT</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00253"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00253.html">Dune::GDT::internal</a></td></tr>
+<tr class="memitem:a00247"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00247.html">Dune::GDT::internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:abb37c26aebc4f0de53587319f55a017b"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType , class SourceType , class SpaceType , class VectorType &gt; </td></tr>
-<tr class="memitem:abb37c26aebc4f0de53587319f55a017b"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value &amp;&amp;XT::Functions::is_localizable_function&lt; SourceType &gt;::value &amp;&amp;is_space&lt; SpaceType &gt;::value &amp;&amp;XT::LA::is_vector&lt; VectorType &gt;::value, std::unique_ptr&lt; L2ProjectionLocalizableOperator&lt; GridLayerType, SourceType, DiscreteFunction&lt; SpaceType, VectorType &gt; &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00252.html#abb37c26aebc4f0de53587319f55a017b">Dune::GDT::make_l2_projection_localizable_operator</a> (const GridLayerType &amp;grid_layer, const SourceType &amp;source, DiscreteFunction&lt; SpaceType, VectorType &gt; &amp;range, const size_t over_integrate=0)</td></tr>
-<tr class="separator:abb37c26aebc4f0de53587319f55a017b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1fda08c8477972bb5135da2513518dc"><td class="memTemplParams" colspan="2">template&lt;class SourceType , class SpaceType , class VectorType &gt; </td></tr>
-<tr class="memitem:aa1fda08c8477972bb5135da2513518dc"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Functions::is_localizable_function&lt; SourceType &gt;::value &amp;&amp;is_space&lt; SpaceType &gt;::value &amp;&amp;XT::LA::is_vector&lt; VectorType &gt;::value, std::unique_ptr&lt; L2ProjectionLocalizableOperator&lt; typename SpaceType::GridLayerType, SourceType, DiscreteFunction&lt; SpaceType, VectorType &gt; &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00252.html#aa1fda08c8477972bb5135da2513518dc">Dune::GDT::make_l2_projection_localizable_operator</a> (const SourceType &amp;source, DiscreteFunction&lt; SpaceType, VectorType &gt; &amp;range, const size_t over_integrate=0)</td></tr>
-<tr class="separator:aa1fda08c8477972bb5135da2513518dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53207d499f1a26958db4d5efb6ba6bdb"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType &gt; </td></tr>
-<tr class="memitem:a53207d499f1a26958db4d5efb6ba6bdb"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value, std::unique_ptr&lt; L2ProjectionOperator&lt; GridLayerType &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00252.html#a53207d499f1a26958db4d5efb6ba6bdb">Dune::GDT::make_l2_projection_operator</a> (const GridLayerType &amp;grid_layer, const size_t over_integrate=0)</td></tr>
-<tr class="separator:a53207d499f1a26958db4d5efb6ba6bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a739fd9a05d811357d4e054e61017b4be"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType , class SourceType , class SpaceType , class VectorType &gt; </td></tr>
-<tr class="memitem:a739fd9a05d811357d4e054e61017b4be"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value &amp;&amp;XT::Functions::is_localizable_function&lt; SourceType &gt;::value &amp;&amp;is_space&lt; SpaceType &gt;::value &amp;&amp;XT::LA::is_vector&lt; VectorType &gt;::value, void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00252.html#a739fd9a05d811357d4e054e61017b4be">Dune::GDT::project_l2</a> (const GridLayerType &amp;grid_layer, const SourceType &amp;source, DiscreteFunction&lt; SpaceType, VectorType &gt; &amp;range, const size_t over_integrate=0, const XT::Common::Parameter &amp;param={})</td></tr>
-<tr class="separator:a739fd9a05d811357d4e054e61017b4be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ce48b8d05bd6a7e3c9f4fb215eb0b93"><td class="memTemplParams" colspan="2">template&lt;class SourceType , class SpaceType , class VectorType &gt; </td></tr>
-<tr class="memitem:a3ce48b8d05bd6a7e3c9f4fb215eb0b93"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Functions::is_localizable_function&lt; SourceType &gt;::value &amp;&amp;is_space&lt; SpaceType &gt;::value &amp;&amp;XT::LA::is_vector&lt; VectorType &gt;::value, void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00252.html#a3ce48b8d05bd6a7e3c9f4fb215eb0b93">Dune::GDT::project_l2</a> (const SourceType &amp;source, DiscreteFunction&lt; SpaceType, VectorType &gt; &amp;range, const size_t over_integrate=0, const XT::Common::Parameter &amp;param={})</td></tr>
-<tr class="separator:a3ce48b8d05bd6a7e3c9f4fb215eb0b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
