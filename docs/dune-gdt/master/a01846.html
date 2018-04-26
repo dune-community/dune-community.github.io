@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::internal::AdvectionOperatorApplier&lt; NumericalCouplingFluxType, NumericalBoundaryFluxType, polOrder, slope_limiter, RealizabilityLimiterType &gt; Struct Template Reference</title>
+<title>dune-gdt: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,119 +59,28 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00230.html">Dune</a></li><li class="navelem"><a class="el" href="a00231.html">GDT</a></li><li class="navelem"><a class="el" href="a00232.html">internal</a></li><li class="navelem"><a class="el" href="a01846.html">AdvectionOperatorApplier</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a00247.html">internal</a></li><li class="navelem"><a class="el" href="a01849.html">AdvectionTraitsBase</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="a01843.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::AdvectionOperatorApplier&lt; NumericalCouplingFluxType, NumericalBoundaryFluxType, polOrder, slope_limiter, RealizabilityLimiterType &gt; Struct Template Reference</div>  </div>
+<div class="title">Dune::GDT::internal::AdvectionTraitsBase&lt; AnalyticalFluxImp, BoundaryValueImp &gt; Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a04437_source.html">dune/gdt/operators/fv/base.hh</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a16211092db75f0c22c867feb89ea7c6c"><td class="memTemplParams" colspan="2">template&lt;class AnalyticalFluxType , class BoundaryValueType , class SourceType , class RangeType , class DomainFieldType , class... LocalOperatorArgTypes&gt; </td></tr>
-<tr class="memitem:a16211092db75f0c22c867feb89ea7c6c"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01846.html#a16211092db75f0c22c867feb89ea7c6c">apply</a> (const AnalyticalFluxType &amp;analytical_flux, const BoundaryValueType &amp;boundary_values, const SourceType &amp;source, RangeType &amp;range, const XT::Common::Parameter &amp;param, bool is_linear, const Dune::QuadratureRule&lt; DomainFieldType, 1 &gt; quadrature1d, const Dune::QuadratureRule&lt; DomainFieldType, BoundaryValueType::dimDomain - 1 &gt; intersection_quadrature, const std::shared_ptr&lt; RealizabilityLimiterType &gt; &amp;realizability_limiter, LocalOperatorArgTypes &amp;&amp;... local_operator_args)</td></tr>
-<tr class="separator:a16211092db75f0c22c867feb89ea7c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a16211092db75f0c22c867feb89ea7c6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16211092db75f0c22c867feb89ea7c6c">&#9670;&nbsp;</a></span>apply()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class NumericalCouplingFluxType , class NumericalBoundaryFluxType , size_t polOrder, SlopeLimiters slope_limiter, class RealizabilityLimiterType &gt; </div>
-<div class="memtemplate">
-template&lt;class AnalyticalFluxType , class BoundaryValueType , class SourceType , class RangeType , class DomainFieldType , class... LocalOperatorArgTypes&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void <a class="el" href="a01846.html">Dune::GDT::internal::AdvectionOperatorApplier</a>&lt; NumericalCouplingFluxType, NumericalBoundaryFluxType, polOrder, slope_limiter, RealizabilityLimiterType &gt;::apply </td>
-          <td>(</td>
-          <td class="paramtype">const AnalyticalFluxType &amp;&#160;</td>
-          <td class="paramname"><em>analytical_flux</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const BoundaryValueType &amp;&#160;</td>
-          <td class="paramname"><em>boundary_values</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const SourceType &amp;&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">RangeType &amp;&#160;</td>
-          <td class="paramname"><em>range</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
-          <td class="paramname"><em>param</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>is_linear</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Dune::QuadratureRule&lt; DomainFieldType, 1 &gt;&#160;</td>
-          <td class="paramname"><em>quadrature1d</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Dune::QuadratureRule&lt; DomainFieldType, BoundaryValueType::dimDomain - 1 &gt;&#160;</td>
-          <td class="paramname"><em>intersection_quadrature</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::shared_ptr&lt; RealizabilityLimiterType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>realizability_limiter</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LocalOperatorArgTypes &amp;&amp;...&#160;</td>
-          <td class="paramname"><em>local_operator_args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="a04437_source.html">operators/fv/base.hh</a></li>
-</ul>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a01849.html">Dune::GDT::internal::AdvectionTraitsBase&lt; AnalyticalFluxImp, BoundaryValueImp &gt;</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a01849.html#acdf1a15881de8dc0b8ac7c2b47b014e7">AnalyticalFluxType</a> typedef</td><td class="entry"><a class="el" href="a01849.html">Dune::GDT::internal::AdvectionTraitsBase&lt; AnalyticalFluxImp, BoundaryValueImp &gt;</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a01849.html#a9027de19001b3c0b357adcb5c528db52">BoundaryValueType</a> typedef</td><td class="entry"><a class="el" href="a01849.html">Dune::GDT::internal::AdvectionTraitsBase&lt; AnalyticalFluxImp, BoundaryValueImp &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a01849.html#a97027108f4fb0237a489cee301cfb550">dimDomain</a></td><td class="entry"><a class="el" href="a01849.html">Dune::GDT::internal::AdvectionTraitsBase&lt; AnalyticalFluxImp, BoundaryValueImp &gt;</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a01849.html#ae82a151a8a56fbbee8da83be25ebbb46">dimRange</a></td><td class="entry"><a class="el" href="a01849.html">Dune::GDT::internal::AdvectionTraitsBase&lt; AnalyticalFluxImp, BoundaryValueImp &gt;</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a01849.html#a5cb6ff7d7d46b3eb0aa8e74b298d1502">dimRangeCols</a></td><td class="entry"><a class="el" href="a01849.html">Dune::GDT::internal::AdvectionTraitsBase&lt; AnalyticalFluxImp, BoundaryValueImp &gt;</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a01849.html#a524acd8ffe941f02d4444dd9b0eea2d2">DomainFieldType</a> typedef</td><td class="entry"><a class="el" href="a01849.html">Dune::GDT::internal::AdvectionTraitsBase&lt; AnalyticalFluxImp, BoundaryValueImp &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a01849.html#aa08f488131744359f039e240c362502e">DomainType</a> typedef</td><td class="entry"><a class="el" href="a01849.html">Dune::GDT::internal::AdvectionTraitsBase&lt; AnalyticalFluxImp, BoundaryValueImp &gt;</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a01849.html#ab42146ae5d3c82623a5e30f92ed34ce7">FieldType</a> typedef</td><td class="entry"><a class="el" href="a01849.html">Dune::GDT::internal::AdvectionTraitsBase&lt; AnalyticalFluxImp, BoundaryValueImp &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a01849.html#ac3f84580e44bd9f0c354584c826b50fc">JacobianType</a> typedef</td><td class="entry"><a class="el" href="a01849.html">Dune::GDT::internal::AdvectionTraitsBase&lt; AnalyticalFluxImp, BoundaryValueImp &gt;</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a01849.html#ab864b406ab510014e6abdd61fa85c3a5">RangeFieldType</a> typedef</td><td class="entry"><a class="el" href="a01849.html">Dune::GDT::internal::AdvectionTraitsBase&lt; AnalyticalFluxImp, BoundaryValueImp &gt;</a></td><td class="entry"></td></tr>
+</table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

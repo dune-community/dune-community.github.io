@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: rosenbrock.hh File Reference</title>
+<title>dune-gdt: oswaldinterpolation.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,54 +59,54 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_1eea3f25d96e3194dad91b986d4f2dcc.html">playground</a></li><li class="navelem"><a class="el" href="dir_70342cd8bfc03251c6b862f9c72e8886.html">timestepper</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_8eae17099f455a1cfbd2c25e13098b8a.html">operators</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">rosenbrock.hh File Reference</div>  </div>
+<div class="title">oswaldinterpolation.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;utility&gt;</code><br />
-<code>#include &lt;<a class="el" href="a04572_source.html">dune/gdt/operators/interfaces.hh</a>&gt;</code><br />
-<code>#include &lt;dune/xt/common/memory.hh&gt;</code><br />
-<code>#include &lt;dune/xt/common/string.hh&gt;</code><br />
-<code>#include &lt;<a class="el" href="a04551_source.html">dune/gdt/timestepper/interface.hh</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;set&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;dune/xt/common/float_cmp.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/numeric_cast.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/print.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/vector.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/ranges.hh&gt;</code><br />
+<code>#include &lt;dune/xt/grid/boundaryinfo/interfaces.hh&gt;</code><br />
+<code>#include &lt;dune/xt/grid/boundaryinfo/types.hh&gt;</code><br />
+<code>#include &lt;dune/xt/grid/walker.hh&gt;</code><br />
+<code>#include &lt;dune/xt/grid/type_traits.hh&gt;</code><br />
+<code>#include &lt;dune/xt/functions/interfaces/localizable-function.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04501_source.html">dune/gdt/discretefunction/default.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04513_source.html">dune/gdt/spaces/dg/default.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00158_source.html">dune/gdt/playground/spaces/block.hh</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="a04630_source.html">interfaces.hh</a>&quot;</code><br />
 </div>
 <p><a href="a00149_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02150.html">Dune::GDT::internal::RosenbrockButcherArrayProvider&lt; RangeFieldType, method &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02161.html">Dune::GDT::OswaldInterpolationOperator&lt; GridLayerImp, FieldImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02154.html">Dune::GDT::internal::RosenbrockButcherArrayProvider&lt; RangeFieldType, RosenbrockTimeStepperMethods::GRK4A &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02165.html">Dune::GDT::internal::OswaldInterpolationOperatorTraits&lt; GridLayerImp, FieldImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02158.html">Dune::GDT::internal::RosenbrockButcherArrayProvider&lt; RangeFieldType, RosenbrockTimeStepperMethods::GRK4T &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02162.html">Dune::GDT::RosenbrockTimeStepper&lt; OperatorImp, DiscreteFunctionImp, SolverImp, method &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time stepper using Rosenbrock-type methods.  <a href="a02162.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02161.html">Dune::GDT::OswaldInterpolationOperator&lt; GridLayerImp, FieldImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00230"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00230.html">Dune</a></td></tr>
+<tr class="memitem:a00245"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00245.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00231"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00231.html">Dune::GDT</a></td></tr>
+<tr class="memitem:a00246"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00246.html">Dune::GDT</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00232"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00232.html">Dune::GDT::internal</a></td></tr>
+<tr class="memitem:a00247"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00247.html">Dune::GDT::internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a5a9b3478d77a16697bf06fa3f949e0fa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00231.html#a5a9b3478d77a16697bf06fa3f949e0fa">Dune::GDT::RosenbrockTimeStepperMethods</a> { <a class="el" href="a00231.html#a5a9b3478d77a16697bf06fa3f949e0faaefc42475d5c88b4e9d7e08dfeda6ef8b">Dune::GDT::RosenbrockTimeStepperMethods::GRK4A</a>, 
-<a class="el" href="a00231.html#a5a9b3478d77a16697bf06fa3f949e0faa9ed047981c608fb1716e2edee87aa5fc">Dune::GDT::RosenbrockTimeStepperMethods::GRK4T</a>, 
-<a class="el" href="a00231.html#a5a9b3478d77a16697bf06fa3f949e0faa795f3202b17cb6bc3d4b771d8c6c9eaf">Dune::GDT::RosenbrockTimeStepperMethods::other</a>
- }</td></tr>
-<tr class="separator:a5a9b3478d77a16697bf06fa3f949e0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
