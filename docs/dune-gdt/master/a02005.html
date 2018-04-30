@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::internal::product_quadrature_helper&lt; DomainFieldType, 3 &gt; Struct Template Reference</title>
+<title>dune-gdt: Dune::GDT::internal::JacobianWrapper&lt; MatrixType, VectorType, dimRange, num_jacobians &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,56 +59,774 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a00247.html">internal</a></li><li class="navelem"><a class="el" href="a02005.html">product_quadrature_helper&lt; DomainFieldType, 3 &gt;</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a00247.html">internal</a></li><li class="navelem"><a class="el" href="a02005.html">JacobianWrapper</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="a02002.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::product_quadrature_helper&lt; DomainFieldType, 3 &gt; Struct Template Reference</div>  </div>
+<div class="title">Dune::GDT::internal::JacobianWrapper&lt; MatrixType, VectorType, dimRange, num_jacobians &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00128_source.html">dune/gdt/operators/fv/quadrature.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00131_source.html">dune/gdt/operators/fv/reconstruction/linear.hh</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Dune::GDT::internal::JacobianWrapper&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="a02004.png" border="0" usemap="#_dune_1_1_g_d_t_1_1internal_1_1_jacobian_wrapper_3_01_matrix_type_00_01_vector_type_00_01dim_range_00_01num__jacobians_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1internal_1_1_jacobian_wrapper_3_01_matrix_type_00_01_vector_type_00_01dim_range_00_01num__jacobians_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1internal_1_1_jacobian_wrapper_3_01_matrix_type_00_01_vector_type_00_01dim_range_00_01num__jacobians_01_4_inherit__map">
+</map>
+</div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8b4eed4638ce7370cecad4fc47376e31"><td class="memItemLeft" align="right" valign="top">static QuadratureRule&lt; DomainFieldType, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02005.html#a8b4eed4638ce7370cecad4fc47376e31">get</a> (const QuadratureRule&lt; DomainFieldType, 1 &gt; &amp;quadrature_1d)</td></tr>
-<tr class="separator:a8b4eed4638ce7370cecad4fc47376e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a5a293a5a22c32a3b518ac0a4062fd6ee"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02005.html#a5a293a5a22c32a3b518ac0a4062fd6ee">JacobianType</a> = typename XT::Common::FieldVector&lt; MatrixType, num_jacobians &gt;</td></tr>
+<tr class="separator:a5a293a5a22c32a3b518ac0a4062fd6ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ac754318a7e95444568d7e665602237c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02005.html#ac754318a7e95444568d7e665602237c2">JacobianWrapper</a> ()</td></tr>
+<tr class="separator:ac754318a7e95444568d7e665602237c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f9977d601b7e36b13454f8a9252b359"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02005.html#a5f9977d601b7e36b13454f8a9252b359">compute</a> (const size_t dd)</td></tr>
+<tr class="separator:a5f9977d601b7e36b13454f8a9252b359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fcf74db0db77fa35e4688da348f7274"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02005.html#a8fcf74db0db77fa35e4688da348f7274">compute</a> ()</td></tr>
+<tr class="separator:a8fcf74db0db77fa35e4688da348f7274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1084b1de6d07cd41c57340210aa73a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02005.html#af1084b1de6d07cd41c57340210aa73a9">computed</a> (const size_t dd) const</td></tr>
+<tr class="separator:af1084b1de6d07cd41c57340210aa73a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81f3606ffa5acd94641a3f46c3075e5a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02005.html#a81f3606ffa5acd94641a3f46c3075e5a">computed</a> () const</td></tr>
+<tr class="separator:a81f3606ffa5acd94641a3f46c3075e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7de8a979def09217c805fee37c0fef03"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="a02005.html#a5a293a5a22c32a3b518ac0a4062fd6ee">JacobianType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02005.html#a7de8a979def09217c805fee37c0fef03">jacobian</a> ()</td></tr>
+<tr class="separator:a7de8a979def09217c805fee37c0fef03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34d98426e808dc786ab108846c452a9e"><td class="memItemLeft" align="right" valign="top">const std::unique_ptr&lt; <a class="el" href="a02005.html#a5a293a5a22c32a3b518ac0a4062fd6ee">JacobianType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02005.html#a34d98426e808dc786ab108846c452a9e">jacobian</a> () const</td></tr>
+<tr class="separator:a34d98426e808dc786ab108846c452a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d0035ef39597f63191d969893770d31"><td class="memItemLeft" align="right" valign="top">MatrixType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02005.html#a5d0035ef39597f63191d969893770d31">jacobian</a> (const size_t dd)</td></tr>
+<tr class="separator:a5d0035ef39597f63191d969893770d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0edcd6d19ea216de944fb0629e42d322"><td class="memItemLeft" align="right" valign="top">const MatrixType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02005.html#a0edcd6d19ea216de944fb0629e42d322">jacobian</a> (const size_t dd) const</td></tr>
+<tr class="separator:a0edcd6d19ea216de944fb0629e42d322"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88cedbaf6d3da2f74ce939c810f972f6"><td class="memTemplParams" colspan="2">template&lt;class VecType &gt; </td></tr>
+<tr class="memitem:a88cedbaf6d3da2f74ce939c810f972f6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02005.html#a88cedbaf6d3da2f74ce939c810f972f6">apply_eigenvectors</a> (const size_t dd, const VecType &amp;x, VecType &amp;ret) const</td></tr>
+<tr class="separator:a88cedbaf6d3da2f74ce939c810f972f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0656c89ff931ff3861fffa663cb88c90"><td class="memTemplParams" colspan="2">template&lt;class VecType &gt; </td></tr>
+<tr class="memitem:a0656c89ff931ff3861fffa663cb88c90"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02005.html#a0656c89ff931ff3861fffa663cb88c90">apply_inverse_eigenvectors</a> (const size_t dd, const VecType &amp;x, VecType &amp;ret) const</td></tr>
+<tr class="separator:a0656c89ff931ff3861fffa663cb88c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:a6c291987d5d8985745fb993509beca12"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02005.html#a6c291987d5d8985745fb993509beca12">M</a> = XT::Common::MatrixAbstraction&lt; MatrixType &gt;</td></tr>
+<tr class="separator:a6c291987d5d8985745fb993509beca12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea0a899bd81f60f33cc8ae8bdc8c2775"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02005.html#aea0a899bd81f60f33cc8ae8bdc8c2775">V</a> = XT::Common::VectorAbstraction&lt; VectorType &gt;</td></tr>
+<tr class="separator:aea0a899bd81f60f33cc8ae8bdc8c2775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae23449458ba8f83d87a54deb1bcf41bc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02005.html#ae23449458ba8f83d87a54deb1bcf41bc">EigenSolverType</a> = typename XT::LA::EigenSolver&lt; MatrixType &gt;</td></tr>
+<tr class="separator:ae23449458ba8f83d87a54deb1bcf41bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9422a88b24c751a845683ec185a4f741"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02005.html#a9422a88b24c751a845683ec185a4f741">EigenSolverOptionsType</a> = typename XT::LA::EigenSolverOptions&lt; MatrixType &gt;</td></tr>
+<tr class="separator:a9422a88b24c751a845683ec185a4f741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9f9c4d2dc13dccefb6c3204cef4324c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02005.html#ab9f9c4d2dc13dccefb6c3204cef4324c">MatrixInverterOptionsType</a> = typename XT::LA::MatrixInverterOptions&lt; MatrixType &gt;</td></tr>
+<tr class="separator:ab9f9c4d2dc13dccefb6c3204cef4324c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:a52d9c0b33743c416bc133fd4d78b188e"><td class="memItemLeft" align="right" valign="top">static XT::Common::Configuration&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02005.html#a52d9c0b33743c416bc133fd4d78b188e">create_eigensolver_options</a> ()</td></tr>
+<tr class="separator:a52d9c0b33743c416bc133fd4d78b188e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a3a258231a55771b18fac07b5fa6fe9d6"><td class="memItemLeft" align="right" valign="top">FieldVector&lt; MatrixType, num_jacobians &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02005.html#a3a258231a55771b18fac07b5fa6fe9d6">eigenvectors_</a></td></tr>
+<tr class="separator:a3a258231a55771b18fac07b5fa6fe9d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50a1f31aaa39312059dbd8d0839dd1f1"><td class="memItemLeft" align="right" valign="top">FieldVector&lt; VectorType, num_jacobians &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02005.html#a50a1f31aaa39312059dbd8d0839dd1f1">eigenvalues_</a></td></tr>
+<tr class="separator:a50a1f31aaa39312059dbd8d0839dd1f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a035225cca63d4c43ece7f067af3f1f03"><td class="memItemLeft" align="right" valign="top">FieldVector&lt; MatrixType, num_jacobians &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02005.html#a035225cca63d4c43ece7f067af3f1f03">QR_</a></td></tr>
+<tr class="separator:a035225cca63d4c43ece7f067af3f1f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2d8f0e14b5fc459fa4b5893601b3034"><td class="memItemLeft" align="right" valign="top">FieldVector&lt; VectorType, num_jacobians &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02005.html#ab2d8f0e14b5fc459fa4b5893601b3034">tau_</a></td></tr>
+<tr class="separator:ab2d8f0e14b5fc459fa4b5893601b3034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d52ad90bf59a8ef6b68bc8c04cc562"><td class="memItemLeft" align="right" valign="top">FieldVector&lt; FieldVector&lt; int, dimRange &gt;, num_jacobians &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02005.html#a24d52ad90bf59a8ef6b68bc8c04cc562">permutations_</a></td></tr>
+<tr class="separator:a24d52ad90bf59a8ef6b68bc8c04cc562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8308e9aa743e8c56a35dc5664f3aef4b"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="a02005.html#a5a293a5a22c32a3b518ac0a4062fd6ee">JacobianType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02005.html#a8308e9aa743e8c56a35dc5664f3aef4b">jacobian_</a></td></tr>
+<tr class="separator:a8308e9aa743e8c56a35dc5664f3aef4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac26ce2d35e4b293814170e59a265a201"><td class="memItemLeft" align="right" valign="top">FieldVector&lt; bool, num_jacobians &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02005.html#ac26ce2d35e4b293814170e59a265a201">computed_</a></td></tr>
+<tr class="separator:ac26ce2d35e4b293814170e59a265a201"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8b4eed4638ce7370cecad4fc47376e31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b4eed4638ce7370cecad4fc47376e31">&#9670;&nbsp;</a></span>get()</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a9422a88b24c751a845683ec185a4f741"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9422a88b24c751a845683ec185a4f741">&#9670;&nbsp;</a></span>EigenSolverOptionsType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class DomainFieldType &gt; </div>
+template&lt;class MatrixType, class VectorType, size_t dimRange, size_t num_jacobians&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static QuadratureRule&lt;DomainFieldType, 2&gt; <a class="el" href="a01993.html">Dune::GDT::internal::product_quadrature_helper</a>&lt; DomainFieldType, 3 &gt;::get </td>
-          <td>(</td>
-          <td class="paramtype">const QuadratureRule&lt; DomainFieldType, 1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>quadrature_1d</em></td><td>)</td>
-          <td></td>
+          <td class="memname">using <a class="el" href="a02005.html">Dune::GDT::internal::JacobianWrapper</a>&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;::<a class="el" href="a02005.html#a9422a88b24c751a845683ec185a4f741">EigenSolverOptionsType</a> =  typename XT::LA::EigenSolverOptions&lt;MatrixType&gt;</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="a00128_source.html">quadrature.hh</a></li>
+<a id="ae23449458ba8f83d87a54deb1bcf41bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae23449458ba8f83d87a54deb1bcf41bc">&#9670;&nbsp;</a></span>EigenSolverType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType, class VectorType, size_t dimRange, size_t num_jacobians&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a02005.html">Dune::GDT::internal::JacobianWrapper</a>&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;::<a class="el" href="a02005.html#ae23449458ba8f83d87a54deb1bcf41bc">EigenSolverType</a> =  typename XT::LA::EigenSolver&lt;MatrixType&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5a293a5a22c32a3b518ac0a4062fd6ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a293a5a22c32a3b518ac0a4062fd6ee">&#9670;&nbsp;</a></span>JacobianType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType, class VectorType, size_t dimRange, size_t num_jacobians&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a02005.html">Dune::GDT::internal::JacobianWrapper</a>&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;::<a class="el" href="a02005.html#a5a293a5a22c32a3b518ac0a4062fd6ee">JacobianType</a> =  typename XT::Common::FieldVector&lt;MatrixType, num_jacobians&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c291987d5d8985745fb993509beca12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c291987d5d8985745fb993509beca12">&#9670;&nbsp;</a></span>M</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType, class VectorType, size_t dimRange, size_t num_jacobians&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a02005.html">Dune::GDT::internal::JacobianWrapper</a>&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;::<a class="el" href="a02005.html#a6c291987d5d8985745fb993509beca12">M</a> =  XT::Common::MatrixAbstraction&lt;MatrixType&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9f9c4d2dc13dccefb6c3204cef4324c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9f9c4d2dc13dccefb6c3204cef4324c">&#9670;&nbsp;</a></span>MatrixInverterOptionsType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType, class VectorType, size_t dimRange, size_t num_jacobians&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a02005.html">Dune::GDT::internal::JacobianWrapper</a>&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;::<a class="el" href="a02005.html#ab9f9c4d2dc13dccefb6c3204cef4324c">MatrixInverterOptionsType</a> =  typename XT::LA::MatrixInverterOptions&lt;MatrixType&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea0a899bd81f60f33cc8ae8bdc8c2775"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea0a899bd81f60f33cc8ae8bdc8c2775">&#9670;&nbsp;</a></span>V</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType, class VectorType, size_t dimRange, size_t num_jacobians&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a02005.html">Dune::GDT::internal::JacobianWrapper</a>&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;::<a class="el" href="a02005.html#aea0a899bd81f60f33cc8ae8bdc8c2775">V</a> =  XT::Common::VectorAbstraction&lt;VectorType&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ac754318a7e95444568d7e665602237c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac754318a7e95444568d7e665602237c2">&#9670;&nbsp;</a></span>JacobianWrapper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType, class VectorType, size_t dimRange, size_t num_jacobians&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a02005.html">Dune::GDT::internal::JacobianWrapper</a>&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;::<a class="el" href="a02005.html">JacobianWrapper</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a88cedbaf6d3da2f74ce939c810f972f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88cedbaf6d3da2f74ce939c810f972f6">&#9670;&nbsp;</a></span>apply_eigenvectors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType, class VectorType, size_t dimRange, size_t num_jacobians&gt; </div>
+<div class="memtemplate">
+template&lt;class VecType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a02005.html">Dune::GDT::internal::JacobianWrapper</a>&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;::apply_eigenvectors </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>dd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const VecType &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VecType &amp;&#160;</td>
+          <td class="paramname"><em>ret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0656c89ff931ff3861fffa663cb88c90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0656c89ff931ff3861fffa663cb88c90">&#9670;&nbsp;</a></span>apply_inverse_eigenvectors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType, class VectorType, size_t dimRange, size_t num_jacobians&gt; </div>
+<div class="memtemplate">
+template&lt;class VecType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a02005.html">Dune::GDT::internal::JacobianWrapper</a>&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;::apply_inverse_eigenvectors </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>dd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const VecType &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VecType &amp;&#160;</td>
+          <td class="paramname"><em>ret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f9977d601b7e36b13454f8a9252b359"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f9977d601b7e36b13454f8a9252b359">&#9670;&nbsp;</a></span>compute() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType, class VectorType, size_t dimRange, size_t num_jacobians&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a02005.html">Dune::GDT::internal::JacobianWrapper</a>&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;::compute </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>dd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8fcf74db0db77fa35e4688da348f7274"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fcf74db0db77fa35e4688da348f7274">&#9670;&nbsp;</a></span>compute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType, class VectorType, size_t dimRange, size_t num_jacobians&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a02005.html">Dune::GDT::internal::JacobianWrapper</a>&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;::compute </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af1084b1de6d07cd41c57340210aa73a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1084b1de6d07cd41c57340210aa73a9">&#9670;&nbsp;</a></span>computed() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType, class VectorType, size_t dimRange, size_t num_jacobians&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="a02005.html">Dune::GDT::internal::JacobianWrapper</a>&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;::computed </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>dd</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81f3606ffa5acd94641a3f46c3075e5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81f3606ffa5acd94641a3f46c3075e5a">&#9670;&nbsp;</a></span>computed() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType, class VectorType, size_t dimRange, size_t num_jacobians&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="a02005.html">Dune::GDT::internal::JacobianWrapper</a>&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;::computed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a52d9c0b33743c416bc133fd4d78b188e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52d9c0b33743c416bc133fd4d78b188e">&#9670;&nbsp;</a></span>create_eigensolver_options()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType, class VectorType, size_t dimRange, size_t num_jacobians&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static XT::Common::Configuration <a class="el" href="a02005.html">Dune::GDT::internal::JacobianWrapper</a>&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;::create_eigensolver_options </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7de8a979def09217c805fee37c0fef03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7de8a979def09217c805fee37c0fef03">&#9670;&nbsp;</a></span>jacobian() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType, class VectorType, size_t dimRange, size_t num_jacobians&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="a02005.html#a5a293a5a22c32a3b518ac0a4062fd6ee">JacobianType</a>&gt;&amp; <a class="el" href="a02005.html">Dune::GDT::internal::JacobianWrapper</a>&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;::jacobian </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a34d98426e808dc786ab108846c452a9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34d98426e808dc786ab108846c452a9e">&#9670;&nbsp;</a></span>jacobian() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType, class VectorType, size_t dimRange, size_t num_jacobians&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::unique_ptr&lt;<a class="el" href="a02005.html#a5a293a5a22c32a3b518ac0a4062fd6ee">JacobianType</a>&gt;&amp; <a class="el" href="a02005.html">Dune::GDT::internal::JacobianWrapper</a>&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;::jacobian </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d0035ef39597f63191d969893770d31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d0035ef39597f63191d969893770d31">&#9670;&nbsp;</a></span>jacobian() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType, class VectorType, size_t dimRange, size_t num_jacobians&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MatrixType&amp; <a class="el" href="a02005.html">Dune::GDT::internal::JacobianWrapper</a>&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;::jacobian </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>dd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0edcd6d19ea216de944fb0629e42d322"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0edcd6d19ea216de944fb0629e42d322">&#9670;&nbsp;</a></span>jacobian() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType, class VectorType, size_t dimRange, size_t num_jacobians&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const MatrixType&amp; <a class="el" href="a02005.html">Dune::GDT::internal::JacobianWrapper</a>&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;::jacobian </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>dd</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac26ce2d35e4b293814170e59a265a201"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac26ce2d35e4b293814170e59a265a201">&#9670;&nbsp;</a></span>computed_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType, class VectorType, size_t dimRange, size_t num_jacobians&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FieldVector&lt;bool, num_jacobians&gt; <a class="el" href="a02005.html">Dune::GDT::internal::JacobianWrapper</a>&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;::computed_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a50a1f31aaa39312059dbd8d0839dd1f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50a1f31aaa39312059dbd8d0839dd1f1">&#9670;&nbsp;</a></span>eigenvalues_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType, class VectorType, size_t dimRange, size_t num_jacobians&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FieldVector&lt;VectorType, num_jacobians&gt; <a class="el" href="a02005.html">Dune::GDT::internal::JacobianWrapper</a>&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;::eigenvalues_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a258231a55771b18fac07b5fa6fe9d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a258231a55771b18fac07b5fa6fe9d6">&#9670;&nbsp;</a></span>eigenvectors_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType, class VectorType, size_t dimRange, size_t num_jacobians&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FieldVector&lt;MatrixType, num_jacobians&gt; <a class="el" href="a02005.html">Dune::GDT::internal::JacobianWrapper</a>&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;::eigenvectors_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8308e9aa743e8c56a35dc5664f3aef4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8308e9aa743e8c56a35dc5664f3aef4b">&#9670;&nbsp;</a></span>jacobian_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType, class VectorType, size_t dimRange, size_t num_jacobians&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="a02005.html#a5a293a5a22c32a3b518ac0a4062fd6ee">JacobianType</a>&gt; <a class="el" href="a02005.html">Dune::GDT::internal::JacobianWrapper</a>&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;::jacobian_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a24d52ad90bf59a8ef6b68bc8c04cc562"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24d52ad90bf59a8ef6b68bc8c04cc562">&#9670;&nbsp;</a></span>permutations_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType, class VectorType, size_t dimRange, size_t num_jacobians&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FieldVector&lt;FieldVector&lt;int, dimRange&gt;, num_jacobians&gt; <a class="el" href="a02005.html">Dune::GDT::internal::JacobianWrapper</a>&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;::permutations_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a035225cca63d4c43ece7f067af3f1f03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a035225cca63d4c43ece7f067af3f1f03">&#9670;&nbsp;</a></span>QR_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType, class VectorType, size_t dimRange, size_t num_jacobians&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FieldVector&lt;MatrixType, num_jacobians&gt; <a class="el" href="a02005.html">Dune::GDT::internal::JacobianWrapper</a>&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;::QR_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab2d8f0e14b5fc459fa4b5893601b3034"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2d8f0e14b5fc459fa4b5893601b3034">&#9670;&nbsp;</a></span>tau_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType, class VectorType, size_t dimRange, size_t num_jacobians&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FieldVector&lt;VectorType, num_jacobians&gt; <a class="el" href="a02005.html">Dune::GDT::internal::JacobianWrapper</a>&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;::tau_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="a00131_source.html">linear.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

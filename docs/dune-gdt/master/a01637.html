@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::LocalSipdgIntegrands::internal::BoundaryLHSTraits&lt; LocalizableFunctionImp &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::LocalSipdgIntegrands::internal::BoundaryRHSTraits&lt; LocalizableDiffusionFunctionImp, LocalizableDirichletFunctionImp &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a00250.html">LocalSipdgIntegrands</a></li><li class="navelem"><a class="el" href="a00251.html">internal</a></li><li class="navelem"><a class="el" href="a01637.html">BoundaryLHSTraits</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a00250.html">LocalSipdgIntegrands</a></li><li class="navelem"><a class="el" href="a00251.html">internal</a></li><li class="navelem"><a class="el" href="a01637.html">BoundaryRHSTraits</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -68,7 +68,7 @@ $(function() {
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="a01634.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::LocalSipdgIntegrands::internal::BoundaryLHSTraits&lt; LocalizableFunctionImp &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::LocalSipdgIntegrands::internal::BoundaryRHSTraits&lt; LocalizableDiffusionFunctionImp, LocalizableDirichletFunctionImp &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -76,115 +76,151 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a00ac8a02a0156075e5f47de6de295b3e"><td class="memItemLeft" align="right" valign="top">typedef LocalizableFunctionImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01637.html#a00ac8a02a0156075e5f47de6de295b3e">LocalizableFunctionType</a></td></tr>
-<tr class="separator:a00ac8a02a0156075e5f47de6de295b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dbf3d67619df03d97f5e46d4b4062ba"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01625.html">BoundaryLHS</a>&lt; LocalizableFunctionImp &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01637.html#a5dbf3d67619df03d97f5e46d4b4062ba">derived_type</a></td></tr>
-<tr class="separator:a5dbf3d67619df03d97f5e46d4b4062ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cad42ebdde675f8e92de82ebef81ac6"><td class="memItemLeft" align="right" valign="top">typedef LocalizableFunctionType::EntityType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01637.html#a9cad42ebdde675f8e92de82ebef81ac6">EntityType</a></td></tr>
-<tr class="separator:a9cad42ebdde675f8e92de82ebef81ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab193c60ef05562aea34aefe5aa4d4042"><td class="memItemLeft" align="right" valign="top">typedef LocalizableFunctionType::DomainFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01637.html#ab193c60ef05562aea34aefe5aa4d4042">DomainFieldType</a></td></tr>
-<tr class="separator:ab193c60ef05562aea34aefe5aa4d4042"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3ece48794c2a18132b31836f6750019"><td class="memItemLeft" align="right" valign="top">typedef LocalizableFunctionType::LocalfunctionType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01637.html#aa3ece48794c2a18132b31836f6750019">LocalfunctionType</a></td></tr>
-<tr class="separator:aa3ece48794c2a18132b31836f6750019"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abafda287b677de83d808640725be5edf"><td class="memItemLeft" align="right" valign="top">typedef std::tuple&lt; std::shared_ptr&lt; <a class="el" href="a01637.html#aa3ece48794c2a18132b31836f6750019">LocalfunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01637.html#abafda287b677de83d808640725be5edf">LocalfunctionTupleType</a></td></tr>
-<tr class="separator:abafda287b677de83d808640725be5edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34d2cb101b94dfb2b3cc06f9b98d9384"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01625.html">BoundaryRHS</a>&lt; LocalizableDiffusionFunctionImp, LocalizableDirichletFunctionImp &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01637.html#a34d2cb101b94dfb2b3cc06f9b98d9384">derived_type</a></td></tr>
+<tr class="separator:a34d2cb101b94dfb2b3cc06f9b98d9384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7464327c5589e6f94dbcd716bdcedf23"><td class="memItemLeft" align="right" valign="top">typedef LocalizableDiffusionFunctionImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01637.html#a7464327c5589e6f94dbcd716bdcedf23">LocalizableDiffusionFunctionType</a></td></tr>
+<tr class="separator:a7464327c5589e6f94dbcd716bdcedf23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ff189bfadc9e76d7d7c7b9808a33f4c"><td class="memItemLeft" align="right" valign="top">typedef LocalizableDirichletFunctionImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01637.html#a1ff189bfadc9e76d7d7c7b9808a33f4c">LocalizableDirichletFunctionType</a></td></tr>
+<tr class="separator:a1ff189bfadc9e76d7d7c7b9808a33f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af29563175b1962385633902b996cb07a"><td class="memItemLeft" align="right" valign="top">typedef LocalizableDiffusionFunctionType::LocalfunctionType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01637.html#af29563175b1962385633902b996cb07a">LocalDiffusionFunctionType</a></td></tr>
+<tr class="separator:af29563175b1962385633902b996cb07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc103edaa2fd4de1ea5f98f2616daee5"><td class="memItemLeft" align="right" valign="top">typedef LocalizableDirichletFunctionType::LocalfunctionType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01637.html#afc103edaa2fd4de1ea5f98f2616daee5">LocalDirichletFunctionType</a></td></tr>
+<tr class="separator:afc103edaa2fd4de1ea5f98f2616daee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa477a471c07d22ce92a83f019fb045ee"><td class="memItemLeft" align="right" valign="top">typedef std::tuple&lt; std::shared_ptr&lt; <a class="el" href="a01637.html#af29563175b1962385633902b996cb07a">LocalDiffusionFunctionType</a> &gt;, std::shared_ptr&lt; <a class="el" href="a01637.html#afc103edaa2fd4de1ea5f98f2616daee5">LocalDirichletFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01637.html#aa477a471c07d22ce92a83f019fb045ee">LocalfunctionTupleType</a></td></tr>
+<tr class="separator:aa477a471c07d22ce92a83f019fb045ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a717b46e911336166b8d2c1323266227b"><td class="memItemLeft" align="right" valign="top">typedef LocalizableDiffusionFunctionType::EntityType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01637.html#a717b46e911336166b8d2c1323266227b">EntityType</a></td></tr>
+<tr class="separator:a717b46e911336166b8d2c1323266227b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb1e7ad26f0c4760f2607845c7fa67e8"><td class="memItemLeft" align="right" valign="top">typedef LocalizableDiffusionFunctionType::DomainFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01637.html#aeb1e7ad26f0c4760f2607845c7fa67e8">DomainFieldType</a></td></tr>
+<tr class="separator:aeb1e7ad26f0c4760f2607845c7fa67e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a343cdc8b3c431f36555e1f93ec24b808"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01637.html#a343cdc8b3c431f36555e1f93ec24b808">dimDomain</a> = LocalizableFunctionType::dimDomain</td></tr>
-<tr class="separator:a343cdc8b3c431f36555e1f93ec24b808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedc1ba46d2e5402840be88687ec4837b"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01637.html#aedc1ba46d2e5402840be88687ec4837b">dimDomain</a> = LocalizableDiffusionFunctionType::dimDomain</td></tr>
+<tr class="separator:aedc1ba46d2e5402840be88687ec4837b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a5dbf3d67619df03d97f5e46d4b4062ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5dbf3d67619df03d97f5e46d4b4062ba">&#9670;&nbsp;</a></span>derived_type</h2>
+<a id="a34d2cb101b94dfb2b3cc06f9b98d9384"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34d2cb101b94dfb2b3cc06f9b98d9384">&#9670;&nbsp;</a></span>derived_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalizableFunctionImp &gt; </div>
+template&lt;class LocalizableDiffusionFunctionImp , class LocalizableDirichletFunctionImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a01625.html">BoundaryLHS</a>&lt;LocalizableFunctionImp&gt; <a class="el" href="a01637.html">Dune::GDT::LocalSipdgIntegrands::internal::BoundaryLHSTraits</a>&lt; LocalizableFunctionImp &gt;::<a class="el" href="a01637.html#a5dbf3d67619df03d97f5e46d4b4062ba">derived_type</a></td>
+          <td class="memname">typedef <a class="el" href="a01625.html">BoundaryRHS</a>&lt;LocalizableDiffusionFunctionImp, LocalizableDirichletFunctionImp&gt; <a class="el" href="a01637.html">Dune::GDT::LocalSipdgIntegrands::internal::BoundaryRHSTraits</a>&lt; LocalizableDiffusionFunctionImp, LocalizableDirichletFunctionImp &gt;::<a class="el" href="a01637.html#a34d2cb101b94dfb2b3cc06f9b98d9384">derived_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ab193c60ef05562aea34aefe5aa4d4042"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab193c60ef05562aea34aefe5aa4d4042">&#9670;&nbsp;</a></span>DomainFieldType</h2>
+<a id="aeb1e7ad26f0c4760f2607845c7fa67e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb1e7ad26f0c4760f2607845c7fa67e8">&#9670;&nbsp;</a></span>DomainFieldType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalizableFunctionImp &gt; </div>
+template&lt;class LocalizableDiffusionFunctionImp , class LocalizableDirichletFunctionImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef LocalizableFunctionType::DomainFieldType <a class="el" href="a01637.html">Dune::GDT::LocalSipdgIntegrands::internal::BoundaryLHSTraits</a>&lt; LocalizableFunctionImp &gt;::<a class="el" href="a01637.html#ab193c60ef05562aea34aefe5aa4d4042">DomainFieldType</a></td>
+          <td class="memname">typedef LocalizableDiffusionFunctionType::DomainFieldType <a class="el" href="a01637.html">Dune::GDT::LocalSipdgIntegrands::internal::BoundaryRHSTraits</a>&lt; LocalizableDiffusionFunctionImp, LocalizableDirichletFunctionImp &gt;::<a class="el" href="a01637.html#aeb1e7ad26f0c4760f2607845c7fa67e8">DomainFieldType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a9cad42ebdde675f8e92de82ebef81ac6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cad42ebdde675f8e92de82ebef81ac6">&#9670;&nbsp;</a></span>EntityType</h2>
+<a id="a717b46e911336166b8d2c1323266227b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a717b46e911336166b8d2c1323266227b">&#9670;&nbsp;</a></span>EntityType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalizableFunctionImp &gt; </div>
+template&lt;class LocalizableDiffusionFunctionImp , class LocalizableDirichletFunctionImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef LocalizableFunctionType::EntityType <a class="el" href="a01637.html">Dune::GDT::LocalSipdgIntegrands::internal::BoundaryLHSTraits</a>&lt; LocalizableFunctionImp &gt;::<a class="el" href="a01637.html#a9cad42ebdde675f8e92de82ebef81ac6">EntityType</a></td>
+          <td class="memname">typedef LocalizableDiffusionFunctionType::EntityType <a class="el" href="a01637.html">Dune::GDT::LocalSipdgIntegrands::internal::BoundaryRHSTraits</a>&lt; LocalizableDiffusionFunctionImp, LocalizableDirichletFunctionImp &gt;::<a class="el" href="a01637.html#a717b46e911336166b8d2c1323266227b">EntityType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="abafda287b677de83d808640725be5edf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abafda287b677de83d808640725be5edf">&#9670;&nbsp;</a></span>LocalfunctionTupleType</h2>
+<a id="af29563175b1962385633902b996cb07a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af29563175b1962385633902b996cb07a">&#9670;&nbsp;</a></span>LocalDiffusionFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalizableFunctionImp &gt; </div>
+template&lt;class LocalizableDiffusionFunctionImp , class LocalizableDirichletFunctionImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::tuple&lt;std::shared_ptr&lt;<a class="el" href="a01637.html#aa3ece48794c2a18132b31836f6750019">LocalfunctionType</a>&gt; &gt; <a class="el" href="a01637.html">Dune::GDT::LocalSipdgIntegrands::internal::BoundaryLHSTraits</a>&lt; LocalizableFunctionImp &gt;::<a class="el" href="a01637.html#abafda287b677de83d808640725be5edf">LocalfunctionTupleType</a></td>
+          <td class="memname">typedef LocalizableDiffusionFunctionType::LocalfunctionType <a class="el" href="a01637.html">Dune::GDT::LocalSipdgIntegrands::internal::BoundaryRHSTraits</a>&lt; LocalizableDiffusionFunctionImp, LocalizableDirichletFunctionImp &gt;::<a class="el" href="a01637.html#af29563175b1962385633902b996cb07a">LocalDiffusionFunctionType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aa3ece48794c2a18132b31836f6750019"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3ece48794c2a18132b31836f6750019">&#9670;&nbsp;</a></span>LocalfunctionType</h2>
+<a id="afc103edaa2fd4de1ea5f98f2616daee5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc103edaa2fd4de1ea5f98f2616daee5">&#9670;&nbsp;</a></span>LocalDirichletFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalizableFunctionImp &gt; </div>
+template&lt;class LocalizableDiffusionFunctionImp , class LocalizableDirichletFunctionImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef LocalizableFunctionType::LocalfunctionType <a class="el" href="a01637.html">Dune::GDT::LocalSipdgIntegrands::internal::BoundaryLHSTraits</a>&lt; LocalizableFunctionImp &gt;::<a class="el" href="a01637.html#aa3ece48794c2a18132b31836f6750019">LocalfunctionType</a></td>
+          <td class="memname">typedef LocalizableDirichletFunctionType::LocalfunctionType <a class="el" href="a01637.html">Dune::GDT::LocalSipdgIntegrands::internal::BoundaryRHSTraits</a>&lt; LocalizableDiffusionFunctionImp, LocalizableDirichletFunctionImp &gt;::<a class="el" href="a01637.html#afc103edaa2fd4de1ea5f98f2616daee5">LocalDirichletFunctionType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a00ac8a02a0156075e5f47de6de295b3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00ac8a02a0156075e5f47de6de295b3e">&#9670;&nbsp;</a></span>LocalizableFunctionType</h2>
+<a id="aa477a471c07d22ce92a83f019fb045ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa477a471c07d22ce92a83f019fb045ee">&#9670;&nbsp;</a></span>LocalfunctionTupleType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalizableFunctionImp &gt; </div>
+template&lt;class LocalizableDiffusionFunctionImp , class LocalizableDirichletFunctionImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef LocalizableFunctionImp <a class="el" href="a01637.html">Dune::GDT::LocalSipdgIntegrands::internal::BoundaryLHSTraits</a>&lt; LocalizableFunctionImp &gt;::<a class="el" href="a01637.html#a00ac8a02a0156075e5f47de6de295b3e">LocalizableFunctionType</a></td>
+          <td class="memname">typedef std::tuple&lt;std::shared_ptr&lt;<a class="el" href="a01637.html#af29563175b1962385633902b996cb07a">LocalDiffusionFunctionType</a>&gt;, std::shared_ptr&lt;<a class="el" href="a01637.html#afc103edaa2fd4de1ea5f98f2616daee5">LocalDirichletFunctionType</a>&gt; &gt; <a class="el" href="a01637.html">Dune::GDT::LocalSipdgIntegrands::internal::BoundaryRHSTraits</a>&lt; LocalizableDiffusionFunctionImp, LocalizableDirichletFunctionImp &gt;::<a class="el" href="a01637.html#aa477a471c07d22ce92a83f019fb045ee">LocalfunctionTupleType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7464327c5589e6f94dbcd716bdcedf23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7464327c5589e6f94dbcd716bdcedf23">&#9670;&nbsp;</a></span>LocalizableDiffusionFunctionType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class LocalizableDiffusionFunctionImp , class LocalizableDirichletFunctionImp &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef LocalizableDiffusionFunctionImp <a class="el" href="a01637.html">Dune::GDT::LocalSipdgIntegrands::internal::BoundaryRHSTraits</a>&lt; LocalizableDiffusionFunctionImp, LocalizableDirichletFunctionImp &gt;::<a class="el" href="a01637.html#a7464327c5589e6f94dbcd716bdcedf23">LocalizableDiffusionFunctionType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ff189bfadc9e76d7d7c7b9808a33f4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ff189bfadc9e76d7d7c7b9808a33f4c">&#9670;&nbsp;</a></span>LocalizableDirichletFunctionType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class LocalizableDiffusionFunctionImp , class LocalizableDirichletFunctionImp &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef LocalizableDirichletFunctionImp <a class="el" href="a01637.html">Dune::GDT::LocalSipdgIntegrands::internal::BoundaryRHSTraits</a>&lt; LocalizableDiffusionFunctionImp, LocalizableDirichletFunctionImp &gt;::<a class="el" href="a01637.html#a1ff189bfadc9e76d7d7c7b9808a33f4c">LocalizableDirichletFunctionType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -192,19 +228,19 @@ template&lt;class LocalizableFunctionImp &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a343cdc8b3c431f36555e1f93ec24b808"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a343cdc8b3c431f36555e1f93ec24b808">&#9670;&nbsp;</a></span>dimDomain</h2>
+<a id="aedc1ba46d2e5402840be88687ec4837b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedc1ba46d2e5402840be88687ec4837b">&#9670;&nbsp;</a></span>dimDomain</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalizableFunctionImp &gt; </div>
+template&lt;class LocalizableDiffusionFunctionImp , class LocalizableDirichletFunctionImp &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t <a class="el" href="a01637.html">Dune::GDT::LocalSipdgIntegrands::internal::BoundaryLHSTraits</a>&lt; LocalizableFunctionImp &gt;::dimDomain = LocalizableFunctionType::dimDomain</td>
+          <td class="memname">const size_t <a class="el" href="a01637.html">Dune::GDT::LocalSipdgIntegrands::internal::BoundaryRHSTraits</a>&lt; LocalizableDiffusionFunctionImp, LocalizableDirichletFunctionImp &gt;::dimDomain = LocalizableDiffusionFunctionType::dimDomain</td>
         </tr>
       </table>
   </td>

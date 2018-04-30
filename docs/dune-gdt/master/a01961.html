@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::LPLocalRealizabilityLimiter&lt; DiscreteFunctionImp, BasisfunctionImp &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::RealizabilityLimiter&lt; LocalRealizabilityLimiterImp, Traits &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,98 +59,117 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a01961.html">LPLocalRealizabilityLimiter</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a01961.html">RealizabilityLimiter</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="a01958.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::LPLocalRealizabilityLimiter&lt; DiscreteFunctionImp, BasisfunctionImp &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::RealizabilityLimiter&lt; LocalRealizabilityLimiterImp, Traits &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="a00119_source.html">dune/gdt/operators/fv/entropybased/realizability.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::LPLocalRealizabilityLimiter&lt; DiscreteFunctionImp, BasisfunctionImp &gt;:</div>
+Inheritance diagram for Dune::GDT::RealizabilityLimiter&lt; LocalRealizabilityLimiterImp, Traits &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01960.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_l_p_local_realizability_limiter_3_01_discrete_function_imp_00_01_basisfunction_imp_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1_l_p_local_realizability_limiter_3_01_discrete_function_imp_00_01_basisfunction_imp_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_l_p_local_realizability_limiter_3_01_discrete_function_imp_00_01_basisfunction_imp_01_4_inherit__map">
+<div class="center"><img src="a01960.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_realizability_limiter_3_01_local_realizability_limiter_imp_00_01_traits_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_realizability_limiter_3_01_local_realizability_limiter_imp_00_01_traits_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_realizability_limiter_3_01_local_realizability_limiter_imp_00_01_traits_01_4_inherit__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a21962e134e9b5a901f6a9df98810eef3"><td class="memItemLeft" align="right" valign="top">typedef DiscreteFunctionType::SpaceType::GridLayerType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#a21962e134e9b5a901f6a9df98810eef3">GridLayerType</a></td></tr>
-<tr class="separator:a21962e134e9b5a901f6a9df98810eef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59e947c6d704cf2a32f0e6d0503c80e6"><td class="memItemLeft" align="right" valign="top">typedef DiscreteFunctionType::EntityType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#a59e947c6d704cf2a32f0e6d0503c80e6">EntityType</a></td></tr>
-<tr class="separator:a59e947c6d704cf2a32f0e6d0503c80e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48f141e5f797c6d2582d471f30b8f49c"><td class="memItemLeft" align="right" valign="top">typedef GridLayerType::template Codim&lt; 0 &gt;::Geometry::LocalCoordinate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#a48f141e5f797c6d2582d471f30b8f49c">DomainType</a></td></tr>
-<tr class="separator:a48f141e5f797c6d2582d471f30b8f49c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a886a47825c09b50c0017fc20ac802885"><td class="memItemLeft" align="right" valign="top">typedef DiscreteFunctionType::RangeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#a886a47825c09b50c0017fc20ac802885">RangeType</a></td></tr>
-<tr class="separator:a886a47825c09b50c0017fc20ac802885"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59c9673c6dd20f642386986f6fc368fc"><td class="memItemLeft" align="right" valign="top">typedef DiscreteFunctionType::RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#a59c9673c6dd20f642386986f6fc368fc">RangeFieldType</a></td></tr>
-<tr class="separator:a59c9673c6dd20f642386986f6fc368fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefd744d24fb38b66d30298468cebe7b5"><td class="memItemLeft" align="right" valign="top">typedef Dune::QuadratureRule&lt; <a class="el" href="a01933.html#a59c9673c6dd20f642386986f6fc368fc">RangeFieldType</a>, <a class="el" href="a01961.html#a970fe1b3ae3695b751e81c6e7f808d57">dimDomain</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#aefd744d24fb38b66d30298468cebe7b5">QuadratureType</a></td></tr>
-<tr class="separator:aefd744d24fb38b66d30298468cebe7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03e4aafcc6510942dc713bf5f182ae7f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01933.html#a03e4aafcc6510942dc713bf5f182ae7f">DiscreteFunctionType</a> = DiscreteFunctionImp</td></tr>
-<tr class="separator:a03e4aafcc6510942dc713bf5f182ae7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fa3fcfdfb314aa603d559c141e6f9f4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01933.html#a4fa3fcfdfb314aa603d559c141e6f9f4">BasisfunctionType</a> = BasisfunctionImp</td></tr>
-<tr class="separator:a4fa3fcfdfb314aa603d559c141e6f9f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37996ae0219138e7e62a5512988248e7"><td class="memItemLeft" align="right" valign="top">typedef GridLayerType::IndexSet&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01933.html#a37996ae0219138e7e62a5512988248e7">IndexSetType</a></td></tr>
-<tr class="separator:a37996ae0219138e7e62a5512988248e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd34ec9531605231019013ab610ec962"><td class="memItemLeft" align="right" valign="top">typedef DiscreteFunctionType::DomainFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01933.html#abd34ec9531605231019013ab610ec962">DomainFieldType</a></td></tr>
-<tr class="separator:abd34ec9531605231019013ab610ec962"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a441b4d1d7dc1a75a5a118fb84929e049"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01933.html#a441b4d1d7dc1a75a5a118fb84929e049">ReconstructedFunctionType</a> = <a class="el" href="a02053.html">ReconstructedLocalizableFunction</a>&lt; <a class="el" href="a01933.html#a21962e134e9b5a901f6a9df98810eef3">GridLayerType</a>, <a class="el" href="a01933.html#abd34ec9531605231019013ab610ec962">DomainFieldType</a>, <a class="el" href="a01961.html#a970fe1b3ae3695b751e81c6e7f808d57">dimDomain</a>, <a class="el" href="a01933.html#a59c9673c6dd20f642386986f6fc368fc">RangeFieldType</a>, <a class="el" href="a01961.html#ae5eef923565f4d06d4ac79c0b0007148">dimRange</a> &gt;</td></tr>
-<tr class="separator:a441b4d1d7dc1a75a5a118fb84929e049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3ae0e8662f5b1178553caee03685435"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#af3ae0e8662f5b1178553caee03685435">LocalRealizabilityLimiterType</a> = typename Traits::LocalRealizabilityLimiterType</td></tr>
+<tr class="separator:af3ae0e8662f5b1178553caee03685435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace42edf6416fbc49f78df7f474887888"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#ace42edf6416fbc49f78df7f474887888">BasisfunctionType</a> = typename Traits::BasisfunctionType</td></tr>
+<tr class="separator:ace42edf6416fbc49f78df7f474887888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e8c90cc073c65804c913b032908b87c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#a5e8c90cc073c65804c913b032908b87c">QuadratureType</a> = typename Traits::QuadratureType</td></tr>
+<tr class="separator:a5e8c90cc073c65804c913b032908b87c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cebb1ae1b312d192a776e62d4fc898b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#a9cebb1ae1b312d192a776e62d4fc898b">RangeFieldType</a> = typename Traits::RangeFieldType</td></tr>
+<tr class="separator:a9cebb1ae1b312d192a776e62d4fc898b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09334310dc5edbf413a4a228b9892d9d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#a09334310dc5edbf413a4a228b9892d9d">RangeType</a> = typename Traits::RangeType</td></tr>
+<tr class="separator:a09334310dc5edbf413a4a228b9892d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06a394a8de7a67751e6dd47902182b1b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#a06a394a8de7a67751e6dd47902182b1b">ReconstructedFunctionType</a> = typename Traits::ReconstructedFunctionType</td></tr>
+<tr class="separator:a06a394a8de7a67751e6dd47902182b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a297fe211e3b06536d26d9ff3ee3cc2ee"><td class="memItemLeft" align="right" valign="top">typedef Traits::derived_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02101.html#a297fe211e3b06536d26d9ff3ee3cc2ee">derived_type</a></td></tr>
+<tr class="separator:a297fe211e3b06536d26d9ff3ee3cc2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e841c775a89ff47fe08faa97ef22386"><td class="memItemLeft" align="right" valign="top">typedef Traits::FieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02101.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a></td></tr>
+<tr class="separator:a7e841c775a89ff47fe08faa97ef22386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7ab8db6061a613448bb8ce3269cdc79"><td class="memItemLeft" align="right" valign="top">typedef Traits::JacobianType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02101.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a></td></tr>
+<tr class="separator:af7ab8db6061a613448bb8ce3269cdc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5846651077e8a7b11cc868e182c42c96"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#a5846651077e8a7b11cc868e182c42c96">LPLocalRealizabilityLimiter</a> (const BasisfunctionImp &amp;basis_functions, const <a class="el" href="a01933.html#aefd744d24fb38b66d30298468cebe7b5">QuadratureType</a> &amp;quadrature, <a class="el" href="a01933.html#a59c9673c6dd20f642386986f6fc368fc">RangeFieldType</a> epsilon)</td></tr>
-<tr class="separator:a5846651077e8a7b11cc868e182c42c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9aad65b303c3bad974954b9a351fbc18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#a9aad65b303c3bad974954b9a351fbc18">apply_local</a> (const <a class="el" href="a01933.html#a59e947c6d704cf2a32f0e6d0503c80e6">EntityType</a> &amp;entity)</td></tr>
-<tr class="separator:a9aad65b303c3bad974954b9a351fbc18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a970fe1b3ae3695b751e81c6e7f808d57"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#a970fe1b3ae3695b751e81c6e7f808d57">dimDomain</a> = BaseType::dimDomain</td></tr>
-<tr class="separator:a970fe1b3ae3695b751e81c6e7f808d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5eef923565f4d06d4ac79c0b0007148"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#ae5eef923565f4d06d4ac79c0b0007148">dimRange</a> = BaseType::dimRange</td></tr>
-<tr class="separator:ae5eef923565f4d06d4ac79c0b0007148"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:ac3c9b58ff93a3a3fb03e7bbec7c15fe4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a01933.html#a03e4aafcc6510942dc713bf5f182ae7f">DiscreteFunctionType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01933.html#ac3c9b58ff93a3a3fb03e7bbec7c15fe4">source_</a></td></tr>
-<tr class="separator:ac3c9b58ff93a3a3fb03e7bbec7c15fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fbc1abbf1beac9aa6c719d4665d5eec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01933.html#a441b4d1d7dc1a75a5a118fb84929e049">ReconstructedFunctionType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01933.html#a2fbc1abbf1beac9aa6c719d4665d5eec">reconstructed_function_</a></td></tr>
-<tr class="separator:a2fbc1abbf1beac9aa6c719d4665d5eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5a5a9028e99aa039ffdfad443c05eda"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a01933.html#a4fa3fcfdfb314aa603d559c141e6f9f4">BasisfunctionType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01933.html#af5a5a9028e99aa039ffdfad443c05eda">basis_functions_</a></td></tr>
-<tr class="separator:af5a5a9028e99aa039ffdfad443c05eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44dbb388a4257c81d303085c8b8b5355"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a01933.html#aefd744d24fb38b66d30298468cebe7b5">QuadratureType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01933.html#a44dbb388a4257c81d303085c8b8b5355">quadrature_</a></td></tr>
-<tr class="separator:a44dbb388a4257c81d303085c8b8b5355"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0c19928aca4eaa52194665e0fff37c7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a01933.html#a59c9673c6dd20f642386986f6fc368fc">RangeFieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01933.html#aa0c19928aca4eaa52194665e0fff37c7">epsilon_</a></td></tr>
-<tr class="separator:aa0c19928aca4eaa52194665e0fff37c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13646309a954b80d07e4f708b326a07a"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="a01933.html#a886a47825c09b50c0017fc20ac802885">RangeType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01933.html#a13646309a954b80d07e4f708b326a07a">basis_values_</a></td></tr>
-<tr class="separator:a13646309a954b80d07e4f708b326a07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77670e9fab61762a74d527b6e3bd11e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#a77670e9fab61762a74d527b6e3bd11e8">RealizabilityLimiter</a> (const <a class="el" href="a01961.html#ace42edf6416fbc49f78df7f474887888">BasisfunctionType</a> &amp;basis_functions, const <a class="el" href="a01961.html#a5e8c90cc073c65804c913b032908b87c">QuadratureType</a> &amp;quadrature, const <a class="el" href="a01961.html#a9cebb1ae1b312d192a776e62d4fc898b">RangeFieldType</a> epsilon)</td></tr>
+<tr class="separator:a77670e9fab61762a74d527b6e3bd11e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6abd35fcd46fd8402a5bc16ebe550659"><td class="memTemplParams" colspan="2">template&lt;class SourceType &gt; </td></tr>
+<tr class="memitem:a6abd35fcd46fd8402a5bc16ebe550659"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01961.html#a6abd35fcd46fd8402a5bc16ebe550659">apply</a> (const SourceType &amp;source, <a class="el" href="a01961.html#a06a394a8de7a67751e6dd47902182b1b">ReconstructedFunctionType</a> &amp;range, const XT::Common::Parameter &amp;) const</td></tr>
+<tr class="separator:a6abd35fcd46fd8402a5bc16ebe550659"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Methods that have to be implemented by any derived class</div></td></tr>
+<tr class="memitem:abceb2302e2abb6a76bd81a8162f3e8d5"><td class="memTemplParams" colspan="2">template&lt;class SourceType , class RangeType &gt; </td></tr>
+<tr class="memitem:abceb2302e2abb6a76bd81a8162f3e8d5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02101.html#abceb2302e2abb6a76bd81a8162f3e8d5">apply</a> (const SourceType &amp;source, <a class="el" href="a01961.html#a09334310dc5edbf413a4a228b9892d9d">RangeType</a> &amp;range, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
+<tr class="separator:abceb2302e2abb6a76bd81a8162f3e8d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab04213f2502d2e5074a8d0577859da4b"><td class="memTemplParams" colspan="2">template&lt;class RangeType , class SourceType &gt; </td></tr>
+<tr class="memitem:ab04213f2502d2e5074a8d0577859da4b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a02101.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02101.html#ab04213f2502d2e5074a8d0577859da4b">apply2</a> (const <a class="el" href="a01961.html#a09334310dc5edbf413a4a228b9892d9d">RangeType</a> &amp;range, const SourceType &amp;source, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
+<tr class="separator:ab04213f2502d2e5074a8d0577859da4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6730af1cff9082cf0361ba2c4871ffbe"><td class="memTemplParams" colspan="2">template&lt;class SourceType &gt; </td></tr>
+<tr class="memitem:a6730af1cff9082cf0361ba2c4871ffbe"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a02101.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02101.html#a6730af1cff9082cf0361ba2c4871ffbe">jacobian</a> (const SourceType &amp;source, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
+<tr class="separator:a6730af1cff9082cf0361ba2c4871ffbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a318e2b0bfd6fe23b6299165e9e8414ff"><td class="memTemplParams" colspan="2">template&lt;class SourceType &gt; </td></tr>
+<tr class="memitem:a318e2b0bfd6fe23b6299165e9e8414ff"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02101.html#a318e2b0bfd6fe23b6299165e9e8414ff">jacobian</a> (const SourceType &amp;source, <a class="el" href="a02101.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a> &amp;jac, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
+<tr class="separator:a318e2b0bfd6fe23b6299165e9e8414ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86a02543d3c2929680d4c86f35fe86e3"><td class="memTemplParams" colspan="2">template&lt;class RangeType , class SourceType &gt; </td></tr>
+<tr class="memitem:a86a02543d3c2929680d4c86f35fe86e3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02101.html#a86a02543d3c2929680d4c86f35fe86e3">apply_inverse</a> (const <a class="el" href="a01961.html#a09334310dc5edbf413a4a228b9892d9d">RangeType</a> &amp;range, SourceType &amp;source, const XT::Common::Configuration &amp;opts, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
+<tr class="separator:a86a02543d3c2929680d4c86f35fe86e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab909fc8055290725d660830a30216454"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02101.html#ab909fc8055290725d660830a30216454">invert_options</a> () const</td></tr>
+<tr class="separator:ab909fc8055290725d660830a30216454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f3ddca8c15feaa6e67173f92e80e7f5"><td class="memItemLeft" align="right" valign="top">XT::Common::Configuration&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02101.html#a8f3ddca8c15feaa6e67173f92e80e7f5">invert_options</a> (const std::string &amp;type) const</td></tr>
+<tr class="separator:a8f3ddca8c15feaa6e67173f92e80e7f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Provided by the interface for convenience</div></td></tr>
+<tr class="memitem:a964dbc938c643b46088a7897597c390b"><td class="memTemplParams" colspan="2">template&lt;class RangeType , class SourceType &gt; </td></tr>
+<tr class="memitem:a964dbc938c643b46088a7897597c390b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02101.html#a964dbc938c643b46088a7897597c390b">apply_inverse</a> (const <a class="el" href="a01961.html#a09334310dc5edbf413a4a228b9892d9d">RangeType</a> &amp;range, SourceType &amp;source, const std::string &amp;type, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
+<tr class="separator:a964dbc938c643b46088a7897597c390b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bb5343986038f4e7af4cd8a07b38972"><td class="memTemplParams" colspan="2">template&lt;class RangeType , class SourceType &gt; </td></tr>
+<tr class="memitem:a3bb5343986038f4e7af4cd8a07b38972"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02101.html#a3bb5343986038f4e7af4cd8a07b38972">apply_inverse</a> (const <a class="el" href="a01961.html#a09334310dc5edbf413a4a228b9892d9d">RangeType</a> &amp;range, SourceType &amp;source, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
+<tr class="separator:a3bb5343986038f4e7af4cd8a07b38972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d4049caeb309c503cba4b783f014d03"><td class="memTemplParams" colspan="2">template&lt;class RangeType &gt; </td></tr>
+<tr class="memitem:a1d4049caeb309c503cba4b783f014d03"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a02101.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02101.html#a1d4049caeb309c503cba4b783f014d03">induced_norm</a> (const <a class="el" href="a01961.html#a09334310dc5edbf413a4a228b9892d9d">RangeType</a> &amp;range, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
+<tr class="separator:a1d4049caeb309c503cba4b783f014d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a4fa3fcfdfb314aa603d559c141e6f9f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fa3fcfdfb314aa603d559c141e6f9f4">&#9670;&nbsp;</a></span>BasisfunctionType</h2>
+<a id="ace42edf6416fbc49f78df7f474887888"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace42edf6416fbc49f78df7f474887888">&#9670;&nbsp;</a></span>BasisfunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class DiscreteFunctionImp , class BasisfunctionImp &gt; </div>
+template&lt;class LocalRealizabilityLimiterImp , class Traits  = internal::RealizabilityLimiterTraits&lt;LocalRealizabilityLimiterImp&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a01961.html">Dune::GDT::RealizabilityLimiter</a>&lt; LocalRealizabilityLimiterImp, Traits &gt;::<a class="el" href="a01961.html#ace42edf6416fbc49f78df7f474887888">BasisfunctionType</a> =  typename Traits::BasisfunctionType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a297fe211e3b06536d26d9ff3ee3cc2ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a297fe211e3b06536d26d9ff3ee3cc2ee">&#9670;&nbsp;</a></span>derived_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01933.html">Dune::GDT::LocalRealizabilityLimiterBase</a>&lt; DiscreteFunctionImp, BasisfunctionImp &gt;::<a class="el" href="a01933.html#a4fa3fcfdfb314aa603d559c141e6f9f4">BasisfunctionType</a> =  BasisfunctionImp</td>
+          <td class="memname">typedef Traits::derived_type <a class="el" href="a02101.html">Dune::GDT::OperatorInterface</a>&lt; Traits &gt;::<a class="el" href="a02101.html#a297fe211e3b06536d26d9ff3ee3cc2ee">derived_type</a></td>
         </tr>
       </table>
   </td>
@@ -162,19 +181,19 @@ template&lt;class DiscreteFunctionImp , class BasisfunctionImp &gt; </div>
 
 </div>
 </div>
-<a id="a03e4aafcc6510942dc713bf5f182ae7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03e4aafcc6510942dc713bf5f182ae7f">&#9670;&nbsp;</a></span>DiscreteFunctionType</h2>
+<a id="a7e841c775a89ff47fe08faa97ef22386"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e841c775a89ff47fe08faa97ef22386">&#9670;&nbsp;</a></span>FieldType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class DiscreteFunctionImp , class BasisfunctionImp &gt; </div>
+template&lt;class Traits&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01933.html">Dune::GDT::LocalRealizabilityLimiterBase</a>&lt; DiscreteFunctionImp, BasisfunctionImp &gt;::<a class="el" href="a01933.html#a03e4aafcc6510942dc713bf5f182ae7f">DiscreteFunctionType</a> =  DiscreteFunctionImp</td>
+          <td class="memname">typedef Traits::FieldType <a class="el" href="a02101.html">Dune::GDT::OperatorInterface</a>&lt; Traits &gt;::<a class="el" href="a02101.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a></td>
         </tr>
       </table>
   </td>
@@ -186,19 +205,19 @@ template&lt;class DiscreteFunctionImp , class BasisfunctionImp &gt; </div>
 
 </div>
 </div>
-<a id="abd34ec9531605231019013ab610ec962"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd34ec9531605231019013ab610ec962">&#9670;&nbsp;</a></span>DomainFieldType</h2>
+<a id="af7ab8db6061a613448bb8ce3269cdc79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7ab8db6061a613448bb8ce3269cdc79">&#9670;&nbsp;</a></span>JacobianType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class DiscreteFunctionImp , class BasisfunctionImp &gt; </div>
+template&lt;class Traits&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef DiscreteFunctionType::DomainFieldType <a class="el" href="a01933.html">Dune::GDT::LocalRealizabilityLimiterBase</a>&lt; DiscreteFunctionImp, BasisfunctionImp &gt;::<a class="el" href="a01933.html#abd34ec9531605231019013ab610ec962">DomainFieldType</a></td>
+          <td class="memname">typedef Traits::JacobianType <a class="el" href="a02101.html">Dune::GDT::OperatorInterface</a>&lt; Traits &gt;::<a class="el" href="a02101.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a></td>
         </tr>
       </table>
   </td>
@@ -210,213 +229,120 @@ template&lt;class DiscreteFunctionImp , class BasisfunctionImp &gt; </div>
 
 </div>
 </div>
-<a id="a48f141e5f797c6d2582d471f30b8f49c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48f141e5f797c6d2582d471f30b8f49c">&#9670;&nbsp;</a></span>DomainType</h2>
+<a id="af3ae0e8662f5b1178553caee03685435"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3ae0e8662f5b1178553caee03685435">&#9670;&nbsp;</a></span>LocalRealizabilityLimiterType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class DiscreteFunctionImp , class BasisfunctionImp &gt; </div>
+template&lt;class LocalRealizabilityLimiterImp , class Traits  = internal::RealizabilityLimiterTraits&lt;LocalRealizabilityLimiterImp&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef GridLayerType::template Codim&lt;0&gt;::Geometry::LocalCoordinate <a class="el" href="a01933.html">Dune::GDT::LocalRealizabilityLimiterBase</a>&lt; DiscreteFunctionImp, BasisfunctionImp &gt;::<a class="el" href="a01933.html#a48f141e5f797c6d2582d471f30b8f49c">DomainType</a></td>
+          <td class="memname">using <a class="el" href="a01961.html">Dune::GDT::RealizabilityLimiter</a>&lt; LocalRealizabilityLimiterImp, Traits &gt;::<a class="el" href="a01961.html#af3ae0e8662f5b1178553caee03685435">LocalRealizabilityLimiterType</a> =  typename Traits::LocalRealizabilityLimiterType</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a59e947c6d704cf2a32f0e6d0503c80e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59e947c6d704cf2a32f0e6d0503c80e6">&#9670;&nbsp;</a></span>EntityType</h2>
+<a id="a5e8c90cc073c65804c913b032908b87c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e8c90cc073c65804c913b032908b87c">&#9670;&nbsp;</a></span>QuadratureType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class DiscreteFunctionImp , class BasisfunctionImp &gt; </div>
+template&lt;class LocalRealizabilityLimiterImp , class Traits  = internal::RealizabilityLimiterTraits&lt;LocalRealizabilityLimiterImp&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef DiscreteFunctionType::EntityType <a class="el" href="a01933.html">Dune::GDT::LocalRealizabilityLimiterBase</a>&lt; DiscreteFunctionImp, BasisfunctionImp &gt;::<a class="el" href="a01933.html#a59e947c6d704cf2a32f0e6d0503c80e6">EntityType</a></td>
+          <td class="memname">using <a class="el" href="a01961.html">Dune::GDT::RealizabilityLimiter</a>&lt; LocalRealizabilityLimiterImp, Traits &gt;::<a class="el" href="a01961.html#a5e8c90cc073c65804c913b032908b87c">QuadratureType</a> =  typename Traits::QuadratureType</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a21962e134e9b5a901f6a9df98810eef3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21962e134e9b5a901f6a9df98810eef3">&#9670;&nbsp;</a></span>GridLayerType</h2>
+<a id="a9cebb1ae1b312d192a776e62d4fc898b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cebb1ae1b312d192a776e62d4fc898b">&#9670;&nbsp;</a></span>RangeFieldType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class DiscreteFunctionImp , class BasisfunctionImp &gt; </div>
+template&lt;class LocalRealizabilityLimiterImp , class Traits  = internal::RealizabilityLimiterTraits&lt;LocalRealizabilityLimiterImp&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef DiscreteFunctionType::SpaceType::GridLayerType <a class="el" href="a01933.html">Dune::GDT::LocalRealizabilityLimiterBase</a>&lt; DiscreteFunctionImp, BasisfunctionImp &gt;::<a class="el" href="a01933.html#a21962e134e9b5a901f6a9df98810eef3">GridLayerType</a></td>
+          <td class="memname">using <a class="el" href="a01961.html">Dune::GDT::RealizabilityLimiter</a>&lt; LocalRealizabilityLimiterImp, Traits &gt;::<a class="el" href="a01961.html#a9cebb1ae1b312d192a776e62d4fc898b">RangeFieldType</a> =  typename Traits::RangeFieldType</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a37996ae0219138e7e62a5512988248e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37996ae0219138e7e62a5512988248e7">&#9670;&nbsp;</a></span>IndexSetType</h2>
+<a id="a09334310dc5edbf413a4a228b9892d9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09334310dc5edbf413a4a228b9892d9d">&#9670;&nbsp;</a></span>RangeType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class DiscreteFunctionImp , class BasisfunctionImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;class LocalRealizabilityLimiterImp , class Traits  = internal::RealizabilityLimiterTraits&lt;LocalRealizabilityLimiterImp&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef GridLayerType::IndexSet <a class="el" href="a01933.html">Dune::GDT::LocalRealizabilityLimiterBase</a>&lt; DiscreteFunctionImp, BasisfunctionImp &gt;::<a class="el" href="a01933.html#a37996ae0219138e7e62a5512988248e7">IndexSetType</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aefd744d24fb38b66d30298468cebe7b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefd744d24fb38b66d30298468cebe7b5">&#9670;&nbsp;</a></span>QuadratureType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class DiscreteFunctionImp , class BasisfunctionImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef Dune::QuadratureRule&lt;<a class="el" href="a01933.html#a59c9673c6dd20f642386986f6fc368fc">RangeFieldType</a>, <a class="el" href="a01961.html#a970fe1b3ae3695b751e81c6e7f808d57">dimDomain</a>&gt; <a class="el" href="a01933.html">Dune::GDT::LocalRealizabilityLimiterBase</a>&lt; DiscreteFunctionImp, BasisfunctionImp &gt;::<a class="el" href="a01933.html#aefd744d24fb38b66d30298468cebe7b5">QuadratureType</a></td>
+          <td class="memname">using <a class="el" href="a01961.html">Dune::GDT::RealizabilityLimiter</a>&lt; LocalRealizabilityLimiterImp, Traits &gt;::<a class="el" href="a01961.html#a09334310dc5edbf413a4a228b9892d9d">RangeType</a> =  typename Traits::RangeType</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a59c9673c6dd20f642386986f6fc368fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59c9673c6dd20f642386986f6fc368fc">&#9670;&nbsp;</a></span>RangeFieldType</h2>
+<a id="a06a394a8de7a67751e6dd47902182b1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06a394a8de7a67751e6dd47902182b1b">&#9670;&nbsp;</a></span>ReconstructedFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class DiscreteFunctionImp , class BasisfunctionImp &gt; </div>
+template&lt;class LocalRealizabilityLimiterImp , class Traits  = internal::RealizabilityLimiterTraits&lt;LocalRealizabilityLimiterImp&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef DiscreteFunctionType::RangeFieldType <a class="el" href="a01933.html">Dune::GDT::LocalRealizabilityLimiterBase</a>&lt; DiscreteFunctionImp, BasisfunctionImp &gt;::<a class="el" href="a01933.html#a59c9673c6dd20f642386986f6fc368fc">RangeFieldType</a></td>
+          <td class="memname">using <a class="el" href="a01961.html">Dune::GDT::RealizabilityLimiter</a>&lt; LocalRealizabilityLimiterImp, Traits &gt;::<a class="el" href="a01961.html#a06a394a8de7a67751e6dd47902182b1b">ReconstructedFunctionType</a> =  typename Traits::ReconstructedFunctionType</td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a886a47825c09b50c0017fc20ac802885"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a886a47825c09b50c0017fc20ac802885">&#9670;&nbsp;</a></span>RangeType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class DiscreteFunctionImp , class BasisfunctionImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef DiscreteFunctionType::RangeType <a class="el" href="a01933.html">Dune::GDT::LocalRealizabilityLimiterBase</a>&lt; DiscreteFunctionImp, BasisfunctionImp &gt;::<a class="el" href="a01933.html#a886a47825c09b50c0017fc20ac802885">RangeType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a441b4d1d7dc1a75a5a118fb84929e049"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a441b4d1d7dc1a75a5a118fb84929e049">&#9670;&nbsp;</a></span>ReconstructedFunctionType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class DiscreteFunctionImp , class BasisfunctionImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="a01933.html">Dune::GDT::LocalRealizabilityLimiterBase</a>&lt; DiscreteFunctionImp, BasisfunctionImp &gt;::<a class="el" href="a01933.html#a441b4d1d7dc1a75a5a118fb84929e049">ReconstructedFunctionType</a> =  <a class="el" href="a02053.html">ReconstructedLocalizableFunction</a>&lt;<a class="el" href="a01933.html#a21962e134e9b5a901f6a9df98810eef3">GridLayerType</a>, <a class="el" href="a01933.html#abd34ec9531605231019013ab610ec962">DomainFieldType</a>, <a class="el" href="a01961.html#a970fe1b3ae3695b751e81c6e7f808d57">dimDomain</a>, <a class="el" href="a01933.html#a59c9673c6dd20f642386986f6fc368fc">RangeFieldType</a>, <a class="el" href="a01961.html#ae5eef923565f4d06d4ac79c0b0007148">dimRange</a>&gt;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a5846651077e8a7b11cc868e182c42c96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5846651077e8a7b11cc868e182c42c96">&#9670;&nbsp;</a></span>LPLocalRealizabilityLimiter()</h2>
+<a id="a77670e9fab61762a74d527b6e3bd11e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77670e9fab61762a74d527b6e3bd11e8">&#9670;&nbsp;</a></span>RealizabilityLimiter()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class DiscreteFunctionImp , class BasisfunctionImp &gt; </div>
+template&lt;class LocalRealizabilityLimiterImp , class Traits  = internal::RealizabilityLimiterTraits&lt;LocalRealizabilityLimiterImp&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a01961.html">Dune::GDT::LPLocalRealizabilityLimiter</a>&lt; DiscreteFunctionImp, BasisfunctionImp &gt;::<a class="el" href="a01961.html">LPLocalRealizabilityLimiter</a> </td>
+          <td class="memname"><a class="el" href="a01961.html">Dune::GDT::RealizabilityLimiter</a>&lt; LocalRealizabilityLimiterImp, Traits &gt;::<a class="el" href="a01961.html">RealizabilityLimiter</a> </td>
           <td>(</td>
-          <td class="paramtype">const BasisfunctionImp &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a01961.html#ace42edf6416fbc49f78df7f474887888">BasisfunctionType</a> &amp;&#160;</td>
           <td class="paramname"><em>basis_functions</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a01933.html#aefd744d24fb38b66d30298468cebe7b5">QuadratureType</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a01961.html#a5e8c90cc073c65804c913b032908b87c">QuadratureType</a> &amp;&#160;</td>
           <td class="paramname"><em>quadrature</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a01933.html#a59c9673c6dd20f642386986f6fc368fc">RangeFieldType</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="a01961.html#a9cebb1ae1b312d192a776e62d4fc898b">RangeFieldType</a>&#160;</td>
           <td class="paramname"><em>epsilon</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9aad65b303c3bad974954b9a351fbc18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9aad65b303c3bad974954b9a351fbc18">&#9670;&nbsp;</a></span>apply_local()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class DiscreteFunctionImp , class BasisfunctionImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a01961.html">Dune::GDT::LPLocalRealizabilityLimiter</a>&lt; DiscreteFunctionImp, BasisfunctionImp &gt;::apply_local </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a01933.html#a59e947c6d704cf2a32f0e6d0503c80e6">EntityType</a> &amp;&#160;</td>
-          <td class="paramname"><em>entity</em></td><td>)</td>
-          <td></td>
         </tr>
       </table>
   </td>
@@ -428,193 +354,470 @@ template&lt;class DiscreteFunctionImp , class BasisfunctionImp &gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="af5a5a9028e99aa039ffdfad443c05eda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5a5a9028e99aa039ffdfad443c05eda">&#9670;&nbsp;</a></span>basis_functions_</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="abceb2302e2abb6a76bd81a8162f3e8d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abceb2302e2abb6a76bd81a8162f3e8d5">&#9670;&nbsp;</a></span>apply() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class DiscreteFunctionImp , class BasisfunctionImp &gt; </div>
+template&lt;class Traits&gt; </div>
+<div class="memtemplate">
+template&lt;class SourceType , class RangeType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a01933.html#a4fa3fcfdfb314aa603d559c141e6f9f4">BasisfunctionType</a>&amp; <a class="el" href="a01933.html">Dune::GDT::LocalRealizabilityLimiterBase</a>&lt; DiscreteFunctionImp, BasisfunctionImp &gt;::basis_functions_</td>
+          <td class="memname">void <a class="el" href="a02101.html">Dune::GDT::OperatorInterface</a>&lt; Traits &gt;::apply </td>
+          <td>(</td>
+          <td class="paramtype">const SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RangeType &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a13646309a954b80d07e4f708b326a07a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13646309a954b80d07e4f708b326a07a">&#9670;&nbsp;</a></span>basis_values_</h2>
+<a id="a6abd35fcd46fd8402a5bc16ebe550659"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6abd35fcd46fd8402a5bc16ebe550659">&#9670;&nbsp;</a></span>apply() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class DiscreteFunctionImp , class BasisfunctionImp &gt; </div>
+template&lt;class LocalRealizabilityLimiterImp , class Traits  = internal::RealizabilityLimiterTraits&lt;LocalRealizabilityLimiterImp&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;class SourceType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt;<a class="el" href="a01933.html#a886a47825c09b50c0017fc20ac802885">RangeType</a>&gt;&amp; <a class="el" href="a01933.html">Dune::GDT::LocalRealizabilityLimiterBase</a>&lt; DiscreteFunctionImp, BasisfunctionImp &gt;::basis_values_</td>
+          <td class="memname">void <a class="el" href="a01961.html">Dune::GDT::RealizabilityLimiter</a>&lt; LocalRealizabilityLimiterImp, Traits &gt;::apply </td>
+          <td>(</td>
+          <td class="paramtype">const SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a01961.html#a06a394a8de7a67751e6dd47902182b1b">ReconstructedFunctionType</a> &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a970fe1b3ae3695b751e81c6e7f808d57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a970fe1b3ae3695b751e81c6e7f808d57">&#9670;&nbsp;</a></span>dimDomain</h2>
+<a id="ab04213f2502d2e5074a8d0577859da4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab04213f2502d2e5074a8d0577859da4b">&#9670;&nbsp;</a></span>apply2()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class DiscreteFunctionImp , class BasisfunctionImp &gt; </div>
+template&lt;class Traits&gt; </div>
+<div class="memtemplate">
+template&lt;class RangeType , class SourceType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t <a class="el" href="a01961.html">Dune::GDT::LPLocalRealizabilityLimiter</a>&lt; DiscreteFunctionImp, BasisfunctionImp &gt;::dimDomain = BaseType::dimDomain</td>
+          <td class="memname"><a class="el" href="a02101.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a> <a class="el" href="a02101.html">Dune::GDT::OperatorInterface</a>&lt; Traits &gt;::apply2 </td>
+          <td>(</td>
+          <td class="paramtype">const RangeType &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ae5eef923565f4d06d4ac79c0b0007148"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5eef923565f4d06d4ac79c0b0007148">&#9670;&nbsp;</a></span>dimRange</h2>
+<a id="a86a02543d3c2929680d4c86f35fe86e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86a02543d3c2929680d4c86f35fe86e3">&#9670;&nbsp;</a></span>apply_inverse() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class DiscreteFunctionImp , class BasisfunctionImp &gt; </div>
+template&lt;class Traits&gt; </div>
+<div class="memtemplate">
+template&lt;class RangeType , class SourceType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t <a class="el" href="a01961.html">Dune::GDT::LPLocalRealizabilityLimiter</a>&lt; DiscreteFunctionImp, BasisfunctionImp &gt;::dimRange = BaseType::dimRange</td>
+          <td class="memname">void <a class="el" href="a02101.html">Dune::GDT::OperatorInterface</a>&lt; Traits &gt;::apply_inverse </td>
+          <td>(</td>
+          <td class="paramtype">const RangeType &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Common::Configuration &amp;&#160;</td>
+          <td class="paramname"><em>opts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aa0c19928aca4eaa52194665e0fff37c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0c19928aca4eaa52194665e0fff37c7">&#9670;&nbsp;</a></span>epsilon_</h2>
+<a id="a964dbc938c643b46088a7897597c390b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a964dbc938c643b46088a7897597c390b">&#9670;&nbsp;</a></span>apply_inverse() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class DiscreteFunctionImp , class BasisfunctionImp &gt; </div>
+template&lt;class Traits&gt; </div>
+<div class="memtemplate">
+template&lt;class RangeType , class SourceType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a01933.html#a59c9673c6dd20f642386986f6fc368fc">RangeFieldType</a> <a class="el" href="a01933.html">Dune::GDT::LocalRealizabilityLimiterBase</a>&lt; DiscreteFunctionImp, BasisfunctionImp &gt;::epsilon_</td>
+          <td class="memname">void <a class="el" href="a02101.html">Dune::GDT::OperatorInterface</a>&lt; Traits &gt;::apply_inverse </td>
+          <td>(</td>
+          <td class="paramtype">const RangeType &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a44dbb388a4257c81d303085c8b8b5355"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44dbb388a4257c81d303085c8b8b5355">&#9670;&nbsp;</a></span>quadrature_</h2>
+<a id="a3bb5343986038f4e7af4cd8a07b38972"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bb5343986038f4e7af4cd8a07b38972">&#9670;&nbsp;</a></span>apply_inverse() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class DiscreteFunctionImp , class BasisfunctionImp &gt; </div>
+template&lt;class Traits&gt; </div>
+<div class="memtemplate">
+template&lt;class RangeType , class SourceType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a01933.html#aefd744d24fb38b66d30298468cebe7b5">QuadratureType</a>&amp; <a class="el" href="a01933.html">Dune::GDT::LocalRealizabilityLimiterBase</a>&lt; DiscreteFunctionImp, BasisfunctionImp &gt;::quadrature_</td>
+          <td class="memname">void <a class="el" href="a02101.html">Dune::GDT::OperatorInterface</a>&lt; Traits &gt;::apply_inverse </td>
+          <td>(</td>
+          <td class="paramtype">const RangeType &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a2fbc1abbf1beac9aa6c719d4665d5eec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fbc1abbf1beac9aa6c719d4665d5eec">&#9670;&nbsp;</a></span>reconstructed_function_</h2>
+<a id="a1d4049caeb309c503cba4b783f014d03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d4049caeb309c503cba4b783f014d03">&#9670;&nbsp;</a></span>induced_norm()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class DiscreteFunctionImp , class BasisfunctionImp &gt; </div>
+template&lt;class Traits&gt; </div>
+<div class="memtemplate">
+template&lt;class RangeType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a01933.html#a441b4d1d7dc1a75a5a118fb84929e049">ReconstructedFunctionType</a>&amp; <a class="el" href="a01933.html">Dune::GDT::LocalRealizabilityLimiterBase</a>&lt; DiscreteFunctionImp, BasisfunctionImp &gt;::reconstructed_function_</td>
+          <td class="memname"><a class="el" href="a02101.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a> <a class="el" href="a02101.html">Dune::GDT::OperatorInterface</a>&lt; Traits &gt;::induced_norm </td>
+          <td>(</td>
+          <td class="paramtype">const RangeType &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ac3c9b58ff93a3a3fb03e7bbec7c15fe4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3c9b58ff93a3a3fb03e7bbec7c15fe4">&#9670;&nbsp;</a></span>source_</h2>
+<a id="ab909fc8055290725d660830a30216454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab909fc8055290725d660830a30216454">&#9670;&nbsp;</a></span>invert_options() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class DiscreteFunctionImp , class BasisfunctionImp &gt; </div>
+template&lt;class Traits&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a01933.html#a03e4aafcc6510942dc713bf5f182ae7f">DiscreteFunctionType</a>&amp; <a class="el" href="a01933.html">Dune::GDT::LocalRealizabilityLimiterBase</a>&lt; DiscreteFunctionImp, BasisfunctionImp &gt;::source_</td>
+          <td class="memname">std::vector&lt;std::string&gt; <a class="el" href="a02101.html">Dune::GDT::OperatorInterface</a>&lt; Traits &gt;::invert_options </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f3ddca8c15feaa6e67173f92e80e7f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f3ddca8c15feaa6e67173f92e80e7f5">&#9670;&nbsp;</a></span>invert_options() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XT::Common::Configuration <a class="el" href="a02101.html">Dune::GDT::OperatorInterface</a>&lt; Traits &gt;::invert_options </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6730af1cff9082cf0361ba2c4871ffbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6730af1cff9082cf0361ba2c4871ffbe">&#9670;&nbsp;</a></span>jacobian() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits&gt; </div>
+<div class="memtemplate">
+template&lt;class SourceType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a02101.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a> <a class="el" href="a02101.html">Dune::GDT::OperatorInterface</a>&lt; Traits &gt;::jacobian </td>
+          <td>(</td>
+          <td class="paramtype">const SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a318e2b0bfd6fe23b6299165e9e8414ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a318e2b0bfd6fe23b6299165e9e8414ff">&#9670;&nbsp;</a></span>jacobian() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits&gt; </div>
+<div class="memtemplate">
+template&lt;class SourceType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a02101.html">Dune::GDT::OperatorInterface</a>&lt; Traits &gt;::jacobian </td>
+          <td>(</td>
+          <td class="paramtype">const SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a02101.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a> &amp;&#160;</td>
+          <td class="paramname"><em>jac</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

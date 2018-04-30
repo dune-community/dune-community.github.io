@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::LocalLambdaOperator&lt; S, RS, RV &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::LocalLambdaCouplingOperator&lt; S, I, RS, RV &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a01753.html">LocalLambdaOperator</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a01753.html">LocalLambdaCouplingOperator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -68,112 +68,123 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a01750.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::LocalLambdaOperator&lt; S, RS, RV &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::LocalLambdaCouplingOperator&lt; S, I, RS, RV &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a04675_source.html">dune/gdt/local/operators/lambda.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a04671_source.html">dune/gdt/local/operators/lambda.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::LocalLambdaOperator&lt; S, RS, RV &gt;:</div>
+Inheritance diagram for Dune::GDT::LocalLambdaCouplingOperator&lt; S, I, RS, RV &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01752.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_local_lambda_operator_3_01_s_00_01_r_s_00_01_r_v_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1_local_lambda_operator_3_01_s_00_01_r_s_00_01_r_v_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_local_lambda_operator_3_01_s_00_01_r_s_00_01_r_v_01_4_inherit__map">
+<div class="center"><img src="a01752.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_local_lambda_coupling_operator_3_01_s_00_01_i_00_01_r_s_00_01_r_v_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_local_lambda_coupling_operator_3_01_s_00_01_i_00_01_r_s_00_01_r_v_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_local_lambda_coupling_operator_3_01_s_00_01_i_00_01_r_s_00_01_r_v_01_4_inherit__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:abac42eea3ecde8991231561d4c806d96"><td class="memItemLeft" align="right" valign="top">typedef S&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01753.html#abac42eea3ecde8991231561d4c806d96">SourceType</a></td></tr>
-<tr class="separator:abac42eea3ecde8991231561d4c806d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4aec4ddc3960f4032934a61c68a83c1e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01101.html">LocalDiscreteFunction</a>&lt; RS, RV &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01753.html#a4aec4ddc3960f4032934a61c68a83c1e">LocalRangeType</a></td></tr>
-<tr class="separator:a4aec4ddc3960f4032934a61c68a83c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c4338ace96bbc80fc4f4c4d4b430274"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(const <a class="el" href="a01753.html#abac42eea3ecde8991231561d4c806d96">SourceType</a> &amp;, <a class="el" href="a01753.html#a4aec4ddc3960f4032934a61c68a83c1e">LocalRangeType</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01753.html#a5c4338ace96bbc80fc4f4c4d4b430274">LocalLambdaType</a></td></tr>
-<tr class="separator:a5c4338ace96bbc80fc4f4c4d4b430274"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85d71db8a2dfac84ac08489ca7167a67"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01761.html">internal::LocalLambdaOperatorTraits</a>&lt; S, RS, RV &gt; ::<a class="el" href="a01693.html#a85d71db8a2dfac84ac08489ca7167a67">derived_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01693.html#a85d71db8a2dfac84ac08489ca7167a67">derived_type</a></td></tr>
-<tr class="separator:a85d71db8a2dfac84ac08489ca7167a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b3c349958eff2e0f0cf24b9addcd3a4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01753.html#a0b3c349958eff2e0f0cf24b9addcd3a4">Traits</a> = <a class="el" href="a01761.html">internal::LocalLambdaCouplingOperatorTraits</a>&lt; S, I, RS, RV &gt;</td></tr>
+<tr class="separator:a0b3c349958eff2e0f0cf24b9addcd3a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a057f7a1d365e89956fb2fd5afff526b1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01753.html#a057f7a1d365e89956fb2fd5afff526b1">SourceType</a> = S</td></tr>
+<tr class="separator:a057f7a1d365e89956fb2fd5afff526b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae88f271b3f96e3b476b89ff65b35748a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01753.html#ae88f271b3f96e3b476b89ff65b35748a">IntersectionType</a> = I</td></tr>
+<tr class="separator:ae88f271b3f96e3b476b89ff65b35748a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace11d442b8f44d12dd67db803516c902"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01753.html#ace11d442b8f44d12dd67db803516c902">LocalRangeType</a> = <a class="el" href="a01101.html">LocalDiscreteFunction</a>&lt; RS, RV &gt;</td></tr>
+<tr class="separator:ace11d442b8f44d12dd67db803516c902"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0a06d757896303a501d2ba834121784"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01753.html#ac0a06d757896303a501d2ba834121784">LocalLambdaType</a> = std::function&lt; void(const <a class="el" href="a01753.html#a057f7a1d365e89956fb2fd5afff526b1">SourceType</a> &amp;, const <a class="el" href="a01753.html#ae88f271b3f96e3b476b89ff65b35748a">IntersectionType</a>, <a class="el" href="a01753.html#ace11d442b8f44d12dd67db803516c902">LocalRangeType</a> &amp;, <a class="el" href="a01753.html#ace11d442b8f44d12dd67db803516c902">LocalRangeType</a> &amp;)&gt;</td></tr>
+<tr class="separator:ac0a06d757896303a501d2ba834121784"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6ee071f1264f5280daafcf8d24c022d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01753.html#a6ee071f1264f5280daafcf8d24c022d2">LocalLambdaOperator</a> (<a class="el" href="a01753.html#a5c4338ace96bbc80fc4f4c4d4b430274">LocalLambdaType</a> local_lambda)</td></tr>
-<tr class="separator:a6ee071f1264f5280daafcf8d24c022d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac131cdfd5ffdbfb71d1fb2d68f324cef"><td class="memTemplParams" colspan="2">template&lt;class UnknownSourceType , class UnknownLocalRangeType &gt; </td></tr>
-<tr class="memitem:ac131cdfd5ffdbfb71d1fb2d68f324cef"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01753.html#ac131cdfd5ffdbfb71d1fb2d68f324cef">apply</a> (const UnknownSourceType &amp;, UnknownLocalRangeType &amp;) const</td></tr>
-<tr class="separator:ac131cdfd5ffdbfb71d1fb2d68f324cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b86bb9d8f438fbeba434eefae271127"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01753.html#a9b86bb9d8f438fbeba434eefae271127">apply</a> (const <a class="el" href="a01753.html#abac42eea3ecde8991231561d4c806d96">SourceType</a> &amp;source, <a class="el" href="a01753.html#a4aec4ddc3960f4032934a61c68a83c1e">LocalRangeType</a> &amp;local_range) const</td></tr>
-<tr class="separator:a9b86bb9d8f438fbeba434eefae271127"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25bbebfb2ae164ad5f455828f8820e0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01753.html#a25bbebfb2ae164ad5f455828f8820e0e">LocalLambdaOperator</a> (const <a class="el" href="a01753.html">ThisType</a> &amp;)=default</td></tr>
-<tr class="separator:a25bbebfb2ae164ad5f455828f8820e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51857d99c96f63b6e9e5952b3632edee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01753.html#a51857d99c96f63b6e9e5952b3632edee">LocalLambdaOperator</a> (<a class="el" href="a01753.html">ThisType</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a51857d99c96f63b6e9e5952b3632edee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af01cd257b1e187d61c42f6709d23a344"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01693.html#af01cd257b1e187d61c42f6709d23a344">apply</a> (const <a class="el" href="a01753.html#abac42eea3ecde8991231561d4c806d96">SourceType</a> &amp;source, <a class="el" href="a01101.html">LocalDiscreteFunction</a>&lt; RangeSpaceType, VectorType &gt; &amp;local_range) const</td></tr>
-<tr class="memdesc:af01cd257b1e187d61c42f6709d23a344"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the local operator.  <a href="#af01cd257b1e187d61c42f6709d23a344">More...</a><br /></td></tr>
-<tr class="separator:af01cd257b1e187d61c42f6709d23a344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a590ddb8d2c2571ab418f61222c446583"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01753.html#a590ddb8d2c2571ab418f61222c446583">LocalLambdaCouplingOperator</a> (<a class="el" href="a01753.html#ac0a06d757896303a501d2ba834121784">LocalLambdaType</a> local_lambda)</td></tr>
+<tr class="separator:a590ddb8d2c2571ab418f61222c446583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72291ca074b173a93caf1af53f730b63"><td class="memTemplParams" colspan="2">template&lt;class UnknownSourceType , class UnknownIntersectionType , class UnknownRangeType &gt; </td></tr>
+<tr class="memitem:a72291ca074b173a93caf1af53f730b63"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01753.html#a72291ca074b173a93caf1af53f730b63">apply</a> (const UnknownSourceType &amp;, const UnknownIntersectionType &amp;, UnknownRangeType &amp;, UnknownRangeType &amp;) const</td></tr>
+<tr class="separator:a72291ca074b173a93caf1af53f730b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaff318898d1b842c1d11504c060ad70f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01753.html#aaff318898d1b842c1d11504c060ad70f">apply</a> (const <a class="el" href="a01753.html#a057f7a1d365e89956fb2fd5afff526b1">SourceType</a> &amp;source, const <a class="el" href="a01753.html#ae88f271b3f96e3b476b89ff65b35748a">IntersectionType</a> &amp;intersection, <a class="el" href="a01753.html#ace11d442b8f44d12dd67db803516c902">LocalRangeType</a> &amp;local_range_entity, <a class="el" href="a01753.html#ace11d442b8f44d12dd67db803516c902">LocalRangeType</a> &amp;local_range_neighbor) const</td></tr>
+<tr class="separator:aaff318898d1b842c1d11504c060ad70f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad7fe7bfa73f25ba385894cbedf68665"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01753.html#aad7fe7bfa73f25ba385894cbedf68665">LocalLambdaCouplingOperator</a> (const <a class="el" href="a01753.html">ThisType</a> &amp;)=default</td></tr>
+<tr class="separator:aad7fe7bfa73f25ba385894cbedf68665"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a413d00618e63a66f23cf2ff57debd0fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01753.html#a413d00618e63a66f23cf2ff57debd0fd">LocalLambdaCouplingOperator</a> (<a class="el" href="a01753.html">ThisType</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a413d00618e63a66f23cf2ff57debd0fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb56b0fbb1f217bbbe537e2d299e451a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01693.html#aeb56b0fbb1f217bbbe537e2d299e451a">apply</a> (const <a class="el" href="a01753.html#a057f7a1d365e89956fb2fd5afff526b1">SourceType</a> &amp;source, const <a class="el" href="a01753.html#ae88f271b3f96e3b476b89ff65b35748a">IntersectionType</a> &amp;intersection, <a class="el" href="a01101.html">LocalDiscreteFunction</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType &gt; &amp;local_range_entity, <a class="el" href="a01101.html">LocalDiscreteFunction</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType &gt; &amp;local_range_neighbor, const XT::Common::Parameter &amp;mu={}) const</td></tr>
+<tr class="separator:aeb56b0fbb1f217bbbe537e2d299e451a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a85d71db8a2dfac84ac08489ca7167a67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85d71db8a2dfac84ac08489ca7167a67">&#9670;&nbsp;</a></span>derived_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a01761.html">internal::LocalLambdaOperatorTraits</a>&lt; S, RS, RV &gt; ::<a class="el" href="a01693.html#a85d71db8a2dfac84ac08489ca7167a67">derived_type</a> <a class="el" href="a01693.html">Dune::GDT::LocalOperatorInterface</a>&lt; <a class="el" href="a01761.html">internal::LocalLambdaOperatorTraits</a>&lt; S, RS, RV &gt;  &gt;::<a class="el" href="a01693.html#a85d71db8a2dfac84ac08489ca7167a67">derived_type</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5c4338ace96bbc80fc4f4c4d4b430274"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c4338ace96bbc80fc4f4c4d4b430274">&#9670;&nbsp;</a></span>LocalLambdaType</h2>
+<a id="ae88f271b3f96e3b476b89ff65b35748a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae88f271b3f96e3b476b89ff65b35748a">&#9670;&nbsp;</a></span>IntersectionType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class S, class RS, class RV&gt; </div>
+template&lt;class S , class I , class RS , class RV &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::function&lt;void(const <a class="el" href="a01753.html#abac42eea3ecde8991231561d4c806d96">SourceType</a>&amp;, <a class="el" href="a01753.html#a4aec4ddc3960f4032934a61c68a83c1e">LocalRangeType</a>&amp;)&gt; <a class="el" href="a01753.html">Dune::GDT::LocalLambdaOperator</a>&lt; S, RS, RV &gt;::<a class="el" href="a01753.html#a5c4338ace96bbc80fc4f4c4d4b430274">LocalLambdaType</a></td>
+          <td class="memname">using <a class="el" href="a01753.html">Dune::GDT::LocalLambdaCouplingOperator</a>&lt; S, I, RS, RV &gt;::<a class="el" href="a01753.html#ae88f271b3f96e3b476b89ff65b35748a">IntersectionType</a> =  I</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a4aec4ddc3960f4032934a61c68a83c1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4aec4ddc3960f4032934a61c68a83c1e">&#9670;&nbsp;</a></span>LocalRangeType</h2>
+<a id="ac0a06d757896303a501d2ba834121784"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0a06d757896303a501d2ba834121784">&#9670;&nbsp;</a></span>LocalLambdaType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class S, class RS, class RV&gt; </div>
+template&lt;class S , class I , class RS , class RV &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a01101.html">LocalDiscreteFunction</a>&lt;RS, RV&gt; <a class="el" href="a01753.html">Dune::GDT::LocalLambdaOperator</a>&lt; S, RS, RV &gt;::<a class="el" href="a01753.html#a4aec4ddc3960f4032934a61c68a83c1e">LocalRangeType</a></td>
+          <td class="memname">using <a class="el" href="a01753.html">Dune::GDT::LocalLambdaCouplingOperator</a>&lt; S, I, RS, RV &gt;::<a class="el" href="a01753.html#ac0a06d757896303a501d2ba834121784">LocalLambdaType</a> =  std::function&lt;void(const <a class="el" href="a01753.html#a057f7a1d365e89956fb2fd5afff526b1">SourceType</a>&amp;, const <a class="el" href="a01753.html#ae88f271b3f96e3b476b89ff65b35748a">IntersectionType</a>, <a class="el" href="a01753.html#ace11d442b8f44d12dd67db803516c902">LocalRangeType</a>&amp;, <a class="el" href="a01753.html#ace11d442b8f44d12dd67db803516c902">LocalRangeType</a>&amp;)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="abac42eea3ecde8991231561d4c806d96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abac42eea3ecde8991231561d4c806d96">&#9670;&nbsp;</a></span>SourceType</h2>
+<a id="ace11d442b8f44d12dd67db803516c902"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace11d442b8f44d12dd67db803516c902">&#9670;&nbsp;</a></span>LocalRangeType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class S, class RS, class RV&gt; </div>
+template&lt;class S , class I , class RS , class RV &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef S <a class="el" href="a01753.html">Dune::GDT::LocalLambdaOperator</a>&lt; S, RS, RV &gt;::<a class="el" href="a01753.html#abac42eea3ecde8991231561d4c806d96">SourceType</a></td>
+          <td class="memname">using <a class="el" href="a01753.html">Dune::GDT::LocalLambdaCouplingOperator</a>&lt; S, I, RS, RV &gt;::<a class="el" href="a01753.html#ace11d442b8f44d12dd67db803516c902">LocalRangeType</a> =  <a class="el" href="a01101.html">LocalDiscreteFunction</a>&lt;RS, RV&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a057f7a1d365e89956fb2fd5afff526b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a057f7a1d365e89956fb2fd5afff526b1">&#9670;&nbsp;</a></span>SourceType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class S , class I , class RS , class RV &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a01753.html">Dune::GDT::LocalLambdaCouplingOperator</a>&lt; S, I, RS, RV &gt;::<a class="el" href="a01753.html#a057f7a1d365e89956fb2fd5afff526b1">SourceType</a> =  S</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b3c349958eff2e0f0cf24b9addcd3a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b3c349958eff2e0f0cf24b9addcd3a4">&#9670;&nbsp;</a></span>Traits</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class S , class I , class RS , class RV &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a01753.html">Dune::GDT::LocalLambdaCouplingOperator</a>&lt; S, I, RS, RV &gt;::<a class="el" href="a01753.html#a0b3c349958eff2e0f0cf24b9addcd3a4">Traits</a> =  <a class="el" href="a01761.html">internal::LocalLambdaCouplingOperatorTraits</a>&lt;S, I, RS, RV&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -181,21 +192,21 @@ template&lt;class S, class RS, class RV&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a6ee071f1264f5280daafcf8d24c022d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ee071f1264f5280daafcf8d24c022d2">&#9670;&nbsp;</a></span>LocalLambdaOperator() <span class="overload">[1/3]</span></h2>
+<a id="a590ddb8d2c2571ab418f61222c446583"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a590ddb8d2c2571ab418f61222c446583">&#9670;&nbsp;</a></span>LocalLambdaCouplingOperator() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class S, class RS, class RV&gt; </div>
+template&lt;class S , class I , class RS , class RV &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a01753.html">Dune::GDT::LocalLambdaOperator</a>&lt; S, RS, RV &gt;::<a class="el" href="a01753.html">LocalLambdaOperator</a> </td>
+          <td class="memname"><a class="el" href="a01753.html">Dune::GDT::LocalLambdaCouplingOperator</a>&lt; S, I, RS, RV &gt;::<a class="el" href="a01753.html">LocalLambdaCouplingOperator</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a01753.html#a5c4338ace96bbc80fc4f4c4d4b430274">LocalLambdaType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a01753.html#ac0a06d757896303a501d2ba834121784">LocalLambdaType</a>&#160;</td>
           <td class="paramname"><em>local_lambda</em></td><td>)</td>
           <td></td>
         </tr>
@@ -209,19 +220,19 @@ template&lt;class S, class RS, class RV&gt; </div>
 
 </div>
 </div>
-<a id="a25bbebfb2ae164ad5f455828f8820e0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25bbebfb2ae164ad5f455828f8820e0e">&#9670;&nbsp;</a></span>LocalLambdaOperator() <span class="overload">[2/3]</span></h2>
+<a id="aad7fe7bfa73f25ba385894cbedf68665"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad7fe7bfa73f25ba385894cbedf68665">&#9670;&nbsp;</a></span>LocalLambdaCouplingOperator() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class S, class RS, class RV&gt; </div>
+template&lt;class S , class I , class RS , class RV &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a01753.html">Dune::GDT::LocalLambdaOperator</a>&lt; S, RS, RV &gt;::<a class="el" href="a01753.html">LocalLambdaOperator</a> </td>
+          <td class="memname"><a class="el" href="a01753.html">Dune::GDT::LocalLambdaCouplingOperator</a>&lt; S, I, RS, RV &gt;::<a class="el" href="a01753.html">LocalLambdaCouplingOperator</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a01753.html">ThisType</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -237,19 +248,19 @@ template&lt;class S, class RS, class RV&gt; </div>
 
 </div>
 </div>
-<a id="a51857d99c96f63b6e9e5952b3632edee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51857d99c96f63b6e9e5952b3632edee">&#9670;&nbsp;</a></span>LocalLambdaOperator() <span class="overload">[3/3]</span></h2>
+<a id="a413d00618e63a66f23cf2ff57debd0fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a413d00618e63a66f23cf2ff57debd0fd">&#9670;&nbsp;</a></span>LocalLambdaCouplingOperator() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class S, class RS, class RV&gt; </div>
+template&lt;class S , class I , class RS , class RV &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a01753.html">Dune::GDT::LocalLambdaOperator</a>&lt; S, RS, RV &gt;::<a class="el" href="a01753.html">LocalLambdaOperator</a> </td>
+          <td class="memname"><a class="el" href="a01753.html">Dune::GDT::LocalLambdaCouplingOperator</a>&lt; S, I, RS, RV &gt;::<a class="el" href="a01753.html">LocalLambdaCouplingOperator</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="a01753.html">ThisType</a> &amp;&amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -266,8 +277,8 @@ template&lt;class S, class RS, class RV&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af01cd257b1e187d61c42f6709d23a344"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af01cd257b1e187d61c42f6709d23a344">&#9670;&nbsp;</a></span>apply() <span class="overload">[1/3]</span></h2>
+<a id="aeb56b0fbb1f217bbbe537e2d299e451a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb56b0fbb1f217bbbe537e2d299e451a">&#9670;&nbsp;</a></span>apply() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -276,7 +287,7 @@ template&lt;class S, class RS, class RV&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a01693.html">Dune::GDT::LocalOperatorInterface</a>&lt; <a class="el" href="a01761.html">internal::LocalLambdaOperatorTraits</a>&lt; S, RS, RV &gt;  &gt;::apply </td>
+          <td class="memname">void <a class="el" href="a01693.html">Dune::GDT::LocalCouplingOperatorInterface</a>&lt; <a class="el" href="a01761.html">internal::LocalLambdaCouplingOperatorTraits</a>&lt; S, I, RS, RV &gt;  &gt;::apply </td>
           <td>(</td>
           <td class="paramtype">const SourceType &amp;&#160;</td>
           <td class="paramname"><em>source</em>, </td>
@@ -284,8 +295,26 @@ template&lt;class S, class RS, class RV&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a01101.html">LocalDiscreteFunction</a>&lt; RangeSpaceType, VectorType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>local_range</em>&#160;</td>
+          <td class="paramtype">const IntersectionType &amp;&#160;</td>
+          <td class="paramname"><em>intersection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a01101.html">LocalDiscreteFunction</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>local_range_entity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a01101.html">LocalDiscreteFunction</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>local_range_neighbor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>mu</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -300,31 +329,23 @@ template&lt;class S, class RS, class RV&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Applies the local operator. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">source</td><td>Should be a XT::Functions::LocalizableFunctionInterface or a <a class="el" href="a00905.html">ConstDiscreteFunction</a>. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
-<a id="ac131cdfd5ffdbfb71d1fb2d68f324cef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac131cdfd5ffdbfb71d1fb2d68f324cef">&#9670;&nbsp;</a></span>apply() <span class="overload">[2/3]</span></h2>
+<a id="a72291ca074b173a93caf1af53f730b63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72291ca074b173a93caf1af53f730b63">&#9670;&nbsp;</a></span>apply() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class S, class RS, class RV&gt; </div>
+template&lt;class S , class I , class RS , class RV &gt; </div>
 <div class="memtemplate">
-template&lt;class UnknownSourceType , class UnknownLocalRangeType &gt; </div>
+template&lt;class UnknownSourceType , class UnknownIntersectionType , class UnknownRangeType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a01753.html">Dune::GDT::LocalLambdaOperator</a>&lt; S, RS, RV &gt;::apply </td>
+          <td class="memname">void <a class="el" href="a01753.html">Dune::GDT::LocalLambdaCouplingOperator</a>&lt; S, I, RS, RV &gt;::apply </td>
           <td>(</td>
           <td class="paramtype">const UnknownSourceType &amp;&#160;</td>
           <td class="paramname">, </td>
@@ -332,7 +353,19 @@ template&lt;class UnknownSourceType , class UnknownLocalRangeType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">UnknownLocalRangeType &amp;&#160;</td>
+          <td class="paramtype">const UnknownIntersectionType &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UnknownRangeType &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UnknownRangeType &amp;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -350,28 +383,40 @@ template&lt;class UnknownSourceType , class UnknownLocalRangeType &gt; </div>
 
 </div>
 </div>
-<a id="a9b86bb9d8f438fbeba434eefae271127"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b86bb9d8f438fbeba434eefae271127">&#9670;&nbsp;</a></span>apply() <span class="overload">[3/3]</span></h2>
+<a id="aaff318898d1b842c1d11504c060ad70f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaff318898d1b842c1d11504c060ad70f">&#9670;&nbsp;</a></span>apply() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class S, class RS, class RV&gt; </div>
+template&lt;class S , class I , class RS , class RV &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a01753.html">Dune::GDT::LocalLambdaOperator</a>&lt; S, RS, RV &gt;::apply </td>
+          <td class="memname">void <a class="el" href="a01753.html">Dune::GDT::LocalLambdaCouplingOperator</a>&lt; S, I, RS, RV &gt;::apply </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a01753.html#abac42eea3ecde8991231561d4c806d96">SourceType</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a01753.html#a057f7a1d365e89956fb2fd5afff526b1">SourceType</a> &amp;&#160;</td>
           <td class="paramname"><em>source</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a01753.html#a4aec4ddc3960f4032934a61c68a83c1e">LocalRangeType</a> &amp;&#160;</td>
-          <td class="paramname"><em>local_range</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="a01753.html#ae88f271b3f96e3b476b89ff65b35748a">IntersectionType</a> &amp;&#160;</td>
+          <td class="paramname"><em>intersection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a01753.html#ace11d442b8f44d12dd67db803516c902">LocalRangeType</a> &amp;&#160;</td>
+          <td class="paramname"><em>local_range_entity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a01753.html#ace11d442b8f44d12dd67db803516c902">LocalRangeType</a> &amp;&#160;</td>
+          <td class="paramname"><em>local_range_neighbor</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -389,7 +434,7 @@ template&lt;class S, class RS, class RV&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a04675_source.html">operators/lambda.hh</a></li>
+<li><a class="el" href="a04671_source.html">operators/lambda.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

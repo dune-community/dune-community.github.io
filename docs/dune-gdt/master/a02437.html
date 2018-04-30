@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::BaseFunctionSet::internal::getDimRange&lt; T, typename &gt; Struct Template Reference</title>
+<title>dune-gdt: Dune::GDT::BaseFunctionSet::internal::SumDimRange&lt; FirstType, Types &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a00252.html">BaseFunctionSet</a></li><li class="navelem"><a class="el" href="a00253.html">internal</a></li><li class="navelem"><a class="el" href="a02437.html">getDimRange</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a00252.html">BaseFunctionSet</a></li><li class="navelem"><a class="el" href="a00253.html">internal</a></li><li class="navelem"><a class="el" href="a02437.html">SumDimRange</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -67,31 +67,31 @@ $(function() {
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="a02434.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::BaseFunctionSet::internal::getDimRange&lt; T, typename &gt; Struct Template Reference</div>  </div>
+<div class="title">Dune::GDT::BaseFunctionSet::internal::SumDimRange&lt; FirstType, Types &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a04699_source.html">dune/gdt/spaces/basefunctionset/product.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a04695_source.html">dune/gdt/spaces/basefunctionset/product.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:aa65c747830dc0d6bfa7c16ed4c9ffbe8"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02437.html#aa65c747830dc0d6bfa7c16ed4c9ffbe8">dimRange</a> = 1</td></tr>
-<tr class="separator:aa65c747830dc0d6bfa7c16ed4c9ffbe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a079aabfcccd31bc190aae622112e89df"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02437.html#a079aabfcccd31bc190aae622112e89df">dimRange</a> = <a class="el" href="a02429.html">getDimRange</a>&lt;FirstType&gt;::dimRange + <a class="el" href="a02437.html">SumDimRange</a>&lt;Types...&gt;::dimRange</td></tr>
+<tr class="separator:a079aabfcccd31bc190aae622112e89df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="aa65c747830dc0d6bfa7c16ed4c9ffbe8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa65c747830dc0d6bfa7c16ed4c9ffbe8">&#9670;&nbsp;</a></span>dimRange</h2>
+<a id="a079aabfcccd31bc190aae622112e89df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a079aabfcccd31bc190aae622112e89df">&#9670;&nbsp;</a></span>dimRange</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename  = void&gt; </div>
+template&lt;class FirstType , class... Types&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t <a class="el" href="a02437.html">Dune::GDT::BaseFunctionSet::internal::getDimRange</a>&lt; T, typename &gt;::dimRange = 1</td>
+          <td class="memname">const size_t <a class="el" href="a02437.html">Dune::GDT::BaseFunctionSet::internal::SumDimRange</a>&lt; FirstType, Types &gt;::dimRange = <a class="el" href="a02429.html">getDimRange</a>&lt;FirstType&gt;::dimRange + <a class="el" href="a02437.html">SumDimRange</a>&lt;Types...&gt;::dimRange</td>
         </tr>
       </table>
   </td>
@@ -104,7 +104,7 @@ template&lt;typename T , typename  = void&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="a04699_source.html">spaces/basefunctionset/product.hh</a></li>
+<li><a class="el" href="a04695_source.html">spaces/basefunctionset/product.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

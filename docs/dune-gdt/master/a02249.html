@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::DirichletProjectionLocalizableOperator&lt; GridLayerImp, SourceImp, RangeImp, FieldImp &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::internal::L2GlobalProjectionOperatorTraits&lt; GridLayerImp, FieldImp &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,582 +59,80 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a02249.html">DirichletProjectionLocalizableOperator</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a00247.html">internal</a></li><li class="navelem"><a class="el" href="a02249.html">L2GlobalProjectionOperatorTraits</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="a02246.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::DirichletProjectionLocalizableOperator&lt; GridLayerImp, SourceImp, RangeImp, FieldImp &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::internal::L2GlobalProjectionOperatorTraits&lt; GridLayerImp, FieldImp &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00167_source.html">dune/gdt/projections/dirichlet.hh</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for Dune::GDT::DirichletProjectionLocalizableOperator&lt; GridLayerImp, SourceImp, RangeImp, FieldImp &gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="a02248.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_dirichlet_projection_localizable_operator_3_01_grid_layer_imp_00_01_source_imp_00_01_range_imp_00_01_field_imp_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1_dirichlet_projection_localizable_operator_3_01_grid_layer_imp_00_01_source_imp_00_01_range_imp_00_01_field_imp_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_dirichlet_projection_localizable_operator_3_01_grid_layer_imp_00_01_source_imp_00_01_range_imp_00_01_field_imp_01_4_inherit__map">
-</map>
-</div>
+<p><code>#include &lt;<a class="el" href="a04638_source.html">dune/gdt/projections/l2-global.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a6a786f834369ae55d473c2fe39d8137c"><td class="memItemLeft" align="right" valign="top">typedef XT::Grid::BoundaryInfo&lt; IntersectionType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02249.html#a6a786f834369ae55d473c2fe39d8137c">BoundaryInfoType</a></td></tr>
-<tr class="separator:a6a786f834369ae55d473c2fe39d8137c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7b28993e927b1d93148e02ed4f7c1f3"><td class="memItemLeft" align="right" valign="top">typedef SourceImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01793.html#aa7b28993e927b1d93148e02ed4f7c1f3">SourceType</a></td></tr>
-<tr class="separator:aa7b28993e927b1d93148e02ed4f7c1f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a039f8b83c3cb5e51cf890202da33757e"><td class="memItemLeft" align="right" valign="top">typedef RangeImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01793.html#a039f8b83c3cb5e51cf890202da33757e">RangeType</a></td></tr>
-<tr class="separator:a039f8b83c3cb5e51cf890202da33757e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a9bac5a21cda9a1e2dcb0951d229a7170"><td class="memTemplParams" colspan="2">template&lt;class... Args&gt; </td></tr>
-<tr class="memitem:a9bac5a21cda9a1e2dcb0951d229a7170"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02249.html#a9bac5a21cda9a1e2dcb0951d229a7170">DirichletProjectionLocalizableOperator</a> (const <a class="el" href="a02249.html#a6a786f834369ae55d473c2fe39d8137c">BoundaryInfoType</a> &amp;boundary_info, Args &amp;&amp;... args)</td></tr>
-<tr class="separator:a9bac5a21cda9a1e2dcb0951d229a7170"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7cb9553c0438c24f7095c35a5d72fde"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a01793.html#aa7b28993e927b1d93148e02ed4f7c1f3">SourceType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01793.html#ae7cb9553c0438c24f7095c35a5d72fde">source</a> () const</td></tr>
-<tr class="separator:ae7cb9553c0438c24f7095c35a5d72fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a629b4dafbfcd60293836e6d4ab486844"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a01793.html#a039f8b83c3cb5e51cf890202da33757e">RangeType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01793.html#a629b4dafbfcd60293836e6d4ab486844">range</a> () const</td></tr>
-<tr class="separator:a629b4dafbfcd60293836e6d4ab486844"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac76c5c1f8ac4c3f2d897fec48cdce8ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01793.html#a039f8b83c3cb5e51cf890202da33757e">RangeType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01793.html#ac76c5c1f8ac4c3f2d897fec48cdce8ec">range</a> ()</td></tr>
-<tr class="separator:ac76c5c1f8ac4c3f2d897fec48cdce8ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4a7af33115cea23043a574a9288f53c"><td class="memTemplParams" colspan="2">template&lt;class L &gt; </td></tr>
-<tr class="memitem:ae4a7af33115cea23043a574a9288f53c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a01793.html">ThisType</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01793.html#ae4a7af33115cea23043a574a9288f53c">append</a> (const <a class="el" href="a01693.html">LocalOperatorInterface</a>&lt; L &gt; &amp;local_operator, const XT::Grid::ApplyOn::WhichEntity&lt; GridLayerType &gt; *where=new XT::Grid::ApplyOn::AllEntities&lt; GridLayerType &gt;())</td></tr>
-<tr class="separator:ae4a7af33115cea23043a574a9288f53c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a435d6be6da5b986870b72afd9dc5c46e"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a435d6be6da5b986870b72afd9dc5c46e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a01793.html">ThisType</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01793.html#a435d6be6da5b986870b72afd9dc5c46e">append</a> (const <a class="el" href="a01697.html">LocalCouplingOperatorInterface</a>&lt; T &gt; &amp;local_operator, const XT::Grid::ApplyOn::WhichIntersection&lt; GridLayerType &gt; *where=new XT::Grid::ApplyOn::InnerIntersections&lt; GridLayerType &gt;(), const XT::Common::Parameter &amp;mu={})</td></tr>
-<tr class="separator:a435d6be6da5b986870b72afd9dc5c46e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e0dbedb35dfeb3494a2bfa3b60c757d"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a1e0dbedb35dfeb3494a2bfa3b60c757d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a01793.html">ThisType</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01793.html#a1e0dbedb35dfeb3494a2bfa3b60c757d">append</a> (const <a class="el" href="a01697.html">LocalCouplingOperatorInterface</a>&lt; T &gt; &amp;local_operator, const XT::Common::Parameter &amp;mu)</td></tr>
-<tr class="separator:a1e0dbedb35dfeb3494a2bfa3b60c757d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc639fd22512fdef81a21ceab8663ec1"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:afc639fd22512fdef81a21ceab8663ec1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a01793.html">ThisType</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01793.html#afc639fd22512fdef81a21ceab8663ec1">append</a> (const <a class="el" href="a01701.html">LocalBoundaryOperatorInterface</a>&lt; T &gt; &amp;local_operator, const XT::Grid::ApplyOn::WhichIntersection&lt; GridLayerType &gt; *where=new XT::Grid::ApplyOn::BoundaryIntersections&lt; GridLayerType &gt;())</td></tr>
-<tr class="separator:afc639fd22512fdef81a21ceab8663ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f6d837cf735323e1140eee74be1e8ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01793.html#a3f6d837cf735323e1140eee74be1e8ca">apply</a> (const bool use_tbb=false)</td></tr>
-<tr class="separator:a3f6d837cf735323e1140eee74be1e8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:ad0ba4bc7e738aefd5e8bfe6b8a25a099"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a01793.html#aa7b28993e927b1d93148e02ed4f7c1f3">SourceType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01793.html#ad0ba4bc7e738aefd5e8bfe6b8a25a099">source_</a></td></tr>
-<tr class="separator:ad0ba4bc7e738aefd5e8bfe6b8a25a099"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaac064b333f7333d92be711a5c8902cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01793.html#a039f8b83c3cb5e51cf890202da33757e">RangeType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01793.html#aaac064b333f7333d92be711a5c8902cf">range_</a></td></tr>
-<tr class="separator:aaac064b333f7333d92be711a5c8902cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33591690271e804b55a2432dc88bdd2d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; XT::Grid::internal::Codim0Object&lt; GridLayerType &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01793.html#a33591690271e804b55a2432dc88bdd2d">local_operators_codim_0</a></td></tr>
-<tr class="separator:a33591690271e804b55a2432dc88bdd2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0638e73ed12c0633fec2c9783c2283c9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; XT::Grid::internal::Codim1Object&lt; GridLayerType &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01793.html#a0638e73ed12c0633fec2c9783c2283c9">local_operators_codim_1</a></td></tr>
-<tr class="separator:a0638e73ed12c0633fec2c9783c2283c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a738d49975ce1b51d01816298b005cdbf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01793.html#a738d49975ce1b51d01816298b005cdbf">walked_</a></td></tr>
-<tr class="separator:a738d49975ce1b51d01816298b005cdbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11145e95a55d9b56606e6b7511f0768b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02245.html">L2GlobalProjectionOperator</a>&lt; GridLayerImp, FieldImp &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02249.html#a11145e95a55d9b56606e6b7511f0768b">derived_type</a></td></tr>
+<tr class="separator:a11145e95a55d9b56606e6b7511f0768b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab39a71b98b99af66661dad1d47305007"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02097.html">NoJacobian</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02249.html#ab39a71b98b99af66661dad1d47305007">JacobianType</a></td></tr>
+<tr class="separator:ab39a71b98b99af66661dad1d47305007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b90947c1c475dffd663ba538a884b45"><td class="memItemLeft" align="right" valign="top">typedef FieldImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02249.html#a3b90947c1c475dffd663ba538a884b45">FieldType</a></td></tr>
+<tr class="separator:a3b90947c1c475dffd663ba538a884b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a6a786f834369ae55d473c2fe39d8137c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a786f834369ae55d473c2fe39d8137c">&#9670;&nbsp;</a></span>BoundaryInfoType</h2>
+<a id="a11145e95a55d9b56606e6b7511f0768b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11145e95a55d9b56606e6b7511f0768b">&#9670;&nbsp;</a></span>derived_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GridLayerImp , class SourceImp , class RangeImp , class FieldImp  = double&gt; </div>
+template&lt;class GridLayerImp , class FieldImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef XT::Grid::BoundaryInfo&lt;IntersectionType&gt; <a class="el" href="a02249.html">Dune::GDT::DirichletProjectionLocalizableOperator</a>&lt; GridLayerImp, SourceImp, RangeImp, FieldImp &gt;::<a class="el" href="a02249.html#a6a786f834369ae55d473c2fe39d8137c">BoundaryInfoType</a></td>
+          <td class="memname">typedef <a class="el" href="a02245.html">L2GlobalProjectionOperator</a>&lt;GridLayerImp, FieldImp&gt; <a class="el" href="a02249.html">Dune::GDT::internal::L2GlobalProjectionOperatorTraits</a>&lt; GridLayerImp, FieldImp &gt;::<a class="el" href="a02249.html#a11145e95a55d9b56606e6b7511f0768b">derived_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a039f8b83c3cb5e51cf890202da33757e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a039f8b83c3cb5e51cf890202da33757e">&#9670;&nbsp;</a></span>RangeType</h2>
+<a id="a3b90947c1c475dffd663ba538a884b45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b90947c1c475dffd663ba538a884b45">&#9670;&nbsp;</a></span>FieldType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GridLayerImp, class SourceImp, class RangeImp&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;class GridLayerImp , class FieldImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef RangeImp <a class="el" href="a01793.html">Dune::GDT::LocalizableOperatorBase</a>&lt; GridLayerImp, SourceImp, RangeImp &gt;::<a class="el" href="a01793.html#a039f8b83c3cb5e51cf890202da33757e">RangeType</a></td>
+          <td class="memname">typedef FieldImp <a class="el" href="a02249.html">Dune::GDT::internal::L2GlobalProjectionOperatorTraits</a>&lt; GridLayerImp, FieldImp &gt;::<a class="el" href="a02249.html#a3b90947c1c475dffd663ba538a884b45">FieldType</a></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aa7b28993e927b1d93148e02ed4f7c1f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7b28993e927b1d93148e02ed4f7c1f3">&#9670;&nbsp;</a></span>SourceType</h2>
+<a id="ab39a71b98b99af66661dad1d47305007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab39a71b98b99af66661dad1d47305007">&#9670;&nbsp;</a></span>JacobianType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GridLayerImp, class SourceImp, class RangeImp&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;class GridLayerImp , class FieldImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef SourceImp <a class="el" href="a01793.html">Dune::GDT::LocalizableOperatorBase</a>&lt; GridLayerImp, SourceImp, RangeImp &gt;::<a class="el" href="a01793.html#aa7b28993e927b1d93148e02ed4f7c1f3">SourceType</a></td>
+          <td class="memname">typedef <a class="el" href="a02097.html">NoJacobian</a> <a class="el" href="a02249.html">Dune::GDT::internal::L2GlobalProjectionOperatorTraits</a>&lt; GridLayerImp, FieldImp &gt;::<a class="el" href="a02249.html#ab39a71b98b99af66661dad1d47305007">JacobianType</a></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a9bac5a21cda9a1e2dcb0951d229a7170"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bac5a21cda9a1e2dcb0951d229a7170">&#9670;&nbsp;</a></span>DirichletProjectionLocalizableOperator()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridLayerImp , class SourceImp , class RangeImp , class FieldImp  = double&gt; </div>
-<div class="memtemplate">
-template&lt;class... Args&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a02249.html">Dune::GDT::DirichletProjectionLocalizableOperator</a>&lt; GridLayerImp, SourceImp, RangeImp, FieldImp &gt;::<a class="el" href="a02249.html">DirichletProjectionLocalizableOperator</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a02249.html#a6a786f834369ae55d473c2fe39d8137c">BoundaryInfoType</a> &amp;&#160;</td>
-          <td class="paramname"><em>boundary_info</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Args &amp;&amp;...&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae4a7af33115cea23043a574a9288f53c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4a7af33115cea23043a574a9288f53c">&#9670;&nbsp;</a></span>append() <span class="overload">[1/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridLayerImp, class SourceImp, class RangeImp&gt; </div>
-<div class="memtemplate">
-template&lt;class L &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a01793.html">ThisType</a>&amp; <a class="el" href="a01793.html">Dune::GDT::LocalizableOperatorBase</a>&lt; GridLayerImp, SourceImp, RangeImp &gt;::append </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a01693.html">LocalOperatorInterface</a>&lt; L &gt; &amp;&#160;</td>
-          <td class="paramname"><em>local_operator</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XT::Grid::ApplyOn::WhichEntity&lt; GridLayerType &gt; *&#160;</td>
-          <td class="paramname"><em>where</em> = <code>new&#160;XT::Grid::ApplyOn::AllEntities&lt;GridLayerType&gt;()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a435d6be6da5b986870b72afd9dc5c46e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a435d6be6da5b986870b72afd9dc5c46e">&#9670;&nbsp;</a></span>append() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridLayerImp, class SourceImp, class RangeImp&gt; </div>
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a01793.html">ThisType</a>&amp; <a class="el" href="a01793.html">Dune::GDT::LocalizableOperatorBase</a>&lt; GridLayerImp, SourceImp, RangeImp &gt;::append </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a01697.html">LocalCouplingOperatorInterface</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>local_operator</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XT::Grid::ApplyOn::WhichIntersection&lt; GridLayerType &gt; *&#160;</td>
-          <td class="paramname"><em>where</em> = <code>new&#160;XT::Grid::ApplyOn::InnerIntersections&lt;GridLayerType&gt;()</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
-          <td class="paramname"><em>mu</em> = <code>{}</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1e0dbedb35dfeb3494a2bfa3b60c757d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e0dbedb35dfeb3494a2bfa3b60c757d">&#9670;&nbsp;</a></span>append() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridLayerImp, class SourceImp, class RangeImp&gt; </div>
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a01793.html">ThisType</a>&amp; <a class="el" href="a01793.html">Dune::GDT::LocalizableOperatorBase</a>&lt; GridLayerImp, SourceImp, RangeImp &gt;::append </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a01697.html">LocalCouplingOperatorInterface</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>local_operator</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
-          <td class="paramname"><em>mu</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afc639fd22512fdef81a21ceab8663ec1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc639fd22512fdef81a21ceab8663ec1">&#9670;&nbsp;</a></span>append() <span class="overload">[4/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridLayerImp, class SourceImp, class RangeImp&gt; </div>
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a01793.html">ThisType</a>&amp; <a class="el" href="a01793.html">Dune::GDT::LocalizableOperatorBase</a>&lt; GridLayerImp, SourceImp, RangeImp &gt;::append </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a01701.html">LocalBoundaryOperatorInterface</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>local_operator</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XT::Grid::ApplyOn::WhichIntersection&lt; GridLayerType &gt; *&#160;</td>
-          <td class="paramname"><em>where</em> = <code>new&#160;XT::Grid::ApplyOn::BoundaryIntersections&lt;GridLayerType&gt;()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3f6d837cf735323e1140eee74be1e8ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f6d837cf735323e1140eee74be1e8ca">&#9670;&nbsp;</a></span>apply()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridLayerImp, class SourceImp, class RangeImp&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a01793.html">Dune::GDT::LocalizableOperatorBase</a>&lt; GridLayerImp, SourceImp, RangeImp &gt;::apply </td>
-          <td>(</td>
-          <td class="paramtype">const bool&#160;</td>
-          <td class="paramname"><em>use_tbb</em> = <code>false</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a629b4dafbfcd60293836e6d4ab486844"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a629b4dafbfcd60293836e6d4ab486844">&#9670;&nbsp;</a></span>range() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridLayerImp, class SourceImp, class RangeImp&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="a01793.html#a039f8b83c3cb5e51cf890202da33757e">RangeType</a>&amp; <a class="el" href="a01793.html">Dune::GDT::LocalizableOperatorBase</a>&lt; GridLayerImp, SourceImp, RangeImp &gt;::range </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac76c5c1f8ac4c3f2d897fec48cdce8ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac76c5c1f8ac4c3f2d897fec48cdce8ec">&#9670;&nbsp;</a></span>range() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridLayerImp, class SourceImp, class RangeImp&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a01793.html#a039f8b83c3cb5e51cf890202da33757e">RangeType</a>&amp; <a class="el" href="a01793.html">Dune::GDT::LocalizableOperatorBase</a>&lt; GridLayerImp, SourceImp, RangeImp &gt;::range </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae7cb9553c0438c24f7095c35a5d72fde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7cb9553c0438c24f7095c35a5d72fde">&#9670;&nbsp;</a></span>source()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridLayerImp, class SourceImp, class RangeImp&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="a01793.html#aa7b28993e927b1d93148e02ed4f7c1f3">SourceType</a>&amp; <a class="el" href="a01793.html">Dune::GDT::LocalizableOperatorBase</a>&lt; GridLayerImp, SourceImp, RangeImp &gt;::source </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a33591690271e804b55a2432dc88bdd2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33591690271e804b55a2432dc88bdd2d">&#9670;&nbsp;</a></span>local_operators_codim_0</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridLayerImp, class SourceImp, class RangeImp&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;std::unique_ptr&lt;XT::Grid::internal::Codim0Object&lt;GridLayerType&gt; &gt; &gt; <a class="el" href="a01793.html">Dune::GDT::LocalizableOperatorBase</a>&lt; GridLayerImp, SourceImp, RangeImp &gt;::local_operators_codim_0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0638e73ed12c0633fec2c9783c2283c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0638e73ed12c0633fec2c9783c2283c9">&#9670;&nbsp;</a></span>local_operators_codim_1</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridLayerImp, class SourceImp, class RangeImp&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;std::unique_ptr&lt;XT::Grid::internal::Codim1Object&lt;GridLayerType&gt; &gt; &gt; <a class="el" href="a01793.html">Dune::GDT::LocalizableOperatorBase</a>&lt; GridLayerImp, SourceImp, RangeImp &gt;::local_operators_codim_1</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aaac064b333f7333d92be711a5c8902cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaac064b333f7333d92be711a5c8902cf">&#9670;&nbsp;</a></span>range_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridLayerImp, class SourceImp, class RangeImp&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a01793.html#a039f8b83c3cb5e51cf890202da33757e">RangeType</a>&amp; <a class="el" href="a01793.html">Dune::GDT::LocalizableOperatorBase</a>&lt; GridLayerImp, SourceImp, RangeImp &gt;::range_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad0ba4bc7e738aefd5e8bfe6b8a25a099"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0ba4bc7e738aefd5e8bfe6b8a25a099">&#9670;&nbsp;</a></span>source_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridLayerImp, class SourceImp, class RangeImp&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="a01793.html#aa7b28993e927b1d93148e02ed4f7c1f3">SourceType</a>&amp; <a class="el" href="a01793.html">Dune::GDT::LocalizableOperatorBase</a>&lt; GridLayerImp, SourceImp, RangeImp &gt;::source_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a738d49975ce1b51d01816298b005cdbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a738d49975ce1b51d01816298b005cdbf">&#9670;&nbsp;</a></span>walked_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridLayerImp, class SourceImp, class RangeImp&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="a01793.html">Dune::GDT::LocalizableOperatorBase</a>&lt; GridLayerImp, SourceImp, RangeImp &gt;::walked_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00167_source.html">dirichlet.hh</a></li>
+<li><a class="el" href="a04638_source.html">projections/l2-global.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

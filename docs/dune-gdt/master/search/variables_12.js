@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['walked_5f',['walked_',['../a01777.html#a4b05a832befa52a1fa184c7bafadef55',1,'Dune::GDT::LocalizableProductBase::walked_()'],['../a01793.html#a738d49975ce1b51d01816298b005cdbf',1,'Dune::GDT::LocalizableOperatorBase::walked_()']]],
-  ['wrap_5fbuffer',['wrap_buffer',['../a02501.html#a5d13c360264bfee54b109e047d0097e0',1,'Dune::GDT::DofDataCommunicationDescriptor::wrap_buffer()'],['../a02505.html#a6d8e085686206f640d1188751dffd479',1,'Dune::GDT::EntityDataCommunicationDescriptor::wrap_buffer()']]]
+  ['value',['value',['../a02837.html#a5bf05e5686e5e5566de4a5f93fc0cebe',1,'Dune::GDT::internal::allContinuous::value()'],['../a02841.html#a5f8df22815491ce3431a364ccc2bab06',1,'Dune::GDT::internal::allContinuous&lt; LastSpaceType &gt;::value()']]]
 ];

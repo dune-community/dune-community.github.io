@@ -1,9 +1,19 @@
-digraph "Dune::GDT::internal::FvSpaceTraits&lt; GridLayerImp, RangeFieldImp, rangeDim, rangeDimCols &gt;"
+digraph "Dune::GDT::FvSpaceInterface&lt; Traits, domainDim, rangeDim, rangeDimCols &gt;"
 {
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="Dune::GDT::internal\l::FvSpaceTraits\< GridLayer\lImp, RangeFieldImp, rangeDim,\l rangeDimCols \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 [label="Dune::GDT::internal\l::FvProductSpaceTraits\l\< GridLayerImp, RangeFieldImp,\l rangeDim, rangeDimCols \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02649.html"];
+  Node0 [label="Dune::GDT::FvSpaceInterface\l\< Traits, domainDim, rangeDim,\l rangeDimCols \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="Dune::GDT::SpaceInterface\l\< Traits, domainDim, rangeDim,\l rangeDimCols \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02693.html"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="XT::CRTPInterface\<\l SpaceInterface\< Traits,\l domainDim, rangeDim, rangeDim\lCols \>, Traits \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node3 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::FvSpaceTraits\l\< GridLayerImp, RangeFieldImp,\l rangeDim, 1 \>, GridLayerImp\l::dimension, rangeDim, 1 \>" ,fontname="Helvetica"];
+  Node3 [label="Dune::GDT::FvSpaceInterface\l\< internal::FvSpaceTraits\l\< GridLayerImp, RangeFieldImp,\l rangeDim, 1 \>, GridLayerImp\l::dimension, rangeDim, 1 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02621.html"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Dune::GDT::FvSpace\l\< GridLayerImp, RangeField\lImp, rangeDim, 1 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02617.html"];
+  Node0 -> Node5 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::FvProductSpace\lTraits\< GridLayerImp, RangeField\lImp, rangeDim, 1 \>, GridLayerImp\l::dimension, rangeDim, 1 \>" ,fontname="Helvetica"];
+  Node5 [label="Dune::GDT::FvSpaceInterface\l\< internal::FvProductSpaceTraits\l\< GridLayerImp, RangeFieldImp,\l rangeDim, 1 \>, GridLayerImp::\ldimension, rangeDim, 1 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02621.html"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Dune::GDT::FvProductSpace\l\< GridLayerImp, RangeFieldImp,\l rangeDim, 1 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02645.html"];
 }

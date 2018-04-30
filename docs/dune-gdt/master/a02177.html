@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::WeightedL2Operator&lt; WeightFunctionType, GridLayerType, Field &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::LocalDiffusiveFluxEstimateStarOS2014Integrand&lt; DiffusionFactorType, DiffusionFactorHatType, DiffusionTensorType, DiffusiveFluxType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a02177.html">WeightedL2Operator</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a02177.html">LocalDiffusiveFluxEstimateStarOS2014Integrand</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -68,154 +68,95 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a02174.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::WeightedL2Operator&lt; WeightFunctionType, GridLayerType, Field &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::LocalDiffusiveFluxEstimateStarOS2014Integrand&lt; DiffusionFactorType, DiffusionFactorHatType, DiffusionTensorType, DiffusiveFluxType &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00152_source.html">dune/gdt/operators/weighted-l2.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00155_source.html">dune/gdt/playground/local/integrands/OS2014.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::WeightedL2Operator&lt; WeightFunctionType, GridLayerType, Field &gt;:</div>
+Inheritance diagram for Dune::GDT::LocalDiffusiveFluxEstimateStarOS2014Integrand&lt; DiffusionFactorType, DiffusionFactorHatType, DiffusionTensorType, DiffusiveFluxType &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02176.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_weighted_l2_operator_3_01_weight_function_type_00_01_grid_layer_type_00_01_field_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1_weighted_l2_operator_3_01_weight_function_type_00_01_grid_layer_type_00_01_field_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_weighted_l2_operator_3_01_weight_function_type_00_01_grid_layer_type_00_01_field_01_4_inherit__map">
+<div class="center"><img src="a02176.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_local_diffusive_flux_estimate_star_o_s2014_integrand_3_01_diffusion_factor_type_00_01_diffusion_factor_hat_type_00_01_diffusion_tensor_type_00_01_diffusive_flux_type_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_local_diffusive_flux_estimate_star_o_s2014_integrand_3_01_diffusion_factor_type_00_01_diffusion_factor_hat_type_00_01_diffusion_tensor_type_00_01_diffusive_flux_type_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_local_diffusive_flux_estimate_star_o_s2014_integrand_3_01_diffusion_factor_type_00_01_diffusion_factor_hat_type_00_01_diffusion_tensor_type_00_01_diffusive_flux_type_01_4_inherit__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a7e841c775a89ff47fe08faa97ef22386"><td class="memItemLeft" align="right" valign="top">typedef Traits::FieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02177.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a></td></tr>
-<tr class="separator:a7e841c775a89ff47fe08faa97ef22386"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a297fe211e3b06536d26d9ff3ee3cc2ee"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02181.html">internal::WeightedL2OperatorTraits</a>&lt; WeightFunctionType, GridLayerType, Field &gt; ::<a class="el" href="a02109.html#a297fe211e3b06536d26d9ff3ee3cc2ee">derived_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02109.html#a297fe211e3b06536d26d9ff3ee3cc2ee">derived_type</a></td></tr>
-<tr class="separator:a297fe211e3b06536d26d9ff3ee3cc2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7ab8db6061a613448bb8ce3269cdc79"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02181.html">internal::WeightedL2OperatorTraits</a>&lt; WeightFunctionType, GridLayerType, Field &gt; ::<a class="el" href="a02109.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02109.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a></td></tr>
-<tr class="separator:af7ab8db6061a613448bb8ce3269cdc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab115d6b173fff64eb6599cd07bc4bc62"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02181.html">internal::LocalDiffusiveFluxEstimateStarOS2014IntegrandTraits</a>&lt; DiffusionFactorType, DiffusionFactorHatType, DiffusionTensorType, DiffusiveFluxType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02177.html#ab115d6b173fff64eb6599cd07bc4bc62">Traits</a></td></tr>
+<tr class="separator:ab115d6b173fff64eb6599cd07bc4bc62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6c0ceb8b442ae221745b658863f0e42b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02177.html#a6c0ceb8b442ae221745b658863f0e42b">WeightedL2Operator</a> (const WeightFunctionType &amp;weight, GridLayerType grid_layer, const size_t over_integrate=0)</td></tr>
-<tr class="separator:a6c0ceb8b442ae221745b658863f0e42b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa37cd7fdde1836687bc25d4f7faddb58"><td class="memTemplParams" colspan="2">template&lt;class SourceSpaceType , class VectorType , class RangeSpaceType &gt; </td></tr>
-<tr class="memitem:aa37cd7fdde1836687bc25d4f7faddb58"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02177.html#aa37cd7fdde1836687bc25d4f7faddb58">apply</a> (const <a class="el" href="a00937.html">DiscreteFunction</a>&lt; SourceSpaceType, VectorType &gt; &amp;source, <a class="el" href="a00937.html">DiscreteFunction</a>&lt; RangeSpaceType, VectorType &gt; &amp;range, const XT::Common::Parameter &amp;param={}) const</td></tr>
-<tr class="separator:aa37cd7fdde1836687bc25d4f7faddb58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc9d3120335461411f867b15c06ba243"><td class="memTemplParams" colspan="2">template&lt;class E , class D , size_t d, class R , size_t r, size_t rC&gt; </td></tr>
-<tr class="memitem:afc9d3120335461411f867b15c06ba243"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a02177.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02177.html#afc9d3120335461411f867b15c06ba243">apply2</a> (const XT::Functions::LocalizableFunctionInterface&lt; E, D, d, R, r, rC &gt; &amp;range, const XT::Functions::LocalizableFunctionInterface&lt; E, D, d, R, r, rC &gt; &amp;source, const XT::Common::Parameter &amp;param={}) const</td></tr>
-<tr class="separator:afc9d3120335461411f867b15c06ba243"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97694d0224609e7745180c71607760fc"><td class="memTemplParams" colspan="2">template&lt;class RangeType , class SourceType &gt; </td></tr>
-<tr class="memitem:a97694d0224609e7745180c71607760fc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02177.html#a97694d0224609e7745180c71607760fc">apply_inverse</a> (const RangeType &amp;, SourceType &amp;, const XT::Common::Configuration &amp;) const</td></tr>
-<tr class="separator:a97694d0224609e7745180c71607760fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a71d6001523fdb4be20ae32432cf934"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02177.html#a7a71d6001523fdb4be20ae32432cf934">invert_options</a> () const</td></tr>
-<tr class="separator:a7a71d6001523fdb4be20ae32432cf934"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fb7eb423fc587d498479d95f763181a"><td class="memItemLeft" align="right" valign="top">XT::Common::Configuration&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02177.html#a0fb7eb423fc587d498479d95f763181a">invert_options</a> (const std::string &amp;) const</td></tr>
-<tr class="separator:a0fb7eb423fc587d498479d95f763181a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Methods that have to be implemented by any derived class</div></td></tr>
-<tr class="memitem:abceb2302e2abb6a76bd81a8162f3e8d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02109.html#abceb2302e2abb6a76bd81a8162f3e8d5">apply</a> (const SourceType &amp;source, RangeType &amp;range, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
-<tr class="separator:abceb2302e2abb6a76bd81a8162f3e8d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab04213f2502d2e5074a8d0577859da4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a02177.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02109.html#ab04213f2502d2e5074a8d0577859da4b">apply2</a> (const RangeType &amp;range, const SourceType &amp;source, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
-<tr class="separator:ab04213f2502d2e5074a8d0577859da4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6730af1cff9082cf0361ba2c4871ffbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a02109.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02109.html#a6730af1cff9082cf0361ba2c4871ffbe">jacobian</a> (const SourceType &amp;source, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
-<tr class="separator:a6730af1cff9082cf0361ba2c4871ffbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a318e2b0bfd6fe23b6299165e9e8414ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02109.html#a318e2b0bfd6fe23b6299165e9e8414ff">jacobian</a> (const SourceType &amp;source, <a class="el" href="a02109.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a> &amp;jac, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
-<tr class="separator:a318e2b0bfd6fe23b6299165e9e8414ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86a02543d3c2929680d4c86f35fe86e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02109.html#a86a02543d3c2929680d4c86f35fe86e3">apply_inverse</a> (const RangeType &amp;range, SourceType &amp;source, const XT::Common::Configuration &amp;opts, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
-<tr class="separator:a86a02543d3c2929680d4c86f35fe86e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Provided by the interface for convenience</div></td></tr>
-<tr class="memitem:a964dbc938c643b46088a7897597c390b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02109.html#a964dbc938c643b46088a7897597c390b">apply_inverse</a> (const RangeType &amp;range, SourceType &amp;source, const std::string &amp;type, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
-<tr class="separator:a964dbc938c643b46088a7897597c390b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bb5343986038f4e7af4cd8a07b38972"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02109.html#a3bb5343986038f4e7af4cd8a07b38972">apply_inverse</a> (const RangeType &amp;range, SourceType &amp;source, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
-<tr class="separator:a3bb5343986038f4e7af4cd8a07b38972"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d4049caeb309c503cba4b783f014d03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a02177.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02109.html#a1d4049caeb309c503cba4b783f014d03">induced_norm</a> (const RangeType &amp;range, const Dune::XT::Common::Parameter &amp;param={}) const</td></tr>
-<tr class="separator:a1d4049caeb309c503cba4b783f014d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af95b420b82019883d434eface1c8f652"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02177.html#af95b420b82019883d434eface1c8f652">LocalDiffusiveFluxEstimateStarOS2014Integrand</a> (const DiffusionFactorType &amp;diffusion_factor, const DiffusionFactorHatType &amp;diffusion_factor_hat, const DiffusionTensorType &amp;diffusion_tensor, const DiffusiveFluxType &amp;diffusive_flux)</td></tr>
+<tr class="separator:af95b420b82019883d434eface1c8f652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e4d366712dc30442a5f367891b5ce2b"><td class="memItemLeft" align="right" valign="top">LocalfunctionTupleType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02177.html#a5e4d366712dc30442a5f367891b5ce2b">localFunctions</a> (const EntityType &amp;entity) const</td></tr>
+<tr class="separator:a5e4d366712dc30442a5f367891b5ce2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49bfee73ed710cec488276bdb6888449"><td class="memTemplParams" colspan="2">template&lt;class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </td></tr>
+<tr class="memitem:a49bfee73ed710cec488276bdb6888449"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02177.html#a49bfee73ed710cec488276bdb6888449">order</a> (const LocalfunctionTupleType &amp;localFuncs, const XT::Functions::LocalfunctionSetInterface&lt; EntityType, DomainFieldType, dimDomain, R, rT, rCT &gt; &amp;testBase, const XT::Functions::LocalfunctionSetInterface&lt; EntityType, DomainFieldType, dimDomain, R, rA, rCA &gt; &amp;ansatzBase) const</td></tr>
+<tr class="separator:a49bfee73ed710cec488276bdb6888449"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf1ae7fe19de704d6811d517e3e48e5f"><td class="memTemplParams" colspan="2">template&lt;class R , size_t rLD, size_t rCLD, size_t rLDT, size_t rCLDT, size_t rLDF, size_t rCLDF, size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </td></tr>
+<tr class="memitem:acf1ae7fe19de704d6811d517e3e48e5f"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02177.html#acf1ae7fe19de704d6811d517e3e48e5f">order</a> (const XT::Functions::LocalfunctionInterface&lt; EntityType, DomainFieldType, dimDomain, R, rLD, rCLD &gt; &amp;local_diffusion_factor, const XT::Functions::LocalfunctionInterface&lt; EntityType, DomainFieldType, dimDomain, R, rLD, rCLD &gt; &amp;local_diffusion_factor_hat, const XT::Functions::LocalfunctionInterface&lt; EntityType, DomainFieldType, dimDomain, R, rLDT, rCLDT &gt; &amp;local_diffusion_tensor, const XT::Functions::LocalfunctionInterface&lt; EntityType, DomainFieldType, dimDomain, R, rLDF, rCLDF &gt; &amp;local_diffusive_flux, const XT::Functions::LocalfunctionSetInterface&lt; EntityType, DomainFieldType, dimDomain, R, rT, rCT &gt; &amp;test_base, const XT::Functions::LocalfunctionSetInterface&lt; EntityType, DomainFieldType, dimDomain, R, rA, rCA &gt; &amp;ansatz_base) const</td></tr>
+<tr class="separator:acf1ae7fe19de704d6811d517e3e48e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d4f0c925b4eb7877e1fc355352c69bd"><td class="memTemplParams" colspan="2">template&lt;class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </td></tr>
+<tr class="memitem:a6d4f0c925b4eb7877e1fc355352c69bd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02177.html#a6d4f0c925b4eb7877e1fc355352c69bd">evaluate</a> (const LocalfunctionTupleType &amp;localFuncs, const XT::Functions::LocalfunctionSetInterface&lt; EntityType, DomainFieldType, dimDomain, R, rT, rCT &gt; &amp;test_base, const XT::Functions::LocalfunctionSetInterface&lt; EntityType, DomainFieldType, dimDomain, R, rA, rCA &gt; &amp;ansatz_base, const Dune::FieldVector&lt; DomainFieldType, dimDomain &gt; &amp;local_point, Dune::DynamicMatrix&lt; R &gt; &amp;ret) const</td></tr>
+<tr class="separator:a6d4f0c925b4eb7877e1fc355352c69bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c64c84be2546f277b6e082e90271eb6"><td class="memTemplParams" colspan="2">template&lt;class R &gt; </td></tr>
+<tr class="memitem:a9c64c84be2546f277b6e082e90271eb6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02177.html#a9c64c84be2546f277b6e082e90271eb6">evaluate</a> (const XT::Functions::LocalfunctionInterface&lt; EntityType, DomainFieldType, dimDomain, R, 1 &gt; &amp;local_diffusion_factor, const XT::Functions::LocalfunctionInterface&lt; EntityType, DomainFieldType, dimDomain, R, 1 &gt; &amp;local_diffusion_factor_hat, const XT::Functions::LocalfunctionInterface&lt; EntityType, DomainFieldType, dimDomain, R, dimDomain, dimDomain &gt; &amp;local_diffusion_tensor, const XT::Functions::LocalfunctionInterface&lt; EntityType, DomainFieldType, dimDomain, R, dimDomain &gt; &amp;local_diffusive_flux, const XT::Functions::LocalfunctionSetInterface&lt; EntityType, DomainFieldType, dimDomain, R, 1 &gt; &amp;test_base, const XT::Functions::LocalfunctionSetInterface&lt; EntityType, DomainFieldType, dimDomain, R, 1 &gt; &amp;ansatz_base, const Dune::FieldVector&lt; DomainFieldType, dimDomain &gt; &amp;local_point, Dune::DynamicMatrix&lt; R &gt; &amp;ret) const</td></tr>
+<tr class="separator:a9c64c84be2546f277b6e082e90271eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a297fe211e3b06536d26d9ff3ee3cc2ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a297fe211e3b06536d26d9ff3ee3cc2ee">&#9670;&nbsp;</a></span>derived_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a02181.html">internal::WeightedL2OperatorTraits</a>&lt; WeightFunctionType, GridLayerType, Field &gt; ::<a class="el" href="a02109.html#a297fe211e3b06536d26d9ff3ee3cc2ee">derived_type</a> <a class="el" href="a02109.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a02181.html">internal::WeightedL2OperatorTraits</a>&lt; WeightFunctionType, GridLayerType, Field &gt;  &gt;::<a class="el" href="a02109.html#a297fe211e3b06536d26d9ff3ee3cc2ee">derived_type</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7e841c775a89ff47fe08faa97ef22386"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e841c775a89ff47fe08faa97ef22386">&#9670;&nbsp;</a></span>FieldType</h2>
+<a id="ab115d6b173fff64eb6599cd07bc4bc62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab115d6b173fff64eb6599cd07bc4bc62">&#9670;&nbsp;</a></span>Traits</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class WeightFunctionType , class GridLayerType , class Field &gt; </div>
+template&lt;class DiffusionFactorType , class DiffusionFactorHatType , class DiffusionTensorType , class DiffusiveFluxType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef Traits::FieldType <a class="el" href="a02109.html">Dune::GDT::OperatorInterface</a>&lt; Traits &gt;::<a class="el" href="a02177.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a></td>
+          <td class="memname">typedef <a class="el" href="a02181.html">internal::LocalDiffusiveFluxEstimateStarOS2014IntegrandTraits</a>&lt;DiffusionFactorType, DiffusionFactorHatType, DiffusionTensorType, DiffusiveFluxType&gt; <a class="el" href="a02177.html">Dune::GDT::LocalDiffusiveFluxEstimateStarOS2014Integrand</a>&lt; DiffusionFactorType, DiffusionFactorHatType, DiffusionTensorType, DiffusiveFluxType &gt;::<a class="el" href="a02177.html#ab115d6b173fff64eb6599cd07bc4bc62">Traits</a></td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af7ab8db6061a613448bb8ce3269cdc79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7ab8db6061a613448bb8ce3269cdc79">&#9670;&nbsp;</a></span>JacobianType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a02181.html">internal::WeightedL2OperatorTraits</a>&lt; WeightFunctionType, GridLayerType, Field &gt; ::<a class="el" href="a02109.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a> <a class="el" href="a02109.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a02181.html">internal::WeightedL2OperatorTraits</a>&lt; WeightFunctionType, GridLayerType, Field &gt;  &gt;::<a class="el" href="a02109.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a6c0ceb8b442ae221745b658863f0e42b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c0ceb8b442ae221745b658863f0e42b">&#9670;&nbsp;</a></span>WeightedL2Operator()</h2>
+<a id="af95b420b82019883d434eface1c8f652"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af95b420b82019883d434eface1c8f652">&#9670;&nbsp;</a></span>LocalDiffusiveFluxEstimateStarOS2014Integrand()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class WeightFunctionType , class GridLayerType , class Field &gt; </div>
+template&lt;class DiffusionFactorType , class DiffusionFactorHatType , class DiffusionTensorType , class DiffusiveFluxType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a02177.html">Dune::GDT::WeightedL2Operator</a>&lt; WeightFunctionType, GridLayerType, Field &gt;::<a class="el" href="a02177.html">WeightedL2Operator</a> </td>
+          <td class="memname"><a class="el" href="a02177.html">Dune::GDT::LocalDiffusiveFluxEstimateStarOS2014Integrand</a>&lt; DiffusionFactorType, DiffusionFactorHatType, DiffusionTensorType, DiffusiveFluxType &gt;::<a class="el" href="a02177.html">LocalDiffusiveFluxEstimateStarOS2014Integrand</a> </td>
           <td>(</td>
-          <td class="paramtype">const WeightFunctionType &amp;&#160;</td>
-          <td class="paramname"><em>weight</em>, </td>
+          <td class="paramtype">const DiffusionFactorType &amp;&#160;</td>
+          <td class="paramname"><em>diffusion_factor</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GridLayerType&#160;</td>
-          <td class="paramname"><em>grid_layer</em>, </td>
+          <td class="paramtype">const DiffusionFactorHatType &amp;&#160;</td>
+          <td class="paramname"><em>diffusion_factor_hat</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const size_t&#160;</td>
-          <td class="paramname"><em>over_integrate</em> = <code>0</code>&#160;</td>
+          <td class="paramtype">const DiffusionTensorType &amp;&#160;</td>
+          <td class="paramname"><em>diffusion_tensor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DiffusiveFluxType &amp;&#160;</td>
+          <td class="paramname"><em>diffusive_flux</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -233,78 +174,48 @@ template&lt;class WeightFunctionType , class GridLayerType , class Field &gt; </
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="abceb2302e2abb6a76bd81a8162f3e8d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abceb2302e2abb6a76bd81a8162f3e8d5">&#9670;&nbsp;</a></span>apply() <span class="overload">[1/2]</span></h2>
+<a id="a6d4f0c925b4eb7877e1fc355352c69bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d4f0c925b4eb7877e1fc355352c69bd">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class DiffusionFactorType , class DiffusionFactorHatType , class DiffusionTensorType , class DiffusiveFluxType &gt; </div>
+<div class="memtemplate">
+template&lt;class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a02109.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a02181.html">internal::WeightedL2OperatorTraits</a>&lt; WeightFunctionType, GridLayerType, Field &gt;  &gt;::apply </td>
+          <td class="memname">void <a class="el" href="a02177.html">Dune::GDT::LocalDiffusiveFluxEstimateStarOS2014Integrand</a>&lt; DiffusionFactorType, DiffusionFactorHatType, DiffusionTensorType, DiffusiveFluxType &gt;::evaluate </td>
           <td>(</td>
-          <td class="paramtype">const SourceType &amp;&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
+          <td class="paramtype">const LocalfunctionTupleType &amp;&#160;</td>
+          <td class="paramname"><em>localFuncs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">RangeType &amp;&#160;</td>
-          <td class="paramname"><em>range</em>, </td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; EntityType, DomainFieldType, dimDomain, R, rT, rCT &gt; &amp;&#160;</td>
+          <td class="paramname"><em>test_base</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
-          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa37cd7fdde1836687bc25d4f7faddb58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa37cd7fdde1836687bc25d4f7faddb58">&#9670;&nbsp;</a></span>apply() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class WeightFunctionType , class GridLayerType , class Field &gt; </div>
-<div class="memtemplate">
-template&lt;class SourceSpaceType , class VectorType , class RangeSpaceType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a02177.html">Dune::GDT::WeightedL2Operator</a>&lt; WeightFunctionType, GridLayerType, Field &gt;::apply </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00937.html">DiscreteFunction</a>&lt; SourceSpaceType, VectorType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; EntityType, DomainFieldType, dimDomain, R, rA, rCA &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ansatz_base</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00937.html">DiscreteFunction</a>&lt; RangeSpaceType, VectorType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>range</em>, </td>
+          <td class="paramtype">const Dune::FieldVector&lt; DomainFieldType, dimDomain &gt; &amp;&#160;</td>
+          <td class="paramname"><em>local_point</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
-          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+          <td class="paramtype">Dune::DynamicMatrix&lt; R &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ret</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -321,78 +232,66 @@ template&lt;class SourceSpaceType , class VectorType , class RangeSpaceType &gt;
 
 </div>
 </div>
-<a id="ab04213f2502d2e5074a8d0577859da4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab04213f2502d2e5074a8d0577859da4b">&#9670;&nbsp;</a></span>apply2() <span class="overload">[1/2]</span></h2>
+<a id="a9c64c84be2546f277b6e082e90271eb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c64c84be2546f277b6e082e90271eb6">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class DiffusionFactorType , class DiffusionFactorHatType , class DiffusionTensorType , class DiffusiveFluxType &gt; </div>
+<div class="memtemplate">
+template&lt;class R &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a02177.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a> <a class="el" href="a02109.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a02181.html">internal::WeightedL2OperatorTraits</a>&lt; WeightFunctionType, GridLayerType, Field &gt;  &gt;::apply2 </td>
+          <td class="memname">void <a class="el" href="a02177.html">Dune::GDT::LocalDiffusiveFluxEstimateStarOS2014Integrand</a>&lt; DiffusionFactorType, DiffusionFactorHatType, DiffusionTensorType, DiffusiveFluxType &gt;::evaluate </td>
           <td>(</td>
-          <td class="paramtype">const RangeType &amp;&#160;</td>
-          <td class="paramname"><em>range</em>, </td>
+          <td class="paramtype">const XT::Functions::LocalfunctionInterface&lt; EntityType, DomainFieldType, dimDomain, R, 1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>local_diffusion_factor</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const SourceType &amp;&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
+          <td class="paramtype">const XT::Functions::LocalfunctionInterface&lt; EntityType, DomainFieldType, dimDomain, R, 1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>local_diffusion_factor_hat</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
-          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afc9d3120335461411f867b15c06ba243"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc9d3120335461411f867b15c06ba243">&#9670;&nbsp;</a></span>apply2() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class WeightFunctionType , class GridLayerType , class Field &gt; </div>
-<div class="memtemplate">
-template&lt;class E , class D , size_t d, class R , size_t r, size_t rC&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a02177.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a> <a class="el" href="a02177.html">Dune::GDT::WeightedL2Operator</a>&lt; WeightFunctionType, GridLayerType, Field &gt;::apply2 </td>
-          <td>(</td>
-          <td class="paramtype">const XT::Functions::LocalizableFunctionInterface&lt; E, D, d, R, r, rC &gt; &amp;&#160;</td>
-          <td class="paramname"><em>range</em>, </td>
+          <td class="paramtype">const XT::Functions::LocalfunctionInterface&lt; EntityType, DomainFieldType, dimDomain, R, dimDomain, dimDomain &gt; &amp;&#160;</td>
+          <td class="paramname"><em>local_diffusion_tensor</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const XT::Functions::LocalizableFunctionInterface&lt; E, D, d, R, r, rC &gt; &amp;&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
+          <td class="paramtype">const XT::Functions::LocalfunctionInterface&lt; EntityType, DomainFieldType, dimDomain, R, dimDomain &gt; &amp;&#160;</td>
+          <td class="paramname"><em>local_diffusive_flux</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
-          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; EntityType, DomainFieldType, dimDomain, R, 1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>test_base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; EntityType, DomainFieldType, dimDomain, R, 1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ansatz_base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::FieldVector&lt; DomainFieldType, dimDomain &gt; &amp;&#160;</td>
+          <td class="paramname"><em>local_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Dune::DynamicMatrix&lt; R &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ret</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -409,241 +308,22 @@ template&lt;class E , class D , size_t d, class R , size_t r, size_t rC&gt; </di
 
 </div>
 </div>
-<a id="a86a02543d3c2929680d4c86f35fe86e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86a02543d3c2929680d4c86f35fe86e3">&#9670;&nbsp;</a></span>apply_inverse() <span class="overload">[1/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a02109.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a02181.html">internal::WeightedL2OperatorTraits</a>&lt; WeightFunctionType, GridLayerType, Field &gt;  &gt;::apply_inverse </td>
-          <td>(</td>
-          <td class="paramtype">const RangeType &amp;&#160;</td>
-          <td class="paramname"><em>range</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">SourceType &amp;&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XT::Common::Configuration &amp;&#160;</td>
-          <td class="paramname"><em>opts</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
-          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a964dbc938c643b46088a7897597c390b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a964dbc938c643b46088a7897597c390b">&#9670;&nbsp;</a></span>apply_inverse() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a02109.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a02181.html">internal::WeightedL2OperatorTraits</a>&lt; WeightFunctionType, GridLayerType, Field &gt;  &gt;::apply_inverse </td>
-          <td>(</td>
-          <td class="paramtype">const RangeType &amp;&#160;</td>
-          <td class="paramname"><em>range</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">SourceType &amp;&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
-          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3bb5343986038f4e7af4cd8a07b38972"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bb5343986038f4e7af4cd8a07b38972">&#9670;&nbsp;</a></span>apply_inverse() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a02109.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a02181.html">internal::WeightedL2OperatorTraits</a>&lt; WeightFunctionType, GridLayerType, Field &gt;  &gt;::apply_inverse </td>
-          <td>(</td>
-          <td class="paramtype">const RangeType &amp;&#160;</td>
-          <td class="paramname"><em>range</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">SourceType &amp;&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
-          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a97694d0224609e7745180c71607760fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97694d0224609e7745180c71607760fc">&#9670;&nbsp;</a></span>apply_inverse() <span class="overload">[4/4]</span></h2>
+<a id="a5e4d366712dc30442a5f367891b5ce2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e4d366712dc30442a5f367891b5ce2b">&#9670;&nbsp;</a></span>localFunctions()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class WeightFunctionType , class GridLayerType , class Field &gt; </div>
-<div class="memtemplate">
-template&lt;class RangeType , class SourceType &gt; </div>
+template&lt;class DiffusionFactorType , class DiffusionFactorHatType , class DiffusionTensorType , class DiffusiveFluxType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a02177.html">Dune::GDT::WeightedL2Operator</a>&lt; WeightFunctionType, GridLayerType, Field &gt;::apply_inverse </td>
+          <td class="memname">LocalfunctionTupleType <a class="el" href="a02177.html">Dune::GDT::LocalDiffusiveFluxEstimateStarOS2014Integrand</a>&lt; DiffusionFactorType, DiffusionFactorHatType, DiffusionTensorType, DiffusiveFluxType &gt;::localFunctions </td>
           <td>(</td>
-          <td class="paramtype">const RangeType &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">SourceType &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XT::Common::Configuration &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1d4049caeb309c503cba4b783f014d03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d4049caeb309c503cba4b783f014d03">&#9670;&nbsp;</a></span>induced_norm()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a02177.html#a7e841c775a89ff47fe08faa97ef22386">FieldType</a> <a class="el" href="a02109.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a02181.html">internal::WeightedL2OperatorTraits</a>&lt; WeightFunctionType, GridLayerType, Field &gt;  &gt;::induced_norm </td>
-          <td>(</td>
-          <td class="paramtype">const RangeType &amp;&#160;</td>
-          <td class="paramname"><em>range</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
-          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7a71d6001523fdb4be20ae32432cf934"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a71d6001523fdb4be20ae32432cf934">&#9670;&nbsp;</a></span>invert_options() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class WeightFunctionType , class GridLayerType , class Field &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;std::string&gt; <a class="el" href="a02177.html">Dune::GDT::WeightedL2Operator</a>&lt; WeightFunctionType, GridLayerType, Field &gt;::invert_options </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const EntityType &amp;&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -656,23 +336,41 @@ template&lt;class WeightFunctionType , class GridLayerType , class Field &gt; </
 
 </div>
 </div>
-<a id="a0fb7eb423fc587d498479d95f763181a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fb7eb423fc587d498479d95f763181a">&#9670;&nbsp;</a></span>invert_options() <span class="overload">[2/2]</span></h2>
+<a id="a49bfee73ed710cec488276bdb6888449"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49bfee73ed710cec488276bdb6888449">&#9670;&nbsp;</a></span>order() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class WeightFunctionType , class GridLayerType , class Field &gt; </div>
+template&lt;class DiffusionFactorType , class DiffusionFactorHatType , class DiffusionTensorType , class DiffusiveFluxType &gt; </div>
+<div class="memtemplate">
+template&lt;class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">XT::Common::Configuration <a class="el" href="a02177.html">Dune::GDT::WeightedL2Operator</a>&lt; WeightFunctionType, GridLayerType, Field &gt;::invert_options </td>
+          <td class="memname">size_t <a class="el" href="a02177.html">Dune::GDT::LocalDiffusiveFluxEstimateStarOS2014Integrand</a>&lt; DiffusionFactorType, DiffusionFactorHatType, DiffusionTensorType, DiffusiveFluxType &gt;::order </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const LocalfunctionTupleType &amp;&#160;</td>
+          <td class="paramname"><em>localFuncs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; EntityType, DomainFieldType, dimDomain, R, rT, rCT &gt; &amp;&#160;</td>
+          <td class="paramname"><em>testBase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; EntityType, DomainFieldType, dimDomain, R, rA, rCA &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ansatzBase</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -684,26 +382,54 @@ template&lt;class WeightFunctionType , class GridLayerType , class Field &gt; </
 
 </div>
 </div>
-<a id="a6730af1cff9082cf0361ba2c4871ffbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6730af1cff9082cf0361ba2c4871ffbe">&#9670;&nbsp;</a></span>jacobian() <span class="overload">[1/2]</span></h2>
+<a id="acf1ae7fe19de704d6811d517e3e48e5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf1ae7fe19de704d6811d517e3e48e5f">&#9670;&nbsp;</a></span>order() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class DiffusionFactorType , class DiffusionFactorHatType , class DiffusionTensorType , class DiffusiveFluxType &gt; </div>
+<div class="memtemplate">
+template&lt;class R , size_t rLD, size_t rCLD, size_t rLDT, size_t rCLDT, size_t rLDF, size_t rCLDF, size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a02109.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a> <a class="el" href="a02109.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a02181.html">internal::WeightedL2OperatorTraits</a>&lt; WeightFunctionType, GridLayerType, Field &gt;  &gt;::jacobian </td>
+          <td class="memname">size_t <a class="el" href="a02177.html">Dune::GDT::LocalDiffusiveFluxEstimateStarOS2014Integrand</a>&lt; DiffusionFactorType, DiffusionFactorHatType, DiffusionTensorType, DiffusiveFluxType &gt;::order </td>
           <td>(</td>
-          <td class="paramtype">const SourceType &amp;&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
+          <td class="paramtype">const XT::Functions::LocalfunctionInterface&lt; EntityType, DomainFieldType, dimDomain, R, rLD, rCLD &gt; &amp;&#160;</td>
+          <td class="paramname"><em>local_diffusion_factor</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
-          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+          <td class="paramtype">const XT::Functions::LocalfunctionInterface&lt; EntityType, DomainFieldType, dimDomain, R, rLD, rCLD &gt; &amp;&#160;</td>
+          <td class="paramname"><em>local_diffusion_factor_hat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Functions::LocalfunctionInterface&lt; EntityType, DomainFieldType, dimDomain, R, rLDT, rCLDT &gt; &amp;&#160;</td>
+          <td class="paramname"><em>local_diffusion_tensor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Functions::LocalfunctionInterface&lt; EntityType, DomainFieldType, dimDomain, R, rLDF, rCLDF &gt; &amp;&#160;</td>
+          <td class="paramname"><em>local_diffusive_flux</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; EntityType, DomainFieldType, dimDomain, R, rT, rCT &gt; &amp;&#160;</td>
+          <td class="paramname"><em>test_base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; EntityType, DomainFieldType, dimDomain, R, rA, rCA &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ansatz_base</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -713,49 +439,7 @@ template&lt;class WeightFunctionType , class GridLayerType , class Field &gt; </
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a318e2b0bfd6fe23b6299165e9e8414ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a318e2b0bfd6fe23b6299165e9e8414ff">&#9670;&nbsp;</a></span>jacobian() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a02109.html">Dune::GDT::OperatorInterface</a>&lt; <a class="el" href="a02181.html">internal::WeightedL2OperatorTraits</a>&lt; WeightFunctionType, GridLayerType, Field &gt;  &gt;::jacobian </td>
-          <td>(</td>
-          <td class="paramtype">const SourceType &amp;&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a02109.html#af7ab8db6061a613448bb8ce3269cdc79">JacobianType</a> &amp;&#160;</td>
-          <td class="paramname"><em>jac</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Dune::XT::Common::Parameter &amp;&#160;</td>
-          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -763,7 +447,7 @@ template&lt;class WeightFunctionType , class GridLayerType , class Field &gt; </
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00152_source.html">weighted-l2.hh</a></li>
+<li><a class="el" href="a00155_source.html">OS2014.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
