@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::internal::RosenbrockButcherArrayProvider&lt; RangeFieldType, RosenbrockTimeStepperMethods::GRK4A &gt; Struct Template Reference</title>
+<title>dune-gdt: Dune::GDT::internal::RestrictedSpaceTraits&lt; UnrestrictedSpace, RestrictionGridLayer &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,171 +59,261 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a00247.html">internal</a></li><li class="navelem"><a class="el" href="a02229.html">RosenbrockButcherArrayProvider&lt; RangeFieldType, RosenbrockTimeStepperMethods::GRK4A &gt;</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a00247.html">internal</a></li><li class="navelem"><a class="el" href="a02229.html">RestrictedSpaceTraits</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="a02226.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::RosenbrockButcherArrayProvider&lt; RangeFieldType, RosenbrockTimeStepperMethods::GRK4A &gt; Struct Template Reference</div>  </div>
+<div class="title">Dune::GDT::internal::RestrictedSpaceTraits&lt; UnrestrictedSpace, RestrictionGridLayer &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00164_source.html">dune/gdt/playground/timestepper/rosenbrock.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00161_source.html">dune/gdt/playground/spaces/restricted.hh</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aeb48c177e16f432d0464190c866514b0"><td class="memItemLeft" align="right" valign="top">static Dune::DynamicMatrix&lt; RangeFieldType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02229.html#aeb48c177e16f432d0464190c866514b0">A</a> ()</td></tr>
-<tr class="separator:aeb48c177e16f432d0464190c866514b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02f0dc59495963f951f8dd736e225464"><td class="memItemLeft" align="right" valign="top">static Dune::DynamicVector&lt; RangeFieldType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02229.html#a02f0dc59495963f951f8dd736e225464">b_1</a> ()</td></tr>
-<tr class="separator:a02f0dc59495963f951f8dd736e225464"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a573fa9f3f49da742246cc30d790956b0"><td class="memItemLeft" align="right" valign="top">static Dune::DynamicVector&lt; RangeFieldType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02229.html#a573fa9f3f49da742246cc30d790956b0">b_2</a> ()</td></tr>
-<tr class="separator:a573fa9f3f49da742246cc30d790956b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f4db1e71244bab14b2a8ed121c8722e"><td class="memItemLeft" align="right" valign="top">static Dune::DynamicVector&lt; RangeFieldType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02229.html#a6f4db1e71244bab14b2a8ed121c8722e">c</a> ()</td></tr>
-<tr class="separator:a6f4db1e71244bab14b2a8ed121c8722e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a833f151403c6f78b571f3df5337f57ba"><td class="memItemLeft" align="right" valign="top">static Dune::DynamicMatrix&lt; RangeFieldType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02229.html#a833f151403c6f78b571f3df5337f57ba">Gamma</a> ()</td></tr>
-<tr class="separator:a833f151403c6f78b571f3df5337f57ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aa6fbf96dd83c141696b2a9ab6bced1cf"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02225.html">RestrictedSpace</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02229.html#aa6fbf96dd83c141696b2a9ab6bced1cf">derived_type</a></td></tr>
+<tr class="separator:aa6fbf96dd83c141696b2a9ab6bced1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6642304f06f778f2f747ef7d38059f48"><td class="memItemLeft" align="right" valign="top">typedef UnrestrictedSpace&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02229.html#a6642304f06f778f2f747ef7d38059f48">BackendType</a></td></tr>
+<tr class="separator:a6642304f06f778f2f747ef7d38059f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affa8e54874e20f2cf0623fe3824bd855"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02217.html">RestrictedMapper</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02229.html#affa8e54874e20f2cf0623fe3824bd855">MapperType</a></td></tr>
+<tr class="separator:affa8e54874e20f2cf0623fe3824bd855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e8fb8eabe4b8866d1f285da211b4ac9"><td class="memItemLeft" align="right" valign="top">typedef UnrestrictedSpace::BaseFunctionSetType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02229.html#a1e8fb8eabe4b8866d1f285da211b4ac9">BaseFunctionSetType</a></td></tr>
+<tr class="separator:a1e8fb8eabe4b8866d1f285da211b4ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af213363a1325a884f6a88f2540210fae"><td class="memItemLeft" align="right" valign="top">typedef UnrestrictedSpace::DofCommunicatorType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02229.html#af213363a1325a884f6a88f2540210fae">DofCommunicatorType</a></td></tr>
+<tr class="separator:af213363a1325a884f6a88f2540210fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8499c6df287afcecfd1adb0dd6989e3"><td class="memItemLeft" align="right" valign="top">typedef RestrictionGridLayer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02229.html#af8499c6df287afcecfd1adb0dd6989e3">GridLayerType</a></td></tr>
+<tr class="separator:af8499c6df287afcecfd1adb0dd6989e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a621f54296b9cc6bfad67832f834aa4f8"><td class="memItemLeft" align="right" valign="top">typedef UnrestrictedSpace::RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02229.html#a621f54296b9cc6bfad67832f834aa4f8">RangeFieldType</a></td></tr>
+<tr class="separator:a621f54296b9cc6bfad67832f834aa4f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a36fdc8dabd95141f5ceea0ba2a9700e1"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02229.html#a36fdc8dabd95141f5ceea0ba2a9700e1">polOrder</a> = UnrestrictedSpace::polOrder</td></tr>
+<tr class="separator:a36fdc8dabd95141f5ceea0ba2a9700e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29e7c3ca44ac40e6a3a4e758e04e6782"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02229.html#a29e7c3ca44ac40e6a3a4e758e04e6782">continuous</a> = UnrestrictedSpace::continuous</td></tr>
+<tr class="separator:a29e7c3ca44ac40e6a3a4e758e04e6782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f1f6ac8f23c04e4c76f906fce5568e6"><td class="memItemLeft" align="right" valign="top">static const XT::Grid::Backends&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02229.html#a8f1f6ac8f23c04e4c76f906fce5568e6">layer_backend</a> = XT::Grid::Backends::view</td></tr>
+<tr class="separator:a8f1f6ac8f23c04e4c76f906fce5568e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a312e8bb77408b4efeea4ad9612fcd3bb"><td class="memItemLeft" align="right" valign="top">static constexpr const <a class="el" href="a00246.html#afd9e79bf2e05d76e877c835fa352f045">GDT::Backends</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02229.html#a312e8bb77408b4efeea4ad9612fcd3bb">backend_type</a> {UnrestrictedSpace::backend_type}</td></tr>
+<tr class="separator:a312e8bb77408b4efeea4ad9612fcd3bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="aeb48c177e16f432d0464190c866514b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb48c177e16f432d0464190c866514b0">&#9670;&nbsp;</a></span>A()</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a6642304f06f778f2f747ef7d38059f48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6642304f06f778f2f747ef7d38059f48">&#9670;&nbsp;</a></span>BackendType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class RangeFieldType &gt; </div>
+template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef UnrestrictedSpace <a class="el" href="a02229.html">Dune::GDT::internal::RestrictedSpaceTraits</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::<a class="el" href="a02229.html#a6642304f06f778f2f747ef7d38059f48">BackendType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e8fb8eabe4b8866d1f285da211b4ac9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e8fb8eabe4b8866d1f285da211b4ac9">&#9670;&nbsp;</a></span>BaseFunctionSetType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef UnrestrictedSpace::BaseFunctionSetType <a class="el" href="a02229.html">Dune::GDT::internal::RestrictedSpaceTraits</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::<a class="el" href="a02229.html#a1e8fb8eabe4b8866d1f285da211b4ac9">BaseFunctionSetType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa6fbf96dd83c141696b2a9ab6bced1cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6fbf96dd83c141696b2a9ab6bced1cf">&#9670;&nbsp;</a></span>derived_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a02225.html">RestrictedSpace</a>&lt;UnrestrictedSpace, RestrictionGridLayer&gt; <a class="el" href="a02229.html">Dune::GDT::internal::RestrictedSpaceTraits</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::<a class="el" href="a02229.html#aa6fbf96dd83c141696b2a9ab6bced1cf">derived_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af213363a1325a884f6a88f2540210fae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af213363a1325a884f6a88f2540210fae">&#9670;&nbsp;</a></span>DofCommunicatorType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef UnrestrictedSpace::DofCommunicatorType <a class="el" href="a02229.html">Dune::GDT::internal::RestrictedSpaceTraits</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::<a class="el" href="a02229.html#af213363a1325a884f6a88f2540210fae">DofCommunicatorType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af8499c6df287afcecfd1adb0dd6989e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8499c6df287afcecfd1adb0dd6989e3">&#9670;&nbsp;</a></span>GridLayerType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef RestrictionGridLayer <a class="el" href="a02229.html">Dune::GDT::internal::RestrictedSpaceTraits</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::<a class="el" href="a02229.html#af8499c6df287afcecfd1adb0dd6989e3">GridLayerType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="affa8e54874e20f2cf0623fe3824bd855"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affa8e54874e20f2cf0623fe3824bd855">&#9670;&nbsp;</a></span>MapperType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a02217.html">RestrictedMapper</a>&lt;UnrestrictedSpace, RestrictionGridLayer&gt; <a class="el" href="a02229.html">Dune::GDT::internal::RestrictedSpaceTraits</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::<a class="el" href="a02229.html#affa8e54874e20f2cf0623fe3824bd855">MapperType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a621f54296b9cc6bfad67832f834aa4f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a621f54296b9cc6bfad67832f834aa4f8">&#9670;&nbsp;</a></span>RangeFieldType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef UnrestrictedSpace::RangeFieldType <a class="el" href="a02229.html">Dune::GDT::internal::RestrictedSpaceTraits</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::<a class="el" href="a02229.html#a621f54296b9cc6bfad67832f834aa4f8">RangeFieldType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a312e8bb77408b4efeea4ad9612fcd3bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a312e8bb77408b4efeea4ad9612fcd3bb">&#9670;&nbsp;</a></span>backend_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static Dune::DynamicMatrix&lt;RangeFieldType&gt; <a class="el" href="a02225.html">Dune::GDT::internal::RosenbrockButcherArrayProvider</a>&lt; RangeFieldType, <a class="el" href="a00246.html#a5a9b3478d77a16697bf06fa3f949e0faaefc42475d5c88b4e9d7e08dfeda6ef8b">RosenbrockTimeStepperMethods::GRK4A</a> &gt;::A </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">constexpr const <a class="el" href="a00246.html#afd9e79bf2e05d76e877c835fa352f045">GDT::Backends</a> <a class="el" href="a02229.html">Dune::GDT::internal::RestrictedSpaceTraits</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::backend_type {UnrestrictedSpace::backend_type}</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a02f0dc59495963f951f8dd736e225464"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02f0dc59495963f951f8dd736e225464">&#9670;&nbsp;</a></span>b_1()</h2>
+<a id="a29e7c3ca44ac40e6a3a4e758e04e6782"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29e7c3ca44ac40e6a3a4e758e04e6782">&#9670;&nbsp;</a></span>continuous</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class RangeFieldType &gt; </div>
+template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static Dune::DynamicVector&lt;RangeFieldType&gt; <a class="el" href="a02225.html">Dune::GDT::internal::RosenbrockButcherArrayProvider</a>&lt; RangeFieldType, <a class="el" href="a00246.html#a5a9b3478d77a16697bf06fa3f949e0faaefc42475d5c88b4e9d7e08dfeda6ef8b">RosenbrockTimeStepperMethods::GRK4A</a> &gt;::b_1 </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">const bool <a class="el" href="a02229.html">Dune::GDT::internal::RestrictedSpaceTraits</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::continuous = UnrestrictedSpace::continuous</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a573fa9f3f49da742246cc30d790956b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a573fa9f3f49da742246cc30d790956b0">&#9670;&nbsp;</a></span>b_2()</h2>
+<a id="a8f1f6ac8f23c04e4c76f906fce5568e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f1f6ac8f23c04e4c76f906fce5568e6">&#9670;&nbsp;</a></span>layer_backend</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class RangeFieldType &gt; </div>
+template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static Dune::DynamicVector&lt;RangeFieldType&gt; <a class="el" href="a02225.html">Dune::GDT::internal::RosenbrockButcherArrayProvider</a>&lt; RangeFieldType, <a class="el" href="a00246.html#a5a9b3478d77a16697bf06fa3f949e0faaefc42475d5c88b4e9d7e08dfeda6ef8b">RosenbrockTimeStepperMethods::GRK4A</a> &gt;::b_2 </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">const XT::Grid::Backends <a class="el" href="a02229.html">Dune::GDT::internal::RestrictedSpaceTraits</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::layer_backend = XT::Grid::Backends::view</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a6f4db1e71244bab14b2a8ed121c8722e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f4db1e71244bab14b2a8ed121c8722e">&#9670;&nbsp;</a></span>c()</h2>
+<a id="a36fdc8dabd95141f5ceea0ba2a9700e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36fdc8dabd95141f5ceea0ba2a9700e1">&#9670;&nbsp;</a></span>polOrder</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class RangeFieldType &gt; </div>
+template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static Dune::DynamicVector&lt;RangeFieldType&gt; <a class="el" href="a02225.html">Dune::GDT::internal::RosenbrockButcherArrayProvider</a>&lt; RangeFieldType, <a class="el" href="a00246.html#a5a9b3478d77a16697bf06fa3f949e0faaefc42475d5c88b4e9d7e08dfeda6ef8b">RosenbrockTimeStepperMethods::GRK4A</a> &gt;::c </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">const int <a class="el" href="a02229.html">Dune::GDT::internal::RestrictedSpaceTraits</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::polOrder = UnrestrictedSpace::polOrder</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a833f151403c6f78b571f3df5337f57ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a833f151403c6f78b571f3df5337f57ba">&#9670;&nbsp;</a></span>Gamma()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class RangeFieldType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Dune::DynamicMatrix&lt;RangeFieldType&gt; <a class="el" href="a02225.html">Dune::GDT::internal::RosenbrockButcherArrayProvider</a>&lt; RangeFieldType, <a class="el" href="a00246.html#a5a9b3478d77a16697bf06fa3f949e0faaefc42475d5c88b4e9d7e08dfeda6ef8b">RosenbrockTimeStepperMethods::GRK4A</a> &gt;::Gamma </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="a00164_source.html">rosenbrock.hh</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="a00161_source.html">restricted.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -63,15 +63,16 @@ $(function() {
 
 <h3><a id="index_q"></a>- q -</h3><ul>
 <li>QR_
-: <a class="el" href="a02005.html#a035225cca63d4c43ece7f067af3f1f03">Dune::GDT::internal::JacobianWrapper&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;</a>
+: <a class="el" href="a02013.html#a71c03a8ac92980d1a9719b7ae470d9a6">Dune::GDT::internal::BlockedJacobianWrapper&lt; AnalyticalFluxType, block_size &gt;</a>
+, <a class="el" href="a02009.html#ac9bb90bfc5e86d6cab925bc49d07b84d">Dune::GDT::internal::JacobianWrapper&lt; AnalyticalFluxType, MatrixType, VectorType &gt;</a>
 </li>
 <li>quadrature()
-: <a class="el" href="a02037.html#adc50d5c9260b736d681b2f47940e6ad7">Dune::GDT::LinearReconstructionOperator&lt; AnalyticalFluxImp, BoundaryValueImp, slope_limiter, Traits &gt;</a>
+: <a class="el" href="a02045.html#a960bd21d1582e5a31365191a3f599363">Dune::GDT::LinearReconstructionOperator&lt; AnalyticalFluxImp, BoundaryValueImp, slope_limiter, JacobianWrapperImp, Traits &gt;</a>
 </li>
 <li>Quadrature1dType
 : <a class="el" href="a01853.html#a98427c2ca991ddefc36246d714ea5595">Dune::GDT::AdvectionOperatorBase&lt; Traits &gt;</a>
-, <a class="el" href="a02041.html#af4978f30610a2d457dfc849e027b5363">Dune::GDT::internal::LinearReconstructionOperatorTraits&lt; AnalyticalFluxImp, BoundaryValueImp, slope_lim &gt;</a>
-, <a class="el" href="a02037.html#a89d3a69c6eca0eff8d0d069bb3a7dfe2">Dune::GDT::LinearReconstructionOperator&lt; AnalyticalFluxImp, BoundaryValueImp, slope_limiter, Traits &gt;</a>
+, <a class="el" href="a02049.html#ac2f23c79885a666bbbd2d15e199fd461">Dune::GDT::internal::LinearReconstructionOperatorTraits&lt; AnalyticalFluxImp, BoundaryValueImp, slope_lim, JacobianWrapperImp &gt;</a>
+, <a class="el" href="a02045.html#a2526b47e767e6733850a8fbf105d79a4">Dune::GDT::LinearReconstructionOperator&lt; AnalyticalFluxImp, BoundaryValueImp, slope_limiter, JacobianWrapperImp, Traits &gt;</a>
 </li>
 <li>quadrature_
 : <a class="el" href="a01145.html#a8690fc5c20270216a5531f1330e0ad9b">Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::PiecewiseMonomials&lt; typename U::DomainFieldType, domainDim, typename U::RangeFieldType, U::dimRange, 1 &gt;, GridLayerImp, U &gt;::Localfunction</a>

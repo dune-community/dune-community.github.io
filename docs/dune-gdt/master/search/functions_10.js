@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quadrature',['quadrature',['../a02037.html#adc50d5c9260b736d681b2f47940e6ad7',1,'Dune::GDT::LinearReconstructionOperator']]]
+  ['quadrature',['quadrature',['../a02045.html#a960bd21d1582e5a31365191a3f599363',1,'Dune::GDT::LinearReconstructionOperator']]]
 ];

@@ -1,9 +1,17 @@
-digraph "Dune::GDT::internal::JacobianWrapper&lt; MatrixType, VectorType, dimRange, num_jacobians &gt;"
+digraph "Dune::GDT::internal::JacobianWrapperBase&lt; AnalyticalFluxType, MatrixImp, VectorImp &gt;"
 {
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="Dune::GDT::internal\l::JacobianWrapper\< MatrixType,\l VectorType, dimRange, num\l_jacobians \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 [label="Dune::GDT::internal\l::GodunovJacobianWrapper\l\< MatrixType, VectorType,\l dimRange, num_jacobians \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01209.html"];
+  Node0 [label="Dune::GDT::internal\l::JacobianWrapperBase\l\< AnalyticalFluxType,\l MatrixImp, VectorImp \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< AnalyticalFluxType,\l MatrixType, VectorType \>" ,fontname="Helvetica"];
+  Node1 [label="Dune::GDT::internal\l::JacobianWrapperBase\l\< AnalyticalFluxType,\l MatrixType, VectorType \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02005.html"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Dune::GDT::internal\l::JacobianWrapper\< Analytical\lFluxType, MatrixType, VectorType \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02009.html"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Dune::GDT::internal\l::GodunovJacobianWrapper\l\< AnalyticalFluxType, MatrixType,\l VectorType \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01209.html"];
+  Node0 -> Node4 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< AnalyticalFluxType,\l FieldVector\< FieldMatrix\l\< AnalyticalFluxType::RangeField\lType, block_size, block_size\l \>, AnalyticalFluxType::dimRange\l/block_size \>, AnalyticalFluxType\l::StateRangeType \>" ,fontname="Helvetica"];
+  Node4 [label="Dune::GDT::internal\l::JacobianWrapperBase\l\< AnalyticalFluxType,\l FieldVector\< FieldMatrix\l\< AnalyticalFluxType::RangeField\lType, block_size, block_size\l \>, AnalyticalFluxType::dimRange\l/block_size \>, AnalyticalFluxType\l::StateRangeType \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02005.html"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Dune::GDT::internal\l::BlockedJacobianWrapper\l\< AnalyticalFluxType, block_size \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02013.html"];
 }

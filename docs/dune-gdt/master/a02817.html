@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::DofCommunicationChooser&lt; ViewImp, true &gt; Struct Template Reference</title>
+<title>dune-gdt: Dune::GDT::DefaultProductMapperFromTuple&lt; GridLayerImp, std::tuple&lt; MapperTypes... &gt; &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,176 +59,44 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a02817.html">DofCommunicationChooser&lt; ViewImp, true &gt;</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a02817.html">DefaultProductMapperFromTuple&lt; GridLayerImp, std::tuple&lt; MapperTypes... &gt; &gt;</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a02814.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::DofCommunicationChooser&lt; ViewImp, true &gt; Struct Template Reference</div>  </div>
+<div class="title">Dune::GDT::DefaultProductMapperFromTuple&lt; GridLayerImp, std::tuple&lt; MapperTypes... &gt; &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00206_source.html">dune/gdt/spaces/parallel.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a04717_source.html">dune/gdt/spaces/mapper/product.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aa6208f7da0b8aa573511a7be7ab3e6f6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02817.html#aa6208f7da0b8aa573511a7be7ab3e6f6">GlobalId</a> = std::conditional_t&lt; std::is_arithmetic&lt; RealGlobalId &gt;::value, RealGlobalId, uint64_t &gt;</td></tr>
-<tr class="separator:aa6208f7da0b8aa573511a7be7ab3e6f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7173884e56e3928904f31ceb7d4d1282"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02817.html#a7173884e56e3928904f31ceb7d4d1282">LocalId</a> = std::conditional_t&lt; std::is_arithmetic&lt; RealLocalId &gt;::value, RealLocalId, int &gt;</td></tr>
-<tr class="separator:a7173884e56e3928904f31ceb7d4d1282"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17853bcb92d49168566448ae86d381f5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02817.html#a17853bcb92d49168566448ae86d381f5">Type</a> = OwnerOverlapCopyCommunication&lt; <a class="el" href="a02817.html#aa6208f7da0b8aa573511a7be7ab3e6f6">GlobalId</a>, <a class="el" href="a02817.html#a7173884e56e3928904f31ceb7d4d1282">LocalId</a> &gt;</td></tr>
-<tr class="separator:a17853bcb92d49168566448ae86d381f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9586b749c576745da6ff41b8b31605e1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02817.html#a9586b749c576745da6ff41b8b31605e1">type</a> = <a class="el" href="a02817.html#a17853bcb92d49168566448ae86d381f5">Type</a></td></tr>
-<tr class="separator:a9586b749c576745da6ff41b8b31605e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a6e15fc88ee819ada749dd71a8e3fd693"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a02817.html#a17853bcb92d49168566448ae86d381f5">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02817.html#a6e15fc88ee819ada749dd71a8e3fd693">create</a> (const ViewImp &amp;gridView)</td></tr>
-<tr class="separator:a6e15fc88ee819ada749dd71a8e3fd693"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7773a2eb6e57179c69b422a6022ffe87"><td class="memTemplParams" colspan="2">template&lt;class Space &gt; </td></tr>
-<tr class="memitem:a7773a2eb6e57179c69b422a6022ffe87"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02817.html#a7773a2eb6e57179c69b422a6022ffe87">prepare</a> (const Space &amp;space, <a class="el" href="a02817.html#a17853bcb92d49168566448ae86d381f5">Type</a> &amp;communicator)</td></tr>
-<tr class="separator:a7773a2eb6e57179c69b422a6022ffe87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71b58b4769743e52d26e6e9581850484"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02797.html">DefaultProductMapper</a>&lt; GridLayerImp, MapperTypes... &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02817.html#a71b58b4769743e52d26e6e9581850484">type</a></td></tr>
+<tr class="separator:a71b58b4769743e52d26e6e9581850484"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="aa6208f7da0b8aa573511a7be7ab3e6f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6208f7da0b8aa573511a7be7ab3e6f6">&#9670;&nbsp;</a></span>GlobalId</h2>
+<a id="a71b58b4769743e52d26e6e9581850484"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71b58b4769743e52d26e6e9581850484">&#9670;&nbsp;</a></span>type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class ViewImp &gt; </div>
+template&lt;class GridLayerImp , class... MapperTypes&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a02813.html">Dune::GDT::DofCommunicationChooser</a>&lt; ViewImp, true &gt;::<a class="el" href="a02817.html#aa6208f7da0b8aa573511a7be7ab3e6f6">GlobalId</a> =  std::conditional_t&lt;std::is_arithmetic&lt;RealGlobalId&gt;::value, RealGlobalId, uint64_t&gt;</td>
+          <td class="memname">typedef <a class="el" href="a02797.html">DefaultProductMapper</a>&lt;GridLayerImp, MapperTypes...&gt; <a class="el" href="a02813.html">Dune::GDT::DefaultProductMapperFromTuple</a>&lt; GridLayerImp, std::tuple&lt; MapperTypes... &gt; &gt;::<a class="el" href="a02817.html#a71b58b4769743e52d26e6e9581850484">type</a></td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7173884e56e3928904f31ceb7d4d1282"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7173884e56e3928904f31ceb7d4d1282">&#9670;&nbsp;</a></span>LocalId</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ViewImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="a02813.html">Dune::GDT::DofCommunicationChooser</a>&lt; ViewImp, true &gt;::<a class="el" href="a02817.html#a7173884e56e3928904f31ceb7d4d1282">LocalId</a> =  std::conditional_t&lt;std::is_arithmetic&lt;RealLocalId&gt;::value, RealLocalId, int&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a17853bcb92d49168566448ae86d381f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17853bcb92d49168566448ae86d381f5">&#9670;&nbsp;</a></span>Type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ViewImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="a02813.html">Dune::GDT::DofCommunicationChooser</a>&lt; ViewImp, true &gt;::<a class="el" href="a02817.html#a17853bcb92d49168566448ae86d381f5">Type</a> =  OwnerOverlapCopyCommunication&lt;<a class="el" href="a02817.html#aa6208f7da0b8aa573511a7be7ab3e6f6">GlobalId</a>, <a class="el" href="a02817.html#a7173884e56e3928904f31ceb7d4d1282">LocalId</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9586b749c576745da6ff41b8b31605e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9586b749c576745da6ff41b8b31605e1">&#9670;&nbsp;</a></span>type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ViewImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="a02813.html">Dune::GDT::DofCommunicationChooser</a>&lt; ViewImp, true &gt;::<a class="el" href="a02817.html#a9586b749c576745da6ff41b8b31605e1">type</a> =  <a class="el" href="a02817.html#a17853bcb92d49168566448ae86d381f5">Type</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6e15fc88ee819ada749dd71a8e3fd693"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e15fc88ee819ada749dd71a8e3fd693">&#9670;&nbsp;</a></span>create()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ViewImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="a02817.html#a17853bcb92d49168566448ae86d381f5">Type</a>* <a class="el" href="a02813.html">Dune::GDT::DofCommunicationChooser</a>&lt; ViewImp, true &gt;::create </td>
-          <td>(</td>
-          <td class="paramtype">const ViewImp &amp;&#160;</td>
-          <td class="paramname"><em>gridView</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7773a2eb6e57179c69b422a6022ffe87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7773a2eb6e57179c69b422a6022ffe87">&#9670;&nbsp;</a></span>prepare()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ViewImp &gt; </div>
-<div class="memtemplate">
-template&lt;class Space &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool <a class="el" href="a02813.html">Dune::GDT::DofCommunicationChooser</a>&lt; ViewImp, true &gt;::prepare </td>
-          <td>(</td>
-          <td class="paramtype">const Space &amp;&#160;</td>
-          <td class="paramname"><em>space</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a02817.html#a17853bcb92d49168566448ae86d381f5">Type</a> &amp;&#160;</td>
-          <td class="paramname"><em>communicator</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="a00206_source.html">parallel.hh</a></li>
+<li><a class="el" href="a04717_source.html">spaces/mapper/product.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -73,7 +73,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a04575_source.html">dune/gdt/local/fluxes/godunov.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a04591_source.html">dune/gdt/local/fluxes/godunov.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -93,14 +93,14 @@ Public Types</h2></td></tr>
 <tr class="separator:a292670fab63247c46b26aa266691128e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01069823a19f5fea137cc7780972a0a4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01221.html#a01069823a19f5fea137cc7780972a0a4">MatrixType</a> = FieldMatrix&lt; <a class="el" href="a01221.html#a4372153d1da42f48da24f5b6a979677d">DomainFieldType</a>, <a class="el" href="a01221.html#a0aa964bd43bded651686e0241c47da40">dimRange</a>, <a class="el" href="a01221.html#a0aa964bd43bded651686e0241c47da40">dimRange</a> &gt;</td></tr>
 <tr class="separator:a01069823a19f5fea137cc7780972a0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae938f23610a3d35e47dbe33f0bbe060c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01221.html#ae938f23610a3d35e47dbe33f0bbe060c">VectorType</a> = std::vector&lt; <a class="el" href="a01221.html#a106aef4489654949205d25e4fd5c6808">RangeFieldType</a> &gt;</td></tr>
-<tr class="separator:ae938f23610a3d35e47dbe33f0bbe060c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48fd32bbd37bc284803a49ea1d8b4f21"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01221.html#a48fd32bbd37bc284803a49ea1d8b4f21">JacobianWrapperType</a> = <a class="el" href="a01209.html">GodunovJacobianWrapper</a>&lt; <a class="el" href="a01221.html#a01069823a19f5fea137cc7780972a0a4">MatrixType</a>, <a class="el" href="a01221.html#ae938f23610a3d35e47dbe33f0bbe060c">VectorType</a>, <a class="el" href="a01221.html#a0aa964bd43bded651686e0241c47da40">dimRange</a>, <a class="el" href="a01221.html#a71daa1521fa0e6f25ca19ab2a0f78688">dimDomain</a> &gt;</td></tr>
-<tr class="separator:a48fd32bbd37bc284803a49ea1d8b4f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf2e3c22d3f40a50e2683fdd7f0860ef"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01221.html#abf2e3c22d3f40a50e2683fdd7f0860ef">VectorType</a> = FieldVector&lt; <a class="el" href="a01221.html#a106aef4489654949205d25e4fd5c6808">RangeFieldType</a>, <a class="el" href="a01221.html#a0aa964bd43bded651686e0241c47da40">dimRange</a> &gt;</td></tr>
+<tr class="separator:abf2e3c22d3f40a50e2683fdd7f0860ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91ed6a4c474d6a1543bbd62fcdeedd10"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01221.html#a91ed6a4c474d6a1543bbd62fcdeedd10">JacobianWrapperType</a> = <a class="el" href="a01209.html">GodunovJacobianWrapper</a>&lt; <a class="el" href="a01221.html#a39d46b3c59946ec60c6e091adab3364a">AnalyticalFluxType</a>, <a class="el" href="a01221.html#a01069823a19f5fea137cc7780972a0a4">MatrixType</a>, <a class="el" href="a01221.html#abf2e3c22d3f40a50e2683fdd7f0860ef">VectorType</a> &gt;</td></tr>
+<tr class="separator:a91ed6a4c474d6a1543bbd62fcdeedd10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a08260205d905c2e7838e5e142da36a3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01221.html#a08260205d905c2e7838e5e142da36a3c">GodunovFluxImplementation</a> (const <a class="el" href="a01221.html#a39d46b3c59946ec60c6e091adab3364a">AnalyticalFluxType</a> &amp;<a class="el" href="a01221.html#aba1ca52ec17b9890a58011fb38c2b381">analytical_flux</a>, XT::Common::Parameter param, XT::Common::PerThreadValue&lt; <a class="el" href="a01221.html#a48fd32bbd37bc284803a49ea1d8b4f21">JacobianWrapperType</a> &gt; &amp;jacobian_wrapper, const bool boundary=false)</td></tr>
+<tr class="memitem:a08260205d905c2e7838e5e142da36a3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01221.html#a08260205d905c2e7838e5e142da36a3c">GodunovFluxImplementation</a> (const <a class="el" href="a01221.html#a39d46b3c59946ec60c6e091adab3364a">AnalyticalFluxType</a> &amp;<a class="el" href="a01221.html#aba1ca52ec17b9890a58011fb38c2b381">analytical_flux</a>, XT::Common::Parameter param, XT::Common::PerThreadValue&lt; <a class="el" href="a01221.html#a91ed6a4c474d6a1543bbd62fcdeedd10">JacobianWrapperType</a> &gt; &amp;jacobian_wrapper, const bool boundary=false)</td></tr>
 <tr class="separator:a08260205d905c2e7838e5e142da36a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada5b0211a4199033e363b97a67448e7d"><td class="memTemplParams" colspan="2">template&lt;class IntersectionType &gt; </td></tr>
 <tr class="memitem:ada5b0211a4199033e363b97a67448e7d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a01221.html#a292670fab63247c46b26aa266691128e">RangeType</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01221.html#ada5b0211a4199033e363b97a67448e7d">evaluate</a> (const <a class="el" href="a01221.html#a6abe99a2cfa2da803a638fc99881548a">LocalfunctionTupleType</a> &amp;local_functions_tuple, const IntersectionType &amp;intersection, const Dune::FieldVector&lt; <a class="el" href="a01221.html#a4372153d1da42f48da24f5b6a979677d">DomainFieldType</a>, <a class="el" href="a01221.html#a71daa1521fa0e6f25ca19ab2a0f78688">dimDomain</a> - 1 &gt; &amp;x_in_intersection_coords, const <a class="el" href="a01221.html#ae31d6bd1f9a55b1bedf9359461c431c9">DomainType</a> &amp;x_in_inside_coords, const <a class="el" href="a01221.html#ae31d6bd1f9a55b1bedf9359461c431c9">DomainType</a> &amp;, const <a class="el" href="a01221.html#a292670fab63247c46b26aa266691128e">RangeType</a> &amp;u_i, const <a class="el" href="a01221.html#a292670fab63247c46b26aa266691128e">RangeType</a> &amp;u_j) const</td></tr>
@@ -180,8 +180,8 @@ template&lt;class Traits&gt; </div>
 
 </div>
 </div>
-<a id="a48fd32bbd37bc284803a49ea1d8b4f21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48fd32bbd37bc284803a49ea1d8b4f21">&#9670;&nbsp;</a></span>JacobianWrapperType</h2>
+<a id="a91ed6a4c474d6a1543bbd62fcdeedd10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91ed6a4c474d6a1543bbd62fcdeedd10">&#9670;&nbsp;</a></span>JacobianWrapperType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -189,7 +189,7 @@ template&lt;class Traits&gt; </div>
 template&lt;class Traits&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01221.html">Dune::GDT::internal::GodunovFluxImplementation</a>&lt; Traits &gt;::<a class="el" href="a01221.html#a48fd32bbd37bc284803a49ea1d8b4f21">JacobianWrapperType</a> =  <a class="el" href="a01209.html">GodunovJacobianWrapper</a>&lt;<a class="el" href="a01221.html#a01069823a19f5fea137cc7780972a0a4">MatrixType</a>, <a class="el" href="a01221.html#ae938f23610a3d35e47dbe33f0bbe060c">VectorType</a>, <a class="el" href="a01221.html#a0aa964bd43bded651686e0241c47da40">dimRange</a>, <a class="el" href="a01221.html#a71daa1521fa0e6f25ca19ab2a0f78688">dimDomain</a>&gt;</td>
+          <td class="memname">using <a class="el" href="a01221.html">Dune::GDT::internal::GodunovFluxImplementation</a>&lt; Traits &gt;::<a class="el" href="a01221.html#a91ed6a4c474d6a1543bbd62fcdeedd10">JacobianWrapperType</a> =  <a class="el" href="a01209.html">GodunovJacobianWrapper</a>&lt;<a class="el" href="a01221.html#a39d46b3c59946ec60c6e091adab3364a">AnalyticalFluxType</a>, <a class="el" href="a01221.html#a01069823a19f5fea137cc7780972a0a4">MatrixType</a>, <a class="el" href="a01221.html#abf2e3c22d3f40a50e2683fdd7f0860ef">VectorType</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -260,8 +260,8 @@ template&lt;class Traits&gt; </div>
 
 </div>
 </div>
-<a id="ae938f23610a3d35e47dbe33f0bbe060c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae938f23610a3d35e47dbe33f0bbe060c">&#9670;&nbsp;</a></span>VectorType</h2>
+<a id="abf2e3c22d3f40a50e2683fdd7f0860ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf2e3c22d3f40a50e2683fdd7f0860ef">&#9670;&nbsp;</a></span>VectorType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -269,7 +269,7 @@ template&lt;class Traits&gt; </div>
 template&lt;class Traits&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01221.html">Dune::GDT::internal::GodunovFluxImplementation</a>&lt; Traits &gt;::<a class="el" href="a01221.html#ae938f23610a3d35e47dbe33f0bbe060c">VectorType</a> =  std::vector&lt;<a class="el" href="a01221.html#a106aef4489654949205d25e4fd5c6808">RangeFieldType</a>&gt;</td>
+          <td class="memname">using <a class="el" href="a01221.html">Dune::GDT::internal::GodunovFluxImplementation</a>&lt; Traits &gt;::<a class="el" href="a01221.html#abf2e3c22d3f40a50e2683fdd7f0860ef">VectorType</a> =  FieldVector&lt;<a class="el" href="a01221.html#a106aef4489654949205d25e4fd5c6808">RangeFieldType</a>, <a class="el" href="a01221.html#a0aa964bd43bded651686e0241c47da40">dimRange</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -303,7 +303,7 @@ template&lt;class Traits&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">XT::Common::PerThreadValue&lt; <a class="el" href="a01221.html#a48fd32bbd37bc284803a49ea1d8b4f21">JacobianWrapperType</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">XT::Common::PerThreadValue&lt; <a class="el" href="a01221.html#a91ed6a4c474d6a1543bbd62fcdeedd10">JacobianWrapperType</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>jacobian_wrapper</em>, </td>
         </tr>
         <tr>
@@ -475,7 +475,7 @@ template&lt;class Traits&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a04575_source.html">local/fluxes/godunov.hh</a></li>
+<li><a class="el" href="a04591_source.html">local/fluxes/godunov.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
