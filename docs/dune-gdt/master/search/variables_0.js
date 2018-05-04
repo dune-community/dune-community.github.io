@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['advection_5foperator_5f',['advection_operator_',['../a01981.html#a1cdfc150cbd3cd86eaf4a917a8778558',1,'Dune::GDT::EntropyBasedMomentFvOperator::advection_operator_()'],['../a02081.html#ac5db3ab52e904f372ecfff14910ff082',1,'Dune::GDT::AdvectionWithReconstructionOperator::advection_operator_()']]],
-  ['ansatz_5fspace_5f',['ansatz_space_',['../a00829.html#a5a9533584fe089496972e6556171642a',1,'Dune::GDT::SystemAssembler']]],
-  ['array_5fdim',['array_dim',['../a02017.html#ad6a14fc4fe0a3ee77c4b2b9abb5e34ab',1,'Dune::GDT::MultiIndexIterator']]],
-  ['available',['available',['../a02053.html#a3b8b7beed7677167fbcbe1573ba96e8a',1,'Dune::GDT::ReconstructedLocalizableFunction']]]
+  ['alpha_5fcache_5f',['alpha_cache_',['../a01118.html#aeff2738a6241d2640fceba46182ac14b',1,'Dune::GDT::EntropyBasedLocalFlux::alpha_cache_()'],['../a01134.html#a8294e8b5ff380771b98f9208b3f3d68d',1,'Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::HatFunctions&lt; typename U::DomainFieldType, 1, typename U::RangeFieldType, U::dimRange, 1, 1 &gt;, GridLayerImp, U, 1 &gt;::alpha_cache_()']]],
+  ['ansatz_5fspace_5f',['ansatz_space_',['../a00814.html#a5a9533584fe089496972e6556171642a',1,'Dune::GDT::SystemAssembler']]],
+  ['available',['available',['../a01946.html#acafc111a1b73a35ade544ff43acb51d3',1,'Dune::GDT::ReconstructedLocalizableFunction']]]
 ];

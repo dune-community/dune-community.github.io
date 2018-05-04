@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['enums_2ehh',['enums.hh',['../a04561.html',1,'']]],
-  ['interface_2ehh',['interface.hh',['../a04621.html',1,'']]],
-  ['type_5ftraits_2ehh',['type_traits.hh',['../a00236.html',1,'']]]
+  ['weighted_2dl2_2ehh',['weighted-l2.hh',['../a00137.html',1,'']]],
+  ['wrapper_2ehh',['wrapper.hh',['../a00014.html',1,'']]]
 ];

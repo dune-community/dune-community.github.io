@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['qr_5f',['QR_',['../a02009.html#ac9bb90bfc5e86d6cab925bc49d07b84d',1,'Dune::GDT::internal::JacobianWrapper::QR_()'],['../a02013.html#a71c03a8ac92980d1a9719b7ae470d9a6',1,'Dune::GDT::internal::BlockedJacobianWrapper::QR_()']]],
-  ['quadrature_5f',['quadrature_',['../a01145.html#a8690fc5c20270216a5531f1330e0ad9b',1,'Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::PiecewiseMonomials&lt; typename U::DomainFieldType, domainDim, typename U::RangeFieldType, U::dimRange, 1 &gt;, GridLayerImp, U &gt;::Localfunction::quadrature_()'],['../a01929.html#a44dbb388a4257c81d303085c8b8b5355',1,'Dune::GDT::LocalRealizabilityLimiterBase::quadrature_()']]]
+  ['r_5fsequence_5f',['r_sequence_',['../a01118.html#ad3ad1f63f648060e36784195afff285b',1,'Dune::GDT::EntropyBasedLocalFlux::r_sequence_()'],['../a01134.html#a14ab40d15b5682169212e16a8f5d2693',1,'Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::HatFunctions&lt; typename U::DomainFieldType, 1, typename U::RangeFieldType, U::dimRange, 1, 1 &gt;, GridLayerImp, U, 1 &gt;::r_sequence_()']]],
+  ['range_5f',['range_',['../a01766.html#a49d0483d4ecf062303de9ccfbf5ce88f',1,'Dune::GDT::LocalizableProductBase::range_()'],['../a01782.html#aaac064b333f7333d92be711a5c8902cf',1,'Dune::GDT::LocalizableOperatorBase::range_()']]],
+  ['result_5f',['result_',['../a01766.html#a19c0c7c82b15ef514c7a5ecb2d452695',1,'Dune::GDT::LocalizableProductBase']]]
 ];

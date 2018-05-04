@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: spaces.hh File Reference</title>
+<title>dune-gdt: implicit-rungekutta.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_af7047e8b8f103b627ea592a78989197.html">timestepper</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -67,44 +67,41 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">spaces.hh File Reference</div>  </div>
+<div class="title">implicit-rungekutta.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="a00188_source.html">spaces/cg.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00197_source.html">spaces/dg.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a04585_source.html">spaces/fv.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00212_source.html">spaces/rt.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;dune/xt/common/exceptions.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/memory.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/string.hh&gt;</code><br />
+<code>#include &lt;dune/xt/la/container.hh&gt;</code><br />
+<code>#include &lt;dune/xt/la/container/pattern.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00002_source.html">dune/gdt/assembler/codim0-matrix-datahandle.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04572_source.html">dune/gdt/operators/interfaces.hh</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="a04551_source.html">interface.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00206_source.html">explicit-rungekutta.hh</a>&quot;</code><br />
 </div>
 <p><a href="a00215_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02921.html">Dune::GDT::SpaceProvider&lt; GridType, layer_type, space_type, backend_type, polOrder, RangeFieldType, dimRange, dimRangeCols, grid_backend_type &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02938.html">Dune::GDT::internal::ButcherArrayProvider&lt; RangeFieldType, TimeStepperMethods::implicit_euler &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02925.html">Dune::GDT::SpaceProvider&lt; G, layer, SpaceType::cg, backend, p, R, r, rC, g &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02942.html">Dune::GDT::internal::ButcherArrayProvider&lt; RangeFieldType, TimeStepperMethods::implicit_midpoint &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02929.html">Dune::GDT::SpaceProvider&lt; G, layer, SpaceType::block_cg, backend, p, R, r, rC, g &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02946.html">Dune::GDT::internal::ButcherArrayProvider&lt; RangeFieldType, TimeStepperMethods::trapezoidal_rule &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02933.html">Dune::GDT::SpaceProvider&lt; G, layer, SpaceType::dg, backend, p, R, r, rC, g &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02937.html">Dune::GDT::SpaceProvider&lt; G, layer, SpaceType::block_dg, backend, p, R, r, rC, g &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02941.html">Dune::GDT::SpaceProvider&lt; G, layer, SpaceType::fv, backend, p, R, r, rC, g &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02945.html">Dune::GDT::SpaceProvider&lt; G, layer, SpaceType::product_fv, backend, p, R, r, rC, g &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02949.html">Dune::GDT::SpaceProvider&lt; G, layer, SpaceType::block_fv, backend, p, R, r, rC, g &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02953.html">Dune::GDT::SpaceProvider&lt; G, layer, SpaceType::rt, backend, p, R, r, rC, g &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02957.html">Dune::GDT::SpaceProvider&lt; G, layer, SpaceType::block_rt, backend, p, R, r, rC, g &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02950.html">Dune::GDT::DiagonallyImplicitRungeKuttaTimeStepper&lt; OperatorImp, DiscreteFunctionImp, method, container_backend &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time stepper using diagonally implicit Runge Kutta methods.  <a href="a02950.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00245"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00245.html">Dune</a></td></tr>
+<tr class="memitem:a00230"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00230.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00246"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00246.html">Dune::GDT</a></td></tr>
+<tr class="memitem:a00231"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00231.html">Dune::GDT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00232"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00232.html">Dune::GDT::internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

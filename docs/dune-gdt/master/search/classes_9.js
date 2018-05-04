@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['jacobianwrapper',['JacobianWrapper',['../a02009.html',1,'Dune::GDT::internal']]],
-  ['jacobianwrapperbase',['JacobianWrapperBase',['../a02005.html',1,'Dune::GDT::internal']]],
-  ['jacobianwrapperbase_3c_20analyticalfluxtype_2c_20fieldvector_3c_20fieldmatrix_3c_20analyticalfluxtype_3a_3arangefieldtype_2c_20block_5fsize_2c_20block_5fsize_20_3e_2c_20analyticalfluxtype_3a_3adimrange_2fblock_5fsize_20_3e_2c_20analyticalfluxtype_3a_3astaterangetype_20_3e',['JacobianWrapperBase&lt; AnalyticalFluxType, FieldVector&lt; FieldMatrix&lt; AnalyticalFluxType::RangeFieldType, block_size, block_size &gt;, AnalyticalFluxType::dimRange/block_size &gt;, AnalyticalFluxType::StateRangeType &gt;',['../a02005.html',1,'Dune::GDT::internal']]],
-  ['jacobianwrapperbase_3c_20analyticalfluxtype_2c_20matrixtype_2c_20vectortype_20_3e',['JacobianWrapperBase&lt; AnalyticalFluxType, MatrixType, VectorType &gt;',['../a02005.html',1,'Dune::GDT::internal']]]
+  ['kineticfluximplementation',['KineticFluxImplementation',['../a01234.html',1,'Dune::GDT::internal']]],
+  ['kineticfluximplementation_3c_20dune_3a_3agdt_3a_3ainternal_3a_3akineticlocalnumericalboundaryfluxtraits_20_3e',['KineticFluxImplementation&lt; Dune::GDT::internal::KineticLocalNumericalBoundaryFluxTraits &gt;',['../a01234.html',1,'Dune::GDT::internal']]],
+  ['kineticfluximplementation_3c_20dune_3a_3agdt_3a_3ainternal_3a_3akineticlocalnumericalcouplingfluxtraits_20_3e',['KineticFluxImplementation&lt; Dune::GDT::internal::KineticLocalNumericalCouplingFluxTraits &gt;',['../a01234.html',1,'Dune::GDT::internal']]],
+  ['kineticlocalnumericalboundaryflux',['KineticLocalNumericalBoundaryFlux',['../a01222.html',1,'Dune::GDT']]],
+  ['kineticlocalnumericalboundaryfluxtraits',['KineticLocalNumericalBoundaryFluxTraits',['../a01230.html',1,'Dune::GDT::internal']]],
+  ['kineticlocalnumericalcouplingflux',['KineticLocalNumericalCouplingFlux',['../a01218.html',1,'Dune::GDT']]],
+  ['kineticlocalnumericalcouplingfluxtraits',['KineticLocalNumericalCouplingFluxTraits',['../a01226.html',1,'Dune::GDT::internal']]]
 ];

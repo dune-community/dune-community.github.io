@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Member List</title>
+<title>dune-gdt: Dune::GDT::LocalVolumeTwoFormAssembler&lt; TestSpace, Matrix, AnsatzSpace &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,21 +59,298 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a01065.html">LocalOperatorApplicator</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00230.html">Dune</a></li><li class="navelem"><a class="el" href="a00231.html">GDT</a></li><li class="navelem"><a class="el" href="a01062.html">LocalVolumeTwoFormAssembler</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a01059.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::LocalOperatorApplicator&lt; GridLayerType, LocalOperatorType, SourceType, RangeType &gt; Member List</div>  </div>
+<div class="title">Dune::GDT::LocalVolumeTwoFormAssembler&lt; TestSpace, Matrix, AnsatzSpace &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a01065.html">Dune::GDT::LocalOperatorApplicator&lt; GridLayerType, LocalOperatorType, SourceType, RangeType &gt;</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a01065.html#a98d799e43f571b6a3e237d3868c3ca3e">apply_local</a>(const EntityType &amp;entity)</td><td class="entry"><a class="el" href="a01065.html">Dune::GDT::LocalOperatorApplicator&lt; GridLayerType, LocalOperatorType, SourceType, RangeType &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a01065.html#aff88046155784ad999376152309b9bae">apply_on</a>(const GridLayerType &amp;grid_layer, const EntityType &amp;entity) const</td><td class="entry"><a class="el" href="a01065.html">Dune::GDT::LocalOperatorApplicator&lt; GridLayerType, LocalOperatorType, SourceType, RangeType &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a01065.html#abffc129ea8ec389fe70360fd1ed50f56">LocalOperatorApplicator</a>(const GridLayerType &amp;grid_layer, const LocalOperatorType &amp;local_operator, const SourceType &amp;source, RangeType &amp;range, const XT::Grid::ApplyOn::WhichEntity&lt; GridLayerType &gt; &amp;where)</td><td class="entry"><a class="el" href="a01065.html">Dune::GDT::LocalOperatorApplicator&lt; GridLayerType, LocalOperatorType, SourceType, RangeType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-</table></div><!-- contents -->
+<p><code>#include &lt;<a class="el" href="a00050_source.html">dune/gdt/local/assembler.hh</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a77b8e1d17a4a43af4a7032fef747e731"><td class="memItemLeft" align="right" valign="top">typedef TestSpace&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01062.html#a77b8e1d17a4a43af4a7032fef747e731">TestSpaceType</a></td></tr>
+<tr class="separator:a77b8e1d17a4a43af4a7032fef747e731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f9ae6da49a66dee2e01c72f2dbad42f"><td class="memItemLeft" align="right" valign="top">typedef AnsatzSpace&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01062.html#a5f9ae6da49a66dee2e01c72f2dbad42f">AnsatzSpaceType</a></td></tr>
+<tr class="separator:a5f9ae6da49a66dee2e01c72f2dbad42f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a083000ce0c5e7e90f0b4d220e14829ac"><td class="memItemLeft" align="right" valign="top">typedef TestSpaceType::EntityType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01062.html#a083000ce0c5e7e90f0b4d220e14829ac">EntityType</a></td></tr>
+<tr class="separator:a083000ce0c5e7e90f0b4d220e14829ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0825d5cc1f94e8b13095f46cb7a62ac9"><td class="memItemLeft" align="right" valign="top">typedef Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01062.html#a0825d5cc1f94e8b13095f46cb7a62ac9">MatrixType</a></td></tr>
+<tr class="separator:a0825d5cc1f94e8b13095f46cb7a62ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dd88ff878a0cd552862e547f8c5095d"><td class="memItemLeft" align="right" valign="top">typedef MatrixType::ScalarType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01062.html#a4dd88ff878a0cd552862e547f8c5095d">FieldType</a></td></tr>
+<tr class="separator:a4dd88ff878a0cd552862e547f8c5095d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc7fbb44275cf7004db01c6f383bb7ca"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01694.html">LocalVolumeTwoFormInterface</a>&lt; typename TestSpaceType::BaseFunctionSetType, typename AnsatzSpaceType::BaseFunctionSetType, <a class="el" href="a01062.html#a4dd88ff878a0cd552862e547f8c5095d">FieldType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01062.html#afc7fbb44275cf7004db01c6f383bb7ca">LocalVolumeTwoFormType</a></td></tr>
+<tr class="separator:afc7fbb44275cf7004db01c6f383bb7ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a220f4765a42a4288ec37712b127c461a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01062.html#a220f4765a42a4288ec37712b127c461a">LocalVolumeTwoFormAssembler</a> (const <a class="el" href="a01062.html#afc7fbb44275cf7004db01c6f383bb7ca">LocalVolumeTwoFormType</a> &amp;local_twoform)</td></tr>
+<tr class="separator:a220f4765a42a4288ec37712b127c461a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae439078126437445713216a80bc9bc8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01062.html#ae439078126437445713216a80bc9bc8c">assemble</a> (const <a class="el" href="a01062.html#a77b8e1d17a4a43af4a7032fef747e731">TestSpaceType</a> &amp;test_space, const <a class="el" href="a01062.html#a5f9ae6da49a66dee2e01c72f2dbad42f">AnsatzSpaceType</a> &amp;ansatz_space, const <a class="el" href="a01062.html#a083000ce0c5e7e90f0b4d220e14829ac">EntityType</a> &amp;entity, <a class="el" href="a01062.html#a0825d5cc1f94e8b13095f46cb7a62ac9">MatrixType</a> &amp;global_matrix) const</td></tr>
+<tr class="separator:ae439078126437445713216a80bc9bc8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec31c4005366b423324578e8949f1cd5"><td class="memTemplParams" colspan="2">template&lt;class T , size_t Td, size_t Tr, size_t TrC, class A , size_t Ad, size_t Ar, size_t ArC, class EntityType , class R &gt; </td></tr>
+<tr class="memitem:aec31c4005366b423324578e8949f1cd5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01062.html#aec31c4005366b423324578e8949f1cd5">assemble_entitywise</a> (const <a class="el" href="a02618.html">SpaceInterface</a>&lt; T, Td, Tr, TrC &gt; &amp;test_space, const <a class="el" href="a02618.html">SpaceInterface</a>&lt; A, Ad, Ar, ArC &gt; &amp;ansatz_space, const <a class="el" href="a01062.html#a083000ce0c5e7e90f0b4d220e14829ac">EntityType</a> &amp;entity, std::vector&lt; Dune::DynamicMatrix&lt; R &gt;&gt; &amp;global_matrix) const</td></tr>
+<tr class="separator:aec31c4005366b423324578e8949f1cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class TestSpace, class Matrix, class AnsatzSpace = TestSpace&gt;<br />
+class Dune::GDT::LocalVolumeTwoFormAssembler&lt; TestSpace, Matrix, AnsatzSpace &gt;</h3>
+
+<dl class="todo"><dt><b><a class="el" href="a00224.html#_todo000011">Todo:</a></b></dt><dd></dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Rename <a class="el" href="a00794.html">LocalVolumeTwoFormAssemblerFunctor</a> -&gt; <a class="el" href="a01062.html">LocalVolumeTwoFormAssembler</a> after removing this class! </dd></dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a5f9ae6da49a66dee2e01c72f2dbad42f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f9ae6da49a66dee2e01c72f2dbad42f">&#9670;&nbsp;</a></span>AnsatzSpaceType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TestSpace , class Matrix , class AnsatzSpace  = TestSpace&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef AnsatzSpace <a class="el" href="a01062.html">Dune::GDT::LocalVolumeTwoFormAssembler</a>&lt; TestSpace, Matrix, AnsatzSpace &gt;::<a class="el" href="a01062.html#a5f9ae6da49a66dee2e01c72f2dbad42f">AnsatzSpaceType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a083000ce0c5e7e90f0b4d220e14829ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a083000ce0c5e7e90f0b4d220e14829ac">&#9670;&nbsp;</a></span>EntityType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TestSpace , class Matrix , class AnsatzSpace  = TestSpace&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef TestSpaceType::EntityType <a class="el" href="a01062.html">Dune::GDT::LocalVolumeTwoFormAssembler</a>&lt; TestSpace, Matrix, AnsatzSpace &gt;::<a class="el" href="a01062.html#a083000ce0c5e7e90f0b4d220e14829ac">EntityType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4dd88ff878a0cd552862e547f8c5095d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dd88ff878a0cd552862e547f8c5095d">&#9670;&nbsp;</a></span>FieldType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TestSpace , class Matrix , class AnsatzSpace  = TestSpace&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef MatrixType::ScalarType <a class="el" href="a01062.html">Dune::GDT::LocalVolumeTwoFormAssembler</a>&lt; TestSpace, Matrix, AnsatzSpace &gt;::<a class="el" href="a01062.html#a4dd88ff878a0cd552862e547f8c5095d">FieldType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc7fbb44275cf7004db01c6f383bb7ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc7fbb44275cf7004db01c6f383bb7ca">&#9670;&nbsp;</a></span>LocalVolumeTwoFormType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TestSpace , class Matrix , class AnsatzSpace  = TestSpace&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a01694.html">LocalVolumeTwoFormInterface</a>&lt;typename TestSpaceType::BaseFunctionSetType, typename AnsatzSpaceType::BaseFunctionSetType, <a class="el" href="a01062.html#a4dd88ff878a0cd552862e547f8c5095d">FieldType</a>&gt; <a class="el" href="a01062.html">Dune::GDT::LocalVolumeTwoFormAssembler</a>&lt; TestSpace, Matrix, AnsatzSpace &gt;::<a class="el" href="a01062.html#afc7fbb44275cf7004db01c6f383bb7ca">LocalVolumeTwoFormType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0825d5cc1f94e8b13095f46cb7a62ac9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0825d5cc1f94e8b13095f46cb7a62ac9">&#9670;&nbsp;</a></span>MatrixType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TestSpace , class Matrix , class AnsatzSpace  = TestSpace&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Matrix <a class="el" href="a01062.html">Dune::GDT::LocalVolumeTwoFormAssembler</a>&lt; TestSpace, Matrix, AnsatzSpace &gt;::<a class="el" href="a01062.html#a0825d5cc1f94e8b13095f46cb7a62ac9">MatrixType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a77b8e1d17a4a43af4a7032fef747e731"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77b8e1d17a4a43af4a7032fef747e731">&#9670;&nbsp;</a></span>TestSpaceType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TestSpace , class Matrix , class AnsatzSpace  = TestSpace&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef TestSpace <a class="el" href="a01062.html">Dune::GDT::LocalVolumeTwoFormAssembler</a>&lt; TestSpace, Matrix, AnsatzSpace &gt;::<a class="el" href="a01062.html#a77b8e1d17a4a43af4a7032fef747e731">TestSpaceType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a220f4765a42a4288ec37712b127c461a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a220f4765a42a4288ec37712b127c461a">&#9670;&nbsp;</a></span>LocalVolumeTwoFormAssembler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TestSpace , class Matrix , class AnsatzSpace  = TestSpace&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a01062.html">Dune::GDT::LocalVolumeTwoFormAssembler</a>&lt; TestSpace, Matrix, AnsatzSpace &gt;::<a class="el" href="a01062.html">LocalVolumeTwoFormAssembler</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a01062.html#afc7fbb44275cf7004db01c6f383bb7ca">LocalVolumeTwoFormType</a> &amp;&#160;</td>
+          <td class="paramname"><em>local_twoform</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae439078126437445713216a80bc9bc8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae439078126437445713216a80bc9bc8c">&#9670;&nbsp;</a></span>assemble()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TestSpace , class Matrix , class AnsatzSpace  = TestSpace&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a01062.html">Dune::GDT::LocalVolumeTwoFormAssembler</a>&lt; TestSpace, Matrix, AnsatzSpace &gt;::assemble </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a01062.html#a77b8e1d17a4a43af4a7032fef747e731">TestSpaceType</a> &amp;&#160;</td>
+          <td class="paramname"><em>test_space</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a01062.html#a5f9ae6da49a66dee2e01c72f2dbad42f">AnsatzSpaceType</a> &amp;&#160;</td>
+          <td class="paramname"><em>ansatz_space</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a01062.html#a083000ce0c5e7e90f0b4d220e14829ac">EntityType</a> &amp;&#160;</td>
+          <td class="paramname"><em>entity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a01062.html#a0825d5cc1f94e8b13095f46cb7a62ac9">MatrixType</a> &amp;&#160;</td>
+          <td class="paramname"><em>global_matrix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec31c4005366b423324578e8949f1cd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec31c4005366b423324578e8949f1cd5">&#9670;&nbsp;</a></span>assemble_entitywise()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TestSpace , class Matrix , class AnsatzSpace  = TestSpace&gt; </div>
+<div class="memtemplate">
+template&lt;class T , size_t Td, size_t Tr, size_t TrC, class A , size_t Ad, size_t Ar, size_t ArC, class EntityType , class R &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a01062.html">Dune::GDT::LocalVolumeTwoFormAssembler</a>&lt; TestSpace, Matrix, AnsatzSpace &gt;::assemble_entitywise </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a02618.html">SpaceInterface</a>&lt; T, Td, Tr, TrC &gt; &amp;&#160;</td>
+          <td class="paramname"><em>test_space</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a02618.html">SpaceInterface</a>&lt; A, Ad, Ar, ArC &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ansatz_space</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a01062.html#a083000ce0c5e7e90f0b4d220e14829ac">EntityType</a> &amp;&#160;</td>
+          <td class="paramname"><em>entity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; Dune::DynamicMatrix&lt; R &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>global_matrix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Traits of the <a class="el" href="a02618.html">SpaceInterface</a> implementation, representing the type of test_space </td></tr>
+    <tr><td class="paramname">A</td><td>Traits of the <a class="el" href="a02618.html">SpaceInterface</a> implementation, representing the type of ansatz_space </td></tr>
+    <tr><td class="paramname">*d</td><td>dimDomain of test_space (* == T) or ansatz_space (* == A) </td></tr>
+    <tr><td class="paramname">*r</td><td>dimRange of test_space (* == T) or ansatz_space (* == A) </td></tr>
+    <tr><td class="paramname">*rC</td><td>dimRangeCols of test_space (* == T) or ansatz_space (* == A) </td></tr>
+    <tr><td class="paramname">EntityType</td><td>A model of Dune::Entity&lt; 0 &gt; </td></tr>
+    <tr><td class="paramname">M</td><td>Traits of the Dune::XT::LA::Container::MatrixInterface implementation, representing the type of global_matrix </td></tr>
+    <tr><td class="paramname">R</td><td>RangeFieldType, i.e. double </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="a00050_source.html">assembler.hh</a></li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
