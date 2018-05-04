@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: dirichlet.hh File Reference</title>
+<title>dune-gdt: weighted-l2.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_422e9240d05ce838e6f6483d1fde367d.html">projections</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_8eae17099f455a1cfbd2c25e13098b8a.html">operators</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -68,34 +68,75 @@ $(function() {
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">dirichlet.hh File Reference</div>  </div>
+<div class="title">weighted-l2.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;dune/xt/common/memory.hh&gt;</code><br />
-<code>#include &lt;dune/xt/grid/type_traits.hh&gt;</code><br />
+<div class="textblock"><code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;dune/xt/functions/interfaces.hh&gt;</code><br />
 <code>#include &lt;dune/xt/grid/layers.hh&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00098_source.html">dune/gdt/local/operators/dirichlet-projection.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a04434_source.html">dune/gdt/operators/base.hh</a>&gt;</code><br />
+<code>#include &lt;dune/xt/la/container.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04708_source.html">dune/gdt/local/integrands/product.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04600_source.html">dune/gdt/local/operators/integrals.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04504_source.html">dune/gdt/operators/base.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04615_source.html">dune/gdt/spaces/interface.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00236_source.html">dune/gdt/type_traits.hh</a>&gt;</code><br />
 </div>
 <p><a href="a00152_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02166.html">Dune::GDT::DirichletProjectionLocalizableOperator&lt; GridLayerImp, SourceImp, RangeImp, FieldImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02169.html">Dune::GDT::WeightedL2LocalizableProduct&lt; WeightFunctionType, GridLayer, Range, Source, Field &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02173.html">Dune::GDT::WeightedL2MatrixOperator&lt; WeightFunctionType, RangeSpace, Matrix, GridLayer, SourceSpace, Field &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02177.html">Dune::GDT::WeightedL2Operator&lt; WeightFunctionType, GridLayerType, Field &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02181.html">Dune::GDT::internal::WeightedL2OperatorTraits&lt; WeightFunctionType, GridLayerType, Field &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02177.html">Dune::GDT::WeightedL2Operator&lt; WeightFunctionType, GridLayerType, Field &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00230"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00230.html">Dune</a></td></tr>
+<tr class="memitem:a00245"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00245.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00231"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00231.html">Dune::GDT</a></td></tr>
+<tr class="memitem:a00246"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00246.html">Dune::GDT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00247"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00247.html">Dune::GDT::internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8f639f3b2734291a3ab3c17c8894fdcb"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType , class SourceType , class RangeType &gt; </td></tr>
-<tr class="memitem:a8f639f3b2734291a3ab3c17c8894fdcb"><td class="memTemplItemLeft" align="right" valign="top">std::unique_ptr&lt; DirichletProjectionLocalizableOperator&lt; GridLayerType, SourceType, RangeType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00231.html#a8f639f3b2734291a3ab3c17c8894fdcb">Dune::GDT::make_localizable_dirichlet_projection_operator</a> (const GridLayerType &amp;grid_layer, const XT::Grid::BoundaryInfo&lt; XT::Grid::extract_intersection_t&lt; GridLayerType &gt;&gt; &amp;boundary_info, const SourceType &amp;source, RangeType &amp;range)</td></tr>
-<tr class="separator:a8f639f3b2734291a3ab3c17c8894fdcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8eb42db46ca6c5872fde464ac03a2b2"><td class="memTemplParams" colspan="2">template&lt;class WeightFunctionType , class GridLayerType , class RangeType , class SourceType &gt; </td></tr>
+<tr class="memitem:ab8eb42db46ca6c5872fde464ac03a2b2"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Functions::is_localizable_function&lt; WeightFunctionType &gt;::value &amp;&amp;XT::Grid::is_layer&lt; GridLayerType &gt;::value &amp;&amp;XT::Functions::is_localizable_function&lt; RangeType &gt;::value &amp;&amp;XT::Functions::is_localizable_function&lt; SourceType &gt;::value, std::unique_ptr&lt; WeightedL2LocalizableProduct&lt; WeightFunctionType, GridLayerType, RangeType, SourceType &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00246.html#ab8eb42db46ca6c5872fde464ac03a2b2">Dune::GDT::make_weighted_l2_localizable_product</a> (const WeightFunctionType &amp;weight, const GridLayerType &amp;grid_layer, const RangeType &amp;range, const SourceType &amp;source, const size_t over_integrate=0, const XT::Common::Parameter &amp;param={})</td></tr>
+<tr class="separator:ab8eb42db46ca6c5872fde464ac03a2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94c370bc5da752091bf363382ccad66f"><td class="memTemplParams" colspan="2">template&lt;class MatrixType , class WeightFunctionType , class SpaceType &gt; </td></tr>
+<tr class="memitem:a94c370bc5da752091bf363382ccad66f"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::LA::is_matrix&lt; MatrixType &gt;::value &amp;&amp;XT::Functions::is_localizable_function&lt; WeightFunctionType &gt;::value &amp;&amp;is_space&lt; SpaceType &gt;::value, std::unique_ptr&lt; WeightedL2MatrixOperator&lt; WeightFunctionType, SpaceType, MatrixType &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00246.html#a94c370bc5da752091bf363382ccad66f">Dune::GDT::make_weighted_l2_matrix_operator</a> (const WeightFunctionType &amp;weight, const SpaceType &amp;space, const size_t over_integrate=0)</td></tr>
+<tr class="memdesc:a94c370bc5da752091bf363382ccad66f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a weighted L2 matrix operator (MatrixType has to be supllied, a matrix is created automatically, source and range space are given by space, grid_layer of the space is used).  <a href="a00246.html#a94c370bc5da752091bf363382ccad66f">More...</a><br /></td></tr>
+<tr class="separator:a94c370bc5da752091bf363382ccad66f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a419d49e35616d30a21a82601a8358d85"><td class="memTemplParams" colspan="2">template&lt;class MatrixType , class WeightFunctionType , class SpaceType , class GridLayerType &gt; </td></tr>
+<tr class="memitem:a419d49e35616d30a21a82601a8358d85"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::LA::is_matrix&lt; MatrixType &gt;::value &amp;&amp;XT::Functions::is_localizable_function&lt; WeightFunctionType &gt;::value &amp;&amp;is_space&lt; SpaceType &gt;::value &amp;&amp;XT::Grid::is_layer&lt; GridLayerType &gt;::value, std::unique_ptr&lt; WeightedL2MatrixOperator&lt; WeightFunctionType, SpaceType, MatrixType, GridLayerType &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00246.html#a419d49e35616d30a21a82601a8358d85">Dune::GDT::make_weighted_l2_matrix_operator</a> (const WeightFunctionType &amp;weight, const SpaceType &amp;space, const GridLayerType &amp;grid_layer, const size_t over_integrate=0)</td></tr>
+<tr class="memdesc:a419d49e35616d30a21a82601a8358d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a weighted L2 matrix operator (MatrixType has to be supllied, a matrix is created automatically, source and range space are given by space).  <a href="a00246.html#a419d49e35616d30a21a82601a8358d85">More...</a><br /></td></tr>
+<tr class="separator:a419d49e35616d30a21a82601a8358d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8790f22db7ca14a73ae19e9993742320"><td class="memTemplParams" colspan="2">template&lt;class MatrixType , class WeightFunctionType , class RangeSpaceType , class SourceSpaceType , class GridLayerType &gt; </td></tr>
+<tr class="memitem:a8790f22db7ca14a73ae19e9993742320"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::LA::is_matrix&lt; MatrixType &gt;::value &amp;&amp;XT::Functions::is_localizable_function&lt; WeightFunctionType &gt;::value &amp;&amp;is_space&lt; RangeSpaceType &gt;::value &amp;&amp;is_space&lt; SourceSpaceType &gt;::value &amp;&amp;XT::Grid::is_layer&lt; GridLayerType &gt;::value, std::unique_ptr&lt; WeightedL2MatrixOperator&lt; WeightFunctionType, RangeSpaceType, MatrixType, GridLayerType, SourceSpaceType &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00246.html#a8790f22db7ca14a73ae19e9993742320">Dune::GDT::make_weighted_l2_matrix_operator</a> (const WeightFunctionType &amp;weight, const RangeSpaceType &amp;range_space, const SourceSpaceType &amp;source_space, const GridLayerType &amp;grid_layer, const size_t over_integrate=0)</td></tr>
+<tr class="memdesc:a8790f22db7ca14a73ae19e9993742320"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a weighted L2 matrix operator (MatrixType has to be supllied, a matrix is created automatically).  <a href="a00246.html#a8790f22db7ca14a73ae19e9993742320">More...</a><br /></td></tr>
+<tr class="separator:a8790f22db7ca14a73ae19e9993742320"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c65510f0494c44231137be7b61eb712"><td class="memTemplParams" colspan="2">template&lt;class WeightFunctionType , class MatrixType , class SpaceType &gt; </td></tr>
+<tr class="memitem:a6c65510f0494c44231137be7b61eb712"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Functions::is_localizable_function&lt; WeightFunctionType &gt;::value &amp;&amp;XT::LA::is_matrix&lt; MatrixType &gt;::value &amp;&amp;is_space&lt; SpaceType &gt;::value, std::unique_ptr&lt; WeightedL2MatrixOperator&lt; WeightFunctionType, SpaceType, MatrixType &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00246.html#a6c65510f0494c44231137be7b61eb712">Dune::GDT::make_weighted_l2_matrix_operator</a> (const WeightFunctionType &amp;weight, MatrixType &amp;matrix, const SpaceType &amp;space, const size_t over_integrate=0)</td></tr>
+<tr class="memdesc:a6c65510f0494c44231137be7b61eb712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a weighted L2 matrix operator (source and range space are given by space, grid_layer of the space is used).  <a href="a00246.html#a6c65510f0494c44231137be7b61eb712">More...</a><br /></td></tr>
+<tr class="separator:a6c65510f0494c44231137be7b61eb712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa80f01415bd014fdc5dd79dd286edc"><td class="memTemplParams" colspan="2">template&lt;class WeightFunctionType , class MatrixType , class SpaceType , class GridLayerType &gt; </td></tr>
+<tr class="memitem:a7fa80f01415bd014fdc5dd79dd286edc"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Functions::is_localizable_function&lt; WeightFunctionType &gt;::value &amp;&amp;XT::LA::is_matrix&lt; MatrixType &gt;::value &amp;&amp;is_space&lt; SpaceType &gt;::value &amp;&amp;XT::Grid::is_layer&lt; GridLayerType &gt;::value, std::unique_ptr&lt; WeightedL2MatrixOperator&lt; WeightFunctionType, SpaceType, MatrixType, GridLayerType &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00246.html#a7fa80f01415bd014fdc5dd79dd286edc">Dune::GDT::make_weighted_l2_matrix_operator</a> (const WeightFunctionType &amp;weight, MatrixType &amp;matrix, const SpaceType &amp;space, const GridLayerType &amp;grid_layer, const size_t over_integrate=0)</td></tr>
+<tr class="memdesc:a7fa80f01415bd014fdc5dd79dd286edc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a weighted L2 matrix operator (source and range space are given by space).  <a href="a00246.html#a7fa80f01415bd014fdc5dd79dd286edc">More...</a><br /></td></tr>
+<tr class="separator:a7fa80f01415bd014fdc5dd79dd286edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9ae6d54b1de546de981980dcc26c961"><td class="memTemplParams" colspan="2">template&lt;class WeightFunctionType , class MatrixType , class RangeSpaceType , class SourceSpaceType , class GridLayerType &gt; </td></tr>
+<tr class="memitem:af9ae6d54b1de546de981980dcc26c961"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Functions::is_localizable_function&lt; WeightFunctionType &gt;::value &amp;&amp;XT::LA::is_matrix&lt; MatrixType &gt;::value &amp;&amp;is_space&lt; RangeSpaceType &gt;::value &amp;&amp;is_space&lt; SourceSpaceType &gt;::value &amp;&amp;XT::Grid::is_layer&lt; GridLayerType &gt;::value, std::unique_ptr&lt; WeightedL2MatrixOperator&lt; WeightFunctionType, RangeSpaceType, MatrixType, GridLayerType, SourceSpaceType &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00246.html#af9ae6d54b1de546de981980dcc26c961">Dune::GDT::make_weighted_l2_matrix_operator</a> (const WeightFunctionType &amp;weight, MatrixType &amp;matrix, const RangeSpaceType &amp;range_space, const SourceSpaceType &amp;source_space, const GridLayerType &amp;grid_layer, const size_t over_integrate=0)</td></tr>
+<tr class="memdesc:af9ae6d54b1de546de981980dcc26c961"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a weighted L2 matrix operator.  <a href="a00246.html#af9ae6d54b1de546de981980dcc26c961">More...</a><br /></td></tr>
+<tr class="separator:af9ae6d54b1de546de981980dcc26c961"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac54f2e7c92b7268e11b82ccea2407271"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType , class WeightFunctionType &gt; </td></tr>
+<tr class="memitem:ac54f2e7c92b7268e11b82ccea2407271"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Functions::is_localizable_function&lt; WeightFunctionType &gt;::value &amp;&amp;XT::Grid::is_layer&lt; GridLayerType &gt;::value, std::unique_ptr&lt; WeightedL2Operator&lt; WeightFunctionType, GridLayerType, typename WeightFunctionType::RangeFieldType &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00246.html#ac54f2e7c92b7268e11b82ccea2407271">Dune::GDT::make_weighted_l2_operator</a> (const GridLayerType &amp;grid_layer, const WeightFunctionType &amp;weight, const size_t over_integrate=0)</td></tr>
+<tr class="separator:ac54f2e7c92b7268e11b82ccea2407271"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
