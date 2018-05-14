@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::BlockCgSpaceProvider&lt; GridType, layer_type, backend_type, polOrder, RangeFieldType, dimRange, dimRangeCols, grid_backend_type &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::ConstraintsInterface&lt; Traits &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,274 +59,60 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a02485.html">BlockCgSpaceProvider</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a02485.html">ConstraintsInterface</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="a02482.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::BlockCgSpaceProvider&lt; GridType, layer_type, backend_type, polOrder, RangeFieldType, dimRange, dimRangeCols, grid_backend_type &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::ConstraintsInterface&lt; Traits &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00188_source.html">dune/gdt/spaces/cg.hh</a>&gt;</code></p>
+<p>CRTP interface for all implementations of constraints.  
+ <a href="a02485.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00191_source.html">dune/gdt/spaces/constraints.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::BlockCgSpaceProvider&lt; GridType, layer_type, backend_type, polOrder, RangeFieldType, dimRange, dimRangeCols, grid_backend_type &gt;:</div>
+Inheritance diagram for Dune::GDT::ConstraintsInterface&lt; Traits &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02484.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_block_cg_space_provider_3_01_grid_type_00_01layer__type_00_01backend__type_00_01pol_order_00_01_range_field_type_00_01dim_range_00_01dim_range_cols_00_01grid__backend__type_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1_block_cg_space_provider_3_01_grid_type_00_01layer__type_00_01backend__type_00_01pol_order_00_01_range_field_type_00_01dim_range_00_01dim_range_cols_00_01grid__backend__type_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_block_cg_space_provider_3_01_grid_type_00_01layer__type_00_01backend__type_00_01pol_order_00_01_range_field_type_00_01dim_range_00_01dim_range_cols_00_01grid__backend__type_01_4_inherit__map">
+<div class="center"><img src="a02484.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_constraints_interface_3_01_traits_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_constraints_interface_3_01_traits_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_constraints_interface_3_01_traits_01_4_inherit__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ac7bfa4e67f0666796fee232e59d05d8f"><td class="memItemLeft" align="right" valign="top">typedef XT::Grid::Layer&lt; GridType, <a class="el" href="a02485.html#ac6be7e6698dd06e4a12a730b60255268">grid_layer</a>, <a class="el" href="a02485.html#a36d98096d533ecfadbe46520c9d2e1b5">layer_backend</a> &gt;::<a class="el" href="a02485.html#a9da1f58e780e60cec088817447f26679">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02485.html#ac7bfa4e67f0666796fee232e59d05d8f">GridLayerType</a></td></tr>
-<tr class="separator:ac7bfa4e67f0666796fee232e59d05d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38845a94052f9b4fa909a372fbc210bd"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02193.html">GDT::BlockSpace</a>&lt; LocalType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02485.html#a38845a94052f9b4fa909a372fbc210bd">Type</a></td></tr>
-<tr class="separator:a38845a94052f9b4fa909a372fbc210bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9da1f58e780e60cec088817447f26679"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02485.html#a38845a94052f9b4fa909a372fbc210bd">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02485.html#a9da1f58e780e60cec088817447f26679">type</a></td></tr>
-<tr class="separator:a9da1f58e780e60cec088817447f26679"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae3a3c19e1c4979640a00a4d16b4f7cc3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a02485.html#a38845a94052f9b4fa909a372fbc210bd">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02485.html#ae3a3c19e1c4979640a00a4d16b4f7cc3">create</a> (<a class="el" href="a02485.html#ac7bfa4e67f0666796fee232e59d05d8f">GridLayerType</a>)</td></tr>
-<tr class="separator:ae3a3c19e1c4979640a00a4d16b4f7cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19abaa991643effcd1d44bcf4b3b9aec"><td class="memTemplParams" colspan="2">template&lt;class DdGridType &gt; </td></tr>
-<tr class="memitem:a19abaa991643effcd1d44bcf4b3b9aec"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="a02485.html#a38845a94052f9b4fa909a372fbc210bd">Type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02485.html#a19abaa991643effcd1d44bcf4b3b9aec">create</a> (XT::Grid::GridProvider&lt; GridType, DdGridType &gt; &amp;, const int=0)</td></tr>
-<tr class="separator:a19abaa991643effcd1d44bcf4b3b9aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a7d2b86fa1f56e911cdb4407a746daf4b"><td class="memItemLeft" align="right" valign="top">static const constexpr <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02485.html#a7d2b86fa1f56e911cdb4407a746daf4b">space_type</a> = <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92ab671d14735bdfcc6cf3ed3d691f5ebf4">SpaceType::block_cg</a></td></tr>
-<tr class="separator:a7d2b86fa1f56e911cdb4407a746daf4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61724bd8577ea22cf3451166132fb52b"><td class="memItemLeft" align="right" valign="top">static const constexpr <a class="el" href="a00246.html#afd9e79bf2e05d76e877c835fa352f045">Backends</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02485.html#a61724bd8577ea22cf3451166132fb52b">space_backend</a> = backend_type</td></tr>
-<tr class="separator:a61724bd8577ea22cf3451166132fb52b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6be7e6698dd06e4a12a730b60255268"><td class="memItemLeft" align="right" valign="top">static const constexpr XT::Grid::Layers&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02485.html#ac6be7e6698dd06e4a12a730b60255268">grid_layer</a> = layer_type</td></tr>
-<tr class="separator:ac6be7e6698dd06e4a12a730b60255268"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36d98096d533ecfadbe46520c9d2e1b5"><td class="memItemLeft" align="right" valign="top">static const constexpr XT::Grid::Backends&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02485.html#a36d98096d533ecfadbe46520c9d2e1b5">layer_backend</a> = grid_backend_type</td></tr>
-<tr class="separator:a36d98096d533ecfadbe46520c9d2e1b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a924002c203bb6112868dfe87e1ac2a1b"><td class="memItemLeft" align="right" valign="top">typedef Traits::derived_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02485.html#a924002c203bb6112868dfe87e1ac2a1b">derived_type</a></td></tr>
+<tr class="separator:a924002c203bb6112868dfe87e1ac2a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="ac7bfa4e67f0666796fee232e59d05d8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7bfa4e67f0666796fee232e59d05d8f">&#9670;&nbsp;</a></span>GridLayerType</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class Traits&gt;<br />
+class Dune::GDT::ConstraintsInterface&lt; Traits &gt;</h3>
+
+<p>CRTP interface for all implementations of constraints. </p>
+<p>We need this interface for template matching in the <a class="el" href="a00829.html">SystemAssembler</a>. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a924002c203bb6112868dfe87e1ac2a1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a924002c203bb6112868dfe87e1ac2a1b">&#9670;&nbsp;</a></span>derived_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GridType, XT::Grid::Layers layer_type, Backends backend_type, int polOrder, class RangeFieldType, size_t dimRange, size_t dimRangeCols = 1, XT::Grid::Backends grid_backend_type = layer_from_backend&lt;backend_type&gt;::type&gt; </div>
+template&lt;class Traits&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef XT::Grid::Layer&lt;GridType, <a class="el" href="a02485.html#ac6be7e6698dd06e4a12a730b60255268">grid_layer</a>, <a class="el" href="a02485.html#a36d98096d533ecfadbe46520c9d2e1b5">layer_backend</a>&gt;::<a class="el" href="a02485.html#a9da1f58e780e60cec088817447f26679">type</a> <a class="el" href="a02485.html">Dune::GDT::BlockCgSpaceProvider</a>&lt; GridType, layer_type, backend_type, polOrder, RangeFieldType, dimRange, dimRangeCols, grid_backend_type &gt;::<a class="el" href="a02485.html#ac7bfa4e67f0666796fee232e59d05d8f">GridLayerType</a></td>
+          <td class="memname">typedef Traits::derived_type <a class="el" href="a02485.html">Dune::GDT::ConstraintsInterface</a>&lt; Traits &gt;::<a class="el" href="a02485.html#a924002c203bb6112868dfe87e1ac2a1b">derived_type</a></td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a38845a94052f9b4fa909a372fbc210bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38845a94052f9b4fa909a372fbc210bd">&#9670;&nbsp;</a></span>Type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridType, XT::Grid::Layers layer_type, Backends backend_type, int polOrder, class RangeFieldType, size_t dimRange, size_t dimRangeCols = 1, XT::Grid::Backends grid_backend_type = layer_from_backend&lt;backend_type&gt;::type&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a02193.html">GDT::BlockSpace</a>&lt;LocalType&gt; <a class="el" href="a02485.html">Dune::GDT::BlockCgSpaceProvider</a>&lt; GridType, layer_type, backend_type, polOrder, RangeFieldType, dimRange, dimRangeCols, grid_backend_type &gt;::<a class="el" href="a02485.html#a38845a94052f9b4fa909a372fbc210bd">Type</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9da1f58e780e60cec088817447f26679"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9da1f58e780e60cec088817447f26679">&#9670;&nbsp;</a></span>type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridType, XT::Grid::Layers layer_type, Backends backend_type, int polOrder, class RangeFieldType, size_t dimRange, size_t dimRangeCols = 1, XT::Grid::Backends grid_backend_type = layer_from_backend&lt;backend_type&gt;::type&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a02485.html#a38845a94052f9b4fa909a372fbc210bd">Type</a> <a class="el" href="a02485.html">Dune::GDT::BlockCgSpaceProvider</a>&lt; GridType, layer_type, backend_type, polOrder, RangeFieldType, dimRange, dimRangeCols, grid_backend_type &gt;::<a class="el" href="a02485.html#a9da1f58e780e60cec088817447f26679">type</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae3a3c19e1c4979640a00a4d16b4f7cc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3a3c19e1c4979640a00a4d16b4f7cc3">&#9670;&nbsp;</a></span>create() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridType, XT::Grid::Layers layer_type, Backends backend_type, int polOrder, class RangeFieldType, size_t dimRange, size_t dimRangeCols = 1, XT::Grid::Backends grid_backend_type = layer_from_backend&lt;backend_type&gt;::type&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="a02485.html#a38845a94052f9b4fa909a372fbc210bd">Type</a> <a class="el" href="a02485.html">Dune::GDT::BlockCgSpaceProvider</a>&lt; GridType, layer_type, backend_type, polOrder, RangeFieldType, dimRange, dimRangeCols, grid_backend_type &gt;::create </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a02485.html#ac7bfa4e67f0666796fee232e59d05d8f">GridLayerType</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a19abaa991643effcd1d44bcf4b3b9aec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19abaa991643effcd1d44bcf4b3b9aec">&#9670;&nbsp;</a></span>create() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridType, XT::Grid::Layers layer_type, Backends backend_type, int polOrder, class RangeFieldType, size_t dimRange, size_t dimRangeCols = 1, XT::Grid::Backends grid_backend_type = layer_from_backend&lt;backend_type&gt;::type&gt; </div>
-<div class="memtemplate">
-template&lt;class DdGridType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="a02485.html#a38845a94052f9b4fa909a372fbc210bd">Type</a> <a class="el" href="a02485.html">Dune::GDT::BlockCgSpaceProvider</a>&lt; GridType, layer_type, backend_type, polOrder, RangeFieldType, dimRange, dimRangeCols, grid_backend_type &gt;::create </td>
-          <td>(</td>
-          <td class="paramtype">XT::Grid::GridProvider&lt; GridType, DdGridType &gt; &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ac6be7e6698dd06e4a12a730b60255268"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6be7e6698dd06e4a12a730b60255268">&#9670;&nbsp;</a></span>grid_layer</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridType, XT::Grid::Layers layer_type, Backends backend_type, int polOrder, class RangeFieldType, size_t dimRange, size_t dimRangeCols = 1, XT::Grid::Backends grid_backend_type = layer_from_backend&lt;backend_type&gt;::type&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const constexpr XT::Grid::Layers <a class="el" href="a02485.html">Dune::GDT::BlockCgSpaceProvider</a>&lt; GridType, layer_type, backend_type, polOrder, RangeFieldType, dimRange, dimRangeCols, grid_backend_type &gt;::grid_layer = layer_type</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a36d98096d533ecfadbe46520c9d2e1b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36d98096d533ecfadbe46520c9d2e1b5">&#9670;&nbsp;</a></span>layer_backend</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridType, XT::Grid::Layers layer_type, Backends backend_type, int polOrder, class RangeFieldType, size_t dimRange, size_t dimRangeCols = 1, XT::Grid::Backends grid_backend_type = layer_from_backend&lt;backend_type&gt;::type&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const constexpr XT::Grid::Backends <a class="el" href="a02485.html">Dune::GDT::BlockCgSpaceProvider</a>&lt; GridType, layer_type, backend_type, polOrder, RangeFieldType, dimRange, dimRangeCols, grid_backend_type &gt;::layer_backend = grid_backend_type</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a61724bd8577ea22cf3451166132fb52b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61724bd8577ea22cf3451166132fb52b">&#9670;&nbsp;</a></span>space_backend</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridType, XT::Grid::Layers layer_type, Backends backend_type, int polOrder, class RangeFieldType, size_t dimRange, size_t dimRangeCols = 1, XT::Grid::Backends grid_backend_type = layer_from_backend&lt;backend_type&gt;::type&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const constexpr <a class="el" href="a00246.html#afd9e79bf2e05d76e877c835fa352f045">Backends</a> <a class="el" href="a02485.html">Dune::GDT::BlockCgSpaceProvider</a>&lt; GridType, layer_type, backend_type, polOrder, RangeFieldType, dimRange, dimRangeCols, grid_backend_type &gt;::space_backend = backend_type</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7d2b86fa1f56e911cdb4407a746daf4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d2b86fa1f56e911cdb4407a746daf4b">&#9670;&nbsp;</a></span>space_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridType, XT::Grid::Layers layer_type, Backends backend_type, int polOrder, class RangeFieldType, size_t dimRange, size_t dimRangeCols = 1, XT::Grid::Backends grid_backend_type = layer_from_backend&lt;backend_type&gt;::type&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const constexpr <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> <a class="el" href="a02485.html">Dune::GDT::BlockCgSpaceProvider</a>&lt; GridType, layer_type, backend_type, polOrder, RangeFieldType, dimRange, dimRangeCols, grid_backend_type &gt;::space_type = <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92ab671d14735bdfcc6cf3ed3d691f5ebf4">SpaceType::block_cg</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00188_source.html">cg.hh</a></li>
+<li><a class="el" href="a00191_source.html">constraints.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

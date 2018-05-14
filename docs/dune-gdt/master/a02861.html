@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::RaviartThomasBasefunctionSet&lt; FE, E, R &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::RaviartThomasSpace&lt; GL, p, R &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,90 +59,172 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a02861.html">RaviartThomasBasefunctionSet</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a02861.html">RaviartThomasSpace</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="a02858.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::RaviartThomasBasefunctionSet&lt; FE, E, R &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::RaviartThomasSpace&lt; GL, p, R &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a04534_source.html">dune/gdt/spaces/rt/default.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a04530_source.html">dune/gdt/spaces/rt/default.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::RaviartThomasBasefunctionSet&lt; FE, E, R &gt;:</div>
+Inheritance diagram for Dune::GDT::RaviartThomasSpace&lt; GL, p, R &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02860.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_raviart_thomas_basefunction_set_3_01_f_e_00_01_e_00_01_r_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1_raviart_thomas_basefunction_set_3_01_f_e_00_01_e_00_01_r_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_raviart_thomas_basefunction_set_3_01_f_e_00_01_e_00_01_r_01_4_inherit__map">
+<div class="center"><img src="a02860.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_raviart_thomas_space_3_01_g_l_00_01p_00_01_r_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_raviart_thomas_space_3_01_g_l_00_01p_00_01_r_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_raviart_thomas_space_3_01_g_l_00_01p_00_01_r_01_4_inherit__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a9b208f3f10a915a5eb6c2d825def2fbc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02861.html#a9b208f3f10a915a5eb6c2d825def2fbc">Traits</a> = <a class="el" href="a02869.html">internal::RaviartThomasBasefunctionSetTraits</a>&lt; FE, E, R &gt;</td></tr>
-<tr class="separator:a9b208f3f10a915a5eb6c2d825def2fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cc952d3fa6ee44cefe529106eb1003e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02869.html#a5a9003330dd6ba9f498c4d8a0c5581a8">Traits::BackendType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02861.html#a4cc952d3fa6ee44cefe529106eb1003e">BackendType</a></td></tr>
-<tr class="separator:a4cc952d3fa6ee44cefe529106eb1003e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a712b353833e0f4156dce3259138276db"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02869.html#a75eeb34379761c0e10052173339a38ba">Traits::EntityType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02861.html#a712b353833e0f4156dce3259138276db">EntityType</a></td></tr>
-<tr class="separator:a712b353833e0f4156dce3259138276db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacfbd07aba605ae0e871c8f321425530"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02869.html">internal::RaviartThomasBasefunctionSetTraits</a>&lt; FE, E, R &gt; ::<a class="el" href="a02429.html#aacfbd07aba605ae0e871c8f321425530">derived_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02429.html#aacfbd07aba605ae0e871c8f321425530">derived_type</a></td></tr>
-<tr class="separator:aacfbd07aba605ae0e871c8f321425530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a251769a0e2e81d8f3e1e67c936751ced"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02861.html#a251769a0e2e81d8f3e1e67c936751ced">Traits</a> = <a class="el" href="a02869.html">internal::RaviartThomasSpaceTraits</a>&lt; GL, p, R &gt;</td></tr>
+<tr class="separator:a251769a0e2e81d8f3e1e67c936751ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf9153f1cf57fb3857672e922ae7a45a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02869.html#a8fd0d1b6f8b549e07b8e8a9abb8f6591">Traits::DofCommunicatorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02861.html#abf9153f1cf57fb3857672e922ae7a45a">DofCommunicatorType</a></td></tr>
+<tr class="separator:abf9153f1cf57fb3857672e922ae7a45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a935fbf65ae00e68846d3f5b24d0ff32e"><td class="memItemLeft" align="right" valign="top">typedef GridLayerType::ctype&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02897.html#a935fbf65ae00e68846d3f5b24d0ff32e">DomainFieldType</a></td></tr>
+<tr class="separator:a935fbf65ae00e68846d3f5b24d0ff32e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada40ae3649f9292fbdaa307b1cf29217"><td class="memItemLeft" align="right" valign="top">typedef FieldVector&lt; <a class="el" href="a02697.html#a935fbf65ae00e68846d3f5b24d0ff32e">DomainFieldType</a>, <a class="el" href="a02697.html#a283acec8bcf63cfe6e7ee2cf2c207d64">dimDomain</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02897.html#ada40ae3649f9292fbdaa307b1cf29217">DomainType</a></td></tr>
+<tr class="separator:ada40ae3649f9292fbdaa307b1cf29217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69a2804414ed68581c896fb27231c861"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02897.html#a69a2804414ed68581c896fb27231c861">EntityType</a> = XT::Grid::extract_entity_t&lt; <a class="el" href="a02697.html#a612d5f2c494afbac90aefe287c5218af">GridLayerType</a> &gt;</td></tr>
+<tr class="separator:a69a2804414ed68581c896fb27231c861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa23341718ce8908c238218ba600404ef"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02869.html#abed7760c07fba56f24321ecadab90b20">Traits::BaseFunctionSetType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02897.html#aa23341718ce8908c238218ba600404ef">BaseFunctionSetType</a></td></tr>
+<tr class="separator:aa23341718ce8908c238218ba600404ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afffbccede7f356154440263230fa5d5b"><td class="memItemLeft" align="right" valign="top">typedef Dune::XT::LA::SparsityPatternDefault&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02897.html#afffbccede7f356154440263230fa5d5b">PatternType</a></td></tr>
+<tr class="separator:afffbccede7f356154440263230fa5d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f272ef9d2fb75f252334f0ac180fed"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02869.html#a7e022e9b5cbaad7167d2c28531586024">Traits::derived_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02697.html#a77f272ef9d2fb75f252334f0ac180fed">derived_type</a></td></tr>
+<tr class="separator:a77f272ef9d2fb75f252334f0ac180fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37d53f5bed9714d19fe761c471041816"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02869.html#a9ece3706606e0f63e0fcdffc1d66d570">Traits::BackendType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02697.html#a37d53f5bed9714d19fe761c471041816">BackendType</a></td></tr>
+<tr class="separator:a37d53f5bed9714d19fe761c471041816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c3bdd899891ca550aa0d5b97f87ac40"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02869.html#a2c0945b0e6d90cbd6dff8a5c361dff56">Traits::MapperType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02697.html#a6c3bdd899891ca550aa0d5b97f87ac40">MapperType</a></td></tr>
+<tr class="separator:a6c3bdd899891ca550aa0d5b97f87ac40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a612d5f2c494afbac90aefe287c5218af"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02869.html#aa136dd3a507fff12ba14e98544e785f1">Traits::GridLayerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02697.html#a612d5f2c494afbac90aefe287c5218af">GridLayerType</a></td></tr>
+<tr class="separator:a612d5f2c494afbac90aefe287c5218af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c7a2ffc9149887b84deb238224b6e31"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02869.html#a4f5d5f00d4608a784289534bd775368c">Traits::RangeFieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02697.html#a5c7a2ffc9149887b84deb238224b6e31">RangeFieldType</a></td></tr>
+<tr class="separator:a5c7a2ffc9149887b84deb238224b6e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ade9d3bfb134ed4adfe7ecbc430333c4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02861.html#ade9d3bfb134ed4adfe7ecbc430333c4c">RaviartThomasBasefunctionSet</a> (const <a class="el" href="a02861.html#a712b353833e0f4156dce3259138276db">EntityType</a> &amp;en, const <a class="el" href="a02861.html#a4cc952d3fa6ee44cefe529106eb1003e">BackendType</a> &amp;finite_element, const std::vector&lt; R &gt; &amp;switches)</td></tr>
-<tr class="separator:ade9d3bfb134ed4adfe7ecbc430333c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7897163e924e736ea5bb0da823c65c99"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02861.html#a7897163e924e736ea5bb0da823c65c99">RaviartThomasBasefunctionSet</a> (const <a class="el" href="a02861.html">ThisType</a> &amp;)=default</td></tr>
-<tr class="separator:a7897163e924e736ea5bb0da823c65c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a589579510226b16a17900d2c2b223e78"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02861.html#a589579510226b16a17900d2c2b223e78">RaviartThomasBasefunctionSet</a> (<a class="el" href="a02861.html">ThisType</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a589579510226b16a17900d2c2b223e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14f4884690d2d5b9c77c49393c3820a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a02861.html">ThisType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02861.html#a14f4884690d2d5b9c77c49393c3820a8">operator=</a> (const <a class="el" href="a02861.html">ThisType</a> &amp;)=delete</td></tr>
-<tr class="separator:a14f4884690d2d5b9c77c49393c3820a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78ec8cbc1e2a6168b70388dd1c141c38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a02861.html">ThisType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02861.html#a78ec8cbc1e2a6168b70388dd1c141c38">operator=</a> (<a class="el" href="a02861.html">ThisType</a> &amp;&amp;)=delete</td></tr>
-<tr class="separator:a78ec8cbc1e2a6168b70388dd1c141c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa15bde8b24a5fa25644f27c6d678c401"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a02861.html#a4cc952d3fa6ee44cefe529106eb1003e">BackendType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02861.html#aa15bde8b24a5fa25644f27c6d678c401">backend</a> () const</td></tr>
-<tr class="separator:aa15bde8b24a5fa25644f27c6d678c401"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada97a229ee5bc9004cd15ef979cac19c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02861.html#ada97a229ee5bc9004cd15ef979cac19c">size</a> () const override final</td></tr>
-<tr class="separator:ada97a229ee5bc9004cd15ef979cac19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3b515c96c5b591cc5136c5bda885e18"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02861.html#ae3b515c96c5b591cc5136c5bda885e18">order</a> (const XT::Common::Parameter &amp;={}) const override final</td></tr>
-<tr class="separator:ae3b515c96c5b591cc5136c5bda885e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06d0c7fa5942c40e759409da1753fa57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02861.html#a06d0c7fa5942c40e759409da1753fa57">evaluate</a> (const DomainType &amp;xx, std::vector&lt; RangeType &gt; &amp;ret, const XT::Common::Parameter &amp;={}) const override final</td></tr>
-<tr class="separator:a06d0c7fa5942c40e759409da1753fa57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa89861399cc2a7166750995e2881a486"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02861.html#aa89861399cc2a7166750995e2881a486">jacobian</a> (const DomainType &amp;xx, std::vector&lt; JacobianRangeType &gt; &amp;ret, const XT::Common::Parameter &amp;={}) const override final</td></tr>
-<tr class="separator:aa89861399cc2a7166750995e2881a486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13ef38350d26d9e2fd3c067406efbbaf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02861.html#a13ef38350d26d9e2fd3c067406efbbaf">RaviartThomasSpace</a> (<a class="el" href="a02697.html#a612d5f2c494afbac90aefe287c5218af">GridLayerType</a> grd_lr)</td></tr>
+<tr class="separator:a13ef38350d26d9e2fd3c067406efbbaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95c06cf5d66b193f5167efba8a5dc1f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02861.html#a95c06cf5d66b193f5167efba8a5dc1f6">RaviartThomasSpace</a> (const <a class="el" href="a02861.html">ThisType</a> &amp;)=default</td></tr>
+<tr class="separator:a95c06cf5d66b193f5167efba8a5dc1f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eea13a90416e47b067936b7f5ed6384"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02861.html#a3eea13a90416e47b067936b7f5ed6384">RaviartThomasSpace</a> (<a class="el" href="a02861.html">ThisType</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a3eea13a90416e47b067936b7f5ed6384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24c198c9fca7c6090248024f3aeb93cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a02861.html">ThisType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02861.html#a24c198c9fca7c6090248024f3aeb93cf">operator=</a> (const <a class="el" href="a02861.html">ThisType</a> &amp;)=delete</td></tr>
+<tr class="separator:a24c198c9fca7c6090248024f3aeb93cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85e19576dfa59a509d6d5ce49ecb3fcf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a02861.html">ThisType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02861.html#a85e19576dfa59a509d6d5ce49ecb3fcf">operator=</a> (<a class="el" href="a02861.html">ThisType</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a85e19576dfa59a509d6d5ce49ecb3fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76360c2dd0a7518081cbb4e03b82c3fc"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a02697.html#a612d5f2c494afbac90aefe287c5218af">GridLayerType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02861.html#a76360c2dd0a7518081cbb4e03b82c3fc">grid_layer</a> () const</td></tr>
+<tr class="separator:a76360c2dd0a7518081cbb4e03b82c3fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10d299cdef7a2228d49ba65ba9b0051b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a02697.html#a37d53f5bed9714d19fe761c471041816">BackendType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02861.html#a10d299cdef7a2228d49ba65ba9b0051b">backend</a> () const</td></tr>
+<tr class="separator:a10d299cdef7a2228d49ba65ba9b0051b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96a6a0e1a29446ad6efbe86c62224e91"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a02697.html#a6c3bdd899891ca550aa0d5b97f87ac40">MapperType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02861.html#a96a6a0e1a29446ad6efbe86c62224e91">mapper</a> () const</td></tr>
+<tr class="separator:a96a6a0e1a29446ad6efbe86c62224e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade31c1fccf8007124ff9757b543b243e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a02697.html#aa23341718ce8908c238218ba600404ef">BaseFunctionSetType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02861.html#ade31c1fccf8007124ff9757b543b243e">base_function_set</a> (const <a class="el" href="a02697.html#a69a2804414ed68581c896fb27231c861">EntityType</a> &amp;entity) const</td></tr>
+<tr class="separator:ade31c1fccf8007124ff9757b543b243e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bc8ceaacc32478fce8032076fb6cc14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a02861.html#abf9153f1cf57fb3857672e922ae7a45a">DofCommunicatorType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02861.html#a0bc8ceaacc32478fce8032076fb6cc14">dof_communicator</a> () const</td></tr>
+<tr class="separator:a0bc8ceaacc32478fce8032076fb6cc14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05189fdfab3ad607a23a6637467442e0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02861.html#a05189fdfab3ad607a23a6637467442e0">local_DoF_indices</a> (const <a class="el" href="a02697.html#a69a2804414ed68581c896fb27231c861">EntityType</a> &amp;entity) const</td></tr>
+<tr class="separator:a05189fdfab3ad607a23a6637467442e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac62bb548d7bd4876c22ded103c0e26f9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00242.html#gac62bb548d7bd4876c22ded103c0e26f9">local_DoF_indices_2dsimplex_order0</a> (const <a class="el" href="a02697.html#a69a2804414ed68581c896fb27231c861">EntityType</a> &amp;entity) const</td></tr>
+<tr class="separator:gac62bb548d7bd4876c22ded103c0e26f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b812a8604157df50c87d818f8e9504e"><td class="memItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GL &gt;::value, <a class="el" href="a02697.html#afffbccede7f356154440263230fa5d5b">PatternType</a> &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00242.html#ga5b812a8604157df50c87d818f8e9504e">compute_pattern</a> (const GL &amp;grd_layr, const <a class="el" href="a02697.html">SpaceInterface</a>&lt; S, d, r, rC &gt; &amp;ansatz_space) const</td></tr>
+<tr class="separator:ga5b812a8604157df50c87d818f8e9504e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1889e9be2a58dedcc0410f63cbc5c596"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a02697.html#afffbccede7f356154440263230fa5d5b">PatternType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00242.html#ga1889e9be2a58dedcc0410f63cbc5c596">compute_pattern</a> () const</td></tr>
+<tr class="separator:ga1889e9be2a58dedcc0410f63cbc5c596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae119fa0bc7f56fbe148427af85dfc32d"><td class="memTemplParams" colspan="2">template&lt;class S , size_t d, size_t r, size_t rC&gt; </td></tr>
+<tr class="memitem:gae119fa0bc7f56fbe148427af85dfc32d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a02697.html#afffbccede7f356154440263230fa5d5b">PatternType</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00242.html#gae119fa0bc7f56fbe148427af85dfc32d">compute_pattern</a> (const <a class="el" href="a02697.html">SpaceInterface</a>&lt; S, d, r, rC &gt; &amp;ansatz_space) const</td></tr>
+<tr class="separator:gae119fa0bc7f56fbe148427af85dfc32d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga219956c9b45a6d3ba24ef966784eb316"><td class="memTemplParams" colspan="2">template&lt;class GL &gt; </td></tr>
+<tr class="memitem:ga219956c9b45a6d3ba24ef966784eb316"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GL &gt;::value, <a class="el" href="a02697.html#afffbccede7f356154440263230fa5d5b">PatternType</a> &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00242.html#ga219956c9b45a6d3ba24ef966784eb316">compute_pattern</a> (const GL &amp;grd_layr) const</td></tr>
+<tr class="separator:ga219956c9b45a6d3ba24ef966784eb316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga56ef0fbb2c9a9f817e111be6cc0d093e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00242.html#ga56ef0fbb2c9a9f817e111be6cc0d093e">local_constraints</a> (const <a class="el" href="a02697.html">SpaceInterface</a>&lt; S, d, r, rC &gt; &amp;, const <a class="el" href="a02697.html#a69a2804414ed68581c896fb27231c861">EntityType</a> &amp;, <a class="el" href="a02485.html">ConstraintsInterface</a>&lt; C &gt; &amp;) const</td></tr>
+<tr class="separator:ga56ef0fbb2c9a9f817e111be6cc0d093e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab34a1a8a7ab86a7084bda258f7866b2a"><td class="memTemplParams" colspan="2">template&lt;class C &gt; </td></tr>
+<tr class="memitem:gab34a1a8a7ab86a7084bda258f7866b2a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00241.html#gab34a1a8a7ab86a7084bda258f7866b2a">local_constraints</a> (const <a class="el" href="a02697.html#a69a2804414ed68581c896fb27231c861">EntityType</a> &amp;entity, <a class="el" href="a02485.html">ConstraintsInterface</a>&lt; C &gt; &amp;ret) const</td></tr>
+<tr class="separator:gab34a1a8a7ab86a7084bda258f7866b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba6092c1e7d72b7358f369e983a1166c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a02697.html#afffbccede7f356154440263230fa5d5b">PatternType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00242.html#gaba6092c1e7d72b7358f369e983a1166c">compute_volume_pattern</a> () const</td></tr>
+<tr class="separator:gaba6092c1e7d72b7358f369e983a1166c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b5686edeacd96e30c8d2f2ea43f00b6"><td class="memTemplParams" colspan="2">template&lt;class S , size_t d, size_t r, size_t rC&gt; </td></tr>
+<tr class="memitem:ga1b5686edeacd96e30c8d2f2ea43f00b6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a02697.html#afffbccede7f356154440263230fa5d5b">PatternType</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00242.html#ga1b5686edeacd96e30c8d2f2ea43f00b6">compute_volume_pattern</a> (const <a class="el" href="a02697.html">SpaceInterface</a>&lt; S, d, r, rC &gt; &amp;ansatz_space) const</td></tr>
+<tr class="separator:ga1b5686edeacd96e30c8d2f2ea43f00b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b6dacf200a2b2bc235737bc016de2ae"><td class="memTemplParams" colspan="2">template&lt;class GL &gt; </td></tr>
+<tr class="memitem:ga3b6dacf200a2b2bc235737bc016de2ae"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GL &gt;::value, <a class="el" href="a02697.html#afffbccede7f356154440263230fa5d5b">PatternType</a> &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00242.html#ga3b6dacf200a2b2bc235737bc016de2ae">compute_volume_pattern</a> (const GL &amp;grd_layr) const</td></tr>
+<tr class="separator:ga3b6dacf200a2b2bc235737bc016de2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf17f0d59f340ff620e2de8c5dc0ef17e"><td class="memTemplParams" colspan="2">template&lt;class GL , class S , size_t d, size_t r, size_t rC&gt; </td></tr>
+<tr class="memitem:gaf17f0d59f340ff620e2de8c5dc0ef17e"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GL &gt;::value, <a class="el" href="a02697.html#afffbccede7f356154440263230fa5d5b">PatternType</a> &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00242.html#gaf17f0d59f340ff620e2de8c5dc0ef17e">compute_volume_pattern</a> (const GL &amp;grd_layr, const <a class="el" href="a02697.html">SpaceInterface</a>&lt; S, d, r, rC &gt; &amp;ansatz_space) const</td></tr>
+<tr class="memdesc:gaf17f0d59f340ff620e2de8c5dc0ef17e"><td class="mdescLeft">&#160;</td><td class="mdescRight">computes a sparsity pattern, where this space is the test space (rows/outer) and the other space is the ansatz space (cols/inner)  <a href="a00242.html#gaf17f0d59f340ff620e2de8c5dc0ef17e">More...</a><br /></td></tr>
+<tr class="separator:gaf17f0d59f340ff620e2de8c5dc0ef17e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab4aa0fefbbab01d95ceb9eb9b7f15be5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a02697.html#afffbccede7f356154440263230fa5d5b">PatternType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00242.html#gab4aa0fefbbab01d95ceb9eb9b7f15be5">compute_face_and_volume_pattern</a> () const</td></tr>
+<tr class="separator:gab4aa0fefbbab01d95ceb9eb9b7f15be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab8ca2acca40e356431a41b0eaf40c678"><td class="memTemplParams" colspan="2">template&lt;class GL &gt; </td></tr>
+<tr class="memitem:gab8ca2acca40e356431a41b0eaf40c678"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GL &gt;::value, <a class="el" href="a02697.html#afffbccede7f356154440263230fa5d5b">PatternType</a> &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00242.html#gab8ca2acca40e356431a41b0eaf40c678">compute_face_and_volume_pattern</a> (const GL &amp;grd_layr) const</td></tr>
+<tr class="separator:gab8ca2acca40e356431a41b0eaf40c678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac7edddcec0ea543ecdadb806b0c970c5"><td class="memTemplParams" colspan="2">template&lt;class S , size_t d, size_t r, size_t rC&gt; </td></tr>
+<tr class="memitem:gac7edddcec0ea543ecdadb806b0c970c5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a02697.html#afffbccede7f356154440263230fa5d5b">PatternType</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00242.html#gac7edddcec0ea543ecdadb806b0c970c5">compute_face_and_volume_pattern</a> (const <a class="el" href="a02697.html">SpaceInterface</a>&lt; S, d, r, rC &gt; &amp;ansatz_space) const</td></tr>
+<tr class="separator:gac7edddcec0ea543ecdadb806b0c970c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75bb69b87ab47ef1b6a271955afb1822"><td class="memTemplParams" colspan="2">template&lt;class GL , class S , size_t d, size_t r, size_t rC&gt; </td></tr>
+<tr class="memitem:ga75bb69b87ab47ef1b6a271955afb1822"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GL &gt;::value, <a class="el" href="a02697.html#afffbccede7f356154440263230fa5d5b">PatternType</a> &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00242.html#ga75bb69b87ab47ef1b6a271955afb1822">compute_face_and_volume_pattern</a> (const GL &amp;grd_layr, const <a class="el" href="a02697.html">SpaceInterface</a>&lt; S, d, r, rC &gt; &amp;ansatz_space) const</td></tr>
+<tr class="memdesc:ga75bb69b87ab47ef1b6a271955afb1822"><td class="mdescLeft">&#160;</td><td class="mdescRight">computes a DG sparsity pattern, where this space is the test space (rows/outer) and the other space is the ansatz space (cols/inner)  <a href="a00242.html#ga75bb69b87ab47ef1b6a271955afb1822">More...</a><br /></td></tr>
+<tr class="separator:ga75bb69b87ab47ef1b6a271955afb1822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga420494c7ae746c05929f8c745b93c7e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a02697.html#afffbccede7f356154440263230fa5d5b">PatternType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00242.html#ga420494c7ae746c05929f8c745b93c7e8">compute_face_pattern</a> () const</td></tr>
+<tr class="separator:ga420494c7ae746c05929f8c745b93c7e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga50146f3577eef40bcdc0a360077becb1"><td class="memTemplParams" colspan="2">template&lt;class GL &gt; </td></tr>
+<tr class="memitem:ga50146f3577eef40bcdc0a360077becb1"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GL &gt;::value, <a class="el" href="a02697.html#afffbccede7f356154440263230fa5d5b">PatternType</a> &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00242.html#ga50146f3577eef40bcdc0a360077becb1">compute_face_pattern</a> (const GL &amp;grd_layr) const</td></tr>
+<tr class="separator:ga50146f3577eef40bcdc0a360077becb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8572ba01253d21aea2ff44c929f072b3"><td class="memTemplParams" colspan="2">template&lt;class S , size_t d, size_t r, size_t rC&gt; </td></tr>
+<tr class="memitem:ga8572ba01253d21aea2ff44c929f072b3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a02697.html#afffbccede7f356154440263230fa5d5b">PatternType</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00242.html#ga8572ba01253d21aea2ff44c929f072b3">compute_face_pattern</a> (const <a class="el" href="a02697.html">SpaceInterface</a>&lt; S, d, r, rC &gt; &amp;space) const</td></tr>
+<tr class="separator:ga8572ba01253d21aea2ff44c929f072b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga834ab374a1efcc2a218df954c2b8844f"><td class="memTemplParams" colspan="2">template&lt;class GL , class S , size_t d, size_t r, size_t rC&gt; </td></tr>
+<tr class="memitem:ga834ab374a1efcc2a218df954c2b8844f"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GL &gt;::value, <a class="el" href="a02697.html#afffbccede7f356154440263230fa5d5b">PatternType</a> &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00242.html#ga834ab374a1efcc2a218df954c2b8844f">compute_face_pattern</a> (const GL &amp;grd_layr, const <a class="el" href="a02697.html">SpaceInterface</a>&lt; S, d, r, rC &gt; &amp;ansatz_space) const</td></tr>
+<tr class="separator:ga834ab374a1efcc2a218df954c2b8844f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7bfb995d8095aa9deee57caaa3f2e0d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00242.html#ga7bfb995d8095aa9deee57caaa3f2e0d3">visualize</a> (const std::string filename_prefix=&quot;&quot;) const</td></tr>
+<tr class="separator:ga7bfb995d8095aa9deee57caaa3f2e0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:gaca528d81535d942320d9c5afda952fc6"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00242.html#gaca528d81535d942320d9c5afda952fc6">associates_data_with</a> (int codim)</td></tr>
+<tr class="separator:gaca528d81535d942320d9c5afda952fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a9a26a0a9299ae71b83e5ebd4a593de6e"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02697.html#a9a26a0a9299ae71b83e5ebd4a593de6e">polOrder</a> = Traits::polOrder</td></tr>
+<tr class="separator:a9a26a0a9299ae71b83e5ebd4a593de6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05b593c5578e16815a58d9d6f66c29e4"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02697.html#a05b593c5578e16815a58d9d6f66c29e4">continuous</a> = Traits::continuous</td></tr>
+<tr class="separator:a05b593c5578e16815a58d9d6f66c29e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a283acec8bcf63cfe6e7ee2cf2c207d64"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02697.html#a283acec8bcf63cfe6e7ee2cf2c207d64">dimDomain</a> = domainDim</td></tr>
+<tr class="separator:a283acec8bcf63cfe6e7ee2cf2c207d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7661e52b7977215293e60a47aa02a79f"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02697.html#a7661e52b7977215293e60a47aa02a79f">dimRange</a> = rangeDim</td></tr>
+<tr class="separator:a7661e52b7977215293e60a47aa02a79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f63af8eb27dfde54b0f63c04cc25995"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02697.html#a8f63af8eb27dfde54b0f63c04cc25995">dimRangeCols</a> = rangeDimCols</td></tr>
+<tr class="separator:a8f63af8eb27dfde54b0f63c04cc25995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba4c563534353bda8f1eb210983eba46"><td class="memItemLeft" align="right" valign="top">static const constexpr <a class="el" href="a00246.html#afd9e79bf2e05d76e877c835fa352f045">Backends</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02697.html#aba4c563534353bda8f1eb210983eba46">backend_type</a> {Traits::backend_type}</td></tr>
+<tr class="separator:aba4c563534353bda8f1eb210983eba46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a8dd501f1183077f075d09fd295f9fd"><td class="memItemLeft" align="right" valign="top">static const XT::Grid::Backends&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02697.html#a5a8dd501f1183077f075d09fd295f9fd">layer_backend</a> = Traits::layer_backend</td></tr>
+<tr class="separator:a5a8dd501f1183077f075d09fd295f9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a4cc952d3fa6ee44cefe529106eb1003e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cc952d3fa6ee44cefe529106eb1003e">&#9670;&nbsp;</a></span>BackendType</h2>
+<a id="a37d53f5bed9714d19fe761c471041816"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37d53f5bed9714d19fe761c471041816">&#9670;&nbsp;</a></span>BackendType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class FE, class E, class R&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a02869.html#a5a9003330dd6ba9f498c4d8a0c5581a8">Traits::BackendType</a> <a class="el" href="a02429.html">Dune::GDT::BaseFunctionSetInterface</a>&lt; <a class="el" href="a02861.html#a9b208f3f10a915a5eb6c2d825def2fbc">Traits</a>, D, d, R, r, rC &gt;::<a class="el" href="a02861.html#a4cc952d3fa6ee44cefe529106eb1003e">BackendType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aacfbd07aba605ae0e871c8f321425530"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacfbd07aba605ae0e871c8f321425530">&#9670;&nbsp;</a></span>derived_type</h2>
-
-<div class="memitem">
-<div class="memproto">
+template&lt;class Traits, size_t domainDim, size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a02869.html">internal::RaviartThomasBasefunctionSetTraits</a>&lt; FE, E, R &gt; ::<a class="el" href="a02429.html#aacfbd07aba605ae0e871c8f321425530">derived_type</a> <a class="el" href="a02429.html">Dune::GDT::BaseFunctionSetInterface</a>&lt; <a class="el" href="a02869.html">internal::RaviartThomasBasefunctionSetTraits</a>&lt; FE, E, R &gt; , E::Geometry::ctype , d, R, r, rC &gt;::<a class="el" href="a02429.html#aacfbd07aba605ae0e871c8f321425530">derived_type</a></td>
+          <td class="memname">typedef <a class="el" href="a02869.html#a9ece3706606e0f63e0fcdffc1d66d570">Traits::BackendType</a> <a class="el" href="a02697.html">Dune::GDT::SpaceInterface</a>&lt; <a class="el" href="a02861.html#a251769a0e2e81d8f3e1e67c936751ced">Traits</a>, domainDim, rangeDim, rangeDimCols &gt;::<a class="el" href="a02697.html#a37d53f5bed9714d19fe761c471041816">BackendType</a></td>
         </tr>
       </table>
   </td>
@@ -154,32 +236,238 @@ template&lt;class FE, class E, class R&gt; </div>
 
 </div>
 </div>
-<a id="a712b353833e0f4156dce3259138276db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a712b353833e0f4156dce3259138276db">&#9670;&nbsp;</a></span>EntityType</h2>
+<a id="aa23341718ce8908c238218ba600404ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa23341718ce8908c238218ba600404ef">&#9670;&nbsp;</a></span>BaseFunctionSetType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a02869.html#abed7760c07fba56f24321ecadab90b20">Traits::BaseFunctionSetType</a> <a class="el" href="a02697.html">Dune::GDT::SpaceInterface</a>&lt; <a class="el" href="a02861.html#a251769a0e2e81d8f3e1e67c936751ced">Traits</a>, domainDim, rangeDim, 1  &gt;::<a class="el" href="a02697.html#aa23341718ce8908c238218ba600404ef">BaseFunctionSetType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a77f272ef9d2fb75f252334f0ac180fed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77f272ef9d2fb75f252334f0ac180fed">&#9670;&nbsp;</a></span>derived_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class FE, class E, class R&gt; </div>
+template&lt;class Traits, size_t domainDim, size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a02869.html#a75eeb34379761c0e10052173339a38ba">Traits::EntityType</a> <a class="el" href="a02429.html">Dune::GDT::BaseFunctionSetInterface</a>&lt; <a class="el" href="a02861.html#a9b208f3f10a915a5eb6c2d825def2fbc">Traits</a>, D, d, R, r, rC &gt;::<a class="el" href="a02861.html#a712b353833e0f4156dce3259138276db">EntityType</a></td>
+          <td class="memname">typedef <a class="el" href="a02869.html#a7e022e9b5cbaad7167d2c28531586024">Traits::derived_type</a> <a class="el" href="a02697.html">Dune::GDT::SpaceInterface</a>&lt; <a class="el" href="a02861.html#a251769a0e2e81d8f3e1e67c936751ced">Traits</a>, domainDim, rangeDim, rangeDimCols &gt;::<a class="el" href="a02697.html#a77f272ef9d2fb75f252334f0ac180fed">derived_type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abf9153f1cf57fb3857672e922ae7a45a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf9153f1cf57fb3857672e922ae7a45a">&#9670;&nbsp;</a></span>DofCommunicatorType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GL , int p, class R &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a02869.html#a8fd0d1b6f8b549e07b8e8a9abb8f6591">Traits::DofCommunicatorType</a> <a class="el" href="a02861.html">Dune::GDT::RaviartThomasSpace</a>&lt; GL, p, R &gt;::<a class="el" href="a02861.html#abf9153f1cf57fb3857672e922ae7a45a">DofCommunicatorType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a9b208f3f10a915a5eb6c2d825def2fbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b208f3f10a915a5eb6c2d825def2fbc">&#9670;&nbsp;</a></span>Traits</h2>
+<a id="a935fbf65ae00e68846d3f5b24d0ff32e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a935fbf65ae00e68846d3f5b24d0ff32e">&#9670;&nbsp;</a></span>DomainFieldType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef GridLayerType::ctype <a class="el" href="a02697.html">Dune::GDT::SpaceInterface</a>&lt; <a class="el" href="a02861.html#a251769a0e2e81d8f3e1e67c936751ced">Traits</a>, domainDim, rangeDim, 1  &gt;::<a class="el" href="a02697.html#a935fbf65ae00e68846d3f5b24d0ff32e">DomainFieldType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada40ae3649f9292fbdaa307b1cf29217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada40ae3649f9292fbdaa307b1cf29217">&#9670;&nbsp;</a></span>DomainType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef FieldVector&lt;<a class="el" href="a02697.html#a935fbf65ae00e68846d3f5b24d0ff32e">DomainFieldType</a>, <a class="el" href="a02697.html#a283acec8bcf63cfe6e7ee2cf2c207d64">dimDomain</a>&gt; <a class="el" href="a02697.html">Dune::GDT::SpaceInterface</a>&lt; <a class="el" href="a02861.html#a251769a0e2e81d8f3e1e67c936751ced">Traits</a>, domainDim, rangeDim, 1  &gt;::<a class="el" href="a02697.html#ada40ae3649f9292fbdaa307b1cf29217">DomainType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a69a2804414ed68581c896fb27231c861"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69a2804414ed68581c896fb27231c861">&#9670;&nbsp;</a></span>EntityType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a02697.html">Dune::GDT::SpaceInterface</a>&lt; <a class="el" href="a02861.html#a251769a0e2e81d8f3e1e67c936751ced">Traits</a>, domainDim, rangeDim, 1  &gt;::<a class="el" href="a02697.html#a69a2804414ed68581c896fb27231c861">EntityType</a> =  XT::Grid::extract_entity_t&lt;<a class="el" href="a02697.html#a612d5f2c494afbac90aefe287c5218af">GridLayerType</a>&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a612d5f2c494afbac90aefe287c5218af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a612d5f2c494afbac90aefe287c5218af">&#9670;&nbsp;</a></span>GridLayerType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class FE, class E, class R&gt; </div>
+template&lt;class Traits, size_t domainDim, size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a02861.html">Dune::GDT::RaviartThomasBasefunctionSet</a>&lt; FE, E, R &gt;::<a class="el" href="a02861.html#a9b208f3f10a915a5eb6c2d825def2fbc">Traits</a> =  <a class="el" href="a02869.html">internal::RaviartThomasBasefunctionSetTraits</a>&lt;FE, E, R&gt;</td>
+          <td class="memname">typedef <a class="el" href="a02869.html#aa136dd3a507fff12ba14e98544e785f1">Traits::GridLayerType</a> <a class="el" href="a02697.html">Dune::GDT::SpaceInterface</a>&lt; <a class="el" href="a02861.html#a251769a0e2e81d8f3e1e67c936751ced">Traits</a>, domainDim, rangeDim, rangeDimCols &gt;::<a class="el" href="a02697.html#a612d5f2c494afbac90aefe287c5218af">GridLayerType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c3bdd899891ca550aa0d5b97f87ac40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c3bdd899891ca550aa0d5b97f87ac40">&#9670;&nbsp;</a></span>MapperType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits, size_t domainDim, size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a02869.html#a2c0945b0e6d90cbd6dff8a5c361dff56">Traits::MapperType</a> <a class="el" href="a02697.html">Dune::GDT::SpaceInterface</a>&lt; <a class="el" href="a02861.html#a251769a0e2e81d8f3e1e67c936751ced">Traits</a>, domainDim, rangeDim, rangeDimCols &gt;::MapperType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afffbccede7f356154440263230fa5d5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afffbccede7f356154440263230fa5d5b">&#9670;&nbsp;</a></span>PatternType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Dune::XT::LA::SparsityPatternDefault <a class="el" href="a02697.html">Dune::GDT::SpaceInterface</a>&lt; <a class="el" href="a02861.html#a251769a0e2e81d8f3e1e67c936751ced">Traits</a>, domainDim, rangeDim, 1  &gt;::<a class="el" href="a02697.html#afffbccede7f356154440263230fa5d5b">PatternType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5c7a2ffc9149887b84deb238224b6e31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c7a2ffc9149887b84deb238224b6e31">&#9670;&nbsp;</a></span>RangeFieldType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits, size_t domainDim, size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a02869.html#a4f5d5f00d4608a784289534bd775368c">Traits::RangeFieldType</a> <a class="el" href="a02697.html">Dune::GDT::SpaceInterface</a>&lt; <a class="el" href="a02861.html#a251769a0e2e81d8f3e1e67c936751ced">Traits</a>, domainDim, rangeDim, rangeDimCols &gt;::<a class="el" href="a02697.html#a5c7a2ffc9149887b84deb238224b6e31">RangeFieldType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a251769a0e2e81d8f3e1e67c936751ced"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a251769a0e2e81d8f3e1e67c936751ced">&#9670;&nbsp;</a></span>Traits</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GL , int p, class R &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a02861.html">Dune::GDT::RaviartThomasSpace</a>&lt; GL, p, R &gt;::<a class="el" href="a02861.html#a251769a0e2e81d8f3e1e67c936751ced">Traits</a> =  <a class="el" href="a02869.html">internal::RaviartThomasSpaceTraits</a>&lt;GL, p, R&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -187,39 +475,23 @@ template&lt;class FE, class E, class R&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ade9d3bfb134ed4adfe7ecbc430333c4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade9d3bfb134ed4adfe7ecbc430333c4c">&#9670;&nbsp;</a></span>RaviartThomasBasefunctionSet() <span class="overload">[1/3]</span></h2>
+<a id="a13ef38350d26d9e2fd3c067406efbbaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13ef38350d26d9e2fd3c067406efbbaf">&#9670;&nbsp;</a></span>RaviartThomasSpace() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class FE, class E, class R&gt; </div>
+template&lt;class GL , int p, class R &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a02861.html">Dune::GDT::RaviartThomasBasefunctionSet</a>&lt; FE, E, R &gt;::<a class="el" href="a02861.html">RaviartThomasBasefunctionSet</a> </td>
+          <td class="memname"><a class="el" href="a02861.html">Dune::GDT::RaviartThomasSpace</a>&lt; GL, p, R &gt;::<a class="el" href="a02861.html">RaviartThomasSpace</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a02861.html#a712b353833e0f4156dce3259138276db">EntityType</a> &amp;&#160;</td>
-          <td class="paramname"><em>en</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="a02697.html#a612d5f2c494afbac90aefe287c5218af">GridLayerType</a>&#160;</td>
+          <td class="paramname"><em>grd_lr</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a02861.html#a4cc952d3fa6ee44cefe529106eb1003e">BackendType</a> &amp;&#160;</td>
-          <td class="paramname"><em>finite_element</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; R &gt; &amp;&#160;</td>
-          <td class="paramname"><em>switches</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -231,19 +503,19 @@ template&lt;class FE, class E, class R&gt; </div>
 
 </div>
 </div>
-<a id="a7897163e924e736ea5bb0da823c65c99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7897163e924e736ea5bb0da823c65c99">&#9670;&nbsp;</a></span>RaviartThomasBasefunctionSet() <span class="overload">[2/3]</span></h2>
+<a id="a95c06cf5d66b193f5167efba8a5dc1f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95c06cf5d66b193f5167efba8a5dc1f6">&#9670;&nbsp;</a></span>RaviartThomasSpace() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class FE, class E, class R&gt; </div>
+template&lt;class GL , int p, class R &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a02861.html">Dune::GDT::RaviartThomasBasefunctionSet</a>&lt; FE, E, R &gt;::<a class="el" href="a02861.html">RaviartThomasBasefunctionSet</a> </td>
+          <td class="memname"><a class="el" href="a02861.html">Dune::GDT::RaviartThomasSpace</a>&lt; GL, p, R &gt;::<a class="el" href="a02861.html">RaviartThomasSpace</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a02861.html">ThisType</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -259,19 +531,19 @@ template&lt;class FE, class E, class R&gt; </div>
 
 </div>
 </div>
-<a id="a589579510226b16a17900d2c2b223e78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a589579510226b16a17900d2c2b223e78">&#9670;&nbsp;</a></span>RaviartThomasBasefunctionSet() <span class="overload">[3/3]</span></h2>
+<a id="a3eea13a90416e47b067936b7f5ed6384"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eea13a90416e47b067936b7f5ed6384">&#9670;&nbsp;</a></span>RaviartThomasSpace() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class FE, class E, class R&gt; </div>
+template&lt;class GL , int p, class R &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a02861.html">Dune::GDT::RaviartThomasBasefunctionSet</a>&lt; FE, E, R &gt;::<a class="el" href="a02861.html">RaviartThomasBasefunctionSet</a> </td>
+          <td class="memname"><a class="el" href="a02861.html">Dune::GDT::RaviartThomasSpace</a>&lt; GL, p, R &gt;::<a class="el" href="a02861.html">RaviartThomasSpace</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="a02861.html">ThisType</a> &amp;&amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -288,19 +560,45 @@ template&lt;class FE, class E, class R&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa15bde8b24a5fa25644f27c6d678c401"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa15bde8b24a5fa25644f27c6d678c401">&#9670;&nbsp;</a></span>backend()</h2>
+<a id="gaca528d81535d942320d9c5afda952fc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaca528d81535d942320d9c5afda952fc6">&#9670;&nbsp;</a></span>associates_data_with()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class FE, class E, class R&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a02861.html#a4cc952d3fa6ee44cefe529106eb1003e">BackendType</a>&amp; <a class="el" href="a02861.html">Dune::GDT::RaviartThomasBasefunctionSet</a>&lt; FE, E, R &gt;::backend </td>
+          <td class="memname">static constexpr bool <a class="el" href="a02897.html">Dune::GDT::RtSpaceInterface</a>&lt; <a class="el" href="a02869.html">internal::RaviartThomasSpaceTraits</a>&lt; GL, p, R &gt; , domainDim, rangeDim, 1  &gt;::associates_data_with </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>codim</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a10d299cdef7a2228d49ba65ba9b0051b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10d299cdef7a2228d49ba65ba9b0051b">&#9670;&nbsp;</a></span>backend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GL , int p, class R &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a02697.html#a37d53f5bed9714d19fe761c471041816">BackendType</a>&amp; <a class="el" href="a02861.html">Dune::GDT::RaviartThomasSpace</a>&lt; GL, p, R &gt;::backend </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -315,34 +613,54 @@ template&lt;class FE, class E, class R&gt; </div>
 
 </div>
 </div>
-<a id="a06d0c7fa5942c40e759409da1753fa57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06d0c7fa5942c40e759409da1753fa57">&#9670;&nbsp;</a></span>evaluate()</h2>
+<a id="ade31c1fccf8007124ff9757b543b243e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade31c1fccf8007124ff9757b543b243e">&#9670;&nbsp;</a></span>base_function_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class FE, class E, class R&gt; </div>
+template&lt;class GL , int p, class R &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a02861.html">Dune::GDT::RaviartThomasBasefunctionSet</a>&lt; FE, E, R &gt;::evaluate </td>
+          <td class="memname"><a class="el" href="a02697.html#aa23341718ce8908c238218ba600404ef">BaseFunctionSetType</a> <a class="el" href="a02861.html">Dune::GDT::RaviartThomasSpace</a>&lt; GL, p, R &gt;::base_function_set </td>
           <td>(</td>
-          <td class="paramtype">const DomainType &amp;&#160;</td>
-          <td class="paramname"><em>xx</em>, </td>
+          <td class="paramtype">const <a class="el" href="a02697.html#a69a2804414ed68581c896fb27231c861">EntityType</a> &amp;&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5b812a8604157df50c87d818f8e9504e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5b812a8604157df50c87d818f8e9504e">&#9670;&nbsp;</a></span>compute_pattern()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt;XT::Grid::is_layer&lt;GL&gt;::value, <a class="el" href="a02697.html#afffbccede7f356154440263230fa5d5b">PatternType</a>&gt;::type <a class="el" href="a02897.html">Dune::GDT::RtSpaceInterface</a>&lt; <a class="el" href="a02869.html">internal::RaviartThomasSpaceTraits</a>&lt; GL, p, R &gt; , domainDim, rangeDim, 1  &gt;::compute_pattern </td>
+          <td>(</td>
+          <td class="paramtype">const GL &amp;&#160;</td>
+          <td class="paramname"><em>grd_layr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; RangeType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>ret</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
-          <td class="paramname"> = <code>{}</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="a02697.html">SpaceInterface</a>&lt; S, d, r, rC &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ansatz_space</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -352,41 +670,93 @@ template&lt;class FE, class E, class R&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aa89861399cc2a7166750995e2881a486"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa89861399cc2a7166750995e2881a486">&#9670;&nbsp;</a></span>jacobian()</h2>
+<a id="a0bc8ceaacc32478fce8032076fb6cc14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bc8ceaacc32478fce8032076fb6cc14">&#9670;&nbsp;</a></span>dof_communicator()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class FE, class E, class R&gt; </div>
+template&lt;class GL , int p, class R &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a02861.html">Dune::GDT::RaviartThomasBasefunctionSet</a>&lt; FE, E, R &gt;::jacobian </td>
+          <td class="memname"><a class="el" href="a02861.html#abf9153f1cf57fb3857672e922ae7a45a">DofCommunicatorType</a>&amp; <a class="el" href="a02861.html">Dune::GDT::RaviartThomasSpace</a>&lt; GL, p, R &gt;::dof_communicator </td>
           <td>(</td>
-          <td class="paramtype">const DomainType &amp;&#160;</td>
-          <td class="paramname"><em>xx</em>, </td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76360c2dd0a7518081cbb4e03b82c3fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76360c2dd0a7518081cbb4e03b82c3fc">&#9670;&nbsp;</a></span>grid_layer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GL , int p, class R &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a02697.html#a612d5f2c494afbac90aefe287c5218af">GridLayerType</a>&amp; <a class="el" href="a02861.html">Dune::GDT::RaviartThomasSpace</a>&lt; GL, p, R &gt;::grid_layer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga56ef0fbb2c9a9f817e111be6cc0d093e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga56ef0fbb2c9a9f817e111be6cc0d093e">&#9670;&nbsp;</a></span>local_constraints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a02897.html">Dune::GDT::RtSpaceInterface</a>&lt; <a class="el" href="a02869.html">internal::RaviartThomasSpaceTraits</a>&lt; GL, p, R &gt; , domainDim, rangeDim, 1  &gt;::local_constraints </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a02697.html">SpaceInterface</a>&lt; S, d, r, rC &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; JacobianRangeType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>ret</em>, </td>
+          <td class="paramtype">const <a class="el" href="a02697.html#a69a2804414ed68581c896fb27231c861">EntityType</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
-          <td class="paramname"> = <code>{}</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="a02485.html">ConstraintsInterface</a>&lt; C &gt; &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -396,26 +766,107 @@ template&lt;class FE, class E, class R&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a14f4884690d2d5b9c77c49393c3820a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14f4884690d2d5b9c77c49393c3820a8">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+<a id="a05189fdfab3ad607a23a6637467442e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05189fdfab3ad607a23a6637467442e0">&#9670;&nbsp;</a></span>local_DoF_indices()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class FE, class E, class R&gt; </div>
+template&lt;class GL , int p, class R &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a02861.html">ThisType</a>&amp; <a class="el" href="a02861.html">Dune::GDT::RaviartThomasBasefunctionSet</a>&lt; FE, E, R &gt;::operator= </td>
+          <td class="memname">std::vector&lt;size_t&gt; <a class="el" href="a02861.html">Dune::GDT::RaviartThomasSpace</a>&lt; GL, p, R &gt;::local_DoF_indices </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a02697.html#a69a2804414ed68581c896fb27231c861">EntityType</a> &amp;&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac62bb548d7bd4876c22ded103c0e26f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac62bb548d7bd4876c22ded103c0e26f9">&#9670;&nbsp;</a></span>local_DoF_indices_2dsimplex_order0()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;size_t&gt; <a class="el" href="a02897.html">Dune::GDT::RtSpaceInterface</a>&lt; <a class="el" href="a02869.html">internal::RaviartThomasSpaceTraits</a>&lt; GL, p, R &gt; , domainDim, rangeDim, 1  &gt;::local_DoF_indices_2dsimplex_order0 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a02697.html#a69a2804414ed68581c896fb27231c861">EntityType</a> &amp;&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a96a6a0e1a29446ad6efbe86c62224e91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96a6a0e1a29446ad6efbe86c62224e91">&#9670;&nbsp;</a></span>mapper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GL , int p, class R &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a02697.html#a6c3bdd899891ca550aa0d5b97f87ac40">MapperType</a>&amp; <a class="el" href="a02861.html">Dune::GDT::RaviartThomasSpace</a>&lt; GL, p, R &gt;::mapper </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a24c198c9fca7c6090248024f3aeb93cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24c198c9fca7c6090248024f3aeb93cf">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GL , int p, class R &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a02861.html">ThisType</a>&amp; <a class="el" href="a02861.html">Dune::GDT::RaviartThomasSpace</a>&lt; GL, p, R &gt;::operator= </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a02861.html">ThisType</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -431,19 +882,19 @@ template&lt;class FE, class E, class R&gt; </div>
 
 </div>
 </div>
-<a id="a78ec8cbc1e2a6168b70388dd1c141c38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78ec8cbc1e2a6168b70388dd1c141c38">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+<a id="a85e19576dfa59a509d6d5ce49ecb3fcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85e19576dfa59a509d6d5ce49ecb3fcf">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class FE, class E, class R&gt; </div>
+template&lt;class GL , int p, class R &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a02861.html">ThisType</a>&amp; <a class="el" href="a02861.html">Dune::GDT::RaviartThomasBasefunctionSet</a>&lt; FE, E, R &gt;::operator= </td>
+          <td class="memname"><a class="el" href="a02861.html">ThisType</a>&amp; <a class="el" href="a02861.html">Dune::GDT::RaviartThomasSpace</a>&lt; GL, p, R &gt;::operator= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="a02861.html">ThisType</a> &amp;&amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -459,55 +910,169 @@ template&lt;class FE, class E, class R&gt; </div>
 
 </div>
 </div>
-<a id="ae3b515c96c5b591cc5136c5bda885e18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3b515c96c5b591cc5136c5bda885e18">&#9670;&nbsp;</a></span>order()</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aba4c563534353bda8f1eb210983eba46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba4c563534353bda8f1eb210983eba46">&#9670;&nbsp;</a></span>backend_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class FE, class E, class R&gt; </div>
+template&lt;class Traits, size_t domainDim, size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t <a class="el" href="a02861.html">Dune::GDT::RaviartThomasBasefunctionSet</a>&lt; FE, E, R &gt;::order </td>
-          <td>(</td>
-          <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
-          <td class="paramname"> = <code>{}</code></td><td>)</td>
-          <td> const</td>
+          <td class="memname">const constexpr <a class="el" href="a00246.html#afd9e79bf2e05d76e877c835fa352f045">Backends</a> <a class="el" href="a02697.html">Dune::GDT::SpaceInterface</a>&lt; <a class="el" href="a02861.html#a251769a0e2e81d8f3e1e67c936751ced">Traits</a>, domainDim, rangeDim, rangeDimCols &gt;::backend_type {Traits::backend_type}</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ada97a229ee5bc9004cd15ef979cac19c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada97a229ee5bc9004cd15ef979cac19c">&#9670;&nbsp;</a></span>size()</h2>
+<a id="a05b593c5578e16815a58d9d6f66c29e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05b593c5578e16815a58d9d6f66c29e4">&#9670;&nbsp;</a></span>continuous</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class FE, class E, class R&gt; </div>
+template&lt;class Traits, size_t domainDim, size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t <a class="el" href="a02861.html">Dune::GDT::RaviartThomasBasefunctionSet</a>&lt; FE, E, R &gt;::size </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="memname">const bool <a class="el" href="a02697.html">Dune::GDT::SpaceInterface</a>&lt; <a class="el" href="a02861.html#a251769a0e2e81d8f3e1e67c936751ced">Traits</a>, domainDim, rangeDim, rangeDimCols &gt;::continuous = Traits::continuous</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a283acec8bcf63cfe6e7ee2cf2c207d64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a283acec8bcf63cfe6e7ee2cf2c207d64">&#9670;&nbsp;</a></span>dimDomain</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits, size_t domainDim, size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t <a class="el" href="a02697.html">Dune::GDT::SpaceInterface</a>&lt; <a class="el" href="a02861.html#a251769a0e2e81d8f3e1e67c936751ced">Traits</a>, domainDim, rangeDim, rangeDimCols &gt;::dimDomain = domainDim</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7661e52b7977215293e60a47aa02a79f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7661e52b7977215293e60a47aa02a79f">&#9670;&nbsp;</a></span>dimRange</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits, size_t domainDim, size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t <a class="el" href="a02697.html">Dune::GDT::SpaceInterface</a>&lt; <a class="el" href="a02861.html#a251769a0e2e81d8f3e1e67c936751ced">Traits</a>, domainDim, rangeDim, rangeDimCols &gt;::dimRange = rangeDim</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f63af8eb27dfde54b0f63c04cc25995"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f63af8eb27dfde54b0f63c04cc25995">&#9670;&nbsp;</a></span>dimRangeCols</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits, size_t domainDim, size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t <a class="el" href="a02697.html">Dune::GDT::SpaceInterface</a>&lt; <a class="el" href="a02861.html#a251769a0e2e81d8f3e1e67c936751ced">Traits</a>, domainDim, rangeDim, rangeDimCols &gt;::dimRangeCols = rangeDimCols</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5a8dd501f1183077f075d09fd295f9fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a8dd501f1183077f075d09fd295f9fd">&#9670;&nbsp;</a></span>layer_backend</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits, size_t domainDim, size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const XT::Grid::Backends <a class="el" href="a02697.html">Dune::GDT::SpaceInterface</a>&lt; <a class="el" href="a02861.html#a251769a0e2e81d8f3e1e67c936751ced">Traits</a>, domainDim, rangeDim, rangeDimCols &gt;::layer_backend = Traits::layer_backend</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a26a0a9299ae71b83e5ebd4a593de6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a26a0a9299ae71b83e5ebd4a593de6e">&#9670;&nbsp;</a></span>polOrder</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits, size_t domainDim, size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="a02697.html">Dune::GDT::SpaceInterface</a>&lt; <a class="el" href="a02861.html#a251769a0e2e81d8f3e1e67c936751ced">Traits</a>, domainDim, rangeDim, rangeDimCols &gt;::polOrder = Traits::polOrder</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -515,7 +1080,7 @@ template&lt;class FE, class E, class R&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a04534_source.html">spaces/rt/default.hh</a></li>
+<li><a class="el" href="a04530_source.html">spaces/rt/default.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
