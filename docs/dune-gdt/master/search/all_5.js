@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['base_2ehh',['base.hh',['../a04494.html',1,'']]],
-  ['elliptic_2dipdg_2ehh',['elliptic-ipdg.hh',['../a04533.html',1,'']]],
+  ['base_2ehh',['base.hh',['../a04498.html',1,'']]],
+  ['elliptic_2dipdg_2ehh',['elliptic-ipdg.hh',['../a04537.html',1,'']]],
   ['face',['face',['../a00246.html#a09f2467105da4217b0ff3bb2e4790c7ead5ca322453f2986b752e58b11af83d96',1,'Dune::GDT']]],
   ['face_5fand_5fvolume',['face_and_volume',['../a00246.html#a09f2467105da4217b0ff3bb2e4790c7eab68d75779ad98669ad5d654fe30a5827',1,'Dune::GDT']]],
   ['factor',['factor',['../a02649.html#a740bd848dd7677aba0cfcb91d493c00c',1,'Dune::GDT::FvProductSpace&lt; GridLayerImp, RangeFieldImp, rangeDim, 1 &gt;::factor()'],['../a00241.html#gaa659b8d7478cf3846a9c6a76a6fdb612',1,'Dune::GDT::ProductSpaceInterface::factor()'],['../a02829.html#a94c44c3c92267148a80dff715b45752c',1,'Dune::GDT::DefaultProductSpace::factor()']]],
@@ -38,11 +38,11 @@ var searchData=
   ['fv',['fv',['../a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92a3c77f4029be2e609c22bba665f13b101',1,'Dune::GDT']]],
   ['fv_2dinternal_2ehh',['fv-internal.hh',['../a00026.html',1,'']]],
   ['fvdiscretizationinterface',['FvDiscretizationInterface',['../a00993.html',1,'Dune::GDT']]],
-  ['fvmapper',['FvMapper',['../a02749.html',1,'Dune::GDT::FvMapper&lt; GridLayerImp, rangeDim, rangeDimCols &gt;'],['../a02769.html#aca09c331a08b22ce015cec800c24a214',1,'Dune::GDT::FvMapper&lt; GridLayerImp, rangeDim, 1 &gt;::FvMapper()'],['../a02773.html#ae9653eba4053c2ace3030d91fee1f529',1,'Dune::GDT::FvMapper&lt; GridLayerImp, 1, 1 &gt;::FvMapper()']]],
+  ['fvmapper',['FvMapper',['../a02749.html',1,'Dune::GDT::FvMapper&lt; GridLayerImp, rangeDim, rangeDimCols &gt;'],['../a02769.html#a1624ae84c52fd20256d65041ecadc99b',1,'Dune::GDT::FvMapper&lt; GridLayerImp, rangeDim, 1 &gt;::FvMapper()'],['../a02773.html#ab3013f21bd6a6e111b98fcf016f8921a',1,'Dune::GDT::FvMapper&lt; GridLayerImp, 1, 1 &gt;::FvMapper()']]],
   ['fvmapper_3c_20gridlayerimp_2c_201_2c_201_20_3e',['FvMapper&lt; GridLayerImp, 1, 1 &gt;',['../a02773.html',1,'Dune::GDT']]],
   ['fvmapper_3c_20gridlayerimp_2c_20rangedim_2c_201_20_3e',['FvMapper&lt; GridLayerImp, rangeDim, 1 &gt;',['../a02769.html',1,'Dune::GDT']]],
   ['fvmappertraits',['FvMapperTraits',['../a02757.html',1,'Dune::GDT::internal']]],
-  ['fvproductmapper',['FvProductMapper',['../a02753.html',1,'Dune::GDT::FvProductMapper&lt; GridLayerImp, rangeDim, rangeDimCols &gt;'],['../a02777.html#ae620552825e19c68294b2e2d61f3fde0',1,'Dune::GDT::FvProductMapper&lt; GridLayerImp, rangeDim, 1 &gt;::FvProductMapper()']]],
+  ['fvproductmapper',['FvProductMapper',['../a02753.html',1,'Dune::GDT::FvProductMapper&lt; GridLayerImp, rangeDim, rangeDimCols &gt;'],['../a02777.html#aeadd3d8d8ed7dbe7236f3b8b04a10e70',1,'Dune::GDT::FvProductMapper&lt; GridLayerImp, rangeDim, 1 &gt;::FvProductMapper()']]],
   ['fvproductmapper_3c_20gridlayerimp_2c_20rangedim_2c_201_20_3e',['FvProductMapper&lt; GridLayerImp, rangeDim, 1 &gt;',['../a02777.html',1,'Dune::GDT']]],
   ['fvproductmappertraits',['FvProductMapperTraits',['../a02765.html',1,'Dune::GDT::internal']]],
   ['fvproductspace',['FvProductSpace',['../a02641.html',1,'Dune::GDT::FvProductSpace&lt; GridLayerImp, RangeFieldImp, rangeDim, rangeDimCols &gt;'],['../a02649.html#aea8d051c793750357d75f9f1887f7034',1,'Dune::GDT::FvProductSpace&lt; GridLayerImp, RangeFieldImp, rangeDim, 1 &gt;::FvProductSpace(GridLayerType grd_layr)'],['../a02649.html#a3c146b50628c3d0701666d2f84541cbf',1,'Dune::GDT::FvProductSpace&lt; GridLayerImp, RangeFieldImp, rangeDim, 1 &gt;::FvProductSpace(const ThisType &amp;other)=default'],['../a02649.html#a18b2b8670102d62c3d99fdad46497cd6',1,'Dune::GDT::FvProductSpace&lt; GridLayerImp, RangeFieldImp, rangeDim, 1 &gt;::FvProductSpace(ThisType &amp;&amp;source)=default']]],
@@ -50,7 +50,7 @@ var searchData=
   ['fvproductspaceprovider',['FvProductSpaceProvider',['../a02665.html',1,'Dune::GDT']]],
   ['fvproductspaceprovider_3c_20g_2c_20layer_2c_20backend_2c_20r_2c_20r_2c_20rc_2c_20g_20_3e',['FvProductSpaceProvider&lt; G, layer, backend, R, r, rC, g &gt;',['../a02665.html',1,'Dune::GDT']]],
   ['fvproductspacetraits',['FvProductSpaceTraits',['../a02645.html',1,'Dune::GDT::internal']]],
-  ['fvspace',['FvSpace',['../a02613.html',1,'Dune::GDT::FvSpace&lt; GridLayerImp, RangeFieldImp, rangeDim, rangeDimCols &gt;'],['../a02621.html#a61f674a6194b98d8f3118478a14cf31b',1,'Dune::GDT::FvSpace&lt; GridLayerImp, RangeFieldImp, rangeDim, 1 &gt;::FvSpace(GridLayerType grd_layr)'],['../a02621.html#ae770c2d9c7bf10b6c437134a753e1be6',1,'Dune::GDT::FvSpace&lt; GridLayerImp, RangeFieldImp, rangeDim, 1 &gt;::FvSpace(const ThisType &amp;other)'],['../a02621.html#a54afbb90c8016c2c27035c02fcf3b5a8',1,'Dune::GDT::FvSpace&lt; GridLayerImp, RangeFieldImp, rangeDim, 1 &gt;::FvSpace(ThisType &amp;&amp;source)=default']]],
+  ['fvspace',['FvSpace',['../a02613.html',1,'Dune::GDT::FvSpace&lt; GridLayerImp, RangeFieldImp, rangeDim, rangeDimCols &gt;'],['../a02621.html#a61f674a6194b98d8f3118478a14cf31b',1,'Dune::GDT::FvSpace&lt; GridLayerImp, RangeFieldImp, rangeDim, 1 &gt;::FvSpace(GridLayerType grd_layr)'],['../a02621.html#ae770c2d9c7bf10b6c437134a753e1be6',1,'Dune::GDT::FvSpace&lt; GridLayerImp, RangeFieldImp, rangeDim, 1 &gt;::FvSpace(const ThisType &amp;other)'],['../a02621.html#ae4a230ab1315444f2dcc8e631ccea68c',1,'Dune::GDT::FvSpace&lt; GridLayerImp, RangeFieldImp, rangeDim, 1 &gt;::FvSpace(ThisType &amp;&amp;source)']]],
   ['fvspace_3c_20gl_2c_20r_2c_201_20_3e',['FvSpace&lt; GL, R, 1 &gt;',['../a02613.html',1,'Dune::GDT']]],
   ['fvspace_3c_20gridlayerimp_2c_20rangefieldimp_2c_20rangedim_2c_201_20_3e',['FvSpace&lt; GridLayerImp, RangeFieldImp, rangeDim, 1 &gt;',['../a02621.html',1,'Dune::GDT']]],
   ['fvspaceinterface',['FvSpaceInterface',['../a02625.html',1,'Dune::GDT']]],
@@ -59,7 +59,7 @@ var searchData=
   ['fvspaceprovider',['FvSpaceProvider',['../a02653.html',1,'Dune::GDT']]],
   ['fvspaceprovider_3c_20g_2c_20layer_2c_20backend_2c_20r_2c_20r_2c_20rc_2c_20g_20_3e',['FvSpaceProvider&lt; G, layer, backend, R, r, rC, g &gt;',['../a02653.html',1,'Dune::GDT']]],
   ['fvspacetraits',['FvSpaceTraits',['../a02617.html',1,'Dune::GDT::internal']]],
-  ['integrals_2ehh',['integrals.hh',['../a04593.html',1,'']]],
-  ['interfaces_2ehh',['interfaces.hh',['../a04623.html',1,'']]],
-  ['l2_2ehh',['l2.hh',['../a04662.html',1,'']]]
+  ['integrals_2ehh',['integrals.hh',['../a04597.html',1,'']]],
+  ['interfaces_2ehh',['interfaces.hh',['../a04627.html',1,'']]],
+  ['l2_2ehh',['l2.hh',['../a04666.html',1,'']]]
 ];
