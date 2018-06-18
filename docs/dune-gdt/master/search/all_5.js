@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['base_2ehh',['base.hh',['../a04494.html',1,'']]],
-  ['elliptic_2dipdg_2ehh',['elliptic-ipdg.hh',['../a04533.html',1,'']]],
+  ['base_2ehh',['base.hh',['../a04498.html',1,'']]],
+  ['elliptic_2dipdg_2ehh',['elliptic-ipdg.hh',['../a04537.html',1,'']]],
   ['face',['face',['../a00246.html#a09f2467105da4217b0ff3bb2e4790c7ead5ca322453f2986b752e58b11af83d96',1,'Dune::GDT']]],
   ['face_5fand_5fvolume',['face_and_volume',['../a00246.html#a09f2467105da4217b0ff3bb2e4790c7eab68d75779ad98669ad5d654fe30a5827',1,'Dune::GDT']]],
   ['factor',['factor',['../a02653.html#a740bd848dd7677aba0cfcb91d493c00c',1,'Dune::GDT::FvProductSpace&lt; GridLayerImp, RangeFieldImp, rangeDim, 1 &gt;::factor()'],['../a00241.html#gaa659b8d7478cf3846a9c6a76a6fdb612',1,'Dune::GDT::ProductSpaceInterface::factor()'],['../a02833.html#a94c44c3c92267148a80dff715b45752c',1,'Dune::GDT::DefaultProductSpace::factor()']]],
@@ -59,7 +59,7 @@ var searchData=
   ['fvspaceprovider',['FvSpaceProvider',['../a02657.html',1,'Dune::GDT']]],
   ['fvspaceprovider_3c_20g_2c_20layer_2c_20backend_2c_20r_2c_20r_2c_20rc_2c_20g_20_3e',['FvSpaceProvider&lt; G, layer, backend, R, r, rC, g &gt;',['../a02657.html',1,'Dune::GDT']]],
   ['fvspacetraits',['FvSpaceTraits',['../a02621.html',1,'Dune::GDT::internal']]],
-  ['integrals_2ehh',['integrals.hh',['../a04593.html',1,'']]],
-  ['interfaces_2ehh',['interfaces.hh',['../a04623.html',1,'']]],
-  ['l2_2ehh',['l2.hh',['../a04662.html',1,'']]]
+  ['integrals_2ehh',['integrals.hh',['../a04597.html',1,'']]],
+  ['interfaces_2ehh',['interfaces.hh',['../a04627.html',1,'']]],
+  ['l2_2ehh',['l2.hh',['../a04666.html',1,'']]]
 ];

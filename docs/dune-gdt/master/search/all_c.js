@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['block_2ehh',['block.hh',['../a04506.html',1,'']]],
+  ['block_2ehh',['block.hh',['../a04510.html',1,'']]],
   ['m_5f',['M_',['../a01145.html#ab29347a201713600c81bdd5e5c9dfefc',1,'Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::PiecewiseMonomials&lt; typename U::DomainFieldType, domainDim, typename U::RangeFieldType, U::dimRange, 1 &gt;, GridLayerImp, U &gt;::Localfunction']]],
   ['make_5fconst_5fdiscrete_5ffunction',['make_const_discrete_function',['../a00246.html#a6b9c4a6f7b668a0b5d89f4f02d9f2257',1,'Dune::GDT']]],
   ['make_5fdarcy',['make_darcy',['../a00246.html#abebd2ad3553f76c53794b395f15d276e',1,'Dune::GDT']]],
@@ -104,5 +104,5 @@ var searchData=
   ['mustalocalnumericalcouplingflux',['MustaLocalNumericalCouplingFlux',['../a01301.html',1,'Dune::GDT::MustaLocalNumericalCouplingFlux&lt; AnalyticalFluxImp, LocalizableFunctionImp &gt;'],['../a01301.html#a125e8fae6d28ef7e35077c0729f8f00a',1,'Dune::GDT::MustaLocalNumericalCouplingFlux::MustaLocalNumericalCouplingFlux()']]],
   ['mustalocalnumericalcouplingfluxtraits',['MustaLocalNumericalCouplingFluxTraits',['../a01309.html',1,'Dune::GDT::internal']]],
   ['mutex_5f',['mutex_',['../a01145.html#ac7f1fdb04a1e4fc2fdf60fe6699fbec6',1,'Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::PiecewiseMonomials&lt; typename U::DomainFieldType, domainDim, typename U::RangeFieldType, U::dimRange, 1 &gt;, GridLayerImp, U &gt;::Localfunction']]],
-  ['restricted_2ehh',['restricted.hh',['../a04719.html',1,'']]]
+  ['restricted_2ehh',['restricted.hh',['../a04723.html',1,'']]]
 ];

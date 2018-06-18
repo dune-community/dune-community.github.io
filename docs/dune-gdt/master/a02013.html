@@ -156,6 +156,14 @@ Static Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:a3e4cd8ef98b0c5a1e142fe688b567b98"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="a02013.html#ac420a1b6c05334e6ecd0432dce1f6437">RangeFieldType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02013.html#a3e4cd8ef98b0c5a1e142fe688b567b98">work_</a></td></tr>
+<tr class="separator:a3e4cd8ef98b0c5a1e142fe688b567b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8d80e05b76b081541634485605965b1"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; FieldVector&lt; FieldMatrix&lt; <a class="el" href="a02013.html#ac420a1b6c05334e6ecd0432dce1f6437">RangeFieldType</a>, <a class="el" href="a02005.html#ad3b11e22b23e15eb0ac4b53a81d5d502">dimRange</a>, <a class="el" href="a02005.html#ad3b11e22b23e15eb0ac4b53a81d5d502">dimRange</a> &gt;, <a class="el" href="a02005.html#abdf8bb6422136ea7586f70750a6d6b5c">dimDomain</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02013.html#ac8d80e05b76b081541634485605965b1">nonblocked_jacobians_</a></td></tr>
+<tr class="separator:ac8d80e05b76b081541634485605965b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cfed93326924d435dffb519b79a470c"><td class="memItemLeft" align="right" valign="top">FieldVector&lt; FieldVector&lt; FieldVector&lt; <a class="el" href="a02013.html#ac420a1b6c05334e6ecd0432dce1f6437">RangeFieldType</a>, block_size &gt;, <a class="el" href="a02013.html#aec44ded71f0d42ff75eb3df4f8069cbe">num_blocks</a> &gt;, <a class="el" href="a02005.html#abdf8bb6422136ea7586f70750a6d6b5c">dimDomain</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02013.html#a9cfed93326924d435dffb519b79a470c">eigenvalues_</a></td></tr>
+<tr class="separator:a9cfed93326924d435dffb519b79a470c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9119afe23e59ba2928bf5988e9accba7"><td class="memItemLeft" align="right" valign="top">FieldVector&lt; <a class="el" href="a02013.html#ac420a1b6c05334e6ecd0432dce1f6437">RangeFieldType</a>, <a class="el" href="a02005.html#ad3b11e22b23e15eb0ac4b53a81d5d502">dimRange</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02013.html#a9119afe23e59ba2928bf5988e9accba7">dummy_complex_eigenvalues_</a></td></tr>
+<tr class="separator:a9119afe23e59ba2928bf5988e9accba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86f637fee2cf4dbcba113c86c603facd"><td class="memItemLeft" align="right" valign="top">FieldVector&lt; <a class="el" href="a02013.html#a9066e56a403a46dd0d07580883f1c640">MatrixType</a>, <a class="el" href="a02005.html#abdf8bb6422136ea7586f70750a6d6b5c">dimDomain</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02013.html#a86f637fee2cf4dbcba113c86c603facd">eigenvectors_</a></td></tr>
 <tr class="separator:a86f637fee2cf4dbcba113c86c603facd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71c03a8ac92980d1a9719b7ae470d9a6"><td class="memItemLeft" align="right" valign="top">FieldVector&lt; <a class="el" href="a02013.html#a9066e56a403a46dd0d07580883f1c640">MatrixType</a>, <a class="el" href="a02005.html#abdf8bb6422136ea7586f70750a6d6b5c">dimDomain</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02013.html#a71c03a8ac92980d1a9719b7ae470d9a6">QR_</a></td></tr>
@@ -953,6 +961,54 @@ template&lt;class AnalyticalFluxType , size_t block_size = (AnalyticalFluxType::
 
 </div>
 </div>
+<a id="a9119afe23e59ba2928bf5988e9accba7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9119afe23e59ba2928bf5988e9accba7">&#9670;&nbsp;</a></span>dummy_complex_eigenvalues_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AnalyticalFluxType , size_t block_size = (AnalyticalFluxType::dimDomain == 1) ? 2 : 4&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FieldVector&lt;<a class="el" href="a02013.html#ac420a1b6c05334e6ecd0432dce1f6437">RangeFieldType</a>, <a class="el" href="a02005.html#ad3b11e22b23e15eb0ac4b53a81d5d502">dimRange</a>&gt; <a class="el" href="a02013.html">Dune::GDT::internal::BlockedJacobianWrapper</a>&lt; AnalyticalFluxType, block_size &gt;::dummy_complex_eigenvalues_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9cfed93326924d435dffb519b79a470c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cfed93326924d435dffb519b79a470c">&#9670;&nbsp;</a></span>eigenvalues_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AnalyticalFluxType , size_t block_size = (AnalyticalFluxType::dimDomain == 1) ? 2 : 4&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FieldVector&lt;FieldVector&lt;FieldVector&lt;<a class="el" href="a02013.html#ac420a1b6c05334e6ecd0432dce1f6437">RangeFieldType</a>, block_size&gt;, <a class="el" href="a02013.html#aec44ded71f0d42ff75eb3df4f8069cbe">num_blocks</a>&gt;, <a class="el" href="a02005.html#abdf8bb6422136ea7586f70750a6d6b5c">dimDomain</a>&gt; <a class="el" href="a02013.html">Dune::GDT::internal::BlockedJacobianWrapper</a>&lt; AnalyticalFluxType, block_size &gt;::eigenvalues_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a86f637fee2cf4dbcba113c86c603facd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a86f637fee2cf4dbcba113c86c603facd">&#9670;&nbsp;</a></span>eigenvectors_</h2>
 
@@ -993,6 +1049,30 @@ template&lt;class AnalyticalFluxType , size_t block_size = (AnalyticalFluxType::
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8d80e05b76b081541634485605965b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8d80e05b76b081541634485605965b1">&#9670;&nbsp;</a></span>nonblocked_jacobians_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AnalyticalFluxType , size_t block_size = (AnalyticalFluxType::dimDomain == 1) ? 2 : 4&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;FieldVector&lt;FieldMatrix&lt;<a class="el" href="a02013.html#ac420a1b6c05334e6ecd0432dce1f6437">RangeFieldType</a>, <a class="el" href="a02005.html#ad3b11e22b23e15eb0ac4b53a81d5d502">dimRange</a>, <a class="el" href="a02005.html#ad3b11e22b23e15eb0ac4b53a81d5d502">dimRange</a>&gt;, <a class="el" href="a02005.html#abdf8bb6422136ea7586f70750a6d6b5c">dimDomain</a>&gt; &gt; <a class="el" href="a02013.html">Dune::GDT::internal::BlockedJacobianWrapper</a>&lt; AnalyticalFluxType, block_size &gt;::nonblocked_jacobians_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1084,6 +1164,30 @@ template&lt;class AnalyticalFluxType , size_t block_size = (AnalyticalFluxType::
       <table class="memname">
         <tr>
           <td class="memname">FieldVector&lt;FieldVector&lt;<a class="el" href="a02013.html#a0a832d49ec3004e17a4503d7ffdfd942">LocalRangeType</a>, <a class="el" href="a02013.html#aec44ded71f0d42ff75eb3df4f8069cbe">num_blocks</a>&gt;, <a class="el" href="a02005.html#abdf8bb6422136ea7586f70750a6d6b5c">dimDomain</a>&gt; <a class="el" href="a02013.html">Dune::GDT::internal::BlockedJacobianWrapper</a>&lt; AnalyticalFluxType, block_size &gt;::tau_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e4cd8ef98b0c5a1e142fe688b567b98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e4cd8ef98b0c5a1e142fe688b567b98">&#9670;&nbsp;</a></span>work_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AnalyticalFluxType , size_t block_size = (AnalyticalFluxType::dimDomain == 1) ? 2 : 4&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="a02013.html#ac420a1b6c05334e6ecd0432dce1f6437">RangeFieldType</a>&gt; <a class="el" href="a02013.html">Dune::GDT::internal::BlockedJacobianWrapper</a>&lt; AnalyticalFluxType, block_size &gt;::work_</td>
         </tr>
       </table>
   </td>

@@ -8,6 +8,7 @@ var searchData=
   ['nipdg',['nipdg',['../a00248.html#a408b56cd5789f645c7fe625bb6af2f6eac4fd21f6762632ad8f00284c5a118c60',1,'Dune::GDT::LocalEllipticIpdgIntegrands']]],
   ['no_5fslope',['no_slope',['../a00246.html#af68dfb986d335b9416add6ef64dfad58a358f8b55910c75c446a7f3418fa87362',1,'Dune::GDT']]],
   ['nojacobian',['NoJacobian',['../a02105.html',1,'Dune::GDT::internal']]],
+  ['nonblocked_5fjacobians_5f',['nonblocked_jacobians_',['../a02013.html#ac8d80e05b76b081541634485605965b1',1,'Dune::GDT::internal::BlockedJacobianWrapper']]],
   ['nonlimitinglocalrealizabilitylimiter',['NonLimitingLocalRealizabilityLimiter',['../a01933.html',1,'Dune::GDT::NonLimitingLocalRealizabilityLimiter&lt; AnalyticalFluxImp, DiscreteFunctionImp, BasisfunctionImp &gt;'],['../a01933.html#a2b959deffd0ced7f59f971c97167f639',1,'Dune::GDT::NonLimitingLocalRealizabilityLimiter::NonLimitingLocalRealizabilityLimiter()']]],
   ['num_5fblocks',['num_blocks',['../a01141.html#a44b709b7408d32fee719a3fd98ce4724',1,'Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::PiecewiseMonomials&lt; typename U::DomainFieldType, domainDim, typename U::RangeFieldType, U::dimRange, 1 &gt;, GridLayerImp, U &gt;::num_blocks()'],['../a02013.html#aec44ded71f0d42ff75eb3df4f8069cbe',1,'Dune::GDT::internal::BlockedJacobianWrapper::num_blocks()'],['../a02193.html#a2243bc97c700dea88090b4573c7a87c6',1,'Dune::GDT::BlockSpace::num_blocks()']]],
   ['num_5ffactors',['num_factors',['../a02709.html#aaa72e384b82c61396a75c1d77d773747',1,'Dune::GDT::ProductSpaceInterface']]],
