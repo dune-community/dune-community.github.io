@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::internal::RestrictedMapperTraits&lt; UnrestrictedSpace, RestrictionGridLayer &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::RestrictedMapper&lt; UnrestrictedSpace, RestrictionGridLayer &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,32 +59,85 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a00247.html">internal</a></li><li class="navelem"><a class="el" href="a02217.html">RestrictedMapperTraits</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a02217.html">RestrictedMapper</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a02214.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::RestrictedMapperTraits&lt; UnrestrictedSpace, RestrictionGridLayer &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::RestrictedMapper&lt; UnrestrictedSpace, RestrictionGridLayer &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a04723_source.html">dune/gdt/playground/spaces/mapper/restricted.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a04719_source.html">dune/gdt/playground/spaces/mapper/restricted.hh</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Dune::GDT::RestrictedMapper&lt; UnrestrictedSpace, RestrictionGridLayer &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="a02216.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_restricted_mapper_3_01_unrestricted_space_00_01_restriction_grid_layer_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_restricted_mapper_3_01_unrestricted_space_00_01_restriction_grid_layer_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_restricted_mapper_3_01_unrestricted_space_00_01_restriction_grid_layer_01_4_inherit__map">
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a4c2eedb31d43722af7876d1b37f8c29e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02213.html">RestrictedMapper</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02217.html#a4c2eedb31d43722af7876d1b37f8c29e">derived_type</a></td></tr>
-<tr class="separator:a4c2eedb31d43722af7876d1b37f8c29e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42eea3f5ea744f11f3c5ebc30ec8870b"><td class="memItemLeft" align="right" valign="top">typedef UnrestrictedSpace::MapperType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02217.html#a42eea3f5ea744f11f3c5ebc30ec8870b">BackendType</a></td></tr>
-<tr class="separator:a42eea3f5ea744f11f3c5ebc30ec8870b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a825b817e245510da15d15671bd6d31f9"><td class="memItemLeft" align="right" valign="top">typedef XT::Grid::extract_entity_t&lt; RestrictionGridLayer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02217.html#a825b817e245510da15d15671bd6d31f9">EntityType</a></td></tr>
-<tr class="separator:a825b817e245510da15d15671bd6d31f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12151d7ab5aca9e495db14ce3b62798f"><td class="memItemLeft" align="right" valign="top">typedef Traits::BackendType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02217.html#a12151d7ab5aca9e495db14ce3b62798f">BackendType</a></td></tr>
+<tr class="separator:a12151d7ab5aca9e495db14ce3b62798f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fe3efdb029f9d0966704bd61c781f54"><td class="memItemLeft" align="right" valign="top">typedef Traits::EntityType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02217.html#a3fe3efdb029f9d0966704bd61c781f54">EntityType</a></td></tr>
+<tr class="separator:a3fe3efdb029f9d0966704bd61c781f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00babc7d66d6eae3cd3421f50396a838"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02221.html">internal::RestrictedMapperTraits</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt; ::<a class="el" href="a02785.html#a00babc7d66d6eae3cd3421f50396a838">derived_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02785.html#a00babc7d66d6eae3cd3421f50396a838">derived_type</a></td></tr>
+<tr class="separator:a00babc7d66d6eae3cd3421f50396a838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ab19c3038e6e076489b99bd438eb95316"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02217.html#ab19c3038e6e076489b99bd438eb95316">RestrictedMapper</a> (const UnrestrictedSpace &amp;unrestricted_space, RestrictionGridLayer restriction_grid_layer)</td></tr>
+<tr class="separator:ab19c3038e6e076489b99bd438eb95316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43d268fa74a5f1c11923b81710fb71ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02217.html#a43d268fa74a5f1c11923b81710fb71ed">RestrictedMapper</a> (const <a class="el" href="a02217.html">ThisType</a> &amp;<a class="el" href="a00246.html#a5a9b3478d77a16697bf06fa3f949e0faa795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>)=default</td></tr>
+<tr class="separator:a43d268fa74a5f1c11923b81710fb71ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74d974d6116205441b9af8271e633e8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02217.html#a74d974d6116205441b9af8271e633e8c">RestrictedMapper</a> (<a class="el" href="a02217.html">ThisType</a> &amp;&amp;source)=default</td></tr>
+<tr class="separator:a74d974d6116205441b9af8271e633e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c656174af0d40c30809d388ac91b522"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a02217.html">ThisType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02217.html#a6c656174af0d40c30809d388ac91b522">operator=</a> (const <a class="el" href="a02217.html">ThisType</a> &amp;<a class="el" href="a00246.html#a5a9b3478d77a16697bf06fa3f949e0faa795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>)=delete</td></tr>
+<tr class="separator:a6c656174af0d40c30809d388ac91b522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a491128efc62023e051b4034f71d1e2fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a02217.html">ThisType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02217.html#a491128efc62023e051b4034f71d1e2fb">operator=</a> (<a class="el" href="a02217.html">ThisType</a> &amp;&amp;source)=delete</td></tr>
+<tr class="separator:a491128efc62023e051b4034f71d1e2fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf740e1f4ec11b697f9f9011bf140ad"><td class="memTemplParams" colspan="2">template&lt;class U , class V &gt; </td></tr>
+<tr class="memitem:aaaf740e1f4ec11b697f9f9011bf140ad"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02217.html#aaaf740e1f4ec11b697f9f9011bf140ad">restrict</a> (const XT::LA::VectorInterface&lt; U &gt; &amp;unrestricted_vector, XT::LA::VectorInterface&lt; V &gt; &amp;restricted_vector) const</td></tr>
+<tr class="separator:aaaf740e1f4ec11b697f9f9011bf140ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e700b634c81a76798e405a5f0cff042"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
+<tr class="memitem:a7e700b634c81a76798e405a5f0cff042"><td class="memTemplItemLeft" align="right" valign="top">V::derived_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02217.html#a7e700b634c81a76798e405a5f0cff042">restrict</a> (const XT::LA::VectorInterface&lt; V &gt; &amp;unrestricted_vector) const</td></tr>
+<tr class="separator:a7e700b634c81a76798e405a5f0cff042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89e3269fc7f48ed5205f075430c65c20"><td class="memTemplParams" colspan="2">template&lt;class U , class V &gt; </td></tr>
+<tr class="memitem:a89e3269fc7f48ed5205f075430c65c20"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02217.html#a89e3269fc7f48ed5205f075430c65c20">extend</a> (const XT::LA::VectorInterface&lt; U &gt; &amp;restricted_vector, XT::LA::VectorInterface&lt; V &gt; &amp;unrestricted_vector) const</td></tr>
+<tr class="separator:a89e3269fc7f48ed5205f075430c65c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49860b53ea88fa39cea70112068a423e"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
+<tr class="memitem:a49860b53ea88fa39cea70112068a423e"><td class="memTemplItemLeft" align="right" valign="top">V::derived_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02217.html#a49860b53ea88fa39cea70112068a423e">extend</a> (const XT::LA::VectorInterface&lt; V &gt; &amp;restricted_vector) const</td></tr>
+<tr class="separator:a49860b53ea88fa39cea70112068a423e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40662447f5990abf86e3b89f6680d084"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a02217.html#a12151d7ab5aca9e495db14ce3b62798f">BackendType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02217.html#a40662447f5990abf86e3b89f6680d084">backend</a> () const</td></tr>
+<tr class="separator:a40662447f5990abf86e3b89f6680d084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43b1d6c46acc3f92615d2b6579a1e2e3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02217.html#a43b1d6c46acc3f92615d2b6579a1e2e3">size</a> () const</td></tr>
+<tr class="separator:a43b1d6c46acc3f92615d2b6579a1e2e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa166a538db8022e689532c33d381b8c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02217.html#aaa166a538db8022e689532c33d381b8c">maxNumDofs</a> () const</td></tr>
+<tr class="separator:aaa166a538db8022e689532c33d381b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a405484abb4630e8824879f6e60ade2ab"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02217.html#a405484abb4630e8824879f6e60ade2ab">numDofs</a> (const <a class="el" href="a02217.html#a3fe3efdb029f9d0966704bd61c781f54">EntityType</a> &amp;entity) const</td></tr>
+<tr class="separator:a405484abb4630e8824879f6e60ade2ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2591cdb37b909ea2ff11d17b8422b7e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02217.html#a2591cdb37b909ea2ff11d17b8422b7e5">globalIndices</a> (const <a class="el" href="a02217.html#a3fe3efdb029f9d0966704bd61c781f54">EntityType</a> &amp;entity, DynamicVector&lt; size_t &gt; &amp;ret) const</td></tr>
+<tr class="separator:a2591cdb37b909ea2ff11d17b8422b7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a575223561d85e0999fadd5c83ff700e5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02217.html#a575223561d85e0999fadd5c83ff700e5">mapToGlobal</a> (const <a class="el" href="a02217.html#a3fe3efdb029f9d0966704bd61c781f54">EntityType</a> &amp;entity, const size_t &amp;localIndex) const</td></tr>
+<tr class="separator:a575223561d85e0999fadd5c83ff700e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa79a84ebc88246700b178feac3ad1495"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02785.html#aa79a84ebc88246700b178feac3ad1495">numDofs</a> (const Entity&lt; cd, EntityType::dimension, GridImp, EntityImp &gt; &amp;entity) const</td></tr>
+<tr class="separator:aa79a84ebc88246700b178feac3ad1495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a596119f950d52c0c672383163b2c2b14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02785.html#a596119f950d52c0c672383163b2c2b14">globalIndices</a> (const <a class="el" href="a02217.html#a3fe3efdb029f9d0966704bd61c781f54">EntityType</a> &amp;entity, Dune::DynamicVector&lt; size_t &gt; &amp;ret) const</td></tr>
+<tr class="separator:a596119f950d52c0c672383163b2c2b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b931d8095c8b29b8c7ce9b393345e47"><td class="memItemLeft" align="right" valign="top">Dune::DynamicVector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02785.html#a4b931d8095c8b29b8c7ce9b393345e47">globalIndices</a> (const <a class="el" href="a02217.html#a3fe3efdb029f9d0966704bd61c781f54">EntityType</a> &amp;entity) const</td></tr>
+<tr class="separator:a4b931d8095c8b29b8c7ce9b393345e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafabdf05bff5257d0cf5a85227fe719f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02785.html#aafabdf05bff5257d0cf5a85227fe719f">mapToGlobal</a> (const <a class="el" href="a02217.html#a3fe3efdb029f9d0966704bd61c781f54">EntityType</a> &amp;entity, const size_t &amp;localIndex) const</td></tr>
+<tr class="separator:aafabdf05bff5257d0cf5a85227fe719f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a42eea3f5ea744f11f3c5ebc30ec8870b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42eea3f5ea744f11f3c5ebc30ec8870b">&#9670;&nbsp;</a></span>BackendType</h2>
+<a id="a12151d7ab5aca9e495db14ce3b62798f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12151d7ab5aca9e495db14ce3b62798f">&#9670;&nbsp;</a></span>BackendType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -92,15 +145,37 @@ Public Types</h2></td></tr>
 template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef UnrestrictedSpace::MapperType <a class="el" href="a02217.html">Dune::GDT::internal::RestrictedMapperTraits</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::<a class="el" href="a02217.html#a42eea3f5ea744f11f3c5ebc30ec8870b">BackendType</a></td>
+          <td class="memname">typedef Traits::BackendType <a class="el" href="a02785.html">Dune::GDT::MapperInterface</a>&lt; Traits &gt;::<a class="el" href="a02217.html#a12151d7ab5aca9e495db14ce3b62798f">BackendType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a4c2eedb31d43722af7876d1b37f8c29e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c2eedb31d43722af7876d1b37f8c29e">&#9670;&nbsp;</a></span>derived_type</h2>
+<a id="a00babc7d66d6eae3cd3421f50396a838"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00babc7d66d6eae3cd3421f50396a838">&#9670;&nbsp;</a></span>derived_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a02221.html">internal::RestrictedMapperTraits</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt; ::<a class="el" href="a02785.html#a00babc7d66d6eae3cd3421f50396a838">derived_type</a> <a class="el" href="a02785.html">Dune::GDT::MapperInterface</a>&lt; <a class="el" href="a02221.html">internal::RestrictedMapperTraits</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;  &gt;::<a class="el" href="a02785.html#a00babc7d66d6eae3cd3421f50396a838">derived_type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3fe3efdb029f9d0966704bd61c781f54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fe3efdb029f9d0966704bd61c781f54">&#9670;&nbsp;</a></span>EntityType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -108,31 +183,616 @@ template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
 template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a02213.html">RestrictedMapper</a>&lt;UnrestrictedSpace, RestrictionGridLayer&gt; <a class="el" href="a02217.html">Dune::GDT::internal::RestrictedMapperTraits</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::<a class="el" href="a02217.html#a4c2eedb31d43722af7876d1b37f8c29e">derived_type</a></td>
+          <td class="memname">typedef Traits::EntityType <a class="el" href="a02785.html">Dune::GDT::MapperInterface</a>&lt; Traits &gt;::<a class="el" href="a02217.html#a3fe3efdb029f9d0966704bd61c781f54">EntityType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a825b817e245510da15d15671bd6d31f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a825b817e245510da15d15671bd6d31f9">&#9670;&nbsp;</a></span>EntityType</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ab19c3038e6e076489b99bd438eb95316"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab19c3038e6e076489b99bd438eb95316">&#9670;&nbsp;</a></span>RestrictedMapper() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef XT::Grid::extract_entity_t&lt;RestrictionGridLayer&gt; <a class="el" href="a02217.html">Dune::GDT::internal::RestrictedMapperTraits</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::<a class="el" href="a02217.html#a825b817e245510da15d15671bd6d31f9">EntityType</a></td>
+          <td class="memname"><a class="el" href="a02217.html">Dune::GDT::RestrictedMapper</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::<a class="el" href="a02217.html">RestrictedMapper</a> </td>
+          <td>(</td>
+          <td class="paramtype">const UnrestrictedSpace &amp;&#160;</td>
+          <td class="paramname"><em>unrestricted_space</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RestrictionGridLayer&#160;</td>
+          <td class="paramname"><em>restriction_grid_layer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43d268fa74a5f1c11923b81710fb71ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43d268fa74a5f1c11923b81710fb71ed">&#9670;&nbsp;</a></span>RestrictedMapper() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a02217.html">Dune::GDT::RestrictedMapper</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::<a class="el" href="a02217.html">RestrictedMapper</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a02217.html">ThisType</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a74d974d6116205441b9af8271e633e8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74d974d6116205441b9af8271e633e8c">&#9670;&nbsp;</a></span>RestrictedMapper() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a02217.html">Dune::GDT::RestrictedMapper</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::<a class="el" href="a02217.html">RestrictedMapper</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a02217.html">ThisType</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a40662447f5990abf86e3b89f6680d084"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40662447f5990abf86e3b89f6680d084">&#9670;&nbsp;</a></span>backend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a02217.html#a12151d7ab5aca9e495db14ce3b62798f">BackendType</a>&amp; <a class="el" href="a02217.html">Dune::GDT::RestrictedMapper</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::backend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a89e3269fc7f48ed5205f075430c65c20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89e3269fc7f48ed5205f075430c65c20">&#9670;&nbsp;</a></span>extend() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
+<div class="memtemplate">
+template&lt;class U , class V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a02217.html">Dune::GDT::RestrictedMapper</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::extend </td>
+          <td>(</td>
+          <td class="paramtype">const XT::LA::VectorInterface&lt; U &gt; &amp;&#160;</td>
+          <td class="paramname"><em>restricted_vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">XT::LA::VectorInterface&lt; V &gt; &amp;&#160;</td>
+          <td class="paramname"><em>unrestricted_vector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a49860b53ea88fa39cea70112068a423e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49860b53ea88fa39cea70112068a423e">&#9670;&nbsp;</a></span>extend() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
+<div class="memtemplate">
+template&lt;class V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">V::derived_type <a class="el" href="a02217.html">Dune::GDT::RestrictedMapper</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::extend </td>
+          <td>(</td>
+          <td class="paramtype">const XT::LA::VectorInterface&lt; V &gt; &amp;&#160;</td>
+          <td class="paramname"><em>restricted_vector</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a596119f950d52c0c672383163b2c2b14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a596119f950d52c0c672383163b2c2b14">&#9670;&nbsp;</a></span>globalIndices() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a02785.html">Dune::GDT::MapperInterface</a>&lt; <a class="el" href="a02221.html">internal::RestrictedMapperTraits</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;  &gt;::globalIndices </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a02785.html#a3fe3efdb029f9d0966704bd61c781f54">EntityType</a> &amp;&#160;</td>
+          <td class="paramname"><em>entity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Dune::DynamicVector&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b931d8095c8b29b8c7ce9b393345e47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b931d8095c8b29b8c7ce9b393345e47">&#9670;&nbsp;</a></span>globalIndices() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dune::DynamicVector&lt;size_t&gt; <a class="el" href="a02785.html">Dune::GDT::MapperInterface</a>&lt; <a class="el" href="a02221.html">internal::RestrictedMapperTraits</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;  &gt;::globalIndices </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a02785.html#a3fe3efdb029f9d0966704bd61c781f54">EntityType</a> &amp;&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2591cdb37b909ea2ff11d17b8422b7e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2591cdb37b909ea2ff11d17b8422b7e5">&#9670;&nbsp;</a></span>globalIndices() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a02217.html">Dune::GDT::RestrictedMapper</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::globalIndices </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a02217.html#a3fe3efdb029f9d0966704bd61c781f54">EntityType</a> &amp;&#160;</td>
+          <td class="paramname"><em>entity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DynamicVector&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aafabdf05bff5257d0cf5a85227fe719f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafabdf05bff5257d0cf5a85227fe719f">&#9670;&nbsp;</a></span>mapToGlobal() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="a02785.html">Dune::GDT::MapperInterface</a>&lt; <a class="el" href="a02221.html">internal::RestrictedMapperTraits</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;  &gt;::mapToGlobal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a02785.html#a3fe3efdb029f9d0966704bd61c781f54">EntityType</a> &amp;&#160;</td>
+          <td class="paramname"><em>entity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t &amp;&#160;</td>
+          <td class="paramname"><em>localIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a575223561d85e0999fadd5c83ff700e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a575223561d85e0999fadd5c83ff700e5">&#9670;&nbsp;</a></span>mapToGlobal() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="a02217.html">Dune::GDT::RestrictedMapper</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::mapToGlobal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a02217.html#a3fe3efdb029f9d0966704bd61c781f54">EntityType</a> &amp;&#160;</td>
+          <td class="paramname"><em>entity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t &amp;&#160;</td>
+          <td class="paramname"><em>localIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa166a538db8022e689532c33d381b8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa166a538db8022e689532c33d381b8c">&#9670;&nbsp;</a></span>maxNumDofs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="a02217.html">Dune::GDT::RestrictedMapper</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::maxNumDofs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa79a84ebc88246700b178feac3ad1495"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa79a84ebc88246700b178feac3ad1495">&#9670;&nbsp;</a></span>numDofs() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="a02785.html">Dune::GDT::MapperInterface</a>&lt; <a class="el" href="a02221.html">internal::RestrictedMapperTraits</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;  &gt;::numDofs </td>
+          <td>(</td>
+          <td class="paramtype">const Entity&lt; cd, EntityType::dimension, GridImp, EntityImp &gt; &amp;&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a405484abb4630e8824879f6e60ade2ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a405484abb4630e8824879f6e60ade2ab">&#9670;&nbsp;</a></span>numDofs() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="a02217.html">Dune::GDT::RestrictedMapper</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::numDofs </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a02217.html#a3fe3efdb029f9d0966704bd61c781f54">EntityType</a> &amp;&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c656174af0d40c30809d388ac91b522"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c656174af0d40c30809d388ac91b522">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a02217.html">ThisType</a>&amp; <a class="el" href="a02217.html">Dune::GDT::RestrictedMapper</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a02217.html">ThisType</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a491128efc62023e051b4034f71d1e2fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a491128efc62023e051b4034f71d1e2fb">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a02217.html">ThisType</a>&amp; <a class="el" href="a02217.html">Dune::GDT::RestrictedMapper</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a02217.html">ThisType</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaaf740e1f4ec11b697f9f9011bf140ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaf740e1f4ec11b697f9f9011bf140ad">&#9670;&nbsp;</a></span>restrict() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
+<div class="memtemplate">
+template&lt;class U , class V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a02217.html">Dune::GDT::RestrictedMapper</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::restrict </td>
+          <td>(</td>
+          <td class="paramtype">const XT::LA::VectorInterface&lt; U &gt; &amp;&#160;</td>
+          <td class="paramname"><em>unrestricted_vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">XT::LA::VectorInterface&lt; V &gt; &amp;&#160;</td>
+          <td class="paramname"><em>restricted_vector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7e700b634c81a76798e405a5f0cff042"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e700b634c81a76798e405a5f0cff042">&#9670;&nbsp;</a></span>restrict() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
+<div class="memtemplate">
+template&lt;class V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">V::derived_type <a class="el" href="a02217.html">Dune::GDT::RestrictedMapper</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::restrict </td>
+          <td>(</td>
+          <td class="paramtype">const XT::LA::VectorInterface&lt; V &gt; &amp;&#160;</td>
+          <td class="paramname"><em>unrestricted_vector</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43b1d6c46acc3f92615d2b6579a1e2e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43b1d6c46acc3f92615d2b6579a1e2e3">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UnrestrictedSpace , class RestrictionGridLayer &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="a02217.html">Dune::GDT::RestrictedMapper</a>&lt; UnrestrictedSpace, RestrictionGridLayer &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a04723_source.html">mapper/restricted.hh</a></li>
+<li><a class="el" href="a04719_source.html">mapper/restricted.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

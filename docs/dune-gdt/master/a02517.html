@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::MinGatherScatter Class Reference</title>
+<title>dune-gdt: Dune::GDT::DataEntityGatherScatter&lt; GatherScatter &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,43 +59,99 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a02517.html">MinGatherScatter</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a02517.html">DataEntityGatherScatter</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a02514.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::MinGatherScatter Class Reference</div>  </div>
+<div class="title">Dune::GDT::DataEntityGatherScatter&lt; GatherScatter &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="a00194_source.html">dune/gdt/spaces/datahandles.hh</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aa96b593d046e6ac14e2e7b143698e913"><td class="memItemLeft" align="right" valign="top">typedef std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02517.html#aa96b593d046e6ac14e2e7b143698e913">size_t</a></td></tr>
+<tr class="separator:aa96b593d046e6ac14e2e7b143698e913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae1de33f52f13f8e30f8122e5c9b5c3da"><td class="memTemplParams" colspan="2">template&lt;class MessageBuffer , class DataType &gt; </td></tr>
-<tr class="memitem:ae1de33f52f13f8e30f8122e5c9b5c3da"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02517.html#ae1de33f52f13f8e30f8122e5c9b5c3da">gather</a> (MessageBuffer &amp;buff, DataType &amp;data) const</td></tr>
-<tr class="separator:ae1de33f52f13f8e30f8122e5c9b5c3da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8801842f64ec1ce1d9bea3c72daca0f"><td class="memTemplParams" colspan="2">template&lt;class MessageBuffer , class DataType &gt; </td></tr>
-<tr class="memitem:aa8801842f64ec1ce1d9bea3c72daca0f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02517.html#aa8801842f64ec1ce1d9bea3c72daca0f">scatter</a> (MessageBuffer &amp;buff, DataType &amp;data) const</td></tr>
-<tr class="separator:aa8801842f64ec1ce1d9bea3c72daca0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c604d43b687929f6a3a3e3386133f0a"><td class="memTemplParams" colspan="2">template&lt;typename MessageBuffer , typename Entity , typename LocalView &gt; </td></tr>
+<tr class="memitem:a9c604d43b687929f6a3a3e3386133f0a"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02517.html#a9c604d43b687929f6a3a3e3386133f0a">gather</a> (MessageBuffer &amp;buff, const Entity &amp;e, const <a class="el" href="a02713.html">LocalView</a> &amp;local_view) const</td></tr>
+<tr class="separator:a9c604d43b687929f6a3a3e3386133f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ad252d0e61b701f4dc2098ee93c9810"><td class="memTemplParams" colspan="2">template&lt;typename MessageBuffer , typename Entity , typename LocalView &gt; </td></tr>
+<tr class="memitem:a0ad252d0e61b701f4dc2098ee93c9810"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02517.html#a0ad252d0e61b701f4dc2098ee93c9810">scatter</a> (MessageBuffer &amp;buff, <a class="el" href="a02517.html#aa96b593d046e6ac14e2e7b143698e913">size_t</a> n, const Entity &amp;e, <a class="el" href="a02713.html">LocalView</a> &amp;local_view) const</td></tr>
+<tr class="separator:a0ad252d0e61b701f4dc2098ee93c9810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a47d84a8afe8e67c8ac762866d22dcc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02517.html#a5a47d84a8afe8e67c8ac762866d22dcc">DataEntityGatherScatter</a> (GatherScatter gather_scatter=GatherScatter())</td></tr>
+<tr class="separator:a5a47d84a8afe8e67c8ac762866d22dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae1de33f52f13f8e30f8122e5c9b5c3da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1de33f52f13f8e30f8122e5c9b5c3da">&#9670;&nbsp;</a></span>gather()</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="aa96b593d046e6ac14e2e7b143698e913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa96b593d046e6ac14e2e7b143698e913">&#9670;&nbsp;</a></span>size_t</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class MessageBuffer , class DataType &gt; </div>
+template&lt;typename GatherScatter &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::size_t <a class="el" href="a02517.html">Dune::GDT::DataEntityGatherScatter</a>&lt; GatherScatter &gt;::<a class="el" href="a02517.html#aa96b593d046e6ac14e2e7b143698e913">size_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a5a47d84a8afe8e67c8ac762866d22dcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a47d84a8afe8e67c8ac762866d22dcc">&#9670;&nbsp;</a></span>DataEntityGatherScatter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GatherScatter &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Dune::GDT::MinGatherScatter::gather </td>
+          <td class="memname"><a class="el" href="a02517.html">Dune::GDT::DataEntityGatherScatter</a>&lt; GatherScatter &gt;::<a class="el" href="a02517.html">DataEntityGatherScatter</a> </td>
+          <td>(</td>
+          <td class="paramtype">GatherScatter&#160;</td>
+          <td class="paramname"><em>gather_scatter</em> = <code>GatherScatter()</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9c604d43b687929f6a3a3e3386133f0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c604d43b687929f6a3a3e3386133f0a">&#9670;&nbsp;</a></span>gather()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GatherScatter &gt; </div>
+<div class="memtemplate">
+template&lt;typename MessageBuffer , typename Entity , typename LocalView &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="a02517.html">Dune::GDT::DataEntityGatherScatter</a>&lt; GatherScatter &gt;::gather </td>
           <td>(</td>
           <td class="paramtype">MessageBuffer &amp;&#160;</td>
           <td class="paramname"><em>buff</em>, </td>
@@ -103,8 +159,14 @@ template&lt;class MessageBuffer , class DataType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">DataType &amp;&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
+          <td class="paramtype">const Entity &amp;&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a02713.html">LocalView</a> &amp;&#160;</td>
+          <td class="paramname"><em>local_view</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -121,19 +183,21 @@ template&lt;class MessageBuffer , class DataType &gt; </div>
 
 </div>
 </div>
-<a id="aa8801842f64ec1ce1d9bea3c72daca0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8801842f64ec1ce1d9bea3c72daca0f">&#9670;&nbsp;</a></span>scatter()</h2>
+<a id="a0ad252d0e61b701f4dc2098ee93c9810"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ad252d0e61b701f4dc2098ee93c9810">&#9670;&nbsp;</a></span>scatter()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class MessageBuffer , class DataType &gt; </div>
+template&lt;typename GatherScatter &gt; </div>
+<div class="memtemplate">
+template&lt;typename MessageBuffer , typename Entity , typename LocalView &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Dune::GDT::MinGatherScatter::scatter </td>
+          <td class="memname">bool <a class="el" href="a02517.html">Dune::GDT::DataEntityGatherScatter</a>&lt; GatherScatter &gt;::scatter </td>
           <td>(</td>
           <td class="paramtype">MessageBuffer &amp;&#160;</td>
           <td class="paramname"><em>buff</em>, </td>
@@ -141,8 +205,20 @@ template&lt;class MessageBuffer , class DataType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">DataType &amp;&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a02517.html#aa96b593d046e6ac14e2e7b143698e913">size_t</a>&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Entity &amp;&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a02713.html">LocalView</a> &amp;&#160;</td>
+          <td class="paramname"><em>local_view</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
