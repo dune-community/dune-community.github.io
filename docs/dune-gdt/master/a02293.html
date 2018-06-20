@@ -97,10 +97,10 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3cc11fe4495cf7f8a734e79f17917684"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02293.html#a3cc11fe4495cf7f8a734e79f17917684">L2ProjectionOperator</a> (const size_t over_integrate, <a class="el" href="a02293.html#aee6fe36e251ef39a6cd5d15fc1010397">GridLayerType</a> grid_layer)</td></tr>
-<tr class="separator:a3cc11fe4495cf7f8a734e79f17917684"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa4b40830e5fc568cbc717ff594c177a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02293.html#aaa4b40830e5fc568cbc717ff594c177a">L2ProjectionOperator</a> (<a class="el" href="a02293.html#aee6fe36e251ef39a6cd5d15fc1010397">GridLayerType</a> grid_layer)</td></tr>
-<tr class="separator:aaa4b40830e5fc568cbc717ff594c177a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ac427811caa25e1d01d831195f696c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02293.html#a4ac427811caa25e1d01d831195f696c8">L2ProjectionOperator</a> (const size_t over_integrate, <a class="el" href="a02293.html#aee6fe36e251ef39a6cd5d15fc1010397">GridLayerType</a> grid_layer, const bool use_tbb=false)</td></tr>
+<tr class="separator:a4ac427811caa25e1d01d831195f696c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27795c165a94ada0779067104cfc9724"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02293.html#a27795c165a94ada0779067104cfc9724">L2ProjectionOperator</a> (<a class="el" href="a02293.html#aee6fe36e251ef39a6cd5d15fc1010397">GridLayerType</a> grid_layer, const bool use_tbb=false)</td></tr>
+<tr class="separator:a27795c165a94ada0779067104cfc9724"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3fcaefcaaa28113e005ebbf9b950f81"><td class="memTemplParams" colspan="2">template&lt;class R , size_t r, size_t rC, class S , class V &gt; </td></tr>
 <tr class="memitem:ad3fcaefcaaa28113e005ebbf9b950f81"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02293.html#ad3fcaefcaaa28113e005ebbf9b950f81">apply</a> (const XT::Functions::LocalizableFunctionInterface&lt; E, D, d, R, r, rC &gt; &amp;source, <a class="el" href="a00937.html">DiscreteFunction</a>&lt; S, V &gt; &amp;range, const XT::Common::Parameter &amp;param={}) const</td></tr>
 <tr class="separator:ad3fcaefcaaa28113e005ebbf9b950f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,8 +227,8 @@ template&lt;class GridLayerImp , class FieldImp &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a3cc11fe4495cf7f8a734e79f17917684"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3cc11fe4495cf7f8a734e79f17917684">&#9670;&nbsp;</a></span>L2ProjectionOperator() <span class="overload">[1/2]</span></h2>
+<a id="a4ac427811caa25e1d01d831195f696c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ac427811caa25e1d01d831195f696c8">&#9670;&nbsp;</a></span>L2ProjectionOperator() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -248,7 +248,13 @@ template&lt;class GridLayerImp , class FieldImp &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="a02293.html#aee6fe36e251ef39a6cd5d15fc1010397">GridLayerType</a>&#160;</td>
-          <td class="paramname"><em>grid_layer</em>&#160;</td>
+          <td class="paramname"><em>grid_layer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>use_tbb</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -265,8 +271,8 @@ template&lt;class GridLayerImp , class FieldImp &gt; </div>
 
 </div>
 </div>
-<a id="aaa4b40830e5fc568cbc717ff594c177a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa4b40830e5fc568cbc717ff594c177a">&#9670;&nbsp;</a></span>L2ProjectionOperator() <span class="overload">[2/2]</span></h2>
+<a id="a27795c165a94ada0779067104cfc9724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27795c165a94ada0779067104cfc9724">&#9670;&nbsp;</a></span>L2ProjectionOperator() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -280,8 +286,18 @@ template&lt;class GridLayerImp , class FieldImp &gt; </div>
           <td class="memname"><a class="el" href="a02293.html">Dune::GDT::L2ProjectionOperator</a>&lt; GridLayerImp, FieldImp &gt;::<a class="el" href="a02293.html">L2ProjectionOperator</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="a02293.html#aee6fe36e251ef39a6cd5d15fc1010397">GridLayerType</a>&#160;</td>
-          <td class="paramname"><em>grid_layer</em></td><td>)</td>
+          <td class="paramname"><em>grid_layer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>use_tbb</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>

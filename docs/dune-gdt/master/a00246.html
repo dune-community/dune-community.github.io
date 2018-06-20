@@ -1214,24 +1214,24 @@ Functions</h2></td></tr>
 <tr class="memitem:ad5983630b75ef508253bcbf202327c73"><td class="memTemplParams" colspan="2">template&lt;class SourceType , class SpaceType , class VectorType &gt; </td></tr>
 <tr class="memitem:ad5983630b75ef508253bcbf202327c73"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Functions::is_localizable_function&lt; SourceType &gt;::value &amp;&amp;<a class="el" href="a03105.html">is_space</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &gt;::value &amp;&amp;XT::LA::is_vector&lt; VectorType &gt;::value, std::unique_ptr&lt; <a class="el" href="a02281.html">L2LocalProjectionLocalizableOperator</a>&lt; typename SpaceType::GridLayerType, SourceType, <a class="el" href="a00937.html">DiscreteFunction</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType &gt; &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00246.html#ad5983630b75ef508253bcbf202327c73">make_local_l2_projection_localizable_operator</a> (const SourceType &amp;source, <a class="el" href="a00937.html">DiscreteFunction</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType &gt; &amp;range, const size_t over_integrate=0, const XT::Common::Parameter &amp;param={})</td></tr>
 <tr class="separator:ad5983630b75ef508253bcbf202327c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72af8b84996d16c4b31bbceaceefca6f"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType &gt; </td></tr>
-<tr class="memitem:a72af8b84996d16c4b31bbceaceefca6f"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value, std::unique_ptr&lt; <a class="el" href="a02273.html">L2LocalProjectionOperator</a>&lt; GridLayerType &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00246.html#a72af8b84996d16c4b31bbceaceefca6f">make_local_l2_projection_operator</a> (const GridLayerType &amp;grid_layer, const size_t over_integrate=0)</td></tr>
-<tr class="separator:a72af8b84996d16c4b31bbceaceefca6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a472c284864f14e8af0d486e83833a03c"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType &gt; </td></tr>
+<tr class="memitem:a472c284864f14e8af0d486e83833a03c"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value, std::unique_ptr&lt; <a class="el" href="a02273.html">L2LocalProjectionOperator</a>&lt; GridLayerType &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00246.html#a472c284864f14e8af0d486e83833a03c">make_local_l2_projection_operator</a> (const GridLayerType &amp;grid_layer, const size_t over_integrate=0, const bool use_tbb=false)</td></tr>
+<tr class="separator:a472c284864f14e8af0d486e83833a03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb37c26aebc4f0de53587319f55a017b"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType , class SourceType , class SpaceType , class VectorType &gt; </td></tr>
 <tr class="memitem:abb37c26aebc4f0de53587319f55a017b"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value &amp;&amp;XT::Functions::is_localizable_function&lt; SourceType &gt;::value &amp;&amp;<a class="el" href="a03105.html">is_space</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &gt;::value &amp;&amp;XT::LA::is_vector&lt; VectorType &gt;::value, std::unique_ptr&lt; <a class="el" href="a02313.html">L2ProjectionLocalizableOperator</a>&lt; GridLayerType, SourceType, <a class="el" href="a00937.html">DiscreteFunction</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType &gt; &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00246.html#abb37c26aebc4f0de53587319f55a017b">make_l2_projection_localizable_operator</a> (const GridLayerType &amp;grid_layer, const SourceType &amp;source, <a class="el" href="a00937.html">DiscreteFunction</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType &gt; &amp;range, const size_t over_integrate=0)</td></tr>
 <tr class="separator:abb37c26aebc4f0de53587319f55a017b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1fda08c8477972bb5135da2513518dc"><td class="memTemplParams" colspan="2">template&lt;class SourceType , class SpaceType , class VectorType &gt; </td></tr>
 <tr class="memitem:aa1fda08c8477972bb5135da2513518dc"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Functions::is_localizable_function&lt; SourceType &gt;::value &amp;&amp;<a class="el" href="a03105.html">is_space</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &gt;::value &amp;&amp;XT::LA::is_vector&lt; VectorType &gt;::value, std::unique_ptr&lt; <a class="el" href="a02313.html">L2ProjectionLocalizableOperator</a>&lt; typename SpaceType::GridLayerType, SourceType, <a class="el" href="a00937.html">DiscreteFunction</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType &gt; &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00246.html#aa1fda08c8477972bb5135da2513518dc">make_l2_projection_localizable_operator</a> (const SourceType &amp;source, <a class="el" href="a00937.html">DiscreteFunction</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType &gt; &amp;range, const size_t over_integrate=0)</td></tr>
 <tr class="separator:aa1fda08c8477972bb5135da2513518dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53207d499f1a26958db4d5efb6ba6bdb"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType &gt; </td></tr>
-<tr class="memitem:a53207d499f1a26958db4d5efb6ba6bdb"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value, std::unique_ptr&lt; <a class="el" href="a02293.html">L2ProjectionOperator</a>&lt; GridLayerType &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00246.html#a53207d499f1a26958db4d5efb6ba6bdb">make_l2_projection_operator</a> (const GridLayerType &amp;grid_layer, const size_t over_integrate=0)</td></tr>
-<tr class="separator:a53207d499f1a26958db4d5efb6ba6bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a739fd9a05d811357d4e054e61017b4be"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType , class SourceType , class SpaceType , class VectorType &gt; </td></tr>
-<tr class="memitem:a739fd9a05d811357d4e054e61017b4be"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value &amp;&amp;XT::Functions::is_localizable_function&lt; SourceType &gt;::value &amp;&amp;<a class="el" href="a03105.html">is_space</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &gt;::value &amp;&amp;XT::LA::is_vector&lt; VectorType &gt;::value, void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00246.html#a739fd9a05d811357d4e054e61017b4be">project_l2</a> (const GridLayerType &amp;grid_layer, const SourceType &amp;source, <a class="el" href="a00937.html">DiscreteFunction</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType &gt; &amp;range, const size_t over_integrate=0, const XT::Common::Parameter &amp;param={})</td></tr>
-<tr class="separator:a739fd9a05d811357d4e054e61017b4be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ce48b8d05bd6a7e3c9f4fb215eb0b93"><td class="memTemplParams" colspan="2">template&lt;class SourceType , class SpaceType , class VectorType &gt; </td></tr>
-<tr class="memitem:a3ce48b8d05bd6a7e3c9f4fb215eb0b93"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Functions::is_localizable_function&lt; SourceType &gt;::value &amp;&amp;<a class="el" href="a03105.html">is_space</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &gt;::value &amp;&amp;XT::LA::is_vector&lt; VectorType &gt;::value, void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00246.html#a3ce48b8d05bd6a7e3c9f4fb215eb0b93">project_l2</a> (const SourceType &amp;source, <a class="el" href="a00937.html">DiscreteFunction</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType &gt; &amp;range, const size_t over_integrate=0, const XT::Common::Parameter &amp;param={})</td></tr>
-<tr class="separator:a3ce48b8d05bd6a7e3c9f4fb215eb0b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55f99ae9a15867f7f410f0f8adbbb4f6"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType &gt; </td></tr>
+<tr class="memitem:a55f99ae9a15867f7f410f0f8adbbb4f6"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value, std::unique_ptr&lt; <a class="el" href="a02293.html">L2ProjectionOperator</a>&lt; GridLayerType &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00246.html#a55f99ae9a15867f7f410f0f8adbbb4f6">make_l2_projection_operator</a> (const GridLayerType &amp;grid_layer, const size_t over_integrate=0, const bool use_tbb=false)</td></tr>
+<tr class="separator:a55f99ae9a15867f7f410f0f8adbbb4f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65d44f03967b0868d4976ec04e7c09f4"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType , class SourceType , class SpaceType , class VectorType &gt; </td></tr>
+<tr class="memitem:a65d44f03967b0868d4976ec04e7c09f4"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value &amp;&amp;XT::Functions::is_localizable_function&lt; SourceType &gt;::value &amp;&amp;<a class="el" href="a03105.html">is_space</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &gt;::value &amp;&amp;XT::LA::is_vector&lt; VectorType &gt;::value, void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00246.html#a65d44f03967b0868d4976ec04e7c09f4">project_l2</a> (const GridLayerType &amp;grid_layer, const SourceType &amp;source, <a class="el" href="a00937.html">DiscreteFunction</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType &gt; &amp;range, const size_t over_integrate=0, const XT::Common::Parameter &amp;param={}, const bool use_tbb=false)</td></tr>
+<tr class="separator:a65d44f03967b0868d4976ec04e7c09f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ec2dc7ba6aef1719d6d14cc14f2318b"><td class="memTemplParams" colspan="2">template&lt;class SourceType , class SpaceType , class VectorType &gt; </td></tr>
+<tr class="memitem:a2ec2dc7ba6aef1719d6d14cc14f2318b"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Functions::is_localizable_function&lt; SourceType &gt;::value &amp;&amp;<a class="el" href="a03105.html">is_space</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &gt;::value &amp;&amp;XT::LA::is_vector&lt; VectorType &gt;::value, void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00246.html#a2ec2dc7ba6aef1719d6d14cc14f2318b">project_l2</a> (const SourceType &amp;source, <a class="el" href="a00937.html">DiscreteFunction</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType &gt; &amp;range, const size_t over_integrate=0, const XT::Common::Parameter &amp;param={}, const bool use_tbb=false)</td></tr>
+<tr class="separator:a2ec2dc7ba6aef1719d6d14cc14f2318b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d5160a18176f922670606c9fabaaeed"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType , class SourceType , class SpaceType , class VectorType &gt; </td></tr>
 <tr class="memitem:a5d5160a18176f922670606c9fabaaeed"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value &amp;&amp;XT::Functions::is_localizable_function&lt; SourceType &gt;::value &amp;&amp;<a class="el" href="a03105.html">is_space</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &gt;::value &amp;&amp;XT::LA::is_vector&lt; VectorType &gt;::value, std::unique_ptr&lt; <a class="el" href="a02325.html">LagrangeProjectionLocalizableOperator</a>&lt; GridLayerType, SourceType, <a class="el" href="a00937.html">DiscreteFunction</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType &gt; &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00246.html#a5d5160a18176f922670606c9fabaaeed">make_lagrange_projection_localizable_operator</a> (const GridLayerType &amp;grid_layer, const SourceType &amp;source, <a class="el" href="a00937.html">DiscreteFunction</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType &gt; &amp;range, const XT::Common::Parameter &amp;param={})</td></tr>
 <tr class="separator:a5d5160a18176f922670606c9fabaaeed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5486,8 +5486,8 @@ template&lt;class SourceType , class SpaceType , class VectorType &gt; </div>
 
 </div>
 </div>
-<a id="a53207d499f1a26958db4d5efb6ba6bdb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53207d499f1a26958db4d5efb6ba6bdb">&#9670;&nbsp;</a></span>make_l2_projection_operator()</h2>
+<a id="a55f99ae9a15867f7f410f0f8adbbb4f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55f99ae9a15867f7f410f0f8adbbb4f6">&#9670;&nbsp;</a></span>make_l2_projection_operator()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5504,7 +5504,13 @@ template&lt;class GridLayerType &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const size_t&#160;</td>
-          <td class="paramname"><em>over_integrate</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>over_integrate</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>use_tbb</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -6418,8 +6424,8 @@ template&lt;class SourceType , class SpaceType , class VectorType &gt; </div>
 
 </div>
 </div>
-<a id="a72af8b84996d16c4b31bbceaceefca6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72af8b84996d16c4b31bbceaceefca6f">&#9670;&nbsp;</a></span>make_local_l2_projection_operator()</h2>
+<a id="a472c284864f14e8af0d486e83833a03c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a472c284864f14e8af0d486e83833a03c">&#9670;&nbsp;</a></span>make_local_l2_projection_operator()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6436,7 +6442,13 @@ template&lt;class GridLayerType &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const size_t&#160;</td>
-          <td class="paramname"><em>over_integrate</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>over_integrate</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>use_tbb</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -7541,8 +7553,8 @@ template&lt;class SourceType , class SpaceType , class VectorType &gt; </div>
 
 </div>
 </div>
-<a id="a739fd9a05d811357d4e054e61017b4be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a739fd9a05d811357d4e054e61017b4be">&#9670;&nbsp;</a></span>project_l2() <span class="overload">[1/2]</span></h2>
+<a id="a65d44f03967b0868d4976ec04e7c09f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65d44f03967b0868d4976ec04e7c09f4">&#9670;&nbsp;</a></span>project_l2() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7577,7 +7589,13 @@ template&lt;class GridLayerType , class SourceType , class SpaceType , class Vec
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
-          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>use_tbb</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -7589,8 +7607,8 @@ template&lt;class GridLayerType , class SourceType , class SpaceType , class Vec
 
 </div>
 </div>
-<a id="a3ce48b8d05bd6a7e3c9f4fb215eb0b93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ce48b8d05bd6a7e3c9f4fb215eb0b93">&#9670;&nbsp;</a></span>project_l2() <span class="overload">[2/2]</span></h2>
+<a id="a2ec2dc7ba6aef1719d6d14cc14f2318b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ec2dc7ba6aef1719d6d14cc14f2318b">&#9670;&nbsp;</a></span>project_l2() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7619,7 +7637,13 @@ template&lt;class SourceType , class SpaceType , class VectorType &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
-          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>use_tbb</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
