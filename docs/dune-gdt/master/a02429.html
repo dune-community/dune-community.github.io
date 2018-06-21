@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::BaseFunctionSetInterface&lt; Traits, D, d, R, r, rC &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::BaseFunctionSet::FiniteVolume&lt; EntityImp, DomainFieldImp, domainDim, RangeFieldImp, 1, 1 &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a02429.html">BaseFunctionSetInterface</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a00252.html">BaseFunctionSet</a></li><li class="navelem"><a class="el" href="a02429.html">FiniteVolume&lt; EntityImp, DomainFieldImp, domainDim, RangeFieldImp, 1, 1 &gt;</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -68,55 +68,62 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a02426.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::BaseFunctionSetInterface&lt; Traits, D, d, R, r, rC &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::BaseFunctionSet::FiniteVolume&lt; EntityImp, DomainFieldImp, domainDim, RangeFieldImp, 1, 1 &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>The purpose of this interface is just to be used for template matching and to allow for access to the backend. All other functionality is enforced by XT::Functions::LocalfunctionSetInterface.  
- <a href="a02429.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="a04603_source.html">dune/gdt/spaces/basefunctionset/interface.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a04590_source.html">dune/gdt/spaces/basefunctionset/fv.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::BaseFunctionSetInterface&lt; Traits, D, d, R, r, rC &gt;:</div>
+Inheritance diagram for Dune::GDT::BaseFunctionSet::FiniteVolume&lt; EntityImp, DomainFieldImp, domainDim, RangeFieldImp, 1, 1 &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02428.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_base_function_set_interface_3_01_traits_00_01_d_00_01d_00_01_r_00_01r_00_01r_c_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1_base_function_set_interface_3_01_traits_00_01_d_00_01d_00_01_r_00_01r_00_01r_c_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_base_function_set_interface_3_01_traits_00_01_d_00_01d_00_01_r_00_01r_00_01r_c_01_4_inherit__map">
+<div class="center"><img src="a02428.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_base_function_set_1_1_finite_volume_3_01_entity_imp_00_01_domain_field_imp_00_01domain_dim_00_01_range_field_imp_00_011_00_011_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_base_function_set_1_1_finite_volume_3_01_entity_imp_00_01_domain_field_imp_00_01domain_dim_00_01_range_field_imp_00_011_00_011_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_base_function_set_1_1_finite_volume_3_01_entity_imp_00_01_domain_field_imp_00_01domain_dim_00_01_range_field_imp_00_011_00_011_01_4_inherit__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aacfbd07aba605ae0e871c8f321425530"><td class="memItemLeft" align="right" valign="top">typedef Traits::derived_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02429.html#aacfbd07aba605ae0e871c8f321425530">derived_type</a></td></tr>
+<tr class="memitem:a01cea306d94b0fa3def279e1b0b71a06"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02425.html">internal::FiniteVolumeTraits</a>&lt; EntityImp, DomainFieldImp, domainDim, RangeFieldImp, 1, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02429.html#a01cea306d94b0fa3def279e1b0b71a06">Traits</a></td></tr>
+<tr class="separator:a01cea306d94b0fa3def279e1b0b71a06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace524feed2587fa22013fa883a6fe001"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02425.html#a7917abef3791ba855d255d59a64e471d">Traits::BackendType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02429.html#ace524feed2587fa22013fa883a6fe001">BackendType</a></td></tr>
+<tr class="separator:ace524feed2587fa22013fa883a6fe001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed0930229821bf94385a9f961ec21bda"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02425.html#a1bd48827901ddc2004776e656820d5b5">Traits::EntityType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02429.html#aed0930229821bf94385a9f961ec21bda">EntityType</a></td></tr>
+<tr class="separator:aed0930229821bf94385a9f961ec21bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacfbd07aba605ae0e871c8f321425530"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02425.html">internal::FiniteVolumeTraits</a>&lt; EntityImp, DomainFieldImp, domainDim, RangeFieldImp, 1, 1 &gt; ::<a class="el" href="a02437.html#aacfbd07aba605ae0e871c8f321425530">derived_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02437.html#aacfbd07aba605ae0e871c8f321425530">derived_type</a></td></tr>
 <tr class="separator:aacfbd07aba605ae0e871c8f321425530"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cc952d3fa6ee44cefe529106eb1003e"><td class="memItemLeft" align="right" valign="top">typedef Traits::BackendType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02429.html#a4cc952d3fa6ee44cefe529106eb1003e">BackendType</a></td></tr>
-<tr class="separator:a4cc952d3fa6ee44cefe529106eb1003e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a712b353833e0f4156dce3259138276db"><td class="memItemLeft" align="right" valign="top">typedef Traits::EntityType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02429.html#a712b353833e0f4156dce3259138276db">EntityType</a></td></tr>
-<tr class="separator:a712b353833e0f4156dce3259138276db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae846edeb3228cb7f949a5c85c749863c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02429.html#ae846edeb3228cb7f949a5c85c749863c">BaseFunctionSetInterface</a> (const <a class="el" href="a02429.html#a712b353833e0f4156dce3259138276db">EntityType</a> &amp;ent)</td></tr>
-<tr class="separator:ae846edeb3228cb7f949a5c85c749863c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a976fd5ca3e29f7d005415c4f65b0c8e0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a02429.html#a4cc952d3fa6ee44cefe529106eb1003e">BackendType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02429.html#a976fd5ca3e29f7d005415c4f65b0c8e0">backend</a> () const</td></tr>
-<tr class="separator:a976fd5ca3e29f7d005415c4f65b0c8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76120a4e8a2cb3ae50a29af2b12267e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02429.html#a76120a4e8a2cb3ae50a29af2b12267e1">FiniteVolume</a> (const <a class="el" href="a02429.html#aed0930229821bf94385a9f961ec21bda">EntityType</a> &amp;en)</td></tr>
+<tr class="separator:a76120a4e8a2cb3ae50a29af2b12267e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5152bc19afb03c2b008c57bd19b4c853"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02429.html#a5152bc19afb03c2b008c57bd19b4c853">FiniteVolume</a> (<a class="el" href="a02429.html">ThisType</a> &amp;&amp;source)=default</td></tr>
+<tr class="separator:a5152bc19afb03c2b008c57bd19b4c853"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39d496dd9edd18d9fbce069d8c21bc4f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02429.html#a39d496dd9edd18d9fbce069d8c21bc4f">FiniteVolume</a> (const <a class="el" href="a02429.html">ThisType</a> &amp;)=delete</td></tr>
+<tr class="separator:a39d496dd9edd18d9fbce069d8c21bc4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a262b4b13b549b0fe8772d27dbd94f7e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a02429.html">ThisType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02429.html#a262b4b13b549b0fe8772d27dbd94f7e1">operator=</a> (const <a class="el" href="a02429.html">ThisType</a> &amp;)=delete</td></tr>
+<tr class="separator:a262b4b13b549b0fe8772d27dbd94f7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacf72369ad5f6ee9b9b8c110a865ef7a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a02429.html#ace524feed2587fa22013fa883a6fe001">BackendType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02429.html#aacf72369ad5f6ee9b9b8c110a865ef7a">backend</a> () const</td></tr>
+<tr class="separator:aacf72369ad5f6ee9b9b8c110a865ef7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54cd081dcd797e30d9632673561aa1cc"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02429.html#a54cd081dcd797e30d9632673561aa1cc">size</a> () const override final</td></tr>
+<tr class="separator:a54cd081dcd797e30d9632673561aa1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25f314dc2d4f18fcde169d157c176acd"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02429.html#a25f314dc2d4f18fcde169d157c176acd">order</a> (const XT::Common::Parameter &amp;={}) const override final</td></tr>
+<tr class="separator:a25f314dc2d4f18fcde169d157c176acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a848c81565f2202e5aa29dc4906383561"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02429.html#a848c81565f2202e5aa29dc4906383561">evaluate</a> (const DomainType &amp;, std::vector&lt; RangeType &gt; &amp;ret, const XT::Common::Parameter &amp;={}) const override final</td></tr>
+<tr class="separator:a848c81565f2202e5aa29dc4906383561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2583aacf3668b8d4fb80dfd38faad2ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02429.html#a2583aacf3668b8d4fb80dfd38faad2ac">jacobian</a> (const DomainType &amp;, std::vector&lt; JacobianRangeType &gt; &amp;ret, const XT::Common::Parameter &amp;={}) const override final</td></tr>
+<tr class="separator:a2583aacf3668b8d4fb80dfd38faad2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class Traits, class D, size_t d, class R, size_t r, size_t rC = 1&gt;<br />
-class Dune::GDT::BaseFunctionSetInterface&lt; Traits, D, d, R, r, rC &gt;</h3>
-
-<p>The purpose of this interface is just to be used for template matching and to allow for access to the backend. All other functionality is enforced by XT::Functions::LocalfunctionSetInterface. </p>
-<dl class="section see"><dt>See also</dt><dd>XT::Functions::LocalfunctionSetInterface for the template parameters D, d, R, r and rC. </dd></dl>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a4cc952d3fa6ee44cefe529106eb1003e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cc952d3fa6ee44cefe529106eb1003e">&#9670;&nbsp;</a></span>BackendType</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ace524feed2587fa22013fa883a6fe001"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace524feed2587fa22013fa883a6fe001">&#9670;&nbsp;</a></span>BackendType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Traits, class D, size_t d, class R, size_t r, size_t rC = 1&gt; </div>
+template&lt;class EntityImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef Traits::BackendType <a class="el" href="a02429.html">Dune::GDT::BaseFunctionSetInterface</a>&lt; Traits, D, d, R, r, rC &gt;::<a class="el" href="a02429.html#a4cc952d3fa6ee44cefe529106eb1003e">BackendType</a></td>
+          <td class="memname">typedef <a class="el" href="a02425.html#a7917abef3791ba855d255d59a64e471d">Traits::BackendType</a> <a class="el" href="a02421.html">Dune::GDT::BaseFunctionSet::FiniteVolume</a>&lt; EntityImp, DomainFieldImp, domainDim, RangeFieldImp, 1, 1 &gt;::<a class="el" href="a02429.html#ace524feed2587fa22013fa883a6fe001">BackendType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -128,27 +135,49 @@ template&lt;class Traits, class D, size_t d, class R, size_t r, size_t rC = 1&gt
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits, class D, size_t d, class R, size_t r, size_t rC = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef Traits::derived_type <a class="el" href="a02429.html">Dune::GDT::BaseFunctionSetInterface</a>&lt; Traits, D, d, R, r, rC &gt;::<a class="el" href="a02429.html#aacfbd07aba605ae0e871c8f321425530">derived_type</a></td>
+          <td class="memname">typedef <a class="el" href="a02425.html">internal::FiniteVolumeTraits</a>&lt; EntityImp, DomainFieldImp, domainDim, RangeFieldImp, 1, 1 &gt; ::<a class="el" href="a02437.html#aacfbd07aba605ae0e871c8f321425530">derived_type</a> <a class="el" href="a02437.html">Dune::GDT::BaseFunctionSetInterface</a>&lt; <a class="el" href="a02425.html">internal::FiniteVolumeTraits</a>&lt; EntityImp, DomainFieldImp, domainDim, RangeFieldImp, 1, 1 &gt; , DomainFieldImp , d, RangeFieldImp , r, rC &gt;::<a class="el" href="a02437.html#aacfbd07aba605ae0e871c8f321425530">derived_type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aed0930229821bf94385a9f961ec21bda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed0930229821bf94385a9f961ec21bda">&#9670;&nbsp;</a></span>EntityType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class EntityImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a02425.html#a1bd48827901ddc2004776e656820d5b5">Traits::EntityType</a> <a class="el" href="a02421.html">Dune::GDT::BaseFunctionSet::FiniteVolume</a>&lt; EntityImp, DomainFieldImp, domainDim, RangeFieldImp, 1, 1 &gt;::<a class="el" href="a02429.html#aed0930229821bf94385a9f961ec21bda">EntityType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a712b353833e0f4156dce3259138276db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a712b353833e0f4156dce3259138276db">&#9670;&nbsp;</a></span>EntityType</h2>
+<a id="a01cea306d94b0fa3def279e1b0b71a06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01cea306d94b0fa3def279e1b0b71a06">&#9670;&nbsp;</a></span>Traits</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Traits, class D, size_t d, class R, size_t r, size_t rC = 1&gt; </div>
+template&lt;class EntityImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef Traits::EntityType <a class="el" href="a02429.html">Dune::GDT::BaseFunctionSetInterface</a>&lt; Traits, D, d, R, r, rC &gt;::<a class="el" href="a02429.html#a712b353833e0f4156dce3259138276db">EntityType</a></td>
+          <td class="memname">typedef <a class="el" href="a02425.html">internal::FiniteVolumeTraits</a>&lt;EntityImp, DomainFieldImp, domainDim, RangeFieldImp, 1, 1&gt; <a class="el" href="a02421.html">Dune::GDT::BaseFunctionSet::FiniteVolume</a>&lt; EntityImp, DomainFieldImp, domainDim, RangeFieldImp, 1, 1 &gt;::<a class="el" href="a02429.html#a01cea306d94b0fa3def279e1b0b71a06">Traits</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -156,28 +185,84 @@ template&lt;class Traits, class D, size_t d, class R, size_t r, size_t rC = 1&gt
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae846edeb3228cb7f949a5c85c749863c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae846edeb3228cb7f949a5c85c749863c">&#9670;&nbsp;</a></span>BaseFunctionSetInterface()</h2>
+<a id="a76120a4e8a2cb3ae50a29af2b12267e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76120a4e8a2cb3ae50a29af2b12267e1">&#9670;&nbsp;</a></span>FiniteVolume() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Traits, class D, size_t d, class R, size_t r, size_t rC = 1&gt; </div>
+template&lt;class EntityImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a02429.html">Dune::GDT::BaseFunctionSetInterface</a>&lt; Traits, D, d, R, r, rC &gt;::<a class="el" href="a02429.html">BaseFunctionSetInterface</a> </td>
+          <td class="memname"><a class="el" href="a02421.html">Dune::GDT::BaseFunctionSet::FiniteVolume</a>&lt; EntityImp, DomainFieldImp, domainDim, RangeFieldImp, 1, 1 &gt;::<a class="el" href="a02421.html">FiniteVolume</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a02429.html#a712b353833e0f4156dce3259138276db">EntityType</a> &amp;&#160;</td>
-          <td class="paramname"><em>ent</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="a02429.html#aed0930229821bf94385a9f961ec21bda">EntityType</a> &amp;&#160;</td>
+          <td class="paramname"><em>en</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5152bc19afb03c2b008c57bd19b4c853"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5152bc19afb03c2b008c57bd19b4c853">&#9670;&nbsp;</a></span>FiniteVolume() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class EntityImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a02421.html">Dune::GDT::BaseFunctionSet::FiniteVolume</a>&lt; EntityImp, DomainFieldImp, domainDim, RangeFieldImp, 1, 1 &gt;::<a class="el" href="a02421.html">FiniteVolume</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a02429.html">ThisType</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39d496dd9edd18d9fbce069d8c21bc4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39d496dd9edd18d9fbce069d8c21bc4f">&#9670;&nbsp;</a></span>FiniteVolume() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class EntityImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a02421.html">Dune::GDT::BaseFunctionSet::FiniteVolume</a>&lt; EntityImp, DomainFieldImp, domainDim, RangeFieldImp, 1, 1 &gt;::<a class="el" href="a02421.html">FiniteVolume</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a02429.html">ThisType</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -185,19 +270,19 @@ template&lt;class Traits, class D, size_t d, class R, size_t r, size_t rC = 1&gt
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a976fd5ca3e29f7d005415c4f65b0c8e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a976fd5ca3e29f7d005415c4f65b0c8e0">&#9670;&nbsp;</a></span>backend()</h2>
+<a id="aacf72369ad5f6ee9b9b8c110a865ef7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacf72369ad5f6ee9b9b8c110a865ef7a">&#9670;&nbsp;</a></span>backend()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Traits, class D, size_t d, class R, size_t r, size_t rC = 1&gt; </div>
+template&lt;class EntityImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a02429.html#a4cc952d3fa6ee44cefe529106eb1003e">BackendType</a>&amp; <a class="el" href="a02429.html">Dune::GDT::BaseFunctionSetInterface</a>&lt; Traits, D, d, R, r, rC &gt;::backend </td>
+          <td class="memname">const <a class="el" href="a02429.html#ace524feed2587fa22013fa883a6fe001">BackendType</a>&amp; <a class="el" href="a02421.html">Dune::GDT::BaseFunctionSet::FiniteVolume</a>&lt; EntityImp, DomainFieldImp, domainDim, RangeFieldImp, 1, 1 &gt;::backend </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -212,8 +297,179 @@ template&lt;class Traits, class D, size_t d, class R, size_t r, size_t rC = 1&gt
 
 </div>
 </div>
+<a id="a848c81565f2202e5aa29dc4906383561"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a848c81565f2202e5aa29dc4906383561">&#9670;&nbsp;</a></span>evaluate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class EntityImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a02421.html">Dune::GDT::BaseFunctionSet::FiniteVolume</a>&lt; EntityImp, DomainFieldImp, domainDim, RangeFieldImp, 1, 1 &gt;::evaluate </td>
+          <td>(</td>
+          <td class="paramtype">const DomainType &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; RangeType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ret</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2583aacf3668b8d4fb80dfd38faad2ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2583aacf3668b8d4fb80dfd38faad2ac">&#9670;&nbsp;</a></span>jacobian()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class EntityImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a02421.html">Dune::GDT::BaseFunctionSet::FiniteVolume</a>&lt; EntityImp, DomainFieldImp, domainDim, RangeFieldImp, 1, 1 &gt;::jacobian </td>
+          <td>(</td>
+          <td class="paramtype">const DomainType &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; JacobianRangeType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ret</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a262b4b13b549b0fe8772d27dbd94f7e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a262b4b13b549b0fe8772d27dbd94f7e1">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class EntityImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a02429.html">ThisType</a>&amp; <a class="el" href="a02421.html">Dune::GDT::BaseFunctionSet::FiniteVolume</a>&lt; EntityImp, DomainFieldImp, domainDim, RangeFieldImp, 1, 1 &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a02429.html">ThisType</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a25f314dc2d4f18fcde169d157c176acd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25f314dc2d4f18fcde169d157c176acd">&#9670;&nbsp;</a></span>order()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class EntityImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual size_t <a class="el" href="a02421.html">Dune::GDT::BaseFunctionSet::FiniteVolume</a>&lt; EntityImp, DomainFieldImp, domainDim, RangeFieldImp, 1, 1 &gt;::order </td>
+          <td>(</td>
+          <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"> = <code>{}</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a54cd081dcd797e30d9632673561aa1cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54cd081dcd797e30d9632673561aa1cc">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class EntityImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual size_t <a class="el" href="a02421.html">Dune::GDT::BaseFunctionSet::FiniteVolume</a>&lt; EntityImp, DomainFieldImp, domainDim, RangeFieldImp, 1, 1 &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a04603_source.html">spaces/basefunctionset/interface.hh</a></li>
+<li><a class="el" href="a04590_source.html">spaces/basefunctionset/fv.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

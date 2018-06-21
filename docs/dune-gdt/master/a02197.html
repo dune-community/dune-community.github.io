@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::internal::BlockSpaceTraits&lt; LocalSpaceType &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::internal::LocalDiffusiveFluxEstimateStarOS2014IntegrandTraits&lt; DiffusionFactorType, DiffusionFactorHatType, DiffusionTensorType, DiffusiveFluxType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a00247.html">internal</a></li><li class="navelem"><a class="el" href="a02197.html">BlockSpaceTraits</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a00247.html">internal</a></li><li class="navelem"><a class="el" href="a02197.html">LocalDiffusiveFluxEstimateStarOS2014IntegrandTraits</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -68,167 +68,87 @@ $(function() {
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="a02194.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::BlockSpaceTraits&lt; LocalSpaceType &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::internal::LocalDiffusiveFluxEstimateStarOS2014IntegrandTraits&lt; DiffusionFactorType, DiffusionFactorHatType, DiffusionTensorType, DiffusiveFluxType &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00158_source.html">dune/gdt/playground/spaces/block.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00155_source.html">dune/gdt/playground/local/integrands/OS2014.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aa93ab4c47f1119a425c9b62494c7cb9f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02193.html">BlockSpace</a>&lt; LocalSpaceType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02197.html#aa93ab4c47f1119a425c9b62494c7cb9f">derived_type</a></td></tr>
-<tr class="separator:aa93ab4c47f1119a425c9b62494c7cb9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb064e7ae1008a7cdb8eda7e61b58330"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; std::shared_ptr&lt; const LocalSpaceType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02197.html#afb064e7ae1008a7cdb8eda7e61b58330">BackendType</a></td></tr>
-<tr class="separator:afb064e7ae1008a7cdb8eda7e61b58330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f5fe2bb037d13f3b947ba0a14c503ac"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02201.html">BlockMapper</a>&lt; LocalSpaceType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02197.html#a2f5fe2bb037d13f3b947ba0a14c503ac">MapperType</a></td></tr>
-<tr class="separator:a2f5fe2bb037d13f3b947ba0a14c503ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31ef0a49c5e21d6726165e71eb0087d9"><td class="memItemLeft" align="right" valign="top">typedef LocalSpaceType::BaseFunctionSetType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02197.html#a31ef0a49c5e21d6726165e71eb0087d9">BaseFunctionSetType</a></td></tr>
-<tr class="separator:a31ef0a49c5e21d6726165e71eb0087d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40376bc5f194f0a3033d5749625b5f67"><td class="memItemLeft" align="right" valign="top">typedef DdSubdomainsGridType::GlobalGridViewType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02197.html#a40376bc5f194f0a3033d5749625b5f67">GridLayerType</a></td></tr>
-<tr class="separator:a40376bc5f194f0a3033d5749625b5f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b675cc3e4dfbeb9966dd6bfb24d3a81"><td class="memItemLeft" align="right" valign="top">typedef LocalSpaceType::RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02197.html#a6b675cc3e4dfbeb9966dd6bfb24d3a81">RangeFieldType</a></td></tr>
-<tr class="separator:a6b675cc3e4dfbeb9966dd6bfb24d3a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace819fe549426a4fd8755354d7dc5932"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02197.html#ace819fe549426a4fd8755354d7dc5932">DofCommunicationChooserType</a> = <a class="el" href="a02821.html">DofCommunicationChooser</a>&lt; <a class="el" href="a02197.html#a40376bc5f194f0a3033d5749625b5f67">GridLayerType</a>, true &gt;</td></tr>
-<tr class="separator:ace819fe549426a4fd8755354d7dc5932"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad85027e390e4d993c48a492af14e6746"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02197.html#ad85027e390e4d993c48a492af14e6746">DofCommunicatorType</a> = typename <a class="el" href="a02821.html#a4a8775537c267ec00e1834115d1e7c1d">DofCommunicationChooserType::Type</a></td></tr>
-<tr class="separator:ad85027e390e4d993c48a492af14e6746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab9735ec0ea591c476d21b7c8cfb6703"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02193.html">LocalDiffusiveFluxEstimateStarOS2014Integrand</a>&lt; DiffusionFactorType, DiffusionFactorHatType, DiffusionTensorType, DiffusiveFluxType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02197.html#aab9735ec0ea591c476d21b7c8cfb6703">derived_type</a></td></tr>
+<tr class="separator:aab9735ec0ea591c476d21b7c8cfb6703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b010e75957931a19e315d6eac5a65d0"><td class="memItemLeft" align="right" valign="top">typedef std::tuple&lt; std::shared_ptr&lt; typename DiffusionFactorType::LocalfunctionType &gt;, std::shared_ptr&lt; typename DiffusionFactorHatType::LocalfunctionType &gt;, std::shared_ptr&lt; typename DiffusionTensorType::LocalfunctionType &gt;, std::shared_ptr&lt; typename DiffusiveFluxType::LocalfunctionType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02197.html#a0b010e75957931a19e315d6eac5a65d0">LocalfunctionTupleType</a></td></tr>
+<tr class="separator:a0b010e75957931a19e315d6eac5a65d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6729a55e10cbd064cd23849fa037c102"><td class="memItemLeft" align="right" valign="top">typedef DiffusionFactorType::EntityType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02197.html#a6729a55e10cbd064cd23849fa037c102">EntityType</a></td></tr>
+<tr class="separator:a6729a55e10cbd064cd23849fa037c102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9e9c40f61fbfa417a7bc8a18929a834"><td class="memItemLeft" align="right" valign="top">typedef DiffusionFactorType::DomainFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02197.html#ad9e9c40f61fbfa417a7bc8a18929a834">DomainFieldType</a></td></tr>
+<tr class="separator:ad9e9c40f61fbfa417a7bc8a18929a834"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a762536bb8660f89b478899dc7c526ad9"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02197.html#a762536bb8660f89b478899dc7c526ad9">polOrder</a> = LocalSpaceType::polOrder</td></tr>
-<tr class="separator:a762536bb8660f89b478899dc7c526ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adaea09ca47f29d79715afb698cfb6501"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02197.html#adaea09ca47f29d79715afb698cfb6501">continuous</a> = false</td></tr>
-<tr class="separator:adaea09ca47f29d79715afb698cfb6501"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d6b8f360efab22edf5b3f7fbace32ce"><td class="memItemLeft" align="right" valign="top">static const XT::Grid::Backends&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02197.html#a1d6b8f360efab22edf5b3f7fbace32ce">layer_backend</a> = XT::Grid::Backends::view</td></tr>
-<tr class="separator:a1d6b8f360efab22edf5b3f7fbace32ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a549850e474e98c23dd17ac052f319302"><td class="memItemLeft" align="right" valign="top">static const constexpr <a class="el" href="a00246.html#afd9e79bf2e05d76e877c835fa352f045">Backends</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02197.html#a549850e474e98c23dd17ac052f319302">backend_type</a> {<a class="el" href="a00246.html#afd9e79bf2e05d76e877c835fa352f045a0bef679c27a1c77dd1f1dfd3c591894b">Backends::gdt</a>}</td></tr>
-<tr class="separator:a549850e474e98c23dd17ac052f319302"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62e2be0069570220b8d831cfac575db8"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02197.html#a62e2be0069570220b8d831cfac575db8">needs_grid_view</a> = false</td></tr>
-<tr class="separator:a62e2be0069570220b8d831cfac575db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ba33774d78046768584136251ec25f2"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02197.html#a3ba33774d78046768584136251ec25f2">dimDomain</a> = DiffusionFactorType::dimDomain</td></tr>
+<tr class="separator:a3ba33774d78046768584136251ec25f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="afb064e7ae1008a7cdb8eda7e61b58330"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb064e7ae1008a7cdb8eda7e61b58330">&#9670;&nbsp;</a></span>BackendType</h2>
+<a id="aab9735ec0ea591c476d21b7c8cfb6703"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab9735ec0ea591c476d21b7c8cfb6703">&#9670;&nbsp;</a></span>derived_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalSpaceType &gt; </div>
+template&lt;class DiffusionFactorType , class DiffusionFactorHatType , class DiffusionTensorType , class DiffusiveFluxType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::vector&lt;std::shared_ptr&lt;const LocalSpaceType&gt; &gt; <a class="el" href="a02197.html">Dune::GDT::internal::BlockSpaceTraits</a>&lt; LocalSpaceType &gt;::<a class="el" href="a02197.html#afb064e7ae1008a7cdb8eda7e61b58330">BackendType</a></td>
+          <td class="memname">typedef <a class="el" href="a02193.html">LocalDiffusiveFluxEstimateStarOS2014Integrand</a>&lt;DiffusionFactorType, DiffusionFactorHatType, DiffusionTensorType, DiffusiveFluxType&gt; <a class="el" href="a02197.html">Dune::GDT::internal::LocalDiffusiveFluxEstimateStarOS2014IntegrandTraits</a>&lt; DiffusionFactorType, DiffusionFactorHatType, DiffusionTensorType, DiffusiveFluxType &gt;::<a class="el" href="a02197.html#aab9735ec0ea591c476d21b7c8cfb6703">derived_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a31ef0a49c5e21d6726165e71eb0087d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31ef0a49c5e21d6726165e71eb0087d9">&#9670;&nbsp;</a></span>BaseFunctionSetType</h2>
+<a id="ad9e9c40f61fbfa417a7bc8a18929a834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9e9c40f61fbfa417a7bc8a18929a834">&#9670;&nbsp;</a></span>DomainFieldType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalSpaceType &gt; </div>
+template&lt;class DiffusionFactorType , class DiffusionFactorHatType , class DiffusionTensorType , class DiffusiveFluxType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef LocalSpaceType::BaseFunctionSetType <a class="el" href="a02197.html">Dune::GDT::internal::BlockSpaceTraits</a>&lt; LocalSpaceType &gt;::<a class="el" href="a02197.html#a31ef0a49c5e21d6726165e71eb0087d9">BaseFunctionSetType</a></td>
+          <td class="memname">typedef DiffusionFactorType::DomainFieldType <a class="el" href="a02197.html">Dune::GDT::internal::LocalDiffusiveFluxEstimateStarOS2014IntegrandTraits</a>&lt; DiffusionFactorType, DiffusionFactorHatType, DiffusionTensorType, DiffusiveFluxType &gt;::<a class="el" href="a02197.html#ad9e9c40f61fbfa417a7bc8a18929a834">DomainFieldType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aa93ab4c47f1119a425c9b62494c7cb9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa93ab4c47f1119a425c9b62494c7cb9f">&#9670;&nbsp;</a></span>derived_type</h2>
+<a id="a6729a55e10cbd064cd23849fa037c102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6729a55e10cbd064cd23849fa037c102">&#9670;&nbsp;</a></span>EntityType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalSpaceType &gt; </div>
+template&lt;class DiffusionFactorType , class DiffusionFactorHatType , class DiffusionTensorType , class DiffusiveFluxType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a02193.html">BlockSpace</a>&lt;LocalSpaceType&gt; <a class="el" href="a02197.html">Dune::GDT::internal::BlockSpaceTraits</a>&lt; LocalSpaceType &gt;::<a class="el" href="a02197.html#aa93ab4c47f1119a425c9b62494c7cb9f">derived_type</a></td>
+          <td class="memname">typedef DiffusionFactorType::EntityType <a class="el" href="a02197.html">Dune::GDT::internal::LocalDiffusiveFluxEstimateStarOS2014IntegrandTraits</a>&lt; DiffusionFactorType, DiffusionFactorHatType, DiffusionTensorType, DiffusiveFluxType &gt;::<a class="el" href="a02197.html#a6729a55e10cbd064cd23849fa037c102">EntityType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ace819fe549426a4fd8755354d7dc5932"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace819fe549426a4fd8755354d7dc5932">&#9670;&nbsp;</a></span>DofCommunicationChooserType</h2>
+<a id="a0b010e75957931a19e315d6eac5a65d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b010e75957931a19e315d6eac5a65d0">&#9670;&nbsp;</a></span>LocalfunctionTupleType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalSpaceType &gt; </div>
+template&lt;class DiffusionFactorType , class DiffusionFactorHatType , class DiffusionTensorType , class DiffusiveFluxType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a02197.html">Dune::GDT::internal::BlockSpaceTraits</a>&lt; LocalSpaceType &gt;::<a class="el" href="a02197.html#ace819fe549426a4fd8755354d7dc5932">DofCommunicationChooserType</a> =  <a class="el" href="a02821.html">DofCommunicationChooser</a>&lt;<a class="el" href="a02197.html#a40376bc5f194f0a3033d5749625b5f67">GridLayerType</a>, true&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad85027e390e4d993c48a492af14e6746"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad85027e390e4d993c48a492af14e6746">&#9670;&nbsp;</a></span>DofCommunicatorType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class LocalSpaceType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="a02197.html">Dune::GDT::internal::BlockSpaceTraits</a>&lt; LocalSpaceType &gt;::<a class="el" href="a02197.html#ad85027e390e4d993c48a492af14e6746">DofCommunicatorType</a> =  typename <a class="el" href="a02821.html#a4a8775537c267ec00e1834115d1e7c1d">DofCommunicationChooserType::Type</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a40376bc5f194f0a3033d5749625b5f67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40376bc5f194f0a3033d5749625b5f67">&#9670;&nbsp;</a></span>GridLayerType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class LocalSpaceType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef DdSubdomainsGridType::GlobalGridViewType <a class="el" href="a02197.html">Dune::GDT::internal::BlockSpaceTraits</a>&lt; LocalSpaceType &gt;::<a class="el" href="a02197.html#a40376bc5f194f0a3033d5749625b5f67">GridLayerType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2f5fe2bb037d13f3b947ba0a14c503ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f5fe2bb037d13f3b947ba0a14c503ac">&#9670;&nbsp;</a></span>MapperType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class LocalSpaceType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a02201.html">BlockMapper</a>&lt;LocalSpaceType&gt; <a class="el" href="a02197.html">Dune::GDT::internal::BlockSpaceTraits</a>&lt; LocalSpaceType &gt;::<a class="el" href="a02197.html#a2f5fe2bb037d13f3b947ba0a14c503ac">MapperType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6b675cc3e4dfbeb9966dd6bfb24d3a81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b675cc3e4dfbeb9966dd6bfb24d3a81">&#9670;&nbsp;</a></span>RangeFieldType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class LocalSpaceType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef LocalSpaceType::RangeFieldType <a class="el" href="a02197.html">Dune::GDT::internal::BlockSpaceTraits</a>&lt; LocalSpaceType &gt;::<a class="el" href="a02197.html#a6b675cc3e4dfbeb9966dd6bfb24d3a81">RangeFieldType</a></td>
+          <td class="memname">typedef std::tuple&lt;std::shared_ptr&lt;typename DiffusionFactorType::LocalfunctionType&gt;, std::shared_ptr&lt;typename DiffusionFactorHatType::LocalfunctionType&gt;, std::shared_ptr&lt;typename DiffusionTensorType::LocalfunctionType&gt;, std::shared_ptr&lt;typename DiffusiveFluxType::LocalfunctionType&gt; &gt; <a class="el" href="a02197.html">Dune::GDT::internal::LocalDiffusiveFluxEstimateStarOS2014IntegrandTraits</a>&lt; DiffusionFactorType, DiffusionFactorHatType, DiffusionTensorType, DiffusiveFluxType &gt;::<a class="el" href="a02197.html#a0b010e75957931a19e315d6eac5a65d0">LocalfunctionTupleType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -236,115 +156,19 @@ template&lt;class LocalSpaceType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a549850e474e98c23dd17ac052f319302"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a549850e474e98c23dd17ac052f319302">&#9670;&nbsp;</a></span>backend_type</h2>
+<a id="a3ba33774d78046768584136251ec25f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ba33774d78046768584136251ec25f2">&#9670;&nbsp;</a></span>dimDomain</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalSpaceType &gt; </div>
+template&lt;class DiffusionFactorType , class DiffusionFactorHatType , class DiffusionTensorType , class DiffusiveFluxType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const constexpr <a class="el" href="a00246.html#afd9e79bf2e05d76e877c835fa352f045">Backends</a> <a class="el" href="a02197.html">Dune::GDT::internal::BlockSpaceTraits</a>&lt; LocalSpaceType &gt;::backend_type {<a class="el" href="a00246.html#afd9e79bf2e05d76e877c835fa352f045a0bef679c27a1c77dd1f1dfd3c591894b">Backends::gdt</a>}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="adaea09ca47f29d79715afb698cfb6501"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adaea09ca47f29d79715afb698cfb6501">&#9670;&nbsp;</a></span>continuous</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class LocalSpaceType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool <a class="el" href="a02197.html">Dune::GDT::internal::BlockSpaceTraits</a>&lt; LocalSpaceType &gt;::continuous = false</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1d6b8f360efab22edf5b3f7fbace32ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d6b8f360efab22edf5b3f7fbace32ce">&#9670;&nbsp;</a></span>layer_backend</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class LocalSpaceType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const XT::Grid::Backends <a class="el" href="a02197.html">Dune::GDT::internal::BlockSpaceTraits</a>&lt; LocalSpaceType &gt;::layer_backend = XT::Grid::Backends::view</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a62e2be0069570220b8d831cfac575db8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62e2be0069570220b8d831cfac575db8">&#9670;&nbsp;</a></span>needs_grid_view</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class LocalSpaceType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool <a class="el" href="a02197.html">Dune::GDT::internal::BlockSpaceTraits</a>&lt; LocalSpaceType &gt;::needs_grid_view = false</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a762536bb8660f89b478899dc7c526ad9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a762536bb8660f89b478899dc7c526ad9">&#9670;&nbsp;</a></span>polOrder</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class LocalSpaceType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int <a class="el" href="a02197.html">Dune::GDT::internal::BlockSpaceTraits</a>&lt; LocalSpaceType &gt;::polOrder = LocalSpaceType::polOrder</td>
+          <td class="memname">const size_t <a class="el" href="a02197.html">Dune::GDT::internal::LocalDiffusiveFluxEstimateStarOS2014IntegrandTraits</a>&lt; DiffusionFactorType, DiffusionFactorHatType, DiffusionTensorType, DiffusiveFluxType &gt;::dimDomain = DiffusionFactorType::dimDomain</td>
         </tr>
       </table>
   </td>
@@ -357,7 +181,7 @@ template&lt;class LocalSpaceType &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00158_source.html">block.hh</a></li>
+<li><a class="el" href="a00155_source.html">OS2014.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

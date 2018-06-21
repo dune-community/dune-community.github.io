@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::LocalLinearReconstructionOperator&lt; AnalyticalFluxType, BoundaryValueType, GridLayerType, slope_limiter, JacobianWrapperType &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::Slice&lt; RangeType, dimDomain &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,233 +59,22 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a02041.html">LocalLinearReconstructionOperator</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a02041.html">Slice</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="a02038.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::LocalLinearReconstructionOperator&lt; AnalyticalFluxType, BoundaryValueType, GridLayerType, slope_limiter, JacobianWrapperType &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::Slice&lt; RangeType, dimDomain &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="a00131_source.html">dune/gdt/operators/fv/reconstruction/linear.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::LocalLinearReconstructionOperator&lt; AnalyticalFluxType, BoundaryValueType, GridLayerType, slope_limiter, JacobianWrapperType &gt;:</div>
+Inheritance diagram for Dune::GDT::Slice&lt; RangeType, dimDomain &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02040.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_local_linear_reconstruction_operator_3_01_analytical_flux_type_00_01_boundary_value_type_00_01_grid_layer_type_00_01slope__limiter_00_01_jacobian_wrapper_type_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1_local_linear_reconstruction_operator_3_01_analytical_flux_type_00_01_boundary_value_type_00_01_grid_layer_type_00_01slope__limiter_00_01_jacobian_wrapper_type_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_local_linear_reconstruction_operator_3_01_analytical_flux_type_00_01_boundary_value_type_00_01_grid_layer_type_00_01slope__limiter_00_01_jacobian_wrapper_type_01_4_inherit__map">
+<div class="center"><img src="a02040.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_slice_3_01_range_type_00_01dim_domain_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_slice_3_01_range_type_00_01dim_domain_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_slice_3_01_range_type_00_01dim_domain_01_4_inherit__map">
 </map>
-</div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a0df8cc55bd5d81e5d0c889956f543c52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02041.html#a0df8cc55bd5d81e5d0c889956f543c52">LocalLinearReconstructionOperator</a> (const std::vector&lt; RangeType &gt; &amp;source_values, const AnalyticalFluxType &amp;analytical_flux, const BoundaryValueType &amp;boundary_values, const GridLayerType &amp;grid_layer, const XT::Common::Parameter &amp;param, const Quadrature1dType &amp;quadrature, <a class="el" href="a02053.html">ReconstructedFunctionType</a> &amp;reconstructed_function, XT::Common::PerThreadValue&lt; JacobianWrapperType &gt; &amp;jacobian_wrapper)</td></tr>
-<tr class="separator:a0df8cc55bd5d81e5d0c889956f543c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b314b83222617a5faa9f88c5ddd548d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02041.html#a9b314b83222617a5faa9f88c5ddd548d">apply_local</a> (const EntityType &amp;entity)</td></tr>
-<tr class="separator:a9b314b83222617a5faa9f88c5ddd548d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a5e30059e307f92ab63acb88cfe892c5c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02041.html#a5e30059e307f92ab63acb88cfe892c5c">linear_reconstruction_1d</a> (const FieldVector&lt; RangeType, axis_size &gt; &amp;stencil, FieldVector&lt; RangeType, 2 &gt; &amp;reconstructed_values)</td></tr>
-<tr class="separator:a5e30059e307f92ab63acb88cfe892c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79af9caf2977144704b6082fb4028e5c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02041.html#a79af9caf2977144704b6082fb4028e5c">linear_reconstruction</a> (const size_t dir, const Quadrature1dType &amp;quadrature, const MultiArrayType &amp;stencil, MultiArrayType &amp;reconstructed_values)</td></tr>
-<tr class="separator:a79af9caf2977144704b6082fb4028e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0df8cc55bd5d81e5d0c889956f543c52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0df8cc55bd5d81e5d0c889956f543c52">&#9670;&nbsp;</a></span>LocalLinearReconstructionOperator()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class AnalyticalFluxType , class BoundaryValueType , class GridLayerType , SlopeLimiters slope_limiter, class JacobianWrapperType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a02041.html">Dune::GDT::LocalLinearReconstructionOperator</a>&lt; AnalyticalFluxType, BoundaryValueType, GridLayerType, slope_limiter, JacobianWrapperType &gt;::<a class="el" href="a02041.html">LocalLinearReconstructionOperator</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; RangeType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>source_values</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AnalyticalFluxType &amp;&#160;</td>
-          <td class="paramname"><em>analytical_flux</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const BoundaryValueType &amp;&#160;</td>
-          <td class="paramname"><em>boundary_values</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const GridLayerType &amp;&#160;</td>
-          <td class="paramname"><em>grid_layer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
-          <td class="paramname"><em>param</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Quadrature1dType &amp;&#160;</td>
-          <td class="paramname"><em>quadrature</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a02053.html">ReconstructedFunctionType</a> &amp;&#160;</td>
-          <td class="paramname"><em>reconstructed_function</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">XT::Common::PerThreadValue&lt; JacobianWrapperType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>jacobian_wrapper</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9b314b83222617a5faa9f88c5ddd548d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b314b83222617a5faa9f88c5ddd548d">&#9670;&nbsp;</a></span>apply_local()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class AnalyticalFluxType , class BoundaryValueType , class GridLayerType , SlopeLimiters slope_limiter, class JacobianWrapperType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a02041.html">Dune::GDT::LocalLinearReconstructionOperator</a>&lt; AnalyticalFluxType, BoundaryValueType, GridLayerType, slope_limiter, JacobianWrapperType &gt;::apply_local </td>
-          <td>(</td>
-          <td class="paramtype">const EntityType &amp;&#160;</td>
-          <td class="paramname"><em>entity</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a79af9caf2977144704b6082fb4028e5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79af9caf2977144704b6082fb4028e5c">&#9670;&nbsp;</a></span>linear_reconstruction()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class AnalyticalFluxType , class BoundaryValueType , class GridLayerType , SlopeLimiters slope_limiter, class JacobianWrapperType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void <a class="el" href="a02041.html">Dune::GDT::LocalLinearReconstructionOperator</a>&lt; AnalyticalFluxType, BoundaryValueType, GridLayerType, slope_limiter, JacobianWrapperType &gt;::linear_reconstruction </td>
-          <td>(</td>
-          <td class="paramtype">const size_t&#160;</td>
-          <td class="paramname"><em>dir</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Quadrature1dType &amp;&#160;</td>
-          <td class="paramname"><em>quadrature</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const MultiArrayType &amp;&#160;</td>
-          <td class="paramname"><em>stencil</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">MultiArrayType &amp;&#160;</td>
-          <td class="paramname"><em>reconstructed_values</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5e30059e307f92ab63acb88cfe892c5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e30059e307f92ab63acb88cfe892c5c">&#9670;&nbsp;</a></span>linear_reconstruction_1d()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class AnalyticalFluxType , class BoundaryValueType , class GridLayerType , SlopeLimiters slope_limiter, class JacobianWrapperType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void <a class="el" href="a02041.html">Dune::GDT::LocalLinearReconstructionOperator</a>&lt; AnalyticalFluxType, BoundaryValueType, GridLayerType, slope_limiter, JacobianWrapperType &gt;::linear_reconstruction_1d </td>
-          <td>(</td>
-          <td class="paramtype">const FieldVector&lt; RangeType, axis_size &gt; &amp;&#160;</td>
-          <td class="paramname"><em>stencil</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">FieldVector&lt; RangeType, 2 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>reconstructed_values</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="a00131_source.html">linear.hh</a></li>

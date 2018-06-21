@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::SharedDOFGatherScatter Struct Reference</title>
+<title>dune-gdt: Dune::GDT::DisjointPartitioningGatherScatter&lt; RankIndex &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a02545.html">SharedDOFGatherScatter</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a02545.html">DisjointPartitioningGatherScatter</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -67,34 +67,86 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a02542.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::SharedDOFGatherScatter Struct Reference</div>  </div>
+<div class="title">Dune::GDT::DisjointPartitioningGatherScatter&lt; RankIndex &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>GatherScatter functor for marking shared DOFs.  
+<p>GatherScatter functor for creating a disjoint DOF partitioning.  
  <a href="a02545.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="a00194_source.html">dune/gdt/spaces/datahandles.hh</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Dune::GDT::DisjointPartitioningGatherScatter&lt; RankIndex &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="a02544.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_disjoint_partitioning_gather_scatter_3_01_rank_index_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_disjoint_partitioning_gather_scatter_3_01_rank_index_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_disjoint_partitioning_gather_scatter_3_01_rank_index_01_4_inherit__map">
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af8e0dac52931579567f188d1e49b9bdc"><td class="memTemplParams" colspan="2">template&lt;typename MessageBuffer , typename Entity , typename LocalView &gt; </td></tr>
-<tr class="memitem:af8e0dac52931579567f188d1e49b9bdc"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02545.html#af8e0dac52931579567f188d1e49b9bdc">gather</a> (MessageBuffer &amp;buff, const Entity &amp;, <a class="el" href="a02713.html">LocalView</a> &amp;local_view) const</td></tr>
-<tr class="separator:af8e0dac52931579567f188d1e49b9bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a754a350f6323e83344b1089941bff756"><td class="memTemplParams" colspan="2">template&lt;typename MessageBuffer , typename Entity , typename LocalView &gt; </td></tr>
-<tr class="memitem:a754a350f6323e83344b1089941bff756"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02545.html#a754a350f6323e83344b1089941bff756">scatter</a> (MessageBuffer &amp;buff, std::size_t, const Entity &amp;, <a class="el" href="a02713.html">LocalView</a> &amp;local_view) const</td></tr>
-<tr class="separator:a754a350f6323e83344b1089941bff756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6169e338ad64e9f39c7a952e27ddafe"><td class="memTemplParams" colspan="2">template&lt;typename MessageBuffer , typename Entity , typename LocalView &gt; </td></tr>
+<tr class="memitem:aa6169e338ad64e9f39c7a952e27ddafe"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02545.html#aa6169e338ad64e9f39c7a952e27ddafe">gather</a> (MessageBuffer &amp;buff, const Entity &amp;, <a class="el" href="a02721.html">LocalView</a> &amp;) const</td></tr>
+<tr class="separator:aa6169e338ad64e9f39c7a952e27ddafe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a29084a6c8b77a993a5cea0b92e28b6"><td class="memTemplParams" colspan="2">template&lt;typename MessageBuffer , typename Entity , typename LocalView &gt; </td></tr>
+<tr class="memitem:a3a29084a6c8b77a993a5cea0b92e28b6"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02545.html#a3a29084a6c8b77a993a5cea0b92e28b6">scatter</a> (MessageBuffer &amp;buff, std::size_t, const Entity &amp;e, <a class="el" href="a02721.html">LocalView</a> &amp;local_view) const</td></tr>
+<tr class="separator:a3a29084a6c8b77a993a5cea0b92e28b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2337b1af5c3a57e1a8990daa4c27cb2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02545.html#ab2337b1af5c3a57e1a8990daa4c27cb2">DisjointPartitioningGatherScatter</a> (RankIndex rank)</td></tr>
+<tr class="memdesc:ab2337b1af5c3a57e1a8990daa4c27cb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="a02545.html" title="GatherScatter functor for creating a disjoint DOF partitioning. ">DisjointPartitioningGatherScatter</a> object.  <a href="#ab2337b1af5c3a57e1a8990daa4c27cb2">More...</a><br /></td></tr>
+<tr class="separator:ab2337b1af5c3a57e1a8990daa4c27cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>GatherScatter functor for marking shared DOFs. </p>
-<p>This functor will mark all DOFs that exist on multiple processes.</p>
-<dl class="section note"><dt>Note</dt><dd>In order to work correctly, the data handle must be communicated on the Dune::All_All_Interface and the result vector must be initialized with false. </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="af8e0dac52931579567f188d1e49b9bdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8e0dac52931579567f188d1e49b9bdc">&#9670;&nbsp;</a></span>gather()</h2>
+<div class="textblock"><h3>template&lt;typename RankIndex&gt;<br />
+class Dune::GDT::DisjointPartitioningGatherScatter&lt; RankIndex &gt;</h3>
+
+<p>GatherScatter functor for creating a disjoint DOF partitioning. </p>
+<p>This functor will associate each DOF with a unique rank, creating a nonoverlapping partitioning of the unknowns. The rank for a DOF is chosen by finding the lowest rank on which the associated grid entity belongs to either the interior or the border partition.</p>
+<dl class="section note"><dt>Note</dt><dd>In order to work correctly, the data handle must be communicated on the Dune::InteriorBorder_All_Interface and the result vector must be initialized with the MPI rank value. </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ab2337b1af5c3a57e1a8990daa4c27cb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2337b1af5c3a57e1a8990daa4c27cb2">&#9670;&nbsp;</a></span>DisjointPartitioningGatherScatter()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename RankIndex&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a02545.html">Dune::GDT::DisjointPartitioningGatherScatter</a>&lt; RankIndex &gt;::<a class="el" href="a02545.html">DisjointPartitioningGatherScatter</a> </td>
+          <td>(</td>
+          <td class="paramtype">RankIndex&#160;</td>
+          <td class="paramname"><em>rank</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a <a class="el" href="a02545.html" title="GatherScatter functor for creating a disjoint DOF partitioning. ">DisjointPartitioningGatherScatter</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rank</td><td>The MPI rank of the current process. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa6169e338ad64e9f39c7a952e27ddafe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6169e338ad64e9f39c7a952e27ddafe">&#9670;&nbsp;</a></span>gather()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RankIndex&gt; </div>
 <div class="memtemplate">
 template&lt;typename MessageBuffer , typename Entity , typename LocalView &gt; </div>
 <table class="mlabels">
@@ -102,7 +154,7 @@ template&lt;typename MessageBuffer , typename Entity , typename LocalView &gt; <
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Dune::GDT::SharedDOFGatherScatter::gather </td>
+          <td class="memname">bool <a class="el" href="a02545.html">Dune::GDT::DisjointPartitioningGatherScatter</a>&lt; RankIndex &gt;::gather </td>
           <td>(</td>
           <td class="paramtype">MessageBuffer &amp;&#160;</td>
           <td class="paramname"><em>buff</em>, </td>
@@ -116,8 +168,8 @@ template&lt;typename MessageBuffer , typename Entity , typename LocalView &gt; <
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a02713.html">LocalView</a> &amp;&#160;</td>
-          <td class="paramname"><em>local_view</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a02721.html">LocalView</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -134,11 +186,13 @@ template&lt;typename MessageBuffer , typename Entity , typename LocalView &gt; <
 
 </div>
 </div>
-<a id="a754a350f6323e83344b1089941bff756"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a754a350f6323e83344b1089941bff756">&#9670;&nbsp;</a></span>scatter()</h2>
+<a id="a3a29084a6c8b77a993a5cea0b92e28b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a29084a6c8b77a993a5cea0b92e28b6">&#9670;&nbsp;</a></span>scatter()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename RankIndex&gt; </div>
 <div class="memtemplate">
 template&lt;typename MessageBuffer , typename Entity , typename LocalView &gt; </div>
 <table class="mlabels">
@@ -146,7 +200,7 @@ template&lt;typename MessageBuffer , typename Entity , typename LocalView &gt; <
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Dune::GDT::SharedDOFGatherScatter::scatter </td>
+          <td class="memname">bool <a class="el" href="a02545.html">Dune::GDT::DisjointPartitioningGatherScatter</a>&lt; RankIndex &gt;::scatter </td>
           <td>(</td>
           <td class="paramtype">MessageBuffer &amp;&#160;</td>
           <td class="paramname"><em>buff</em>, </td>
@@ -161,12 +215,12 @@ template&lt;typename MessageBuffer , typename Entity , typename LocalView &gt; <
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const Entity &amp;&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>e</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a02713.html">LocalView</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="a02721.html">LocalView</a> &amp;&#160;</td>
           <td class="paramname"><em>local_view</em>&#160;</td>
         </tr>
         <tr>
@@ -184,7 +238,7 @@ template&lt;typename MessageBuffer , typename Entity , typename LocalView &gt; <
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="a00194_source.html">datahandles.hh</a></li>
 </ul>
 </div><!-- contents -->

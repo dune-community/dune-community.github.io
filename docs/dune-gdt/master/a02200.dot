@@ -1,15 +1,15 @@
-digraph "Dune::GDT::BlockMapper&lt; LocalSpaceImp &gt;"
+digraph "Dune::GDT::BlockSpace&lt; LocalSpaceImp &gt;"
 {
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="Dune::GDT::BlockMapper\l\< LocalSpaceImp \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 [label="Dune::GDT::BlockSpace\l\< LocalSpaceImp \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
   Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 [label="Dune::GDT::MapperInterface\l\< internal::BlockMapperTraits\l\< LocalSpaceImp \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02785.html"];
+  Node1 [label="Dune::GDT::SpaceInterface\l\< internal::BlockSpaceTraits\l\< LocalSpaceImp \>, LocalSpaceImp\l::dimDomain, LocalSpaceImp::dimRange,\l LocalSpaceImp::dimRangeCols \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02709.html"];
   Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="XT::CRTPInterface\<\l MapperInterface\< internal\l::BlockMapperTraits\< LocalSpace\lImp \> \>, internal::BlockMapperTraits\l\< LocalSpaceImp \> \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
-  Node3 -> Node1 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::BlockMapperTraits\l\< LocalSpaceImp \> \>" ,fontname="Helvetica"];
-  Node3 [label="Dune::GDT::MapperInterface\l\< Traits \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02785.html"];
+  Node2 [label="XT::CRTPInterface\<\l SpaceInterface\< internal\l::BlockSpaceTraits\< LocalSpaceImp\l \>, domainDim, rangeDim, rangeDimCols\l \>, internal::BlockSpaceTraits\< LocalSpaceImp \> \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::BlockSpaceTraits\l\< LocalSpaceImp \>, LocalSpaceImp\l::dimDomain, LocalSpaceImp::dimRange,\l LocalSpaceImp::dimRangeCols \>" ,fontname="Helvetica"];
+  Node3 [label="Dune::GDT::SpaceInterface\l\< Traits, domainDim, rangeDim,\l rangeDimCols \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02709.html"];
   Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="XT::CRTPInterface\<\l MapperInterface\< Traits\l \>, Traits \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 [label="XT::CRTPInterface\<\l SpaceInterface\< Traits,\l domainDim, rangeDim, rangeDim\lCols \>, Traits \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
 }

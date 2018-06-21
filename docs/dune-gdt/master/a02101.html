@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::MatrixApplyFunctor&lt; GridLayerType, MatrixType, DiscreteFunctionType &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::internal::AdvectionRhsOperatorTraits&lt; RhsEvaluationImp &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,104 +59,92 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a02101.html">MatrixApplyFunctor</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a00247.html">internal</a></li><li class="navelem"><a class="el" href="a02101.html">AdvectionRhsOperatorTraits</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="a02098.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::MatrixApplyFunctor&lt; GridLayerType, MatrixType, DiscreteFunctionType &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::internal::AdvectionRhsOperatorTraits&lt; RhsEvaluationImp &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="a00143_source.html">dune/gdt/operators/fv/rhs.hh</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for Dune::GDT::MatrixApplyFunctor&lt; GridLayerType, MatrixType, DiscreteFunctionType &gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="a02100.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_matrix_apply_functor_3_01_grid_layer_type_00_01_matrix_type_00_01_discrete_function_type_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1_matrix_apply_functor_3_01_grid_layer_type_00_01_matrix_type_00_01_discrete_function_type_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_matrix_apply_functor_3_01_grid_layer_type_00_01_matrix_type_00_01_discrete_function_type_01_4_inherit__map">
-</map>
-</div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a0ee7768e3796426e50dce9ffb0628624"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02101.html#a0ee7768e3796426e50dce9ffb0628624">MatrixApplyFunctor</a> (const std::vector&lt; MatrixType &gt; &amp;matrices, const DiscreteFunctionType &amp;vector, DiscreteFunctionType &amp;result)</td></tr>
-<tr class="separator:a0ee7768e3796426e50dce9ffb0628624"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a802116fdaec6be8b63e30e1c94c2a03c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02101.html#a802116fdaec6be8b63e30e1c94c2a03c">apply_local</a> (const EntityType &amp;entity)</td></tr>
-<tr class="separator:a802116fdaec6be8b63e30e1c94c2a03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a6d218ebd31c9204d139c9e13c4669e3d"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02097.html">AdvectionRhsOperator</a>&lt; RhsEvaluationImp &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02101.html#a6d218ebd31c9204d139c9e13c4669e3d">derived_type</a></td></tr>
+<tr class="separator:a6d218ebd31c9204d139c9e13c4669e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3cf353f1ec208d9ff8fa2591ea7d538"><td class="memItemLeft" align="right" valign="top">typedef RhsEvaluationImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02101.html#af3cf353f1ec208d9ff8fa2591ea7d538">RhsEvaluationType</a></td></tr>
+<tr class="separator:af3cf353f1ec208d9ff8fa2591ea7d538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0263d293c0eaf7cd177e58f0208630da"><td class="memItemLeft" align="right" valign="top">typedef RhsEvaluationImp::DomainFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02101.html#a0263d293c0eaf7cd177e58f0208630da">FieldType</a></td></tr>
+<tr class="separator:a0263d293c0eaf7cd177e58f0208630da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af99fa1755608846e03cbf0a27bd07a4f"><td class="memItemLeft" align="right" valign="top">typedef RhsEvaluationImp::PartialURangeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02101.html#af99fa1755608846e03cbf0a27bd07a4f">JacobianType</a></td></tr>
+<tr class="separator:af99fa1755608846e03cbf0a27bd07a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0ee7768e3796426e50dce9ffb0628624"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ee7768e3796426e50dce9ffb0628624">&#9670;&nbsp;</a></span>MatrixApplyFunctor()</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a6d218ebd31c9204d139c9e13c4669e3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d218ebd31c9204d139c9e13c4669e3d">&#9670;&nbsp;</a></span>derived_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GridLayerType , class MatrixType , class DiscreteFunctionType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;class RhsEvaluationImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a02101.html">Dune::GDT::MatrixApplyFunctor</a>&lt; GridLayerType, MatrixType, DiscreteFunctionType &gt;::<a class="el" href="a02101.html">MatrixApplyFunctor</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; MatrixType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>matrices</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const DiscreteFunctionType &amp;&#160;</td>
-          <td class="paramname"><em>vector</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">DiscreteFunctionType &amp;&#160;</td>
-          <td class="paramname"><em>result</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">typedef <a class="el" href="a02097.html">AdvectionRhsOperator</a>&lt;RhsEvaluationImp&gt; <a class="el" href="a02101.html">Dune::GDT::internal::AdvectionRhsOperatorTraits</a>&lt; RhsEvaluationImp &gt;::<a class="el" href="a02101.html#a6d218ebd31c9204d139c9e13c4669e3d">derived_type</a></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a802116fdaec6be8b63e30e1c94c2a03c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a802116fdaec6be8b63e30e1c94c2a03c">&#9670;&nbsp;</a></span>apply_local()</h2>
+<a id="a0263d293c0eaf7cd177e58f0208630da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0263d293c0eaf7cd177e58f0208630da">&#9670;&nbsp;</a></span>FieldType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GridLayerType , class MatrixType , class DiscreteFunctionType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;class RhsEvaluationImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="a02101.html">Dune::GDT::MatrixApplyFunctor</a>&lt; GridLayerType, MatrixType, DiscreteFunctionType &gt;::apply_local </td>
-          <td>(</td>
-          <td class="paramtype">const EntityType &amp;&#160;</td>
-          <td class="paramname"><em>entity</em></td><td>)</td>
-          <td></td>
+          <td class="memname">typedef RhsEvaluationImp::DomainFieldType <a class="el" href="a02101.html">Dune::GDT::internal::AdvectionRhsOperatorTraits</a>&lt; RhsEvaluationImp &gt;::<a class="el" href="a02101.html#a0263d293c0eaf7cd177e58f0208630da">FieldType</a></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af99fa1755608846e03cbf0a27bd07a4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af99fa1755608846e03cbf0a27bd07a4f">&#9670;&nbsp;</a></span>JacobianType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class RhsEvaluationImp &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef RhsEvaluationImp::PartialURangeType <a class="el" href="a02101.html">Dune::GDT::internal::AdvectionRhsOperatorTraits</a>&lt; RhsEvaluationImp &gt;::<a class="el" href="a02101.html#af99fa1755608846e03cbf0a27bd07a4f">JacobianType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3cf353f1ec208d9ff8fa2591ea7d538"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3cf353f1ec208d9ff8fa2591ea7d538">&#9670;&nbsp;</a></span>RhsEvaluationType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class RhsEvaluationImp &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef RhsEvaluationImp <a class="el" href="a02101.html">Dune::GDT::internal::AdvectionRhsOperatorTraits</a>&lt; RhsEvaluationImp &gt;::<a class="el" href="a02101.html#af3cf353f1ec208d9ff8fa2591ea7d538">RhsEvaluationType</a></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>

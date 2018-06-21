@@ -75,7 +75,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a04552_source.html">dune/gdt/local/fluxes/entropybased.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a04560_source.html">dune/gdt/local/fluxes/entropybased.hh</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::PiecewiseMonomials&lt; typename U::DomainFieldType, domainDim, typename U::RangeFieldType, U::dimRange, 1 &gt;, GridLayerImp, U &gt;:</div>
 <div class="dyncontent">
@@ -109,8 +109,8 @@ Public Types</h2></td></tr>
 <tr class="separator:a953cab10caa7a155deb23faf1806ada1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49415baa597ef4d468c2a8bbec132825"><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; <a class="el" href="a01141.html#a17cc4f396479019c1e84b76982c476d5">BlockVectorType</a>, RangeFieldType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01141.html#a49415baa597ef4d468c2a8bbec132825">AlphaReturnType</a></td></tr>
 <tr class="separator:a49415baa597ef4d468c2a8bbec132825"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a636a13ef3375ab4bc191d51eb8cb71b1"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01121.html">EntropyLocalCache</a>&lt; StateRangeType, <a class="el" href="a01141.html#a49415baa597ef4d468c2a8bbec132825">AlphaReturnType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01141.html#a636a13ef3375ab4bc191d51eb8cb71b1">LocalCacheType</a></td></tr>
-<tr class="separator:a636a13ef3375ab4bc191d51eb8cb71b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81a267ab60d892f473c624e2a368eb1f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01121.html">EntropyLocalCache</a>&lt; StateRangeType, <a class="el" href="a01141.html#a17cc4f396479019c1e84b76982c476d5">BlockVectorType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01141.html#a81a267ab60d892f473c624e2a368eb1f">LocalCacheType</a></td></tr>
+<tr class="separator:a81a267ab60d892f473c624e2a368eb1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a704efd29d456d1e3ac4ff9645fa43d56"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01141.html#a704efd29d456d1e3ac4ff9645fa43d56">TemporaryVectorType</a> = FieldVector&lt; std::vector&lt; RangeFieldType, boost::alignment::aligned_allocator&lt; RangeFieldType, 64 &gt; &gt;, <a class="el" href="a01141.html#a44b709b7408d32fee719a3fd98ce4724">num_blocks</a> &gt;</td></tr>
 <tr class="separator:a704efd29d456d1e3ac4ff9645fa43d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -138,7 +138,7 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a4120d9f052975ab344ba48dc0caea1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44b709b7408d32fee719a3fd98ce4724"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01141.html#a44b709b7408d32fee719a3fd98ce4724">num_blocks</a> = dimRange / <a class="el" href="a01141.html#a4120d9f052975ab344ba48dc0caea1e1">block_size</a></td></tr>
 <tr class="separator:a44b709b7408d32fee719a3fd98ce4724"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7736eef5dd84b1413f9c199a9dca289"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01141.html#af7736eef5dd84b1413f9c199a9dca289">cache_size</a> = 2 * dimRange + 2</td></tr>
+<tr class="memitem:af7736eef5dd84b1413f9c199a9dca289"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01141.html#af7736eef5dd84b1413f9c199a9dca289">cache_size</a> = 2 * dimDomain + 2</td></tr>
 <tr class="separator:af7736eef5dd84b1413f9c199a9dca289"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -243,8 +243,8 @@ template&lt;class GridLayerImp , class U , size_t domainDim&gt; </div>
 
 </div>
 </div>
-<a id="a636a13ef3375ab4bc191d51eb8cb71b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a636a13ef3375ab4bc191d51eb8cb71b1">&#9670;&nbsp;</a></span>LocalCacheType</h2>
+<a id="a81a267ab60d892f473c624e2a368eb1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81a267ab60d892f473c624e2a368eb1f">&#9670;&nbsp;</a></span>LocalCacheType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,7 +252,7 @@ template&lt;class GridLayerImp , class U , size_t domainDim&gt; </div>
 template&lt;class GridLayerImp , class U , size_t domainDim&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a01121.html">EntropyLocalCache</a>&lt;StateRangeType, <a class="el" href="a01141.html#a49415baa597ef4d468c2a8bbec132825">AlphaReturnType</a>&gt; <a class="el" href="a01125.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; Hyperbolic::Problems::PiecewiseMonomials&lt; typename U::DomainFieldType, domainDim, typename U::RangeFieldType, U::dimRange, 1 &gt;, GridLayerImp, U &gt;::<a class="el" href="a01141.html#a636a13ef3375ab4bc191d51eb8cb71b1">LocalCacheType</a></td>
+          <td class="memname">typedef <a class="el" href="a01121.html">EntropyLocalCache</a>&lt;StateRangeType, <a class="el" href="a01141.html#a17cc4f396479019c1e84b76982c476d5">BlockVectorType</a>&gt; <a class="el" href="a01125.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; Hyperbolic::Problems::PiecewiseMonomials&lt; typename U::DomainFieldType, domainDim, typename U::RangeFieldType, U::dimRange, 1 &gt;, GridLayerImp, U &gt;::<a class="el" href="a01141.html#a81a267ab60d892f473c624e2a368eb1f">LocalCacheType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -662,7 +662,7 @@ template&lt;class GridLayerImp , class U , size_t domainDim&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t <a class="el" href="a01125.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; Hyperbolic::Problems::PiecewiseMonomials&lt; typename U::DomainFieldType, domainDim, typename U::RangeFieldType, U::dimRange, 1 &gt;, GridLayerImp, U &gt;::cache_size = 2 * dimRange + 2</td>
+          <td class="memname">const size_t <a class="el" href="a01125.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; Hyperbolic::Problems::PiecewiseMonomials&lt; typename U::DomainFieldType, domainDim, typename U::RangeFieldType, U::dimRange, 1 &gt;, GridLayerImp, U &gt;::cache_size = 2 * dimDomain + 2</td>
         </tr>
       </table>
   </td>
@@ -699,7 +699,7 @@ template&lt;class GridLayerImp , class U , size_t domainDim&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a04552_source.html">local/fluxes/entropybased.hh</a></li>
+<li><a class="el" href="a04560_source.html">local/fluxes/entropybased.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
