@@ -83,10 +83,10 @@ Inheritance diagram for Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problem
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac6d4d62a4c20fa96f14e508243b17def"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01181.html#ac6d4d62a4c20fa96f14e508243b17def">Localfunction</a> (const EntityType &amp;e, const <a class="el" href="a01177.html#a68d44989fcdb002ca0556625bbb0af87">BasisfunctionType</a> &amp;<a class="el" href="a01177.html#a704ab09be924ee08e5106b32add263b7">basis_functions</a>, const RangeType &amp;v_points, const RangeFieldType tau, const RangeFieldType epsilon_gamma, const RangeFieldType chi, const RangeFieldType xi, const std::vector&lt; RangeFieldType &gt; &amp;r_sequence, const size_t k_0, const size_t k_max, const RangeFieldType epsilon, const RangeFieldType taylor_tol, const size_t max_taylor_order, <a class="el" href="a01177.html#a7e4e68b5260fce17d844cfeb0fba357f">LocalCacheType</a> &amp;cache, std::mutex &amp;mutex)</td></tr>
+<tr class="memitem:ac6d4d62a4c20fa96f14e508243b17def"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01181.html#ac6d4d62a4c20fa96f14e508243b17def">Localfunction</a> (const EntityType &amp;e, const <a class="el" href="a01177.html#a68d44989fcdb002ca0556625bbb0af87">BasisfunctionType</a> &amp;<a class="el" href="a01177.html#a704ab09be924ee08e5106b32add263b7">basis_functions</a>, const RangeType &amp;v_points, const RangeFieldType tau, const RangeFieldType epsilon_gamma, const RangeFieldType chi, const RangeFieldType xi, const std::vector&lt; RangeFieldType &gt; &amp;r_sequence, const size_t k_0, const size_t k_max, const RangeFieldType epsilon, const RangeFieldType taylor_tol, const size_t max_taylor_order, <a class="el" href="a01177.html#af34caccba5f78612681e547dc27f4392">LocalCacheType</a> &amp;cache, std::mutex &amp;mutex)</td></tr>
 <tr class="separator:ac6d4d62a4c20fa96f14e508243b17def"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9daff46abb4eed21ea2e7b9b137be19a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01177.html#a295797441af39a49ca2c95e1aab53f71">AlphaReturnType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01181.html#a9daff46abb4eed21ea2e7b9b137be19a">get_alpha</a> (const DomainType &amp;, const StateRangeType &amp;u, const XT::Common::Parameter &amp;param, const bool regularize=true) const</td></tr>
-<tr class="separator:a9daff46abb4eed21ea2e7b9b137be19a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362addb061080d1e70ea0d809ebb916c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01177.html#a295797441af39a49ca2c95e1aab53f71">AlphaReturnType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01181.html#a362addb061080d1e70ea0d809ebb916c">get_alpha</a> (const DomainType &amp;, const StateRangeType &amp;u, const XT::Common::Parameter &amp;param, const bool regularize, const bool only_cache) const</td></tr>
+<tr class="separator:a362addb061080d1e70ea0d809ebb916c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a834136b3a4375ba967fa3aafc79915c5"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01181.html#a834136b3a4375ba967fa3aafc79915c5">order</a> (const XT::Common::Parameter &amp;) const override</td></tr>
 <tr class="separator:a834136b3a4375ba967fa3aafc79915c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d1e2c6f6ca12a9648147fb83481aa69"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01181.html#a6d1e2c6f6ca12a9648147fb83481aa69">evaluate</a> (const DomainType &amp;x_local, const StateRangeType &amp;u, RangeType &amp;ret, const XT::Common::Parameter &amp;param) const override</td></tr>
@@ -196,7 +196,7 @@ template&lt;class GridLayerImp , class U &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a01177.html#a7e4e68b5260fce17d844cfeb0fba357f">LocalCacheType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="a01177.html#af34caccba5f78612681e547dc27f4392">LocalCacheType</a> &amp;&#160;</td>
           <td class="paramname"><em>cache</em>, </td>
         </tr>
         <tr>
@@ -327,8 +327,8 @@ template&lt;class GridLayerImp , class U &gt; </div>
 
 </div>
 </div>
-<a id="a9daff46abb4eed21ea2e7b9b137be19a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9daff46abb4eed21ea2e7b9b137be19a">&#9670;&nbsp;</a></span>get_alpha()</h2>
+<a id="a362addb061080d1e70ea0d809ebb916c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a362addb061080d1e70ea0d809ebb916c">&#9670;&nbsp;</a></span>get_alpha()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -360,7 +360,13 @@ template&lt;class GridLayerImp , class U &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const bool&#160;</td>
-          <td class="paramname"><em>regularize</em> = <code>true</code>&#160;</td>
+          <td class="paramname"><em>regularize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>only_cache</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

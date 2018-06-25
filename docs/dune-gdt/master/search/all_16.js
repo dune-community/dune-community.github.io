@@ -10,7 +10,7 @@ var searchData=
   ['weightedl2operator',['WeightedL2Operator',['../a02185.html',1,'Dune::GDT::WeightedL2Operator&lt; WeightFunctionType, GridLayerType, Field &gt;'],['../a02185.html#a6c0ceb8b442ae221745b658863f0e42b',1,'Dune::GDT::WeightedL2Operator::WeightedL2Operator()']]],
   ['weightedl2operatortraits',['WeightedL2OperatorTraits',['../a02189.html',1,'Dune::GDT::internal']]],
   ['work_5f',['work_',['../a02021.html#a3e4cd8ef98b0c5a1e142fe688b567b98',1,'Dune::GDT::internal::BlockedJacobianWrapper']]],
-  ['working_5fstorage',['working_storage',['../a01145.html#aaea8b3b29a91b8a91a613d5bd8040bb7',1,'Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::PiecewiseMonomials&lt; typename U::DomainFieldType, domainDim, typename U::RangeFieldType, U::dimRange, 1 &gt;, GridLayerImp, U &gt;::Localfunction']]],
+  ['working_5fstorage',['working_storage',['../a01129.html#a78d5564a4c9e715480f01c75db531f04',1,'Dune::GDT::EntropyBasedLocalFlux::Localfunction::working_storage()'],['../a01145.html#aaea8b3b29a91b8a91a613d5bd8040bb7',1,'Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::PiecewiseMonomials&lt; typename U::DomainFieldType, domainDim, typename U::RangeFieldType, U::dimRange, 1 &gt;, GridLayerImp, U &gt;::Localfunction::working_storage()']]],
   ['wrap_5fbuffer',['wrap_buffer',['../a02509.html#a5d13c360264bfee54b109e047d0097e0',1,'Dune::GDT::DofDataCommunicationDescriptor::wrap_buffer()'],['../a02513.html#a6d8e085686206f640d1188751dffd479',1,'Dune::GDT::EntityDataCommunicationDescriptor::wrap_buffer()']]],
   ['wrapper_2ehh',['wrapper.hh',['../a00014.html',1,'']]],
   ['write_5fto_5ftextfile',['write_to_textfile',['../a03053.html#ae3294192b44d1c29edb048defb61ab9d',1,'Dune::GDT::TimeStepperInterface']]]

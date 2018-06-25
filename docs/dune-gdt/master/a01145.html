@@ -126,6 +126,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a70026ac72e862539bd9a410a7e553f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc89f9a5699998ca480e4e32e4dc9548"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01145.html#acc89f9a5699998ca480e4e32e4dc9548">evaluate_col</a> (const size_t col, const DomainType &amp;x_local, const StateRangeType &amp;u, ColRangeType &amp;ret, const XT::Common::Parameter &amp;param) const override</td></tr>
 <tr class="separator:acc89f9a5699998ca480e4e32e4dc9548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51257dfd3a5d173692fcce1a1dfa9041"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01145.html#a51257dfd3a5d173692fcce1a1dfa9041">evaluate_col_helper</a> (const size_t col, ColRangeType &amp;ret, const <a class="el" href="a01141.html#a17cc4f396479019c1e84b76982c476d5">BlockVectorType</a> &amp;alpha) const</td></tr>
+<tr class="separator:a51257dfd3a5d173692fcce1a1dfa9041"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dd0f2b2e52d2f121248483809211024"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01145.html#a5dd0f2b2e52d2f121248483809211024">partial_u</a> (const DomainType &amp;x_local, const StateRangeType &amp;u, PartialURangeType &amp;ret, const XT::Common::Parameter &amp;param) const override</td></tr>
 <tr class="separator:a5dd0f2b2e52d2f121248483809211024"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7925cb7af6e572f93a5c51078d7793eb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01145.html#a7925cb7af6e572f93a5c51078d7793eb">partial_u_col</a> (const size_t col, const DomainType &amp;x_local, const StateRangeType &amp;u, ColPartialURangeType &amp;ret, const XT::Common::Parameter &amp;param) const override</td></tr>
@@ -877,6 +879,50 @@ template&lt;class GridLayerImp , class U , size_t domainDim&gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a51257dfd3a5d173692fcce1a1dfa9041"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51257dfd3a5d173692fcce1a1dfa9041">&#9670;&nbsp;</a></span>evaluate_col_helper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class U , size_t domainDim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a01125.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; Hyperbolic::Problems::PiecewiseMonomials&lt; typename U::DomainFieldType, domainDim, typename U::RangeFieldType, U::dimRange, 1 &gt;, GridLayerImp, U &gt;::Localfunction::evaluate_col_helper </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>col</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ColRangeType &amp;&#160;</td>
+          <td class="paramname"><em>ret</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a01141.html#a17cc4f396479019c1e84b76982c476d5">BlockVectorType</a> &amp;&#160;</td>
+          <td class="paramname"><em>alpha</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

@@ -101,13 +101,13 @@ Public Types</h2></td></tr>
 <tr class="separator:a242123bc8acd035c7ab247cc2b6c7f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a295797441af39a49ca2c95e1aab53f71"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01177.html#a295797441af39a49ca2c95e1aab53f71">AlphaReturnType</a> = typename std::pair&lt; StateRangeType, RangeFieldType &gt;</td></tr>
 <tr class="separator:a295797441af39a49ca2c95e1aab53f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e4e68b5260fce17d844cfeb0fba357f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01121.html">EntropyLocalCache</a>&lt; StateRangeType, <a class="el" href="a01177.html#a295797441af39a49ca2c95e1aab53f71">AlphaReturnType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01177.html#a7e4e68b5260fce17d844cfeb0fba357f">LocalCacheType</a></td></tr>
-<tr class="separator:a7e4e68b5260fce17d844cfeb0fba357f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af34caccba5f78612681e547dc27f4392"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01121.html">EntropyLocalCache</a>&lt; StateRangeType, StateRangeType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01177.html#af34caccba5f78612681e547dc27f4392">LocalCacheType</a></td></tr>
+<tr class="separator:af34caccba5f78612681e547dc27f4392"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af4ae545697c70e842c6a1f859c66fc51"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01177.html#af4ae545697c70e842c6a1f859c66fc51">EntropyBasedLocalFlux</a> (const <a class="el" href="a01177.html#a68d44989fcdb002ca0556625bbb0af87">BasisfunctionType</a> &amp;<a class="el" href="a01177.html#a704ab09be924ee08e5106b32add263b7">basis_functions</a>, const <a class="el" href="a01177.html#a439ae3db93bb9120a3396129cd5d086e">GridLayerType</a> &amp;grid_layer, const <a class="el" href="a01177.html#a4ed1c5c891485eb3d84b201f38ce28ca">QuadratureRuleType</a> &amp;, const RangeFieldType tau=1e-9, const RangeFieldType epsilon_gamma=0.01, const RangeFieldType chi=0.5, const RangeFieldType xi=1e-3, const std::vector&lt; RangeFieldType &gt; r_sequence={0, 1e-8, 1e-6, 1e-4, 1e-3, 1e-2, 5e-2, 0.1, 0.5, 1}, const size_t k_0=50, const size_t k_max=200, const RangeFieldType epsilon=std::pow(2, -52), const RangeFieldType taylor_tol=0.1, const size_t max_taylor_order=200, const std::string name=static_id())</td></tr>
-<tr class="separator:af4ae545697c70e842c6a1f859c66fc51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f045a73248c454d6d5cedb6f50be745"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01177.html#a5f045a73248c454d6d5cedb6f50be745">EntropyBasedLocalFlux</a> (const <a class="el" href="a01177.html#a68d44989fcdb002ca0556625bbb0af87">BasisfunctionType</a> &amp;<a class="el" href="a01177.html#a704ab09be924ee08e5106b32add263b7">basis_functions</a>, const <a class="el" href="a01177.html#a439ae3db93bb9120a3396129cd5d086e">GridLayerType</a> &amp;grid_layer, const <a class="el" href="a01177.html#a4ed1c5c891485eb3d84b201f38ce28ca">QuadratureRuleType</a> &amp;, const RangeFieldType tau=1e-9, const RangeFieldType epsilon_gamma=0.01, const RangeFieldType chi=0.5, const RangeFieldType xi=1e-3, const std::vector&lt; RangeFieldType &gt; r_sequence={0, 1e-8, 1e-6, 1e-4, 1e-3, 1e-2, 5e-2, 0.1, 0.5, 1}, const size_t k_0=500, const size_t k_max=1000, const RangeFieldType epsilon=std::pow(2, -52), const RangeFieldType taylor_tol=0.1, const size_t max_taylor_order=200, const std::string name=static_id())</td></tr>
+<tr class="separator:a5f045a73248c454d6d5cedb6f50be745"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23cb95b15b7b1569b79d6ed0359db70b"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; LocalfunctionType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01177.html#a23cb95b15b7b1569b79d6ed0359db70b">local_function</a> (const EntityType &amp;entity) const</td></tr>
 <tr class="separator:a23cb95b15b7b1569b79d6ed0359db70b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5512c12c521fa7e36f9aec42061a0ec2"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; Localfunction &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01177.html#a5512c12c521fa7e36f9aec42061a0ec2">derived_local_function</a> (const EntityType &amp;entity) const</td></tr>
@@ -181,8 +181,8 @@ template&lt;class GridLayerImp , class U &gt; </div>
 
 </div>
 </div>
-<a id="a7e4e68b5260fce17d844cfeb0fba357f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e4e68b5260fce17d844cfeb0fba357f">&#9670;&nbsp;</a></span>LocalCacheType</h2>
+<a id="af34caccba5f78612681e547dc27f4392"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af34caccba5f78612681e547dc27f4392">&#9670;&nbsp;</a></span>LocalCacheType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -190,7 +190,7 @@ template&lt;class GridLayerImp , class U &gt; </div>
 template&lt;class GridLayerImp , class U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a01121.html">EntropyLocalCache</a>&lt;StateRangeType, <a class="el" href="a01177.html#a295797441af39a49ca2c95e1aab53f71">AlphaReturnType</a>&gt; <a class="el" href="a01125.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; Hyperbolic::Problems::HatFunctions&lt; typename U::DomainFieldType, 1, typename U::RangeFieldType, U::dimRange, 1, 1 &gt;, GridLayerImp, U &gt;::<a class="el" href="a01177.html#a7e4e68b5260fce17d844cfeb0fba357f">LocalCacheType</a></td>
+          <td class="memname">typedef <a class="el" href="a01121.html">EntropyLocalCache</a>&lt;StateRangeType, StateRangeType&gt; <a class="el" href="a01125.html">Dune::GDT::EntropyBasedLocalFlux</a>&lt; Hyperbolic::Problems::HatFunctions&lt; typename U::DomainFieldType, 1, typename U::RangeFieldType, U::dimRange, 1, 1 &gt;, GridLayerImp, U &gt;::<a class="el" href="a01177.html#af34caccba5f78612681e547dc27f4392">LocalCacheType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -230,8 +230,8 @@ template&lt;class GridLayerImp , class U &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af4ae545697c70e842c6a1f859c66fc51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4ae545697c70e842c6a1f859c66fc51">&#9670;&nbsp;</a></span>EntropyBasedLocalFlux()</h2>
+<a id="a5f045a73248c454d6d5cedb6f50be745"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f045a73248c454d6d5cedb6f50be745">&#9670;&nbsp;</a></span>EntropyBasedLocalFlux()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -293,13 +293,13 @@ template&lt;class GridLayerImp , class U &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const size_t&#160;</td>
-          <td class="paramname"><em>k_0</em> = <code>50</code>, </td>
+          <td class="paramname"><em>k_0</em> = <code>500</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const size_t&#160;</td>
-          <td class="paramname"><em>k_max</em> = <code>200</code>, </td>
+          <td class="paramname"><em>k_max</em> = <code>1000</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
