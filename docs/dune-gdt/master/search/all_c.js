@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['block_2ehh',['block.hh',['../a04518.html',1,'']]],
+  ['block_2ehh',['block.hh',['../a04522.html',1,'']]],
+  ['m',['M',['../a02017.html#a663e393969bd85b40fd32f258e398399',1,'Dune::GDT::internal::JacobianWrapper']]],
   ['m_5f',['M_',['../a01145.html#ab29347a201713600c81bdd5e5c9dfefc',1,'Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::PiecewiseMonomials&lt; typename U::DomainFieldType, domainDim, typename U::RangeFieldType, U::dimRange, 1 &gt;, GridLayerImp, U &gt;::Localfunction']]],
   ['make_5fconst_5fdiscrete_5ffunction',['make_const_discrete_function',['../a00246.html#a6b9c4a6f7b668a0b5d89f4f02d9f2257',1,'Dune::GDT']]],
   ['make_5fdarcy',['make_darcy',['../a00246.html#abebd2ad3553f76c53794b395f15d276e',1,'Dune::GDT']]],
@@ -90,7 +91,7 @@ var searchData=
   ['mingatherscatter',['MinGatherScatter',['../a02529.html',1,'Dune::GDT']]],
   ['minmod',['minmod',['../a00246.html#af68dfb986d335b9416add6ef64dfad58adbc1048da08be92092fbaf26e4561b4d',1,'Dune::GDT']]],
   ['momentmodelboundaryvalue',['MomentModelBoundaryValue',['../a01925.html',1,'Dune::GDT::MomentModelBoundaryValue&lt; GridLayerType, BasisfunctionType, LocalizableFunctionType &gt;'],['../a01925.html#a2754291240e273aad021f129072a21ee',1,'Dune::GDT::MomentModelBoundaryValue::MomentModelBoundaryValue()']]],
-  ['momentregularizer',['MomentRegularizer',['../a01973.html',1,'Dune::GDT::MomentRegularizer&lt; AnalyticalFluxImp, BasisfunctionImp, Traits &gt;'],['../a01973.html#ab41cfe65686d8d155e897c5896185c27',1,'Dune::GDT::MomentRegularizer::MomentRegularizer()']]],
+  ['momentregularizer',['MomentRegularizer',['../a01973.html',1,'Dune::GDT::MomentRegularizer&lt; AnalyticalFluxImp, BasisfunctionImp, Traits &gt;'],['../a01973.html#a0967ec60169d9f7368069aa108fdd452',1,'Dune::GDT::MomentRegularizer::MomentRegularizer()']]],
   ['momentregularizertraits',['MomentRegularizerTraits',['../a01977.html',1,'Dune::GDT::internal']]],
   ['multiindexiterator',['MultiIndexIterator',['../a02025.html',1,'Dune::GDT::MultiIndexIterator&lt; MultiArrayType &gt;'],['../a02025.html#af1b05433d9de96513d41ff86442432c2',1,'Dune::GDT::MultiIndexIterator::MultiIndexIterator()']]],
   ['multiindexprovider',['MultiIndexProvider',['../a02029.html',1,'Dune::GDT::MultiIndexProvider&lt; MultiArrayType &gt;'],['../a02029.html#a7bda6bf20a6eb2747bbc1545c2f18d64',1,'Dune::GDT::MultiIndexProvider::MultiIndexProvider()']]],
@@ -104,5 +105,5 @@ var searchData=
   ['mustalocalnumericalcouplingflux',['MustaLocalNumericalCouplingFlux',['../a01301.html',1,'Dune::GDT::MustaLocalNumericalCouplingFlux&lt; AnalyticalFluxImp, LocalizableFunctionImp &gt;'],['../a01301.html#a125e8fae6d28ef7e35077c0729f8f00a',1,'Dune::GDT::MustaLocalNumericalCouplingFlux::MustaLocalNumericalCouplingFlux()']]],
   ['mustalocalnumericalcouplingfluxtraits',['MustaLocalNumericalCouplingFluxTraits',['../a01309.html',1,'Dune::GDT::internal']]],
   ['mutex_5f',['mutex_',['../a01145.html#ac7f1fdb04a1e4fc2fdf60fe6699fbec6',1,'Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::PiecewiseMonomials&lt; typename U::DomainFieldType, domainDim, typename U::RangeFieldType, U::dimRange, 1 &gt;, GridLayerImp, U &gt;::Localfunction']]],
-  ['restricted_2ehh',['restricted.hh',['../a04731.html',1,'']]]
+  ['restricted_2ehh',['restricted.hh',['../a04735.html',1,'']]]
 ];
