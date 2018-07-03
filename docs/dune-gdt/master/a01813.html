@@ -75,7 +75,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a04555_source.html">dune/gdt/operators/elliptic-ipdg.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a04551_source.html">dune/gdt/operators/elliptic-ipdg.hh</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Dune::GDT::EllipticIpdgMatrixOperator&lt; DiffusionFactorType, DiffusionTensorType, RangeSpace, method, Matrix, GridLayer, SourceSpace, Field &gt;:</div>
 <div class="dyncontent">
@@ -86,10 +86,16 @@ Inheritance diagram for Dune::GDT::EllipticIpdgMatrixOperator&lt; DiffusionFacto
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:a45935c5d1dd1b2da66c1d0f4a9ef0fb6"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01765.html">MatrixOperatorBase</a>&lt; Matrix, RangeSpace, GridLayer, SourceSpace, Field, <a class="el" href="a00246.html#a09f2467105da4217b0ff3bb2e4790c7eab68d75779ad98669ad5d654fe30a5827">ChoosePattern::face_and_volume</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01813.html#a45935c5d1dd1b2da66c1d0f4a9ef0fb6">BaseType</a></td></tr>
+<tr class="separator:a45935c5d1dd1b2da66c1d0f4a9ef0fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8018b47bd28c11b288ba760c5db34590"><td class="memItemLeft" align="right" valign="top">typedef BaseType::GridLayerType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01813.html#a8018b47bd28c11b288ba760c5db34590">GridLayerType</a></td></tr>
 <tr class="separator:a8018b47bd28c11b288ba760c5db34590"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa15e9c3a9dc8293c20fa223998d21eb0"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01765.html#aa15e9c3a9dc8293c20fa223998d21eb0">BaseType::IntersectionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01813.html#aa15e9c3a9dc8293c20fa223998d21eb0">IntersectionType</a></td></tr>
 <tr class="separator:aa15e9c3a9dc8293c20fa223998d21eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a547ea06f58aabbab409292e5935fbec6"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02117.html">OperatorInterface</a>&lt; <a class="el" href="a01769.html">internal::MatrixOperatorBaseTraits</a>&lt; Matrix, RangeSpace, GridLayer, SourceSpace, Field, pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01765.html#a547ea06f58aabbab409292e5935fbec6">BaseOperatorType</a></td></tr>
+<tr class="separator:a547ea06f58aabbab409292e5935fbec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f7bb0b6d71a09c22a6880c55d5f7c6f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00829.html">SystemAssembler</a>&lt; RangeSpace, GridLayer, SourceSpace, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01765.html#a2f7bb0b6d71a09c22a6880c55d5f7c6f">BaseAssemblerType</a></td></tr>
+<tr class="separator:a2f7bb0b6d71a09c22a6880c55d5f7c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37cca0b456f64e9de901ca8837edaf7a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01769.html">internal::MatrixOperatorBaseTraits</a>&lt; Matrix, RangeSpace, GridLayer, SourceSpace, Field, pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01765.html#a37cca0b456f64e9de901ca8837edaf7a">Traits</a></td></tr>
 <tr class="separator:a37cca0b456f64e9de901ca8837edaf7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a761e5c86377a563b1d56271532a20519"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00829.html#ac9f04d80420b338ebe1c096d22b2b090">BaseAssemblerType::TestSpaceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01765.html#a761e5c86377a563b1d56271532a20519">RangeSpaceType</a></td></tr>
@@ -260,6 +266,8 @@ Public Member Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Ctors for given single diffusion</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><dl class="section see"><dt>See also</dt><dd>The Ctors of <a class="el" href="a01817.html">EllipticLocalizableProduct</a>. </dd></dl>
 </div></td></tr>
+<tr class="memitem:a97c48e64c009854c193977f9a9bbf5b0"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01813.html#a97c48e64c009854c193977f9a9bbf5b0">~EllipticIpdgMatrixOperator</a> ()</td></tr>
+<tr class="separator:a97c48e64c009854c193977f9a9bbf5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af66d1f3e4bd6b3f675c7ee9ce2175ad7"><td class="memTemplParams" colspan="2">template&lt;typename DiffusionImp , typename  = typename std::enable_if&lt;(std::is_same&lt;DiffusionTensorType, void&gt;::value)                                               &amp;&amp; (std::is_same&lt;DiffusionImp, DiffusionFactorType&gt;::value)                                               &amp;&amp; sizeof(DiffusionImp)&gt;::type, class... Args&gt; </td></tr>
 <tr class="memitem:af66d1f3e4bd6b3f675c7ee9ce2175ad7"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01813.html#af66d1f3e4bd6b3f675c7ee9ce2175ad7">EllipticIpdgMatrixOperator</a> (const XT::Grid::BoundaryInfo&lt; <a class="el" href="a01813.html#aa15e9c3a9dc8293c20fa223998d21eb0">IntersectionType</a> &gt; &amp;boundary_info, const DiffusionImp &amp;diffusion, Args &amp;&amp;... args)</td></tr>
 <tr class="separator:af66d1f3e4bd6b3f675c7ee9ce2175ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -315,14 +323,14 @@ Static Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a42c6b55b305b5a202af486af3863abce"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00829.html#ac9f04d80420b338ebe1c096d22b2b090">TestSpaceType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00829.html#a42c6b55b305b5a202af486af3863abce">test_space_</a></td></tr>
-<tr class="separator:a42c6b55b305b5a202af486af3863abce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a117733572a1c60f2b7527ed868861685"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00829.html#a5bd2da574dd49bb34f3a21b94d1594b8">AnsatzSpaceType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00829.html#a117733572a1c60f2b7527ed868861685">ansatz_space_</a></td></tr>
-<tr class="separator:a117733572a1c60f2b7527ed868861685"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8145897f216c0ba3cc55a12de9cb46b7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00829.html#abdf54f8973070b4ecb93d074f934ad7f">OuterTestSpaceType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00829.html#a8145897f216c0ba3cc55a12de9cb46b7">outer_test_space_</a></td></tr>
-<tr class="separator:a8145897f216c0ba3cc55a12de9cb46b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57753cc1099e4a3d5f05a663e8461c9e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00829.html#a8fcfaeb474a3daeebf269d161fd18838">OuterAnsatzSpaceType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00829.html#a57753cc1099e4a3d5f05a663e8461c9e">outer_ansatz_space_</a></td></tr>
-<tr class="separator:a57753cc1099e4a3d5f05a663e8461c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca77a96b114c70267589cea868bb12ab"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00829.html#ac9f04d80420b338ebe1c096d22b2b090">TestSpaceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00829.html#aca77a96b114c70267589cea868bb12ab">test_space_</a></td></tr>
+<tr class="separator:aca77a96b114c70267589cea868bb12ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6de714e0a249375a4d354fb096c00a8d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00829.html#a5bd2da574dd49bb34f3a21b94d1594b8">AnsatzSpaceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00829.html#a6de714e0a249375a4d354fb096c00a8d">ansatz_space_</a></td></tr>
+<tr class="separator:a6de714e0a249375a4d354fb096c00a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5de77ca49c382aba28dd16481fb498d3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00829.html#abdf54f8973070b4ecb93d074f934ad7f">OuterTestSpaceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00829.html#a5de77ca49c382aba28dd16481fb498d3">outer_test_space_</a></td></tr>
+<tr class="separator:a5de77ca49c382aba28dd16481fb498d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a46a266cbbb127c1a0893b836c8664c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00829.html#a8fcfaeb474a3daeebf269d161fd18838">OuterAnsatzSpaceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00829.html#a4a46a266cbbb127c1a0893b836c8664c">outer_ansatz_space_</a></td></tr>
+<tr class="separator:a4a46a266cbbb127c1a0893b836c8664c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd80c664d7c9440e8d3c2ab509101ac3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; XT::Grid::internal::Codim0ReturnObject&lt; <a class="el" href="a00829.html#a8018b47bd28c11b288ba760c5db34590">GridLayerType</a>, double &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00829.html#acd80c664d7c9440e8d3c2ab509101ac3">codim0_return_functors_</a></td></tr>
 <tr class="separator:acd80c664d7c9440e8d3c2ab509101ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -419,6 +427,66 @@ template&lt;class TestSpaceImp, class GridLayerImp = typename TestSpaceImp::Grid
 <span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f7bb0b6d71a09c22a6880c55d5f7c6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f7bb0b6d71a09c22a6880c55d5f7c6f">&#9670;&nbsp;</a></span>BaseAssemblerType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00829.html">SystemAssembler</a>&lt;RangeSpace , GridLayer , SourceSpace , OuterRangeSpaceImp, OuterSourceSpaceImp&gt; <a class="el" href="a01765.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::<a class="el" href="a01765.html#a2f7bb0b6d71a09c22a6880c55d5f7c6f">BaseAssemblerType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a547ea06f58aabbab409292e5935fbec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a547ea06f58aabbab409292e5935fbec6">&#9670;&nbsp;</a></span>BaseOperatorType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a02117.html">OperatorInterface</a>&lt;<a class="el" href="a01769.html">internal::MatrixOperatorBaseTraits</a>&lt;Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp&gt; &gt; <a class="el" href="a01765.html">Dune::GDT::MatrixOperatorBase</a>&lt; Matrix , RangeSpace , GridLayer , SourceSpace , Field , pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::<a class="el" href="a01765.html#a547ea06f58aabbab409292e5935fbec6">BaseOperatorType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45935c5d1dd1b2da66c1d0f4a9ef0fb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45935c5d1dd1b2da66c1d0f4a9ef0fb6">&#9670;&nbsp;</a></span>BaseType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiffusionFactorType , typename DiffusionTensorType , class RangeSpace , LocalEllipticIpdgIntegrands::Method method = LocalEllipticIpdgIntegrands::default_method, class Matrix  = typename XT::LA::Container&lt;typename RangeSpace::RangeFieldType&gt;::MatrixType, class GridLayer  = typename RangeSpace::GridLayerType, class SourceSpace  = RangeSpace, class Field  = typename Matrix::ScalarType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a01765.html">MatrixOperatorBase</a>&lt;Matrix, RangeSpace, GridLayer, SourceSpace, Field, <a class="el" href="a00246.html#a09f2467105da4217b0ff3bb2e4790c7eab68d75779ad98669ad5d654fe30a5827">ChoosePattern::face_and_volume</a>&gt; <a class="el" href="a01813.html">Dune::GDT::EllipticIpdgMatrixOperator</a>&lt; DiffusionFactorType, DiffusionTensorType, RangeSpace, method, Matrix, GridLayer, SourceSpace, Field &gt;::BaseType</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -1097,6 +1165,33 @@ template&lt;class DiffusionFactorType , typename DiffusionTensorType , class Ran
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a97c48e64c009854c193977f9a9bbf5b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97c48e64c009854c193977f9a9bbf5b0">&#9670;&nbsp;</a></span>~EllipticIpdgMatrixOperator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiffusionFactorType , typename DiffusionTensorType , class RangeSpace , LocalEllipticIpdgIntegrands::Method method = LocalEllipticIpdgIntegrands::default_method, class Matrix  = typename XT::LA::Container&lt;typename RangeSpace::RangeFieldType&gt;::MatrixType, class GridLayer  = typename RangeSpace::GridLayerType, class SourceSpace  = RangeSpace, class Field  = typename Matrix::ScalarType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="a01813.html">Dune::GDT::EllipticIpdgMatrixOperator</a>&lt; DiffusionFactorType, DiffusionTensorType, RangeSpace, method, Matrix, GridLayer, SourceSpace, Field &gt;::~<a class="el" href="a01813.html">EllipticIpdgMatrixOperator</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -3346,8 +3441,8 @@ template&lt;class TestSpaceImp, class GridLayerImp = typename TestSpaceImp::Grid
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a117733572a1c60f2b7527ed868861685"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a117733572a1c60f2b7527ed868861685">&#9670;&nbsp;</a></span>ansatz_space_</h2>
+<a id="a6de714e0a249375a4d354fb096c00a8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6de714e0a249375a4d354fb096c00a8d">&#9670;&nbsp;</a></span>ansatz_space_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3358,7 +3453,7 @@ template&lt;class TestSpaceImp, class GridLayerImp = typename TestSpaceImp::Grid
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a00829.html#a5bd2da574dd49bb34f3a21b94d1594b8">AnsatzSpaceType</a>&amp; <a class="el" href="a00829.html">Dune::GDT::SystemAssembler</a>&lt; TestSpaceImp, GridLayerImp, AnsatzSpaceImp, OuterTestSpaceImp, OuterAnsatzSpaceImp &gt;::ansatz_space_</td>
+          <td class="memname">const <a class="el" href="a00829.html#a5bd2da574dd49bb34f3a21b94d1594b8">AnsatzSpaceType</a> <a class="el" href="a00829.html">Dune::GDT::SystemAssembler</a>&lt; TestSpaceImp, GridLayerImp, AnsatzSpaceImp, OuterTestSpaceImp, OuterAnsatzSpaceImp &gt;::ansatz_space_</td>
         </tr>
       </table>
   </td>
@@ -3394,8 +3489,8 @@ template&lt;class TestSpaceImp, class GridLayerImp = typename TestSpaceImp::Grid
 
 </div>
 </div>
-<a id="a57753cc1099e4a3d5f05a663e8461c9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57753cc1099e4a3d5f05a663e8461c9e">&#9670;&nbsp;</a></span>outer_ansatz_space_</h2>
+<a id="a4a46a266cbbb127c1a0893b836c8664c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a46a266cbbb127c1a0893b836c8664c">&#9670;&nbsp;</a></span>outer_ansatz_space_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3406,7 +3501,7 @@ template&lt;class TestSpaceImp, class GridLayerImp = typename TestSpaceImp::Grid
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a00829.html#a8fcfaeb474a3daeebf269d161fd18838">OuterAnsatzSpaceType</a>&amp; <a class="el" href="a00829.html">Dune::GDT::SystemAssembler</a>&lt; TestSpaceImp, GridLayerImp, AnsatzSpaceImp, OuterTestSpaceImp, OuterAnsatzSpaceImp &gt;::outer_ansatz_space_</td>
+          <td class="memname">const <a class="el" href="a00829.html#a8fcfaeb474a3daeebf269d161fd18838">OuterAnsatzSpaceType</a> <a class="el" href="a00829.html">Dune::GDT::SystemAssembler</a>&lt; TestSpaceImp, GridLayerImp, AnsatzSpaceImp, OuterTestSpaceImp, OuterAnsatzSpaceImp &gt;::outer_ansatz_space_</td>
         </tr>
       </table>
   </td>
@@ -3418,8 +3513,8 @@ template&lt;class TestSpaceImp, class GridLayerImp = typename TestSpaceImp::Grid
 
 </div>
 </div>
-<a id="a8145897f216c0ba3cc55a12de9cb46b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8145897f216c0ba3cc55a12de9cb46b7">&#9670;&nbsp;</a></span>outer_test_space_</h2>
+<a id="a5de77ca49c382aba28dd16481fb498d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5de77ca49c382aba28dd16481fb498d3">&#9670;&nbsp;</a></span>outer_test_space_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3430,7 +3525,7 @@ template&lt;class TestSpaceImp, class GridLayerImp = typename TestSpaceImp::Grid
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a00829.html#abdf54f8973070b4ecb93d074f934ad7f">OuterTestSpaceType</a>&amp; <a class="el" href="a00829.html">Dune::GDT::SystemAssembler</a>&lt; TestSpaceImp, GridLayerImp, AnsatzSpaceImp, OuterTestSpaceImp, OuterAnsatzSpaceImp &gt;::outer_test_space_</td>
+          <td class="memname">const <a class="el" href="a00829.html#abdf54f8973070b4ecb93d074f934ad7f">OuterTestSpaceType</a> <a class="el" href="a00829.html">Dune::GDT::SystemAssembler</a>&lt; TestSpaceImp, GridLayerImp, AnsatzSpaceImp, OuterTestSpaceImp, OuterAnsatzSpaceImp &gt;::outer_test_space_</td>
         </tr>
       </table>
   </td>
@@ -3464,8 +3559,8 @@ template&lt;class TestSpaceImp, class GridLayerImp = typename TestSpaceImp::Grid
 
 </div>
 </div>
-<a id="a42c6b55b305b5a202af486af3863abce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42c6b55b305b5a202af486af3863abce">&#9670;&nbsp;</a></span>test_space_</h2>
+<a id="aca77a96b114c70267589cea868bb12ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca77a96b114c70267589cea868bb12ab">&#9670;&nbsp;</a></span>test_space_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3476,7 +3571,7 @@ template&lt;class TestSpaceImp, class GridLayerImp = typename TestSpaceImp::Grid
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a00829.html#ac9f04d80420b338ebe1c096d22b2b090">TestSpaceType</a>&amp; <a class="el" href="a00829.html">Dune::GDT::SystemAssembler</a>&lt; TestSpaceImp, GridLayerImp, AnsatzSpaceImp, OuterTestSpaceImp, OuterAnsatzSpaceImp &gt;::test_space_</td>
+          <td class="memname">const <a class="el" href="a00829.html#ac9f04d80420b338ebe1c096d22b2b090">TestSpaceType</a> <a class="el" href="a00829.html">Dune::GDT::SystemAssembler</a>&lt; TestSpaceImp, GridLayerImp, AnsatzSpaceImp, OuterTestSpaceImp, OuterAnsatzSpaceImp &gt;::test_space_</td>
         </tr>
       </table>
   </td>
@@ -3489,7 +3584,7 @@ template&lt;class TestSpaceImp, class GridLayerImp = typename TestSpaceImp::Grid
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a04555_source.html">operators/elliptic-ipdg.hh</a></li>
+<li><a class="el" href="a04551_source.html">operators/elliptic-ipdg.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

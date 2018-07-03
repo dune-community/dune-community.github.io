@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['l2_2dglobal_2ehh',['l2-global.hh',['../a04666.html',1,'(Global Namespace)'],['../a04669.html',1,'(Global Namespace)']]],
-  ['l2_2dlocal_2ehh',['l2-local.hh',['../a04672.html',1,'(Global Namespace)'],['../a04675.html',1,'(Global Namespace)']]],
-  ['l2_2ehh',['l2.hh',['../a04684.html',1,'(Global Namespace)'],['../a04687.html',1,'(Global Namespace)']]],
-  ['lagrange_2ehh',['lagrange.hh',['../a04690.html',1,'(Global Namespace)'],['../a04693.html',1,'(Global Namespace)']]],
+  ['l2_2dglobal_2ehh',['l2-global.hh',['../a04662.html',1,'(Global Namespace)'],['../a04665.html',1,'(Global Namespace)']]],
+  ['l2_2dlocal_2ehh',['l2-local.hh',['../a04668.html',1,'(Global Namespace)'],['../a04671.html',1,'(Global Namespace)']]],
+  ['l2_2ehh',['l2.hh',['../a04680.html',1,'(Global Namespace)'],['../a04683.html',1,'(Global Namespace)']]],
+  ['lagrange_2ehh',['lagrange.hh',['../a04686.html',1,'(Global Namespace)'],['../a04689.html',1,'(Global Namespace)']]],
   ['p1type',['P1Type',['../a01161.html#a2cd22c47da8a6bf63bb2c8803178c4a4',1,'Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::HatFunctions&lt; typename U::DomainFieldType, 3, typename U::RangeFieldType, U::dimRange, 1 &gt;, GridLayerImp, U &gt;']]],
   ['p2type',['P2Type',['../a01161.html#adc0a47fa43f3eb636f375e6ae7f57c33',1,'Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::HatFunctions&lt; typename U::DomainFieldType, 3, typename U::RangeFieldType, U::dimRange, 1 &gt;, GridLayerImp, U &gt;']]],
   ['p3type',['P3Type',['../a01161.html#a7795d24f6fd66123ac528da0728b4956',1,'Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::HatFunctions&lt; typename U::DomainFieldType, 3, typename U::RangeFieldType, U::dimRange, 1 &gt;, GridLayerImp, U &gt;']]],
