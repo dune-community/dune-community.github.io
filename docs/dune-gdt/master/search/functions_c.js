@@ -51,7 +51,7 @@ var searchData=
   ['midpoint_5fquadrature',['midpoint_quadrature',['../a00246.html#ab582bbc63e160ac8dd3ae499263d1f57',1,'Dune::GDT']]],
   ['mindatahandle',['MinDataHandle',['../a02533.html#a08b736cee105a16b5a5724622e94ebdc',1,'Dune::GDT::MinDataHandle']]],
   ['momentmodelboundaryvalue',['MomentModelBoundaryValue',['../a01925.html#a2754291240e273aad021f129072a21ee',1,'Dune::GDT::MomentModelBoundaryValue']]],
-  ['momentregularizer',['MomentRegularizer',['../a01973.html#a0967ec60169d9f7368069aa108fdd452',1,'Dune::GDT::MomentRegularizer']]],
+  ['momentregularizer',['MomentRegularizer',['../a01973.html#ab41cfe65686d8d155e897c5896185c27',1,'Dune::GDT::MomentRegularizer']]],
   ['multiindexiterator',['MultiIndexIterator',['../a02025.html#af1b05433d9de96513d41ff86442432c2',1,'Dune::GDT::MultiIndexIterator']]],
   ['multiindexprovider',['MultiIndexProvider',['../a02029.html#a7bda6bf20a6eb2747bbc1545c2f18d64',1,'Dune::GDT::MultiIndexProvider']]],
   ['multiply_5fcomponentwise',['multiply_componentwise',['../a00246.html#a4f4bf4ce46315ac1dd50c3ff04211d68',1,'Dune::GDT::multiply_componentwise(const FieldVector&lt; FieldType, size &gt; &amp;first, const FieldVector&lt; FieldType, size &gt; &amp;second)'],['../a00246.html#aaf16239b579b6dee9bc4d8abdb2aaf7b',1,'Dune::GDT::multiply_componentwise(const FieldVector&lt; DynamicVector&lt; FieldType &gt;, size &gt; &amp;first, const FieldVector&lt; DynamicVector&lt; FieldType &gt;, size &gt; &amp;second)']]],
