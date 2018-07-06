@@ -72,7 +72,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a04560_source.html">dune/gdt/local/fluxes/entropybased.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a04564_source.html">dune/gdt/local/fluxes/entropybased.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -82,6 +82,8 @@ Public Types</h2></td></tr>
 <tr class="separator:a39ce2ebef777a40a67c08e2eb38ac3ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dcdce2b5edeb25f8d522f8e76d54cfd"><td class="memItemLeft" align="right" valign="top">typedef MapType::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01121.html#a3dcdce2b5edeb25f8d522f8e76d54cfd">ConstIteratorType</a></td></tr>
 <tr class="separator:a3dcdce2b5edeb25f8d522f8e76d54cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a46fbb9936a4196faf2d8f65c801164"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01121.html#a5a46fbb9936a4196faf2d8f65c801164">RangeFieldType</a> = typename StateRangeType::value_type</td></tr>
+<tr class="separator:a5a46fbb9936a4196faf2d8f65c801164"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -89,16 +91,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9e62dee7cf49898c470210cfe01904dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf0753f374d91afdf9cb85203c689f66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01121.html#aaf0753f374d91afdf9cb85203c689f66">insert</a> (const StateRangeType &amp;u, const VectorType &amp;alpha)</td></tr>
 <tr class="separator:aaf0753f374d91afdf9cb85203c689f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a259e649c04919e497bdf98127e00d716"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01121.html#a259e649c04919e497bdf98127e00d716">keep</a> (const <a class="el" href="a01121.html#a39ce2ebef777a40a67c08e2eb38ac3ba">IteratorType</a> &amp;it)</td></tr>
-<tr class="separator:a259e649c04919e497bdf98127e00d716"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6a118807d280c1e8477dbcb1562b08c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01121.html#a39ce2ebef777a40a67c08e2eb38ac3ba">IteratorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01121.html#ad6a118807d280c1e8477dbcb1562b08c">lower_bound</a> (const StateRangeType &amp;u)</td></tr>
-<tr class="separator:ad6a118807d280c1e8477dbcb1562b08c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab108d999a297663f1805624b12952aae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01121.html#a3dcdce2b5edeb25f8d522f8e76d54cfd">ConstIteratorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01121.html#ab108d999a297663f1805624b12952aae">lower_bound</a> (const StateRangeType &amp;u) const</td></tr>
-<tr class="separator:ab108d999a297663f1805624b12952aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f7de9090b58b17ccd40c2d0775fa06a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01121.html#a39ce2ebef777a40a67c08e2eb38ac3ba">IteratorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01121.html#a6f7de9090b58b17ccd40c2d0775fa06a">find</a> (const StateRangeType &amp;u)</td></tr>
-<tr class="separator:a6f7de9090b58b17ccd40c2d0775fa06a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a197460b0967caf4e89bc0b9c28225618"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01121.html#a3dcdce2b5edeb25f8d522f8e76d54cfd">ConstIteratorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01121.html#a197460b0967caf4e89bc0b9c28225618">find</a> (const StateRangeType &amp;u) const</td></tr>
-<tr class="separator:a197460b0967caf4e89bc0b9c28225618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a533fe624cc24b09627772f0bb2c6f62f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01121.html#a533fe624cc24b09627772f0bb2c6f62f">keep</a> (const <a class="el" href="a01121.html#a3dcdce2b5edeb25f8d522f8e76d54cfd">ConstIteratorType</a> &amp;it)</td></tr>
+<tr class="separator:a533fe624cc24b09627772f0bb2c6f62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab66fba6433da26b4dda62b11900d305c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01121.html#a3dcdce2b5edeb25f8d522f8e76d54cfd">ConstIteratorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01121.html#ab66fba6433da26b4dda62b11900d305c">find_closest</a> (const StateRangeType &amp;u) const</td></tr>
+<tr class="separator:ab66fba6433da26b4dda62b11900d305c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10f9c668cd11607039752c3d8e896ae1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01121.html#a39ce2ebef777a40a67c08e2eb38ac3ba">IteratorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01121.html#a10f9c668cd11607039752c3d8e896ae1">end</a> ()</td></tr>
 <tr class="separator:a10f9c668cd11607039752c3d8e896ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8747e27ea2d141a78ace59ab4c63438"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01121.html#a3dcdce2b5edeb25f8d522f8e76d54cfd">ConstIteratorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01121.html#ab8747e27ea2d141a78ace59ab4c63438">end</a> () const</td></tr>
@@ -151,6 +147,22 @@ template&lt;class StateRangeType , class VectorType &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">typedef std::map&lt;StateRangeType, VectorType, XT::Common::FieldVectorLess&gt; <a class="el" href="a01121.html">Dune::GDT::EntropyLocalCache</a>&lt; StateRangeType, VectorType &gt;::<a class="el" href="a01121.html#a483b3b5ff0b2c5b845c303d53839ac55">MapType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5a46fbb9936a4196faf2d8f65c801164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a46fbb9936a4196faf2d8f65c801164">&#9670;&nbsp;</a></span>RangeFieldType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class StateRangeType , class VectorType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a01121.html">Dune::GDT::EntropyLocalCache</a>&lt; StateRangeType, VectorType &gt;::<a class="el" href="a01121.html#a5a46fbb9936a4196faf2d8f65c801164">RangeFieldType</a> =  typename StateRangeType::value_type</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -241,8 +253,8 @@ template&lt;class StateRangeType , class VectorType &gt; </div>
 
 </div>
 </div>
-<a id="a6f7de9090b58b17ccd40c2d0775fa06a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f7de9090b58b17ccd40c2d0775fa06a">&#9670;&nbsp;</a></span>find() <span class="overload">[1/2]</span></h2>
+<a id="ab66fba6433da26b4dda62b11900d305c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab66fba6433da26b4dda62b11900d305c">&#9670;&nbsp;</a></span>find_closest()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -253,35 +265,7 @@ template&lt;class StateRangeType , class VectorType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a01121.html#a39ce2ebef777a40a67c08e2eb38ac3ba">IteratorType</a> <a class="el" href="a01121.html">Dune::GDT::EntropyLocalCache</a>&lt; StateRangeType, VectorType &gt;::find </td>
-          <td>(</td>
-          <td class="paramtype">const StateRangeType &amp;&#160;</td>
-          <td class="paramname"><em>u</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a197460b0967caf4e89bc0b9c28225618"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a197460b0967caf4e89bc0b9c28225618">&#9670;&nbsp;</a></span>find() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class StateRangeType , class VectorType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a01121.html#a3dcdce2b5edeb25f8d522f8e76d54cfd">ConstIteratorType</a> <a class="el" href="a01121.html">Dune::GDT::EntropyLocalCache</a>&lt; StateRangeType, VectorType &gt;::find </td>
+          <td class="memname"><a class="el" href="a01121.html#a3dcdce2b5edeb25f8d522f8e76d54cfd">ConstIteratorType</a> <a class="el" href="a01121.html">Dune::GDT::EntropyLocalCache</a>&lt; StateRangeType, VectorType &gt;::find_closest </td>
           <td>(</td>
           <td class="paramtype">const StateRangeType &amp;&#160;</td>
           <td class="paramname"><em>u</em></td><td>)</td>
@@ -363,8 +347,8 @@ template&lt;class StateRangeType , class VectorType &gt; </div>
 
 </div>
 </div>
-<a id="a259e649c04919e497bdf98127e00d716"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a259e649c04919e497bdf98127e00d716">&#9670;&nbsp;</a></span>keep()</h2>
+<a id="a533fe624cc24b09627772f0bb2c6f62f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a533fe624cc24b09627772f0bb2c6f62f">&#9670;&nbsp;</a></span>keep()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -377,65 +361,9 @@ template&lt;class StateRangeType , class VectorType &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="a01121.html">Dune::GDT::EntropyLocalCache</a>&lt; StateRangeType, VectorType &gt;::keep </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a01121.html#a39ce2ebef777a40a67c08e2eb38ac3ba">IteratorType</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a01121.html#a3dcdce2b5edeb25f8d522f8e76d54cfd">ConstIteratorType</a> &amp;&#160;</td>
           <td class="paramname"><em>it</em></td><td>)</td>
           <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad6a118807d280c1e8477dbcb1562b08c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6a118807d280c1e8477dbcb1562b08c">&#9670;&nbsp;</a></span>lower_bound() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class StateRangeType , class VectorType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a01121.html#a39ce2ebef777a40a67c08e2eb38ac3ba">IteratorType</a> <a class="el" href="a01121.html">Dune::GDT::EntropyLocalCache</a>&lt; StateRangeType, VectorType &gt;::lower_bound </td>
-          <td>(</td>
-          <td class="paramtype">const StateRangeType &amp;&#160;</td>
-          <td class="paramname"><em>u</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab108d999a297663f1805624b12952aae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab108d999a297663f1805624b12952aae">&#9670;&nbsp;</a></span>lower_bound() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class StateRangeType , class VectorType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a01121.html#a3dcdce2b5edeb25f8d522f8e76d54cfd">ConstIteratorType</a> <a class="el" href="a01121.html">Dune::GDT::EntropyLocalCache</a>&lt; StateRangeType, VectorType &gt;::lower_bound </td>
-          <td>(</td>
-          <td class="paramtype">const StateRangeType &amp;&#160;</td>
-          <td class="paramname"><em>u</em></td><td>)</td>
-          <td> const</td>
         </tr>
       </table>
   </td>
@@ -476,7 +404,7 @@ template&lt;class StateRangeType , class VectorType &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a04560_source.html">local/fluxes/entropybased.hh</a></li>
+<li><a class="el" href="a04564_source.html">local/fluxes/entropybased.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

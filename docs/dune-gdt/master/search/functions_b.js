@@ -93,12 +93,12 @@ var searchData=
   ['locallambdaunaryvolumeintegrand',['LocalLambdaUnaryVolumeIntegrand',['../a01581.html#a8f4629f4d35b9984be60e7bf945b123c',1,'Dune::GDT::LocalLambdaUnaryVolumeIntegrand::LocalLambdaUnaryVolumeIntegrand(OrderLambdaType order_lambda, EvaluateLambdaType evaluate_lambda)'],['../a01581.html#addfae8c89fb344c29a4d4f6eba84986c',1,'Dune::GDT::LocalLambdaUnaryVolumeIntegrand::LocalLambdaUnaryVolumeIntegrand(const ThisType &amp;)=default'],['../a01581.html#af58f44f130f62d6e4e042bf85085fe0a',1,'Dune::GDT::LocalLambdaUnaryVolumeIntegrand::LocalLambdaUnaryVolumeIntegrand(ThisType &amp;&amp;)=default']]],
   ['locallinearreconstructionoperator',['LocalLinearReconstructionOperator',['../a02049.html#a0df8cc55bd5d81e5d0c889956f543c52',1,'Dune::GDT::LocalLinearReconstructionOperator']]],
   ['localmomentmodelboundaryvalue',['LocalMomentModelBoundaryValue',['../a01921.html#a6e7c4a6e9087978432e9f820d38e4266',1,'Dune::GDT::LocalMomentModelBoundaryValue']]],
-  ['localmomentregularizer',['LocalMomentRegularizer',['../a01969.html#a5e04b9095aea79fdcc7969903e25060b',1,'Dune::GDT::LocalMomentRegularizer']]],
+  ['localmomentregularizer',['LocalMomentRegularizer',['../a01969.html#aa3131009df8c21403a0b1499a1917384',1,'Dune::GDT::LocalMomentRegularizer']]],
   ['localnumericalboundaryfluxinterface',['LocalNumericalBoundaryFluxInterface',['../a01229.html#a22c0f312a4fd631b2f0b4386acab1f6a',1,'Dune::GDT::LocalNumericalBoundaryFluxInterface']]],
   ['localoperatorapplicator',['LocalOperatorApplicator',['../a01065.html#abffc129ea8ec389fe70360fd1ed50f56',1,'Dune::GDT::LocalOperatorApplicator']]],
   ['localoperatorjacobianassembler',['LocalOperatorJacobianAssembler',['../a01069.html#af3e58cd598990e569983d93a7cedab55',1,'Dune::GDT::LocalOperatorJacobianAssembler']]],
   ['localproductintegrand',['LocalProductIntegrand',['../a01601.html#a005bad4846c1224eb8a59f6a6036d3c3',1,'Dune::GDT::LocalProductIntegrand']]],
-  ['localrealizabilitylimiterbase',['LocalRealizabilityLimiterBase',['../a01929.html#a39514a43cd74a3caa948a777297b2fd3',1,'Dune::GDT::LocalRealizabilityLimiterBase']]],
+  ['localrealizabilitylimiterbase',['LocalRealizabilityLimiterBase',['../a01929.html#a94f02e19d6c4aab33b0051df47baf733',1,'Dune::GDT::LocalRealizabilityLimiterBase']]],
   ['localsize',['localSize',['../a02209.html#aa2255f1a2934d3fac597f2bfcf7f66eb',1,'Dune::GDT::BlockMapper']]],
   ['localview',['LocalView',['../a02721.html#acdfc44d4075bcc1e00d2384400295924',1,'Dune::GDT::LocalView']]],
   ['localvolumefunctionalassembler',['LocalVolumeFunctionalAssembler',['../a01089.html#aa2fd293993905060ea9831915b2095a2',1,'Dune::GDT::LocalVolumeFunctionalAssembler']]],
@@ -113,6 +113,5 @@ var searchData=
   ['localvolumetwoformassemblerfunctor',['LocalVolumeTwoFormAssemblerFunctor',['../a00809.html#a7b37a396e8388f1aa7d38a1527818f25',1,'Dune::GDT::LocalVolumeTwoFormAssemblerFunctor']]],
   ['localvolumetwoformmatrixassemblerwrapper',['LocalVolumeTwoFormMatrixAssemblerWrapper',['../a00841.html#ad1a82f8ca516995fa30ffa60e55928e3',1,'Dune::GDT::internal::LocalVolumeTwoFormMatrixAssemblerWrapper']]],
   ['localvolumetwoformwrapper',['LocalVolumeTwoFormWrapper',['../a00849.html#ad100b2b5fd5ef43a7706064b751c2ff6',1,'Dune::GDT::internal::LocalVolumeTwoFormWrapper']]],
-  ['lower_5fbound',['lower_bound',['../a01121.html#ad6a118807d280c1e8477dbcb1562b08c',1,'Dune::GDT::EntropyLocalCache::lower_bound(const StateRangeType &amp;u)'],['../a01121.html#ab108d999a297663f1805624b12952aae',1,'Dune::GDT::EntropyLocalCache::lower_bound(const StateRangeType &amp;u) const']]],
   ['lplocalrealizabilitylimiter',['LPLocalRealizabilityLimiter',['../a01957.html#af1bc9c50d05b757ab2f65347d325f533',1,'Dune::GDT::LPLocalRealizabilityLimiter']]]
 ];
