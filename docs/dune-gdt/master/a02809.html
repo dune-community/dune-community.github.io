@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::internal::DynamicTupleGetter&lt; I &gt; Struct Template Reference</title>
+<title>dune-gdt: Dune::GDT::internal::MapperTuplefromSpaceTupleCreator&lt; I, SpaceTypes &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a00247.html">internal</a></li><li class="navelem"><a class="el" href="a02809.html">DynamicTupleGetter</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a00247.html">internal</a></li><li class="navelem"><a class="el" href="a02809.html">MapperTuplefromSpaceTupleCreator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -67,49 +67,43 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a02806.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::DynamicTupleGetter&lt; I &gt; Struct Template Reference</div>  </div>
+<div class="title">Dune::GDT::internal::MapperTuplefromSpaceTupleCreator&lt; I, SpaceTypes &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a04729_source.html">dune/gdt/spaces/mapper/product.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a04725_source.html">dune/gdt/spaces/mapper/product.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a53aa2b595830858cdef74df170d04db1"><td class="memTemplParams" colspan="2">template&lt;class EntityType , typename... TupleArgs&gt; </td></tr>
-<tr class="memitem:a53aa2b595830858cdef74df170d04db1"><td class="memTemplItemLeft" align="right" valign="top">static std::enable_if&lt; I==sizeof...(TupleArgs), size_t &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02809.html#a53aa2b595830858cdef74df170d04db1">numDofs</a> (const std::tuple&lt; TupleArgs... &gt; &amp;, const size_t, const EntityType &amp;)</td></tr>
-<tr class="separator:a53aa2b595830858cdef74df170d04db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7780c88a367c62b83b82ba599c93865"><td class="memTemplParams" colspan="2">template&lt;class... MapperTypes&gt; </td></tr>
+<tr class="memitem:aa7780c88a367c62b83b82ba599c93865"><td class="memTemplItemLeft" align="right" valign="top">static std::enable_if&lt; sizeof...(MapperTypes)==sizeof...(SpaceTypes), typename std::tuple&lt; MapperTypes... &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02809.html#aa7780c88a367c62b83b82ba599c93865">create</a> (const std::tuple&lt; SpaceTypes... &gt; &amp;, const std::tuple&lt; MapperTypes... &gt; &amp;mappers)</td></tr>
+<tr class="separator:aa7780c88a367c62b83b82ba599c93865"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a53aa2b595830858cdef74df170d04db1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53aa2b595830858cdef74df170d04db1">&#9670;&nbsp;</a></span>numDofs()</h2>
+<a id="aa7780c88a367c62b83b82ba599c93865"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7780c88a367c62b83b82ba599c93865">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;size_t I = 0&gt; </div>
+template&lt;size_t I, class... SpaceTypes&gt; </div>
 <div class="memtemplate">
-template&lt;class EntityType , typename... TupleArgs&gt; </div>
+template&lt;class... MapperTypes&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static std::enable_if&lt;I == sizeof...(TupleArgs), size_t&gt;::type <a class="el" href="a02809.html">Dune::GDT::internal::DynamicTupleGetter</a>&lt; I &gt;::numDofs </td>
+          <td class="memname">static std::enable_if&lt;sizeof...(MapperTypes) == sizeof...(SpaceTypes), typename std::tuple&lt;MapperTypes...&gt; &gt;::type <a class="el" href="a02809.html">Dune::GDT::internal::MapperTuplefromSpaceTupleCreator</a>&lt; I, SpaceTypes &gt;::create </td>
           <td>(</td>
-          <td class="paramtype">const std::tuple&lt; TupleArgs... &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::tuple&lt; SpaceTypes... &gt; &amp;&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const size_t&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const EntityType &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramtype">const std::tuple&lt; MapperTypes... &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mappers</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -127,7 +121,7 @@ template&lt;class EntityType , typename... TupleArgs&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="a04729_source.html">spaces/mapper/product.hh</a></li>
+<li><a class="el" href="a04725_source.html">spaces/mapper/product.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

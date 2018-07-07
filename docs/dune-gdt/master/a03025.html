@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::FractionalTimeStepper&lt; FirstStepperImp, SecondStepperImp &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::StrangSplittingTimeStepper&lt; FirstStepperImp, SecondStepperImp &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a03025.html">FractionalTimeStepper</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a03025.html">StrangSplittingTimeStepper</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -69,103 +69,102 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a03022.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::FractionalTimeStepper&lt; FirstStepperImp, SecondStepperImp &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::StrangSplittingTimeStepper&lt; FirstStepperImp, SecondStepperImp &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="a00227_source.html">dune/gdt/timestepper/fractional-step.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::FractionalTimeStepper&lt; FirstStepperImp, SecondStepperImp &gt;:</div>
+Inheritance diagram for Dune::GDT::StrangSplittingTimeStepper&lt; FirstStepperImp, SecondStepperImp &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a03024.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_fractional_time_stepper_3_01_first_stepper_imp_00_01_second_stepper_imp_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1_fractional_time_stepper_3_01_first_stepper_imp_00_01_second_stepper_imp_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_fractional_time_stepper_3_01_first_stepper_imp_00_01_second_stepper_imp_01_4_inherit__map">
+<div class="center"><img src="a03024.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_strang_splitting_time_stepper_3_01_first_stepper_imp_00_01_second_stepper_imp_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_strang_splitting_time_stepper_3_01_first_stepper_imp_00_01_second_stepper_imp_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_strang_splitting_time_stepper_3_01_first_stepper_imp_00_01_second_stepper_imp_01_4_inherit__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a33ca51716b110aa5c125f098fa97ef99"><td class="memItemLeft" align="right" valign="top">typedef FirstStepperImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03025.html#a33ca51716b110aa5c125f098fa97ef99">FirstStepperType</a></td></tr>
-<tr class="separator:a33ca51716b110aa5c125f098fa97ef99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a565b6df6aa76eec8179cabdf59aa161e"><td class="memItemLeft" align="right" valign="top">typedef SecondStepperImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03025.html#a565b6df6aa76eec8179cabdf59aa161e">SecondStepperType</a></td></tr>
-<tr class="separator:a565b6df6aa76eec8179cabdf59aa161e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a339abe7978a54acdcf291972fd9d1c14"><td class="memItemLeft" align="right" valign="top">typedef FirstStepperImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03025.html#a339abe7978a54acdcf291972fd9d1c14">FirstStepperType</a></td></tr>
+<tr class="separator:a339abe7978a54acdcf291972fd9d1c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d27ee3cf7995db81d98ee4c88c1dab6"><td class="memItemLeft" align="right" valign="top">typedef SecondStepperImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03025.html#a0d27ee3cf7995db81d98ee4c88c1dab6">SecondStepperType</a></td></tr>
+<tr class="separator:a0d27ee3cf7995db81d98ee4c88c1dab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9defaa03400e9598d19f48dc817082f1"><td class="memItemLeft" align="right" valign="top">typedef DiscreteFunctionImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a></td></tr>
 <tr class="separator:a9defaa03400e9598d19f48dc817082f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bc84152538ce5f77a3cb07ca0ded2fa"><td class="memItemLeft" align="right" valign="top">typedef DiscreteFunctionType::DomainFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03025.html#a5bc84152538ce5f77a3cb07ca0ded2fa">DomainFieldType</a></td></tr>
 <tr class="separator:a5bc84152538ce5f77a3cb07ca0ded2fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb6be1fa1342cdffc03b7d3ef055cdb1"><td class="memItemLeft" align="right" valign="top">typedef DiscreteFunctionType::RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a></td></tr>
 <tr class="separator:afb6be1fa1342cdffc03b7d3ef055cdb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90c1fb06905211ebbef64431e474cb86"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>, <a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a>, typename <a class="el" href="a03049.html">internal::FloatCmpLt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03025.html#a90c1fb06905211ebbef64431e474cb86">SolutionType</a></td></tr>
+<tr class="memitem:a90c1fb06905211ebbef64431e474cb86"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>, <a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a>, typename <a class="el" href="a03045.html">internal::FloatCmpLt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03025.html#a90c1fb06905211ebbef64431e474cb86">SolutionType</a></td></tr>
 <tr class="separator:a90c1fb06905211ebbef64431e474cb86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16fcb6c4a79a03940cdfd9afceb19864"><td class="memItemLeft" align="right" valign="top">typedef DiscreteFunctionType::RangeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03053.html#a16fcb6c4a79a03940cdfd9afceb19864">RangeType</a></td></tr>
+<tr class="memitem:a16fcb6c4a79a03940cdfd9afceb19864"><td class="memItemLeft" align="right" valign="top">typedef DiscreteFunctionType::RangeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03049.html#a16fcb6c4a79a03940cdfd9afceb19864">RangeType</a></td></tr>
 <tr class="separator:a16fcb6c4a79a03940cdfd9afceb19864"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a144661c20b24be6b266cb97a070ddefa"><td class="memItemLeft" align="right" valign="top">typedef SolutionType::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03053.html#a144661c20b24be6b266cb97a070ddefa">TimeAndDiscreteFunctionPairType</a></td></tr>
+<tr class="memitem:a144661c20b24be6b266cb97a070ddefa"><td class="memItemLeft" align="right" valign="top">typedef SolutionType::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03049.html#a144661c20b24be6b266cb97a070ddefa">TimeAndDiscreteFunctionPairType</a></td></tr>
 <tr class="separator:a144661c20b24be6b266cb97a070ddefa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae220a1c0a58613846f70f9de50339bc2"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00901.html">DiscreteFunctionDataHandle</a>&lt; <a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03053.html#ae220a1c0a58613846f70f9de50339bc2">DataHandleType</a></td></tr>
+<tr class="memitem:ae220a1c0a58613846f70f9de50339bc2"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00901.html">DiscreteFunctionDataHandle</a>&lt; <a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03049.html#ae220a1c0a58613846f70f9de50339bc2">DataHandleType</a></td></tr>
 <tr class="separator:ae220a1c0a58613846f70f9de50339bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a166241fb99fae5d21c20bc23506f62a5"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(const <a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a> &amp;, const std::string &amp;, const size_t)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03053.html#a166241fb99fae5d21c20bc23506f62a5">VisualizerType</a></td></tr>
+<tr class="memitem:a166241fb99fae5d21c20bc23506f62a5"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(const <a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a> &amp;, const std::string &amp;, const size_t)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03049.html#a166241fb99fae5d21c20bc23506f62a5">VisualizerType</a></td></tr>
 <tr class="separator:a166241fb99fae5d21c20bc23506f62a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af227b6a0d906719228ed840f2bf90dcc"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; std::string(const <a class="el" href="a03053.html#a16fcb6c4a79a03940cdfd9afceb19864">RangeType</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03053.html#af227b6a0d906719228ed840f2bf90dcc">StringifierType</a></td></tr>
+<tr class="memitem:af227b6a0d906719228ed840f2bf90dcc"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; std::string(const <a class="el" href="a03049.html#a16fcb6c4a79a03940cdfd9afceb19864">RangeType</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03049.html#af227b6a0d906719228ed840f2bf90dcc">StringifierType</a></td></tr>
 <tr class="separator:af227b6a0d906719228ed840f2bf90dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e06d82386d8bb4ca4b19a0a8d2fa78a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03053.html#a8e06d82386d8bb4ca4b19a0a8d2fa78a">ThisType</a> = <a class="el" href="a03053.html">TimeStepperInterface</a></td></tr>
+<tr class="memitem:a8e06d82386d8bb4ca4b19a0a8d2fa78a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03049.html#a8e06d82386d8bb4ca4b19a0a8d2fa78a">ThisType</a> = <a class="el" href="a03049.html">TimeStepperInterface</a></td></tr>
 <tr class="separator:a8e06d82386d8bb4ca4b19a0a8d2fa78a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad9c7de213ec37d170918837c837b02b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03025.html#ad9c7de213ec37d170918837c837b02b8">FractionalTimeStepper</a> (<a class="el" href="a03025.html#a33ca51716b110aa5c125f098fa97ef99">FirstStepperType</a> &amp;first_stepper, <a class="el" href="a03025.html#a565b6df6aa76eec8179cabdf59aa161e">SecondStepperType</a> &amp;second_stepper)</td></tr>
-<tr class="separator:ad9c7de213ec37d170918837c837b02b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a484f412f79533f148e06e1a265cf358d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03025.html#a484f412f79533f148e06e1a265cf358d">step</a> (const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> dt, const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> max_dt) override final</td></tr>
-<tr class="memdesc:a484f412f79533f148e06e1a265cf358d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform one time step and return the estimated optimal time step length for the next time step.  <a href="#a484f412f79533f148e06e1a265cf358d">More...</a><br /></td></tr>
-<tr class="separator:a484f412f79533f148e06e1a265cf358d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a5d51d72c5c948b8840fccf8cbbe51e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03053.html#a4a5d51d72c5c948b8840fccf8cbbe51e">current_time</a> () const</td></tr>
+<tr class="memitem:a9381eff779719b68f18e1f3c6b917f48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03025.html#a9381eff779719b68f18e1f3c6b917f48">StrangSplittingTimeStepper</a> (<a class="el" href="a03025.html#a339abe7978a54acdcf291972fd9d1c14">FirstStepperType</a> &amp;first_stepper, <a class="el" href="a03025.html#a0d27ee3cf7995db81d98ee4c88c1dab6">SecondStepperType</a> &amp;second_stepper)</td></tr>
+<tr class="separator:a9381eff779719b68f18e1f3c6b917f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae69e751a14b4a536f49c51652f779c64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03025.html#ae69e751a14b4a536f49c51652f779c64">step</a> (const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> dt, const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> max_dt) override final</td></tr>
+<tr class="memdesc:ae69e751a14b4a536f49c51652f779c64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform one time step and return the estimated optimal time step length for the next time step.  <a href="#ae69e751a14b4a536f49c51652f779c64">More...</a><br /></td></tr>
+<tr class="separator:ae69e751a14b4a536f49c51652f779c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a5d51d72c5c948b8840fccf8cbbe51e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03049.html#a4a5d51d72c5c948b8840fccf8cbbe51e">current_time</a> () const</td></tr>
 <tr class="separator:a4a5d51d72c5c948b8840fccf8cbbe51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2daef38e3b84435eb378485f884e0bc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03053.html#a2daef38e3b84435eb378485f884e0bc0">current_time</a> ()</td></tr>
+<tr class="memitem:a2daef38e3b84435eb378485f884e0bc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03049.html#a2daef38e3b84435eb378485f884e0bc0">current_time</a> ()</td></tr>
 <tr class="separator:a2daef38e3b84435eb378485f884e0bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae51421e7ea1050ae5196a94cbf55ce9c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03053.html#ae51421e7ea1050ae5196a94cbf55ce9c">current_solution</a> () const</td></tr>
+<tr class="memitem:ae51421e7ea1050ae5196a94cbf55ce9c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03049.html#ae51421e7ea1050ae5196a94cbf55ce9c">current_solution</a> () const</td></tr>
 <tr class="separator:ae51421e7ea1050ae5196a94cbf55ce9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ebcb515a1fcb490b3df011a26f0e909"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03053.html#a0ebcb515a1fcb490b3df011a26f0e909">current_solution</a> ()</td></tr>
+<tr class="memitem:a0ebcb515a1fcb490b3df011a26f0e909"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03049.html#a0ebcb515a1fcb490b3df011a26f0e909">current_solution</a> ()</td></tr>
 <tr class="separator:a0ebcb515a1fcb490b3df011a26f0e909"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abde1c389fa6b53535b9e1a02609fdc07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03053.html#abde1c389fa6b53535b9e1a02609fdc07">set_current_solution_pointer</a> (<a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a> &amp;discrete_function)</td></tr>
+<tr class="memitem:abde1c389fa6b53535b9e1a02609fdc07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03049.html#abde1c389fa6b53535b9e1a02609fdc07">set_current_solution_pointer</a> (<a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a> &amp;discrete_function)</td></tr>
 <tr class="separator:abde1c389fa6b53535b9e1a02609fdc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75d23189c3b46c202d12eabacea4b26f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a03025.html#a90c1fb06905211ebbef64431e474cb86">SolutionType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03053.html#a75d23189c3b46c202d12eabacea4b26f">solution</a> () const</td></tr>
+<tr class="memitem:a75d23189c3b46c202d12eabacea4b26f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a03025.html#a90c1fb06905211ebbef64431e474cb86">SolutionType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03049.html#a75d23189c3b46c202d12eabacea4b26f">solution</a> () const</td></tr>
 <tr class="separator:a75d23189c3b46c202d12eabacea4b26f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6958edd6ce9a71f8c5163b5147cb923c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a03025.html#a90c1fb06905211ebbef64431e474cb86">SolutionType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03053.html#a6958edd6ce9a71f8c5163b5147cb923c">solution</a> ()</td></tr>
+<tr class="memitem:a6958edd6ce9a71f8c5163b5147cb923c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a03025.html#a90c1fb06905211ebbef64431e474cb86">SolutionType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03049.html#a6958edd6ce9a71f8c5163b5147cb923c">solution</a> ()</td></tr>
 <tr class="separator:a6958edd6ce9a71f8c5163b5147cb923c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd32916ed538f691706d5a315ffa7e7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03053.html#acd32916ed538f691706d5a315ffa7e7b">set_solution_pointer</a> (<a class="el" href="a03025.html#a90c1fb06905211ebbef64431e474cb86">SolutionType</a> &amp;solution_ref)</td></tr>
+<tr class="memitem:acd32916ed538f691706d5a315ffa7e7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03049.html#acd32916ed538f691706d5a315ffa7e7b">set_solution_pointer</a> (<a class="el" href="a03025.html#a90c1fb06905211ebbef64431e474cb86">SolutionType</a> &amp;solution_ref)</td></tr>
 <tr class="separator:acd32916ed538f691706d5a315ffa7e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a423ec1c260c52013b23d9fee4215f236"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03053.html#a423ec1c260c52013b23d9fee4215f236">solve</a> (const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> t_end, const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> initial_dt, const size_t num_save_steps, const bool save_solution, const bool output_progress, const bool visualize, const bool write_to_file, const std::string filename_prefix, <a class="el" href="a03025.html#a90c1fb06905211ebbef64431e474cb86">SolutionType</a> &amp;sol, const <a class="el" href="a03053.html#a166241fb99fae5d21c20bc23506f62a5">VisualizerType</a> &amp;visualizer, const <a class="el" href="a03053.html#af227b6a0d906719228ed840f2bf90dcc">StringifierType</a> &amp;stringifier)</td></tr>
+<tr class="memitem:a423ec1c260c52013b23d9fee4215f236"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03049.html#a423ec1c260c52013b23d9fee4215f236">solve</a> (const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> t_end, const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> initial_dt, const size_t num_save_steps, const bool save_solution, const bool output_progress, const bool visualize, const bool write_to_file, const std::string filename_prefix, <a class="el" href="a03025.html#a90c1fb06905211ebbef64431e474cb86">SolutionType</a> &amp;sol, const <a class="el" href="a03049.html#a166241fb99fae5d21c20bc23506f62a5">VisualizerType</a> &amp;visualizer, const <a class="el" href="a03049.html#af227b6a0d906719228ed840f2bf90dcc">StringifierType</a> &amp;stringifier)</td></tr>
 <tr class="memdesc:a423ec1c260c52013b23d9fee4215f236"><td class="mdescLeft">&#160;</td><td class="mdescRight">solve Applies time stepping scheme up to time t_end  <a href="#a423ec1c260c52013b23d9fee4215f236">More...</a><br /></td></tr>
 <tr class="separator:a423ec1c260c52013b23d9fee4215f236"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff85e71816ec6b1b6d7d2ebe31836a18"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03053.html#aff85e71816ec6b1b6d7d2ebe31836a18">solve</a> (const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> t_end, const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> initial_dt=1e-4, const size_t num_save_steps=-1, const bool save_solution=true, const bool output_progress=false, const bool visualize=false, const std::string filename_prefix=&quot;solution&quot;, const VisualizerType &amp;visualizer=all_components_visualizer(), const StringifierType &amp;stringifier=vector_stringifier())</td></tr>
+<tr class="memitem:aff85e71816ec6b1b6d7d2ebe31836a18"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03049.html#aff85e71816ec6b1b6d7d2ebe31836a18">solve</a> (const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> t_end, const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> initial_dt=1e-4, const size_t num_save_steps=-1, const bool save_solution=true, const bool output_progress=false, const bool visualize=false, const std::string filename_prefix=&quot;solution&quot;, const VisualizerType &amp;visualizer=all_components_visualizer(), const StringifierType &amp;stringifier=vector_stringifier())</td></tr>
 <tr class="separator:aff85e71816ec6b1b6d7d2ebe31836a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7e2beebc12b7cca581bda8c1b7c6719"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03053.html#ab7e2beebc12b7cca581bda8c1b7c6719">solve</a> (const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> t_end, const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> initial_dt, const size_t num_save_steps, const bool save_solution, const bool output_progress, const bool visualize, const bool write_to_file, const std::string filename_prefix=&quot;solution&quot;, const <a class="el" href="a03053.html#a166241fb99fae5d21c20bc23506f62a5">VisualizerType</a> &amp;visualizer=<a class="el" href="a03053.html#a7d821d6795676bba524b083c5de6cd3b">all_components_visualizer</a>(), const <a class="el" href="a03053.html#af227b6a0d906719228ed840f2bf90dcc">StringifierType</a> &amp;stringifier=<a class="el" href="a03053.html#adebce099556ac2b6ebd146fa8f77d05f">vector_stringifier</a>())</td></tr>
+<tr class="memitem:ab7e2beebc12b7cca581bda8c1b7c6719"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03049.html#ab7e2beebc12b7cca581bda8c1b7c6719">solve</a> (const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> t_end, const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> initial_dt, const size_t num_save_steps, const bool save_solution, const bool output_progress, const bool visualize, const bool write_to_file, const std::string filename_prefix=&quot;solution&quot;, const <a class="el" href="a03049.html#a166241fb99fae5d21c20bc23506f62a5">VisualizerType</a> &amp;visualizer=<a class="el" href="a03049.html#a7d821d6795676bba524b083c5de6cd3b">all_components_visualizer</a>(), const <a class="el" href="a03049.html#af227b6a0d906719228ed840f2bf90dcc">StringifierType</a> &amp;stringifier=<a class="el" href="a03049.html#adebce099556ac2b6ebd146fa8f77d05f">vector_stringifier</a>())</td></tr>
 <tr class="separator:ab7e2beebc12b7cca581bda8c1b7c6719"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58c68f1a19ddf4e50a1de913800eef83"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03053.html#a58c68f1a19ddf4e50a1de913800eef83">solve</a> (const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> t_end, const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> initial_dt, const size_t num_save_steps, <a class="el" href="a03025.html#a90c1fb06905211ebbef64431e474cb86">SolutionType</a> &amp;sol)</td></tr>
+<tr class="memitem:a58c68f1a19ddf4e50a1de913800eef83"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03049.html#a58c68f1a19ddf4e50a1de913800eef83">solve</a> (const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> t_end, const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> initial_dt, const size_t num_save_steps, <a class="el" href="a03025.html#a90c1fb06905211ebbef64431e474cb86">SolutionType</a> &amp;sol)</td></tr>
 <tr class="separator:a58c68f1a19ddf4e50a1de913800eef83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80cbcf20d202e692d94e4ffc54b552d6"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="a03053.html#a144661c20b24be6b266cb97a070ddefa">TimeAndDiscreteFunctionPairType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03053.html#a80cbcf20d202e692d94e4ffc54b552d6">solution_closest_to_time</a> (const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> t) const</td></tr>
+<tr class="memitem:a80cbcf20d202e692d94e4ffc54b552d6"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="a03049.html#a144661c20b24be6b266cb97a070ddefa">TimeAndDiscreteFunctionPairType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03049.html#a80cbcf20d202e692d94e4ffc54b552d6">solution_closest_to_time</a> (const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> t) const</td></tr>
 <tr class="memdesc:a80cbcf20d202e692d94e4ffc54b552d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find discrete solution for time point that is closest to t.  <a href="#a80cbcf20d202e692d94e4ffc54b552d6">More...</a><br /></td></tr>
 <tr class="separator:a80cbcf20d202e692d94e4ffc54b552d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a200d2921fdc18bc46c38ec65df9325d9"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03053.html#a200d2921fdc18bc46c38ec65df9325d9">solution_at_time</a> (const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> t) const</td></tr>
+<tr class="memitem:a200d2921fdc18bc46c38ec65df9325d9"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03049.html#a200d2921fdc18bc46c38ec65df9325d9">solution_at_time</a> (const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> t) const</td></tr>
 <tr class="separator:a200d2921fdc18bc46c38ec65df9325d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b5f143f7b32944551f2341fb9207bf1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03053.html#a8b5f143f7b32944551f2341fb9207bf1">visualize_factor_of_solution</a> (const std::string prefix=&quot;&quot;) const</td></tr>
+<tr class="memitem:a8b5f143f7b32944551f2341fb9207bf1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03049.html#a8b5f143f7b32944551f2341fb9207bf1">visualize_factor_of_solution</a> (const std::string prefix=&quot;&quot;) const</td></tr>
 <tr class="separator:a8b5f143f7b32944551f2341fb9207bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4751db80e7f2dde66a8939c3016b0c95"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03053.html#a4751db80e7f2dde66a8939c3016b0c95">visualize_solution</a> (const std::string prefix=&quot;&quot;) const</td></tr>
+<tr class="memitem:a4751db80e7f2dde66a8939c3016b0c95"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03049.html#a4751db80e7f2dde66a8939c3016b0c95">visualize_solution</a> (const std::string prefix=&quot;&quot;) const</td></tr>
 <tr class="separator:a4751db80e7f2dde66a8939c3016b0c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3294192b44d1c29edb048defb61ab9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03053.html#ae3294192b44d1c29edb048defb61ab9d">write_to_textfile</a> (const <a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a> &amp;u_n, const std::string &amp;filename_prefix, const size_t <a class="el" href="a03025.html#a484f412f79533f148e06e1a265cf358d">step</a>, const <a class="el" href="a03053.html#af227b6a0d906719228ed840f2bf90dcc">StringifierType</a> &amp;stringifier)</td></tr>
+<tr class="memitem:ae3294192b44d1c29edb048defb61ab9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03049.html#ae3294192b44d1c29edb048defb61ab9d">write_to_textfile</a> (const <a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a> &amp;u_n, const std::string &amp;filename_prefix, const size_t <a class="el" href="a03025.html#ae69e751a14b4a536f49c51652f779c64">step</a>, const <a class="el" href="a03049.html#af227b6a0d906719228ed840f2bf90dcc">StringifierType</a> &amp;stringifier)</td></tr>
 <tr class="separator:ae3294192b44d1c29edb048defb61ab9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a7d821d6795676bba524b083c5de6cd3b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a03053.html#a166241fb99fae5d21c20bc23506f62a5">VisualizerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03053.html#a7d821d6795676bba524b083c5de6cd3b">all_components_visualizer</a> ()</td></tr>
+<tr class="memitem:a7d821d6795676bba524b083c5de6cd3b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a03049.html#a166241fb99fae5d21c20bc23506f62a5">VisualizerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03049.html#a7d821d6795676bba524b083c5de6cd3b">all_components_visualizer</a> ()</td></tr>
 <tr class="separator:a7d821d6795676bba524b083c5de6cd3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adebce099556ac2b6ebd146fa8f77d05f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a03053.html#af227b6a0d906719228ed840f2bf90dcc">StringifierType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03053.html#adebce099556ac2b6ebd146fa8f77d05f">vector_stringifier</a> ()</td></tr>
+<tr class="memitem:adebce099556ac2b6ebd146fa8f77d05f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a03049.html#af227b6a0d906719228ed840f2bf90dcc">StringifierType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03049.html#adebce099556ac2b6ebd146fa8f77d05f">vector_stringifier</a> ()</td></tr>
 <tr class="separator:adebce099556ac2b6ebd146fa8f77d05f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class FirstStepperImp, class SecondStepperImp&gt;<br />
-class Dune::GDT::FractionalTimeStepper&lt; FirstStepperImp, SecondStepperImp &gt;</h3>
+class Dune::GDT::StrangSplittingTimeStepper&lt; FirstStepperImp, SecondStepperImp &gt;</h3>
 
-<p>Takes two time steppers and performs a simple fractional step scheme (see e.g. LeVeque, "Finite Volume Methods for
-Hyperbolic Problems", 2002, Section 17.1). In each time step t, the first stepper is applied up to time t+dt and the result is taken as input for the second time stepper, which is also applied up to time t+dt. Initial values and time are taken from the first time stepper. </p>
+<p>Takes two time steppers and performs a strang splitting fractional step scheme (see e.g. LeVeque, "Finite Volume Methods for Hyperbolic Problems", 2002, Section 17.1). In each time step t, the first stepper is applied up to time t+dt/2, then the second time stepper is applied up to time t+dt, then the first stepper is applied again up to time t+dt. Initial values and time are taken from the first time stepper. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ae220a1c0a58613846f70f9de50339bc2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae220a1c0a58613846f70f9de50339bc2">&#9670;&nbsp;</a></span>DataHandleType</h2>
@@ -177,7 +176,7 @@ Hyperbolic Problems", 2002, Section 17.1). In each time step t, the first steppe
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00901.html">DiscreteFunctionDataHandle</a>&lt;<a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a>&gt; <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::<a class="el" href="a03053.html#ae220a1c0a58613846f70f9de50339bc2">DataHandleType</a></td>
+          <td class="memname">typedef <a class="el" href="a00901.html">DiscreteFunctionDataHandle</a>&lt;<a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a>&gt; <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::<a class="el" href="a03049.html#ae220a1c0a58613846f70f9de50339bc2">DataHandleType</a></td>
         </tr>
       </table>
   </td>
@@ -198,7 +197,7 @@ Hyperbolic Problems", 2002, Section 17.1). In each time step t, the first steppe
 template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef DiscreteFunctionImp <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::<a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a></td>
+          <td class="memname">typedef DiscreteFunctionImp <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::<a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -214,15 +213,15 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
 template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef DiscreteFunctionType::DomainFieldType <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::<a class="el" href="a03025.html#a5bc84152538ce5f77a3cb07ca0ded2fa">DomainFieldType</a></td>
+          <td class="memname">typedef DiscreteFunctionType::DomainFieldType <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::<a class="el" href="a03025.html#a5bc84152538ce5f77a3cb07ca0ded2fa">DomainFieldType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a33ca51716b110aa5c125f098fa97ef99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33ca51716b110aa5c125f098fa97ef99">&#9670;&nbsp;</a></span>FirstStepperType</h2>
+<a id="a339abe7978a54acdcf291972fd9d1c14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a339abe7978a54acdcf291972fd9d1c14">&#9670;&nbsp;</a></span>FirstStepperType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -230,7 +229,7 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
 template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef FirstStepperImp <a class="el" href="a03025.html">Dune::GDT::FractionalTimeStepper</a>&lt; FirstStepperImp, SecondStepperImp &gt;::<a class="el" href="a03025.html#a33ca51716b110aa5c125f098fa97ef99">FirstStepperType</a></td>
+          <td class="memname">typedef FirstStepperImp <a class="el" href="a03025.html">Dune::GDT::StrangSplittingTimeStepper</a>&lt; FirstStepperImp, SecondStepperImp &gt;::<a class="el" href="a03025.html#a339abe7978a54acdcf291972fd9d1c14">FirstStepperType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -246,7 +245,7 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
 template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef DiscreteFunctionType::RangeFieldType <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::<a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a></td>
+          <td class="memname">typedef DiscreteFunctionType::RangeFieldType <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::<a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -263,7 +262,7 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef DiscreteFunctionType::RangeType <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::<a class="el" href="a03053.html#a16fcb6c4a79a03940cdfd9afceb19864">RangeType</a></td>
+          <td class="memname">typedef DiscreteFunctionType::RangeType <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::<a class="el" href="a03049.html#a16fcb6c4a79a03940cdfd9afceb19864">RangeType</a></td>
         </tr>
       </table>
   </td>
@@ -275,8 +274,8 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
 
 </div>
 </div>
-<a id="a565b6df6aa76eec8179cabdf59aa161e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a565b6df6aa76eec8179cabdf59aa161e">&#9670;&nbsp;</a></span>SecondStepperType</h2>
+<a id="a0d27ee3cf7995db81d98ee4c88c1dab6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d27ee3cf7995db81d98ee4c88c1dab6">&#9670;&nbsp;</a></span>SecondStepperType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -284,7 +283,7 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
 template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef SecondStepperImp <a class="el" href="a03025.html">Dune::GDT::FractionalTimeStepper</a>&lt; FirstStepperImp, SecondStepperImp &gt;::<a class="el" href="a03025.html#a565b6df6aa76eec8179cabdf59aa161e">SecondStepperType</a></td>
+          <td class="memname">typedef SecondStepperImp <a class="el" href="a03025.html">Dune::GDT::StrangSplittingTimeStepper</a>&lt; FirstStepperImp, SecondStepperImp &gt;::<a class="el" href="a03025.html#a0d27ee3cf7995db81d98ee4c88c1dab6">SecondStepperType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -300,7 +299,7 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
 template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::map&lt;<a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>, <a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a>, typename <a class="el" href="a03049.html">internal::FloatCmpLt</a>&gt; <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::<a class="el" href="a03025.html#a90c1fb06905211ebbef64431e474cb86">SolutionType</a></td>
+          <td class="memname">typedef std::map&lt;<a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>, <a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a>, typename <a class="el" href="a03045.html">internal::FloatCmpLt</a>&gt; <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::<a class="el" href="a03025.html#a90c1fb06905211ebbef64431e474cb86">SolutionType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -317,7 +316,7 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::function&lt;std::string(const <a class="el" href="a03053.html#a16fcb6c4a79a03940cdfd9afceb19864">RangeType</a>&amp;)&gt; <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::<a class="el" href="a03053.html#af227b6a0d906719228ed840f2bf90dcc">StringifierType</a></td>
+          <td class="memname">typedef std::function&lt;std::string(const <a class="el" href="a03049.html#a16fcb6c4a79a03940cdfd9afceb19864">RangeType</a>&amp;)&gt; <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::<a class="el" href="a03049.html#af227b6a0d906719228ed840f2bf90dcc">StringifierType</a></td>
         </tr>
       </table>
   </td>
@@ -339,7 +338,7 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::<a class="el" href="a03053.html#a8e06d82386d8bb4ca4b19a0a8d2fa78a">ThisType</a> =  <a class="el" href="a03053.html">TimeStepperInterface</a></td>
+          <td class="memname">using <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::<a class="el" href="a03049.html#a8e06d82386d8bb4ca4b19a0a8d2fa78a">ThisType</a> =  <a class="el" href="a03049.html">TimeStepperInterface</a></td>
         </tr>
       </table>
   </td>
@@ -361,7 +360,7 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef SolutionType::value_type <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::<a class="el" href="a03053.html#a144661c20b24be6b266cb97a070ddefa">TimeAndDiscreteFunctionPairType</a></td>
+          <td class="memname">typedef SolutionType::value_type <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::<a class="el" href="a03049.html#a144661c20b24be6b266cb97a070ddefa">TimeAndDiscreteFunctionPairType</a></td>
         </tr>
       </table>
   </td>
@@ -383,7 +382,7 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::function&lt;void(const <a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a>&amp;, const std::string&amp;, const size_t)&gt; <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::<a class="el" href="a03053.html#a166241fb99fae5d21c20bc23506f62a5">VisualizerType</a></td>
+          <td class="memname">typedef std::function&lt;void(const <a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a>&amp;, const std::string&amp;, const size_t)&gt; <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::<a class="el" href="a03049.html#a166241fb99fae5d21c20bc23506f62a5">VisualizerType</a></td>
         </tr>
       </table>
   </td>
@@ -396,8 +395,8 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad9c7de213ec37d170918837c837b02b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9c7de213ec37d170918837c837b02b8">&#9670;&nbsp;</a></span>FractionalTimeStepper()</h2>
+<a id="a9381eff779719b68f18e1f3c6b917f48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9381eff779719b68f18e1f3c6b917f48">&#9670;&nbsp;</a></span>StrangSplittingTimeStepper()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -408,15 +407,15 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a03025.html">Dune::GDT::FractionalTimeStepper</a>&lt; FirstStepperImp, SecondStepperImp &gt;::<a class="el" href="a03025.html">FractionalTimeStepper</a> </td>
+          <td class="memname"><a class="el" href="a03025.html">Dune::GDT::StrangSplittingTimeStepper</a>&lt; FirstStepperImp, SecondStepperImp &gt;::<a class="el" href="a03025.html">StrangSplittingTimeStepper</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a03025.html#a33ca51716b110aa5c125f098fa97ef99">FirstStepperType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="a03025.html#a339abe7978a54acdcf291972fd9d1c14">FirstStepperType</a> &amp;&#160;</td>
           <td class="paramname"><em>first_stepper</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a03025.html#a565b6df6aa76eec8179cabdf59aa161e">SecondStepperType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="a03025.html#a0d27ee3cf7995db81d98ee4c88c1dab6">SecondStepperType</a> &amp;&#160;</td>
           <td class="paramname"><em>second_stepper</em>&#160;</td>
         </tr>
         <tr>
@@ -445,7 +444,7 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="a03053.html#a166241fb99fae5d21c20bc23506f62a5">VisualizerType</a> <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::all_components_visualizer </td>
+          <td class="memname">static <a class="el" href="a03049.html#a166241fb99fae5d21c20bc23506f62a5">VisualizerType</a> <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::all_components_visualizer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -470,7 +469,7 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a>&amp; <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::current_solution </td>
+          <td class="memname">const <a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a>&amp; <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::current_solution </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -495,7 +494,7 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a>&amp; <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::current_solution </td>
+          <td class="memname"><a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a>&amp; <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::current_solution </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -520,7 +519,7 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&amp; <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::current_time </td>
+          <td class="memname">const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&amp; <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::current_time </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -545,7 +544,7 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&amp; <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::current_time </td>
+          <td class="memname"><a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&amp; <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::current_time </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -570,9 +569,9 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::set_current_solution_pointer </td>
+          <td class="memname">void <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::set_current_solution_pointer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a03053.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="a03049.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a> &amp;&#160;</td>
           <td class="paramname"><em>discrete_function</em></td><td>)</td>
           <td></td>
         </tr>
@@ -596,9 +595,9 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::set_solution_pointer </td>
+          <td class="memname">void <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::set_solution_pointer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a03053.html#a90c1fb06905211ebbef64431e474cb86">SolutionType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="a03049.html#a90c1fb06905211ebbef64431e474cb86">SolutionType</a> &amp;&#160;</td>
           <td class="paramname"><em>solution_ref</em></td><td>)</td>
           <td></td>
         </tr>
@@ -622,7 +621,7 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a03025.html#a90c1fb06905211ebbef64431e474cb86">SolutionType</a>&amp; <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::solution </td>
+          <td class="memname">const <a class="el" href="a03025.html#a90c1fb06905211ebbef64431e474cb86">SolutionType</a>&amp; <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::solution </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -647,7 +646,7 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a03025.html#a90c1fb06905211ebbef64431e474cb86">SolutionType</a>&amp; <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::solution </td>
+          <td class="memname"><a class="el" href="a03025.html#a90c1fb06905211ebbef64431e474cb86">SolutionType</a>&amp; <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::solution </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -672,9 +671,9 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const <a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a>&amp; <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::solution_at_time </td>
+          <td class="memname">virtual const <a class="el" href="a03025.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a>&amp; <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::solution_at_time </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a03053.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="a03049.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td>
           <td class="paramname"><em>t</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -698,9 +697,9 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const <a class="el" href="a03053.html#a144661c20b24be6b266cb97a070ddefa">TimeAndDiscreteFunctionPairType</a>&amp; <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::solution_closest_to_time </td>
+          <td class="memname">virtual const <a class="el" href="a03049.html#a144661c20b24be6b266cb97a070ddefa">TimeAndDiscreteFunctionPairType</a>&amp; <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::solution_closest_to_time </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a03053.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="a03049.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td>
           <td class="paramname"><em>t</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -734,15 +733,15 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::solve </td>
+          <td class="memname">virtual <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::solve </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a03053.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="a03049.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td>
           <td class="paramname"><em>t_end</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a03053.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="a03049.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td>
           <td class="paramname"><em>initial_dt</em>, </td>
         </tr>
         <tr>
@@ -784,19 +783,19 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a03053.html#a90c1fb06905211ebbef64431e474cb86">SolutionType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="a03049.html#a90c1fb06905211ebbef64431e474cb86">SolutionType</a> &amp;&#160;</td>
           <td class="paramname"><em>sol</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a03053.html#a166241fb99fae5d21c20bc23506f62a5">VisualizerType</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a03049.html#a166241fb99fae5d21c20bc23506f62a5">VisualizerType</a> &amp;&#160;</td>
           <td class="paramname"><em>visualizer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a03053.html#af227b6a0d906719228ed840f2bf90dcc">StringifierType</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a03049.html#af227b6a0d906719228ed840f2bf90dcc">StringifierType</a> &amp;&#160;</td>
           <td class="paramname"><em>stringifier</em>&#160;</td>
         </tr>
         <tr>
@@ -840,15 +839,15 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::solve </td>
+          <td class="memname">virtual <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::solve </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a03053.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="a03049.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td>
           <td class="paramname"><em>t_end</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a03053.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="a03049.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td>
           <td class="paramname"><em>initial_dt</em> = <code>1e-4</code>, </td>
         </tr>
         <tr>
@@ -884,14 +883,14 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a03053.html#a166241fb99fae5d21c20bc23506f62a5">VisualizerType</a> &amp;&#160;</td>
-          <td class="paramname"><em>visualizer</em> = <code><a class="el" href="a03053.html#a7d821d6795676bba524b083c5de6cd3b">all_components_visualizer</a>()</code>, </td>
+          <td class="paramtype">const <a class="el" href="a03049.html#a166241fb99fae5d21c20bc23506f62a5">VisualizerType</a> &amp;&#160;</td>
+          <td class="paramname"><em>visualizer</em> = <code><a class="el" href="a03049.html#a7d821d6795676bba524b083c5de6cd3b">all_components_visualizer</a>()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a03053.html#af227b6a0d906719228ed840f2bf90dcc">StringifierType</a> &amp;&#160;</td>
-          <td class="paramname"><em>stringifier</em> = <code><a class="el" href="a03053.html#adebce099556ac2b6ebd146fa8f77d05f">vector_stringifier</a>()</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="a03049.html#af227b6a0d906719228ed840f2bf90dcc">StringifierType</a> &amp;&#160;</td>
+          <td class="paramname"><em>stringifier</em> = <code><a class="el" href="a03049.html#adebce099556ac2b6ebd146fa8f77d05f">vector_stringifier</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -918,15 +917,15 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::solve </td>
+          <td class="memname">virtual <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::solve </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a03053.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="a03049.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td>
           <td class="paramname"><em>t_end</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a03053.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="a03049.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td>
           <td class="paramname"><em>initial_dt</em>, </td>
         </tr>
         <tr>
@@ -968,14 +967,14 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a03053.html#a166241fb99fae5d21c20bc23506f62a5">VisualizerType</a> &amp;&#160;</td>
-          <td class="paramname"><em>visualizer</em> = <code><a class="el" href="a03053.html#a7d821d6795676bba524b083c5de6cd3b">all_components_visualizer</a>()</code>, </td>
+          <td class="paramtype">const <a class="el" href="a03049.html#a166241fb99fae5d21c20bc23506f62a5">VisualizerType</a> &amp;&#160;</td>
+          <td class="paramname"><em>visualizer</em> = <code><a class="el" href="a03049.html#a7d821d6795676bba524b083c5de6cd3b">all_components_visualizer</a>()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a03053.html#af227b6a0d906719228ed840f2bf90dcc">StringifierType</a> &amp;&#160;</td>
-          <td class="paramname"><em>stringifier</em> = <code><a class="el" href="a03053.html#adebce099556ac2b6ebd146fa8f77d05f">vector_stringifier</a>()</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="a03049.html#af227b6a0d906719228ed840f2bf90dcc">StringifierType</a> &amp;&#160;</td>
+          <td class="paramname"><em>stringifier</em> = <code><a class="el" href="a03049.html#adebce099556ac2b6ebd146fa8f77d05f">vector_stringifier</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1002,15 +1001,15 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::solve </td>
+          <td class="memname">virtual <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::solve </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a03053.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="a03049.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td>
           <td class="paramname"><em>t_end</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a03053.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="a03049.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td>
           <td class="paramname"><em>initial_dt</em>, </td>
         </tr>
         <tr>
@@ -1022,7 +1021,7 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a03053.html#a90c1fb06905211ebbef64431e474cb86">SolutionType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="a03049.html#a90c1fb06905211ebbef64431e474cb86">SolutionType</a> &amp;&#160;</td>
           <td class="paramname"><em>sol</em>&#160;</td>
         </tr>
         <tr>
@@ -1040,8 +1039,8 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
 
 </div>
 </div>
-<a id="a484f412f79533f148e06e1a265cf358d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a484f412f79533f148e06e1a265cf358d">&#9670;&nbsp;</a></span>step()</h2>
+<a id="ae69e751a14b4a536f49c51652f779c64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae69e751a14b4a536f49c51652f779c64">&#9670;&nbsp;</a></span>step()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1052,7 +1051,7 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> <a class="el" href="a03025.html">Dune::GDT::FractionalTimeStepper</a>&lt; FirstStepperImp, SecondStepperImp &gt;::step </td>
+          <td class="memname"><a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a> <a class="el" href="a03025.html">Dune::GDT::StrangSplittingTimeStepper</a>&lt; FirstStepperImp, SecondStepperImp &gt;::step </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a03025.html#afb6be1fa1342cdffc03b7d3ef055cdb1">RangeFieldType</a>&#160;</td>
           <td class="paramname"><em>dt</em>, </td>
@@ -1085,11 +1084,11 @@ template&lt;class FirstStepperImp , class SecondStepperImp &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Estimated optimal time step length for the next time step. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>For adaptive methods or if max_dt &lt; dt, dt is just the initial time step length, the actual time step taken may be shorter. To get the actual time step length you need to compare <a class="el" href="a03053.html#a2daef38e3b84435eb378485f884e0bc0">current_time()</a> before and after calling <a class="el" href="a03025.html#a484f412f79533f148e06e1a265cf358d" title="Perform one time step and return the estimated optimal time step length for the next time step...">step()</a>. </dd>
+<dl class="section note"><dt>Note</dt><dd>For adaptive methods or if max_dt &lt; dt, dt is just the initial time step length, the actual time step taken may be shorter. To get the actual time step length you need to compare <a class="el" href="a03049.html#a2daef38e3b84435eb378485f884e0bc0">current_time()</a> before and after calling <a class="el" href="a03025.html#ae69e751a14b4a536f49c51652f779c64" title="Perform one time step and return the estimated optimal time step length for the next time step...">step()</a>. </dd>
 <dd>
 This method has to increase the current time by the actual time step length taken, otherwise solve will never finish execution (if current_time is not increased) or give wrong results (if current time is increased by a wrong dt). </dd></dl>
 
-<p>Implements <a class="el" href="a03053.html#a2e704692dcb58d562cdafb3394bfe6ac">Dune::GDT::TimeStepperInterface&lt; FirstStepperImp::DiscreteFunctionType &gt;</a>.</p>
+<p>Implements <a class="el" href="a03049.html#a2e704692dcb58d562cdafb3394bfe6ac">Dune::GDT::TimeStepperInterface&lt; FirstStepperImp::DiscreteFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -1103,7 +1102,7 @@ This method has to increase the current time by the actual time step length take
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="a03053.html#af227b6a0d906719228ed840f2bf90dcc">StringifierType</a> <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::vector_stringifier </td>
+          <td class="memname">static <a class="el" href="a03049.html#af227b6a0d906719228ed840f2bf90dcc">StringifierType</a> <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::vector_stringifier </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1128,7 +1127,7 @@ This method has to increase the current time by the actual time step length take
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::visualize_factor_of_solution </td>
+          <td class="memname">void <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::visualize_factor_of_solution </td>
           <td>(</td>
           <td class="paramtype">const std::string&#160;</td>
           <td class="paramname"><em>prefix</em> = <code>&quot;&quot;</code></td><td>)</td>
@@ -1154,7 +1153,7 @@ This method has to increase the current time by the actual time step length take
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::visualize_solution </td>
+          <td class="memname">virtual void <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::visualize_solution </td>
           <td>(</td>
           <td class="paramtype">const std::string&#160;</td>
           <td class="paramname"><em>prefix</em> = <code>&quot;&quot;</code></td><td>)</td>
@@ -1180,9 +1179,9 @@ This method has to increase the current time by the actual time step length take
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a03053.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::write_to_textfile </td>
+          <td class="memname">void <a class="el" href="a03049.html">Dune::GDT::TimeStepperInterface</a>&lt; FirstStepperImp::DiscreteFunctionType  &gt;::write_to_textfile </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a03053.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a03049.html#a9defaa03400e9598d19f48dc817082f1">DiscreteFunctionType</a> &amp;&#160;</td>
           <td class="paramname"><em>u_n</em>, </td>
         </tr>
         <tr>
@@ -1200,7 +1199,7 @@ This method has to increase the current time by the actual time step length take
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a03053.html#af227b6a0d906719228ed840f2bf90dcc">StringifierType</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a03049.html#af227b6a0d906719228ed840f2bf90dcc">StringifierType</a> &amp;&#160;</td>
           <td class="paramname"><em>stringifier</em>&#160;</td>
         </tr>
         <tr>

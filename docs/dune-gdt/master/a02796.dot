@@ -1,19 +1,21 @@
-digraph "Dune::GDT::IsProductMapper"
+digraph "Dune::GDT::ProductMapperInterface&lt; Traits &gt;"
 {
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="Dune::GDT::IsProductMapper",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node0 -> Node1 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 [label="Dune::GDT::ProductMapper\lInterface\< Traits \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02801.html"];
-  Node1 -> Node2 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::FvProductMapper\lTraits\< GridLayerImp, rangeDim, 1 \> \>" ,fontname="Helvetica"];
-  Node2 [label="Dune::GDT::ProductMapper\lInterface\< internal::FvProduct\lMapperTraits\< GridLayerImp,\l rangeDim, 1 \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02801.html"];
-  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="Dune::GDT::FvProductMapper\l\< GridLayerImp, rangeDim, 1 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02789.html"];
-  Node1 -> Node4 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::DefaultProduct\lMapperTraits\< GridLayerImp,\l MapperTypes... \> \>" ,fontname="Helvetica"];
-  Node4 [label="Dune::GDT::ProductMapper\lInterface\< internal::Default\lProductMapperTraits\< GridLayerImp,\l MapperTypes... \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02801.html"];
+  Node0 [label="Dune::GDT::ProductMapper\lInterface\< Traits \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="Dune::GDT::MapperInterface\l\< Traits \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02789.html"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="XT::Common::CRTPInterface\l\< MapperInterface\< Traits\l \>, Traits \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node0 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Dune::GDT::IsProductMapper",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02793.html"];
+  Node0 -> Node4 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::FvProductMapper\lTraits\< GridLayerImp, rangeDim, 1 \> \>" ,fontname="Helvetica"];
+  Node4 [label="Dune::GDT::ProductMapper\lInterface\< internal::FvProduct\lMapperTraits\< GridLayerImp,\l rangeDim, 1 \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02797.html"];
   Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="Dune::GDT::DefaultProduct\lMapper\< GridLayerImp, MapperTypes \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02805.html"];
-  Node0 -> Node4 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
-  Node0 -> Node2 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Dune::GDT::FvProductMapper\l\< GridLayerImp, rangeDim, 1 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02785.html"];
+  Node0 -> Node6 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::DefaultProduct\lMapperTraits\< GridLayerImp,\l MapperTypes... \> \>" ,fontname="Helvetica"];
+  Node6 [label="Dune::GDT::ProductMapper\lInterface\< internal::Default\lProductMapperTraits\< GridLayerImp,\l MapperTypes... \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02797.html"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Dune::GDT::DefaultProduct\lMapper\< GridLayerImp, MapperTypes \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02801.html"];
 }
