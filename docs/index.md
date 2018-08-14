@@ -4,6 +4,7 @@ title: Documentation for project
 ---
 
 - dune-gdt
+    - '' [main](dune-gdt/''/index.html) | [class index](dune-gdt/''/classes.html)
     - master [main](dune-gdt/master/index.html) | [class index](dune-gdt/master/classes.html)
     - parabolic-lrbms-2017 [main](dune-gdt/parabolic-lrbms-2017/index.html) | [class index](dune-gdt/parabolic-lrbms-2017/classes.html)
 - dune-xt-common
