@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::LocalFVProductIntegrand&lt; LocalizableFunctionImp, TraitsImp &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::LocalSipdgIntegrands::Inner&lt; LocalizableFunctionImp &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a01605.html">LocalFVProductIntegrand</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a00250.html">LocalSipdgIntegrands</a></li><li class="navelem"><a class="el" href="a01605.html">Inner</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -67,194 +67,144 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="a01602.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::LocalFVProductIntegrand&lt; LocalizableFunctionImp, TraitsImp &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::LocalSipdgIntegrands::Inner&lt; LocalizableFunctionImp &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Computes a product evaluation for a finite volume basis.  
- <a href="a01605.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="a04724_source.html">dune/gdt/local/integrands/product.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00095_source.html">dune/gdt/local/integrands/sipdg.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::LocalFVProductIntegrand&lt; LocalizableFunctionImp, TraitsImp &gt;:</div>
+Inheritance diagram for Dune::GDT::LocalSipdgIntegrands::Inner&lt; LocalizableFunctionImp &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01604.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_local_f_v_product_integrand_3_01_localizable_function_imp_00_01_traits_imp_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1_local_f_v_product_integrand_3_01_localizable_function_imp_00_01_traits_imp_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_local_f_v_product_integrand_3_01_localizable_function_imp_00_01_traits_imp_01_4_inherit__map">
+<div class="center"><img src="a01604.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_local_sipdg_integrands_1_1_inner_3_01_localizable_function_imp_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_local_sipdg_integrands_1_1_inner_3_01_localizable_function_imp_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_local_sipdg_integrands_1_1_inner_3_01_localizable_function_imp_01_4_inherit__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a5e056d9f80f9416f230d38f1d59d8ba3"><td class="memItemLeft" align="right" valign="top">typedef TraitsImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01605.html#a5e056d9f80f9416f230d38f1d59d8ba3">Traits</a></td></tr>
-<tr class="separator:a5e056d9f80f9416f230d38f1d59d8ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72e92f905f4477454e620172110b35de"><td class="memItemLeft" align="right" valign="top">typedef Traits::LocalizableFunctionType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01605.html#a72e92f905f4477454e620172110b35de">LocalizableFunctionType</a></td></tr>
-<tr class="separator:a72e92f905f4477454e620172110b35de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6793dabb056564440acf6de33e6c3c2"><td class="memItemLeft" align="right" valign="top">typedef Traits::LocalfunctionTupleType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01605.html#aa6793dabb056564440acf6de33e6c3c2">LocalfunctionTupleType</a></td></tr>
-<tr class="separator:aa6793dabb056564440acf6de33e6c3c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba946a7f14038c55d29108e2054910f8"><td class="memItemLeft" align="right" valign="top">typedef Traits::EntityType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01605.html#aba946a7f14038c55d29108e2054910f8">EntityType</a></td></tr>
-<tr class="separator:aba946a7f14038c55d29108e2054910f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36306b332adefea17d70a93882a6282a"><td class="memItemLeft" align="right" valign="top">typedef Traits::DomainFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01605.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a></td></tr>
-<tr class="separator:a36306b332adefea17d70a93882a6282a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a5e53a1d8dd66cf085c018daff9a1d6"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01617.html">internal::InnerTraits</a>&lt; LocalizableFunctionImp &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01605.html#a1a5e53a1d8dd66cf085c018daff9a1d6">Traits</a></td></tr>
+<tr class="separator:a1a5e53a1d8dd66cf085c018daff9a1d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1470d2ea7e13fa665ec33108724e16c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01617.html#ae91ff6f6ca3c507c34af29fb2cf0bbad">Traits::LocalizableFunctionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01605.html#af1470d2ea7e13fa665ec33108724e16c">LocalizableFunctionType</a></td></tr>
+<tr class="separator:af1470d2ea7e13fa665ec33108724e16c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa55990bd8843e823d890aefd7b6894a1"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01617.html#adc2d35c944f8d13f036b3382ddd2bd5c">Traits::LocalfunctionTupleType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01605.html#aa55990bd8843e823d890aefd7b6894a1">LocalfunctionTupleType</a></td></tr>
+<tr class="separator:aa55990bd8843e823d890aefd7b6894a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6ce09611fa859c9271e29c2827d2bb9"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01617.html#a6d0763e29110a1bda5bb264c6c8bc722">Traits::EntityType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a></td></tr>
+<tr class="separator:ae6ce09611fa859c9271e29c2827d2bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addcc5826e6e1d6fff51e6258d1f88689"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01617.html#a4e4d7df2ef7876bd9c05a395a4c39163">Traits::DomainFieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a></td></tr>
+<tr class="separator:addcc5826e6e1d6fff51e6258d1f88689"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a38276a69e98ea06ff7a9a704a19287fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01605.html#a38276a69e98ea06ff7a9a704a19287fa">LocalFVProductIntegrand</a> (const <a class="el" href="a01601.html#a72e92f905f4477454e620172110b35de">LocalizableFunctionType</a> &amp;inducingFunction, const XT::Common::Parameter &amp;param={})</td></tr>
-<tr class="separator:a38276a69e98ea06ff7a9a704a19287fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Actual implementations of evaluate</div></td></tr>
-<tr class="memitem:ad3b87cbc81236d805ce81115ba07afd8"><td class="memTemplParams" colspan="2">template&lt;class R , size_t r&gt; </td></tr>
-<tr class="memitem:ad3b87cbc81236d805ce81115ba07afd8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01605.html#ad3b87cbc81236d805ce81115ba07afd8">evaluate</a> (const XT::Functions::LocalfunctionInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, r, 1 &gt; &amp;localFunction, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, r, 1 &gt; &amp;testBase, const Dune::FieldVector&lt; <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a> &gt; &amp;localPoint, Dune::DynamicVector&lt; R &gt; &amp;ret) const</td></tr>
-<tr class="separator:ad3b87cbc81236d805ce81115ba07afd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cbebd6d53e3561b333c0e17023ab3be"><td class="memTemplParams" colspan="2">template&lt;class R , size_t r&gt; </td></tr>
-<tr class="memitem:a8cbebd6d53e3561b333c0e17023ab3be"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01605.html#a8cbebd6d53e3561b333c0e17023ab3be">evaluate</a> (const XT::Functions::LocalfunctionInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, 1, 1 &gt; &amp;localFunction, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, r, 1 &gt; &amp;testBase, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, r, 1 &gt; &amp;ansatzBase, const Dune::FieldVector&lt; <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a> &gt; &amp;localPoint, Dune::DynamicMatrix&lt; R &gt; &amp;ret) const</td></tr>
-<tr class="memdesc:a8cbebd6d53e3561b333c0e17023ab3be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a product evaluation for a scalar local function and scalar or vector valued basefunctionsets.  <a href="#a8cbebd6d53e3561b333c0e17023ab3be">More...</a><br /></td></tr>
-<tr class="separator:a8cbebd6d53e3561b333c0e17023ab3be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01fa29a893d8e341da640136da61183c"><td class="memTemplParams" colspan="2">template&lt;class IntersectionType , class R , size_t r&gt; </td></tr>
-<tr class="memitem:a01fa29a893d8e341da640136da61183c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01605.html#a01fa29a893d8e341da640136da61183c">evaluate</a> (const XT::Functions::LocalfunctionInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, r, 1 &gt; &amp;localFunction, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, r, 1 &gt; &amp;testBase, const IntersectionType &amp;intersection, const Dune::FieldVector&lt; <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a> - 1 &gt; &amp;localPoint, Dune::DynamicVector&lt; R &gt; &amp;ret) const</td></tr>
-<tr class="separator:a01fa29a893d8e341da640136da61183c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c1484bd3343ba5f89a95ebcb29d28e3"><td class="memTemplParams" colspan="2">template&lt;class IntersectionType , class R , size_t r&gt; </td></tr>
-<tr class="memitem:a5c1484bd3343ba5f89a95ebcb29d28e3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01605.html#a5c1484bd3343ba5f89a95ebcb29d28e3">evaluate</a> (const XT::Functions::LocalfunctionInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, 1, 1 &gt; &amp;localFunction, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, r, 1 &gt; &amp;testBase, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, r, 1 &gt; &amp;DXTC_DEBUG_ONLY(ansatzBase), const IntersectionType &amp;intersection, const Dune::FieldVector&lt; <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a> - 1 &gt; &amp;localPoint, Dune::DynamicMatrix&lt; R &gt; &amp;ret) const</td></tr>
-<tr class="memdesc:a5c1484bd3343ba5f89a95ebcb29d28e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a product evaluation for a scalar local function and scalar or vector valued basefunctionsets.  <a href="#a5c1484bd3343ba5f89a95ebcb29d28e3">More...</a><br /></td></tr>
-<tr class="separator:a5c1484bd3343ba5f89a95ebcb29d28e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Required by all variants of LocalVolumeIntegrandInterface</div></td></tr>
-<tr class="memitem:aa5eca9bec30695c3877d5b4eef2ab8c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01601.html#aa6793dabb056564440acf6de33e6c3c2">LocalfunctionTupleType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01601.html#aa5eca9bec30695c3877d5b4eef2ab8c6">localFunctions</a> (const <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a> &amp;entity) const</td></tr>
-<tr class="separator:aa5eca9bec30695c3877d5b4eef2ab8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Required by LocalVolumeIntegrandInterface&lt; ..., 1 &gt;</div></td></tr>
-<tr class="memitem:a9c0aeb72335dc511a8ec44ed45418b32"><td class="memTemplParams" colspan="2">template&lt;class R , size_t rT, size_t rCT&gt; </td></tr>
-<tr class="memitem:a9c0aeb72335dc511a8ec44ed45418b32"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01601.html#a9c0aeb72335dc511a8ec44ed45418b32">order</a> (const <a class="el" href="a01601.html#aa6793dabb056564440acf6de33e6c3c2">LocalfunctionTupleType</a> &amp;localFuncs, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, rT, rCT &gt; &amp;testBase) const</td></tr>
-<tr class="memdesc:a9c0aeb72335dc511a8ec44ed45418b32"><td class="mdescLeft">&#160;</td><td class="mdescRight">extracts the local function and calls the correct <a class="el" href="a01601.html#a9c0aeb72335dc511a8ec44ed45418b32" title="extracts the local function and calls the correct order() method ">order()</a> method  <a href="#a9c0aeb72335dc511a8ec44ed45418b32">More...</a><br /></td></tr>
-<tr class="separator:a9c0aeb72335dc511a8ec44ed45418b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84322fed2663b58a1b344def31245ddb"><td class="memTemplParams" colspan="2">template&lt;class R , size_t rT, size_t rCT&gt; </td></tr>
-<tr class="memitem:a84322fed2663b58a1b344def31245ddb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01601.html#a84322fed2663b58a1b344def31245ddb">evaluate</a> (const <a class="el" href="a01601.html#aa6793dabb056564440acf6de33e6c3c2">LocalfunctionTupleType</a> &amp;localFuncs, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, rT, rCT &gt; &amp;testBase, const Dune::FieldVector&lt; <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a> &gt; &amp;localPoint, Dune::DynamicVector&lt; R &gt; &amp;ret) const</td></tr>
-<tr class="memdesc:a84322fed2663b58a1b344def31245ddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">extracts the local function and calls the correct <a class="el" href="a01601.html#a84322fed2663b58a1b344def31245ddb" title="extracts the local function and calls the correct evaluate() method ">evaluate()</a> method  <a href="#a84322fed2663b58a1b344def31245ddb">More...</a><br /></td></tr>
-<tr class="separator:a84322fed2663b58a1b344def31245ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Required by LocalVolumeIntegrandInterface&lt; ..., 2 &gt; and LocalFaceIntegrandInterface&lt; ..., 2 &gt;</div></td></tr>
-<tr class="memitem:a0e4a6ba629cd2640e9b47a7f222abc13"><td class="memTemplParams" colspan="2">template&lt;class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </td></tr>
-<tr class="memitem:a0e4a6ba629cd2640e9b47a7f222abc13"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01601.html#a0e4a6ba629cd2640e9b47a7f222abc13">order</a> (const <a class="el" href="a01601.html#aa6793dabb056564440acf6de33e6c3c2">LocalfunctionTupleType</a> &amp;localFuncs, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, rT, rCT &gt; &amp;testBase, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, rA, rCA &gt; &amp;ansatzBase) const</td></tr>
-<tr class="memdesc:a0e4a6ba629cd2640e9b47a7f222abc13"><td class="mdescLeft">&#160;</td><td class="mdescRight">extracts the local function and calls the correct <a class="el" href="a01601.html#a9c0aeb72335dc511a8ec44ed45418b32" title="extracts the local function and calls the correct order() method ">order()</a> method  <a href="#a0e4a6ba629cd2640e9b47a7f222abc13">More...</a><br /></td></tr>
-<tr class="separator:a0e4a6ba629cd2640e9b47a7f222abc13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Actual implementations of order</div></td></tr>
-<tr class="memitem:a81eaf9eba9401ccc3f9695aa7c2a6b9b"><td class="memTemplParams" colspan="2">template&lt;class R , size_t rL, size_t rCL, size_t rT, size_t rCT&gt; </td></tr>
-<tr class="memitem:a81eaf9eba9401ccc3f9695aa7c2a6b9b"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01601.html#a81eaf9eba9401ccc3f9695aa7c2a6b9b">order</a> (const XT::Functions::LocalfunctionInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, rL, rCL &gt; &amp;localFunction, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, rT, rCT &gt; &amp;testBase) const</td></tr>
-<tr class="separator:a81eaf9eba9401ccc3f9695aa7c2a6b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a298f87c69b876a3ea4ae26fdbd91d956"><td class="memTemplParams" colspan="2">template&lt;class R , size_t rL, size_t rCL, size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </td></tr>
-<tr class="memitem:a298f87c69b876a3ea4ae26fdbd91d956"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01601.html#a298f87c69b876a3ea4ae26fdbd91d956">order</a> (const XT::Functions::LocalfunctionInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, rL, rCL &gt; &amp;localFunction, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, rT, rCT &gt; &amp;testBase, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, rA, rCA &gt; &amp;ansatzBase) const</td></tr>
-<tr class="separator:a298f87c69b876a3ea4ae26fdbd91d956"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Required by LocalFaceIntegrandInterface&lt; ..., 1 &gt;</div></td></tr>
-<tr class="memitem:ac86e4b9148f46ef75b125fce956fad84"><td class="memTemplParams" colspan="2">template&lt;class IntersectionType , class R , size_t r, size_t rC&gt; </td></tr>
-<tr class="memitem:ac86e4b9148f46ef75b125fce956fad84"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01601.html#ac86e4b9148f46ef75b125fce956fad84">evaluate</a> (const <a class="el" href="a01601.html#aa6793dabb056564440acf6de33e6c3c2">LocalfunctionTupleType</a> &amp;localFuncs, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, r, rC &gt; &amp;testBase, const IntersectionType &amp;intersection, const Dune::FieldVector&lt; <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a> - 1 &gt; &amp;localPoint, Dune::DynamicVector&lt; R &gt; &amp;ret) const</td></tr>
-<tr class="memdesc:ac86e4b9148f46ef75b125fce956fad84"><td class="mdescLeft">&#160;</td><td class="mdescRight">extracts the local function and calls the correct <a class="el" href="a01601.html#a84322fed2663b58a1b344def31245ddb" title="extracts the local function and calls the correct evaluate() method ">evaluate()</a> method  <a href="#ac86e4b9148f46ef75b125fce956fad84">More...</a><br /></td></tr>
-<tr class="separator:ac86e4b9148f46ef75b125fce956fad84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Required by LocalVolumeIntegrandInterface&lt; ..., 2 &gt;</div></td></tr>
-<tr class="memitem:a2bcf2391c1da2c0a6149755fcd8cd7e2"><td class="memTemplParams" colspan="2">template&lt;class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </td></tr>
-<tr class="memitem:a2bcf2391c1da2c0a6149755fcd8cd7e2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01601.html#a2bcf2391c1da2c0a6149755fcd8cd7e2">evaluate</a> (const <a class="el" href="a01601.html#aa6793dabb056564440acf6de33e6c3c2">LocalfunctionTupleType</a> &amp;localFuncs, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, rT, rCT &gt; &amp;testBase, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, rA, rCA &gt; &amp;ansatzBase, const Dune::FieldVector&lt; <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a> &gt; &amp;localPoint, Dune::DynamicMatrix&lt; R &gt; &amp;ret) const</td></tr>
-<tr class="memdesc:a2bcf2391c1da2c0a6149755fcd8cd7e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">extracts the local function and calls the correct <a class="el" href="a01601.html#a84322fed2663b58a1b344def31245ddb" title="extracts the local function and calls the correct evaluate() method ">evaluate()</a> method  <a href="#a2bcf2391c1da2c0a6149755fcd8cd7e2">More...</a><br /></td></tr>
-<tr class="separator:a2bcf2391c1da2c0a6149755fcd8cd7e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Required by LocalFaceIntegrandInterface&lt; ..., 2 &gt;</div></td></tr>
-<tr class="memitem:adfe27b51639abd62664184a76997404c"><td class="memTemplParams" colspan="2">template&lt;class IntersectionType , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </td></tr>
-<tr class="memitem:adfe27b51639abd62664184a76997404c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01601.html#adfe27b51639abd62664184a76997404c">evaluate</a> (const <a class="el" href="a01601.html#aa6793dabb056564440acf6de33e6c3c2">LocalfunctionTupleType</a> &amp;localFunctions_in, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, rT, rCT &gt; &amp;testBase, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, rA, rCA &gt; &amp;ansatzBase, const IntersectionType &amp;intersection, const Dune::FieldVector&lt; <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a> - 1 &gt; &amp;localPoint, Dune::DynamicMatrix&lt; R &gt; &amp;ret) const</td></tr>
-<tr class="memdesc:adfe27b51639abd62664184a76997404c"><td class="mdescLeft">&#160;</td><td class="mdescRight">extracts the local function and calls the correct <a class="el" href="a01601.html#a84322fed2663b58a1b344def31245ddb" title="extracts the local function and calls the correct evaluate() method ">evaluate()</a> method  <a href="#adfe27b51639abd62664184a76997404c">More...</a><br /></td></tr>
-<tr class="separator:adfe27b51639abd62664184a76997404c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Actual implementations of evaluate</div></td></tr>
-<tr class="memitem:a8d6ae9b8695010d95a6fcd1e1dc00c58"><td class="memTemplParams" colspan="2">template&lt;class IntersectionType , class R , size_t r&gt; </td></tr>
-<tr class="memitem:a8d6ae9b8695010d95a6fcd1e1dc00c58"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01601.html#a8d6ae9b8695010d95a6fcd1e1dc00c58">evaluate</a> (const XT::Functions::LocalfunctionInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, 1, 1 &gt; &amp;localFunction, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, r, 1 &gt; &amp;testBase, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, r, 1 &gt; &amp;ansatzBase, const IntersectionType &amp;intersection, const Dune::FieldVector&lt; <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a> - 1 &gt; &amp;localPoint, Dune::DynamicMatrix&lt; R &gt; &amp;ret) const</td></tr>
-<tr class="memdesc:a8d6ae9b8695010d95a6fcd1e1dc00c58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a product evaluation for a scalar local function and scalar or vector valued basefunctionsets.  <a href="#a8d6ae9b8695010d95a6fcd1e1dc00c58">More...</a><br /></td></tr>
-<tr class="separator:a8d6ae9b8695010d95a6fcd1e1dc00c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6058f52e61ee62767cef51e823bc5ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01605.html#ab6058f52e61ee62767cef51e823bc5ab">Inner</a> (const <a class="el" href="a01605.html#af1470d2ea7e13fa665ec33108724e16c">LocalizableFunctionType</a> &amp;inducingFunction, const double beta=<a class="el" href="a00251.html#ab6cd5a8c609a71fc12d58cd97eaccf0a">internal::default_beta</a>(<a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>))</td></tr>
+<tr class="separator:ab6058f52e61ee62767cef51e823bc5ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Required by LocalFaceIntegrandInterface&lt; ..., 4 &gt;</div></td></tr>
+<tr class="memitem:a3eceb3eb60944c483ef02443ea3153c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01605.html#aa55990bd8843e823d890aefd7b6894a1">LocalfunctionTupleType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01605.html#a3eceb3eb60944c483ef02443ea3153c1">localFunctions</a> (const <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a> &amp;entity) const</td></tr>
+<tr class="separator:a3eceb3eb60944c483ef02443ea3153c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae37f9693c234aaf630f3e1ab0f022a2d"><td class="memTemplParams" colspan="2">template&lt;class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </td></tr>
+<tr class="memitem:ae37f9693c234aaf630f3e1ab0f022a2d"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01605.html#ae37f9693c234aaf630f3e1ab0f022a2d">order</a> (const <a class="el" href="a01605.html#aa55990bd8843e823d890aefd7b6894a1">LocalfunctionTupleType</a> &amp;localFunctionsEntity, const <a class="el" href="a01605.html#aa55990bd8843e823d890aefd7b6894a1">LocalfunctionTupleType</a> &amp;localFunctionsNeighbor, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rT, rCT &gt; &amp;testBaseEntity, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rA, rCA &gt; &amp;ansatzBaseEntity, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rT, rCT &gt; &amp;testBaseNeighbor, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rA, rCA &gt; &amp;ansatzBaseNeighbor) const</td></tr>
+<tr class="memdesc:ae37f9693c234aaf630f3e1ab0f022a2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">extracts the local functions and calls the correct <a class="el" href="a01605.html#ae37f9693c234aaf630f3e1ab0f022a2d" title="extracts the local functions and calls the correct order() method ">order()</a> method  <a href="#ae37f9693c234aaf630f3e1ab0f022a2d">More...</a><br /></td></tr>
+<tr class="separator:ae37f9693c234aaf630f3e1ab0f022a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36c4a0d2628d56a069f282acc989a058"><td class="memTemplParams" colspan="2">template&lt;class IntersectionType , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </td></tr>
+<tr class="memitem:a36c4a0d2628d56a069f282acc989a058"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01605.html#a36c4a0d2628d56a069f282acc989a058">evaluate</a> (const <a class="el" href="a01605.html#aa55990bd8843e823d890aefd7b6894a1">LocalfunctionTupleType</a> &amp;localFunctionsEntity, const <a class="el" href="a01605.html#aa55990bd8843e823d890aefd7b6894a1">LocalfunctionTupleType</a> &amp;localFunctionsNeighbor, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rT, rCT &gt; &amp;testBaseEntity, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rA, rCA &gt; &amp;ansatzBaseEntity, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rT, rCT &gt; &amp;testBaseNeighbor, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rA, rCA &gt; &amp;ansatzBaseNeighbor, const IntersectionType &amp;intersection, const Dune::FieldVector&lt; <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a> - 1 &gt; &amp;localPoint, Dune::DynamicMatrix&lt; R &gt; &amp;entityEntityRet, Dune::DynamicMatrix&lt; R &gt; &amp;neighborNeighborRet, Dune::DynamicMatrix&lt; R &gt; &amp;entityNeighborRet, Dune::DynamicMatrix&lt; R &gt; &amp;neighborEntityRet) const</td></tr>
+<tr class="memdesc:a36c4a0d2628d56a069f282acc989a058"><td class="mdescLeft">&#160;</td><td class="mdescRight">extracts the local functions and calls the correct <a class="el" href="a01605.html#a36c4a0d2628d56a069f282acc989a058" title="extracts the local functions and calls the correct evaluate() method ">evaluate()</a> method  <a href="#a36c4a0d2628d56a069f282acc989a058">More...</a><br /></td></tr>
+<tr class="separator:a36c4a0d2628d56a069f282acc989a058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Actual implementation of order</div></td></tr>
+<tr class="memitem:a4b823bc4a487b718257b5c3ffd66c0cb"><td class="memTemplParams" colspan="2">template&lt;class R , size_t rL, size_t rCL, size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </td></tr>
+<tr class="memitem:a4b823bc4a487b718257b5c3ffd66c0cb"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01605.html#a4b823bc4a487b718257b5c3ffd66c0cb">order</a> (const XT::Functions::LocalfunctionInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rL, rCL &gt; &amp;localFunctionEntity, const XT::Functions::LocalfunctionInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rL, rCL &gt; &amp;localFunctionNeighbor, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rT, rCT &gt; &amp;testBaseEntity, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rA, rCA &gt; &amp;ansatzBaseEntity, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rT, rCT &gt; &amp;testBaseNeighbor, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rA, rCA &gt; &amp;ansatzBaseNeighbor) const</td></tr>
+<tr class="separator:a4b823bc4a487b718257b5c3ffd66c0cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Actual implementation of evaluate</div></td></tr>
+<tr class="memitem:ac6fb5c6796390618c94cf413948cd3b6"><td class="memTemplParams" colspan="2">template&lt;class IntersectionType , class R &gt; </td></tr>
+<tr class="memitem:ac6fb5c6796390618c94cf413948cd3b6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01605.html#ac6fb5c6796390618c94cf413948cd3b6">evaluate</a> (const XT::Functions::LocalfunctionInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, 2, R, 1, 1 &gt; &amp;localFunctionEntity, const XT::Functions::LocalfunctionInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, 2, R, 1, 1 &gt; &amp;localFunctionNeighbor, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, 2, R, 1, 1 &gt; &amp;testBaseEntity, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, 2, R, 1, 1 &gt; &amp;ansatzBaseEntity, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, 2, R, 1, 1 &gt; &amp;testBaseNeighbor, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, 2, R, 1, 1 &gt; &amp;ansatzBaseNeighbor, const IntersectionType &amp;intersection, const Dune::FieldVector&lt; <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, 1 &gt; &amp;localPoint, Dune::DynamicMatrix&lt; R &gt; &amp;entityEntityRet, Dune::DynamicMatrix&lt; R &gt; &amp;neighborNeighborRet, Dune::DynamicMatrix&lt; R &gt; &amp;entityNeighborRet, Dune::DynamicMatrix&lt; R &gt; &amp;neighborEntityRet) const</td></tr>
+<tr class="memdesc:ac6fb5c6796390618c94cf413948cd3b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the ipdg fluxes in a primal setting.  <a href="#ac6fb5c6796390618c94cf413948cd3b6">More...</a><br /></td></tr>
+<tr class="separator:ac6fb5c6796390618c94cf413948cd3b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:ab40cd9204eda16ac32ddf2dc73d19b21"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a> = Traits::dimDomain</td></tr>
-<tr class="separator:ab40cd9204eda16ac32ddf2dc73d19b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:ad40600798cd92ec1091a840a0b742727"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a01601.html#a72e92f905f4477454e620172110b35de">LocalizableFunctionType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01601.html#ad40600798cd92ec1091a840a0b742727">inducingFunction_</a></td></tr>
-<tr class="separator:ad40600798cd92ec1091a840a0b742727"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad34223ba586c6c9882ab10bb9f8789c9"><td class="memItemLeft" align="right" valign="top">const XT::Common::Parameter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01601.html#ad34223ba586c6c9882ab10bb9f8789c9">param_</a></td></tr>
-<tr class="separator:ad34223ba586c6c9882ab10bb9f8789c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18675a2e90e4e93e7f06bad37535bb05"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a> = Traits::dimDomain</td></tr>
+<tr class="separator:a18675a2e90e4e93e7f06bad37535bb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class LocalizableFunctionImp, class TraitsImp = internal::LocalFVProductIntegrandTraits&lt;LocalizableFunctionImp&gt;&gt;<br />
-class Dune::GDT::LocalFVProductIntegrand&lt; LocalizableFunctionImp, TraitsImp &gt;</h3>
+<div class="textblock"><h3>template&lt;class LocalizableFunctionImp&gt;<br />
+class Dune::GDT::LocalSipdgIntegrands::Inner&lt; LocalizableFunctionImp &gt;</h3>
 
-<p>Computes a product evaluation for a finite volume basis. </p>
+<p>see Epshteyn, Riviere, 2007 for the meaning of beta </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a36306b332adefea17d70a93882a6282a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36306b332adefea17d70a93882a6282a">&#9670;&nbsp;</a></span>DomainFieldType</h2>
+<a id="addcc5826e6e1d6fff51e6258d1f88689"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addcc5826e6e1d6fff51e6258d1f88689">&#9670;&nbsp;</a></span>DomainFieldType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalizableFunctionImp , class TraitsImp  = internal::LocalFVProductIntegrandTraits&lt;LocalizableFunctionImp&gt;&gt; </div>
+template&lt;class LocalizableFunctionImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef Traits::DomainFieldType <a class="el" href="a01601.html">Dune::GDT::LocalProductIntegrand</a>&lt; LocalizableFunctionImp, TraitsImp &gt;::<a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a></td>
+          <td class="memname">typedef <a class="el" href="a01617.html#a4e4d7df2ef7876bd9c05a395a4c39163">Traits::DomainFieldType</a> <a class="el" href="a01605.html">Dune::GDT::LocalSipdgIntegrands::Inner</a>&lt; LocalizableFunctionImp &gt;::<a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aba946a7f14038c55d29108e2054910f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba946a7f14038c55d29108e2054910f8">&#9670;&nbsp;</a></span>EntityType</h2>
+<a id="ae6ce09611fa859c9271e29c2827d2bb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6ce09611fa859c9271e29c2827d2bb9">&#9670;&nbsp;</a></span>EntityType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalizableFunctionImp , class TraitsImp  = internal::LocalFVProductIntegrandTraits&lt;LocalizableFunctionImp&gt;&gt; </div>
+template&lt;class LocalizableFunctionImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef Traits::EntityType <a class="el" href="a01601.html">Dune::GDT::LocalProductIntegrand</a>&lt; LocalizableFunctionImp, TraitsImp &gt;::<a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a></td>
+          <td class="memname">typedef <a class="el" href="a01617.html#a6d0763e29110a1bda5bb264c6c8bc722">Traits::EntityType</a> <a class="el" href="a01605.html">Dune::GDT::LocalSipdgIntegrands::Inner</a>&lt; LocalizableFunctionImp &gt;::<a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aa6793dabb056564440acf6de33e6c3c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6793dabb056564440acf6de33e6c3c2">&#9670;&nbsp;</a></span>LocalfunctionTupleType</h2>
+<a id="aa55990bd8843e823d890aefd7b6894a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa55990bd8843e823d890aefd7b6894a1">&#9670;&nbsp;</a></span>LocalfunctionTupleType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalizableFunctionImp , class TraitsImp  = internal::LocalFVProductIntegrandTraits&lt;LocalizableFunctionImp&gt;&gt; </div>
+template&lt;class LocalizableFunctionImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef Traits::LocalfunctionTupleType <a class="el" href="a01601.html">Dune::GDT::LocalProductIntegrand</a>&lt; LocalizableFunctionImp, TraitsImp &gt;::<a class="el" href="a01601.html#aa6793dabb056564440acf6de33e6c3c2">LocalfunctionTupleType</a></td>
+          <td class="memname">typedef <a class="el" href="a01617.html#adc2d35c944f8d13f036b3382ddd2bd5c">Traits::LocalfunctionTupleType</a> <a class="el" href="a01605.html">Dune::GDT::LocalSipdgIntegrands::Inner</a>&lt; LocalizableFunctionImp &gt;::<a class="el" href="a01605.html#aa55990bd8843e823d890aefd7b6894a1">LocalfunctionTupleType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a72e92f905f4477454e620172110b35de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72e92f905f4477454e620172110b35de">&#9670;&nbsp;</a></span>LocalizableFunctionType</h2>
+<a id="af1470d2ea7e13fa665ec33108724e16c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1470d2ea7e13fa665ec33108724e16c">&#9670;&nbsp;</a></span>LocalizableFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalizableFunctionImp , class TraitsImp  = internal::LocalFVProductIntegrandTraits&lt;LocalizableFunctionImp&gt;&gt; </div>
+template&lt;class LocalizableFunctionImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef Traits::LocalizableFunctionType <a class="el" href="a01601.html">Dune::GDT::LocalProductIntegrand</a>&lt; LocalizableFunctionImp, TraitsImp &gt;::<a class="el" href="a01601.html#a72e92f905f4477454e620172110b35de">LocalizableFunctionType</a></td>
+          <td class="memname">typedef <a class="el" href="a01617.html#ae91ff6f6ca3c507c34af29fb2cf0bbad">Traits::LocalizableFunctionType</a> <a class="el" href="a01605.html">Dune::GDT::LocalSipdgIntegrands::Inner</a>&lt; LocalizableFunctionImp &gt;::<a class="el" href="a01605.html#af1470d2ea7e13fa665ec33108724e16c">LocalizableFunctionType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a5e056d9f80f9416f230d38f1d59d8ba3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e056d9f80f9416f230d38f1d59d8ba3">&#9670;&nbsp;</a></span>Traits</h2>
+<a id="a1a5e53a1d8dd66cf085c018daff9a1d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a5e53a1d8dd66cf085c018daff9a1d6">&#9670;&nbsp;</a></span>Traits</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalizableFunctionImp , class TraitsImp  = internal::LocalFVProductIntegrandTraits&lt;LocalizableFunctionImp&gt;&gt; </div>
+template&lt;class LocalizableFunctionImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef TraitsImp <a class="el" href="a01601.html">Dune::GDT::LocalProductIntegrand</a>&lt; LocalizableFunctionImp, TraitsImp &gt;::<a class="el" href="a01601.html#a5e056d9f80f9416f230d38f1d59d8ba3">Traits</a></td>
+          <td class="memname">typedef <a class="el" href="a01617.html">internal::InnerTraits</a>&lt;LocalizableFunctionImp&gt; <a class="el" href="a01605.html">Dune::GDT::LocalSipdgIntegrands::Inner</a>&lt; LocalizableFunctionImp &gt;::<a class="el" href="a01605.html#a1a5e53a1d8dd66cf085c018daff9a1d6">Traits</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -262,28 +212,28 @@ template&lt;class LocalizableFunctionImp , class TraitsImp  = internal::LocalFVP
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a38276a69e98ea06ff7a9a704a19287fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38276a69e98ea06ff7a9a704a19287fa">&#9670;&nbsp;</a></span>LocalFVProductIntegrand()</h2>
+<a id="ab6058f52e61ee62767cef51e823bc5ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6058f52e61ee62767cef51e823bc5ab">&#9670;&nbsp;</a></span>Inner()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalizableFunctionImp , class TraitsImp  = internal::LocalFVProductIntegrandTraits&lt;LocalizableFunctionImp&gt;&gt; </div>
+template&lt;class LocalizableFunctionImp &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a01605.html">Dune::GDT::LocalFVProductIntegrand</a>&lt; LocalizableFunctionImp, TraitsImp &gt;::<a class="el" href="a01605.html">LocalFVProductIntegrand</a> </td>
+          <td class="memname"><a class="el" href="a01605.html">Dune::GDT::LocalSipdgIntegrands::Inner</a>&lt; LocalizableFunctionImp &gt;::<a class="el" href="a01605.html">Inner</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a01601.html#a72e92f905f4477454e620172110b35de">LocalizableFunctionType</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a01605.html#af1470d2ea7e13fa665ec33108724e16c">LocalizableFunctionType</a> &amp;&#160;</td>
           <td class="paramname"><em>inducingFunction</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
-          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>beta</em> = <code><a class="el" href="a00251.html#ab6cd5a8c609a71fc12d58cd97eaccf0a">internal::default_beta</a>(<a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>)</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -301,187 +251,13 @@ template&lt;class LocalizableFunctionImp , class TraitsImp  = internal::LocalFVP
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a84322fed2663b58a1b344def31245ddb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84322fed2663b58a1b344def31245ddb">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[1/9]</span></h2>
+<a id="a36c4a0d2628d56a069f282acc989a058"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36c4a0d2628d56a069f282acc989a058">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalizableFunctionImp, class TraitsImp = internal::LocalProductIntegrandTraits&lt;LocalizableFunctionImp&gt;&gt; </div>
-<div class="memtemplate">
-template&lt;class R , size_t rT, size_t rCT&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a01601.html">Dune::GDT::LocalProductIntegrand</a>&lt; LocalizableFunctionImp, TraitsImp &gt;::evaluate </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a01601.html#aa6793dabb056564440acf6de33e6c3c2">LocalfunctionTupleType</a> &amp;&#160;</td>
-          <td class="paramname"><em>localFuncs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, rT, rCT &gt; &amp;&#160;</td>
-          <td class="paramname"><em>testBase</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Dune::FieldVector&lt; <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>localPoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Dune::DynamicVector&lt; R &gt; &amp;&#160;</td>
-          <td class="paramname"><em>ret</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>extracts the local function and calls the correct <a class="el" href="a01605.html#ad3b87cbc81236d805ce81115ba07afd8">evaluate()</a> method </p>
-
-</div>
-</div>
-<a id="ac86e4b9148f46ef75b125fce956fad84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac86e4b9148f46ef75b125fce956fad84">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[2/9]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class LocalizableFunctionImp, class TraitsImp = internal::LocalProductIntegrandTraits&lt;LocalizableFunctionImp&gt;&gt; </div>
-<div class="memtemplate">
-template&lt;class IntersectionType , class R , size_t r, size_t rC&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a01601.html">Dune::GDT::LocalProductIntegrand</a>&lt; LocalizableFunctionImp, TraitsImp &gt;::evaluate </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a01601.html#aa6793dabb056564440acf6de33e6c3c2">LocalfunctionTupleType</a> &amp;&#160;</td>
-          <td class="paramname"><em>localFuncs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, r, rC &gt; &amp;&#160;</td>
-          <td class="paramname"><em>testBase</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const IntersectionType &amp;&#160;</td>
-          <td class="paramname"><em>intersection</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Dune::FieldVector&lt; <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a> - 1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>localPoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Dune::DynamicVector&lt; R &gt; &amp;&#160;</td>
-          <td class="paramname"><em>ret</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>extracts the local function and calls the correct <a class="el" href="a01605.html#ad3b87cbc81236d805ce81115ba07afd8">evaluate()</a> method </p>
-
-</div>
-</div>
-<a id="a2bcf2391c1da2c0a6149755fcd8cd7e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bcf2391c1da2c0a6149755fcd8cd7e2">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[3/9]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class LocalizableFunctionImp, class TraitsImp = internal::LocalProductIntegrandTraits&lt;LocalizableFunctionImp&gt;&gt; </div>
-<div class="memtemplate">
-template&lt;class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a01601.html">Dune::GDT::LocalProductIntegrand</a>&lt; LocalizableFunctionImp, TraitsImp &gt;::evaluate </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a01601.html#aa6793dabb056564440acf6de33e6c3c2">LocalfunctionTupleType</a> &amp;&#160;</td>
-          <td class="paramname"><em>localFuncs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, rT, rCT &gt; &amp;&#160;</td>
-          <td class="paramname"><em>testBase</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, rA, rCA &gt; &amp;&#160;</td>
-          <td class="paramname"><em>ansatzBase</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Dune::FieldVector&lt; <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>localPoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Dune::DynamicMatrix&lt; R &gt; &amp;&#160;</td>
-          <td class="paramname"><em>ret</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>extracts the local function and calls the correct <a class="el" href="a01605.html#ad3b87cbc81236d805ce81115ba07afd8">evaluate()</a> method </p>
-
-</div>
-</div>
-<a id="adfe27b51639abd62664184a76997404c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adfe27b51639abd62664184a76997404c">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[4/9]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class LocalizableFunctionImp, class TraitsImp = internal::LocalProductIntegrandTraits&lt;LocalizableFunctionImp&gt;&gt; </div>
+template&lt;class LocalizableFunctionImp &gt; </div>
 <div class="memtemplate">
 template&lt;class IntersectionType , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
 <table class="mlabels">
@@ -489,22 +265,40 @@ template&lt;class IntersectionType , class R , size_t rT, size_t rCT, size_t rA,
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a01601.html">Dune::GDT::LocalProductIntegrand</a>&lt; LocalizableFunctionImp, TraitsImp &gt;::evaluate </td>
+          <td class="memname">void <a class="el" href="a01605.html">Dune::GDT::LocalSipdgIntegrands::Inner</a>&lt; LocalizableFunctionImp &gt;::evaluate </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a01601.html#aa6793dabb056564440acf6de33e6c3c2">LocalfunctionTupleType</a> &amp;&#160;</td>
-          <td class="paramname"><em>localFunctions_in</em>, </td>
+          <td class="paramtype">const <a class="el" href="a01605.html#aa55990bd8843e823d890aefd7b6894a1">LocalfunctionTupleType</a> &amp;&#160;</td>
+          <td class="paramname"><em>localFunctionsEntity</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, rT, rCT &gt; &amp;&#160;</td>
-          <td class="paramname"><em>testBase</em>, </td>
+          <td class="paramtype">const <a class="el" href="a01605.html#aa55990bd8843e823d890aefd7b6894a1">LocalfunctionTupleType</a> &amp;&#160;</td>
+          <td class="paramname"><em>localFunctionsNeighbor</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, rA, rCA &gt; &amp;&#160;</td>
-          <td class="paramname"><em>ansatzBase</em>, </td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rT, rCT &gt; &amp;&#160;</td>
+          <td class="paramname"><em>testBaseEntity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rA, rCA &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ansatzBaseEntity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rT, rCT &gt; &amp;&#160;</td>
+          <td class="paramname"><em>testBaseNeighbor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rA, rCA &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ansatzBaseNeighbor</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -515,194 +309,32 @@ template&lt;class IntersectionType , class R , size_t rT, size_t rCT, size_t rA,
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Dune::FieldVector&lt; <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a> - 1 &gt; &amp;&#160;</td>
+          <td class="paramtype">const Dune::FieldVector&lt; <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a> - 1 &gt; &amp;&#160;</td>
           <td class="paramname"><em>localPoint</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">Dune::DynamicMatrix&lt; R &gt; &amp;&#160;</td>
-          <td class="paramname"><em>ret</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>extracts the local function and calls the correct <a class="el" href="a01605.html#ad3b87cbc81236d805ce81115ba07afd8">evaluate()</a> method </p>
-
-</div>
-</div>
-<a id="a8d6ae9b8695010d95a6fcd1e1dc00c58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d6ae9b8695010d95a6fcd1e1dc00c58">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[5/9]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class LocalizableFunctionImp, class TraitsImp = internal::LocalProductIntegrandTraits&lt;LocalizableFunctionImp&gt;&gt; </div>
-<div class="memtemplate">
-template&lt;class IntersectionType , class R , size_t r&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a01601.html">Dune::GDT::LocalProductIntegrand</a>&lt; LocalizableFunctionImp, TraitsImp &gt;::evaluate </td>
-          <td>(</td>
-          <td class="paramtype">const XT::Functions::LocalfunctionInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, 1, 1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>localFunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, r, 1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>testBase</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, r, 1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>ansatzBase</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const IntersectionType &amp;&#160;</td>
-          <td class="paramname"><em>intersection</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Dune::FieldVector&lt; <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a> - 1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>localPoint</em>, </td>
+          <td class="paramname"><em>entityEntityRet</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">Dune::DynamicMatrix&lt; R &gt; &amp;&#160;</td>
-          <td class="paramname"><em>ret</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Computes a product evaluation for a scalar local function and scalar or vector valued basefunctionsets. </p>
-<dl class="section note"><dt>Note</dt><dd>for <code><a class="el" href="a01553.html" title="Interface for local evaluations that depend on an intersection. ">LocalFaceIntegrandInterface</a>&lt; ..., 2 &gt;</code> </dd></dl>
-
-</div>
-</div>
-<a id="ad3b87cbc81236d805ce81115ba07afd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3b87cbc81236d805ce81115ba07afd8">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[6/9]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class LocalizableFunctionImp , class TraitsImp  = internal::LocalFVProductIntegrandTraits&lt;LocalizableFunctionImp&gt;&gt; </div>
-<div class="memtemplate">
-template&lt;class R , size_t r&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a01605.html">Dune::GDT::LocalFVProductIntegrand</a>&lt; LocalizableFunctionImp, TraitsImp &gt;::evaluate </td>
-          <td>(</td>
-          <td class="paramtype">const XT::Functions::LocalfunctionInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, r, 1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>localFunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, r, 1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>testBase</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Dune::FieldVector&lt; <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>localPoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Dune::DynamicVector&lt; R &gt; &amp;&#160;</td>
-          <td class="paramname"><em>ret</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>for <code><a class="el" href="a01541.html" title="Interface for local evaluations that depend on a codim 0 entity. ">LocalVolumeIntegrandInterface</a>&lt; ..., 1 &gt;</code> </dd></dl>
-
-</div>
-</div>
-<a id="a8cbebd6d53e3561b333c0e17023ab3be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8cbebd6d53e3561b333c0e17023ab3be">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[7/9]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class LocalizableFunctionImp , class TraitsImp  = internal::LocalFVProductIntegrandTraits&lt;LocalizableFunctionImp&gt;&gt; </div>
-<div class="memtemplate">
-template&lt;class R , size_t r&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a01605.html">Dune::GDT::LocalFVProductIntegrand</a>&lt; LocalizableFunctionImp, TraitsImp &gt;::evaluate </td>
-          <td>(</td>
-          <td class="paramtype">const XT::Functions::LocalfunctionInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, 1, 1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>localFunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, r, 1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>testBase</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, r, 1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>ansatzBase</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Dune::FieldVector&lt; <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>localPoint</em>, </td>
+          <td class="paramname"><em>neighborNeighborRet</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">Dune::DynamicMatrix&lt; R &gt; &amp;&#160;</td>
-          <td class="paramname"><em>ret</em>&#160;</td>
+          <td class="paramname"><em>entityNeighborRet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Dune::DynamicMatrix&lt; R &gt; &amp;&#160;</td>
+          <td class="paramname"><em>neighborEntityRet</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -717,35 +349,58 @@ template&lt;class R , size_t r&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Computes a product evaluation for a scalar local function and scalar or vector valued basefunctionsets. </p>
-<dl class="section note"><dt>Note</dt><dd>for <code><a class="el" href="a01541.html" title="Interface for local evaluations that depend on a codim 0 entity. ">LocalVolumeIntegrandInterface</a>&lt; ..., 2 &gt;</code> </dd></dl>
+<p>extracts the local functions and calls the correct <a class="el" href="a01605.html#a36c4a0d2628d56a069f282acc989a058" title="extracts the local functions and calls the correct evaluate() method ">evaluate()</a> method </p>
 
 </div>
 </div>
-<a id="a01fa29a893d8e341da640136da61183c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01fa29a893d8e341da640136da61183c">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[8/9]</span></h2>
+<a id="ac6fb5c6796390618c94cf413948cd3b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6fb5c6796390618c94cf413948cd3b6">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalizableFunctionImp , class TraitsImp  = internal::LocalFVProductIntegrandTraits&lt;LocalizableFunctionImp&gt;&gt; </div>
+template&lt;class LocalizableFunctionImp &gt; </div>
 <div class="memtemplate">
-template&lt;class IntersectionType , class R , size_t r&gt; </div>
+template&lt;class IntersectionType , class R &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a01605.html">Dune::GDT::LocalFVProductIntegrand</a>&lt; LocalizableFunctionImp, TraitsImp &gt;::evaluate </td>
+          <td class="memname">void <a class="el" href="a01605.html">Dune::GDT::LocalSipdgIntegrands::Inner</a>&lt; LocalizableFunctionImp &gt;::evaluate </td>
           <td>(</td>
-          <td class="paramtype">const XT::Functions::LocalfunctionInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, r, 1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>localFunction</em>, </td>
+          <td class="paramtype">const XT::Functions::LocalfunctionInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, 2, R, 1, 1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>localFunctionEntity</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, r, 1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>testBase</em>, </td>
+          <td class="paramtype">const XT::Functions::LocalfunctionInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, 2, R, 1, 1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>localFunctionNeighbor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, 2, R, 1, 1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>testBaseEntity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, 2, R, 1, 1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ansatzBaseEntity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, 2, R, 1, 1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>testBaseNeighbor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, 2, R, 1, 1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ansatzBaseNeighbor</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -756,79 +411,32 @@ template&lt;class IntersectionType , class R , size_t r&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Dune::FieldVector&lt; <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a> - 1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>localPoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Dune::DynamicVector&lt; R &gt; &amp;&#160;</td>
-          <td class="paramname"><em>ret</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>for <code><a class="el" href="a01553.html" title="Interface for local evaluations that depend on an intersection. ">LocalFaceIntegrandInterface</a>&lt; ..., 1 &gt;</code> </dd></dl>
-
-</div>
-</div>
-<a id="a5c1484bd3343ba5f89a95ebcb29d28e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c1484bd3343ba5f89a95ebcb29d28e3">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[9/9]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class LocalizableFunctionImp , class TraitsImp  = internal::LocalFVProductIntegrandTraits&lt;LocalizableFunctionImp&gt;&gt; </div>
-<div class="memtemplate">
-template&lt;class IntersectionType , class R , size_t r&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a01605.html">Dune::GDT::LocalFVProductIntegrand</a>&lt; LocalizableFunctionImp, TraitsImp &gt;::evaluate </td>
-          <td>(</td>
-          <td class="paramtype">const XT::Functions::LocalfunctionInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, 1, 1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>localFunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, r, 1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>testBase</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, r, 1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>DXTC_DEBUG_ONLY</em>ansatzBase, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const IntersectionType &amp;&#160;</td>
-          <td class="paramname"><em>intersection</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Dune::FieldVector&lt; <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a> - 1 &gt; &amp;&#160;</td>
+          <td class="paramtype">const Dune::FieldVector&lt; <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, 1 &gt; &amp;&#160;</td>
           <td class="paramname"><em>localPoint</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">Dune::DynamicMatrix&lt; R &gt; &amp;&#160;</td>
-          <td class="paramname"><em>ret</em>&#160;</td>
+          <td class="paramname"><em>entityEntityRet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Dune::DynamicMatrix&lt; R &gt; &amp;&#160;</td>
+          <td class="paramname"><em>neighborNeighborRet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Dune::DynamicMatrix&lt; R &gt; &amp;&#160;</td>
+          <td class="paramname"><em>entityNeighborRet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Dune::DynamicMatrix&lt; R &gt; &amp;&#160;</td>
+          <td class="paramname"><em>neighborEntityRet</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -843,88 +451,52 @@ template&lt;class IntersectionType , class R , size_t r&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Computes a product evaluation for a scalar local function and scalar or vector valued basefunctionsets. </p>
-<dl class="section note"><dt>Note</dt><dd>for <code><a class="el" href="a01553.html" title="Interface for local evaluations that depend on an intersection. ">LocalFaceIntegrandInterface</a>&lt; ..., 2 &gt;</code> </dd></dl>
+<p>Computes the ipdg fluxes in a primal setting. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">IntersectionType</td><td>Type of the codim 1 Intersection </td></tr>
+    <tr><td class="paramname">R</td><td>RangeFieldType </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="aa5eca9bec30695c3877d5b4eef2ab8c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5eca9bec30695c3877d5b4eef2ab8c6">&#9670;&nbsp;</a></span>localFunctions()</h2>
+<a id="a3eceb3eb60944c483ef02443ea3153c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eceb3eb60944c483ef02443ea3153c1">&#9670;&nbsp;</a></span>localFunctions()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalizableFunctionImp, class TraitsImp = internal::LocalProductIntegrandTraits&lt;LocalizableFunctionImp&gt;&gt; </div>
+template&lt;class LocalizableFunctionImp &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a01601.html#aa6793dabb056564440acf6de33e6c3c2">LocalfunctionTupleType</a> <a class="el" href="a01601.html">Dune::GDT::LocalProductIntegrand</a>&lt; LocalizableFunctionImp, TraitsImp &gt;::localFunctions </td>
+          <td class="memname"><a class="el" href="a01605.html#aa55990bd8843e823d890aefd7b6894a1">LocalfunctionTupleType</a> <a class="el" href="a01605.html">Dune::GDT::LocalSipdgIntegrands::Inner</a>&lt; LocalizableFunctionImp &gt;::localFunctions </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a> &amp;&#160;</td>
           <td class="paramname"><em>entity</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a9c0aeb72335dc511a8ec44ed45418b32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c0aeb72335dc511a8ec44ed45418b32">&#9670;&nbsp;</a></span>order() <span class="overload">[1/4]</span></h2>
+<a id="ae37f9693c234aaf630f3e1ab0f022a2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae37f9693c234aaf630f3e1ab0f022a2d">&#9670;&nbsp;</a></span>order() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalizableFunctionImp, class TraitsImp = internal::LocalProductIntegrandTraits&lt;LocalizableFunctionImp&gt;&gt; </div>
-<div class="memtemplate">
-template&lt;class R , size_t rT, size_t rCT&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t <a class="el" href="a01601.html">Dune::GDT::LocalProductIntegrand</a>&lt; LocalizableFunctionImp, TraitsImp &gt;::order </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a01601.html#aa6793dabb056564440acf6de33e6c3c2">LocalfunctionTupleType</a> &amp;&#160;</td>
-          <td class="paramname"><em>localFuncs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, rT, rCT &gt; &amp;&#160;</td>
-          <td class="paramname"><em>testBase</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>extracts the local function and calls the correct <a class="el" href="a01601.html#a9c0aeb72335dc511a8ec44ed45418b32" title="extracts the local function and calls the correct order() method ">order()</a> method </p>
-
-</div>
-</div>
-<a id="a0e4a6ba629cd2640e9b47a7f222abc13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e4a6ba629cd2640e9b47a7f222abc13">&#9670;&nbsp;</a></span>order() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class LocalizableFunctionImp, class TraitsImp = internal::LocalProductIntegrandTraits&lt;LocalizableFunctionImp&gt;&gt; </div>
+template&lt;class LocalizableFunctionImp &gt; </div>
 <div class="memtemplate">
 template&lt;class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
 <table class="mlabels">
@@ -932,22 +504,40 @@ template&lt;class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t <a class="el" href="a01601.html">Dune::GDT::LocalProductIntegrand</a>&lt; LocalizableFunctionImp, TraitsImp &gt;::order </td>
+          <td class="memname">size_t <a class="el" href="a01605.html">Dune::GDT::LocalSipdgIntegrands::Inner</a>&lt; LocalizableFunctionImp &gt;::order </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a01601.html#aa6793dabb056564440acf6de33e6c3c2">LocalfunctionTupleType</a> &amp;&#160;</td>
-          <td class="paramname"><em>localFuncs</em>, </td>
+          <td class="paramtype">const <a class="el" href="a01605.html#aa55990bd8843e823d890aefd7b6894a1">LocalfunctionTupleType</a> &amp;&#160;</td>
+          <td class="paramname"><em>localFunctionsEntity</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, rT, rCT &gt; &amp;&#160;</td>
-          <td class="paramname"><em>testBase</em>, </td>
+          <td class="paramtype">const <a class="el" href="a01605.html#aa55990bd8843e823d890aefd7b6894a1">LocalfunctionTupleType</a> &amp;&#160;</td>
+          <td class="paramname"><em>localFunctionsNeighbor</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, rA, rCA &gt; &amp;&#160;</td>
-          <td class="paramname"><em>ansatzBase</em>&#160;</td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rT, rCT &gt; &amp;&#160;</td>
+          <td class="paramname"><em>testBaseEntity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rA, rCA &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ansatzBaseEntity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rT, rCT &gt; &amp;&#160;</td>
+          <td class="paramname"><em>testBaseNeighbor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rA, rCA &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ansatzBaseNeighbor</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -957,64 +547,22 @@ template&lt;class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>extracts the local function and calls the correct <a class="el" href="a01601.html#a9c0aeb72335dc511a8ec44ed45418b32" title="extracts the local function and calls the correct order() method ">order()</a> method </p>
+<p>extracts the local functions and calls the correct <a class="el" href="a01605.html#ae37f9693c234aaf630f3e1ab0f022a2d" title="extracts the local functions and calls the correct order() method ">order()</a> method </p>
 
 </div>
 </div>
-<a id="a81eaf9eba9401ccc3f9695aa7c2a6b9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81eaf9eba9401ccc3f9695aa7c2a6b9b">&#9670;&nbsp;</a></span>order() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class LocalizableFunctionImp, class TraitsImp = internal::LocalProductIntegrandTraits&lt;LocalizableFunctionImp&gt;&gt; </div>
-<div class="memtemplate">
-template&lt;class R , size_t rL, size_t rCL, size_t rT, size_t rCT&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t <a class="el" href="a01601.html">Dune::GDT::LocalProductIntegrand</a>&lt; LocalizableFunctionImp, TraitsImp &gt;::order </td>
-          <td>(</td>
-          <td class="paramtype">const XT::Functions::LocalfunctionInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, rL, rCL &gt; &amp;&#160;</td>
-          <td class="paramname"><em>localFunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, rT, rCT &gt; &amp;&#160;</td>
-          <td class="paramname"><em>testBase</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>for <code><a class="el" href="a01541.html" title="Interface for local evaluations that depend on a codim 0 entity. ">LocalVolumeIntegrandInterface</a>&lt; ..., 1 &gt;</code> </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>localFunction.order() + testBase.order() </dd></dl>
-
-</div>
-</div>
-<a id="a298f87c69b876a3ea4ae26fdbd91d956"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a298f87c69b876a3ea4ae26fdbd91d956">&#9670;&nbsp;</a></span>order() <span class="overload">[4/4]</span></h2>
+<a id="a4b823bc4a487b718257b5c3ffd66c0cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b823bc4a487b718257b5c3ffd66c0cb">&#9670;&nbsp;</a></span>order() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalizableFunctionImp, class TraitsImp = internal::LocalProductIntegrandTraits&lt;LocalizableFunctionImp&gt;&gt; </div>
+template&lt;class LocalizableFunctionImp &gt; </div>
 <div class="memtemplate">
 template&lt;class R , size_t rL, size_t rCL, size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
 <table class="mlabels">
@@ -1022,22 +570,40 @@ template&lt;class R , size_t rL, size_t rCL, size_t rT, size_t rCT, size_t rA, s
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t <a class="el" href="a01601.html">Dune::GDT::LocalProductIntegrand</a>&lt; LocalizableFunctionImp, TraitsImp &gt;::order </td>
+          <td class="memname">size_t <a class="el" href="a01605.html">Dune::GDT::LocalSipdgIntegrands::Inner</a>&lt; LocalizableFunctionImp &gt;::order </td>
           <td>(</td>
-          <td class="paramtype">const XT::Functions::LocalfunctionInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, rL, rCL &gt; &amp;&#160;</td>
-          <td class="paramname"><em>localFunction</em>, </td>
+          <td class="paramtype">const XT::Functions::LocalfunctionInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rL, rCL &gt; &amp;&#160;</td>
+          <td class="paramname"><em>localFunctionEntity</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, rT, rCT &gt; &amp;&#160;</td>
-          <td class="paramname"><em>testBase</em>, </td>
+          <td class="paramtype">const XT::Functions::LocalfunctionInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rL, rCL &gt; &amp;&#160;</td>
+          <td class="paramname"><em>localFunctionNeighbor</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01601.html#aba946a7f14038c55d29108e2054910f8">EntityType</a>, <a class="el" href="a01601.html#a36306b332adefea17d70a93882a6282a">DomainFieldType</a>, <a class="el" href="a01601.html#ab40cd9204eda16ac32ddf2dc73d19b21">dimDomain</a>, R, rA, rCA &gt; &amp;&#160;</td>
-          <td class="paramname"><em>ansatzBase</em>&#160;</td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rT, rCT &gt; &amp;&#160;</td>
+          <td class="paramname"><em>testBaseEntity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rA, rCA &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ansatzBaseEntity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rT, rCT &gt; &amp;&#160;</td>
+          <td class="paramname"><em>testBaseNeighbor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01605.html#ae6ce09611fa859c9271e29c2827d2bb9">EntityType</a>, <a class="el" href="a01605.html#addcc5826e6e1d6fff51e6258d1f88689">DomainFieldType</a>, <a class="el" href="a01605.html#a18675a2e90e4e93e7f06bad37535bb05">dimDomain</a>, R, rA, rCA &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ansatzBaseNeighbor</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1047,86 +613,32 @@ template&lt;class R , size_t rL, size_t rCL, size_t rT, size_t rCT, size_t rA, s
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>for<ul>
-<li><code><a class="el" href="a01541.html" title="Interface for local evaluations that depend on a codim 0 entity. ">LocalVolumeIntegrandInterface</a>&lt; ..., 2 &gt;</code></li>
-<li><code><a class="el" href="a01553.html" title="Interface for local evaluations that depend on an intersection. ">LocalFaceIntegrandInterface</a>&lt; ..., 2 &gt;</code> </li>
-</ul>
-</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>localFunction.order() + testBase.order() + ansatzBase.order() </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ab40cd9204eda16ac32ddf2dc73d19b21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab40cd9204eda16ac32ddf2dc73d19b21">&#9670;&nbsp;</a></span>dimDomain</h2>
+<a id="a18675a2e90e4e93e7f06bad37535bb05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18675a2e90e4e93e7f06bad37535bb05">&#9670;&nbsp;</a></span>dimDomain</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalizableFunctionImp, class TraitsImp = internal::LocalProductIntegrandTraits&lt;LocalizableFunctionImp&gt;&gt; </div>
+template&lt;class LocalizableFunctionImp &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t <a class="el" href="a01601.html">Dune::GDT::LocalProductIntegrand</a>&lt; LocalizableFunctionImp, TraitsImp &gt;::dimDomain = Traits::dimDomain</td>
+          <td class="memname">const size_t <a class="el" href="a01605.html">Dune::GDT::LocalSipdgIntegrands::Inner</a>&lt; LocalizableFunctionImp &gt;::dimDomain = Traits::dimDomain</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad40600798cd92ec1091a840a0b742727"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad40600798cd92ec1091a840a0b742727">&#9670;&nbsp;</a></span>inducingFunction_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class LocalizableFunctionImp, class TraitsImp = internal::LocalProductIntegrandTraits&lt;LocalizableFunctionImp&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="a01601.html#a72e92f905f4477454e620172110b35de">LocalizableFunctionType</a>&amp; <a class="el" href="a01601.html">Dune::GDT::LocalProductIntegrand</a>&lt; LocalizableFunctionImp, TraitsImp &gt;::inducingFunction_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad34223ba586c6c9882ab10bb9f8789c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad34223ba586c6c9882ab10bb9f8789c9">&#9670;&nbsp;</a></span>param_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class LocalizableFunctionImp, class TraitsImp = internal::LocalProductIntegrandTraits&lt;LocalizableFunctionImp&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const XT::Common::Parameter <a class="el" href="a01601.html">Dune::GDT::LocalProductIntegrand</a>&lt; LocalizableFunctionImp, TraitsImp &gt;::param_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1134,7 +646,7 @@ template&lt;class LocalizableFunctionImp, class TraitsImp = internal::LocalProdu
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a04724_source.html">local/integrands/product.hh</a></li>
+<li><a class="el" href="a00095_source.html">sipdg.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

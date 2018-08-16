@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::TimeStepperFactory&lt; OperatorImp, DiscreteFunctionImp, method &gt; Struct Template Reference</title>
+<title>dune-gdt: Dune::GDT::internal::ButcherArrayProvider&lt; RangeFieldType, TimeStepperMethods::explicit_rungekutta_second_order_ssp &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,112 +59,100 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a03013.html">TimeStepperFactory</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a00247.html">internal</a></li><li class="navelem"><a class="el" href="a03013.html">ButcherArrayProvider&lt; RangeFieldType, TimeStepperMethods::explicit_rungekutta_second_order_ssp &gt;</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a03010.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::TimeStepperFactory&lt; OperatorImp, DiscreteFunctionImp, method &gt; Struct Template Reference</div>  </div>
+<div class="title">Dune::GDT::internal::ButcherArrayProvider&lt; RangeFieldType, TimeStepperMethods::explicit_rungekutta_second_order_ssp &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00224_source.html">dune/gdt/timestepper/factory.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00221_source.html">dune/gdt/timestepper/explicit-rungekutta.hh</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a246a8a4ebc075296f79da8b448ac7e7c"><td class="memItemLeft" align="right" valign="top">typedef DiscreteFunctionImp::RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03013.html#a246a8a4ebc075296f79da8b448ac7e7c">RangeFieldType</a></td></tr>
-<tr class="separator:a246a8a4ebc075296f79da8b448ac7e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23838486d68b2ce594ac4d119420420c"><td class="memItemLeft" align="right" valign="top">typedef std::conditional&lt; method==<a class="el" href="a00246.html#a0a7e45c07c804e026c31fb0b86b7eb69a6715245f54e8e2e94ddb3a731ccbdf10">TimeStepperMethods::bogacki_shampine</a>||method==<a class="el" href="a00246.html#a0a7e45c07c804e026c31fb0b86b7eb69a696a706c4054d122f1275e54d1bc69c0">TimeStepperMethods::dormand_prince</a>||method==<a class="el" href="a00246.html#a0a7e45c07c804e026c31fb0b86b7eb69ac97e4d5c331a2936e04feb034fc4f787">TimeStepperMethods::adaptive_rungekutta_other</a>, typename <a class="el" href="a02981.html">Dune::GDT::AdaptiveRungeKuttaTimeStepper</a>&lt; OperatorImp, DiscreteFunctionImp, method &gt;, typename std::conditional&lt; method==<a class="el" href="a00246.html#a0a7e45c07c804e026c31fb0b86b7eb69ae9e3a7543796e9e0256a12f6dd5d4ecd">TimeStepperMethods::implicit_euler</a>||method==<a class="el" href="a00246.html#a0a7e45c07c804e026c31fb0b86b7eb69ab84a8ef36b79ee75983435cd9b3de48c">TimeStepperMethods::implicit_midpoint</a>||method==<a class="el" href="a00246.html#a0a7e45c07c804e026c31fb0b86b7eb69a73c714ae3da44202127a7306c3efdebe">TimeStepperMethods::trapezoidal_rule</a>, typename <a class="el" href="a03041.html">Dune::GDT::DiagonallyImplicitRungeKuttaTimeStepper</a>&lt; OperatorImp, DiscreteFunctionImp, method &gt;, typename std::conditional&lt; method==<a class="el" href="a00246.html#a0a7e45c07c804e026c31fb0b86b7eb69ae027c8edf587abe07bb3a0a3bfa154b6">TimeStepperMethods::matrix_exponential</a>, typename <a class="el" href="a03057.html">Dune::GDT::MatrixExponentialTimeStepper</a>&lt; OperatorImp, DiscreteFunctionImp &gt;, typename <a class="el" href="a03009.html">Dune::GDT::ExplicitRungeKuttaTimeStepper</a>&lt; OperatorImp, DiscreteFunctionImp, method &gt; &gt;::type &gt;::type &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03013.html#a23838486d68b2ce594ac4d119420420c">TimeStepperType</a></td></tr>
-<tr class="separator:a23838486d68b2ce594ac4d119420420c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a2bc3e3676bc390f56f706b937b43533b"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="a03013.html#a23838486d68b2ce594ac4d119420420c">TimeStepperType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03013.html#a2bc3e3676bc390f56f706b937b43533b">create</a> (const OperatorImp &amp;op, const DiscreteFunctionImp &amp;initial_values, const <a class="el" href="a03013.html#a246a8a4ebc075296f79da8b448ac7e7c">RangeFieldType</a> r=1.0, const <a class="el" href="a03013.html#a246a8a4ebc075296f79da8b448ac7e7c">RangeFieldType</a> t_0=0.0, const <a class="el" href="a03013.html#a246a8a4ebc075296f79da8b448ac7e7c">RangeFieldType</a> tol=1e-4)</td></tr>
-<tr class="separator:a2bc3e3676bc390f56f706b937b43533b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a844c85fb95e1ed89d16d4fd1eb1c1297"><td class="memItemLeft" align="right" valign="top">static Dune::DynamicMatrix&lt; RangeFieldType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03013.html#a844c85fb95e1ed89d16d4fd1eb1c1297">A</a> ()</td></tr>
+<tr class="separator:a844c85fb95e1ed89d16d4fd1eb1c1297"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc5fc2c5737bf9cc0cce44380992030a"><td class="memItemLeft" align="right" valign="top">static Dune::DynamicVector&lt; RangeFieldType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03013.html#acc5fc2c5737bf9cc0cce44380992030a">b</a> ()</td></tr>
+<tr class="separator:acc5fc2c5737bf9cc0cce44380992030a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5017df12e57e98d99bd190093ad8af2"><td class="memItemLeft" align="right" valign="top">static Dune::DynamicVector&lt; RangeFieldType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03013.html#ab5017df12e57e98d99bd190093ad8af2">c</a> ()</td></tr>
+<tr class="separator:ab5017df12e57e98d99bd190093ad8af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a246a8a4ebc075296f79da8b448ac7e7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a246a8a4ebc075296f79da8b448ac7e7c">&#9670;&nbsp;</a></span>RangeFieldType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class OperatorImp, class DiscreteFunctionImp, TimeStepperMethods method&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef DiscreteFunctionImp::RangeFieldType <a class="el" href="a03013.html">Dune::GDT::TimeStepperFactory</a>&lt; OperatorImp, DiscreteFunctionImp, method &gt;::<a class="el" href="a03013.html#a246a8a4ebc075296f79da8b448ac7e7c">RangeFieldType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a23838486d68b2ce594ac4d119420420c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23838486d68b2ce594ac4d119420420c">&#9670;&nbsp;</a></span>TimeStepperType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class OperatorImp, class DiscreteFunctionImp, TimeStepperMethods method&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std:: conditional&lt;method == <a class="el" href="a00246.html#a0a7e45c07c804e026c31fb0b86b7eb69a6715245f54e8e2e94ddb3a731ccbdf10">TimeStepperMethods::bogacki_shampine</a> || method == <a class="el" href="a00246.html#a0a7e45c07c804e026c31fb0b86b7eb69a696a706c4054d122f1275e54d1bc69c0">TimeStepperMethods::dormand_prince</a> || method == <a class="el" href="a00246.html#a0a7e45c07c804e026c31fb0b86b7eb69ac97e4d5c331a2936e04feb034fc4f787">TimeStepperMethods::adaptive_rungekutta_other</a>, typename <a class="el" href="a02981.html">Dune::GDT::AdaptiveRungeKuttaTimeStepper</a>&lt;OperatorImp, DiscreteFunctionImp, method&gt;, typename std:: conditional&lt;method == <a class="el" href="a00246.html#a0a7e45c07c804e026c31fb0b86b7eb69ae9e3a7543796e9e0256a12f6dd5d4ecd">TimeStepperMethods::implicit_euler</a> || method == <a class="el" href="a00246.html#a0a7e45c07c804e026c31fb0b86b7eb69ab84a8ef36b79ee75983435cd9b3de48c">TimeStepperMethods::implicit_midpoint</a> || method == <a class="el" href="a00246.html#a0a7e45c07c804e026c31fb0b86b7eb69a73c714ae3da44202127a7306c3efdebe">TimeStepperMethods::trapezoidal_rule</a>, typename Dune::GDT:: <a class="el" href="a03041.html">DiagonallyImplicitRungeKuttaTimeStepper</a>&lt;OperatorImp, DiscreteFunctionImp, method&gt;, typename std:: conditional&lt;method == <a class="el" href="a00246.html#a0a7e45c07c804e026c31fb0b86b7eb69ae027c8edf587abe07bb3a0a3bfa154b6">TimeStepperMethods::matrix_exponential</a>, typename <a class="el" href="a03057.html">Dune::GDT::MatrixExponentialTimeStepper</a>&lt;OperatorImp, DiscreteFunctionImp&gt;, typename <a class="el" href="a03009.html">Dune::GDT::ExplicitRungeKuttaTimeStepper</a>&lt;OperatorImp, DiscreteFunctionImp, method&gt; &gt;::type&gt;:: type&gt;::type <a class="el" href="a03013.html">Dune::GDT::TimeStepperFactory</a>&lt; OperatorImp, DiscreteFunctionImp, method &gt;::<a class="el" href="a03013.html#a23838486d68b2ce594ac4d119420420c">TimeStepperType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2bc3e3676bc390f56f706b937b43533b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bc3e3676bc390f56f706b937b43533b">&#9670;&nbsp;</a></span>create()</h2>
+<a id="a844c85fb95e1ed89d16d4fd1eb1c1297"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a844c85fb95e1ed89d16d4fd1eb1c1297">&#9670;&nbsp;</a></span>A()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class OperatorImp, class DiscreteFunctionImp, TimeStepperMethods method&gt; </div>
+template&lt;class RangeFieldType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static std::unique_ptr&lt;<a class="el" href="a03013.html#a23838486d68b2ce594ac4d119420420c">TimeStepperType</a>&gt; <a class="el" href="a03013.html">Dune::GDT::TimeStepperFactory</a>&lt; OperatorImp, DiscreteFunctionImp, method &gt;::create </td>
+          <td class="memname">static Dune::DynamicMatrix&lt;RangeFieldType&gt; <a class="el" href="a03001.html">Dune::GDT::internal::ButcherArrayProvider</a>&lt; RangeFieldType, <a class="el" href="a00246.html#a0a7e45c07c804e026c31fb0b86b7eb69a4bc67bde753aa72be3f0cab932ff12a8">TimeStepperMethods::explicit_rungekutta_second_order_ssp</a> &gt;::A </td>
           <td>(</td>
-          <td class="paramtype">const OperatorImp &amp;&#160;</td>
-          <td class="paramname"><em>op</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">const DiscreteFunctionImp &amp;&#160;</td>
-          <td class="paramname"><em>initial_values</em>, </td>
         </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc5fc2c5737bf9cc0cce44380992030a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc5fc2c5737bf9cc0cce44380992030a">&#9670;&nbsp;</a></span>b()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class RangeFieldType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname">static Dune::DynamicVector&lt;RangeFieldType&gt; <a class="el" href="a03001.html">Dune::GDT::internal::ButcherArrayProvider</a>&lt; RangeFieldType, <a class="el" href="a00246.html#a0a7e45c07c804e026c31fb0b86b7eb69a4bc67bde753aa72be3f0cab932ff12a8">TimeStepperMethods::explicit_rungekutta_second_order_ssp</a> &gt;::b </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a03013.html#a246a8a4ebc075296f79da8b448ac7e7c">RangeFieldType</a>&#160;</td>
-          <td class="paramname"><em>r</em> = <code>1.0</code>, </td>
         </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab5017df12e57e98d99bd190093ad8af2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5017df12e57e98d99bd190093ad8af2">&#9670;&nbsp;</a></span>c()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class RangeFieldType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname">static Dune::DynamicVector&lt;RangeFieldType&gt; <a class="el" href="a03001.html">Dune::GDT::internal::ButcherArrayProvider</a>&lt; RangeFieldType, <a class="el" href="a00246.html#a0a7e45c07c804e026c31fb0b86b7eb69a4bc67bde753aa72be3f0cab932ff12a8">TimeStepperMethods::explicit_rungekutta_second_order_ssp</a> &gt;::c </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a03013.html#a246a8a4ebc075296f79da8b448ac7e7c">RangeFieldType</a>&#160;</td>
-          <td class="paramname"><em>t_0</em> = <code>0.0</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="a03013.html#a246a8a4ebc075296f79da8b448ac7e7c">RangeFieldType</a>&#160;</td>
-          <td class="paramname"><em>tol</em> = <code>1e-4</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -177,7 +165,7 @@ template&lt;class OperatorImp, class DiscreteFunctionImp, TimeStepperMethods met
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="a00224_source.html">factory.hh</a></li>
+<li><a class="el" href="a00221_source.html">explicit-rungekutta.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

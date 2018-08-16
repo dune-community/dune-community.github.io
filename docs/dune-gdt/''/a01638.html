@@ -59,22 +59,24 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a01641.html">LocalDirichletProjectionOperator</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a01641.html">LocalBoundaryFvOperator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Dune::GDT::LocalDirichletProjectionOperator&lt; BoundaryInfoType &gt; Member List</div>  </div>
+<div class="title">Dune::GDT::LocalBoundaryFvOperator&lt; NumericalFluxType &gt; Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a01641.html">Dune::GDT::LocalDirichletProjectionOperator&lt; BoundaryInfoType &gt;</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="a01641.html">Dune::GDT::LocalBoundaryFvOperator&lt; NumericalFluxType &gt;</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a01641.html#aee6942d14a3371bf977ede3cb74ad1b3">apply</a>(const XT::Functions::LocalizableFunctionInterface&lt; E, D, d, R, r, rC &gt; &amp;source, LocalDiscreteFunction&lt; RS, V &gt; &amp;local_range) const</td><td class="entry"><a class="el" href="a01641.html">Dune::GDT::LocalDirichletProjectionOperator&lt; BoundaryInfoType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a01689.html#af01cd257b1e187d61c42f6709d23a344">LocalOperatorInterface&lt; internal::LocalDirichletProjectionOperatorTraits&lt; BoundaryInfoType &gt; &gt;::apply</a>(const SourceType &amp;source, LocalDiscreteFunction&lt; RangeSpaceType, VectorType &gt; &amp;local_range) const</td><td class="entry"><a class="el" href="a01689.html">Dune::GDT::LocalOperatorInterface&lt; internal::LocalDirichletProjectionOperatorTraits&lt; BoundaryInfoType &gt; &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a01689.html#a85d71db8a2dfac84ac08489ca7167a67">derived_type</a> typedef</td><td class="entry"><a class="el" href="a01689.html">Dune::GDT::LocalOperatorInterface&lt; internal::LocalDirichletProjectionOperatorTraits&lt; BoundaryInfoType &gt; &gt;</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a01641.html#af8071458bcd34c557dbdb255e11742b6">LocalDirichletProjectionOperator</a>(const BoundaryInfoType &amp;boundary_info)</td><td class="entry"><a class="el" href="a01641.html">Dune::GDT::LocalDirichletProjectionOperator&lt; BoundaryInfoType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a01641.html#a6592220a905c88a04c9a43fea7a1bc5c">Traits</a> typedef</td><td class="entry"><a class="el" href="a01641.html">Dune::GDT::LocalDirichletProjectionOperator&lt; BoundaryInfoType &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a01641.html#a4abc8ef00892e5d79a97d28e89a09c11">apply</a>(const SourceType &amp;source, const IntersectionType &amp;intersection, LocalDiscreteFunction&lt; SpaceType, VectorType &gt; &amp;local_range_entity) const</td><td class="entry"><a class="el" href="a01641.html">Dune::GDT::LocalBoundaryFvOperator&lt; NumericalFluxType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a01641.html#a7a56b69b72d60b28e2fa7b043a2788eb">dimDomain</a></td><td class="entry"><a class="el" href="a01641.html">Dune::GDT::LocalBoundaryFvOperator&lt; NumericalFluxType &gt;</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a01641.html#ae40f0122500ee74a4cf99c3d2f89607e">dimRange</a></td><td class="entry"><a class="el" href="a01641.html">Dune::GDT::LocalBoundaryFvOperator&lt; NumericalFluxType &gt;</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a01641.html#aa65e972af7fefdbfdd8e573ac8115fc8">LocalBoundaryFvOperator</a>(const QuadratureType &amp;quadrature, Args &amp;&amp;... args)</td><td class="entry"><a class="el" href="a01641.html">Dune::GDT::LocalBoundaryFvOperator&lt; NumericalFluxType &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a01641.html#a94958e1af9eba34d526db9d124bb0e8d">QuadratureType</a> typedef</td><td class="entry"><a class="el" href="a01641.html">Dune::GDT::LocalBoundaryFvOperator&lt; NumericalFluxType &gt;</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a01641.html#a8ca55904170c5ece14a30ed6c66c8660">RangeFieldType</a> typedef</td><td class="entry"><a class="el" href="a01641.html">Dune::GDT::LocalBoundaryFvOperator&lt; NumericalFluxType &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a01641.html#a0c67181c293c8bca64bedcc24c3452f2">ResultType</a> typedef</td><td class="entry"><a class="el" href="a01641.html">Dune::GDT::LocalBoundaryFvOperator&lt; NumericalFluxType &gt;</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

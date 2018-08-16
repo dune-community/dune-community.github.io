@@ -59,18 +59,21 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a02033.html">IndicesBuilder&lt; RangeArrayType, 0, dimension &gt;</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a02033.html">LocalLinearReconstructionOperator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Dune::GDT::IndicesBuilder&lt; RangeArrayType, 0, dimension &gt; Member List</div>  </div>
+<div class="title">Dune::GDT::LocalLinearReconstructionOperator&lt; AnalyticalFluxType, BoundaryValueType, GridLayerType, JacobianWrapperType &gt; Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a02033.html">Dune::GDT::IndicesBuilder&lt; RangeArrayType, 0, dimension &gt;</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="a02033.html">Dune::GDT::LocalLinearReconstructionOperator&lt; AnalyticalFluxType, BoundaryValueType, GridLayerType, JacobianWrapperType &gt;</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a02033.html#af4e4e3ee5531162f263774e8e5eb6544">build</a>(const RangeArrayType &amp;)</td><td class="entry"><a class="el" href="a02033.html">Dune::GDT::IndicesBuilder&lt; RangeArrayType, 0, dimension &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a02033.html#a8416a1565a8ea3786960a8f722f7dcfb">apply_local</a>(const EntityType &amp;entity) override final</td><td class="entry"><a class="el" href="a02033.html">Dune::GDT::LocalLinearReconstructionOperator&lt; AnalyticalFluxType, BoundaryValueType, GridLayerType, JacobianWrapperType &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a02033.html#ac8ef772804dc4433ad4912fbe5678a9e">linear_reconstruction</a>(const size_t dir, const Quadrature1dType &amp;quadrature, const MultiArrayType &amp;stencil, MultiArrayType &amp;reconstructed_values, const MatrixType &amp;)</td><td class="entry"><a class="el" href="a02033.html">Dune::GDT::LocalLinearReconstructionOperator&lt; AnalyticalFluxType, BoundaryValueType, GridLayerType, JacobianWrapperType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a02033.html#aed163a4a23517fbae69bfcfd8a4c77b6">linear_reconstruction_1d</a>(const FieldVector&lt; RangeType, axis_size &gt; &amp;stencil, const FieldVector&lt; RangeType, axis_size &gt; &amp;stencil_char, FieldVector&lt; RangeType, 2 &gt; &amp;reconstructed_values, const MatrixType &amp;eigenvectors)</td><td class="entry"><a class="el" href="a02033.html">Dune::GDT::LocalLinearReconstructionOperator&lt; AnalyticalFluxType, BoundaryValueType, GridLayerType, JacobianWrapperType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a02033.html#ad2c37cfe69142f272779bbb08333b66b">LocalLinearReconstructionOperator</a>(const std::vector&lt; RangeType &gt; &amp;source_values, const AnalyticalFluxType &amp;analytical_flux, const BoundaryValueType &amp;boundary_values, const SlopeType &amp;slope, const GridLayerType &amp;grid_layer, const XT::Common::Parameter &amp;param, const Quadrature1dType &amp;quadrature, ReconstructedFunctionType &amp;reconstructed_function, XT::Common::PerThreadValue&lt; JacobianWrapperType &gt; &amp;jacobian_wrapper)</td><td class="entry"><a class="el" href="a02033.html">Dune::GDT::LocalLinearReconstructionOperator&lt; AnalyticalFluxType, BoundaryValueType, GridLayerType, JacobianWrapperType &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

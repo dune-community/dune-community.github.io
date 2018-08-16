@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::SpaceDataHandle&lt; SpaceType, VectorType, GatherScatter, CommunicationDescriptor &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::DirichletConstraints&lt; IntersectionType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a02513.html">SpaceDataHandle</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a02513.html">DirichletConstraints</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -68,74 +68,101 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a02510.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::SpaceDataHandle&lt; SpaceType, VectorType, GatherScatter, CommunicationDescriptor &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::DirichletConstraints&lt; IntersectionType &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00194_source.html">dune/gdt/spaces/datahandles.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00191_source.html">dune/gdt/spaces/constraints.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::SpaceDataHandle&lt; SpaceType, VectorType, GatherScatter, CommunicationDescriptor &gt;:</div>
+Inheritance diagram for Dune::GDT::DirichletConstraints&lt; IntersectionType &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02512.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_space_data_handle_3_01_space_type_00_01_vector_type_00_01_gather_scatter_00_01_communication_descriptor_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1_space_data_handle_3_01_space_type_00_01_vector_type_00_01_gather_scatter_00_01_communication_descriptor_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_space_data_handle_3_01_space_type_00_01_vector_type_00_01_gather_scatter_00_01_communication_descriptor_01_4_inherit__map">
+<div class="center"><img src="a02512.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_dirichlet_constraints_3_01_intersection_type_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_dirichlet_constraints_3_01_intersection_type_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_dirichlet_constraints_3_01_intersection_type_01_4_inherit__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a8f4f344d1b259384e8fa9f2e19cdbf2a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02513.html#a8f4f344d1b259384e8fa9f2e19cdbf2a">DataType</a> = typename CommunicationDescriptor::DataType</td></tr>
-<tr class="separator:a8f4f344d1b259384e8fa9f2e19cdbf2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27ba55e31c31e39c600afa5c9b3d6dc5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02513.html#a27ba55e31c31e39c600afa5c9b3d6dc5">Codim0EntityType</a> = XT::Grid::extract_entity_t&lt; typename SpaceType::GridLayerType &gt;</td></tr>
-<tr class="separator:a27ba55e31c31e39c600afa5c9b3d6dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b27d8af73a7a2a09695da001f8a0fb6"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02517.html">internal::DirichletConstraintsTraits</a>&lt; IntersectionType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02513.html#a9b27d8af73a7a2a09695da001f8a0fb6">Traits</a></td></tr>
+<tr class="separator:a9b27d8af73a7a2a09695da001f8a0fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b543eb31cee2e95942e618536eaad45"><td class="memItemLeft" align="right" valign="top">typedef XT::Grid::BoundaryInfo&lt; IntersectionType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02513.html#a7b543eb31cee2e95942e618536eaad45">BoundaryInfoType</a></td></tr>
+<tr class="separator:a7b543eb31cee2e95942e618536eaad45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a924002c203bb6112868dfe87e1ac2a1b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02517.html">internal::DirichletConstraintsTraits</a>&lt; IntersectionType &gt; ::<a class="el" href="a02509.html#a924002c203bb6112868dfe87e1ac2a1b">derived_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02509.html#a924002c203bb6112868dfe87e1ac2a1b">derived_type</a></td></tr>
+<tr class="separator:a924002c203bb6112868dfe87e1ac2a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5e53271e472f5bbd1b1604003377b8e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02513.html#a5e53271e472f5bbd1b1604003377b8e2">SpaceDataHandle</a> (const <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &amp;space, VectorType &amp;v, CommunicationDescriptor communication_descriptor, GatherScatter gather_scatter=GatherScatter())</td></tr>
-<tr class="separator:a5e53271e472f5bbd1b1604003377b8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93b89c477beb37d74f337ca7d0606371"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02513.html#a93b89c477beb37d74f337ca7d0606371">contains</a> (int dim, int codim) const</td></tr>
-<tr class="memdesc:a93b89c477beb37d74f337ca7d0606371"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if data for this codim should be communicated  <a href="#a93b89c477beb37d74f337ca7d0606371">More...</a><br /></td></tr>
-<tr class="separator:a93b89c477beb37d74f337ca7d0606371"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28df2fea958ebb36de66432d0038c03c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02513.html#a28df2fea958ebb36de66432d0038c03c">fixedsize</a> (int dim, int codim) const</td></tr>
-<tr class="memdesc:a28df2fea958ebb36de66432d0038c03c"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if size per entity of given dim and codim is a constant  <a href="#a28df2fea958ebb36de66432d0038c03c">More...</a><br /></td></tr>
-<tr class="separator:a28df2fea958ebb36de66432d0038c03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e84c382b4a2a4566dc6de0042f60379"><td class="memTemplParams" colspan="2">template&lt;class EntityType &gt; </td></tr>
-<tr class="memitem:a9e84c382b4a2a4566dc6de0042f60379"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02513.html#a9e84c382b4a2a4566dc6de0042f60379">size</a> (const EntityType &amp;entity) const</td></tr>
-<tr class="memdesc:a9e84c382b4a2a4566dc6de0042f60379"><td class="mdescLeft">&#160;</td><td class="mdescRight">how many objects of type DataType have to be sent for a given entity  <a href="#a9e84c382b4a2a4566dc6de0042f60379">More...</a><br /></td></tr>
-<tr class="separator:a9e84c382b4a2a4566dc6de0042f60379"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae79944c086faae482183e16ba2ecfce6"><td class="memTemplParams" colspan="2">template&lt;typename MessageBuffer , class EntityType &gt; </td></tr>
-<tr class="memitem:ae79944c086faae482183e16ba2ecfce6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02513.html#ae79944c086faae482183e16ba2ecfce6">gather</a> (MessageBuffer &amp;buffer, const EntityType &amp;entity) const</td></tr>
-<tr class="separator:ae79944c086faae482183e16ba2ecfce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16bac2da57062468553a5dc9bd615c28"><td class="memTemplParams" colspan="2">template&lt;typename MessageBuffer , class EntityType &gt; </td></tr>
-<tr class="memitem:a16bac2da57062468553a5dc9bd615c28"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02513.html#a16bac2da57062468553a5dc9bd615c28">scatter</a> (MessageBuffer &amp;buff, const EntityType &amp;e, size_t n)</td></tr>
-<tr class="separator:a16bac2da57062468553a5dc9bd615c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a014c80e25c1f23ba85c1150ea03942e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02513.html#a014c80e25c1f23ba85c1150ea03942e6">DirichletConstraints</a> (const <a class="el" href="a02513.html#a7b543eb31cee2e95942e618536eaad45">BoundaryInfoType</a> &amp;bnd_info, const size_t sz, const bool set=true)</td></tr>
+<tr class="separator:a014c80e25c1f23ba85c1150ea03942e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b0d82506c2c51802b01116f920b6239"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02513.html#a9b0d82506c2c51802b01116f920b6239">DirichletConstraints</a> (const <a class="el" href="a02513.html">ThisType</a> &amp;<a class="el" href="a00246.html#a5a9b3478d77a16697bf06fa3f949e0faa795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>)</td></tr>
+<tr class="separator:a9b0d82506c2c51802b01116f920b6239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe3352b89bdf9778325e5a53f2b6a169"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a02513.html#a7b543eb31cee2e95942e618536eaad45">BoundaryInfoType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02513.html#abe3352b89bdf9778325e5a53f2b6a169">boundary_info</a> () const</td></tr>
+<tr class="separator:abe3352b89bdf9778325e5a53f2b6a169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81ea754a589453faeff2351e322c189a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02513.html#a81ea754a589453faeff2351e322c189a">size</a> () const</td></tr>
+<tr class="separator:a81ea754a589453faeff2351e322c189a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e8e9c27e60d94c0f50020ab299b3ae5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02513.html#a1e8e9c27e60d94c0f50020ab299b3ae5">insert</a> (const size_t DoF)</td></tr>
+<tr class="separator:a1e8e9c27e60d94c0f50020ab299b3ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88f4e9a87e10786a9b07021d0bd49b8d"><td class="memItemLeft" align="right" valign="top">const std::set&lt; size_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02513.html#a88f4e9a87e10786a9b07021d0bd49b8d">dirichlet_DoFs</a> () const</td></tr>
+<tr class="separator:a88f4e9a87e10786a9b07021d0bd49b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3828c486713c4afabf51e7b57f0ae71"><td class="memTemplParams" colspan="2">template&lt;class M &gt; </td></tr>
+<tr class="memitem:ae3828c486713c4afabf51e7b57f0ae71"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02513.html#ae3828c486713c4afabf51e7b57f0ae71">apply</a> (XT::LA::MatrixInterface&lt; M &gt; &amp;matrix) const</td></tr>
+<tr class="separator:ae3828c486713c4afabf51e7b57f0ae71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8a50daa3af182a7f4a2ecc8371a43f2"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
+<tr class="memitem:ac8a50daa3af182a7f4a2ecc8371a43f2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02513.html#ac8a50daa3af182a7f4a2ecc8371a43f2">apply</a> (XT::LA::VectorInterface&lt; V &gt; &amp;vector) const</td></tr>
+<tr class="separator:ac8a50daa3af182a7f4a2ecc8371a43f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1167fb03b9e08597bd729cea743fbad8"><td class="memTemplParams" colspan="2">template&lt;class M , class V &gt; </td></tr>
+<tr class="memitem:a1167fb03b9e08597bd729cea743fbad8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02513.html#a1167fb03b9e08597bd729cea743fbad8">apply</a> (XT::LA::MatrixInterface&lt; M &gt; &amp;matrix, XT::LA::VectorInterface&lt; V &gt; &amp;vector) const</td></tr>
+<tr class="separator:a1167fb03b9e08597bd729cea743fbad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a27ba55e31c31e39c600afa5c9b3d6dc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27ba55e31c31e39c600afa5c9b3d6dc5">&#9670;&nbsp;</a></span>Codim0EntityType</h2>
+<a id="a7b543eb31cee2e95942e618536eaad45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b543eb31cee2e95942e618536eaad45">&#9670;&nbsp;</a></span>BoundaryInfoType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename SpaceType, typename VectorType, typename GatherScatter, typename CommunicationDescriptor = DofDataCommunicationDescriptor&lt;typename VectorType::ScalarType&gt;&gt; </div>
+template&lt;class IntersectionType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a02513.html">Dune::GDT::SpaceDataHandle</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType, GatherScatter, CommunicationDescriptor &gt;::<a class="el" href="a02513.html#a27ba55e31c31e39c600afa5c9b3d6dc5">Codim0EntityType</a> =  XT::Grid::extract_entity_t&lt;typename SpaceType::GridLayerType&gt;</td>
+          <td class="memname">typedef XT::Grid::BoundaryInfo&lt;IntersectionType&gt; <a class="el" href="a02513.html">Dune::GDT::DirichletConstraints</a>&lt; IntersectionType &gt;::<a class="el" href="a02513.html#a7b543eb31cee2e95942e618536eaad45">BoundaryInfoType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a8f4f344d1b259384e8fa9f2e19cdbf2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f4f344d1b259384e8fa9f2e19cdbf2a">&#9670;&nbsp;</a></span>DataType</h2>
+<a id="a924002c203bb6112868dfe87e1ac2a1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a924002c203bb6112868dfe87e1ac2a1b">&#9670;&nbsp;</a></span>derived_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a02517.html">internal::DirichletConstraintsTraits</a>&lt; IntersectionType &gt; ::<a class="el" href="a02509.html#a924002c203bb6112868dfe87e1ac2a1b">derived_type</a> <a class="el" href="a02509.html">Dune::GDT::ConstraintsInterface</a>&lt; <a class="el" href="a02517.html">internal::DirichletConstraintsTraits</a>&lt; IntersectionType &gt;  &gt;::<a class="el" href="a02509.html#a924002c203bb6112868dfe87e1ac2a1b">derived_type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b27d8af73a7a2a09695da001f8a0fb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b27d8af73a7a2a09695da001f8a0fb6">&#9670;&nbsp;</a></span>Traits</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename SpaceType, typename VectorType, typename GatherScatter, typename CommunicationDescriptor = DofDataCommunicationDescriptor&lt;typename VectorType::ScalarType&gt;&gt; </div>
+template&lt;class IntersectionType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a02513.html">Dune::GDT::SpaceDataHandle</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType, GatherScatter, CommunicationDescriptor &gt;::<a class="el" href="a02513.html#a8f4f344d1b259384e8fa9f2e19cdbf2a">DataType</a> =  typename CommunicationDescriptor::DataType</td>
+          <td class="memname">typedef <a class="el" href="a02517.html">internal::DirichletConstraintsTraits</a>&lt;IntersectionType&gt; <a class="el" href="a02513.html">Dune::GDT::DirichletConstraints</a>&lt; IntersectionType &gt;::<a class="el" href="a02513.html#a9b27d8af73a7a2a09695da001f8a0fb6">Traits</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -143,45 +170,67 @@ template&lt;typename SpaceType, typename VectorType, typename GatherScatter, typ
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a5e53271e472f5bbd1b1604003377b8e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e53271e472f5bbd1b1604003377b8e2">&#9670;&nbsp;</a></span>SpaceDataHandle()</h2>
+<a id="a014c80e25c1f23ba85c1150ea03942e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a014c80e25c1f23ba85c1150ea03942e6">&#9670;&nbsp;</a></span>DirichletConstraints() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename SpaceType, typename VectorType, typename GatherScatter, typename CommunicationDescriptor = DofDataCommunicationDescriptor&lt;typename VectorType::ScalarType&gt;&gt; </div>
+template&lt;class IntersectionType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a02513.html">Dune::GDT::SpaceDataHandle</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType, GatherScatter, CommunicationDescriptor &gt;::<a class="el" href="a02513.html">SpaceDataHandle</a> </td>
+          <td class="memname"><a class="el" href="a02513.html">Dune::GDT::DirichletConstraints</a>&lt; IntersectionType &gt;::<a class="el" href="a02513.html">DirichletConstraints</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &amp;&#160;</td>
-          <td class="paramname"><em>space</em>, </td>
+          <td class="paramtype">const <a class="el" href="a02513.html#a7b543eb31cee2e95942e618536eaad45">BoundaryInfoType</a> &amp;&#160;</td>
+          <td class="paramname"><em>bnd_info</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">VectorType &amp;&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>sz</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">CommunicationDescriptor&#160;</td>
-          <td class="paramname"><em>communication_descriptor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">GatherScatter&#160;</td>
-          <td class="paramname"><em>gather_scatter</em> = <code>GatherScatter()</code>&#160;</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>set</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b0d82506c2c51802b01116f920b6239"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b0d82506c2c51802b01116f920b6239">&#9670;&nbsp;</a></span>DirichletConstraints() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class IntersectionType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a02513.html">Dune::GDT::DirichletConstraints</a>&lt; IntersectionType &gt;::<a class="el" href="a02513.html">DirichletConstraints</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a02513.html">ThisType</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -194,192 +243,24 @@ template&lt;typename SpaceType, typename VectorType, typename GatherScatter, typ
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a93b89c477beb37d74f337ca7d0606371"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93b89c477beb37d74f337ca7d0606371">&#9670;&nbsp;</a></span>contains()</h2>
+<a id="ae3828c486713c4afabf51e7b57f0ae71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3828c486713c4afabf51e7b57f0ae71">&#9670;&nbsp;</a></span>apply() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename SpaceType, typename VectorType, typename GatherScatter, typename CommunicationDescriptor = DofDataCommunicationDescriptor&lt;typename VectorType::ScalarType&gt;&gt; </div>
+template&lt;class IntersectionType &gt; </div>
+<div class="memtemplate">
+template&lt;class M &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="a02513.html">Dune::GDT::SpaceDataHandle</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType, GatherScatter, CommunicationDescriptor &gt;::contains </td>
+          <td class="memname">void <a class="el" href="a02513.html">Dune::GDT::DirichletConstraints</a>&lt; IntersectionType &gt;::apply </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>dim</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>codim</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>returns true if data for this codim should be communicated </p>
-
-</div>
-</div>
-<a id="a28df2fea958ebb36de66432d0038c03c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28df2fea958ebb36de66432d0038c03c">&#9670;&nbsp;</a></span>fixedsize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename SpaceType, typename VectorType, typename GatherScatter, typename CommunicationDescriptor = DofDataCommunicationDescriptor&lt;typename VectorType::ScalarType&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="a02513.html">Dune::GDT::SpaceDataHandle</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType, GatherScatter, CommunicationDescriptor &gt;::fixedsize </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>dim</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>codim</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>returns true if size per entity of given dim and codim is a constant </p>
-
-</div>
-</div>
-<a id="ae79944c086faae482183e16ba2ecfce6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae79944c086faae482183e16ba2ecfce6">&#9670;&nbsp;</a></span>gather()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename SpaceType, typename VectorType, typename GatherScatter, typename CommunicationDescriptor = DofDataCommunicationDescriptor&lt;typename VectorType::ScalarType&gt;&gt; </div>
-<div class="memtemplate">
-template&lt;typename MessageBuffer , class EntityType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a02513.html">Dune::GDT::SpaceDataHandle</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType, GatherScatter, CommunicationDescriptor &gt;::gather </td>
-          <td>(</td>
-          <td class="paramtype">MessageBuffer &amp;&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const EntityType &amp;&#160;</td>
-          <td class="paramname"><em>entity</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>pack data from user to message buffer the parent type prescribes a CONST gather method, because obviously receiving data will never change our local state this needs to be defined for all codims, but only codims for which contains is true will ever be called at runtime </p>
-
-</div>
-</div>
-<a id="a16bac2da57062468553a5dc9bd615c28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16bac2da57062468553a5dc9bd615c28">&#9670;&nbsp;</a></span>scatter()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename SpaceType, typename VectorType, typename GatherScatter, typename CommunicationDescriptor = DofDataCommunicationDescriptor&lt;typename VectorType::ScalarType&gt;&gt; </div>
-<div class="memtemplate">
-template&lt;typename MessageBuffer , class EntityType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a02513.html">Dune::GDT::SpaceDataHandle</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType, GatherScatter, CommunicationDescriptor &gt;::scatter </td>
-          <td>(</td>
-          <td class="paramtype">MessageBuffer &amp;&#160;</td>
-          <td class="paramname"><em>buff</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const EntityType &amp;&#160;</td>
-          <td class="paramname"><em>e</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>unpack data from message buffer to user n is the number of objects sent by the sender this needs to be defined for all codims, but only codims for which contains is true will ever be called at runtime </p>
-
-</div>
-</div>
-<a id="a9e84c382b4a2a4566dc6de0042f60379"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e84c382b4a2a4566dc6de0042f60379">&#9670;&nbsp;</a></span>size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename SpaceType, typename VectorType, typename GatherScatter, typename CommunicationDescriptor = DofDataCommunicationDescriptor&lt;typename VectorType::ScalarType&gt;&gt; </div>
-<div class="memtemplate">
-template&lt;class EntityType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t <a class="el" href="a02513.html">Dune::GDT::SpaceDataHandle</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType, GatherScatter, CommunicationDescriptor &gt;::size </td>
-          <td>(</td>
-          <td class="paramtype">const EntityType &amp;&#160;</td>
-          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td class="paramtype">XT::LA::MatrixInterface&lt; M &gt; &amp;&#160;</td>
+          <td class="paramname"><em>matrix</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -390,13 +271,189 @@ template&lt;class EntityType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>how many objects of type DataType have to be sent for a given entity </p>
-<p>Note: Only the sender side needs to know this size. </p>
+</div>
+</div>
+<a id="ac8a50daa3af182a7f4a2ecc8371a43f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8a50daa3af182a7f4a2ecc8371a43f2">&#9670;&nbsp;</a></span>apply() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class IntersectionType &gt; </div>
+<div class="memtemplate">
+template&lt;class V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a02513.html">Dune::GDT::DirichletConstraints</a>&lt; IntersectionType &gt;::apply </td>
+          <td>(</td>
+          <td class="paramtype">XT::LA::VectorInterface&lt; V &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vector</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1167fb03b9e08597bd729cea743fbad8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1167fb03b9e08597bd729cea743fbad8">&#9670;&nbsp;</a></span>apply() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class IntersectionType &gt; </div>
+<div class="memtemplate">
+template&lt;class M , class V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a02513.html">Dune::GDT::DirichletConstraints</a>&lt; IntersectionType &gt;::apply </td>
+          <td>(</td>
+          <td class="paramtype">XT::LA::MatrixInterface&lt; M &gt; &amp;&#160;</td>
+          <td class="paramname"><em>matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">XT::LA::VectorInterface&lt; V &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe3352b89bdf9778325e5a53f2b6a169"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe3352b89bdf9778325e5a53f2b6a169">&#9670;&nbsp;</a></span>boundary_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class IntersectionType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a02513.html#a7b543eb31cee2e95942e618536eaad45">BoundaryInfoType</a>&amp; <a class="el" href="a02513.html">Dune::GDT::DirichletConstraints</a>&lt; IntersectionType &gt;::boundary_info </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88f4e9a87e10786a9b07021d0bd49b8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88f4e9a87e10786a9b07021d0bd49b8d">&#9670;&nbsp;</a></span>dirichlet_DoFs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class IntersectionType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::set&lt;size_t&gt;&amp; <a class="el" href="a02513.html">Dune::GDT::DirichletConstraints</a>&lt; IntersectionType &gt;::dirichlet_DoFs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e8e9c27e60d94c0f50020ab299b3ae5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e8e9c27e60d94c0f50020ab299b3ae5">&#9670;&nbsp;</a></span>insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class IntersectionType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a02513.html">Dune::GDT::DirichletConstraints</a>&lt; IntersectionType &gt;::insert </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>DoF</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81ea754a589453faeff2351e322c189a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81ea754a589453faeff2351e322c189a">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class IntersectionType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="a02513.html">Dune::GDT::DirichletConstraints</a>&lt; IntersectionType &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00194_source.html">datahandles.hh</a></li>
+<li><a class="el" href="a00191_source.html">constraints.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

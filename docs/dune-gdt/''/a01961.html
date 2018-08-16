@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::internal::RealizabilityLimiterTraits&lt; LocalRealizabilityLimiterImp &gt; Struct Template Reference</title>
+<title>dune-gdt: Dune::GDT::internal::MomentRegularizerTraits&lt; AnalyticalFluxImp, BasisfunctionImp &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a00247.html">internal</a></li><li class="navelem"><a class="el" href="a01961.html">RealizabilityLimiterTraits</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a00247.html">internal</a></li><li class="navelem"><a class="el" href="a01961.html">MomentRegularizerTraits</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -67,190 +67,100 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="a01958.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::RealizabilityLimiterTraits&lt; LocalRealizabilityLimiterImp &gt; Struct Template Reference</div>  </div>
+<div class="title">Dune::GDT::internal::MomentRegularizerTraits&lt; AnalyticalFluxImp, BasisfunctionImp &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00119_source.html">dune/gdt/operators/fv/entropybased/realizability.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00122_source.html">dune/gdt/operators/fv/entropybased/regularization.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a39f4dea3d06767a68b68955cdda2b63b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#a39f4dea3d06767a68b68955cdda2b63b">LocalRealizabilityLimiterType</a> = LocalRealizabilityLimiterImp</td></tr>
-<tr class="separator:a39f4dea3d06767a68b68955cdda2b63b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a911284a5cae343b9a3a136cfc9febebe"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#a911284a5cae343b9a3a136cfc9febebe">AnalyticalFluxType</a> = typename LocalRealizabilityLimiterImp::AnalyticalFluxType</td></tr>
-<tr class="separator:a911284a5cae343b9a3a136cfc9febebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03ebf43f71451f9a07014759b21e0a44"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#a03ebf43f71451f9a07014759b21e0a44">BasisfunctionType</a> = typename LocalRealizabilityLimiterImp::BasisfunctionType</td></tr>
-<tr class="separator:a03ebf43f71451f9a07014759b21e0a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30cfa03d8ab6c0d42d8dcf4a24cc117b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#a30cfa03d8ab6c0d42d8dcf4a24cc117b">QuadratureType</a> = typename LocalRealizabilityLimiterImp::QuadratureType</td></tr>
-<tr class="separator:a30cfa03d8ab6c0d42d8dcf4a24cc117b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a120809e122dac64682bd591faa56fc36"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#a120809e122dac64682bd591faa56fc36">RangeFieldType</a> = typename LocalRealizabilityLimiterImp::RangeFieldType</td></tr>
-<tr class="separator:a120809e122dac64682bd591faa56fc36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9501050cd04011ca986e4393bd0518d2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#a9501050cd04011ca986e4393bd0518d2">FieldType</a> = <a class="el" href="a01961.html#a120809e122dac64682bd591faa56fc36">RangeFieldType</a></td></tr>
-<tr class="separator:a9501050cd04011ca986e4393bd0518d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a845837f7cfa3179ecc73c6f08519c2f4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#a845837f7cfa3179ecc73c6f08519c2f4">JacobianType</a> = <a class="el" href="a02109.html">NoJacobian</a></td></tr>
-<tr class="separator:a845837f7cfa3179ecc73c6f08519c2f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bcc12fa8af950cf1fbcf4fc5db754d5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#a7bcc12fa8af950cf1fbcf4fc5db754d5">RangeType</a> = typename LocalRealizabilityLimiterImp::RangeType</td></tr>
-<tr class="separator:a7bcc12fa8af950cf1fbcf4fc5db754d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab05469e5e52002d866aaf268f9f6dad"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#aab05469e5e52002d866aaf268f9f6dad">ReconstructedFunctionType</a> = typename LocalRealizabilityLimiterImp::ReconstructedFunctionType</td></tr>
-<tr class="separator:aab05469e5e52002d866aaf268f9f6dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ca4335067d7c5dcc24283b913fff855"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#a8ca4335067d7c5dcc24283b913fff855">derived_type</a> = <a class="el" href="a01957.html">RealizabilityLimiter</a>&lt; <a class="el" href="a01961.html#a39f4dea3d06767a68b68955cdda2b63b">LocalRealizabilityLimiterType</a>, <a class="el" href="a01961.html">RealizabilityLimiterTraits</a> &gt;</td></tr>
-<tr class="separator:a8ca4335067d7c5dcc24283b913fff855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafa18f81ca83c1dc50afa00cad82e3d5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#aafa18f81ca83c1dc50afa00cad82e3d5">AnalyticalFluxType</a> = AnalyticalFluxImp</td></tr>
+<tr class="separator:aafa18f81ca83c1dc50afa00cad82e3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bfa63a61a7d4470e28827c3986bca54"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#a3bfa63a61a7d4470e28827c3986bca54">BasisfunctionType</a> = BasisfunctionImp</td></tr>
+<tr class="separator:a3bfa63a61a7d4470e28827c3986bca54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2a9ab18bc7cb9aeae953de10cfbbeeb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#ae2a9ab18bc7cb9aeae953de10cfbbeeb">FieldType</a> = typename AnalyticalFluxType::DomainFieldType</td></tr>
+<tr class="separator:ae2a9ab18bc7cb9aeae953de10cfbbeeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c06ffe97d72aafae832ae8a18dcce90"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#a8c06ffe97d72aafae832ae8a18dcce90">JacobianType</a> = <a class="el" href="a02125.html">NoJacobian</a></td></tr>
+<tr class="separator:a8c06ffe97d72aafae832ae8a18dcce90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6b914b4cc8eade23eceda9ac1f9918b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01961.html#ac6b914b4cc8eade23eceda9ac1f9918b">derived_type</a> = <a class="el" href="a01957.html">MomentRegularizer</a>&lt; <a class="el" href="a01961.html#aafa18f81ca83c1dc50afa00cad82e3d5">AnalyticalFluxType</a>, <a class="el" href="a01961.html#a3bfa63a61a7d4470e28827c3986bca54">BasisfunctionType</a>, <a class="el" href="a01961.html">MomentRegularizerTraits</a> &gt;</td></tr>
+<tr class="separator:ac6b914b4cc8eade23eceda9ac1f9918b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a911284a5cae343b9a3a136cfc9febebe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a911284a5cae343b9a3a136cfc9febebe">&#9670;&nbsp;</a></span>AnalyticalFluxType</h2>
+<a id="aafa18f81ca83c1dc50afa00cad82e3d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafa18f81ca83c1dc50afa00cad82e3d5">&#9670;&nbsp;</a></span>AnalyticalFluxType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalRealizabilityLimiterImp &gt; </div>
+template&lt;class AnalyticalFluxImp , class BasisfunctionImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01961.html">Dune::GDT::internal::RealizabilityLimiterTraits</a>&lt; LocalRealizabilityLimiterImp &gt;::<a class="el" href="a01961.html#a911284a5cae343b9a3a136cfc9febebe">AnalyticalFluxType</a> =  typename LocalRealizabilityLimiterImp::AnalyticalFluxType</td>
+          <td class="memname">using <a class="el" href="a01961.html">Dune::GDT::internal::MomentRegularizerTraits</a>&lt; AnalyticalFluxImp, BasisfunctionImp &gt;::<a class="el" href="a01961.html#aafa18f81ca83c1dc50afa00cad82e3d5">AnalyticalFluxType</a> =  AnalyticalFluxImp</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a03ebf43f71451f9a07014759b21e0a44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03ebf43f71451f9a07014759b21e0a44">&#9670;&nbsp;</a></span>BasisfunctionType</h2>
+<a id="a3bfa63a61a7d4470e28827c3986bca54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bfa63a61a7d4470e28827c3986bca54">&#9670;&nbsp;</a></span>BasisfunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalRealizabilityLimiterImp &gt; </div>
+template&lt;class AnalyticalFluxImp , class BasisfunctionImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01961.html">Dune::GDT::internal::RealizabilityLimiterTraits</a>&lt; LocalRealizabilityLimiterImp &gt;::<a class="el" href="a01961.html#a03ebf43f71451f9a07014759b21e0a44">BasisfunctionType</a> =  typename LocalRealizabilityLimiterImp::BasisfunctionType</td>
+          <td class="memname">using <a class="el" href="a01961.html">Dune::GDT::internal::MomentRegularizerTraits</a>&lt; AnalyticalFluxImp, BasisfunctionImp &gt;::<a class="el" href="a01961.html#a3bfa63a61a7d4470e28827c3986bca54">BasisfunctionType</a> =  BasisfunctionImp</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a8ca4335067d7c5dcc24283b913fff855"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ca4335067d7c5dcc24283b913fff855">&#9670;&nbsp;</a></span>derived_type</h2>
+<a id="ac6b914b4cc8eade23eceda9ac1f9918b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6b914b4cc8eade23eceda9ac1f9918b">&#9670;&nbsp;</a></span>derived_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalRealizabilityLimiterImp &gt; </div>
+template&lt;class AnalyticalFluxImp , class BasisfunctionImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01961.html">Dune::GDT::internal::RealizabilityLimiterTraits</a>&lt; LocalRealizabilityLimiterImp &gt;::<a class="el" href="a01961.html#a8ca4335067d7c5dcc24283b913fff855">derived_type</a> =  <a class="el" href="a01957.html">RealizabilityLimiter</a>&lt;<a class="el" href="a01961.html#a39f4dea3d06767a68b68955cdda2b63b">LocalRealizabilityLimiterType</a>, <a class="el" href="a01961.html">RealizabilityLimiterTraits</a>&gt;</td>
+          <td class="memname">using <a class="el" href="a01961.html">Dune::GDT::internal::MomentRegularizerTraits</a>&lt; AnalyticalFluxImp, BasisfunctionImp &gt;::<a class="el" href="a01961.html#ac6b914b4cc8eade23eceda9ac1f9918b">derived_type</a> =  <a class="el" href="a01957.html">MomentRegularizer</a>&lt;<a class="el" href="a01961.html#aafa18f81ca83c1dc50afa00cad82e3d5">AnalyticalFluxType</a>, <a class="el" href="a01961.html#a3bfa63a61a7d4470e28827c3986bca54">BasisfunctionType</a>, <a class="el" href="a01961.html">MomentRegularizerTraits</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a9501050cd04011ca986e4393bd0518d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9501050cd04011ca986e4393bd0518d2">&#9670;&nbsp;</a></span>FieldType</h2>
+<a id="ae2a9ab18bc7cb9aeae953de10cfbbeeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2a9ab18bc7cb9aeae953de10cfbbeeb">&#9670;&nbsp;</a></span>FieldType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalRealizabilityLimiterImp &gt; </div>
+template&lt;class AnalyticalFluxImp , class BasisfunctionImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01961.html">Dune::GDT::internal::RealizabilityLimiterTraits</a>&lt; LocalRealizabilityLimiterImp &gt;::<a class="el" href="a01961.html#a9501050cd04011ca986e4393bd0518d2">FieldType</a> =  <a class="el" href="a01961.html#a120809e122dac64682bd591faa56fc36">RangeFieldType</a></td>
+          <td class="memname">using <a class="el" href="a01961.html">Dune::GDT::internal::MomentRegularizerTraits</a>&lt; AnalyticalFluxImp, BasisfunctionImp &gt;::<a class="el" href="a01961.html#ae2a9ab18bc7cb9aeae953de10cfbbeeb">FieldType</a> =  typename AnalyticalFluxType::DomainFieldType</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a845837f7cfa3179ecc73c6f08519c2f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a845837f7cfa3179ecc73c6f08519c2f4">&#9670;&nbsp;</a></span>JacobianType</h2>
+<a id="a8c06ffe97d72aafae832ae8a18dcce90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c06ffe97d72aafae832ae8a18dcce90">&#9670;&nbsp;</a></span>JacobianType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LocalRealizabilityLimiterImp &gt; </div>
+template&lt;class AnalyticalFluxImp , class BasisfunctionImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01961.html">Dune::GDT::internal::RealizabilityLimiterTraits</a>&lt; LocalRealizabilityLimiterImp &gt;::<a class="el" href="a01961.html#a845837f7cfa3179ecc73c6f08519c2f4">JacobianType</a> =  <a class="el" href="a02109.html">NoJacobian</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a39f4dea3d06767a68b68955cdda2b63b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39f4dea3d06767a68b68955cdda2b63b">&#9670;&nbsp;</a></span>LocalRealizabilityLimiterType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class LocalRealizabilityLimiterImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="a01961.html">Dune::GDT::internal::RealizabilityLimiterTraits</a>&lt; LocalRealizabilityLimiterImp &gt;::<a class="el" href="a01961.html#a39f4dea3d06767a68b68955cdda2b63b">LocalRealizabilityLimiterType</a> =  LocalRealizabilityLimiterImp</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a30cfa03d8ab6c0d42d8dcf4a24cc117b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30cfa03d8ab6c0d42d8dcf4a24cc117b">&#9670;&nbsp;</a></span>QuadratureType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class LocalRealizabilityLimiterImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="a01961.html">Dune::GDT::internal::RealizabilityLimiterTraits</a>&lt; LocalRealizabilityLimiterImp &gt;::<a class="el" href="a01961.html#a30cfa03d8ab6c0d42d8dcf4a24cc117b">QuadratureType</a> =  typename LocalRealizabilityLimiterImp::QuadratureType</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a120809e122dac64682bd591faa56fc36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a120809e122dac64682bd591faa56fc36">&#9670;&nbsp;</a></span>RangeFieldType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class LocalRealizabilityLimiterImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="a01961.html">Dune::GDT::internal::RealizabilityLimiterTraits</a>&lt; LocalRealizabilityLimiterImp &gt;::<a class="el" href="a01961.html#a120809e122dac64682bd591faa56fc36">RangeFieldType</a> =  typename LocalRealizabilityLimiterImp::RangeFieldType</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7bcc12fa8af950cf1fbcf4fc5db754d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bcc12fa8af950cf1fbcf4fc5db754d5">&#9670;&nbsp;</a></span>RangeType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class LocalRealizabilityLimiterImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="a01961.html">Dune::GDT::internal::RealizabilityLimiterTraits</a>&lt; LocalRealizabilityLimiterImp &gt;::<a class="el" href="a01961.html#a7bcc12fa8af950cf1fbcf4fc5db754d5">RangeType</a> =  typename LocalRealizabilityLimiterImp::RangeType</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aab05469e5e52002d866aaf268f9f6dad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab05469e5e52002d866aaf268f9f6dad">&#9670;&nbsp;</a></span>ReconstructedFunctionType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class LocalRealizabilityLimiterImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="a01961.html">Dune::GDT::internal::RealizabilityLimiterTraits</a>&lt; LocalRealizabilityLimiterImp &gt;::<a class="el" href="a01961.html#aab05469e5e52002d866aaf268f9f6dad">ReconstructedFunctionType</a> =  typename LocalRealizabilityLimiterImp::ReconstructedFunctionType</td>
+          <td class="memname">using <a class="el" href="a01961.html">Dune::GDT::internal::MomentRegularizerTraits</a>&lt; AnalyticalFluxImp, BasisfunctionImp &gt;::<a class="el" href="a01961.html#a8c06ffe97d72aafae832ae8a18dcce90">JacobianType</a> =  <a class="el" href="a02125.html">NoJacobian</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -258,7 +168,7 @@ template&lt;class LocalRealizabilityLimiterImp &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="a00119_source.html">realizability.hh</a></li>
+<li><a class="el" href="a00122_source.html">regularization.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

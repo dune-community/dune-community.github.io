@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::MinDataHandle&lt; SpaceType, VectorType &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::SpaceDataHandle&lt; SpaceType, VectorType, GatherScatter, CommunicationDescriptor &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a02529.html">MinDataHandle</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a02529.html">SpaceDataHandle</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -68,42 +68,45 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a02526.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::MinDataHandle&lt; SpaceType, VectorType &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::SpaceDataHandle&lt; SpaceType, VectorType, GatherScatter, CommunicationDescriptor &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="a00194_source.html">dune/gdt/spaces/datahandles.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::MinDataHandle&lt; SpaceType, VectorType &gt;:</div>
+Inheritance diagram for Dune::GDT::SpaceDataHandle&lt; SpaceType, VectorType, GatherScatter, CommunicationDescriptor &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02528.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_min_data_handle_3_01_space_type_00_01_vector_type_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1_min_data_handle_3_01_space_type_00_01_vector_type_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_min_data_handle_3_01_space_type_00_01_vector_type_01_4_inherit__map">
+<div class="center"><img src="a02528.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_space_data_handle_3_01_space_type_00_01_vector_type_00_01_gather_scatter_00_01_communication_descriptor_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_space_data_handle_3_01_space_type_00_01_vector_type_00_01_gather_scatter_00_01_communication_descriptor_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_space_data_handle_3_01_space_type_00_01_vector_type_00_01_gather_scatter_00_01_communication_descriptor_01_4_inherit__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a8f4f344d1b259384e8fa9f2e19cdbf2a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02513.html#a8f4f344d1b259384e8fa9f2e19cdbf2a">DataType</a> = typename <a class="el" href="a02505.html">DofDataCommunicationDescriptor</a>&lt; VectorType::ScalarType &gt; ::<a class="el" href="a02513.html#a8f4f344d1b259384e8fa9f2e19cdbf2a">DataType</a></td></tr>
+<tr class="memitem:a8f4f344d1b259384e8fa9f2e19cdbf2a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02529.html#a8f4f344d1b259384e8fa9f2e19cdbf2a">DataType</a> = typename CommunicationDescriptor::DataType</td></tr>
 <tr class="separator:a8f4f344d1b259384e8fa9f2e19cdbf2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27ba55e31c31e39c600afa5c9b3d6dc5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02513.html#a27ba55e31c31e39c600afa5c9b3d6dc5">Codim0EntityType</a> = XT::Grid::extract_entity_t&lt; typename SpaceType::GridLayerType &gt;</td></tr>
+<tr class="memitem:a27ba55e31c31e39c600afa5c9b3d6dc5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02529.html#a27ba55e31c31e39c600afa5c9b3d6dc5">Codim0EntityType</a> = XT::Grid::extract_entity_t&lt; typename SpaceType::GridLayerType &gt;</td></tr>
 <tr class="separator:a27ba55e31c31e39c600afa5c9b3d6dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a08b736cee105a16b5a5724622e94ebdc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02529.html#a08b736cee105a16b5a5724622e94ebdc">MinDataHandle</a> (const <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &amp;space_in, VectorType &amp;v_)</td></tr>
-<tr class="separator:a08b736cee105a16b5a5724622e94ebdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93b89c477beb37d74f337ca7d0606371"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02513.html#a93b89c477beb37d74f337ca7d0606371">contains</a> (int dim, int codim) const</td></tr>
+<tr class="memitem:a5e53271e472f5bbd1b1604003377b8e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02529.html#a5e53271e472f5bbd1b1604003377b8e2">SpaceDataHandle</a> (const <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &amp;space, VectorType &amp;v, CommunicationDescriptor communication_descriptor, GatherScatter gather_scatter=GatherScatter())</td></tr>
+<tr class="separator:a5e53271e472f5bbd1b1604003377b8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93b89c477beb37d74f337ca7d0606371"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02529.html#a93b89c477beb37d74f337ca7d0606371">contains</a> (int dim, int codim) const</td></tr>
 <tr class="memdesc:a93b89c477beb37d74f337ca7d0606371"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if data for this codim should be communicated  <a href="#a93b89c477beb37d74f337ca7d0606371">More...</a><br /></td></tr>
 <tr class="separator:a93b89c477beb37d74f337ca7d0606371"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28df2fea958ebb36de66432d0038c03c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02513.html#a28df2fea958ebb36de66432d0038c03c">fixedsize</a> (int dim, int codim) const</td></tr>
+<tr class="memitem:a28df2fea958ebb36de66432d0038c03c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02529.html#a28df2fea958ebb36de66432d0038c03c">fixedsize</a> (int dim, int codim) const</td></tr>
 <tr class="memdesc:a28df2fea958ebb36de66432d0038c03c"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if size per entity of given dim and codim is a constant  <a href="#a28df2fea958ebb36de66432d0038c03c">More...</a><br /></td></tr>
 <tr class="separator:a28df2fea958ebb36de66432d0038c03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e84c382b4a2a4566dc6de0042f60379"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02513.html#a9e84c382b4a2a4566dc6de0042f60379">size</a> (const EntityType &amp;entity) const</td></tr>
+<tr class="memitem:a9e84c382b4a2a4566dc6de0042f60379"><td class="memTemplParams" colspan="2">template&lt;class EntityType &gt; </td></tr>
+<tr class="memitem:a9e84c382b4a2a4566dc6de0042f60379"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02529.html#a9e84c382b4a2a4566dc6de0042f60379">size</a> (const EntityType &amp;entity) const</td></tr>
 <tr class="memdesc:a9e84c382b4a2a4566dc6de0042f60379"><td class="mdescLeft">&#160;</td><td class="mdescRight">how many objects of type DataType have to be sent for a given entity  <a href="#a9e84c382b4a2a4566dc6de0042f60379">More...</a><br /></td></tr>
 <tr class="separator:a9e84c382b4a2a4566dc6de0042f60379"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae79944c086faae482183e16ba2ecfce6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02513.html#ae79944c086faae482183e16ba2ecfce6">gather</a> (MessageBuffer &amp;buffer, const EntityType &amp;entity) const</td></tr>
+<tr class="memitem:ae79944c086faae482183e16ba2ecfce6"><td class="memTemplParams" colspan="2">template&lt;typename MessageBuffer , class EntityType &gt; </td></tr>
+<tr class="memitem:ae79944c086faae482183e16ba2ecfce6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02529.html#ae79944c086faae482183e16ba2ecfce6">gather</a> (MessageBuffer &amp;buffer, const EntityType &amp;entity) const</td></tr>
 <tr class="separator:ae79944c086faae482183e16ba2ecfce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16bac2da57062468553a5dc9bd615c28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02513.html#a16bac2da57062468553a5dc9bd615c28">scatter</a> (MessageBuffer &amp;buff, const EntityType &amp;e, size_t n)</td></tr>
+<tr class="memitem:a16bac2da57062468553a5dc9bd615c28"><td class="memTemplParams" colspan="2">template&lt;typename MessageBuffer , class EntityType &gt; </td></tr>
+<tr class="memitem:a16bac2da57062468553a5dc9bd615c28"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02529.html#a16bac2da57062468553a5dc9bd615c28">scatter</a> (MessageBuffer &amp;buff, const EntityType &amp;e, size_t n)</td></tr>
 <tr class="separator:a16bac2da57062468553a5dc9bd615c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
@@ -112,19 +115,13 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+<div class="memtemplate">
+template&lt;typename SpaceType, typename VectorType, typename GatherScatter, typename CommunicationDescriptor = DofDataCommunicationDescriptor&lt;typename VectorType::ScalarType&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a02513.html">Dune::GDT::SpaceDataHandle</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType, <a class="el" href="a02517.html">DataGatherScatter</a>&lt; <a class="el" href="a02525.html">MinGatherScatter</a> &gt; , <a class="el" href="a02505.html">DofDataCommunicationDescriptor</a>&lt; VectorType::ScalarType &gt;  &gt;::<a class="el" href="a02513.html#a27ba55e31c31e39c600afa5c9b3d6dc5">Codim0EntityType</a> =  XT::Grid::extract_entity_t&lt;typename SpaceType::GridLayerType&gt;</td>
+          <td class="memname">using <a class="el" href="a02529.html">Dune::GDT::SpaceDataHandle</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType, GatherScatter, CommunicationDescriptor &gt;::<a class="el" href="a02529.html#a27ba55e31c31e39c600afa5c9b3d6dc5">Codim0EntityType</a> =  XT::Grid::extract_entity_t&lt;typename SpaceType::GridLayerType&gt;</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -134,46 +131,52 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+<div class="memtemplate">
+template&lt;typename SpaceType, typename VectorType, typename GatherScatter, typename CommunicationDescriptor = DofDataCommunicationDescriptor&lt;typename VectorType::ScalarType&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a02513.html">Dune::GDT::SpaceDataHandle</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType, <a class="el" href="a02517.html">DataGatherScatter</a>&lt; <a class="el" href="a02525.html">MinGatherScatter</a> &gt; , <a class="el" href="a02505.html">DofDataCommunicationDescriptor</a>&lt; VectorType::ScalarType &gt;  &gt;::<a class="el" href="a02513.html#a8f4f344d1b259384e8fa9f2e19cdbf2a">DataType</a> =  typename <a class="el" href="a02505.html">DofDataCommunicationDescriptor</a>&lt; VectorType::ScalarType &gt; ::<a class="el" href="a02513.html#a8f4f344d1b259384e8fa9f2e19cdbf2a">DataType</a></td>
+          <td class="memname">using <a class="el" href="a02529.html">Dune::GDT::SpaceDataHandle</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType, GatherScatter, CommunicationDescriptor &gt;::<a class="el" href="a02529.html#a8f4f344d1b259384e8fa9f2e19cdbf2a">DataType</a> =  typename CommunicationDescriptor::DataType</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a08b736cee105a16b5a5724622e94ebdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08b736cee105a16b5a5724622e94ebdc">&#9670;&nbsp;</a></span>MinDataHandle()</h2>
+<a id="a5e53271e472f5bbd1b1604003377b8e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e53271e472f5bbd1b1604003377b8e2">&#9670;&nbsp;</a></span>SpaceDataHandle()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class SpaceType, class VectorType&gt; </div>
+template&lt;typename SpaceType, typename VectorType, typename GatherScatter, typename CommunicationDescriptor = DofDataCommunicationDescriptor&lt;typename VectorType::ScalarType&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a02529.html">Dune::GDT::MinDataHandle</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType &gt;::<a class="el" href="a02529.html">MinDataHandle</a> </td>
+          <td class="memname"><a class="el" href="a02529.html">Dune::GDT::SpaceDataHandle</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType, GatherScatter, CommunicationDescriptor &gt;::<a class="el" href="a02529.html">SpaceDataHandle</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a> &amp;&#160;</td>
-          <td class="paramname"><em>space_in</em>, </td>
+          <td class="paramname"><em>space</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">VectorType &amp;&#160;</td>
-          <td class="paramname"><em>v_</em>&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CommunicationDescriptor&#160;</td>
+          <td class="paramname"><em>communication_descriptor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GatherScatter&#160;</td>
+          <td class="paramname"><em>gather_scatter</em> = <code>GatherScatter()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -196,12 +199,14 @@ template&lt;class SpaceType, class VectorType&gt; </div>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename SpaceType, typename VectorType, typename GatherScatter, typename CommunicationDescriptor = DofDataCommunicationDescriptor&lt;typename VectorType::ScalarType&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="a02513.html">Dune::GDT::SpaceDataHandle</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType, <a class="el" href="a02517.html">DataGatherScatter</a>&lt; <a class="el" href="a02525.html">MinGatherScatter</a> &gt; , <a class="el" href="a02505.html">DofDataCommunicationDescriptor</a>&lt; VectorType::ScalarType &gt;  &gt;::contains </td>
+          <td class="memname">bool <a class="el" href="a02529.html">Dune::GDT::SpaceDataHandle</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType, GatherScatter, CommunicationDescriptor &gt;::contains </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>dim</em>, </td>
@@ -220,7 +225,7 @@ template&lt;class SpaceType, class VectorType&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -234,12 +239,14 @@ template&lt;class SpaceType, class VectorType&gt; </div>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename SpaceType, typename VectorType, typename GatherScatter, typename CommunicationDescriptor = DofDataCommunicationDescriptor&lt;typename VectorType::ScalarType&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="a02513.html">Dune::GDT::SpaceDataHandle</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType, <a class="el" href="a02517.html">DataGatherScatter</a>&lt; <a class="el" href="a02525.html">MinGatherScatter</a> &gt; , <a class="el" href="a02505.html">DofDataCommunicationDescriptor</a>&lt; VectorType::ScalarType &gt;  &gt;::fixedsize </td>
+          <td class="memname">bool <a class="el" href="a02529.html">Dune::GDT::SpaceDataHandle</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType, GatherScatter, CommunicationDescriptor &gt;::fixedsize </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>dim</em>, </td>
@@ -258,7 +265,7 @@ template&lt;class SpaceType, class VectorType&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -272,12 +279,16 @@ template&lt;class SpaceType, class VectorType&gt; </div>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename SpaceType, typename VectorType, typename GatherScatter, typename CommunicationDescriptor = DofDataCommunicationDescriptor&lt;typename VectorType::ScalarType&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;typename MessageBuffer , class EntityType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a02513.html">Dune::GDT::SpaceDataHandle</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType, <a class="el" href="a02517.html">DataGatherScatter</a>&lt; <a class="el" href="a02525.html">MinGatherScatter</a> &gt; , <a class="el" href="a02505.html">DofDataCommunicationDescriptor</a>&lt; VectorType::ScalarType &gt;  &gt;::gather </td>
+          <td class="memname">void <a class="el" href="a02529.html">Dune::GDT::SpaceDataHandle</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType, GatherScatter, CommunicationDescriptor &gt;::gather </td>
           <td>(</td>
           <td class="paramtype">MessageBuffer &amp;&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
@@ -296,7 +307,7 @@ template&lt;class SpaceType, class VectorType&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -309,12 +320,16 @@ template&lt;class SpaceType, class VectorType&gt; </div>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename SpaceType, typename VectorType, typename GatherScatter, typename CommunicationDescriptor = DofDataCommunicationDescriptor&lt;typename VectorType::ScalarType&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;typename MessageBuffer , class EntityType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a02513.html">Dune::GDT::SpaceDataHandle</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType, <a class="el" href="a02517.html">DataGatherScatter</a>&lt; <a class="el" href="a02525.html">MinGatherScatter</a> &gt; , <a class="el" href="a02505.html">DofDataCommunicationDescriptor</a>&lt; VectorType::ScalarType &gt;  &gt;::scatter </td>
+          <td class="memname">void <a class="el" href="a02529.html">Dune::GDT::SpaceDataHandle</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType, GatherScatter, CommunicationDescriptor &gt;::scatter </td>
           <td>(</td>
           <td class="paramtype">MessageBuffer &amp;&#160;</td>
           <td class="paramname"><em>buff</em>, </td>
@@ -339,7 +354,7 @@ template&lt;class SpaceType, class VectorType&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -352,12 +367,16 @@ template&lt;class SpaceType, class VectorType&gt; </div>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename SpaceType, typename VectorType, typename GatherScatter, typename CommunicationDescriptor = DofDataCommunicationDescriptor&lt;typename VectorType::ScalarType&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;class EntityType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t <a class="el" href="a02513.html">Dune::GDT::SpaceDataHandle</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType, <a class="el" href="a02517.html">DataGatherScatter</a>&lt; <a class="el" href="a02525.html">MinGatherScatter</a> &gt; , <a class="el" href="a02505.html">DofDataCommunicationDescriptor</a>&lt; VectorType::ScalarType &gt;  &gt;::size </td>
+          <td class="memname">size_t <a class="el" href="a02529.html">Dune::GDT::SpaceDataHandle</a>&lt; <a class="el" href="a00246.html#a1dc558b2ff4b8e95434d41c4e51f6b92">SpaceType</a>, VectorType, GatherScatter, CommunicationDescriptor &gt;::size </td>
           <td>(</td>
           <td class="paramtype">const EntityType &amp;&#160;</td>
           <td class="paramname"><em>entity</em></td><td>)</td>
@@ -366,7 +385,7 @@ template&lt;class SpaceType, class VectorType&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

@@ -1,13 +1,10 @@
-digraph "Dune::GDT::AdvectionWithReconstructionOperator&lt; AdvectionOperatorImp, ReconstructionOperatorImp, Traits &gt;"
+digraph "Dune::GDT::PositivityLimitedSlope&lt; RangeFieldType, dimRange, MatrixType, SlopeType &gt;"
 {
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node0 [label="Dune::GDT::AdvectionWith\lReconstructionOperator\l\< AdvectionOperatorImp,\l ReconstructionOperatorImp,\l Traits \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 [label="Dune::GDT::PositivityLimited\lSlope\< RangeFieldType, dimRange,\l MatrixType, SlopeType \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
   Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 [label="Dune::GDT::OperatorInterface\l\< Traits \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02113.html"];
-  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="XT::Common::CRTPInterface\l\< OperatorInterface\< Traits\l \>, Traits \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
-  Node3 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="ParametricInterface",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 [label="Dune::GDT::SlopeBase\l\< FieldVector\< RangeFieldType,\l dimRange \>, MatrixType, 3 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02053.html"];
+  Node2 -> Node1 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< FieldVector\< RangeField\lType, dimRange \>, MatrixType, 3 \>" ,fontname="Helvetica"];
+  Node2 [label="Dune::GDT::SlopeBase\l\< VectorType, MatrixType,\l stencil_size \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02053.html"];
 }

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['value',['value',['../a02849.html#a5bf05e5686e5e5566de4a5f93fc0cebe',1,'Dune::GDT::internal::allContinuous::value()'],['../a02853.html#a5f8df22815491ce3431a364ccc2bab06',1,'Dune::GDT::internal::allContinuous&lt; LastSpaceType &gt;::value()']]]
+  ['xi_5f',['xi_',['../a01133.html#a49aed2c5b1e998b467c6fd58b2608f0b',1,'Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::PiecewiseMonomials&lt; typename U::DomainFieldType, domainDim, typename U::RangeFieldType, U::dimRange, 1 &gt;, GridLayerImp, U &gt;::Localfunction']]]
 ];

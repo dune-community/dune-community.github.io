@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::internal::LocalLambdaOperatorTraits&lt; S, RS, RV &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::internal::MatrixOperatorBaseTraits&lt; MatrixImp, RangeSpaceImp, GridLayerImp, SourceSpaceImp, FieldImp, pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a00247.html">internal</a></li><li class="navelem"><a class="el" href="a01757.html">LocalLambdaOperatorTraits</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00245.html">Dune</a></li><li class="navelem"><a class="el" href="a00246.html">GDT</a></li><li class="navelem"><a class="el" href="a00247.html">internal</a></li><li class="navelem"><a class="el" href="a01757.html">MatrixOperatorBaseTraits</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -67,28 +67,64 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="a01754.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::LocalLambdaOperatorTraits&lt; S, RS, RV &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::internal::MatrixOperatorBaseTraits&lt; MatrixImp, RangeSpaceImp, GridLayerImp, SourceSpaceImp, FieldImp, pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a04703_source.html">dune/gdt/local/operators/lambda.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a04540_source.html">dune/gdt/operators/base.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a0c3c79f440e8c3700d3b2a97505928e2"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01749.html">LocalLambdaOperator</a>&lt; S, RS, RV &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01757.html#a0c3c79f440e8c3700d3b2a97505928e2">derived_type</a></td></tr>
-<tr class="separator:a0c3c79f440e8c3700d3b2a97505928e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae16e6cf8ddeebc1abc55b9b23703f605"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01753.html">MatrixOperatorBase</a>&lt; MatrixImp, RangeSpaceImp, GridLayerImp, SourceSpaceImp, FieldImp, pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01757.html#ae16e6cf8ddeebc1abc55b9b23703f605">derived_type</a></td></tr>
+<tr class="separator:ae16e6cf8ddeebc1abc55b9b23703f605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d3eaba184f2d3948f170f5a1fd384ca"><td class="memItemLeft" align="right" valign="top">typedef FieldImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01757.html#a4d3eaba184f2d3948f170f5a1fd384ca">FieldType</a></td></tr>
+<tr class="separator:a4d3eaba184f2d3948f170f5a1fd384ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73b23a9c5a6323757d6775a417625ecb"><td class="memItemLeft" align="right" valign="top">typedef std::unique_ptr&lt; <a class="el" href="a01757.html#ae16e6cf8ddeebc1abc55b9b23703f605">derived_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01757.html#a73b23a9c5a6323757d6775a417625ecb">JacobianType</a></td></tr>
+<tr class="separator:a73b23a9c5a6323757d6775a417625ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a0c3c79f440e8c3700d3b2a97505928e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c3c79f440e8c3700d3b2a97505928e2">&#9670;&nbsp;</a></span>derived_type</h2>
+<a id="ae16e6cf8ddeebc1abc55b9b23703f605"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae16e6cf8ddeebc1abc55b9b23703f605">&#9670;&nbsp;</a></span>derived_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class S , class RS , class RV &gt; </div>
+template&lt;class MatrixImp , class RangeSpaceImp , class GridLayerImp , class SourceSpaceImp , class FieldImp , ChoosePattern pt, class OuterRangeSpaceImp , class OuterSourceSpaceImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a01749.html">LocalLambdaOperator</a>&lt;S, RS, RV&gt; <a class="el" href="a01757.html">Dune::GDT::internal::LocalLambdaOperatorTraits</a>&lt; S, RS, RV &gt;::<a class="el" href="a01757.html#a0c3c79f440e8c3700d3b2a97505928e2">derived_type</a></td>
+          <td class="memname">typedef <a class="el" href="a01753.html">MatrixOperatorBase</a>&lt;MatrixImp, RangeSpaceImp, GridLayerImp, SourceSpaceImp, FieldImp, pt, OuterRangeSpaceImp, OuterSourceSpaceImp&gt; <a class="el" href="a01757.html">Dune::GDT::internal::MatrixOperatorBaseTraits</a>&lt; MatrixImp, RangeSpaceImp, GridLayerImp, SourceSpaceImp, FieldImp, pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::<a class="el" href="a01757.html#ae16e6cf8ddeebc1abc55b9b23703f605">derived_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d3eaba184f2d3948f170f5a1fd384ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d3eaba184f2d3948f170f5a1fd384ca">&#9670;&nbsp;</a></span>FieldType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixImp , class RangeSpaceImp , class GridLayerImp , class SourceSpaceImp , class FieldImp , ChoosePattern pt, class OuterRangeSpaceImp , class OuterSourceSpaceImp &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef FieldImp <a class="el" href="a01757.html">Dune::GDT::internal::MatrixOperatorBaseTraits</a>&lt; MatrixImp, RangeSpaceImp, GridLayerImp, SourceSpaceImp, FieldImp, pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::<a class="el" href="a01757.html#a4d3eaba184f2d3948f170f5a1fd384ca">FieldType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a73b23a9c5a6323757d6775a417625ecb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73b23a9c5a6323757d6775a417625ecb">&#9670;&nbsp;</a></span>JacobianType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixImp , class RangeSpaceImp , class GridLayerImp , class SourceSpaceImp , class FieldImp , ChoosePattern pt, class OuterRangeSpaceImp , class OuterSourceSpaceImp &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::unique_ptr&lt;<a class="el" href="a01757.html#ae16e6cf8ddeebc1abc55b9b23703f605">derived_type</a>&gt; <a class="el" href="a01757.html">Dune::GDT::internal::MatrixOperatorBaseTraits</a>&lt; MatrixImp, RangeSpaceImp, GridLayerImp, SourceSpaceImp, FieldImp, pt, OuterRangeSpaceImp, OuterSourceSpaceImp &gt;::<a class="el" href="a01757.html#a73b23a9c5a6323757d6775a417625ecb">JacobianType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -96,7 +132,7 @@ template&lt;class S , class RS , class RV &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a04703_source.html">operators/lambda.hh</a></li>
+<li><a class="el" href="a04540_source.html">operators/base.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
