@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: block.hh File Reference</title>
+<title>dune-gdt: OS2014.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_1eea3f25d96e3194dad91b986d4f2dcc.html">playground</a></li><li class="navelem"><a class="el" href="dir_4ffd1a13c5d71df01de237c0b18f9ccc.html">spaces</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_1eea3f25d96e3194dad91b986d4f2dcc.html">playground</a></li><li class="navelem"><a class="el" href="dir_6dd10f431c82bad66dbba62f63e162d7.html">local</a></li><li class="navelem"><a class="el" href="dir_ccee8840c46c2f8e6746806caf2cee6c.html">integrands</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -67,36 +67,35 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">block.hh File Reference</div>  </div>
+<div class="title">OS2014.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;dune/xt/common/exceptions.hh&gt;</code><br />
+<div class="textblock"><code>#include &lt;tuple&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;dune/common/dynmatrix.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/fmatrix.hh&gt;</code><br />
 <code>#include &lt;dune/xt/common/type_traits.hh&gt;</code><br />
-<code>#include &lt;dune/xt/grid/type_traits.hh&gt;</code><br />
-<code>#include &lt;dune/xt/grid/dd/subdomains/grid.hh&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00236_source.html">dune/gdt/type_traits.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a04546_source.html">dune/gdt/playground/spaces/mapper/block.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a04651_source.html">dune/gdt/spaces/interface.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00206_source.html">dune/gdt/spaces/parallel.hh</a>&gt;</code><br />
+<code>#include &lt;dune/xt/functions/interfaces.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04683_source.html">dune/gdt/local/integrands/interfaces.hh</a>&gt;</code><br />
 </div>
 <p><a href="a00158_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02213.html">Dune::GDT::BlockSpace&lt; LocalSpaceImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02208.html">Dune::GDT::LocalDiffusiveFluxEstimateStarOS2014Integrand&lt; DiffusionFactorType, DiffusionFactorHatType, DiffusionTensorType, DiffusiveFluxType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02217.html">Dune::GDT::internal::BlockSpaceTraits&lt; LocalSpaceType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02212.html">Dune::GDT::internal::LocalDiffusiveFluxEstimateStarOS2014IntegrandTraits&lt; DiffusionFactorType, DiffusionFactorHatType, DiffusionTensorType, DiffusiveFluxType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02213.html">Dune::GDT::BlockSpace&lt; LocalSpaceImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02208.html">Dune::GDT::LocalDiffusiveFluxEstimateStarOS2014Integrand&lt; DiffusionFactorType, DiffusionFactorHatType, DiffusionTensorType, DiffusiveFluxType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00245"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00245.html">Dune</a></td></tr>
+<tr class="memitem:a00248"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00248.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00246"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00246.html">Dune::GDT</a></td></tr>
+<tr class="memitem:a00249"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00249.html">Dune::GDT</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00247"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00247.html">Dune::GDT::internal</a></td></tr>
+<tr class="memitem:a00250"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00250.html">Dune::GDT::internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

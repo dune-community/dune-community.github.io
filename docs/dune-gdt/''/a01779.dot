@@ -1,0 +1,46 @@
+digraph "Dune::GDT::LocalizableOperatorBase&lt; GridLayerImp, SourceImp, RangeImp &gt;"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="Dune::GDT::LocalizableOperator\lBase\< GridLayerImp, SourceImp,\l RangeImp \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="XT::Grid::Walker\< GridLayer\lImp \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Dune::GDT::DirichletProjection\lLocalizableOperator\< GridLayerImp,\l SourceImp, RangeImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02272.html"];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Dune::GDT::L2GlobalProjection\lLocalizableOperator\< GridLayerImp,\l SourceImp, RangeImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02284.html"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Dune::GDT::L2ProjectionLocalizable\lOperator\< GridLayerImp , SourceImp\l , RangeImp  \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02336.html"];
+  Node3 -> Node5 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< GridLayerImp, Reinterpret\lDiscreteFunction\< SourceImp\l \>, RangeImp \>" ,fontname="Helvetica"];
+  Node5 [label="Dune::GDT::L2GlobalProjection\lLocalizableOperator\< GridLayerImp,\l ReinterpretDiscreteFunction\<\l SourceImp \>, RangeImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02284.html"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Dune::GDT::L2GlobalProlongation\lLocalizableOperator\< GridLayerImp,\l SourceImp, RangeImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02368.html"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Dune::GDT::L2Prolongation\lLocalizableOperator\< GridLayer\lImp , SourceImp , RangeImp  \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02404.html"];
+  Node0 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Dune::GDT::L2LocalProjection\lLocalizableOperator\< GridLayerImp,\l SourceImp, RangeImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02304.html"];
+  Node8 -> Node9 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< GridLayerImp, Reinterpret\lDiscreteFunction\< SourceImp\l \>, RangeImp \>" ,fontname="Helvetica"];
+  Node9 [label="Dune::GDT::L2LocalProjection\lLocalizableOperator\< GridLayerImp,\l ReinterpretDiscreteFunction\<\l SourceImp \>, RangeImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02304.html"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Dune::GDT::L2LocalProlongation\lLocalizableOperator\< GridLayerImp,\l SourceImp, RangeImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02380.html",tooltip="Carries out a prolongation (in a localized manner) using a local L2 projection. "];
+  Node0 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Dune::GDT::LagrangeProjection\lLocalizableOperator\< GridLayerImp,\l SourceImp, RangeImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02348.html"];
+  Node11 -> Node12 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< GridLayerImp, Reinterpret\lDiscreteFunction\< SourceImp\l \>, RangeImp \>" ,fontname="Helvetica"];
+  Node12 [label="Dune::GDT::LagrangeProjection\lLocalizableOperator\< GridLayerImp,\l ReinterpretDiscreteFunction\<\l SourceImp \>, RangeImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02348.html"];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="Dune::GDT::LagrangeProlongation\lLocalizableOperator\< GridLayerImp,\l SourceImp, RangeImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02424.html",tooltip="Carries out a prolongation (in a localized manner) using a lagrange projection. "];
+  Node0 -> Node14 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< GridLayer, Source,\l Range \>" ,fontname="Helvetica"];
+  Node14 [label="Dune::GDT::LocalizableOperator\lBase\< GridLayer, Source,\l Range \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01780.html"];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="Dune::GDT::LocalizableDiffusive\lFluxReconstructionOperator\l\< GridLayer, Source, Range,\l dg_method \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01824.html"];
+  Node0 -> Node16 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< GridLayerImp, Reinterpret\lDiscreteFunction\< SourceImp\l \>, RangeImp \>" ,fontname="Helvetica"];
+  Node16 [label="Dune::GDT::LocalizableOperator\lBase\< GridLayerImp, ReinterpretDiscrete\lFunction\< SourceImp \>, RangeImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01780.html"];
+  Node16 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 -> Node17 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< RangeImp::SpaceType\l::GridLayerType, SourceImp,\l RangeImp \>" ,fontname="Helvetica"];
+  Node17 [label="Dune::GDT::LocalizableOperator\lBase\< RangeImp::SpaceType\l::GridLayerType, SourceImp,\l RangeImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01780.html"];
+  Node17 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="Dune::GDT::AdvectionLocalizable\lDefault\< AnalyticalFluxImp,\l NumericalCouplingFluxImp,\l NumericalBoundaryFluxImp, BoundaryValue\lImp, SourceImp, RangeImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01840.html"];
+}

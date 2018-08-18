@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['k_5f0_5f',['k_0_',['../a01133.html#a2aa06c5bf84b3cf9c06f05215071d3b8',1,'Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::PiecewiseMonomials&lt; typename U::DomainFieldType, domainDim, typename U::RangeFieldType, U::dimRange, 1 &gt;, GridLayerImp, U &gt;::Localfunction']]],
-  ['k_5fmax_5f',['k_max_',['../a01133.html#af5fe2c90288eb9b823c4632700349965',1,'Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::PiecewiseMonomials&lt; typename U::DomainFieldType, domainDim, typename U::RangeFieldType, U::dimRange, 1 &gt;, GridLayerImp, U &gt;::Localfunction']]],
-  ['keep',['keep',['../a01121.html#ab3496d4371607caad0257649f5529e54',1,'Dune::GDT::EntropyLocalCache']]],
-  ['kinetic',['kinetic',['../a00246.html#a7d8c92722e087cefba1ac46ec1fa76f0a0f43c03a9e7ebc152cbaae416314ad69',1,'Dune::GDT']]],
-  ['kineticfluximplementation',['KineticFluxImplementation',['../a01237.html',1,'Dune::GDT::internal::KineticFluxImplementation&lt; Traits &gt;'],['../a01237.html#ac4e64b1cf5e694c86c66eca44bc3034e',1,'Dune::GDT::internal::KineticFluxImplementation::KineticFluxImplementation()']]],
-  ['kineticlocalnumericalboundaryflux',['KineticLocalNumericalBoundaryFlux',['../a01225.html',1,'Dune::GDT::KineticLocalNumericalBoundaryFlux&lt; AnalyticalFluxImp, BoundaryValueImp, BasisfunctionImp, GridLayerImp, Traits &gt;'],['../a01225.html#aacc26e131f20ec68721eed07f3bb2381',1,'Dune::GDT::KineticLocalNumericalBoundaryFlux::KineticLocalNumericalBoundaryFlux()']]],
-  ['kineticlocalnumericalboundaryfluxtraits',['KineticLocalNumericalBoundaryFluxTraits',['../a01233.html',1,'Dune::GDT::internal']]],
-  ['kineticlocalnumericalcouplingflux',['KineticLocalNumericalCouplingFlux',['../a01221.html',1,'Dune::GDT::KineticLocalNumericalCouplingFlux&lt; AnalyticalFluxImp, BasisfunctionImp, GridLayerImp, Traits &gt;'],['../a01221.html#a6614dff59400c084f8f8d3589e955d91',1,'Dune::GDT::KineticLocalNumericalCouplingFlux::KineticLocalNumericalCouplingFlux()']]],
-  ['kineticlocalnumericalcouplingfluxtraits',['KineticLocalNumericalCouplingFluxTraits',['../a01229.html',1,'Dune::GDT::internal']]]
+  ['k_5f0_5f',['k_0_',['../a01136.html#a2aa06c5bf84b3cf9c06f05215071d3b8',1,'Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::PiecewiseMonomials&lt; typename U::DomainFieldType, domainDim, typename U::RangeFieldType, U::dimRange, 1 &gt;, GridLayerImp, U &gt;::Localfunction']]],
+  ['k_5fmax_5f',['k_max_',['../a01136.html#af5fe2c90288eb9b823c4632700349965',1,'Dune::GDT::EntropyBasedLocalFlux&lt; Hyperbolic::Problems::PiecewiseMonomials&lt; typename U::DomainFieldType, domainDim, typename U::RangeFieldType, U::dimRange, 1 &gt;, GridLayerImp, U &gt;::Localfunction']]],
+  ['keep',['keep',['../a01124.html#ab3496d4371607caad0257649f5529e54',1,'Dune::GDT::EntropyLocalCache']]],
+  ['kinetic',['kinetic',['../a00249.html#a7d8c92722e087cefba1ac46ec1fa76f0a0f43c03a9e7ebc152cbaae416314ad69',1,'Dune::GDT']]],
+  ['kineticfluximplementation',['KineticFluxImplementation',['../a01240.html',1,'Dune::GDT::internal::KineticFluxImplementation&lt; Traits &gt;'],['../a01240.html#ac4e64b1cf5e694c86c66eca44bc3034e',1,'Dune::GDT::internal::KineticFluxImplementation::KineticFluxImplementation()']]],
+  ['kineticlocalnumericalboundaryflux',['KineticLocalNumericalBoundaryFlux',['../a01228.html',1,'Dune::GDT::KineticLocalNumericalBoundaryFlux&lt; AnalyticalFluxImp, BoundaryValueImp, BasisfunctionImp, GridLayerImp, Traits &gt;'],['../a01228.html#aacc26e131f20ec68721eed07f3bb2381',1,'Dune::GDT::KineticLocalNumericalBoundaryFlux::KineticLocalNumericalBoundaryFlux()']]],
+  ['kineticlocalnumericalboundaryfluxtraits',['KineticLocalNumericalBoundaryFluxTraits',['../a01236.html',1,'Dune::GDT::internal']]],
+  ['kineticlocalnumericalcouplingflux',['KineticLocalNumericalCouplingFlux',['../a01224.html',1,'Dune::GDT::KineticLocalNumericalCouplingFlux&lt; AnalyticalFluxImp, BasisfunctionImp, GridLayerImp, Traits &gt;'],['../a01224.html#a6614dff59400c084f8f8d3589e955d91',1,'Dune::GDT::KineticLocalNumericalCouplingFlux::KineticLocalNumericalCouplingFlux()']]],
+  ['kineticlocalnumericalcouplingfluxtraits',['KineticLocalNumericalCouplingFluxTraits',['../a01232.html',1,'Dune::GDT::internal']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: linear.hh File Reference</title>
+<title>dune-gdt: internal.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,67 +68,56 @@ $(function() {
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">linear.hh File Reference</div>  </div>
+<div class="title">internal.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;boost/multi_array.hpp&gt;</code><br />
-<code>#include &lt;dune/geometry/quadraturerules.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/debug.hh&gt;</code><br />
 <code>#include &lt;dune/xt/common/fvector.hh&gt;</code><br />
 <code>#include &lt;dune/xt/common/lapacke.hh&gt;</code><br />
-<code>#include &lt;dune/xt/common/parallel/threadstorage.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/matrix.hh&gt;</code><br />
 <code>#include &lt;dune/xt/common/parameter.hh&gt;</code><br />
-<code>#include &lt;dune/xt/grid/walker.hh&gt;</code><br />
 <code>#include &lt;dune/xt/la/algorithms/qr.hh&gt;</code><br />
 <code>#include &lt;dune/xt/la/eigen-solver.hh&gt;</code><br />
-<code>#include &lt;<a class="el" href="a04678_source.html">dune/gdt/operators/interfaces.hh</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="a00128_source.html">../quadrature.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00134_source.html">reconstructed_function.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00137_source.html">slopes.hh</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="a04689_source.html">dune/gdt/operators/interfaces.hh</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00140_source.html">slopes.hh</a>&quot;</code><br />
 </div>
 <p><a href="a00131_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01997.html">Dune::GDT::internal::JacobianWrapperBase&lt; AnalyticalFluxType, MatrixImp, VectorImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02000.html">Dune::GDT::internal::JacobianWrapperBase&lt; AnalyticalFluxType, MatrixImp, VectorImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02001.html">Dune::GDT::internal::JacobianWrapper&lt; AnalyticalFluxType, MatrixType, VectorType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02004.html">Dune::GDT::internal::JacobianWrapper&lt; AnalyticalFluxType, MatrixType, VectorType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02005.html">Dune::GDT::internal::BlockedJacobianWrapper&lt; AnalyticalFluxType, block_size &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02008.html">Dune::GDT::internal::BlockedJacobianWrapper&lt; AnalyticalFluxType, block_size &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02009.html">Dune::GDT::MultiIndexIterator&lt; MultiArrayType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02012.html">Dune::GDT::internal::MultiIndexIterator&lt; MultiArrayType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02013.html">Dune::GDT::MultiIndexProvider&lt; MultiArrayType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02016.html">Dune::GDT::internal::MultiIndexProvider&lt; MultiArrayType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02017.html">Dune::GDT::IndicesBuilder&lt; RangeArrayType, num_ranges, dimension &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02020.html">Dune::GDT::internal::IndicesBuilder&lt; RangeArrayType, num_ranges, dimension &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02021.html">Dune::GDT::IndicesBuilder&lt; RangeArrayType, 0, dimension &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02024.html">Dune::GDT::internal::IndicesBuilder&lt; RangeArrayType, 0, dimension &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02025.html">Dune::GDT::Slice&lt; RangeType, dimDomain &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02028.html">Dune::GDT::internal::Slice&lt; RangeType, dimDomain &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02029.html">Dune::GDT::Slice&lt; RangeType, 1 &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02033.html">Dune::GDT::LocalLinearReconstructionOperator&lt; AnalyticalFluxType, BoundaryValueType, GridLayerType, JacobianWrapperType &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02037.html">Dune::GDT::LinearReconstructionOperator&lt; AnalyticalFluxImp, BoundaryValueImp, JacobianWrapperImp, Traits &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02041.html">Dune::GDT::internal::LinearReconstructionOperatorTraits&lt; AnalyticalFluxImp, BoundaryValueImp, JacobianWrapperImp &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02037.html">Dune::GDT::LinearReconstructionOperator&lt; AnalyticalFluxImp, BoundaryValueImp, JacobianWrapperImp, Traits &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02032.html">Dune::GDT::internal::Slice&lt; RangeType, 1 &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00245"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00245.html">Dune</a></td></tr>
+<tr class="memitem:a00248"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00248.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00246"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00246.html">Dune::GDT</a></td></tr>
+<tr class="memitem:a00249"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00249.html">Dune::GDT</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00247"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00247.html">Dune::GDT::internal</a></td></tr>
+<tr class="memitem:a00250"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00250.html">Dune::GDT::internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aef0da9150f7cb454b103c26037541d75"><td class="memTemplParams" colspan="2">template&lt;class MatImp &gt; </td></tr>
-<tr class="memitem:aef0da9150f7cb454b103c26037541d75"><td class="memTemplItemLeft" align="right" valign="top">XT::Common::Configuration&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00247.html#aef0da9150f7cb454b103c26037541d75">Dune::GDT::internal::hyperbolic_default_eigensolver_options</a> ()</td></tr>
+<tr class="memitem:aef0da9150f7cb454b103c26037541d75"><td class="memTemplItemLeft" align="right" valign="top">XT::Common::Configuration&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00250.html#aef0da9150f7cb454b103c26037541d75">Dune::GDT::internal::hyperbolic_default_eigensolver_options</a> ()</td></tr>
 <tr class="separator:aef0da9150f7cb454b103c26037541d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
