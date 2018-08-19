@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::DiffusiveFluxReconstructionOperator&lt; GridLayerType, LocalizableFunctionType, void, method &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::DiffusiveFluxReconstructionOperator&lt; GridLayerType, DiffusionFactorType, DiffusionTensorType, method &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a01832.html">DiffusiveFluxReconstructionOperator&lt; GridLayerType, LocalizableFunctionType, void, method &gt;</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a01832.html">DiffusiveFluxReconstructionOperator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -69,7 +69,7 @@ $(function() {
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="a01829.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::DiffusiveFluxReconstructionOperator&lt; GridLayerType, LocalizableFunctionType, void, method &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::DiffusiveFluxReconstructionOperator&lt; GridLayerType, DiffusionFactorType, DiffusionTensorType, method &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -77,94 +77,87 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a70bdf40dd13d85cb40e8ffbbeac97efb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01832.html#a70bdf40dd13d85cb40e8ffbbeac97efb">EntityType</a> = XT::Grid::extract_entity_t&lt; GridLayerType &gt;</td></tr>
-<tr class="separator:a70bdf40dd13d85cb40e8ffbbeac97efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad906c1ae1b5409003e9975dd3141d66"><td class="memItemLeft" align="right" valign="top">typedef GridLayerType::ctype&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01832.html#aad906c1ae1b5409003e9975dd3141d66">DomainFieldType</a></td></tr>
-<tr class="separator:aad906c1ae1b5409003e9975dd3141d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56d28dd148c0d090fe4931dce389dc96"><td class="memItemLeft" align="right" valign="top">typedef LocalizableFunctionType::RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01832.html#a56d28dd148c0d090fe4931dce389dc96">FieldType</a></td></tr>
-<tr class="separator:a56d28dd148c0d090fe4931dce389dc96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7603d89b812725aa3e27202350a84e0e"><td class="memItemLeft" align="right" valign="top">typedef LocalizableFunctionType::DomainType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01832.html#a7603d89b812725aa3e27202350a84e0e">DomainType</a></td></tr>
-<tr class="separator:a7603d89b812725aa3e27202350a84e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25704906abc98f665c5f27418536b5a2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01832.html#a25704906abc98f665c5f27418536b5a2">EntityType</a> = XT::Grid::extract_entity_t&lt; GridLayerType &gt;</td></tr>
+<tr class="separator:a25704906abc98f665c5f27418536b5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a889235f59b57d3d61675837f07b20bd1"><td class="memItemLeft" align="right" valign="top">typedef GridLayerType::ctype&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01832.html#a889235f59b57d3d61675837f07b20bd1">DomainFieldType</a></td></tr>
+<tr class="separator:a889235f59b57d3d61675837f07b20bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf85091f05f88ceb2701f7fd06d703cc"><td class="memItemLeft" align="right" valign="top">typedef DiffusionFactorType::RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01832.html#acf85091f05f88ceb2701f7fd06d703cc">FieldType</a></td></tr>
+<tr class="separator:acf85091f05f88ceb2701f7fd06d703cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1291a7de81b08d656ecd2a8ca9082db6"><td class="memItemLeft" align="right" valign="top">typedef DiffusionFactorType::DomainType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01832.html#a1291a7de81b08d656ecd2a8ca9082db6">DomainType</a></td></tr>
+<tr class="separator:a1291a7de81b08d656ecd2a8ca9082db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac9ecc1eb3cb8c2f313a62b57afc76b4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01832.html#ac9ecc1eb3cb8c2f313a62b57afc76b4a">DiffusiveFluxReconstructionOperator</a> (const GridLayerType &amp;grid_layer, const LocalizableFunctionType &amp;diffusion, const size_t over_integrate=0)</td></tr>
-<tr class="separator:ac9ecc1eb3cb8c2f313a62b57afc76b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a112aa739ba0797434d79d310bf89be16"><td class="memTemplParams" colspan="2">template&lt;class GL , class V &gt; </td></tr>
-<tr class="memitem:a112aa739ba0797434d79d310bf89be16"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01832.html#a112aa739ba0797434d79d310bf89be16">apply</a> (const XT::Functions::LocalizableFunctionInterface&lt; <a class="el" href="a01832.html#a70bdf40dd13d85cb40e8ffbbeac97efb">EntityType</a>, <a class="el" href="a01832.html#aad906c1ae1b5409003e9975dd3141d66">DomainFieldType</a>, <a class="el" href="a01832.html#a124e21379751be48503bf61a875945f4">dimDomain</a>, <a class="el" href="a01832.html#a56d28dd148c0d090fe4931dce389dc96">FieldType</a>, 1 &gt; &amp;source, <a class="el" href="a00940.html">DiscreteFunction</a>&lt; <a class="el" href="a02888.html">RaviartThomasSpace</a>&lt; GL, 0, <a class="el" href="a01832.html#a56d28dd148c0d090fe4931dce389dc96">FieldType</a> &gt;, V &gt; &amp;range) const</td></tr>
-<tr class="separator:a112aa739ba0797434d79d310bf89be16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a660dce242eabf5f5e3196ee0458f6b1d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01832.html#a660dce242eabf5f5e3196ee0458f6b1d">DiffusiveFluxReconstructionOperator</a> (const GridLayerType &amp;grid_layer, const DiffusionFactorType &amp;diffusion_factor, const DiffusionTensorType &amp;diffusion_tensor, const size_t over_integrate=0)</td></tr>
+<tr class="separator:a660dce242eabf5f5e3196ee0458f6b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f2427783f3e298b261c678f2b11742a"><td class="memTemplParams" colspan="2">template&lt;class GL , class V &gt; </td></tr>
+<tr class="memitem:a3f2427783f3e298b261c678f2b11742a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01832.html#a3f2427783f3e298b261c678f2b11742a">apply</a> (const XT::Functions::LocalizableFunctionInterface&lt; <a class="el" href="a01832.html#a25704906abc98f665c5f27418536b5a2">EntityType</a>, <a class="el" href="a01832.html#a889235f59b57d3d61675837f07b20bd1">DomainFieldType</a>, <a class="el" href="a01832.html#abb0071d8f0e79c7510c468a3da69cb07">dimDomain</a>, <a class="el" href="a01832.html#acf85091f05f88ceb2701f7fd06d703cc">FieldType</a>, 1 &gt; &amp;source, <a class="el" href="a00940.html">DiscreteFunction</a>&lt; <a class="el" href="a02892.html">RaviartThomasSpace</a>&lt; GL, 0, <a class="el" href="a01832.html#acf85091f05f88ceb2701f7fd06d703cc">FieldType</a> &gt;, V &gt; &amp;range) const</td></tr>
+<tr class="separator:a3f2427783f3e298b261c678f2b11742a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a124e21379751be48503bf61a875945f4"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01832.html#a124e21379751be48503bf61a875945f4">dimDomain</a> = GridLayerType::dimension</td></tr>
-<tr class="separator:a124e21379751be48503bf61a875945f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb0071d8f0e79c7510c468a3da69cb07"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01832.html#abb0071d8f0e79c7510c468a3da69cb07">dimDomain</a> = GridLayerType::dimension</td></tr>
+<tr class="separator:abb0071d8f0e79c7510c468a3da69cb07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class GridLayerType, class LocalizableFunctionType, LocalEllipticIpdgIntegrands::Method method&gt;<br />
-class Dune::GDT::DiffusiveFluxReconstructionOperator&lt; GridLayerType, LocalizableFunctionType, void, method &gt;</h3>
-
-<dl class="todo"><dt><b><a class="el" href="a00242.html#_todo000029">Todo:</a></b></dt><dd><p class="startdd">Add more static checks that GridLayerType and LocalizableFunctionType match. </p>
-<p class="enddd">Derive from operator interfaces. </p>
-</dd></dl>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="aad906c1ae1b5409003e9975dd3141d66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad906c1ae1b5409003e9975dd3141d66">&#9670;&nbsp;</a></span>DomainFieldType</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a889235f59b57d3d61675837f07b20bd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a889235f59b57d3d61675837f07b20bd1">&#9670;&nbsp;</a></span>DomainFieldType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GridLayerType , class LocalizableFunctionType , LocalEllipticIpdgIntegrands::Method method&gt; </div>
+template&lt;class GridLayerType, class DiffusionFactorType, class DiffusionTensorType, LocalEllipticIpdgIntegrands::Method method&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef GridLayerType::ctype <a class="el" href="a01828.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, LocalizableFunctionType, void, method &gt;::<a class="el" href="a01832.html#aad906c1ae1b5409003e9975dd3141d66">DomainFieldType</a></td>
+          <td class="memname">typedef GridLayerType::ctype <a class="el" href="a01832.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, DiffusionFactorType, DiffusionTensorType, method &gt;::<a class="el" href="a01832.html#a889235f59b57d3d61675837f07b20bd1">DomainFieldType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a7603d89b812725aa3e27202350a84e0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7603d89b812725aa3e27202350a84e0e">&#9670;&nbsp;</a></span>DomainType</h2>
+<a id="a1291a7de81b08d656ecd2a8ca9082db6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1291a7de81b08d656ecd2a8ca9082db6">&#9670;&nbsp;</a></span>DomainType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GridLayerType , class LocalizableFunctionType , LocalEllipticIpdgIntegrands::Method method&gt; </div>
+template&lt;class GridLayerType, class DiffusionFactorType, class DiffusionTensorType, LocalEllipticIpdgIntegrands::Method method&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef LocalizableFunctionType::DomainType <a class="el" href="a01828.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, LocalizableFunctionType, void, method &gt;::<a class="el" href="a01832.html#a7603d89b812725aa3e27202350a84e0e">DomainType</a></td>
+          <td class="memname">typedef DiffusionFactorType::DomainType <a class="el" href="a01832.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, DiffusionFactorType, DiffusionTensorType, method &gt;::<a class="el" href="a01832.html#a1291a7de81b08d656ecd2a8ca9082db6">DomainType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a70bdf40dd13d85cb40e8ffbbeac97efb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70bdf40dd13d85cb40e8ffbbeac97efb">&#9670;&nbsp;</a></span>EntityType</h2>
+<a id="a25704906abc98f665c5f27418536b5a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25704906abc98f665c5f27418536b5a2">&#9670;&nbsp;</a></span>EntityType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GridLayerType , class LocalizableFunctionType , LocalEllipticIpdgIntegrands::Method method&gt; </div>
+template&lt;class GridLayerType, class DiffusionFactorType, class DiffusionTensorType, LocalEllipticIpdgIntegrands::Method method&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01828.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, LocalizableFunctionType, void, method &gt;::<a class="el" href="a01832.html#a70bdf40dd13d85cb40e8ffbbeac97efb">EntityType</a> =  XT::Grid::extract_entity_t&lt;GridLayerType&gt;</td>
+          <td class="memname">using <a class="el" href="a01832.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, DiffusionFactorType, DiffusionTensorType, method &gt;::<a class="el" href="a01832.html#a25704906abc98f665c5f27418536b5a2">EntityType</a> =  XT::Grid::extract_entity_t&lt;GridLayerType&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a56d28dd148c0d090fe4931dce389dc96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56d28dd148c0d090fe4931dce389dc96">&#9670;&nbsp;</a></span>FieldType</h2>
+<a id="acf85091f05f88ceb2701f7fd06d703cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf85091f05f88ceb2701f7fd06d703cc">&#9670;&nbsp;</a></span>FieldType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GridLayerType , class LocalizableFunctionType , LocalEllipticIpdgIntegrands::Method method&gt; </div>
+template&lt;class GridLayerType, class DiffusionFactorType, class DiffusionTensorType, LocalEllipticIpdgIntegrands::Method method&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef LocalizableFunctionType::RangeFieldType <a class="el" href="a01828.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, LocalizableFunctionType, void, method &gt;::<a class="el" href="a01832.html#a56d28dd148c0d090fe4931dce389dc96">FieldType</a></td>
+          <td class="memname">typedef DiffusionFactorType::RangeFieldType <a class="el" href="a01832.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, DiffusionFactorType, DiffusionTensorType, method &gt;::<a class="el" href="a01832.html#acf85091f05f88ceb2701f7fd06d703cc">FieldType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -172,19 +165,19 @@ template&lt;class GridLayerType , class LocalizableFunctionType , LocalEllipticI
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ac9ecc1eb3cb8c2f313a62b57afc76b4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9ecc1eb3cb8c2f313a62b57afc76b4a">&#9670;&nbsp;</a></span>DiffusiveFluxReconstructionOperator()</h2>
+<a id="a660dce242eabf5f5e3196ee0458f6b1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a660dce242eabf5f5e3196ee0458f6b1d">&#9670;&nbsp;</a></span>DiffusiveFluxReconstructionOperator()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GridLayerType , class LocalizableFunctionType , LocalEllipticIpdgIntegrands::Method method&gt; </div>
+template&lt;class GridLayerType, class DiffusionFactorType, class DiffusionTensorType, LocalEllipticIpdgIntegrands::Method method&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a01828.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, LocalizableFunctionType, void, method &gt;::<a class="el" href="a01828.html">DiffusiveFluxReconstructionOperator</a> </td>
+          <td class="memname"><a class="el" href="a01832.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, DiffusionFactorType, DiffusionTensorType, method &gt;::<a class="el" href="a01832.html">DiffusiveFluxReconstructionOperator</a> </td>
           <td>(</td>
           <td class="paramtype">const GridLayerType &amp;&#160;</td>
           <td class="paramname"><em>grid_layer</em>, </td>
@@ -192,8 +185,14 @@ template&lt;class GridLayerType , class LocalizableFunctionType , LocalEllipticI
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const LocalizableFunctionType &amp;&#160;</td>
-          <td class="paramname"><em>diffusion</em>, </td>
+          <td class="paramtype">const DiffusionFactorType &amp;&#160;</td>
+          <td class="paramname"><em>diffusion_factor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DiffusionTensorType &amp;&#160;</td>
+          <td class="paramname"><em>diffusion_tensor</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -217,13 +216,13 @@ template&lt;class GridLayerType , class LocalizableFunctionType , LocalEllipticI
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a112aa739ba0797434d79d310bf89be16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a112aa739ba0797434d79d310bf89be16">&#9670;&nbsp;</a></span>apply()</h2>
+<a id="a3f2427783f3e298b261c678f2b11742a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f2427783f3e298b261c678f2b11742a">&#9670;&nbsp;</a></span>apply()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GridLayerType , class LocalizableFunctionType , LocalEllipticIpdgIntegrands::Method method&gt; </div>
+template&lt;class GridLayerType, class DiffusionFactorType, class DiffusionTensorType, LocalEllipticIpdgIntegrands::Method method&gt; </div>
 <div class="memtemplate">
 template&lt;class GL , class V &gt; </div>
 <table class="mlabels">
@@ -231,15 +230,15 @@ template&lt;class GL , class V &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a01828.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, LocalizableFunctionType, void, method &gt;::apply </td>
+          <td class="memname">void <a class="el" href="a01832.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, DiffusionFactorType, DiffusionTensorType, method &gt;::apply </td>
           <td>(</td>
-          <td class="paramtype">const XT::Functions::LocalizableFunctionInterface&lt; <a class="el" href="a01832.html#a70bdf40dd13d85cb40e8ffbbeac97efb">EntityType</a>, <a class="el" href="a01832.html#aad906c1ae1b5409003e9975dd3141d66">DomainFieldType</a>, <a class="el" href="a01832.html#a124e21379751be48503bf61a875945f4">dimDomain</a>, <a class="el" href="a01832.html#a56d28dd148c0d090fe4931dce389dc96">FieldType</a>, 1 &gt; &amp;&#160;</td>
+          <td class="paramtype">const XT::Functions::LocalizableFunctionInterface&lt; <a class="el" href="a01832.html#a25704906abc98f665c5f27418536b5a2">EntityType</a>, <a class="el" href="a01832.html#a889235f59b57d3d61675837f07b20bd1">DomainFieldType</a>, <a class="el" href="a01832.html#abb0071d8f0e79c7510c468a3da69cb07">dimDomain</a>, <a class="el" href="a01832.html#acf85091f05f88ceb2701f7fd06d703cc">FieldType</a>, 1 &gt; &amp;&#160;</td>
           <td class="paramname"><em>source</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00940.html">DiscreteFunction</a>&lt; <a class="el" href="a02888.html">RaviartThomasSpace</a>&lt; GL, 0, <a class="el" href="a01832.html#a56d28dd148c0d090fe4931dce389dc96">FieldType</a> &gt;, V &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="a00940.html">DiscreteFunction</a>&lt; <a class="el" href="a02892.html">RaviartThomasSpace</a>&lt; GL, 0, <a class="el" href="a01832.html#acf85091f05f88ceb2701f7fd06d703cc">FieldType</a> &gt;, V &gt; &amp;&#160;</td>
           <td class="paramname"><em>range</em>&#160;</td>
         </tr>
         <tr>
@@ -258,19 +257,19 @@ template&lt;class GL , class V &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a124e21379751be48503bf61a875945f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a124e21379751be48503bf61a875945f4">&#9670;&nbsp;</a></span>dimDomain</h2>
+<a id="abb0071d8f0e79c7510c468a3da69cb07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb0071d8f0e79c7510c468a3da69cb07">&#9670;&nbsp;</a></span>dimDomain</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GridLayerType , class LocalizableFunctionType , LocalEllipticIpdgIntegrands::Method method&gt; </div>
+template&lt;class GridLayerType, class DiffusionFactorType, class DiffusionTensorType, LocalEllipticIpdgIntegrands::Method method&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t <a class="el" href="a01828.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, LocalizableFunctionType, void, method &gt;::dimDomain = GridLayerType::dimension</td>
+          <td class="memname">const size_t <a class="el" href="a01832.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, DiffusionFactorType, DiffusionTensorType, method &gt;::dimDomain = GridLayerType::dimension</td>
         </tr>
       </table>
   </td>

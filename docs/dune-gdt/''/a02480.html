@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::BaseFunctionSet::internal::ProductDefaultTraits&lt; BaseFunctionSetImps &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::BaseFunctionSet::internal::DynamicTupleGetter&lt; I &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,80 +59,59 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a00255.html">BaseFunctionSet</a></li><li class="navelem"><a class="el" href="a00256.html">internal</a></li><li class="navelem"><a class="el" href="a02480.html">ProductDefaultTraits</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a00255.html">BaseFunctionSet</a></li><li class="navelem"><a class="el" href="a00256.html">internal</a></li><li class="navelem"><a class="el" href="a02480.html">DynamicTupleGetter</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a02477.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::BaseFunctionSet::internal::ProductDefaultTraits&lt; BaseFunctionSetImps &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::BaseFunctionSet::internal::DynamicTupleGetter&lt; I &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a04758_source.html">dune/gdt/spaces/basefunctionset/product.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a04762_source.html">dune/gdt/spaces/basefunctionset/product.hh</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a8dd6ab14b19605eb06a82f8b6c7b8c4e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02456.html">ProductDefault</a>&lt; BaseFunctionSetImps... &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02480.html#a8dd6ab14b19605eb06a82f8b6c7b8c4e">derived_type</a></td></tr>
-<tr class="separator:a8dd6ab14b19605eb06a82f8b6c7b8c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a0bb1bf2b1ff4204329b6dc336791e4"><td class="memItemLeft" align="right" valign="top">typedef double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02480.html#a8a0bb1bf2b1ff4204329b6dc336791e4">BackendType</a></td></tr>
-<tr class="separator:a8a0bb1bf2b1ff4204329b6dc336791e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd5399473c1b99a728494202fc8b465a"><td class="memItemLeft" align="right" valign="top">typedef XT::Common::tuple_element&lt; 0, std::tuple&lt; BaseFunctionSetImps... &gt; &gt;::type::EntityType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02480.html#abd5399473c1b99a728494202fc8b465a">EntityType</a></td></tr>
-<tr class="separator:abd5399473c1b99a728494202fc8b465a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ac029de07a86383198a839ed5d649793e"><td class="memTemplParams" colspan="2">template&lt;typename... TupleArgs&gt; </td></tr>
+<tr class="memitem:ac029de07a86383198a839ed5d649793e"><td class="memTemplItemLeft" align="right" valign="top">static std::enable_if&lt; I==sizeof...(TupleArgs), size_t &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02480.html#ac029de07a86383198a839ed5d649793e">sumSize</a> (const std::tuple&lt; TupleArgs... &gt; &amp;)</td></tr>
+<tr class="separator:ac029de07a86383198a839ed5d649793e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a8a0bb1bf2b1ff4204329b6dc336791e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a0bb1bf2b1ff4204329b6dc336791e4">&#9670;&nbsp;</a></span>BackendType</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac029de07a86383198a839ed5d649793e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac029de07a86383198a839ed5d649793e">&#9670;&nbsp;</a></span>sumSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class... BaseFunctionSetImps&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef double <a class="el" href="a02480.html">Dune::GDT::BaseFunctionSet::internal::ProductDefaultTraits</a>&lt; BaseFunctionSetImps &gt;::<a class="el" href="a02480.html#a8a0bb1bf2b1ff4204329b6dc336791e4">BackendType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8dd6ab14b19605eb06a82f8b6c7b8c4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8dd6ab14b19605eb06a82f8b6c7b8c4e">&#9670;&nbsp;</a></span>derived_type</h2>
-
-<div class="memitem">
-<div class="memproto">
+template&lt;size_t I = 0&gt; </div>
 <div class="memtemplate">
-template&lt;class... BaseFunctionSetImps&gt; </div>
+template&lt;typename... TupleArgs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a02456.html">ProductDefault</a>&lt;BaseFunctionSetImps...&gt; <a class="el" href="a02480.html">Dune::GDT::BaseFunctionSet::internal::ProductDefaultTraits</a>&lt; BaseFunctionSetImps &gt;::<a class="el" href="a02480.html#a8dd6ab14b19605eb06a82f8b6c7b8c4e">derived_type</a></td>
+          <td class="memname">static std::enable_if&lt;I == sizeof...(TupleArgs), size_t&gt;::type <a class="el" href="a02480.html">Dune::GDT::BaseFunctionSet::internal::DynamicTupleGetter</a>&lt; I &gt;::sumSize </td>
+          <td>(</td>
+          <td class="paramtype">const std::tuple&lt; TupleArgs... &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="abd5399473c1b99a728494202fc8b465a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd5399473c1b99a728494202fc8b465a">&#9670;&nbsp;</a></span>EntityType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class... BaseFunctionSetImps&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef XT::Common::tuple_element&lt;0, std::tuple&lt;BaseFunctionSetImps...&gt; &gt;::type::EntityType <a class="el" href="a02480.html">Dune::GDT::BaseFunctionSet::internal::ProductDefaultTraits</a>&lt; BaseFunctionSetImps &gt;::<a class="el" href="a02480.html#abd5399473c1b99a728494202fc8b465a">EntityType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a04758_source.html">spaces/basefunctionset/product.hh</a></li>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="a04762_source.html">spaces/basefunctionset/product.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

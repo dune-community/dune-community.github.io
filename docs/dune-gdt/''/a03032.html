@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::TimeStepperFactory&lt; OperatorImp, DiscreteFunctionImp, method &gt; Struct Template Reference</title>
+<title>dune-gdt: Dune::GDT::ExplicitRungeKuttaTimeStepper&lt; OperatorImp, DiscreteFunctionImp, method &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,107 +59,527 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a03032.html">TimeStepperFactory</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a03032.html">ExplicitRungeKuttaTimeStepper</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="a03029.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::TimeStepperFactory&lt; OperatorImp, DiscreteFunctionImp, method &gt; Struct Template Reference</div>  </div>
+<div class="title">Dune::GDT::ExplicitRungeKuttaTimeStepper&lt; OperatorImp, DiscreteFunctionImp, method &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00227_source.html">dune/gdt/timestepper/factory.hh</a>&gt;</code></p>
+<p>Time stepper using Runge Kutta methods.  
+ <a href="a03032.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00224_source.html">dune/gdt/timestepper/explicit-rungekutta.hh</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Dune::GDT::ExplicitRungeKuttaTimeStepper&lt; OperatorImp, DiscreteFunctionImp, method &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="a03031.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_explicit_runge_kutta_time_stepper_3_01_operator_imp_00_01_discrete_function_imp_00_01method_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_explicit_runge_kutta_time_stepper_3_01_operator_imp_00_01_discrete_function_imp_00_01method_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_explicit_runge_kutta_time_stepper_3_01_operator_imp_00_01_discrete_function_imp_00_01method_01_4_inherit__map">
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a246a8a4ebc075296f79da8b448ac7e7c"><td class="memItemLeft" align="right" valign="top">typedef DiscreteFunctionImp::RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03032.html#a246a8a4ebc075296f79da8b448ac7e7c">RangeFieldType</a></td></tr>
-<tr class="separator:a246a8a4ebc075296f79da8b448ac7e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23838486d68b2ce594ac4d119420420c"><td class="memItemLeft" align="right" valign="top">typedef std::conditional&lt; method==<a class="el" href="a00249.html#a0a7e45c07c804e026c31fb0b86b7eb69a6715245f54e8e2e94ddb3a731ccbdf10">TimeStepperMethods::bogacki_shampine</a>||method==<a class="el" href="a00249.html#a0a7e45c07c804e026c31fb0b86b7eb69a696a706c4054d122f1275e54d1bc69c0">TimeStepperMethods::dormand_prince</a>||method==<a class="el" href="a00249.html#a0a7e45c07c804e026c31fb0b86b7eb69ac97e4d5c331a2936e04feb034fc4f787">TimeStepperMethods::adaptive_rungekutta_other</a>, typename <a class="el" href="a03000.html">Dune::GDT::AdaptiveRungeKuttaTimeStepper</a>&lt; OperatorImp, DiscreteFunctionImp, method &gt;, typename std::conditional&lt; method==<a class="el" href="a00249.html#a0a7e45c07c804e026c31fb0b86b7eb69ae9e3a7543796e9e0256a12f6dd5d4ecd">TimeStepperMethods::implicit_euler</a>||method==<a class="el" href="a00249.html#a0a7e45c07c804e026c31fb0b86b7eb69ab84a8ef36b79ee75983435cd9b3de48c">TimeStepperMethods::implicit_midpoint</a>||method==<a class="el" href="a00249.html#a0a7e45c07c804e026c31fb0b86b7eb69a73c714ae3da44202127a7306c3efdebe">TimeStepperMethods::trapezoidal_rule</a>, typename <a class="el" href="a03060.html">Dune::GDT::DiagonallyImplicitRungeKuttaTimeStepper</a>&lt; OperatorImp, DiscreteFunctionImp, method &gt;, typename std::conditional&lt; method==<a class="el" href="a00249.html#a0a7e45c07c804e026c31fb0b86b7eb69ae027c8edf587abe07bb3a0a3bfa154b6">TimeStepperMethods::matrix_exponential</a>, typename <a class="el" href="a03076.html">Dune::GDT::MatrixExponentialTimeStepper</a>&lt; OperatorImp, DiscreteFunctionImp &gt;, typename <a class="el" href="a03028.html">Dune::GDT::ExplicitRungeKuttaTimeStepper</a>&lt; OperatorImp, DiscreteFunctionImp, method &gt; &gt;::type &gt;::type &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03032.html#a23838486d68b2ce594ac4d119420420c">TimeStepperType</a></td></tr>
-<tr class="separator:a23838486d68b2ce594ac4d119420420c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae438b85cc5fdd0aa0131596921e5df0c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03032.html#ae438b85cc5fdd0aa0131596921e5df0c">OperatorType</a> = OperatorImp</td></tr>
+<tr class="separator:ae438b85cc5fdd0aa0131596921e5df0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d17f0ec2f27117e22e594d4239d61ed"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03032.html#a3d17f0ec2f27117e22e594d4239d61ed">MatrixType</a> = Dune::DynamicMatrix&lt; <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> &gt;</td></tr>
+<tr class="separator:a3d17f0ec2f27117e22e594d4239d61ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fc3299c213f237768b5f9cf5178930a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03032.html#a4fc3299c213f237768b5f9cf5178930a">VectorType</a> = Dune::DynamicVector&lt; <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> &gt;</td></tr>
+<tr class="separator:a4fc3299c213f237768b5f9cf5178930a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e97a70601c13e08bf664ad7bb0f0fdb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03032.html#a9e97a70601c13e08bf664ad7bb0f0fdb">DiscreteFunctionType</a> = DiscreteFunctionImp</td></tr>
+<tr class="separator:a9e97a70601c13e08bf664ad7bb0f0fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd36c78a57b39737431145c68b549921"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03032.html#abd36c78a57b39737431145c68b549921">DomainFieldType</a> = typename DiscreteFunctionType::DomainFieldType</td></tr>
+<tr class="separator:abd36c78a57b39737431145c68b549921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31fca11388bf5417599006e77d30705e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> = typename DiscreteFunctionType::RangeFieldType</td></tr>
+<tr class="separator:a31fca11388bf5417599006e77d30705e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1e798ee7344703a8b84304a5174df92"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03032.html#ad1e798ee7344703a8b84304a5174df92">DiscreteSolutionType</a> = typename std::map&lt; <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>, <a class="el" href="a03032.html#a9e97a70601c13e08bf664ad7bb0f0fdb">DiscreteFunctionType</a>, typename <a class="el" href="a03068.html">internal::FloatCmpLt</a> &gt;</td></tr>
+<tr class="separator:ad1e798ee7344703a8b84304a5174df92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad280e1a792361946136ddfbe7615de8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03032.html#aad280e1a792361946136ddfbe7615de8">DataHandleType</a> = <a class="el" href="a00904.html">DiscreteFunctionDataHandle</a>&lt; <a class="el" href="a03032.html#a9e97a70601c13e08bf664ad7bb0f0fdb">DiscreteFunctionType</a> &gt;</td></tr>
+<tr class="separator:aad280e1a792361946136ddfbe7615de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a736ca463770a044758ce61e03bd2a67f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#a736ca463770a044758ce61e03bd2a67f">GridLayerType</a> = typename DiscreteFunctionType::SpaceType::GridLayerType</td></tr>
+<tr class="separator:a736ca463770a044758ce61e03bd2a67f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87e4f2ac2abd77bdfcd7524a65a5f559"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#a87e4f2ac2abd77bdfcd7524a65a5f559">EntityType</a> = typename DiscreteFunctionType::SpaceType::EntityType</td></tr>
+<tr class="separator:a87e4f2ac2abd77bdfcd7524a65a5f559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af566d891314f5f4aba34d842bda68364"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#af566d891314f5f4aba34d842bda68364">DomainType</a> = typename DiscreteFunctionType::DomainType</td></tr>
+<tr class="separator:af566d891314f5f4aba34d842bda68364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5bb15d94cce44367cfe34eac9b81ecf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#aa5bb15d94cce44367cfe34eac9b81ecf">RangeType</a> = typename DiscreteFunctionType::RangeType</td></tr>
+<tr class="separator:aa5bb15d94cce44367cfe34eac9b81ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8e5703d19f93cde71e89c2806e8dcde"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#ae8e5703d19f93cde71e89c2806e8dcde">LocalizableFunctionType</a> = XT::Functions::LocalizableFunctionInterface&lt; <a class="el" href="a03072.html#a87e4f2ac2abd77bdfcd7524a65a5f559">EntityType</a>, <a class="el" href="a03072.html#abd36c78a57b39737431145c68b549921">DomainFieldType</a>, <a class="el" href="a03072.html#af4d33846c7631adbf04e84aefe43ef5c">dimDomain</a>, <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>, <a class="el" href="a03072.html#ad2c0bb690663b303bb9fe6773f1e3f99">dimRange</a>, <a class="el" href="a03072.html#a1c9c45e9224a4b663b4742163d568c27">dimRangeCols</a> &gt;</td></tr>
+<tr class="separator:ae8e5703d19f93cde71e89c2806e8dcde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a108943255ec09a9f8d78a42c1d06c0c8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#a108943255ec09a9f8d78a42c1d06c0c8">VisualizerType</a> = std::function&lt; void(const <a class="el" href="a03032.html#a9e97a70601c13e08bf664ad7bb0f0fdb">DiscreteFunctionType</a> &amp;, const std::string &amp;, const size_t)&gt;</td></tr>
+<tr class="separator:a108943255ec09a9f8d78a42c1d06c0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a713e4754285a6b8245597e3f3cde62d5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#a713e4754285a6b8245597e3f3cde62d5">StringifierType</a> = std::function&lt; std::string(const <a class="el" href="a03072.html#aa5bb15d94cce44367cfe34eac9b81ecf">RangeType</a> &amp;)&gt;</td></tr>
+<tr class="separator:a713e4754285a6b8245597e3f3cde62d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e06d82386d8bb4ca4b19a0a8d2fa78a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#a8e06d82386d8bb4ca4b19a0a8d2fa78a">ThisType</a> = <a class="el" href="a03072.html">TimeStepperInterface</a></td></tr>
+<tr class="separator:a8e06d82386d8bb4ca4b19a0a8d2fa78a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a3e691c92c1313fe5e5b6cda98d5c8253"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03032.html#a3e691c92c1313fe5e5b6cda98d5c8253">ExplicitRungeKuttaTimeStepper</a> (const <a class="el" href="a03032.html#ae438b85cc5fdd0aa0131596921e5df0c">OperatorType</a> &amp;op, <a class="el" href="a03032.html#a9e97a70601c13e08bf664ad7bb0f0fdb">DiscreteFunctionType</a> &amp;initial_values, const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> r=1.0, const double t_0=0.0, const <a class="el" href="a03032.html#a3d17f0ec2f27117e22e594d4239d61ed">MatrixType</a> &amp;A=ButcherArrayProviderType::A(), const <a class="el" href="a03032.html#a4fc3299c213f237768b5f9cf5178930a">VectorType</a> &amp;b=ButcherArrayProviderType::b(), const <a class="el" href="a03032.html#a4fc3299c213f237768b5f9cf5178930a">VectorType</a> &amp;c=ButcherArrayProviderType::c())</td></tr>
+<tr class="memdesc:a3e691c92c1313fe5e5b6cda98d5c8253"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for RungeKutta time stepper.  <a href="#a3e691c92c1313fe5e5b6cda98d5c8253">More...</a><br /></td></tr>
+<tr class="separator:a3e691c92c1313fe5e5b6cda98d5c8253"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbe613c6d69c7d00aee94ddabd94f4d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03032.html#abbe613c6d69c7d00aee94ddabd94f4d8">ExplicitRungeKuttaTimeStepper</a> (const <a class="el" href="a03032.html#ae438b85cc5fdd0aa0131596921e5df0c">OperatorType</a> &amp;op, const <a class="el" href="a03032.html#a9e97a70601c13e08bf664ad7bb0f0fdb">DiscreteFunctionType</a> &amp;initial_values, const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> r, const double t_0, const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>)</td></tr>
+<tr class="memdesc:abbe613c6d69c7d00aee94ddabd94f4d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor ignoring the tol argument for compatibility with <a class="el" href="a03004.html" title="Time stepper using adaptive Runge Kutta methods. ">AdaptiveRungeKuttaTimeStepper</a>.  <a href="#abbe613c6d69c7d00aee94ddabd94f4d8">More...</a><br /></td></tr>
+<tr class="separator:abbe613c6d69c7d00aee94ddabd94f4d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd109e4546fb1eb2e0f8ac68dd544ed8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03032.html#afd109e4546fb1eb2e0f8ac68dd544ed8">step</a> (const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> dt, const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> max_dt) override final</td></tr>
+<tr class="memdesc:afd109e4546fb1eb2e0f8ac68dd544ed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform one time step and return the estimated optimal time step length for the next time step.  <a href="#afd109e4546fb1eb2e0f8ac68dd544ed8">More...</a><br /></td></tr>
+<tr class="separator:afd109e4546fb1eb2e0f8ac68dd544ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a782f83fa2b28bdff5289e224621cb7c6"><td class="memItemLeft" align="right" valign="top">const std::pair&lt; bool, <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03032.html#a782f83fa2b28bdff5289e224621cb7c6">find_suitable_dt</a> (const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> initial_dt, const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> dt_refinement_factor=2, const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> treshold=0.9 *std::numeric_limits&lt; <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> &gt;::max(), const size_t max_steps_per_dt=20, const size_t max_refinements=20)</td></tr>
+<tr class="separator:a782f83fa2b28bdff5289e224621cb7c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a5d51d72c5c948b8840fccf8cbbe51e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#a4a5d51d72c5c948b8840fccf8cbbe51e">current_time</a> () const</td></tr>
+<tr class="separator:a4a5d51d72c5c948b8840fccf8cbbe51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2daef38e3b84435eb378485f884e0bc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#a2daef38e3b84435eb378485f884e0bc0">current_time</a> ()</td></tr>
+<tr class="separator:a2daef38e3b84435eb378485f884e0bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51421e7ea1050ae5196a94cbf55ce9c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a03032.html#a9e97a70601c13e08bf664ad7bb0f0fdb">DiscreteFunctionType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#ae51421e7ea1050ae5196a94cbf55ce9c">current_solution</a> () const</td></tr>
+<tr class="separator:ae51421e7ea1050ae5196a94cbf55ce9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ebcb515a1fcb490b3df011a26f0e909"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a03032.html#a9e97a70601c13e08bf664ad7bb0f0fdb">DiscreteFunctionType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#a0ebcb515a1fcb490b3df011a26f0e909">current_solution</a> ()</td></tr>
+<tr class="separator:a0ebcb515a1fcb490b3df011a26f0e909"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abde1c389fa6b53535b9e1a02609fdc07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#abde1c389fa6b53535b9e1a02609fdc07">set_current_solution_pointer</a> (<a class="el" href="a03032.html#a9e97a70601c13e08bf664ad7bb0f0fdb">DiscreteFunctionType</a> &amp;discrete_function)</td></tr>
+<tr class="separator:abde1c389fa6b53535b9e1a02609fdc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a477562a64cdf631e3de2617a839eacb9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a03072.html#ad1e798ee7344703a8b84304a5174df92">DiscreteSolutionType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#a477562a64cdf631e3de2617a839eacb9">solution</a> () const</td></tr>
+<tr class="separator:a477562a64cdf631e3de2617a839eacb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afae790e414c4392c795fcf02599f42e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a03072.html#ad1e798ee7344703a8b84304a5174df92">DiscreteSolutionType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#afae790e414c4392c795fcf02599f42e2">solution</a> ()</td></tr>
+<tr class="separator:afae790e414c4392c795fcf02599f42e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42cb50edf8b87595f4bf0fb7cb88c457"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#a42cb50edf8b87595f4bf0fb7cb88c457">set_solution_pointer</a> (<a class="el" href="a03072.html#ad1e798ee7344703a8b84304a5174df92">DiscreteSolutionType</a> &amp;solution_ref)</td></tr>
+<tr class="separator:a42cb50edf8b87595f4bf0fb7cb88c457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f7f9a62755dd4d474492720593e61d4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#a1f7f9a62755dd4d474492720593e61d4">solve</a> (const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> t_end, const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> initial_dt, const size_t num_save_steps, const size_t num_output_steps, const bool save_solution, const bool visualize, const bool write_discrete, const bool write_exact, const std::string prefix, <a class="el" href="a03072.html#ad1e798ee7344703a8b84304a5174df92">DiscreteSolutionType</a> &amp;sol, const <a class="el" href="a03072.html#a108943255ec09a9f8d78a42c1d06c0c8">VisualizerType</a> &amp;visualizer, const <a class="el" href="a03072.html#a713e4754285a6b8245597e3f3cde62d5">StringifierType</a> &amp;stringifier, const <a class="el" href="a03072.html#ae8e5703d19f93cde71e89c2806e8dcde">LocalizableFunctionType</a> &amp;exact_solution)</td></tr>
+<tr class="memdesc:a1f7f9a62755dd4d474492720593e61d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">solve Applies time stepping scheme up to time t_end  <a href="#a1f7f9a62755dd4d474492720593e61d4">More...</a><br /></td></tr>
+<tr class="separator:a1f7f9a62755dd4d474492720593e61d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4930f9a10be194bf1676a707694459c5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#a4930f9a10be194bf1676a707694459c5">solve</a> (const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> t_end, const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> initial_dt, const size_t num_save_steps=size_t(-1), const size_t num_output_steps=size_t(-1), const bool save_solution=false, const bool visualize=false, const bool write_discrete=false, const bool write_exact=false, const std::string prefix=&quot;solution&quot;, const <a class="el" href="a03072.html#a108943255ec09a9f8d78a42c1d06c0c8">VisualizerType</a> &amp;visualizer=<a class="el" href="a03072.html#a096b84732e31135892b6dde6eeae3f57">vector_visualizer</a>(), const <a class="el" href="a03072.html#a713e4754285a6b8245597e3f3cde62d5">StringifierType</a> &amp;stringifier=<a class="el" href="a03072.html#adebce099556ac2b6ebd146fa8f77d05f">vector_stringifier</a>(), const <a class="el" href="a03072.html#ae8e5703d19f93cde71e89c2806e8dcde">LocalizableFunctionType</a> &amp;exact_solution=<a class="el" href="a03072.html#a81192b435bb53b8910209e85c445a1b5">zero_solution</a>())</td></tr>
+<tr class="separator:a4930f9a10be194bf1676a707694459c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae81a16c2d009f18d0084a9527d39f926"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#ae81a16c2d009f18d0084a9527d39f926">solve</a> (const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> t_end, const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> initial_dt, const size_t num_save_steps, <a class="el" href="a03072.html#ad1e798ee7344703a8b84304a5174df92">DiscreteSolutionType</a> &amp;sol)</td></tr>
+<tr class="separator:ae81a16c2d009f18d0084a9527d39f926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02237c701c3f80c8f68d734c1e394c9e"><td class="memItemLeft" align="right" valign="top">virtual const DiscreteSolutionType::value_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#a02237c701c3f80c8f68d734c1e394c9e">solution_closest_to_time</a> (const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> t) const</td></tr>
+<tr class="memdesc:a02237c701c3f80c8f68d734c1e394c9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find discrete solution for time point that is closest to t.  <a href="#a02237c701c3f80c8f68d734c1e394c9e">More...</a><br /></td></tr>
+<tr class="separator:a02237c701c3f80c8f68d734c1e394c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a200d2921fdc18bc46c38ec65df9325d9"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="a03032.html#a9e97a70601c13e08bf664ad7bb0f0fdb">DiscreteFunctionType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#a200d2921fdc18bc46c38ec65df9325d9">solution_at_time</a> (const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> t) const</td></tr>
+<tr class="separator:a200d2921fdc18bc46c38ec65df9325d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b5f143f7b32944551f2341fb9207bf1"><td class="memTemplParams" colspan="2">template&lt;size_t factor = 0&gt; </td></tr>
+<tr class="memitem:a8b5f143f7b32944551f2341fb9207bf1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a03072.html#a8b5f143f7b32944551f2341fb9207bf1">visualize_factor_of_solution</a> (const std::string prefix=&quot;&quot;) const</td></tr>
+<tr class="separator:a8b5f143f7b32944551f2341fb9207bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4751db80e7f2dde66a8939c3016b0c95"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#a4751db80e7f2dde66a8939c3016b0c95">visualize_solution</a> (const std::string prefix=&quot;&quot;) const</td></tr>
+<tr class="separator:a4751db80e7f2dde66a8939c3016b0c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a2bc3e3676bc390f56f706b937b43533b"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="a03032.html#a23838486d68b2ce594ac4d119420420c">TimeStepperType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03032.html#a2bc3e3676bc390f56f706b937b43533b">create</a> (const OperatorImp &amp;op, const DiscreteFunctionImp &amp;initial_values, const <a class="el" href="a03032.html#a246a8a4ebc075296f79da8b448ac7e7c">RangeFieldType</a> r=1.0, const <a class="el" href="a03032.html#a246a8a4ebc075296f79da8b448ac7e7c">RangeFieldType</a> t_0=0.0, const <a class="el" href="a03032.html#a246a8a4ebc075296f79da8b448ac7e7c">RangeFieldType</a> tol=1e-4)</td></tr>
-<tr class="separator:a2bc3e3676bc390f56f706b937b43533b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81192b435bb53b8910209e85c445a1b5"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a03072.html#ae8e5703d19f93cde71e89c2806e8dcde">LocalizableFunctionType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#a81192b435bb53b8910209e85c445a1b5">zero_solution</a> ()</td></tr>
+<tr class="separator:a81192b435bb53b8910209e85c445a1b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a096b84732e31135892b6dde6eeae3f57"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a03072.html#a108943255ec09a9f8d78a42c1d06c0c8">VisualizerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#a096b84732e31135892b6dde6eeae3f57">vector_visualizer</a> ()</td></tr>
+<tr class="separator:a096b84732e31135892b6dde6eeae3f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adebce099556ac2b6ebd146fa8f77d05f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a03072.html#a713e4754285a6b8245597e3f3cde62d5">StringifierType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#adebce099556ac2b6ebd146fa8f77d05f">vector_stringifier</a> ()</td></tr>
+<tr class="separator:adebce099556ac2b6ebd146fa8f77d05f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5da6215bfc406b4ee2b3df18c502d011"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#a5da6215bfc406b4ee2b3df18c502d011">rankfile_name</a> (const std::string &amp;prefix, const int rank, const size_t <a class="el" href="a03032.html#afd109e4546fb1eb2e0f8ac68dd544ed8">step</a>)</td></tr>
+<tr class="separator:a5da6215bfc406b4ee2b3df18c502d011"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f0c26c54cd463c3c61340d19518d71c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#a4f0c26c54cd463c3c61340d19518d71c">write_to_textfile</a> (const <a class="el" href="a03072.html#ae8e5703d19f93cde71e89c2806e8dcde">LocalizableFunctionType</a> &amp;u_n, const <a class="el" href="a03072.html#a736ca463770a044758ce61e03bd2a67f">GridLayerType</a> &amp;grid_layer, const std::string &amp;prefix, const size_t <a class="el" href="a03032.html#afd109e4546fb1eb2e0f8ac68dd544ed8">step</a>, const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> t, const <a class="el" href="a03072.html#a713e4754285a6b8245597e3f3cde62d5">StringifierType</a> &amp;stringifier)</td></tr>
+<tr class="separator:a4f0c26c54cd463c3c61340d19518d71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f3f8940062538c31525bdd13acc31f6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#a6f3f8940062538c31525bdd13acc31f6">write_files</a> (const bool visualize, const bool write_discrete, const bool write_exact, const <a class="el" href="a03032.html#a9e97a70601c13e08bf664ad7bb0f0fdb">DiscreteFunctionType</a> &amp;discrete_sol, const <a class="el" href="a03072.html#ae8e5703d19f93cde71e89c2806e8dcde">LocalizableFunctionType</a> &amp;exact_sol, const std::string &amp;prefix, const size_t <a class="el" href="a03032.html#afd109e4546fb1eb2e0f8ac68dd544ed8">step</a>, const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> t, const <a class="el" href="a03072.html#a713e4754285a6b8245597e3f3cde62d5">StringifierType</a> &amp;stringifier, const <a class="el" href="a03072.html#a108943255ec09a9f8d78a42c1d06c0c8">VisualizerType</a> &amp;visualizer)</td></tr>
+<tr class="separator:a6f3f8940062538c31525bdd13acc31f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:af4d33846c7631adbf04e84aefe43ef5c"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#af4d33846c7631adbf04e84aefe43ef5c">dimDomain</a> = DiscreteFunctionType::dimDomain</td></tr>
+<tr class="separator:af4d33846c7631adbf04e84aefe43ef5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2c0bb690663b303bb9fe6773f1e3f99"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#ad2c0bb690663b303bb9fe6773f1e3f99">dimRange</a> = DiscreteFunctionType::dimRange</td></tr>
+<tr class="separator:ad2c0bb690663b303bb9fe6773f1e3f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c9c45e9224a4b663b4742163d568c27"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03072.html#a1c9c45e9224a4b663b4742163d568c27">dimRangeCols</a> = DiscreteFunctionType::dimRangeCols</td></tr>
+<tr class="separator:a1c9c45e9224a4b663b4742163d568c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a246a8a4ebc075296f79da8b448ac7e7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a246a8a4ebc075296f79da8b448ac7e7c">&#9670;&nbsp;</a></span>RangeFieldType</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class OperatorImp, class DiscreteFunctionImp, TimeStepperMethods method = TimeStepperMethods::explicit_euler&gt;<br />
+class Dune::GDT::ExplicitRungeKuttaTimeStepper&lt; OperatorImp, DiscreteFunctionImp, method &gt;</h3>
+
+<p>Time stepper using Runge Kutta methods. </p>
+<p>Timestepper using explicit Runge Kutta methods to solve equations of the form u_t = r * L(u, t) where u is a discrete function, L an operator acting on u and r a scalar factor (e.g. -1). The specific Runge Kutta method can be chosen as the third template argument. If your desired Runge Kutta method is not contained in ExplicitRungeKuttaMethods, choose <a class="el" href="a00249.html#a5a9b3478d77a16697bf06fa3f949e0faa795f3202b17cb6bc3d4b771d8c6c9eaf">ExplicitRungeKuttaMethods::other</a> and supply a DynamicMatrix&lt; RangeFieldType &gt; A and vectors (DynamicVector&lt; RangeFieldType &gt;) b and c in the constructor. Here, A, b and c form the butcher tableau (see <a href="https://en.wikipedia.org/wiki/List_of_Runge%E2%80%93Kutta_methods,">https://en.wikipedia.org/wiki/List_of_Runge%E2%80%93Kutta_methods,</a> A is composed of the coefficients a_{ij}, b of b_j and c of c_j). The default is a forward euler method.</p>
+<p>Notation: For an s-stage method, {u}^{n+1} = {u}^n + dt {i=0}^{s-1} b_i {k}_i {k}_i = L({u}_i, t^n + dt c_i) {u}_i = {u}^n + dt {j=0}^{i-1} a_{ij} {k}_j,</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">OperatorImp</td><td>Type of operator L </td></tr>
+    <tr><td class="paramname">DiscreteFunctionImp</td><td>Type of initial values </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="aad280e1a792361946136ddfbe7615de8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad280e1a792361946136ddfbe7615de8">&#9670;&nbsp;</a></span>DataHandleType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class OperatorImp, class DiscreteFunctionImp, TimeStepperMethods method&gt; </div>
+template&lt;class OperatorImp , class DiscreteFunctionImp , TimeStepperMethods method = TimeStepperMethods::explicit_euler&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef DiscreteFunctionImp::RangeFieldType <a class="el" href="a03032.html">Dune::GDT::TimeStepperFactory</a>&lt; OperatorImp, DiscreteFunctionImp, method &gt;::<a class="el" href="a03032.html#a246a8a4ebc075296f79da8b448ac7e7c">RangeFieldType</a></td>
+          <td class="memname">using <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::<a class="el" href="a03072.html#aad280e1a792361946136ddfbe7615de8">DataHandleType</a> =  <a class="el" href="a00904.html">DiscreteFunctionDataHandle</a>&lt;<a class="el" href="a03032.html#a9e97a70601c13e08bf664ad7bb0f0fdb">DiscreteFunctionType</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a23838486d68b2ce594ac4d119420420c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23838486d68b2ce594ac4d119420420c">&#9670;&nbsp;</a></span>TimeStepperType</h2>
+<a id="a9e97a70601c13e08bf664ad7bb0f0fdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e97a70601c13e08bf664ad7bb0f0fdb">&#9670;&nbsp;</a></span>DiscreteFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class OperatorImp, class DiscreteFunctionImp, TimeStepperMethods method&gt; </div>
+template&lt;class OperatorImp , class DiscreteFunctionImp , TimeStepperMethods method = TimeStepperMethods::explicit_euler&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef std:: conditional&lt;method == <a class="el" href="a00249.html#a0a7e45c07c804e026c31fb0b86b7eb69a6715245f54e8e2e94ddb3a731ccbdf10">TimeStepperMethods::bogacki_shampine</a> || method == <a class="el" href="a00249.html#a0a7e45c07c804e026c31fb0b86b7eb69a696a706c4054d122f1275e54d1bc69c0">TimeStepperMethods::dormand_prince</a> || method == <a class="el" href="a00249.html#a0a7e45c07c804e026c31fb0b86b7eb69ac97e4d5c331a2936e04feb034fc4f787">TimeStepperMethods::adaptive_rungekutta_other</a>, typename <a class="el" href="a03000.html">Dune::GDT::AdaptiveRungeKuttaTimeStepper</a>&lt;OperatorImp, DiscreteFunctionImp, method&gt;, typename std:: conditional&lt;method == <a class="el" href="a00249.html#a0a7e45c07c804e026c31fb0b86b7eb69ae9e3a7543796e9e0256a12f6dd5d4ecd">TimeStepperMethods::implicit_euler</a> || method == <a class="el" href="a00249.html#a0a7e45c07c804e026c31fb0b86b7eb69ab84a8ef36b79ee75983435cd9b3de48c">TimeStepperMethods::implicit_midpoint</a> || method == <a class="el" href="a00249.html#a0a7e45c07c804e026c31fb0b86b7eb69a73c714ae3da44202127a7306c3efdebe">TimeStepperMethods::trapezoidal_rule</a>, typename Dune::GDT:: <a class="el" href="a03060.html">DiagonallyImplicitRungeKuttaTimeStepper</a>&lt;OperatorImp, DiscreteFunctionImp, method&gt;, typename std:: conditional&lt;method == <a class="el" href="a00249.html#a0a7e45c07c804e026c31fb0b86b7eb69ae027c8edf587abe07bb3a0a3bfa154b6">TimeStepperMethods::matrix_exponential</a>, typename <a class="el" href="a03076.html">Dune::GDT::MatrixExponentialTimeStepper</a>&lt;OperatorImp, DiscreteFunctionImp&gt;, typename <a class="el" href="a03028.html">Dune::GDT::ExplicitRungeKuttaTimeStepper</a>&lt;OperatorImp, DiscreteFunctionImp, method&gt; &gt;::type&gt;:: type&gt;::type <a class="el" href="a03032.html">Dune::GDT::TimeStepperFactory</a>&lt; OperatorImp, DiscreteFunctionImp, method &gt;::<a class="el" href="a03032.html#a23838486d68b2ce594ac4d119420420c">TimeStepperType</a></td>
+          <td class="memname">using <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::<a class="el" href="a03032.html#a9e97a70601c13e08bf664ad7bb0f0fdb">DiscreteFunctionType</a> =  DiscreteFunctionImp</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2bc3e3676bc390f56f706b937b43533b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bc3e3676bc390f56f706b937b43533b">&#9670;&nbsp;</a></span>create()</h2>
+<a id="ad1e798ee7344703a8b84304a5174df92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1e798ee7344703a8b84304a5174df92">&#9670;&nbsp;</a></span>DiscreteSolutionType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class OperatorImp, class DiscreteFunctionImp, TimeStepperMethods method&gt; </div>
+template&lt;class OperatorImp , class DiscreteFunctionImp , TimeStepperMethods method = TimeStepperMethods::explicit_euler&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::<a class="el" href="a03072.html#ad1e798ee7344703a8b84304a5174df92">DiscreteSolutionType</a> =  typename std::map&lt;<a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>, <a class="el" href="a03032.html#a9e97a70601c13e08bf664ad7bb0f0fdb">DiscreteFunctionType</a>, typename <a class="el" href="a03068.html">internal::FloatCmpLt</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd36c78a57b39737431145c68b549921"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd36c78a57b39737431145c68b549921">&#9670;&nbsp;</a></span>DomainFieldType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class OperatorImp , class DiscreteFunctionImp , TimeStepperMethods method = TimeStepperMethods::explicit_euler&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::<a class="el" href="a03072.html#abd36c78a57b39737431145c68b549921">DomainFieldType</a> =  typename DiscreteFunctionType::DomainFieldType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af566d891314f5f4aba34d842bda68364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af566d891314f5f4aba34d842bda68364">&#9670;&nbsp;</a></span>DomainType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static std::unique_ptr&lt;<a class="el" href="a03032.html#a23838486d68b2ce594ac4d119420420c">TimeStepperType</a>&gt; <a class="el" href="a03032.html">Dune::GDT::TimeStepperFactory</a>&lt; OperatorImp, DiscreteFunctionImp, method &gt;::create </td>
+          <td class="memname">using <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::<a class="el" href="a03072.html#af566d891314f5f4aba34d842bda68364">DomainType</a> =  typename DiscreteFunctionType::DomainType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87e4f2ac2abd77bdfcd7524a65a5f559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87e4f2ac2abd77bdfcd7524a65a5f559">&#9670;&nbsp;</a></span>EntityType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::<a class="el" href="a03072.html#a87e4f2ac2abd77bdfcd7524a65a5f559">EntityType</a> =  typename DiscreteFunctionType::SpaceType::EntityType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a736ca463770a044758ce61e03bd2a67f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a736ca463770a044758ce61e03bd2a67f">&#9670;&nbsp;</a></span>GridLayerType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::<a class="el" href="a03072.html#a736ca463770a044758ce61e03bd2a67f">GridLayerType</a> =  typename DiscreteFunctionType::SpaceType::GridLayerType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8e5703d19f93cde71e89c2806e8dcde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8e5703d19f93cde71e89c2806e8dcde">&#9670;&nbsp;</a></span>LocalizableFunctionType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::<a class="el" href="a03072.html#ae8e5703d19f93cde71e89c2806e8dcde">LocalizableFunctionType</a> =  XT::Functions:: LocalizableFunctionInterface&lt;<a class="el" href="a03072.html#a87e4f2ac2abd77bdfcd7524a65a5f559">EntityType</a>, <a class="el" href="a03072.html#abd36c78a57b39737431145c68b549921">DomainFieldType</a>, <a class="el" href="a03072.html#af4d33846c7631adbf04e84aefe43ef5c">dimDomain</a>, <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>, <a class="el" href="a03072.html#ad2c0bb690663b303bb9fe6773f1e3f99">dimRange</a>, <a class="el" href="a03072.html#a1c9c45e9224a4b663b4742163d568c27">dimRangeCols</a>&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d17f0ec2f27117e22e594d4239d61ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d17f0ec2f27117e22e594d4239d61ed">&#9670;&nbsp;</a></span>MatrixType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class OperatorImp , class DiscreteFunctionImp , TimeStepperMethods method = TimeStepperMethods::explicit_euler&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a03032.html">Dune::GDT::ExplicitRungeKuttaTimeStepper</a>&lt; OperatorImp, DiscreteFunctionImp, method &gt;::<a class="el" href="a03032.html#a3d17f0ec2f27117e22e594d4239d61ed">MatrixType</a> =  Dune::DynamicMatrix&lt;<a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae438b85cc5fdd0aa0131596921e5df0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae438b85cc5fdd0aa0131596921e5df0c">&#9670;&nbsp;</a></span>OperatorType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class OperatorImp , class DiscreteFunctionImp , TimeStepperMethods method = TimeStepperMethods::explicit_euler&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a03032.html">Dune::GDT::ExplicitRungeKuttaTimeStepper</a>&lt; OperatorImp, DiscreteFunctionImp, method &gt;::<a class="el" href="a03032.html#ae438b85cc5fdd0aa0131596921e5df0c">OperatorType</a> =  OperatorImp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a31fca11388bf5417599006e77d30705e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31fca11388bf5417599006e77d30705e">&#9670;&nbsp;</a></span>RangeFieldType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class OperatorImp , class DiscreteFunctionImp , TimeStepperMethods method = TimeStepperMethods::explicit_euler&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::<a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> =  typename DiscreteFunctionType::RangeFieldType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa5bb15d94cce44367cfe34eac9b81ecf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5bb15d94cce44367cfe34eac9b81ecf">&#9670;&nbsp;</a></span>RangeType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::<a class="el" href="a03072.html#aa5bb15d94cce44367cfe34eac9b81ecf">RangeType</a> =  typename DiscreteFunctionType::RangeType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a713e4754285a6b8245597e3f3cde62d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a713e4754285a6b8245597e3f3cde62d5">&#9670;&nbsp;</a></span>StringifierType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::<a class="el" href="a03072.html#a713e4754285a6b8245597e3f3cde62d5">StringifierType</a> =  std::function&lt;std::string(const <a class="el" href="a03072.html#aa5bb15d94cce44367cfe34eac9b81ecf">RangeType</a>&amp;)&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e06d82386d8bb4ca4b19a0a8d2fa78a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e06d82386d8bb4ca4b19a0a8d2fa78a">&#9670;&nbsp;</a></span>ThisType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::<a class="el" href="a03072.html#a8e06d82386d8bb4ca4b19a0a8d2fa78a">ThisType</a> =  <a class="el" href="a03072.html">TimeStepperInterface</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4fc3299c213f237768b5f9cf5178930a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fc3299c213f237768b5f9cf5178930a">&#9670;&nbsp;</a></span>VectorType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class OperatorImp , class DiscreteFunctionImp , TimeStepperMethods method = TimeStepperMethods::explicit_euler&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a03032.html">Dune::GDT::ExplicitRungeKuttaTimeStepper</a>&lt; OperatorImp, DiscreteFunctionImp, method &gt;::<a class="el" href="a03032.html#a4fc3299c213f237768b5f9cf5178930a">VectorType</a> =  Dune::DynamicVector&lt;<a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a108943255ec09a9f8d78a42c1d06c0c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a108943255ec09a9f8d78a42c1d06c0c8">&#9670;&nbsp;</a></span>VisualizerType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::<a class="el" href="a03072.html#a108943255ec09a9f8d78a42c1d06c0c8">VisualizerType</a> =  std::function&lt;void(const <a class="el" href="a03032.html#a9e97a70601c13e08bf664ad7bb0f0fdb">DiscreteFunctionType</a>&amp;, const std::string&amp;, const size_t)&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a3e691c92c1313fe5e5b6cda98d5c8253"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e691c92c1313fe5e5b6cda98d5c8253">&#9670;&nbsp;</a></span>ExplicitRungeKuttaTimeStepper() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class OperatorImp , class DiscreteFunctionImp , TimeStepperMethods method = TimeStepperMethods::explicit_euler&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a03032.html">Dune::GDT::ExplicitRungeKuttaTimeStepper</a>&lt; OperatorImp, DiscreteFunctionImp, method &gt;::<a class="el" href="a03032.html">ExplicitRungeKuttaTimeStepper</a> </td>
           <td>(</td>
-          <td class="paramtype">const OperatorImp &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a03032.html#ae438b85cc5fdd0aa0131596921e5df0c">OperatorType</a> &amp;&#160;</td>
           <td class="paramname"><em>op</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const DiscreteFunctionImp &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="a03032.html#a9e97a70601c13e08bf664ad7bb0f0fdb">DiscreteFunctionType</a> &amp;&#160;</td>
           <td class="paramname"><em>initial_values</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a03032.html#a246a8a4ebc075296f79da8b448ac7e7c">RangeFieldType</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&#160;</td>
           <td class="paramname"><em>r</em> = <code>1.0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a03032.html#a246a8a4ebc075296f79da8b448ac7e7c">RangeFieldType</a>&#160;</td>
+          <td class="paramtype">const double&#160;</td>
           <td class="paramname"><em>t_0</em> = <code>0.0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a03032.html#a246a8a4ebc075296f79da8b448ac7e7c">RangeFieldType</a>&#160;</td>
-          <td class="paramname"><em>tol</em> = <code>1e-4</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="a03032.html#a3d17f0ec2f27117e22e594d4239d61ed">MatrixType</a> &amp;&#160;</td>
+          <td class="paramname"><em>A</em> = <code>ButcherArrayProviderType::A()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a03032.html#a4fc3299c213f237768b5f9cf5178930a">VectorType</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em> = <code>ButcherArrayProviderType::b()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a03032.html#a4fc3299c213f237768b5f9cf5178930a">VectorType</a> &amp;&#160;</td>
+          <td class="paramname"><em>c</em> = <code>ButcherArrayProviderType::c()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -169,15 +589,1159 @@ template&lt;class OperatorImp, class DiscreteFunctionImp, TimeStepperMethods met
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor for RungeKutta time stepper. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">op</td><td>Operator L </td></tr>
+    <tr><td class="paramname">initial_values</td><td>Discrete function containing initial values for u at time t_0. </td></tr>
+    <tr><td class="paramname">r</td><td>Scalar factor (see above, default is 1) </td></tr>
+    <tr><td class="paramname">t_0</td><td>Initial time (default is 0) </td></tr>
+    <tr><td class="paramname">A</td><td>Coefficient matrix (only provide if you use <a class="el" href="a00249.html#a5a9b3478d77a16697bf06fa3f949e0faa795f3202b17cb6bc3d4b771d8c6c9eaf">ExplicitRungeKuttaMethods::other</a>) </td></tr>
+    <tr><td class="paramname">b</td><td>Coefficient vector (only provide if you use <a class="el" href="a00249.html#a5a9b3478d77a16697bf06fa3f949e0faa795f3202b17cb6bc3d4b771d8c6c9eaf">ExplicitRungeKuttaMethods::other</a>) </td></tr>
+    <tr><td class="paramname">c</td><td>Coefficients for time steps (only provide if you use <a class="el" href="a00249.html#a5a9b3478d77a16697bf06fa3f949e0faa795f3202b17cb6bc3d4b771d8c6c9eaf">ExplicitRungeKuttaMethods::other</a>) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abbe613c6d69c7d00aee94ddabd94f4d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbe613c6d69c7d00aee94ddabd94f4d8">&#9670;&nbsp;</a></span>ExplicitRungeKuttaTimeStepper() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class OperatorImp , class DiscreteFunctionImp , TimeStepperMethods method = TimeStepperMethods::explicit_euler&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a03032.html">Dune::GDT::ExplicitRungeKuttaTimeStepper</a>&lt; OperatorImp, DiscreteFunctionImp, method &gt;::<a class="el" href="a03032.html">ExplicitRungeKuttaTimeStepper</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a03032.html#ae438b85cc5fdd0aa0131596921e5df0c">OperatorType</a> &amp;&#160;</td>
+          <td class="paramname"><em>op</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a03032.html#a9e97a70601c13e08bf664ad7bb0f0fdb">DiscreteFunctionType</a> &amp;&#160;</td>
+          <td class="paramname"><em>initial_values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>t_0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor ignoring the tol argument for compatibility with <a class="el" href="a03004.html" title="Time stepper using adaptive Runge Kutta methods. ">AdaptiveRungeKuttaTimeStepper</a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae51421e7ea1050ae5196a94cbf55ce9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae51421e7ea1050ae5196a94cbf55ce9c">&#9670;&nbsp;</a></span>current_solution() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a03032.html#a9e97a70601c13e08bf664ad7bb0f0fdb">DiscreteFunctionType</a>&amp; <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::current_solution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="a00227_source.html">factory.hh</a></li>
+<a id="a0ebcb515a1fcb490b3df011a26f0e909"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ebcb515a1fcb490b3df011a26f0e909">&#9670;&nbsp;</a></span>current_solution() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a03032.html#a9e97a70601c13e08bf664ad7bb0f0fdb">DiscreteFunctionType</a>&amp; <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::current_solution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a5d51d72c5c948b8840fccf8cbbe51e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a5d51d72c5c948b8840fccf8cbbe51e">&#9670;&nbsp;</a></span>current_time() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&amp; <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::current_time </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2daef38e3b84435eb378485f884e0bc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2daef38e3b84435eb378485f884e0bc0">&#9670;&nbsp;</a></span>current_time() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&amp; <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::current_time </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a782f83fa2b28bdff5289e224621cb7c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a782f83fa2b28bdff5289e224621cb7c6">&#9670;&nbsp;</a></span>find_suitable_dt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class OperatorImp , class DiscreteFunctionImp , TimeStepperMethods method = TimeStepperMethods::explicit_euler&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::pair&lt;bool, <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&gt; <a class="el" href="a03032.html">Dune::GDT::ExplicitRungeKuttaTimeStepper</a>&lt; OperatorImp, DiscreteFunctionImp, method &gt;::find_suitable_dt </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&#160;</td>
+          <td class="paramname"><em>initial_dt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&#160;</td>
+          <td class="paramname"><em>dt_refinement_factor</em> = <code>2</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&#160;</td>
+          <td class="paramname"><em>treshold</em> = <code>0.9&#160;*&#160;std::numeric_limits&lt;<a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&gt;::max()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>max_steps_per_dt</em> = <code>20</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>max_refinements</em> = <code>20</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5da6215bfc406b4ee2b3df18c502d011"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5da6215bfc406b4ee2b3df18c502d011">&#9670;&nbsp;</a></span>rankfile_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::string <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::rankfile_name </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>prefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>rank</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>step</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abde1c389fa6b53535b9e1a02609fdc07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abde1c389fa6b53535b9e1a02609fdc07">&#9670;&nbsp;</a></span>set_current_solution_pointer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::set_current_solution_pointer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a03072.html#a9e97a70601c13e08bf664ad7bb0f0fdb">DiscreteFunctionType</a> &amp;&#160;</td>
+          <td class="paramname"><em>discrete_function</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42cb50edf8b87595f4bf0fb7cb88c457"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42cb50edf8b87595f4bf0fb7cb88c457">&#9670;&nbsp;</a></span>set_solution_pointer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::set_solution_pointer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a03072.html#ad1e798ee7344703a8b84304a5174df92">DiscreteSolutionType</a> &amp;&#160;</td>
+          <td class="paramname"><em>solution_ref</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a477562a64cdf631e3de2617a839eacb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a477562a64cdf631e3de2617a839eacb9">&#9670;&nbsp;</a></span>solution() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a03072.html#ad1e798ee7344703a8b84304a5174df92">DiscreteSolutionType</a>&amp; <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::solution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afae790e414c4392c795fcf02599f42e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afae790e414c4392c795fcf02599f42e2">&#9670;&nbsp;</a></span>solution() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a03072.html#ad1e798ee7344703a8b84304a5174df92">DiscreteSolutionType</a>&amp; <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::solution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a200d2921fdc18bc46c38ec65df9325d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a200d2921fdc18bc46c38ec65df9325d9">&#9670;&nbsp;</a></span>solution_at_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="a03032.html#a9e97a70601c13e08bf664ad7bb0f0fdb">DiscreteFunctionType</a>&amp; <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::solution_at_time </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a03072.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a02237c701c3f80c8f68d734c1e394c9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02237c701c3f80c8f68d734c1e394c9e">&#9670;&nbsp;</a></span>solution_closest_to_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const DiscreteSolutionType::value_type&amp; <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::solution_closest_to_time </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a03072.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Find discrete solution for time point that is closest to t. </p>
+<p>The timestepper only stores the solution at discrete time points. This function returns the discrete solution for the stored time point that is closest to the query time t.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>Time </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::pair with pair.second the discrete solution at time pair.first </dd></dl>
+
+</div>
+</div>
+<a id="a1f7f9a62755dd4d474492720593e61d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f7f9a62755dd4d474492720593e61d4">&#9670;&nbsp;</a></span>solve() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::solve </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a03072.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&#160;</td>
+          <td class="paramname"><em>t_end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a03072.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&#160;</td>
+          <td class="paramname"><em>initial_dt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>num_save_steps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>num_output_steps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>save_solution</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>visualize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>write_discrete</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>write_exact</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>prefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a03072.html#ad1e798ee7344703a8b84304a5174df92">DiscreteSolutionType</a> &amp;&#160;</td>
+          <td class="paramname"><em>sol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a03072.html#a108943255ec09a9f8d78a42c1d06c0c8">VisualizerType</a> &amp;&#160;</td>
+          <td class="paramname"><em>visualizer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a03072.html#a713e4754285a6b8245597e3f3cde62d5">StringifierType</a> &amp;&#160;</td>
+          <td class="paramname"><em>stringifier</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a03072.html#ae8e5703d19f93cde71e89c2806e8dcde">LocalizableFunctionType</a> &amp;&#160;</td>
+          <td class="paramname"><em>exact_solution</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>solve Applies time stepping scheme up to time t_end </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t_end</td><td>Final time. </td></tr>
+    <tr><td class="paramname">initial_dt</td><td>Initial time step length. Non-adaptive schemes will use this dt for all time steps. Adaptive schemes will use initial_dt as a first guess for the time step length. </td></tr>
+    <tr><td class="paramname">num_save_steps</td><td>Number of time points that will be stored/visualized/written Default is size_t(-1), which will store all time steps. </td></tr>
+    <tr><td class="paramname">num_output_steps</td><td>Number of time points where current time and current time step length will be written to std::cout. Default is size_t(-1), which will output all time steps. Set to 0 to suppress output. </td></tr>
+    <tr><td class="paramname">save_solution</td><td>If true, the discrete solution at num_save_steps equidistant time points will be stored in solution. </td></tr>
+    <tr><td class="paramname">visualize</td><td>If true, solution will be written to .vtp/.vtu files at num_save_steps equidistant time points </td></tr>
+    <tr><td class="paramname">write_discrete</td><td>If true, discrete solution will be written to .txt files at num_save_steps equidistant time points </td></tr>
+    <tr><td class="paramname">write_exact</td><td>If true, exact solution will be written to .txt files at num_save_steps equidistant time points </td></tr>
+    <tr><td class="paramname">prefix</td><td>Filename prefix of .vtp/.vtu/.txt files that are written </td></tr>
+    <tr><td class="paramname">sol</td><td>The discrete solution </td></tr>
+    <tr><td class="paramname">visualizer</td><td>Function object that determines how the discrete solution is visualized. </td></tr>
+    <tr><td class="paramname">stringifier</td><td>Function object that determines how RangeType is converted to string before writing to .txt files. </td></tr>
+    <tr><td class="paramname">exact_solution</td><td>Exact solution function. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>estimated optimal time step length for next step </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If num_save_steps is specified (i.e. if it is not size_t(-1), the solution will be stored/visualized at exactly num_save_steps + 1 equidistant time points (including the initial time and t_end), even if the time step length has to be reduced to hit these time points. </dd></dl>
+
+</div>
+</div>
+<a id="a4930f9a10be194bf1676a707694459c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4930f9a10be194bf1676a707694459c5">&#9670;&nbsp;</a></span>solve() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::solve </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a03072.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&#160;</td>
+          <td class="paramname"><em>t_end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a03072.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&#160;</td>
+          <td class="paramname"><em>initial_dt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>num_save_steps</em> = <code>size_t(-1)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>num_output_steps</em> = <code>size_t(-1)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>save_solution</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>visualize</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>write_discrete</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>write_exact</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>prefix</em> = <code>&quot;solution&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a03072.html#a108943255ec09a9f8d78a42c1d06c0c8">VisualizerType</a> &amp;&#160;</td>
+          <td class="paramname"><em>visualizer</em> = <code><a class="el" href="a03072.html#a096b84732e31135892b6dde6eeae3f57">vector_visualizer</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a03072.html#a713e4754285a6b8245597e3f3cde62d5">StringifierType</a> &amp;&#160;</td>
+          <td class="paramname"><em>stringifier</em> = <code><a class="el" href="a03072.html#adebce099556ac2b6ebd146fa8f77d05f">vector_stringifier</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a03072.html#ae8e5703d19f93cde71e89c2806e8dcde">LocalizableFunctionType</a> &amp;&#160;</td>
+          <td class="paramname"><em>exact_solution</em> = <code><a class="el" href="a03072.html#a81192b435bb53b8910209e85c445a1b5">zero_solution</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae81a16c2d009f18d0084a9527d39f926"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae81a16c2d009f18d0084a9527d39f926">&#9670;&nbsp;</a></span>solve() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::solve </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a03072.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&#160;</td>
+          <td class="paramname"><em>t_end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a03072.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&#160;</td>
+          <td class="paramname"><em>initial_dt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>num_save_steps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a03072.html#ad1e798ee7344703a8b84304a5174df92">DiscreteSolutionType</a> &amp;&#160;</td>
+          <td class="paramname"><em>sol</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd109e4546fb1eb2e0f8ac68dd544ed8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd109e4546fb1eb2e0f8ac68dd544ed8">&#9670;&nbsp;</a></span>step()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class OperatorImp , class DiscreteFunctionImp , TimeStepperMethods method = TimeStepperMethods::explicit_euler&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> <a class="el" href="a03032.html">Dune::GDT::ExplicitRungeKuttaTimeStepper</a>&lt; OperatorImp, DiscreteFunctionImp, method &gt;::step </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&#160;</td>
+          <td class="paramname"><em>dt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a03032.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&#160;</td>
+          <td class="paramname"><em>max_dt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Perform one time step and return the estimated optimal time step length for the next time step. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dt</td><td>Time step length. </td></tr>
+    <tr><td class="paramname">max_dt</td><td>Maximal allowed time step length in this time step. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Estimated optimal time step length for the next time step. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>For adaptive methods or if max_dt &lt; dt, dt is just the initial time step length, the actual time step taken may be shorter. To get the actual time step length you need to compare <a class="el" href="a03072.html#a2daef38e3b84435eb378485f884e0bc0">current_time()</a> before and after calling <a class="el" href="a03032.html#afd109e4546fb1eb2e0f8ac68dd544ed8" title="Perform one time step and return the estimated optimal time step length for the next time step...">step()</a>. </dd>
+<dd>
+This method has to increase the current time by the actual time step length taken, otherwise solve will never finish execution (if current_time is not increased) or give wrong results (if current time is increased by a wrong dt). </dd></dl>
+
+<p>Implements <a class="el" href="a03072.html#a2e704692dcb58d562cdafb3394bfe6ac">Dune::GDT::TimeStepperInterface&lt; DiscreteFunctionImp &gt;</a>.</p>
+
+</div>
+</div>
+<a id="adebce099556ac2b6ebd146fa8f77d05f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adebce099556ac2b6ebd146fa8f77d05f">&#9670;&nbsp;</a></span>vector_stringifier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="a03072.html#a713e4754285a6b8245597e3f3cde62d5">StringifierType</a> <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::vector_stringifier </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a096b84732e31135892b6dde6eeae3f57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a096b84732e31135892b6dde6eeae3f57">&#9670;&nbsp;</a></span>vector_visualizer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="a03072.html#a108943255ec09a9f8d78a42c1d06c0c8">VisualizerType</a> <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::vector_visualizer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b5f143f7b32944551f2341fb9207bf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b5f143f7b32944551f2341fb9207bf1">&#9670;&nbsp;</a></span>visualize_factor_of_solution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<div class="memtemplate">
+template&lt;size_t factor = 0&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::visualize_factor_of_solution </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>prefix</em> = <code>&quot;&quot;</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4751db80e7f2dde66a8939c3016b0c95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4751db80e7f2dde66a8939c3016b0c95">&#9670;&nbsp;</a></span>visualize_solution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::visualize_solution </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>prefix</em> = <code>&quot;&quot;</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f3f8940062538c31525bdd13acc31f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f3f8940062538c31525bdd13acc31f6">&#9670;&nbsp;</a></span>write_files()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::write_files </td>
+          <td>(</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>visualize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>write_discrete</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>write_exact</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a03072.html#a9e97a70601c13e08bf664ad7bb0f0fdb">DiscreteFunctionType</a> &amp;&#160;</td>
+          <td class="paramname"><em>discrete_sol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a03072.html#ae8e5703d19f93cde71e89c2806e8dcde">LocalizableFunctionType</a> &amp;&#160;</td>
+          <td class="paramname"><em>exact_sol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>prefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>step</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a03072.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a03072.html#a713e4754285a6b8245597e3f3cde62d5">StringifierType</a> &amp;&#160;</td>
+          <td class="paramname"><em>stringifier</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a03072.html#a108943255ec09a9f8d78a42c1d06c0c8">VisualizerType</a> &amp;&#160;</td>
+          <td class="paramname"><em>visualizer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f0c26c54cd463c3c61340d19518d71c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f0c26c54cd463c3c61340d19518d71c">&#9670;&nbsp;</a></span>write_to_textfile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::write_to_textfile </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a03072.html#ae8e5703d19f93cde71e89c2806e8dcde">LocalizableFunctionType</a> &amp;&#160;</td>
+          <td class="paramname"><em>u_n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a03072.html#a736ca463770a044758ce61e03bd2a67f">GridLayerType</a> &amp;&#160;</td>
+          <td class="paramname"><em>grid_layer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>prefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>step</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a03072.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a>&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a03072.html#a713e4754285a6b8245597e3f3cde62d5">StringifierType</a> &amp;&#160;</td>
+          <td class="paramname"><em>stringifier</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81192b435bb53b8910209e85c445a1b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81192b435bb53b8910209e85c445a1b5">&#9670;&nbsp;</a></span>zero_solution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="a03072.html#ae8e5703d19f93cde71e89c2806e8dcde">LocalizableFunctionType</a>&amp; <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::zero_solution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="af4d33846c7631adbf04e84aefe43ef5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4d33846c7631adbf04e84aefe43ef5c">&#9670;&nbsp;</a></span>dimDomain</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::dimDomain = DiscreteFunctionType::dimDomain</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad2c0bb690663b303bb9fe6773f1e3f99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2c0bb690663b303bb9fe6773f1e3f99">&#9670;&nbsp;</a></span>dimRange</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::dimRange = DiscreteFunctionType::dimRange</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c9c45e9224a4b663b4742163d568c27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c9c45e9224a4b663b4742163d568c27">&#9670;&nbsp;</a></span>dimRangeCols</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DiscreteFunctionImp&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t <a class="el" href="a03072.html">Dune::GDT::TimeStepperInterface</a>&lt; DiscreteFunctionImp &gt;::dimRangeCols = DiscreteFunctionType::dimRangeCols</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="a00224_source.html">explicit-rungekutta.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

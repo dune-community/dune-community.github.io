@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::internal::allContinuous&lt; LastSpaceType &gt; Struct Template Reference</title>
+<title>dune-gdt: Dune::GDT::internal::allContinuous&lt; FirstSpaceType, SpaceTypes &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a00250.html">internal</a></li><li class="navelem"><a class="el" href="a02872.html">allContinuous&lt; LastSpaceType &gt;</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a00250.html">internal</a></li><li class="navelem"><a class="el" href="a02872.html">allContinuous</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -67,31 +67,31 @@ $(function() {
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="a02869.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::allContinuous&lt; LastSpaceType &gt; Struct Template Reference</div>  </div>
+<div class="title">Dune::GDT::internal::allContinuous&lt; FirstSpaceType, SpaceTypes &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a04767_source.html">dune/gdt/spaces/product.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a04771_source.html">dune/gdt/spaces/product.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a5f8df22815491ce3431a364ccc2bab06"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02872.html#a5f8df22815491ce3431a364ccc2bab06">value</a> = LastSpaceType::continuous</td></tr>
-<tr class="separator:a5f8df22815491ce3431a364ccc2bab06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bf05e5686e5e5566de4a5f93fc0cebe"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02872.html#a5bf05e5686e5e5566de4a5f93fc0cebe">value</a> = FirstSpaceType::continuous ? <a class="el" href="a02872.html">allContinuous</a>&lt;SpaceTypes...&gt;::value : false</td></tr>
+<tr class="separator:a5bf05e5686e5e5566de4a5f93fc0cebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a5f8df22815491ce3431a364ccc2bab06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f8df22815491ce3431a364ccc2bab06">&#9670;&nbsp;</a></span>value</h2>
+<a id="a5bf05e5686e5e5566de4a5f93fc0cebe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bf05e5686e5e5566de4a5f93fc0cebe">&#9670;&nbsp;</a></span>value</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LastSpaceType &gt; </div>
+template&lt;class FirstSpaceType , class... SpaceTypes&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const bool <a class="el" href="a02868.html">Dune::GDT::internal::allContinuous</a>&lt; LastSpaceType &gt;::value = LastSpaceType::continuous</td>
+          <td class="memname">const bool <a class="el" href="a02872.html">Dune::GDT::internal::allContinuous</a>&lt; FirstSpaceType, SpaceTypes &gt;::value = FirstSpaceType::continuous ? <a class="el" href="a02872.html">allContinuous</a>&lt;SpaceTypes...&gt;::value : false</td>
         </tr>
       </table>
   </td>
@@ -104,7 +104,7 @@ template&lt;class LastSpaceType &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="a04767_source.html">spaces/product.hh</a></li>
+<li><a class="el" href="a04771_source.html">spaces/product.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

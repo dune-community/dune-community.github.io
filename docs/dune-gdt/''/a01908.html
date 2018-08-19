@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::LocalizableFunctionBasedLocalizableDirichletBoundaryValue&lt; GridLayerType, LocalizableFunctionType &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::LocalizableFunctionBasedLocalDirichletBoundaryValue&lt; GridLayerType, LocalizableFunctionType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a01908.html">LocalizableFunctionBasedLocalizableDirichletBoundaryValue</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a01908.html">LocalizableFunctionBasedLocalDirichletBoundaryValue</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -70,60 +70,58 @@ $(function() {
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="a01905.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::LocalizableFunctionBasedLocalizableDirichletBoundaryValue&lt; GridLayerType, LocalizableFunctionType &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::LocalizableFunctionBasedLocalDirichletBoundaryValue&lt; GridLayerType, LocalizableFunctionType &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="a00116_source.html">dune/gdt/operators/fv/boundary.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::LocalizableFunctionBasedLocalizableDirichletBoundaryValue&lt; GridLayerType, LocalizableFunctionType &gt;:</div>
+Inheritance diagram for Dune::GDT::LocalizableFunctionBasedLocalDirichletBoundaryValue&lt; GridLayerType, LocalizableFunctionType &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01907.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_localizable_function_based_localizable_dirichlet_boundary_value_3_01_grid_layer_type_00_01_localizable_function_type_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1_localizable_function_based_localizable_dirichlet_boundary_value_3_01_grid_layer_type_00_01_localizable_function_type_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_localizable_function_based_localizable_dirichlet_boundary_value_3_01_grid_layer_type_00_01_localizable_function_type_01_4_inherit__map">
+<div class="center"><img src="a01907.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_localizable_function_based_local_dirichlet_boundary_value_3_01_grid_layer_type_00_01_localizable_function_type_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_localizable_function_based_local_dirichlet_boundary_value_3_01_grid_layer_type_00_01_localizable_function_type_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_localizable_function_based_local_dirichlet_boundary_value_3_01_grid_layer_type_00_01_localizable_function_type_01_4_inherit__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a6dd8d23e52cce2da3f02d26491702d07"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01908.html#a6dd8d23e52cce2da3f02d26491702d07">BoundaryInfoType</a> = typename <a class="el" href="a01896.html#ad6b41261a293470f2d68b5dee126c704">LocalBoundaryValueInterfaceType::BoundaryInfoType</a></td></tr>
-<tr class="separator:a6dd8d23e52cce2da3f02d26491702d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a184324c56cff9b595d10ee430b0ab98d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01908.html#a184324c56cff9b595d10ee430b0ab98d">EntityType</a> = typename GridLayerType::template Codim&lt; 0 &gt;::Entity</td></tr>
-<tr class="separator:a184324c56cff9b595d10ee430b0ab98d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15243f0d448e7333f87dedbb9b1098e0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01908.html#a15243f0d448e7333f87dedbb9b1098e0">LocalBoundaryValueInterfaceType</a> = <a class="el" href="a01896.html">LocalBoundaryValueInterface</a>&lt; <a class="el" href="a01900.html#a02210e9133ebf93ca5b210714fb4a3ca">GridLayerType</a>, <a class="el" href="a01900.html#a421515a061b6a39512e5436a14226757">RangeType</a> &gt;</td></tr>
-<tr class="separator:a15243f0d448e7333f87dedbb9b1098e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02210e9133ebf93ca5b210714fb4a3ca"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01900.html#a02210e9133ebf93ca5b210714fb4a3ca">GridLayerType</a> = <a class="el" href="a01900.html#a02210e9133ebf93ca5b210714fb4a3ca">GridLayerType</a></td></tr>
-<tr class="separator:a02210e9133ebf93ca5b210714fb4a3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a421515a061b6a39512e5436a14226757"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01900.html#a421515a061b6a39512e5436a14226757">RangeType</a> = LocalizableFunctionType::RangeType</td></tr>
-<tr class="separator:a421515a061b6a39512e5436a14226757"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a615051661fb05e879a6985ab691b74af"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01900.html#a615051661fb05e879a6985ab691b74af">DomainFieldType</a> = typename <a class="el" href="a01896.html#aa8ef8d91571f26c7602023b3541712ac">LocalBoundaryValueInterfaceType::DomainFieldType</a></td></tr>
-<tr class="separator:a615051661fb05e879a6985ab691b74af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0400c760d1760bcdd94d1b6b08d7c14"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01900.html#ae0400c760d1760bcdd94d1b6b08d7c14">DomainType</a> = typename <a class="el" href="a01896.html#abb580b220bfbba1a707e7841364d703c">LocalBoundaryValueInterfaceType::DomainType</a></td></tr>
-<tr class="separator:ae0400c760d1760bcdd94d1b6b08d7c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf16a9e2518b02face6ca402bce372ab"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01900.html#abf16a9e2518b02face6ca402bce372ab">RangeFieldType</a> = typename <a class="el" href="a01896.html#a240e5a788bf7751b014104d82c4e7cb3">LocalBoundaryValueInterfaceType::RangeFieldType</a></td></tr>
-<tr class="separator:abf16a9e2518b02face6ca402bce372ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6b41261a293470f2d68b5dee126c704"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01908.html#ad6b41261a293470f2d68b5dee126c704">BoundaryInfoType</a> = XT::Grid::BoundaryInfo&lt; <a class="el" href="a01908.html#aa7768392df77594a39296d52fd8ced1a">IntersectionType</a> &gt;</td></tr>
+<tr class="separator:ad6b41261a293470f2d68b5dee126c704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb580b220bfbba1a707e7841364d703c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01908.html#abb580b220bfbba1a707e7841364d703c">DomainType</a> = FieldVector&lt; <a class="el" href="a01900.html#aa8ef8d91571f26c7602023b3541712ac">DomainFieldType</a>, <a class="el" href="a01900.html#a19c984dad0d6c40bde8c2232e257692f">dimDomain</a> &gt;</td></tr>
+<tr class="separator:abb580b220bfbba1a707e7841364d703c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7768392df77594a39296d52fd8ced1a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01908.html#aa7768392df77594a39296d52fd8ced1a">IntersectionType</a> = typename GridLayerType::Intersection</td></tr>
+<tr class="separator:aa7768392df77594a39296d52fd8ced1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a417f2ab9906f0d6d197dc7e258753ab7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01908.html#a417f2ab9906f0d6d197dc7e258753ab7">RangeType</a> = RangeImp</td></tr>
+<tr class="separator:a417f2ab9906f0d6d197dc7e258753ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05cbf55c45c3e990811cdf40577855db"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01900.html#a05cbf55c45c3e990811cdf40577855db">GridLayerType</a> = <a class="el" href="a01900.html#a05cbf55c45c3e990811cdf40577855db">GridLayerType</a></td></tr>
+<tr class="separator:a05cbf55c45c3e990811cdf40577855db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8ef8d91571f26c7602023b3541712ac"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01900.html#aa8ef8d91571f26c7602023b3541712ac">DomainFieldType</a> = typename GridLayerType::ctype</td></tr>
+<tr class="separator:aa8ef8d91571f26c7602023b3541712ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a240e5a788bf7751b014104d82c4e7cb3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01900.html#a240e5a788bf7751b014104d82c4e7cb3">RangeFieldType</a> = typename RangeType::field_type</td></tr>
+<tr class="separator:a240e5a788bf7751b014104d82c4e7cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aca54b2cae134bd90096f690c3abc5cbd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01908.html#aca54b2cae134bd90096f690c3abc5cbd">LocalizableFunctionBasedLocalizableDirichletBoundaryValue</a> (const <a class="el" href="a01908.html#a6dd8d23e52cce2da3f02d26491702d07">BoundaryInfoType</a> &amp;boundary_info, const LocalizableFunctionType &amp;boundary_values)</td></tr>
-<tr class="separator:aca54b2cae134bd90096f690c3abc5cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08b59decb60f0a0500a29d5af637cf20"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="a01908.html#a15243f0d448e7333f87dedbb9b1098e0">LocalBoundaryValueInterfaceType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01908.html#a08b59decb60f0a0500a29d5af637cf20">local_function</a> (const <a class="el" href="a01908.html#a184324c56cff9b595d10ee430b0ab98d">EntityType</a> &amp;entity) const override</td></tr>
-<tr class="separator:a08b59decb60f0a0500a29d5af637cf20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac35a80368e25fdf26c4b6d88bcccba7f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01908.html#ac35a80368e25fdf26c4b6d88bcccba7f">LocalizableFunctionBasedLocalDirichletBoundaryValue</a> (const <a class="el" href="a01908.html#ad6b41261a293470f2d68b5dee126c704">BoundaryInfoType</a> &amp;boundary_info, std::unique_ptr&lt; LocalfunctionType &gt; &amp;&amp;local_boundary_values)</td></tr>
+<tr class="separator:ac35a80368e25fdf26c4b6d88bcccba7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2140cd78f9cae607d430737e361cf724"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a01908.html#a417f2ab9906f0d6d197dc7e258753ab7">RangeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01908.html#a2140cd78f9cae607d430737e361cf724">evaluate</a> (const <a class="el" href="a01908.html#aa7768392df77594a39296d52fd8ced1a">IntersectionType</a> &amp;intersection, const <a class="el" href="a01908.html#abb580b220bfbba1a707e7841364d703c">DomainType</a> &amp;x, const <a class="el" href="a01908.html#a417f2ab9906f0d6d197dc7e258753ab7">RangeType</a> &amp;, const XT::Common::Parameter &amp;={}) const override</td></tr>
+<tr class="separator:a2140cd78f9cae607d430737e361cf724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0c43cc6687187cd7d42add1c5bc232e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a01908.html#a417f2ab9906f0d6d197dc7e258753ab7">RangeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01900.html#ac0c43cc6687187cd7d42add1c5bc232e">evaluate</a> (const <a class="el" href="a01908.html#aa7768392df77594a39296d52fd8ced1a">IntersectionType</a> &amp;intersection, const <a class="el" href="a01908.html#abb580b220bfbba1a707e7841364d703c">DomainType</a> &amp;x, const <a class="el" href="a01908.html#a417f2ab9906f0d6d197dc7e258753ab7">RangeType</a> &amp;u, const XT::Common::Parameter &amp;param={}) const=0</td></tr>
+<tr class="separator:ac0c43cc6687187cd7d42add1c5bc232e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a4015d6673b5bee776ef7d0c4114224a9"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01900.html#a4015d6673b5bee776ef7d0c4114224a9">dimDomain</a></td></tr>
-<tr class="separator:a4015d6673b5bee776ef7d0c4114224a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98fab8a1e2ba98fcb82b1b39517eb3b1"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01900.html#a98fab8a1e2ba98fcb82b1b39517eb3b1">dimRange</a></td></tr>
-<tr class="separator:a98fab8a1e2ba98fcb82b1b39517eb3b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19c984dad0d6c40bde8c2232e257692f"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01900.html#a19c984dad0d6c40bde8c2232e257692f">dimDomain</a></td></tr>
+<tr class="separator:a19c984dad0d6c40bde8c2232e257692f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a8781c042989b16ab8dd105a15b86aa2f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a01908.html#a6dd8d23e52cce2da3f02d26491702d07">BoundaryInfoType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01900.html#a8781c042989b16ab8dd105a15b86aa2f">boundary_info_</a></td></tr>
-<tr class="separator:a8781c042989b16ab8dd105a15b86aa2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5342401fa01ce858e44a289e80d9011c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a01908.html#ad6b41261a293470f2d68b5dee126c704">BoundaryInfoType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01900.html#a5342401fa01ce858e44a289e80d9011c">boundary_info_</a></td></tr>
+<tr class="separator:a5342401fa01ce858e44a289e80d9011c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a6dd8d23e52cce2da3f02d26491702d07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6dd8d23e52cce2da3f02d26491702d07">&#9670;&nbsp;</a></span>BoundaryInfoType</h2>
+<a id="ad6b41261a293470f2d68b5dee126c704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6b41261a293470f2d68b5dee126c704">&#9670;&nbsp;</a></span>BoundaryInfoType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -131,15 +129,15 @@ Protected Attributes</h2></td></tr>
 template&lt;class GridLayerType , class LocalizableFunctionType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01900.html">Dune::GDT::LocalizableBoundaryValueInterface</a>&lt; GridLayerImp, RangeImp &gt;::<a class="el" href="a01908.html#a6dd8d23e52cce2da3f02d26491702d07">BoundaryInfoType</a> =  typename <a class="el" href="a01896.html#ad6b41261a293470f2d68b5dee126c704">LocalBoundaryValueInterfaceType::BoundaryInfoType</a></td>
+          <td class="memname">using <a class="el" href="a01900.html">Dune::GDT::LocalBoundaryValueInterface</a>&lt; GridLayerImp, RangeImp &gt;::<a class="el" href="a01908.html#ad6b41261a293470f2d68b5dee126c704">BoundaryInfoType</a> =  XT::Grid::BoundaryInfo&lt;<a class="el" href="a01908.html#aa7768392df77594a39296d52fd8ced1a">IntersectionType</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a615051661fb05e879a6985ab691b74af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a615051661fb05e879a6985ab691b74af">&#9670;&nbsp;</a></span>DomainFieldType</h2>
+<a id="aa8ef8d91571f26c7602023b3541712ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8ef8d91571f26c7602023b3541712ac">&#9670;&nbsp;</a></span>DomainFieldType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -148,7 +146,7 @@ template&lt;class GridLayerType , class LocalizableFunctionType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01900.html">Dune::GDT::LocalizableBoundaryValueInterface</a>&lt; <a class="el" href="a01900.html#a02210e9133ebf93ca5b210714fb4a3ca">GridLayerType</a> , LocalizableFunctionType::RangeType  &gt;::<a class="el" href="a01900.html#a615051661fb05e879a6985ab691b74af">DomainFieldType</a> =  typename <a class="el" href="a01896.html#aa8ef8d91571f26c7602023b3541712ac">LocalBoundaryValueInterfaceType::DomainFieldType</a></td>
+          <td class="memname">using <a class="el" href="a01900.html">Dune::GDT::LocalBoundaryValueInterface</a>&lt; <a class="el" href="a01900.html#a05cbf55c45c3e990811cdf40577855db">GridLayerType</a> , LocalizableFunctionType::RangeType  &gt;::<a class="el" href="a01900.html#aa8ef8d91571f26c7602023b3541712ac">DomainFieldType</a> =  typename GridLayerType::ctype</td>
         </tr>
       </table>
   </td>
@@ -160,30 +158,8 @@ template&lt;class GridLayerType , class LocalizableFunctionType &gt; </div>
 
 </div>
 </div>
-<a id="ae0400c760d1760bcdd94d1b6b08d7c14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0400c760d1760bcdd94d1b6b08d7c14">&#9670;&nbsp;</a></span>DomainType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="a01900.html">Dune::GDT::LocalizableBoundaryValueInterface</a>&lt; <a class="el" href="a01900.html#a02210e9133ebf93ca5b210714fb4a3ca">GridLayerType</a> , LocalizableFunctionType::RangeType  &gt;::<a class="el" href="a01900.html#ae0400c760d1760bcdd94d1b6b08d7c14">DomainType</a> =  typename <a class="el" href="a01896.html#abb580b220bfbba1a707e7841364d703c">LocalBoundaryValueInterfaceType::DomainType</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a184324c56cff9b595d10ee430b0ab98d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a184324c56cff9b595d10ee430b0ab98d">&#9670;&nbsp;</a></span>EntityType</h2>
+<a id="abb580b220bfbba1a707e7841364d703c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb580b220bfbba1a707e7841364d703c">&#9670;&nbsp;</a></span>DomainType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -191,15 +167,15 @@ template&lt;class GridLayerType , class LocalizableFunctionType &gt; </div>
 template&lt;class GridLayerType , class LocalizableFunctionType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01900.html">Dune::GDT::LocalizableBoundaryValueInterface</a>&lt; GridLayerImp, RangeImp &gt;::<a class="el" href="a01908.html#a184324c56cff9b595d10ee430b0ab98d">EntityType</a> =  typename GridLayerType::template Codim&lt;0&gt;::Entity</td>
+          <td class="memname">using <a class="el" href="a01900.html">Dune::GDT::LocalBoundaryValueInterface</a>&lt; GridLayerImp, RangeImp &gt;::<a class="el" href="a01908.html#abb580b220bfbba1a707e7841364d703c">DomainType</a> =  FieldVector&lt;<a class="el" href="a01900.html#aa8ef8d91571f26c7602023b3541712ac">DomainFieldType</a>, <a class="el" href="a01900.html#a19c984dad0d6c40bde8c2232e257692f">dimDomain</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a02210e9133ebf93ca5b210714fb4a3ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02210e9133ebf93ca5b210714fb4a3ca">&#9670;&nbsp;</a></span>GridLayerType</h2>
+<a id="a05cbf55c45c3e990811cdf40577855db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05cbf55c45c3e990811cdf40577855db">&#9670;&nbsp;</a></span>GridLayerType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -208,7 +184,7 @@ template&lt;class GridLayerType , class LocalizableFunctionType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01900.html">Dune::GDT::LocalizableBoundaryValueInterface</a>&lt; <a class="el" href="a01900.html#a02210e9133ebf93ca5b210714fb4a3ca">GridLayerType</a> , LocalizableFunctionType::RangeType  &gt;::<a class="el" href="a01900.html#a02210e9133ebf93ca5b210714fb4a3ca">GridLayerType</a> =  <a class="el" href="a01900.html#a02210e9133ebf93ca5b210714fb4a3ca">GridLayerType</a></td>
+          <td class="memname">using <a class="el" href="a01900.html">Dune::GDT::LocalBoundaryValueInterface</a>&lt; <a class="el" href="a01900.html#a05cbf55c45c3e990811cdf40577855db">GridLayerType</a> , LocalizableFunctionType::RangeType  &gt;::<a class="el" href="a01900.html#a05cbf55c45c3e990811cdf40577855db">GridLayerType</a> =  <a class="el" href="a01900.html#a05cbf55c45c3e990811cdf40577855db">GridLayerType</a></td>
         </tr>
       </table>
   </td>
@@ -220,8 +196,8 @@ template&lt;class GridLayerType , class LocalizableFunctionType &gt; </div>
 
 </div>
 </div>
-<a id="a15243f0d448e7333f87dedbb9b1098e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15243f0d448e7333f87dedbb9b1098e0">&#9670;&nbsp;</a></span>LocalBoundaryValueInterfaceType</h2>
+<a id="aa7768392df77594a39296d52fd8ced1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7768392df77594a39296d52fd8ced1a">&#9670;&nbsp;</a></span>IntersectionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -229,15 +205,15 @@ template&lt;class GridLayerType , class LocalizableFunctionType &gt; </div>
 template&lt;class GridLayerType , class LocalizableFunctionType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01900.html">Dune::GDT::LocalizableBoundaryValueInterface</a>&lt; GridLayerImp, RangeImp &gt;::<a class="el" href="a01908.html#a15243f0d448e7333f87dedbb9b1098e0">LocalBoundaryValueInterfaceType</a> =  <a class="el" href="a01896.html">LocalBoundaryValueInterface</a>&lt;<a class="el" href="a01900.html#a02210e9133ebf93ca5b210714fb4a3ca">GridLayerType</a>, <a class="el" href="a01900.html#a421515a061b6a39512e5436a14226757">RangeType</a>&gt;</td>
+          <td class="memname">using <a class="el" href="a01900.html">Dune::GDT::LocalBoundaryValueInterface</a>&lt; GridLayerImp, RangeImp &gt;::<a class="el" href="a01908.html#aa7768392df77594a39296d52fd8ced1a">IntersectionType</a> =  typename GridLayerType::Intersection</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="abf16a9e2518b02face6ca402bce372ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf16a9e2518b02face6ca402bce372ab">&#9670;&nbsp;</a></span>RangeFieldType</h2>
+<a id="a240e5a788bf7751b014104d82c4e7cb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a240e5a788bf7751b014104d82c4e7cb3">&#9670;&nbsp;</a></span>RangeFieldType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -246,7 +222,7 @@ template&lt;class GridLayerType , class LocalizableFunctionType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01900.html">Dune::GDT::LocalizableBoundaryValueInterface</a>&lt; <a class="el" href="a01900.html#a02210e9133ebf93ca5b210714fb4a3ca">GridLayerType</a> , LocalizableFunctionType::RangeType  &gt;::<a class="el" href="a01900.html#abf16a9e2518b02face6ca402bce372ab">RangeFieldType</a> =  typename <a class="el" href="a01896.html#a240e5a788bf7751b014104d82c4e7cb3">LocalBoundaryValueInterfaceType::RangeFieldType</a></td>
+          <td class="memname">using <a class="el" href="a01900.html">Dune::GDT::LocalBoundaryValueInterface</a>&lt; <a class="el" href="a01900.html#a05cbf55c45c3e990811cdf40577855db">GridLayerType</a> , LocalizableFunctionType::RangeType  &gt;::<a class="el" href="a01900.html#a240e5a788bf7751b014104d82c4e7cb3">RangeFieldType</a> =  typename RangeType::field_type</td>
         </tr>
       </table>
   </td>
@@ -258,31 +234,25 @@ template&lt;class GridLayerType , class LocalizableFunctionType &gt; </div>
 
 </div>
 </div>
-<a id="a421515a061b6a39512e5436a14226757"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a421515a061b6a39512e5436a14226757">&#9670;&nbsp;</a></span>RangeType</h2>
+<a id="a417f2ab9906f0d6d197dc7e258753ab7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a417f2ab9906f0d6d197dc7e258753ab7">&#9670;&nbsp;</a></span>RangeType</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+<div class="memtemplate">
+template&lt;class GridLayerType , class LocalizableFunctionType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01900.html">Dune::GDT::LocalizableBoundaryValueInterface</a>&lt; <a class="el" href="a01900.html#a02210e9133ebf93ca5b210714fb4a3ca">GridLayerType</a> , LocalizableFunctionType::RangeType  &gt;::<a class="el" href="a01900.html#a421515a061b6a39512e5436a14226757">RangeType</a> =  LocalizableFunctionType::RangeType</td>
+          <td class="memname">using <a class="el" href="a01900.html">Dune::GDT::LocalBoundaryValueInterface</a>&lt; GridLayerImp, RangeImp &gt;::<a class="el" href="a01908.html#a417f2ab9906f0d6d197dc7e258753ab7">RangeType</a> =  RangeImp</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aca54b2cae134bd90096f690c3abc5cbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca54b2cae134bd90096f690c3abc5cbd">&#9670;&nbsp;</a></span>LocalizableFunctionBasedLocalizableDirichletBoundaryValue()</h2>
+<a id="ac35a80368e25fdf26c4b6d88bcccba7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac35a80368e25fdf26c4b6d88bcccba7f">&#9670;&nbsp;</a></span>LocalizableFunctionBasedLocalDirichletBoundaryValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -293,16 +263,16 @@ template&lt;class GridLayerType , class LocalizableFunctionType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a01908.html">Dune::GDT::LocalizableFunctionBasedLocalizableDirichletBoundaryValue</a>&lt; <a class="el" href="a01900.html#a02210e9133ebf93ca5b210714fb4a3ca">GridLayerType</a>, LocalizableFunctionType &gt;::<a class="el" href="a01908.html">LocalizableFunctionBasedLocalizableDirichletBoundaryValue</a> </td>
+          <td class="memname"><a class="el" href="a01908.html">Dune::GDT::LocalizableFunctionBasedLocalDirichletBoundaryValue</a>&lt; <a class="el" href="a01900.html#a05cbf55c45c3e990811cdf40577855db">GridLayerType</a>, LocalizableFunctionType &gt;::<a class="el" href="a01908.html">LocalizableFunctionBasedLocalDirichletBoundaryValue</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a01908.html#a6dd8d23e52cce2da3f02d26491702d07">BoundaryInfoType</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a01908.html#ad6b41261a293470f2d68b5dee126c704">BoundaryInfoType</a> &amp;&#160;</td>
           <td class="paramname"><em>boundary_info</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const LocalizableFunctionType &amp;&#160;</td>
-          <td class="paramname"><em>boundary_values</em>&#160;</td>
+          <td class="paramtype">std::unique_ptr&lt; LocalfunctionType &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>local_boundary_values</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -320,8 +290,56 @@ template&lt;class GridLayerType , class LocalizableFunctionType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a08b59decb60f0a0500a29d5af637cf20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08b59decb60f0a0500a29d5af637cf20">&#9670;&nbsp;</a></span>local_function()</h2>
+<a id="ac0c43cc6687187cd7d42add1c5bc232e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0c43cc6687187cd7d42add1c5bc232e">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="a01908.html#a417f2ab9906f0d6d197dc7e258753ab7">RangeType</a> <a class="el" href="a01900.html">Dune::GDT::LocalBoundaryValueInterface</a>&lt; <a class="el" href="a01900.html#a05cbf55c45c3e990811cdf40577855db">GridLayerType</a> , LocalizableFunctionType::RangeType  &gt;::evaluate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a01900.html#aa7768392df77594a39296d52fd8ced1a">IntersectionType</a> &amp;&#160;</td>
+          <td class="paramname"><em>intersection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a01900.html#abb580b220bfbba1a707e7841364d703c">DomainType</a> &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a01900.html#a417f2ab9906f0d6d197dc7e258753ab7">RangeType</a> &amp;&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2140cd78f9cae607d430737e361cf724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2140cd78f9cae607d430737e361cf724">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -332,11 +350,33 @@ template&lt;class GridLayerType , class LocalizableFunctionType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::unique_ptr&lt;<a class="el" href="a01908.html#a15243f0d448e7333f87dedbb9b1098e0">LocalBoundaryValueInterfaceType</a>&gt; <a class="el" href="a01908.html">Dune::GDT::LocalizableFunctionBasedLocalizableDirichletBoundaryValue</a>&lt; <a class="el" href="a01900.html#a02210e9133ebf93ca5b210714fb4a3ca">GridLayerType</a>, LocalizableFunctionType &gt;::local_function </td>
+          <td class="memname">virtual <a class="el" href="a01908.html#a417f2ab9906f0d6d197dc7e258753ab7">RangeType</a> <a class="el" href="a01908.html">Dune::GDT::LocalizableFunctionBasedLocalDirichletBoundaryValue</a>&lt; <a class="el" href="a01900.html#a05cbf55c45c3e990811cdf40577855db">GridLayerType</a>, LocalizableFunctionType &gt;::evaluate </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a01908.html#a184324c56cff9b595d10ee430b0ab98d">EntityType</a> &amp;&#160;</td>
-          <td class="paramname"><em>entity</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const <a class="el" href="a01908.html#aa7768392df77594a39296d52fd8ced1a">IntersectionType</a> &amp;&#160;</td>
+          <td class="paramname"><em>intersection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a01908.html#abb580b220bfbba1a707e7841364d703c">DomainType</a> &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a01908.html#a417f2ab9906f0d6d197dc7e258753ab7">RangeType</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -346,13 +386,11 @@ template&lt;class GridLayerType , class LocalizableFunctionType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="a01900.html#aaeaa2f377ec751d8e6d6337aa323d5c2">Dune::GDT::LocalizableBoundaryValueInterface&lt; GridLayerType, LocalizableFunctionType::RangeType &gt;</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a8781c042989b16ab8dd105a15b86aa2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8781c042989b16ab8dd105a15b86aa2f">&#9670;&nbsp;</a></span>boundary_info_</h2>
+<a id="a5342401fa01ce858e44a289e80d9011c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5342401fa01ce858e44a289e80d9011c">&#9670;&nbsp;</a></span>boundary_info_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -361,7 +399,7 @@ template&lt;class GridLayerType , class LocalizableFunctionType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a01908.html#a6dd8d23e52cce2da3f02d26491702d07">BoundaryInfoType</a>&amp; <a class="el" href="a01900.html">Dune::GDT::LocalizableBoundaryValueInterface</a>&lt; <a class="el" href="a01900.html#a02210e9133ebf93ca5b210714fb4a3ca">GridLayerType</a> , LocalizableFunctionType::RangeType  &gt;::boundary_info_</td>
+          <td class="memname">const <a class="el" href="a01908.html#ad6b41261a293470f2d68b5dee126c704">BoundaryInfoType</a>&amp; <a class="el" href="a01900.html">Dune::GDT::LocalBoundaryValueInterface</a>&lt; <a class="el" href="a01900.html#a05cbf55c45c3e990811cdf40577855db">GridLayerType</a> , LocalizableFunctionType::RangeType  &gt;::boundary_info_</td>
         </tr>
       </table>
   </td>
@@ -373,8 +411,8 @@ template&lt;class GridLayerType , class LocalizableFunctionType &gt; </div>
 
 </div>
 </div>
-<a id="a4015d6673b5bee776ef7d0c4114224a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4015d6673b5bee776ef7d0c4114224a9">&#9670;&nbsp;</a></span>dimDomain</h2>
+<a id="a19c984dad0d6c40bde8c2232e257692f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19c984dad0d6c40bde8c2232e257692f">&#9670;&nbsp;</a></span>dimDomain</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -383,29 +421,7 @@ template&lt;class GridLayerType , class LocalizableFunctionType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t <a class="el" href="a01900.html">Dune::GDT::LocalizableBoundaryValueInterface</a>&lt; <a class="el" href="a01900.html#a02210e9133ebf93ca5b210714fb4a3ca">GridLayerType</a> , LocalizableFunctionType::RangeType  &gt;::dimDomain</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a98fab8a1e2ba98fcb82b1b39517eb3b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98fab8a1e2ba98fcb82b1b39517eb3b1">&#9670;&nbsp;</a></span>dimRange</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const size_t <a class="el" href="a01900.html">Dune::GDT::LocalizableBoundaryValueInterface</a>&lt; <a class="el" href="a01900.html#a02210e9133ebf93ca5b210714fb4a3ca">GridLayerType</a> , LocalizableFunctionType::RangeType  &gt;::dimRange</td>
+          <td class="memname">const size_t <a class="el" href="a01900.html">Dune::GDT::LocalBoundaryValueInterface</a>&lt; <a class="el" href="a01900.html#a05cbf55c45c3e990811cdf40577855db">GridLayerType</a> , LocalizableFunctionType::RangeType  &gt;::dimDomain</td>
         </tr>
       </table>
   </td>

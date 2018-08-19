@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::internal::AdvectionTraitsBase&lt; AnalyticalFluxImp, BoundaryValueImp &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::DiffusiveFluxReconstructionOperator&lt; GridLayerType, LocalizableFunctionType, void, method &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,229 +59,218 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a00250.html">internal</a></li><li class="navelem"><a class="el" href="a01836.html">AdvectionTraitsBase</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a01836.html">DiffusiveFluxReconstructionOperator&lt; GridLayerType, LocalizableFunctionType, void, method &gt;</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="a01833.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::AdvectionTraitsBase&lt; AnalyticalFluxImp, BoundaryValueImp &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::DiffusiveFluxReconstructionOperator&lt; GridLayerType, LocalizableFunctionType, void, method &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a04554_source.html">dune/gdt/operators/fv/advection/base.hh</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for Dune::GDT::internal::AdvectionTraitsBase&lt; AnalyticalFluxImp, BoundaryValueImp &gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="a01835.png" border="0" usemap="#_dune_1_1_g_d_t_1_1internal_1_1_advection_traits_base_3_01_analytical_flux_imp_00_01_boundary_value_imp_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1internal_1_1_advection_traits_base_3_01_analytical_flux_imp_00_01_boundary_value_imp_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1internal_1_1_advection_traits_base_3_01_analytical_flux_imp_00_01_boundary_value_imp_01_4_inherit__map">
-</map>
-</div>
+<p><code>#include &lt;<a class="el" href="a00110_source.html">dune/gdt/operators/fluxreconstruction.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:acdf1a15881de8dc0b8ac7c2b47b014e7"><td class="memItemLeft" align="right" valign="top">typedef AnalyticalFluxImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01836.html#acdf1a15881de8dc0b8ac7c2b47b014e7">AnalyticalFluxType</a></td></tr>
-<tr class="separator:acdf1a15881de8dc0b8ac7c2b47b014e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9027de19001b3c0b357adcb5c528db52"><td class="memItemLeft" align="right" valign="top">typedef BoundaryValueImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01836.html#a9027de19001b3c0b357adcb5c528db52">BoundaryValueType</a></td></tr>
-<tr class="separator:a9027de19001b3c0b357adcb5c528db52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a524acd8ffe941f02d4444dd9b0eea2d2"><td class="memItemLeft" align="right" valign="top">typedef BoundaryValueType::DomainFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01836.html#a524acd8ffe941f02d4444dd9b0eea2d2">DomainFieldType</a></td></tr>
-<tr class="separator:a524acd8ffe941f02d4444dd9b0eea2d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab864b406ab510014e6abdd61fa85c3a5"><td class="memItemLeft" align="right" valign="top">typedef BoundaryValueType::RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01836.html#ab864b406ab510014e6abdd61fa85c3a5">RangeFieldType</a></td></tr>
-<tr class="separator:ab864b406ab510014e6abdd61fa85c3a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab42146ae5d3c82623a5e30f92ed34ce7"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01836.html#ab864b406ab510014e6abdd61fa85c3a5">RangeFieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01836.html#ab42146ae5d3c82623a5e30f92ed34ce7">FieldType</a></td></tr>
-<tr class="separator:ab42146ae5d3c82623a5e30f92ed34ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa08f488131744359f039e240c362502e"><td class="memItemLeft" align="right" valign="top">typedef BoundaryValueType::DomainType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01836.html#aa08f488131744359f039e240c362502e">DomainType</a></td></tr>
-<tr class="separator:aa08f488131744359f039e240c362502e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3f84580e44bd9f0c354584c826b50fc"><td class="memItemLeft" align="right" valign="top">typedef AnalyticalFluxType::PartialURangeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01836.html#ac3f84580e44bd9f0c354584c826b50fc">JacobianType</a></td></tr>
-<tr class="separator:ac3f84580e44bd9f0c354584c826b50fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70bdf40dd13d85cb40e8ffbbeac97efb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01836.html#a70bdf40dd13d85cb40e8ffbbeac97efb">EntityType</a> = XT::Grid::extract_entity_t&lt; GridLayerType &gt;</td></tr>
+<tr class="separator:a70bdf40dd13d85cb40e8ffbbeac97efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad906c1ae1b5409003e9975dd3141d66"><td class="memItemLeft" align="right" valign="top">typedef GridLayerType::ctype&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01836.html#aad906c1ae1b5409003e9975dd3141d66">DomainFieldType</a></td></tr>
+<tr class="separator:aad906c1ae1b5409003e9975dd3141d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56d28dd148c0d090fe4931dce389dc96"><td class="memItemLeft" align="right" valign="top">typedef LocalizableFunctionType::RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01836.html#a56d28dd148c0d090fe4931dce389dc96">FieldType</a></td></tr>
+<tr class="separator:a56d28dd148c0d090fe4931dce389dc96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7603d89b812725aa3e27202350a84e0e"><td class="memItemLeft" align="right" valign="top">typedef LocalizableFunctionType::DomainType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01836.html#a7603d89b812725aa3e27202350a84e0e">DomainType</a></td></tr>
+<tr class="separator:a7603d89b812725aa3e27202350a84e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ac9ecc1eb3cb8c2f313a62b57afc76b4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01836.html#ac9ecc1eb3cb8c2f313a62b57afc76b4a">DiffusiveFluxReconstructionOperator</a> (const GridLayerType &amp;grid_layer, const LocalizableFunctionType &amp;diffusion, const size_t over_integrate=0)</td></tr>
+<tr class="separator:ac9ecc1eb3cb8c2f313a62b57afc76b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a112aa739ba0797434d79d310bf89be16"><td class="memTemplParams" colspan="2">template&lt;class GL , class V &gt; </td></tr>
+<tr class="memitem:a112aa739ba0797434d79d310bf89be16"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01836.html#a112aa739ba0797434d79d310bf89be16">apply</a> (const XT::Functions::LocalizableFunctionInterface&lt; <a class="el" href="a01836.html#a70bdf40dd13d85cb40e8ffbbeac97efb">EntityType</a>, <a class="el" href="a01836.html#aad906c1ae1b5409003e9975dd3141d66">DomainFieldType</a>, <a class="el" href="a01836.html#a124e21379751be48503bf61a875945f4">dimDomain</a>, <a class="el" href="a01836.html#a56d28dd148c0d090fe4931dce389dc96">FieldType</a>, 1 &gt; &amp;source, <a class="el" href="a00940.html">DiscreteFunction</a>&lt; <a class="el" href="a02892.html">RaviartThomasSpace</a>&lt; GL, 0, <a class="el" href="a01836.html#a56d28dd148c0d090fe4931dce389dc96">FieldType</a> &gt;, V &gt; &amp;range) const</td></tr>
+<tr class="separator:a112aa739ba0797434d79d310bf89be16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a97027108f4fb0237a489cee301cfb550"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01836.html#a97027108f4fb0237a489cee301cfb550">dimDomain</a> = AnalyticalFluxType::dimDomain</td></tr>
-<tr class="separator:a97027108f4fb0237a489cee301cfb550"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae82a151a8a56fbbee8da83be25ebbb46"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01836.html#ae82a151a8a56fbbee8da83be25ebbb46">dimRange</a> = AnalyticalFluxType::dimRange</td></tr>
-<tr class="separator:ae82a151a8a56fbbee8da83be25ebbb46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cb6ff7d7d46b3eb0aa8e74b298d1502"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01836.html#a5cb6ff7d7d46b3eb0aa8e74b298d1502">dimRangeCols</a> = 1</td></tr>
-<tr class="separator:a5cb6ff7d7d46b3eb0aa8e74b298d1502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a124e21379751be48503bf61a875945f4"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01836.html#a124e21379751be48503bf61a875945f4">dimDomain</a> = GridLayerType::dimension</td></tr>
+<tr class="separator:a124e21379751be48503bf61a875945f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="acdf1a15881de8dc0b8ac7c2b47b014e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdf1a15881de8dc0b8ac7c2b47b014e7">&#9670;&nbsp;</a></span>AnalyticalFluxType</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class GridLayerType, class LocalizableFunctionType, LocalEllipticIpdgIntegrands::Method method&gt;<br />
+class Dune::GDT::DiffusiveFluxReconstructionOperator&lt; GridLayerType, LocalizableFunctionType, void, method &gt;</h3>
+
+<dl class="todo"><dt><b><a class="el" href="a00242.html#_todo000029">Todo:</a></b></dt><dd><p class="startdd">Add more static checks that GridLayerType and LocalizableFunctionType match. </p>
+<p class="enddd">Derive from operator interfaces. </p>
+</dd></dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="aad906c1ae1b5409003e9975dd3141d66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad906c1ae1b5409003e9975dd3141d66">&#9670;&nbsp;</a></span>DomainFieldType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp , class BoundaryValueImp &gt; </div>
+template&lt;class GridLayerType , class LocalizableFunctionType , LocalEllipticIpdgIntegrands::Method method&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef AnalyticalFluxImp <a class="el" href="a01836.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp &gt;::<a class="el" href="a01836.html#acdf1a15881de8dc0b8ac7c2b47b014e7">AnalyticalFluxType</a></td>
+          <td class="memname">typedef GridLayerType::ctype <a class="el" href="a01832.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, LocalizableFunctionType, void, method &gt;::<a class="el" href="a01836.html#aad906c1ae1b5409003e9975dd3141d66">DomainFieldType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a9027de19001b3c0b357adcb5c528db52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9027de19001b3c0b357adcb5c528db52">&#9670;&nbsp;</a></span>BoundaryValueType</h2>
+<a id="a7603d89b812725aa3e27202350a84e0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7603d89b812725aa3e27202350a84e0e">&#9670;&nbsp;</a></span>DomainType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp , class BoundaryValueImp &gt; </div>
+template&lt;class GridLayerType , class LocalizableFunctionType , LocalEllipticIpdgIntegrands::Method method&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef BoundaryValueImp <a class="el" href="a01836.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp &gt;::<a class="el" href="a01836.html#a9027de19001b3c0b357adcb5c528db52">BoundaryValueType</a></td>
+          <td class="memname">typedef LocalizableFunctionType::DomainType <a class="el" href="a01832.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, LocalizableFunctionType, void, method &gt;::<a class="el" href="a01836.html#a7603d89b812725aa3e27202350a84e0e">DomainType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a524acd8ffe941f02d4444dd9b0eea2d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a524acd8ffe941f02d4444dd9b0eea2d2">&#9670;&nbsp;</a></span>DomainFieldType</h2>
+<a id="a70bdf40dd13d85cb40e8ffbbeac97efb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70bdf40dd13d85cb40e8ffbbeac97efb">&#9670;&nbsp;</a></span>EntityType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp , class BoundaryValueImp &gt; </div>
+template&lt;class GridLayerType , class LocalizableFunctionType , LocalEllipticIpdgIntegrands::Method method&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef BoundaryValueType::DomainFieldType <a class="el" href="a01836.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp &gt;::<a class="el" href="a01836.html#a524acd8ffe941f02d4444dd9b0eea2d2">DomainFieldType</a></td>
+          <td class="memname">using <a class="el" href="a01832.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, LocalizableFunctionType, void, method &gt;::<a class="el" href="a01836.html#a70bdf40dd13d85cb40e8ffbbeac97efb">EntityType</a> =  XT::Grid::extract_entity_t&lt;GridLayerType&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aa08f488131744359f039e240c362502e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa08f488131744359f039e240c362502e">&#9670;&nbsp;</a></span>DomainType</h2>
+<a id="a56d28dd148c0d090fe4931dce389dc96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56d28dd148c0d090fe4931dce389dc96">&#9670;&nbsp;</a></span>FieldType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp , class BoundaryValueImp &gt; </div>
+template&lt;class GridLayerType , class LocalizableFunctionType , LocalEllipticIpdgIntegrands::Method method&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef BoundaryValueType::DomainType <a class="el" href="a01836.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp &gt;::<a class="el" href="a01836.html#aa08f488131744359f039e240c362502e">DomainType</a></td>
+          <td class="memname">typedef LocalizableFunctionType::RangeFieldType <a class="el" href="a01832.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, LocalizableFunctionType, void, method &gt;::<a class="el" href="a01836.html#a56d28dd148c0d090fe4931dce389dc96">FieldType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ab42146ae5d3c82623a5e30f92ed34ce7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab42146ae5d3c82623a5e30f92ed34ce7">&#9670;&nbsp;</a></span>FieldType</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ac9ecc1eb3cb8c2f313a62b57afc76b4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9ecc1eb3cb8c2f313a62b57afc76b4a">&#9670;&nbsp;</a></span>DiffusiveFluxReconstructionOperator()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp , class BoundaryValueImp &gt; </div>
+template&lt;class GridLayerType , class LocalizableFunctionType , LocalEllipticIpdgIntegrands::Method method&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a01836.html#ab864b406ab510014e6abdd61fa85c3a5">RangeFieldType</a> <a class="el" href="a01836.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp &gt;::<a class="el" href="a01836.html#ab42146ae5d3c82623a5e30f92ed34ce7">FieldType</a></td>
+          <td class="memname"><a class="el" href="a01832.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, LocalizableFunctionType, void, method &gt;::<a class="el" href="a01832.html">DiffusiveFluxReconstructionOperator</a> </td>
+          <td>(</td>
+          <td class="paramtype">const GridLayerType &amp;&#160;</td>
+          <td class="paramname"><em>grid_layer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const LocalizableFunctionType &amp;&#160;</td>
+          <td class="paramname"><em>diffusion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>over_integrate</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ac3f84580e44bd9f0c354584c826b50fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3f84580e44bd9f0c354584c826b50fc">&#9670;&nbsp;</a></span>JacobianType</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a112aa739ba0797434d79d310bf89be16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a112aa739ba0797434d79d310bf89be16">&#9670;&nbsp;</a></span>apply()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp , class BoundaryValueImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef AnalyticalFluxType::PartialURangeType <a class="el" href="a01836.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp &gt;::<a class="el" href="a01836.html#ac3f84580e44bd9f0c354584c826b50fc">JacobianType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab864b406ab510014e6abdd61fa85c3a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab864b406ab510014e6abdd61fa85c3a5">&#9670;&nbsp;</a></span>RangeFieldType</h2>
-
-<div class="memitem">
-<div class="memproto">
+template&lt;class GridLayerType , class LocalizableFunctionType , LocalEllipticIpdgIntegrands::Method method&gt; </div>
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp , class BoundaryValueImp &gt; </div>
+template&lt;class GL , class V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef BoundaryValueType::RangeFieldType <a class="el" href="a01836.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp &gt;::<a class="el" href="a01836.html#ab864b406ab510014e6abdd61fa85c3a5">RangeFieldType</a></td>
+          <td class="memname">void <a class="el" href="a01832.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, LocalizableFunctionType, void, method &gt;::apply </td>
+          <td>(</td>
+          <td class="paramtype">const XT::Functions::LocalizableFunctionInterface&lt; <a class="el" href="a01836.html#a70bdf40dd13d85cb40e8ffbbeac97efb">EntityType</a>, <a class="el" href="a01836.html#aad906c1ae1b5409003e9975dd3141d66">DomainFieldType</a>, <a class="el" href="a01836.html#a124e21379751be48503bf61a875945f4">dimDomain</a>, <a class="el" href="a01836.html#a56d28dd148c0d090fe4931dce389dc96">FieldType</a>, 1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00940.html">DiscreteFunction</a>&lt; <a class="el" href="a02892.html">RaviartThomasSpace</a>&lt; GL, 0, <a class="el" href="a01836.html#a56d28dd148c0d090fe4931dce389dc96">FieldType</a> &gt;, V &gt; &amp;&#160;</td>
+          <td class="paramname"><em>range</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a97027108f4fb0237a489cee301cfb550"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97027108f4fb0237a489cee301cfb550">&#9670;&nbsp;</a></span>dimDomain</h2>
+<a id="a124e21379751be48503bf61a875945f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a124e21379751be48503bf61a875945f4">&#9670;&nbsp;</a></span>dimDomain</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp , class BoundaryValueImp &gt; </div>
+template&lt;class GridLayerType , class LocalizableFunctionType , LocalEllipticIpdgIntegrands::Method method&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t <a class="el" href="a01836.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp &gt;::dimDomain = AnalyticalFluxType::dimDomain</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae82a151a8a56fbbee8da83be25ebbb46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae82a151a8a56fbbee8da83be25ebbb46">&#9670;&nbsp;</a></span>dimRange</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class AnalyticalFluxImp , class BoundaryValueImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const size_t <a class="el" href="a01836.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp &gt;::dimRange = AnalyticalFluxType::dimRange</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5cb6ff7d7d46b3eb0aa8e74b298d1502"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5cb6ff7d7d46b3eb0aa8e74b298d1502">&#9670;&nbsp;</a></span>dimRangeCols</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class AnalyticalFluxImp , class BoundaryValueImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const size_t <a class="el" href="a01836.html">Dune::GDT::internal::AdvectionTraitsBase</a>&lt; AnalyticalFluxImp, BoundaryValueImp &gt;::dimRangeCols = 1</td>
+          <td class="memname">const size_t <a class="el" href="a01832.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, LocalizableFunctionType, void, method &gt;::dimDomain = GridLayerType::dimension</td>
         </tr>
       </table>
   </td>
@@ -294,7 +283,7 @@ template&lt;class AnalyticalFluxImp , class BoundaryValueImp &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a04554_source.html">operators/fv/advection/base.hh</a></li>
+<li><a class="el" href="a00110_source.html">fluxreconstruction.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

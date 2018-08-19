@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::LocalLambdaBinaryFaceIntegrand&lt; E, I, R, rT, rCT, rA, rCA &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::LocalLambdaBinaryVolumeIntegrand&lt; E, R, rT, rCT, rA, rCA &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a01564.html">LocalLambdaBinaryFaceIntegrand</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a01564.html">LocalLambdaBinaryVolumeIntegrand</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -68,158 +68,158 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a01561.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::LocalLambdaBinaryFaceIntegrand&lt; E, I, R, rT, rCT, rA, rCA &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::LocalLambdaBinaryVolumeIntegrand&lt; E, R, rT, rCT, rA, rCA &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a04731_source.html">dune/gdt/local/integrands/lambda.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a04735_source.html">dune/gdt/local/integrands/lambda.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::LocalLambdaBinaryFaceIntegrand&lt; E, I, R, rT, rCT, rA, rCA &gt;:</div>
+Inheritance diagram for Dune::GDT::LocalLambdaBinaryVolumeIntegrand&lt; E, R, rT, rCT, rA, rCA &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01563.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_local_lambda_binary_face_integrand_3_01_e_00_01_i_00_01_r_00_01r_t_00_01r_c_t_00_01r_a_00_01r_c_a_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1_local_lambda_binary_face_integrand_3_01_e_00_01_i_00_01_r_00_01r_t_00_01r_c_t_00_01r_a_00_01r_c_a_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_local_lambda_binary_face_integrand_3_01_e_00_01_i_00_01_r_00_01r_t_00_01r_c_t_00_01r_a_00_01r_c_a_01_4_inherit__map">
+<div class="center"><img src="a01563.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_local_lambda_binary_volume_integrand_3_01_e_00_01_r_00_01r_t_00_01r_c_t_00_01r_a_00_01r_c_a_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_local_lambda_binary_volume_integrand_3_01_e_00_01_r_00_01r_t_00_01r_c_t_00_01r_a_00_01r_c_a_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_local_lambda_binary_volume_integrand_3_01_e_00_01_r_00_01r_t_00_01r_c_t_00_01r_a_00_01r_c_a_01_4_inherit__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aa8d693269de3b8193356e488e3072a55"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01580.html">internal::LocalLambdaBinaryFaceIntegrandTraits</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01564.html#aa8d693269de3b8193356e488e3072a55">Traits</a></td></tr>
-<tr class="separator:aa8d693269de3b8193356e488e3072a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b651f8bb0d4c46712b9eac5302ab038"><td class="memItemLeft" align="right" valign="top">typedef XT::Functions::LocalfunctionSetInterface&lt; E, D, d, R, rT, rCT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01564.html#a5b651f8bb0d4c46712b9eac5302ab038">TestBaseType</a></td></tr>
-<tr class="separator:a5b651f8bb0d4c46712b9eac5302ab038"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3eb457a71b44531e265c0ba342eab37a"><td class="memItemLeft" align="right" valign="top">typedef XT::Functions::LocalfunctionSetInterface&lt; E, D, d, R, rA, rCA &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01564.html#a3eb457a71b44531e265c0ba342eab37a">AnsatzBaseType</a></td></tr>
-<tr class="separator:a3eb457a71b44531e265c0ba342eab37a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3468ce74aee77af94792323f5a4456d2"><td class="memItemLeft" align="right" valign="top">typedef FieldVector&lt; D, d - 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01564.html#a3468ce74aee77af94792323f5a4456d2">PointType</a></td></tr>
-<tr class="separator:a3468ce74aee77af94792323f5a4456d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93afa3c23f85be13bb677b45c3da638c"><td class="memItemLeft" align="right" valign="top">typedef DynamicMatrix&lt; R &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01564.html#a93afa3c23f85be13bb677b45c3da638c">LocalMatrixType</a></td></tr>
-<tr class="separator:a93afa3c23f85be13bb677b45c3da638c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4246a871ab9c03e0baad317d7a20c19e"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; size_t(const <a class="el" href="a01564.html#a5b651f8bb0d4c46712b9eac5302ab038">TestBaseType</a> &amp;, const <a class="el" href="a01564.html#a3eb457a71b44531e265c0ba342eab37a">AnsatzBaseType</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01564.html#a4246a871ab9c03e0baad317d7a20c19e">OrderLambdaType</a></td></tr>
-<tr class="separator:a4246a871ab9c03e0baad317d7a20c19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7f482c9eeb11e32efda7de539b96636"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(const <a class="el" href="a01564.html#a5b651f8bb0d4c46712b9eac5302ab038">TestBaseType</a> &amp;, const <a class="el" href="a01564.html#a3eb457a71b44531e265c0ba342eab37a">AnsatzBaseType</a> &amp;, const I &amp;, const <a class="el" href="a01564.html#a3468ce74aee77af94792323f5a4456d2">PointType</a> &amp;, <a class="el" href="a01564.html#a93afa3c23f85be13bb677b45c3da638c">LocalMatrixType</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01564.html#ae7f482c9eeb11e32efda7de539b96636">EvaluateLambdaType</a></td></tr>
-<tr class="separator:ae7f482c9eeb11e32efda7de539b96636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a845e0e05ebe0f2a785c71e4218346ab4"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01580.html">internal::LocalLambdaBinaryVolumeIntegrandTraits</a>&lt; E, R, rT, rCT, rA, rCA &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01564.html#a845e0e05ebe0f2a785c71e4218346ab4">Traits</a></td></tr>
+<tr class="separator:a845e0e05ebe0f2a785c71e4218346ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eabcd6013cc954dbe0e8203b677b082"><td class="memItemLeft" align="right" valign="top">typedef XT::Functions::LocalfunctionSetInterface&lt; E, D, d, R, rT, rCT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01564.html#a7eabcd6013cc954dbe0e8203b677b082">TestBaseType</a></td></tr>
+<tr class="separator:a7eabcd6013cc954dbe0e8203b677b082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad636a05853677a97c430568844a4cce7"><td class="memItemLeft" align="right" valign="top">typedef XT::Functions::LocalfunctionSetInterface&lt; E, D, d, R, rA, rCA &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01564.html#ad636a05853677a97c430568844a4cce7">AnsatzBaseType</a></td></tr>
+<tr class="separator:ad636a05853677a97c430568844a4cce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7c79753483ddaf04a9aa0780e821dac"><td class="memItemLeft" align="right" valign="top">typedef FieldVector&lt; D, d &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01564.html#ac7c79753483ddaf04a9aa0780e821dac">PointType</a></td></tr>
+<tr class="separator:ac7c79753483ddaf04a9aa0780e821dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c3bc3456ae7d62b71979373ad040ca5"><td class="memItemLeft" align="right" valign="top">typedef DynamicMatrix&lt; R &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01564.html#a3c3bc3456ae7d62b71979373ad040ca5">LocalMatrixType</a></td></tr>
+<tr class="separator:a3c3bc3456ae7d62b71979373ad040ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88988baf19bb4bc0398aa7c642641381"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; size_t(const <a class="el" href="a01564.html#a7eabcd6013cc954dbe0e8203b677b082">TestBaseType</a> &amp;, const <a class="el" href="a01564.html#ad636a05853677a97c430568844a4cce7">AnsatzBaseType</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01564.html#a88988baf19bb4bc0398aa7c642641381">OrderLambdaType</a></td></tr>
+<tr class="separator:a88988baf19bb4bc0398aa7c642641381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd8cab866cc489a8bebff895d93ea4a3"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(const <a class="el" href="a01564.html#a7eabcd6013cc954dbe0e8203b677b082">TestBaseType</a> &amp;, const <a class="el" href="a01564.html#ad636a05853677a97c430568844a4cce7">AnsatzBaseType</a> &amp;, const <a class="el" href="a01564.html#ac7c79753483ddaf04a9aa0780e821dac">PointType</a> &amp;, <a class="el" href="a01564.html#a3c3bc3456ae7d62b71979373ad040ca5">LocalMatrixType</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01564.html#abd8cab866cc489a8bebff895d93ea4a3">EvaluateLambdaType</a></td></tr>
+<tr class="separator:abd8cab866cc489a8bebff895d93ea4a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a51c0c6286f762020dd8261c9908c311e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01564.html#a51c0c6286f762020dd8261c9908c311e">LocalLambdaBinaryFaceIntegrand</a> (<a class="el" href="a01564.html#a4246a871ab9c03e0baad317d7a20c19e">OrderLambdaType</a> order_lambda, <a class="el" href="a01564.html#ae7f482c9eeb11e32efda7de539b96636">EvaluateLambdaType</a> evaluate_lambda)</td></tr>
-<tr class="separator:a51c0c6286f762020dd8261c9908c311e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f395f47dbc2fe1ac3c2ba7618564c07"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01564.html#a3f395f47dbc2fe1ac3c2ba7618564c07">LocalLambdaBinaryFaceIntegrand</a> (const <a class="el" href="a01564.html">ThisType</a> &amp;)=default</td></tr>
-<tr class="separator:a3f395f47dbc2fe1ac3c2ba7618564c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0614437ea494b878148c20fe63a7c9ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01564.html#a0614437ea494b878148c20fe63a7c9ac">LocalLambdaBinaryFaceIntegrand</a> (<a class="el" href="a01564.html">ThisType</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a0614437ea494b878148c20fe63a7c9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2befc3fcf9ba59b27282a435c791719e"><td class="memItemLeft" align="right" valign="top">LocalfunctionTupleType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01564.html#a2befc3fcf9ba59b27282a435c791719e">localFunctions</a> (const EntityType &amp;) const</td></tr>
-<tr class="separator:a2befc3fcf9ba59b27282a435c791719e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17f490100c4da2d032c0b534f790634e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01564.html#a17f490100c4da2d032c0b534f790634e">order</a> (const LocalfunctionTupleType, const <a class="el" href="a01564.html#a5b651f8bb0d4c46712b9eac5302ab038">TestBaseType</a> &amp;test_base, const <a class="el" href="a01564.html#a3eb457a71b44531e265c0ba342eab37a">AnsatzBaseType</a> &amp;ansatz_base) const</td></tr>
-<tr class="separator:a17f490100c4da2d032c0b534f790634e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9652bf016c2b407ea6bf377c58a1113"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01564.html#ac9652bf016c2b407ea6bf377c58a1113">evaluate</a> (const LocalfunctionTupleType &amp;, const <a class="el" href="a01564.html#a5b651f8bb0d4c46712b9eac5302ab038">TestBaseType</a> &amp;test_base, const <a class="el" href="a01564.html#a3eb457a71b44531e265c0ba342eab37a">AnsatzBaseType</a> &amp;ansatz_base, const I &amp;intersection, const <a class="el" href="a01564.html#a3468ce74aee77af94792323f5a4456d2">PointType</a> &amp;local_point, <a class="el" href="a01564.html#a93afa3c23f85be13bb677b45c3da638c">LocalMatrixType</a> &amp;ret) const</td></tr>
-<tr class="separator:ac9652bf016c2b407ea6bf377c58a1113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc41645c0a56e100a2ca351d6d60e8c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01564.html#adc41645c0a56e100a2ca351d6d60e8c7">LocalLambdaBinaryVolumeIntegrand</a> (<a class="el" href="a01564.html#a88988baf19bb4bc0398aa7c642641381">OrderLambdaType</a> order_lambda, <a class="el" href="a01564.html#abd8cab866cc489a8bebff895d93ea4a3">EvaluateLambdaType</a> evaluate_lambda)</td></tr>
+<tr class="separator:adc41645c0a56e100a2ca351d6d60e8c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a592bad3b57a85d9ba7d09b837cae1e21"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01564.html#a592bad3b57a85d9ba7d09b837cae1e21">LocalLambdaBinaryVolumeIntegrand</a> (const <a class="el" href="a01564.html">ThisType</a> &amp;)=default</td></tr>
+<tr class="separator:a592bad3b57a85d9ba7d09b837cae1e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50f868fe42c6cf71f0b441a99b28ecb6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01564.html#a50f868fe42c6cf71f0b441a99b28ecb6">LocalLambdaBinaryVolumeIntegrand</a> (<a class="el" href="a01564.html">ThisType</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a50f868fe42c6cf71f0b441a99b28ecb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2404d02e8f49418e2f335daf8812f09"><td class="memItemLeft" align="right" valign="top">LocalfunctionTupleType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01564.html#af2404d02e8f49418e2f335daf8812f09">localFunctions</a> (const EntityType &amp;) const</td></tr>
+<tr class="separator:af2404d02e8f49418e2f335daf8812f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a153d8e235460765f9079e1f63169e2f3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01564.html#a153d8e235460765f9079e1f63169e2f3">order</a> (const LocalfunctionTupleType &amp;, const <a class="el" href="a01564.html#a7eabcd6013cc954dbe0e8203b677b082">TestBaseType</a> &amp;test_base, const <a class="el" href="a01564.html#ad636a05853677a97c430568844a4cce7">AnsatzBaseType</a> &amp;ansatz_base) const</td></tr>
+<tr class="separator:a153d8e235460765f9079e1f63169e2f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46568591c0a9946f9f063bbb5dd24504"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01564.html#a46568591c0a9946f9f063bbb5dd24504">evaluate</a> (const LocalfunctionTupleType &amp;, const <a class="el" href="a01564.html#a7eabcd6013cc954dbe0e8203b677b082">TestBaseType</a> &amp;test_base, const <a class="el" href="a01564.html#ad636a05853677a97c430568844a4cce7">AnsatzBaseType</a> &amp;ansatz_base, const <a class="el" href="a01564.html#ac7c79753483ddaf04a9aa0780e821dac">PointType</a> &amp;local_point, <a class="el" href="a01564.html#a3c3bc3456ae7d62b71979373ad040ca5">LocalMatrixType</a> &amp;ret) const</td></tr>
+<tr class="separator:a46568591c0a9946f9f063bbb5dd24504"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a3eb457a71b44531e265c0ba342eab37a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3eb457a71b44531e265c0ba342eab37a">&#9670;&nbsp;</a></span>AnsatzBaseType</h2>
+<a id="ad636a05853677a97c430568844a4cce7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad636a05853677a97c430568844a4cce7">&#9670;&nbsp;</a></span>AnsatzBaseType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
+template&lt;class E , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef XT::Functions::LocalfunctionSetInterface&lt;E, D, d, R, rA, rCA&gt; <a class="el" href="a01564.html">Dune::GDT::LocalLambdaBinaryFaceIntegrand</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01564.html#a3eb457a71b44531e265c0ba342eab37a">AnsatzBaseType</a></td>
+          <td class="memname">typedef XT::Functions::LocalfunctionSetInterface&lt;E, D, d, R, rA, rCA&gt; <a class="el" href="a01564.html">Dune::GDT::LocalLambdaBinaryVolumeIntegrand</a>&lt; E, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01564.html#ad636a05853677a97c430568844a4cce7">AnsatzBaseType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ae7f482c9eeb11e32efda7de539b96636"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7f482c9eeb11e32efda7de539b96636">&#9670;&nbsp;</a></span>EvaluateLambdaType</h2>
+<a id="abd8cab866cc489a8bebff895d93ea4a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd8cab866cc489a8bebff895d93ea4a3">&#9670;&nbsp;</a></span>EvaluateLambdaType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
+template&lt;class E , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::function&lt;void(const <a class="el" href="a01564.html#a5b651f8bb0d4c46712b9eac5302ab038">TestBaseType</a>&amp;, const <a class="el" href="a01564.html#a3eb457a71b44531e265c0ba342eab37a">AnsatzBaseType</a>&amp;, const I&amp;, const <a class="el" href="a01564.html#a3468ce74aee77af94792323f5a4456d2">PointType</a>&amp;, <a class="el" href="a01564.html#a93afa3c23f85be13bb677b45c3da638c">LocalMatrixType</a>&amp;)&gt; <a class="el" href="a01564.html">Dune::GDT::LocalLambdaBinaryFaceIntegrand</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01564.html#ae7f482c9eeb11e32efda7de539b96636">EvaluateLambdaType</a></td>
+          <td class="memname">typedef std::function&lt;void(const <a class="el" href="a01564.html#a7eabcd6013cc954dbe0e8203b677b082">TestBaseType</a>&amp;, const <a class="el" href="a01564.html#ad636a05853677a97c430568844a4cce7">AnsatzBaseType</a>&amp;, const <a class="el" href="a01564.html#ac7c79753483ddaf04a9aa0780e821dac">PointType</a>&amp;, <a class="el" href="a01564.html#a3c3bc3456ae7d62b71979373ad040ca5">LocalMatrixType</a>&amp;)&gt; <a class="el" href="a01564.html">Dune::GDT::LocalLambdaBinaryVolumeIntegrand</a>&lt; E, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01564.html#abd8cab866cc489a8bebff895d93ea4a3">EvaluateLambdaType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a93afa3c23f85be13bb677b45c3da638c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93afa3c23f85be13bb677b45c3da638c">&#9670;&nbsp;</a></span>LocalMatrixType</h2>
+<a id="a3c3bc3456ae7d62b71979373ad040ca5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c3bc3456ae7d62b71979373ad040ca5">&#9670;&nbsp;</a></span>LocalMatrixType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
+template&lt;class E , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef DynamicMatrix&lt;R&gt; <a class="el" href="a01564.html">Dune::GDT::LocalLambdaBinaryFaceIntegrand</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01564.html#a93afa3c23f85be13bb677b45c3da638c">LocalMatrixType</a></td>
+          <td class="memname">typedef DynamicMatrix&lt;R&gt; <a class="el" href="a01564.html">Dune::GDT::LocalLambdaBinaryVolumeIntegrand</a>&lt; E, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01564.html#a3c3bc3456ae7d62b71979373ad040ca5">LocalMatrixType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a4246a871ab9c03e0baad317d7a20c19e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4246a871ab9c03e0baad317d7a20c19e">&#9670;&nbsp;</a></span>OrderLambdaType</h2>
+<a id="a88988baf19bb4bc0398aa7c642641381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88988baf19bb4bc0398aa7c642641381">&#9670;&nbsp;</a></span>OrderLambdaType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
+template&lt;class E , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::function&lt;size_t(const <a class="el" href="a01564.html#a5b651f8bb0d4c46712b9eac5302ab038">TestBaseType</a>&amp;, const <a class="el" href="a01564.html#a3eb457a71b44531e265c0ba342eab37a">AnsatzBaseType</a>&amp;)&gt; <a class="el" href="a01564.html">Dune::GDT::LocalLambdaBinaryFaceIntegrand</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01564.html#a4246a871ab9c03e0baad317d7a20c19e">OrderLambdaType</a></td>
+          <td class="memname">typedef std::function&lt;size_t(const <a class="el" href="a01564.html#a7eabcd6013cc954dbe0e8203b677b082">TestBaseType</a>&amp;, const <a class="el" href="a01564.html#ad636a05853677a97c430568844a4cce7">AnsatzBaseType</a>&amp;)&gt; <a class="el" href="a01564.html">Dune::GDT::LocalLambdaBinaryVolumeIntegrand</a>&lt; E, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01564.html#a88988baf19bb4bc0398aa7c642641381">OrderLambdaType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a3468ce74aee77af94792323f5a4456d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3468ce74aee77af94792323f5a4456d2">&#9670;&nbsp;</a></span>PointType</h2>
+<a id="ac7c79753483ddaf04a9aa0780e821dac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7c79753483ddaf04a9aa0780e821dac">&#9670;&nbsp;</a></span>PointType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
+template&lt;class E , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef FieldVector&lt;D, d - 1&gt; <a class="el" href="a01564.html">Dune::GDT::LocalLambdaBinaryFaceIntegrand</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01564.html#a3468ce74aee77af94792323f5a4456d2">PointType</a></td>
+          <td class="memname">typedef FieldVector&lt;D, d&gt; <a class="el" href="a01564.html">Dune::GDT::LocalLambdaBinaryVolumeIntegrand</a>&lt; E, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01564.html#ac7c79753483ddaf04a9aa0780e821dac">PointType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a5b651f8bb0d4c46712b9eac5302ab038"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b651f8bb0d4c46712b9eac5302ab038">&#9670;&nbsp;</a></span>TestBaseType</h2>
+<a id="a7eabcd6013cc954dbe0e8203b677b082"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eabcd6013cc954dbe0e8203b677b082">&#9670;&nbsp;</a></span>TestBaseType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
+template&lt;class E , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef XT::Functions::LocalfunctionSetInterface&lt;E, D, d, R, rT, rCT&gt; <a class="el" href="a01564.html">Dune::GDT::LocalLambdaBinaryFaceIntegrand</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01564.html#a5b651f8bb0d4c46712b9eac5302ab038">TestBaseType</a></td>
+          <td class="memname">typedef XT::Functions::LocalfunctionSetInterface&lt;E, D, d, R, rT, rCT&gt; <a class="el" href="a01564.html">Dune::GDT::LocalLambdaBinaryVolumeIntegrand</a>&lt; E, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01564.html#a7eabcd6013cc954dbe0e8203b677b082">TestBaseType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aa8d693269de3b8193356e488e3072a55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8d693269de3b8193356e488e3072a55">&#9670;&nbsp;</a></span>Traits</h2>
+<a id="a845e0e05ebe0f2a785c71e4218346ab4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a845e0e05ebe0f2a785c71e4218346ab4">&#9670;&nbsp;</a></span>Traits</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
+template&lt;class E , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a01580.html">internal::LocalLambdaBinaryFaceIntegrandTraits</a>&lt;E, I, R, rT, rCT, rA, rCA&gt; <a class="el" href="a01564.html">Dune::GDT::LocalLambdaBinaryFaceIntegrand</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01564.html#aa8d693269de3b8193356e488e3072a55">Traits</a></td>
+          <td class="memname">typedef <a class="el" href="a01580.html">internal::LocalLambdaBinaryVolumeIntegrandTraits</a>&lt;E, R, rT, rCT, rA, rCA&gt; <a class="el" href="a01564.html">Dune::GDT::LocalLambdaBinaryVolumeIntegrand</a>&lt; E, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01564.html#a845e0e05ebe0f2a785c71e4218346ab4">Traits</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -227,27 +227,27 @@ template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a51c0c6286f762020dd8261c9908c311e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51c0c6286f762020dd8261c9908c311e">&#9670;&nbsp;</a></span>LocalLambdaBinaryFaceIntegrand() <span class="overload">[1/3]</span></h2>
+<a id="adc41645c0a56e100a2ca351d6d60e8c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc41645c0a56e100a2ca351d6d60e8c7">&#9670;&nbsp;</a></span>LocalLambdaBinaryVolumeIntegrand() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
+template&lt;class E , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a01564.html">Dune::GDT::LocalLambdaBinaryFaceIntegrand</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01564.html">LocalLambdaBinaryFaceIntegrand</a> </td>
+          <td class="memname"><a class="el" href="a01564.html">Dune::GDT::LocalLambdaBinaryVolumeIntegrand</a>&lt; E, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01564.html">LocalLambdaBinaryVolumeIntegrand</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a01564.html#a4246a871ab9c03e0baad317d7a20c19e">OrderLambdaType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a01564.html#a88988baf19bb4bc0398aa7c642641381">OrderLambdaType</a>&#160;</td>
           <td class="paramname"><em>order_lambda</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a01564.html#ae7f482c9eeb11e32efda7de539b96636">EvaluateLambdaType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a01564.html#abd8cab866cc489a8bebff895d93ea4a3">EvaluateLambdaType</a>&#160;</td>
           <td class="paramname"><em>evaluate_lambda</em>&#160;</td>
         </tr>
         <tr>
@@ -265,19 +265,19 @@ template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size
 
 </div>
 </div>
-<a id="a3f395f47dbc2fe1ac3c2ba7618564c07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f395f47dbc2fe1ac3c2ba7618564c07">&#9670;&nbsp;</a></span>LocalLambdaBinaryFaceIntegrand() <span class="overload">[2/3]</span></h2>
+<a id="a592bad3b57a85d9ba7d09b837cae1e21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a592bad3b57a85d9ba7d09b837cae1e21">&#9670;&nbsp;</a></span>LocalLambdaBinaryVolumeIntegrand() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
+template&lt;class E , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a01564.html">Dune::GDT::LocalLambdaBinaryFaceIntegrand</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01564.html">LocalLambdaBinaryFaceIntegrand</a> </td>
+          <td class="memname"><a class="el" href="a01564.html">Dune::GDT::LocalLambdaBinaryVolumeIntegrand</a>&lt; E, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01564.html">LocalLambdaBinaryVolumeIntegrand</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a01564.html">ThisType</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -293,19 +293,19 @@ template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size
 
 </div>
 </div>
-<a id="a0614437ea494b878148c20fe63a7c9ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0614437ea494b878148c20fe63a7c9ac">&#9670;&nbsp;</a></span>LocalLambdaBinaryFaceIntegrand() <span class="overload">[3/3]</span></h2>
+<a id="a50f868fe42c6cf71f0b441a99b28ecb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50f868fe42c6cf71f0b441a99b28ecb6">&#9670;&nbsp;</a></span>LocalLambdaBinaryVolumeIntegrand() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
+template&lt;class E , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a01564.html">Dune::GDT::LocalLambdaBinaryFaceIntegrand</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01564.html">LocalLambdaBinaryFaceIntegrand</a> </td>
+          <td class="memname"><a class="el" href="a01564.html">Dune::GDT::LocalLambdaBinaryVolumeIntegrand</a>&lt; E, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01564.html">LocalLambdaBinaryVolumeIntegrand</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="a01564.html">ThisType</a> &amp;&amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -322,19 +322,19 @@ template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac9652bf016c2b407ea6bf377c58a1113"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9652bf016c2b407ea6bf377c58a1113">&#9670;&nbsp;</a></span>evaluate()</h2>
+<a id="a46568591c0a9946f9f063bbb5dd24504"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46568591c0a9946f9f063bbb5dd24504">&#9670;&nbsp;</a></span>evaluate()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
+template&lt;class E , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a01564.html">Dune::GDT::LocalLambdaBinaryFaceIntegrand</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;::evaluate </td>
+          <td class="memname">void <a class="el" href="a01564.html">Dune::GDT::LocalLambdaBinaryVolumeIntegrand</a>&lt; E, R, rT, rCT, rA, rCA &gt;::evaluate </td>
           <td>(</td>
           <td class="paramtype">const LocalfunctionTupleType &amp;&#160;</td>
           <td class="paramname">, </td>
@@ -342,31 +342,25 @@ template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a01564.html#a5b651f8bb0d4c46712b9eac5302ab038">TestBaseType</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a01564.html#a7eabcd6013cc954dbe0e8203b677b082">TestBaseType</a> &amp;&#160;</td>
           <td class="paramname"><em>test_base</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a01564.html#a3eb457a71b44531e265c0ba342eab37a">AnsatzBaseType</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a01564.html#ad636a05853677a97c430568844a4cce7">AnsatzBaseType</a> &amp;&#160;</td>
           <td class="paramname"><em>ansatz_base</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const I &amp;&#160;</td>
-          <td class="paramname"><em>intersection</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="a01564.html#a3468ce74aee77af94792323f5a4456d2">PointType</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a01564.html#ac7c79753483ddaf04a9aa0780e821dac">PointType</a> &amp;&#160;</td>
           <td class="paramname"><em>local_point</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a01564.html#a93afa3c23f85be13bb677b45c3da638c">LocalMatrixType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="a01564.html#a3c3bc3456ae7d62b71979373ad040ca5">LocalMatrixType</a> &amp;&#160;</td>
           <td class="paramname"><em>ret</em>&#160;</td>
         </tr>
         <tr>
@@ -384,19 +378,19 @@ template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size
 
 </div>
 </div>
-<a id="a2befc3fcf9ba59b27282a435c791719e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2befc3fcf9ba59b27282a435c791719e">&#9670;&nbsp;</a></span>localFunctions()</h2>
+<a id="af2404d02e8f49418e2f335daf8812f09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2404d02e8f49418e2f335daf8812f09">&#9670;&nbsp;</a></span>localFunctions()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
+template&lt;class E , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">LocalfunctionTupleType <a class="el" href="a01564.html">Dune::GDT::LocalLambdaBinaryFaceIntegrand</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;::localFunctions </td>
+          <td class="memname">LocalfunctionTupleType <a class="el" href="a01564.html">Dune::GDT::LocalLambdaBinaryVolumeIntegrand</a>&lt; E, R, rT, rCT, rA, rCA &gt;::localFunctions </td>
           <td>(</td>
           <td class="paramtype">const EntityType &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -412,33 +406,33 @@ template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size
 
 </div>
 </div>
-<a id="a17f490100c4da2d032c0b534f790634e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17f490100c4da2d032c0b534f790634e">&#9670;&nbsp;</a></span>order()</h2>
+<a id="a153d8e235460765f9079e1f63169e2f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a153d8e235460765f9079e1f63169e2f3">&#9670;&nbsp;</a></span>order()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
+template&lt;class E , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t <a class="el" href="a01564.html">Dune::GDT::LocalLambdaBinaryFaceIntegrand</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;::order </td>
+          <td class="memname">size_t <a class="el" href="a01564.html">Dune::GDT::LocalLambdaBinaryVolumeIntegrand</a>&lt; E, R, rT, rCT, rA, rCA &gt;::order </td>
           <td>(</td>
-          <td class="paramtype">const LocalfunctionTupleType&#160;</td>
+          <td class="paramtype">const LocalfunctionTupleType &amp;&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a01564.html#a5b651f8bb0d4c46712b9eac5302ab038">TestBaseType</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a01564.html#a7eabcd6013cc954dbe0e8203b677b082">TestBaseType</a> &amp;&#160;</td>
           <td class="paramname"><em>test_base</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a01564.html#a3eb457a71b44531e265c0ba342eab37a">AnsatzBaseType</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a01564.html#ad636a05853677a97c430568844a4cce7">AnsatzBaseType</a> &amp;&#160;</td>
           <td class="paramname"><em>ansatz_base</em>&#160;</td>
         </tr>
         <tr>
@@ -457,7 +451,7 @@ template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a04731_source.html">integrands/lambda.hh</a></li>
+<li><a class="el" href="a04735_source.html">integrands/lambda.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

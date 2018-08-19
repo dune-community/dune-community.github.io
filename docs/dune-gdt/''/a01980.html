@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::internal::EntropyBasedMomentFvOperatorTraits&lt; AdvectionOperatorImp, ReconstructionOperatorImp, RealizabilityLimiterImp, RegularizationOperatorImp &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::internal::EntropyBasedMomentFvOperatorNoReconstructionTraits&lt; AdvectionOperatorImp, RegularizationOperatorImp &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a00250.html">internal</a></li><li class="navelem"><a class="el" href="a01980.html">EntropyBasedMomentFvOperatorTraits</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a00250.html">internal</a></li><li class="navelem"><a class="el" href="a01980.html">EntropyBasedMomentFvOperatorNoReconstructionTraits</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -67,136 +67,100 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="a01977.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::EntropyBasedMomentFvOperatorTraits&lt; AdvectionOperatorImp, ReconstructionOperatorImp, RealizabilityLimiterImp, RegularizationOperatorImp &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::internal::EntropyBasedMomentFvOperatorNoReconstructionTraits&lt; AdvectionOperatorImp, RegularizationOperatorImp &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a04602_source.html">dune/gdt/operators/fv/entropybased.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a04606_source.html">dune/gdt/operators/fv/entropybased.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:af7df8eeade10fb643899c2c9839f0afa"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01980.html#af7df8eeade10fb643899c2c9839f0afa">AdvectionOperatorType</a> = AdvectionOperatorImp</td></tr>
-<tr class="separator:af7df8eeade10fb643899c2c9839f0afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8885030a0ced69f88f9edeebb023e16e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01980.html#a8885030a0ced69f88f9edeebb023e16e">ReconstructionOperatorType</a> = ReconstructionOperatorImp</td></tr>
-<tr class="separator:a8885030a0ced69f88f9edeebb023e16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a466a8e77122b1227d41ecb155765317d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01980.html#a466a8e77122b1227d41ecb155765317d">RealizabilityLimiterType</a> = RealizabilityLimiterImp</td></tr>
-<tr class="separator:a466a8e77122b1227d41ecb155765317d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa45bfad99aa24d6cea54aba4d9f80ff8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01980.html#aa45bfad99aa24d6cea54aba4d9f80ff8">RegularizationOperatorType</a> = RegularizationOperatorImp</td></tr>
-<tr class="separator:aa45bfad99aa24d6cea54aba4d9f80ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa58cfa4221d3b41ce477e424db22ab9d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01980.html#aa58cfa4221d3b41ce477e424db22ab9d">FieldType</a> = typename AdvectionOperatorType::DomainFieldType</td></tr>
-<tr class="separator:aa58cfa4221d3b41ce477e424db22ab9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a479bd9180c7bd14111eb80c4bec453c7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01980.html#a479bd9180c7bd14111eb80c4bec453c7">JacobianType</a> = <a class="el" href="a02128.html">NoJacobian</a></td></tr>
-<tr class="separator:a479bd9180c7bd14111eb80c4bec453c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0bc9d94ef554731f9eddf2e695ca65a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01980.html#ad0bc9d94ef554731f9eddf2e695ca65a">derived_type</a> = <a class="el" href="a01972.html">EntropyBasedMomentFvOperator</a>&lt; AdvectionOperatorImp, ReconstructionOperatorImp, RealizabilityLimiterImp, RegularizationOperatorImp, <a class="el" href="a01980.html">EntropyBasedMomentFvOperatorTraits</a> &gt;</td></tr>
-<tr class="separator:ad0bc9d94ef554731f9eddf2e695ca65a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5563104492c148378268d354245cd76c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01980.html#a5563104492c148378268d354245cd76c">AdvectionOperatorType</a> = AdvectionOperatorImp</td></tr>
+<tr class="separator:a5563104492c148378268d354245cd76c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefd2af4764adf33f3ad2ac5d517a7735"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01980.html#aefd2af4764adf33f3ad2ac5d517a7735">RegularizationOperatorType</a> = RegularizationOperatorImp</td></tr>
+<tr class="separator:aefd2af4764adf33f3ad2ac5d517a7735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4fa5389826cf469dc76907e29ecdc51"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01980.html#ac4fa5389826cf469dc76907e29ecdc51">FieldType</a> = typename AdvectionOperatorType::DomainFieldType</td></tr>
+<tr class="separator:ac4fa5389826cf469dc76907e29ecdc51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfb60d32519d1cefc0b08e62c75fbc97"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01980.html#adfb60d32519d1cefc0b08e62c75fbc97">JacobianType</a> = <a class="el" href="a02132.html">NoJacobian</a></td></tr>
+<tr class="separator:adfb60d32519d1cefc0b08e62c75fbc97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad579a568a1e82a96e6201834be47d31f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01980.html#ad579a568a1e82a96e6201834be47d31f">derived_type</a> = <a class="el" href="a01972.html">EntropyBasedMomentFvOperatorNoReconstruction</a>&lt; AdvectionOperatorImp, RegularizationOperatorImp, <a class="el" href="a01980.html">EntropyBasedMomentFvOperatorNoReconstructionTraits</a> &gt;</td></tr>
+<tr class="separator:ad579a568a1e82a96e6201834be47d31f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="af7df8eeade10fb643899c2c9839f0afa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7df8eeade10fb643899c2c9839f0afa">&#9670;&nbsp;</a></span>AdvectionOperatorType</h2>
+<a id="a5563104492c148378268d354245cd76c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5563104492c148378268d354245cd76c">&#9670;&nbsp;</a></span>AdvectionOperatorType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AdvectionOperatorImp , class ReconstructionOperatorImp , class RealizabilityLimiterImp , class RegularizationOperatorImp &gt; </div>
+template&lt;class AdvectionOperatorImp , class RegularizationOperatorImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01980.html">Dune::GDT::internal::EntropyBasedMomentFvOperatorTraits</a>&lt; AdvectionOperatorImp, ReconstructionOperatorImp, RealizabilityLimiterImp, RegularizationOperatorImp &gt;::<a class="el" href="a01980.html#af7df8eeade10fb643899c2c9839f0afa">AdvectionOperatorType</a> =  AdvectionOperatorImp</td>
+          <td class="memname">using <a class="el" href="a01980.html">Dune::GDT::internal::EntropyBasedMomentFvOperatorNoReconstructionTraits</a>&lt; AdvectionOperatorImp, RegularizationOperatorImp &gt;::<a class="el" href="a01980.html#a5563104492c148378268d354245cd76c">AdvectionOperatorType</a> =  AdvectionOperatorImp</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ad0bc9d94ef554731f9eddf2e695ca65a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0bc9d94ef554731f9eddf2e695ca65a">&#9670;&nbsp;</a></span>derived_type</h2>
+<a id="ad579a568a1e82a96e6201834be47d31f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad579a568a1e82a96e6201834be47d31f">&#9670;&nbsp;</a></span>derived_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AdvectionOperatorImp , class ReconstructionOperatorImp , class RealizabilityLimiterImp , class RegularizationOperatorImp &gt; </div>
+template&lt;class AdvectionOperatorImp , class RegularizationOperatorImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01980.html">Dune::GDT::internal::EntropyBasedMomentFvOperatorTraits</a>&lt; AdvectionOperatorImp, ReconstructionOperatorImp, RealizabilityLimiterImp, RegularizationOperatorImp &gt;::<a class="el" href="a01980.html#ad0bc9d94ef554731f9eddf2e695ca65a">derived_type</a> =  <a class="el" href="a01972.html">EntropyBasedMomentFvOperator</a>&lt;AdvectionOperatorImp, ReconstructionOperatorImp, RealizabilityLimiterImp, RegularizationOperatorImp, <a class="el" href="a01980.html">EntropyBasedMomentFvOperatorTraits</a>&gt;</td>
+          <td class="memname">using <a class="el" href="a01980.html">Dune::GDT::internal::EntropyBasedMomentFvOperatorNoReconstructionTraits</a>&lt; AdvectionOperatorImp, RegularizationOperatorImp &gt;::<a class="el" href="a01980.html#ad579a568a1e82a96e6201834be47d31f">derived_type</a> =  <a class="el" href="a01972.html">EntropyBasedMomentFvOperatorNoReconstruction</a>&lt;AdvectionOperatorImp, RegularizationOperatorImp, <a class="el" href="a01980.html">EntropyBasedMomentFvOperatorNoReconstructionTraits</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aa58cfa4221d3b41ce477e424db22ab9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa58cfa4221d3b41ce477e424db22ab9d">&#9670;&nbsp;</a></span>FieldType</h2>
+<a id="ac4fa5389826cf469dc76907e29ecdc51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4fa5389826cf469dc76907e29ecdc51">&#9670;&nbsp;</a></span>FieldType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AdvectionOperatorImp , class ReconstructionOperatorImp , class RealizabilityLimiterImp , class RegularizationOperatorImp &gt; </div>
+template&lt;class AdvectionOperatorImp , class RegularizationOperatorImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01980.html">Dune::GDT::internal::EntropyBasedMomentFvOperatorTraits</a>&lt; AdvectionOperatorImp, ReconstructionOperatorImp, RealizabilityLimiterImp, RegularizationOperatorImp &gt;::<a class="el" href="a01980.html#aa58cfa4221d3b41ce477e424db22ab9d">FieldType</a> =  typename AdvectionOperatorType::DomainFieldType</td>
+          <td class="memname">using <a class="el" href="a01980.html">Dune::GDT::internal::EntropyBasedMomentFvOperatorNoReconstructionTraits</a>&lt; AdvectionOperatorImp, RegularizationOperatorImp &gt;::<a class="el" href="a01980.html#ac4fa5389826cf469dc76907e29ecdc51">FieldType</a> =  typename AdvectionOperatorType::DomainFieldType</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a479bd9180c7bd14111eb80c4bec453c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a479bd9180c7bd14111eb80c4bec453c7">&#9670;&nbsp;</a></span>JacobianType</h2>
+<a id="adfb60d32519d1cefc0b08e62c75fbc97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfb60d32519d1cefc0b08e62c75fbc97">&#9670;&nbsp;</a></span>JacobianType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AdvectionOperatorImp , class ReconstructionOperatorImp , class RealizabilityLimiterImp , class RegularizationOperatorImp &gt; </div>
+template&lt;class AdvectionOperatorImp , class RegularizationOperatorImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01980.html">Dune::GDT::internal::EntropyBasedMomentFvOperatorTraits</a>&lt; AdvectionOperatorImp, ReconstructionOperatorImp, RealizabilityLimiterImp, RegularizationOperatorImp &gt;::<a class="el" href="a01980.html#a479bd9180c7bd14111eb80c4bec453c7">JacobianType</a> =  <a class="el" href="a02128.html">NoJacobian</a></td>
+          <td class="memname">using <a class="el" href="a01980.html">Dune::GDT::internal::EntropyBasedMomentFvOperatorNoReconstructionTraits</a>&lt; AdvectionOperatorImp, RegularizationOperatorImp &gt;::<a class="el" href="a01980.html#adfb60d32519d1cefc0b08e62c75fbc97">JacobianType</a> =  <a class="el" href="a02132.html">NoJacobian</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a466a8e77122b1227d41ecb155765317d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a466a8e77122b1227d41ecb155765317d">&#9670;&nbsp;</a></span>RealizabilityLimiterType</h2>
+<a id="aefd2af4764adf33f3ad2ac5d517a7735"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefd2af4764adf33f3ad2ac5d517a7735">&#9670;&nbsp;</a></span>RegularizationOperatorType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AdvectionOperatorImp , class ReconstructionOperatorImp , class RealizabilityLimiterImp , class RegularizationOperatorImp &gt; </div>
+template&lt;class AdvectionOperatorImp , class RegularizationOperatorImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01980.html">Dune::GDT::internal::EntropyBasedMomentFvOperatorTraits</a>&lt; AdvectionOperatorImp, ReconstructionOperatorImp, RealizabilityLimiterImp, RegularizationOperatorImp &gt;::<a class="el" href="a01980.html#a466a8e77122b1227d41ecb155765317d">RealizabilityLimiterType</a> =  RealizabilityLimiterImp</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8885030a0ced69f88f9edeebb023e16e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8885030a0ced69f88f9edeebb023e16e">&#9670;&nbsp;</a></span>ReconstructionOperatorType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class AdvectionOperatorImp , class ReconstructionOperatorImp , class RealizabilityLimiterImp , class RegularizationOperatorImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="a01980.html">Dune::GDT::internal::EntropyBasedMomentFvOperatorTraits</a>&lt; AdvectionOperatorImp, ReconstructionOperatorImp, RealizabilityLimiterImp, RegularizationOperatorImp &gt;::<a class="el" href="a01980.html#a8885030a0ced69f88f9edeebb023e16e">ReconstructionOperatorType</a> =  ReconstructionOperatorImp</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa45bfad99aa24d6cea54aba4d9f80ff8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa45bfad99aa24d6cea54aba4d9f80ff8">&#9670;&nbsp;</a></span>RegularizationOperatorType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class AdvectionOperatorImp , class ReconstructionOperatorImp , class RealizabilityLimiterImp , class RegularizationOperatorImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="a01980.html">Dune::GDT::internal::EntropyBasedMomentFvOperatorTraits</a>&lt; AdvectionOperatorImp, ReconstructionOperatorImp, RealizabilityLimiterImp, RegularizationOperatorImp &gt;::<a class="el" href="a01980.html#aa45bfad99aa24d6cea54aba4d9f80ff8">RegularizationOperatorType</a> =  RegularizationOperatorImp</td>
+          <td class="memname">using <a class="el" href="a01980.html">Dune::GDT::internal::EntropyBasedMomentFvOperatorNoReconstructionTraits</a>&lt; AdvectionOperatorImp, RegularizationOperatorImp &gt;::<a class="el" href="a01980.html#aefd2af4764adf33f3ad2ac5d517a7735">RegularizationOperatorType</a> =  RegularizationOperatorImp</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -204,7 +168,7 @@ template&lt;class AdvectionOperatorImp , class ReconstructionOperatorImp , class
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a04602_source.html">operators/fv/entropybased.hh</a></li>
+<li><a class="el" href="a04606_source.html">operators/fv/entropybased.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::internal::DefaultProductMapperTraits&lt; GridLayerImp, MapperTypes &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::internal::MapperTuplefromSpaceTupleCreator&lt; I, SpaceTypes &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,129 +59,69 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a00250.html">internal</a></li><li class="navelem"><a class="el" href="a02832.html">DefaultProductMapperTraits</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a00250.html">internal</a></li><li class="navelem"><a class="el" href="a02832.html">MapperTuplefromSpaceTupleCreator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a02829.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::DefaultProductMapperTraits&lt; GridLayerImp, MapperTypes &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::internal::MapperTuplefromSpaceTupleCreator&lt; I, SpaceTypes &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a04764_source.html">dune/gdt/spaces/mapper/product.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a04768_source.html">dune/gdt/spaces/mapper/product.hh</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a39ade915dc609bdd4f69305bce2bbfc8"><td class="memItemLeft" align="right" valign="top">typedef GridLayerImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02832.html#a39ade915dc609bdd4f69305bce2bbfc8">GridLayerType</a></td></tr>
-<tr class="separator:a39ade915dc609bdd4f69305bce2bbfc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5e1188098127eddc0b453c6c51c5f37"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02820.html">DefaultProductMapper</a>&lt; <a class="el" href="a02832.html#a39ade915dc609bdd4f69305bce2bbfc8">GridLayerType</a>, MapperTypes... &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02832.html#aa5e1188098127eddc0b453c6c51c5f37">derived_type</a></td></tr>
-<tr class="separator:aa5e1188098127eddc0b453c6c51c5f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a2e9295cd7bc7a72d2d4f4c116fa4e1"><td class="memItemLeft" align="right" valign="top">typedef GridLayerType::IndexSet&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02832.html#a3a2e9295cd7bc7a72d2d4f4c116fa4e1">BackendType</a></td></tr>
-<tr class="separator:a3a2e9295cd7bc7a72d2d4f4c116fa4e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4670c82bdb48ca9da134f585aed9f55c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02832.html#a4670c82bdb48ca9da134f585aed9f55c">EntityType</a> = XT::Grid::extract_entity_t&lt; <a class="el" href="a02832.html#a39ade915dc609bdd4f69305bce2bbfc8">GridLayerType</a> &gt;</td></tr>
-<tr class="separator:a4670c82bdb48ca9da134f585aed9f55c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:ad2e444cadcf03ba59b15bdc886444b86"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02832.html#ad2e444cadcf03ba59b15bdc886444b86">dimRange</a> = <a class="el" href="a02468.html">GDT::BaseFunctionSet::internal::SumDimRange</a>&lt;MapperTypes...&gt;::dimRange</td></tr>
-<tr class="separator:ad2e444cadcf03ba59b15bdc886444b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aa7780c88a367c62b83b82ba599c93865"><td class="memTemplParams" colspan="2">template&lt;class... MapperTypes&gt; </td></tr>
+<tr class="memitem:aa7780c88a367c62b83b82ba599c93865"><td class="memTemplItemLeft" align="right" valign="top">static std::enable_if&lt; sizeof...(MapperTypes)==sizeof...(SpaceTypes), typename std::tuple&lt; MapperTypes... &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a02832.html#aa7780c88a367c62b83b82ba599c93865">create</a> (const std::tuple&lt; SpaceTypes... &gt; &amp;, const std::tuple&lt; MapperTypes... &gt; &amp;mappers)</td></tr>
+<tr class="separator:aa7780c88a367c62b83b82ba599c93865"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a3a2e9295cd7bc7a72d2d4f4c116fa4e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a2e9295cd7bc7a72d2d4f4c116fa4e1">&#9670;&nbsp;</a></span>BackendType</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa7780c88a367c62b83b82ba599c93865"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7780c88a367c62b83b82ba599c93865">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GridLayerImp , class... MapperTypes&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef GridLayerType::IndexSet <a class="el" href="a02832.html">Dune::GDT::internal::DefaultProductMapperTraits</a>&lt; GridLayerImp, MapperTypes &gt;::<a class="el" href="a02832.html#a3a2e9295cd7bc7a72d2d4f4c116fa4e1">BackendType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa5e1188098127eddc0b453c6c51c5f37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5e1188098127eddc0b453c6c51c5f37">&#9670;&nbsp;</a></span>derived_type</h2>
-
-<div class="memitem">
-<div class="memproto">
+template&lt;size_t I, class... SpaceTypes&gt; </div>
 <div class="memtemplate">
-template&lt;class GridLayerImp , class... MapperTypes&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a02820.html">DefaultProductMapper</a>&lt;<a class="el" href="a02832.html#a39ade915dc609bdd4f69305bce2bbfc8">GridLayerType</a>, MapperTypes...&gt; <a class="el" href="a02832.html">Dune::GDT::internal::DefaultProductMapperTraits</a>&lt; GridLayerImp, MapperTypes &gt;::<a class="el" href="a02832.html#aa5e1188098127eddc0b453c6c51c5f37">derived_type</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4670c82bdb48ca9da134f585aed9f55c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4670c82bdb48ca9da134f585aed9f55c">&#9670;&nbsp;</a></span>EntityType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridLayerImp , class... MapperTypes&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="a02832.html">Dune::GDT::internal::DefaultProductMapperTraits</a>&lt; GridLayerImp, MapperTypes &gt;::<a class="el" href="a02832.html#a4670c82bdb48ca9da134f585aed9f55c">EntityType</a> =  XT::Grid::extract_entity_t&lt;<a class="el" href="a02832.html#a39ade915dc609bdd4f69305bce2bbfc8">GridLayerType</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a39ade915dc609bdd4f69305bce2bbfc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39ade915dc609bdd4f69305bce2bbfc8">&#9670;&nbsp;</a></span>GridLayerType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridLayerImp , class... MapperTypes&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef GridLayerImp <a class="el" href="a02832.html">Dune::GDT::internal::DefaultProductMapperTraits</a>&lt; GridLayerImp, MapperTypes &gt;::<a class="el" href="a02832.html#a39ade915dc609bdd4f69305bce2bbfc8">GridLayerType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ad2e444cadcf03ba59b15bdc886444b86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2e444cadcf03ba59b15bdc886444b86">&#9670;&nbsp;</a></span>dimRange</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridLayerImp , class... MapperTypes&gt; </div>
+template&lt;class... MapperTypes&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t <a class="el" href="a02832.html">Dune::GDT::internal::DefaultProductMapperTraits</a>&lt; GridLayerImp, MapperTypes &gt;::dimRange = <a class="el" href="a02468.html">GDT::BaseFunctionSet::internal::SumDimRange</a>&lt;MapperTypes...&gt;::dimRange</td>
+          <td class="memname">static std::enable_if&lt;sizeof...(MapperTypes) == sizeof...(SpaceTypes), typename std::tuple&lt;MapperTypes...&gt; &gt;::type <a class="el" href="a02832.html">Dune::GDT::internal::MapperTuplefromSpaceTupleCreator</a>&lt; I, SpaceTypes &gt;::create </td>
+          <td>(</td>
+          <td class="paramtype">const std::tuple&lt; SpaceTypes... &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::tuple&lt; MapperTypes... &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mappers</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a04764_source.html">spaces/mapper/product.hh</a></li>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="a04768_source.html">spaces/mapper/product.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
