@@ -95,6 +95,8 @@ Public Types</h2></td></tr>
 <tr class="separator:a069cae4f80e43f975785a50e74a9024f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee06caad12797635cab0ebf1f46e5492"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02012.html#aee06caad12797635cab0ebf1f46e5492">LocalM</a> = typename XT::Common::MatrixAbstraction&lt; <a class="el" href="a02012.html#afd221d90b27ec698b52f4b63a95259f9">LocalMatrixType</a> &gt;</td></tr>
 <tr class="separator:aee06caad12797635cab0ebf1f46e5492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac1936b415c719b4515fb7d68a847e41"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02012.html#aac1936b415c719b4515fb7d68a847e41">LocalV</a> = typename XT::Common::VectorAbstraction&lt; <a class="el" href="a02012.html#a5a84799be1802c793e24b92103b64245">LocalVectorType</a> &gt;</td></tr>
+<tr class="separator:aac1936b415c719b4515fb7d68a847e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac420a1b6c05334e6ecd0432dce1f6437"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02012.html#ac420a1b6c05334e6ecd0432dce1f6437">RangeFieldType</a> = typename AnalyticalFluxType::RangeFieldType</td></tr>
 <tr class="separator:ac420a1b6c05334e6ecd0432dce1f6437"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7048252b5f798f0e1737b5de78104ff"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02012.html#aa7048252b5f798f0e1737b5de78104ff">MatrixType</a> = MatrixImp</td></tr>
@@ -288,6 +290,22 @@ template&lt;class AnalyticalFluxType , size_t block_size = (AnalyticalFluxType::
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="a02012.html">Dune::GDT::internal::BlockedJacobianWrapper</a>&lt; AnalyticalFluxType, block_size &gt;::<a class="el" href="a02012.html#afd221d90b27ec698b52f4b63a95259f9">LocalMatrixType</a> =  typename MatrixType::BlockType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aac1936b415c719b4515fb7d68a847e41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac1936b415c719b4515fb7d68a847e41">&#9670;&nbsp;</a></span>LocalV</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AnalyticalFluxType , size_t block_size = (AnalyticalFluxType::dimDomain == 1) ? 2 : 4&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a02012.html">Dune::GDT::internal::BlockedJacobianWrapper</a>&lt; AnalyticalFluxType, block_size &gt;::<a class="el" href="a02012.html#aac1936b415c719b4515fb7d68a847e41">LocalV</a> =  typename XT::Common::VectorAbstraction&lt;<a class="el" href="a02012.html#a5a84799be1802c793e24b92103b64245">LocalVectorType</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -273,6 +273,7 @@ var searchData=
   ['localsize',['localSize',['../a02228.html#aa2255f1a2934d3fac597f2bfcf7f66eb',1,'Dune::GDT::BlockMapper']]],
   ['localsourcetype',['LocalSourceType',['../a01768.html#ac0cca65212dd82f90b2dc7bb430d4bf8',1,'Dune::GDT::LocalizableProductBase']]],
   ['localspacetype',['LocalSpaceType',['../a02220.html#a5cff5f7ba5669bf7fabc2b16fc0a208a',1,'Dune::GDT::BlockSpace::LocalSpaceType()'],['../a02228.html#a61735abf8bcd42440135cc5b0de463cd',1,'Dune::GDT::BlockMapper::LocalSpaceType()']]],
+  ['localv',['LocalV',['../a02012.html#aac1936b415c719b4515fb7d68a847e41',1,'Dune::GDT::internal::BlockedJacobianWrapper']]],
   ['localvector_5f',['localVector_',['../a01100.html#abf72d6460de3f7b0e31db355041ba863',1,'Dune::GDT::ConstLocalDiscreteFunction']]],
   ['localvectortype',['LocalVectorType',['../a01576.html#a3f62cbee7b745302a482b8774c0e493f',1,'Dune::GDT::LocalLambdaUnaryVolumeIntegrand::LocalVectorType()'],['../a02012.html#a5a84799be1802c793e24b92103b64245',1,'Dune::GDT::internal::BlockedJacobianWrapper::LocalVectorType()']]],
   ['localview',['LocalView',['../a02740.html',1,'Dune::GDT::LocalView&lt; VectorTraits, ScalarType, SpaceType, Descriptor &gt;'],['../a02740.html#acdfc44d4075bcc1e00d2384400295924',1,'Dune::GDT::LocalView::LocalView()']]],
