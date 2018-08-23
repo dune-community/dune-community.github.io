@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: interfaces.hh File Reference</title>
+<title>dune-gdt: lagrange.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,31 +59,39 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_43d0cc378a1b7044a9ebea179385123e.html">spaces</a></li><li class="navelem"><a class="el" href="dir_8ffeda8956c8f3fe760ec61ab5caadd9.html">mapper</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_c88e3ed311af0f375f576c52f205fc08.html">prolongations</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">spaces/mapper/interfaces.hh File Reference</div>  </div>
+<div class="title">prolongations/lagrange.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;dune/common/dynvector.hh&gt;</code><br />
-<code>#include &lt;dune/grid/common/entity.hh&gt;</code><br />
-<code>#include &lt;dune/xt/common/crtp.hh&gt;</code><br />
-<code>#include &lt;dune/xt/common/type_traits.hh&gt;</code><br />
+<div class="textblock"><code>#include &lt;dune/xt/common/memory.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/parameter.hh&gt;</code><br />
+<code>#include &lt;dune/xt/functions/exceptions.hh&gt;</code><br />
+<code>#include &lt;dune/xt/grid/type_traits.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00023_source.html">dune/gdt/discretefunction/reinterpret.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00038_source.html">dune/gdt/exceptions.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04519_source.html">dune/gdt/operators/base.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04693_source.html">dune/gdt/projections/lagrange.hh</a>&gt;</code><br />
 </div>
 <p><a href="a04696_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02812.html">Dune::GDT::MapperInterface&lt; Traits &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02404.html">Dune::GDT::LagrangeProlongationOperator&lt; GridLayerImp, FieldImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02816.html">Dune::GDT::IsProductMapper</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02408.html">Dune::GDT::internal::LagrangeProlongationOperatorTraits&lt; GridLayerImp, FieldImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02820.html">Dune::GDT::ProductMapperInterface&lt; Traits &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02412.html">Dune::GDT::LagrangeProlongationLocalizableOperator&lt; GridLayerImp, SourceImp, RangeImp &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Carries out a prolongation (in a localized manner) using a lagrange projection.  <a href="a02412.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02404.html">Dune::GDT::LagrangeProlongationOperator&lt; GridLayerImp, FieldImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -92,6 +100,26 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00249"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00249.html">Dune::GDT</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00250"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00250.html">Dune::GDT::internal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a8ff7e797cda0076652379f9a8c2b5c16"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType , class SourceSpaceType , class SourceVectorType , class RangeSpaceType , class RangeVectorType &gt; </td></tr>
+<tr class="memitem:a8ff7e797cda0076652379f9a8c2b5c16"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value, std::unique_ptr&lt; LagrangeProlongationLocalizableOperator&lt; GridLayerType, ConstDiscreteFunction&lt; SourceSpaceType, SourceVectorType &gt;, DiscreteFunction&lt; RangeSpaceType, RangeVectorType &gt; &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00249.html#a8ff7e797cda0076652379f9a8c2b5c16">Dune::GDT::make_lagrange_prolongation_localizable_operator</a> (const GridLayerType &amp;grid_layer, const ConstDiscreteFunction&lt; SourceSpaceType, SourceVectorType &gt; &amp;source, DiscreteFunction&lt; RangeSpaceType, RangeVectorType &gt; &amp;range, const XT::Common::Parameter &amp;param={})</td></tr>
+<tr class="separator:a8ff7e797cda0076652379f9a8c2b5c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa322e33210fa15e3b02471f4f9250b5e"><td class="memTemplParams" colspan="2">template&lt;class SourceSpaceType , class SourceVectorType , class RangeSpaceType , class RangeVectorType &gt; </td></tr>
+<tr class="memitem:aa322e33210fa15e3b02471f4f9250b5e"><td class="memTemplItemLeft" align="right" valign="top">std::unique_ptr&lt; LagrangeProlongationLocalizableOperator&lt; typename RangeSpaceType::GridLayerType, ConstDiscreteFunction&lt; SourceSpaceType, SourceVectorType &gt;, DiscreteFunction&lt; RangeSpaceType, RangeVectorType &gt; &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00249.html#aa322e33210fa15e3b02471f4f9250b5e">Dune::GDT::make_lagrange_prolongation_localizable_operator</a> (const ConstDiscreteFunction&lt; SourceSpaceType, SourceVectorType &gt; &amp;source, DiscreteFunction&lt; RangeSpaceType, RangeVectorType &gt; &amp;range, const XT::Common::Parameter &amp;param={})</td></tr>
+<tr class="separator:aa322e33210fa15e3b02471f4f9250b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab39a31d2d051596296e00ceea186232b"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType &gt; </td></tr>
+<tr class="memitem:ab39a31d2d051596296e00ceea186232b"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value, std::unique_ptr&lt; LagrangeProlongationOperator&lt; GridLayerType &gt; &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00249.html#ab39a31d2d051596296e00ceea186232b">Dune::GDT::make_lagrange_prolongation_operator</a> (const GridLayerType &amp;grid_layer)</td></tr>
+<tr class="separator:ab39a31d2d051596296e00ceea186232b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a83a245e10e4fe1a2ae4006d0527c89"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType , class SS , class SV , class RS , class RV &gt; </td></tr>
+<tr class="memitem:a9a83a245e10e4fe1a2ae4006d0527c89"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value, void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00249.html#a9a83a245e10e4fe1a2ae4006d0527c89">Dune::GDT::prolong_lagrange</a> (const GridLayerType &amp;grid_layer, const ConstDiscreteFunction&lt; SS, SV &gt; &amp;source, DiscreteFunction&lt; RS, RV &gt; &amp;range, const XT::Common::Parameter &amp;param={})</td></tr>
+<tr class="separator:a9a83a245e10e4fe1a2ae4006d0527c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07b9b021f5197437b7c25d50a86c0a72"><td class="memTemplParams" colspan="2">template&lt;class SS , class SV , class RS , class RV &gt; </td></tr>
+<tr class="memitem:a07b9b021f5197437b7c25d50a86c0a72"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00249.html#a07b9b021f5197437b7c25d50a86c0a72">Dune::GDT::prolong_lagrange</a> (const ConstDiscreteFunction&lt; SS, SV &gt; &amp;source, DiscreteFunction&lt; RS, RV &gt; &amp;range, const XT::Common::Parameter &amp;param={})</td></tr>
+<tr class="separator:a07b9b021f5197437b7c25d50a86c0a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

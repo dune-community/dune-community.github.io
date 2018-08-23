@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: entropybased.hh File Reference</title>
+<title>dune-gdt: godunov.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_8eae17099f455a1cfbd2c25e13098b8a.html">operators</a></li><li class="navelem"><a class="el" href="dir_8fbd9d79de26bd0c08e4e5fb2ef2e7c5.html">fv</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_e5964b6fd5a6d82d96e1215fe4a1a66d.html">local</a></li><li class="navelem"><a class="el" href="dir_b3c312569a7138f19b17aa14076f1d0d.html">fluxes</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -67,30 +67,40 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">operators/fv/entropybased.hh File Reference</div>  </div>
+<div class="title">local/fluxes/godunov.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;dune/xt/grid/walker/functors.hh&gt;</code><br />
-<code>#include &lt;<a class="el" href="a04693_source.html">dune/gdt/operators/interfaces.hh</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="a00119_source.html">entropybased/realizability.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00122_source.html">entropybased/regularization.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00137_source.html">reconstruction/reconstructed_function.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;tuple&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;dune/xt/common/memory.hh&gt;</code><br />
+<code>#include &lt;dune/xt/functions/interfaces.hh&gt;</code><br />
+<code>#include &lt;dune/xt/la/algorithms/qr.hh&gt;</code><br />
+<code>#include &lt;dune/xt/la/eigen-solver.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00134_source.html">dune/gdt/operators/fv/reconstruction/linear.hh</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="a04645_source.html">interfaces.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a04516_source.html">base.hh</a>&quot;</code><br />
 </div>
 <p><a href="a04606_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01972.html">Dune::GDT::EntropyBasedMomentFvOperatorNoReconstruction&lt; AdvectionOperatorImp, RegularizationOperatorImp, Traits &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01180.html">Dune::GDT::GodunovLocalNumericalCouplingFlux&lt; AnalyticalFluxImp, TraitsImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01976.html">Dune::GDT::EntropyBasedMomentFvOperator&lt; AdvectionOperatorImp, ReconstructionOperatorImp, RealizabilityLimiterImp, RegularizationOperatorImp, Traits &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01184.html">Dune::GDT::GodunovLocalDirichletNumericalBoundaryFlux&lt; AnalyticalFluxImp, BoundaryValueImp, Traits &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Godunov flux evaluation for Dirichlet boundary intersections.  <a href="a01184.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01980.html">Dune::GDT::internal::EntropyBasedMomentFvOperatorNoReconstructionTraits&lt; AdvectionOperatorImp, RegularizationOperatorImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01188.html">Dune::GDT::internal::GodunovJacobianWrapper&lt; AnalyticalFluxType, MatrixType, VectorType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01984.html">Dune::GDT::internal::EntropyBasedMomentFvOperatorTraits&lt; AdvectionOperatorImp, ReconstructionOperatorImp, RealizabilityLimiterImp, RegularizationOperatorImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01192.html">Dune::GDT::internal::GodunovLocalNumericalCouplingFluxTraits&lt; AnalyticalFluxImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01972.html">Dune::GDT::EntropyBasedMomentFvOperatorNoReconstruction&lt; AdvectionOperatorImp, RegularizationOperatorImp, Traits &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01196.html">Dune::GDT::internal::GodunovLocalDirichletNumericalBoundaryFluxTraits&lt; AnalyticalFluxImp, BoundaryValueImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01976.html">Dune::GDT::EntropyBasedMomentFvOperator&lt; AdvectionOperatorImp, ReconstructionOperatorImp, RealizabilityLimiterImp, RegularizationOperatorImp, Traits &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01200.html">Dune::GDT::internal::GodunovFluxImplementation&lt; Traits &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01180.html">Dune::GDT::GodunovLocalNumericalCouplingFlux&lt; AnalyticalFluxImp, TraitsImp &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01184.html">Dune::GDT::GodunovLocalDirichletNumericalBoundaryFlux&lt; AnalyticalFluxImp, BoundaryValueImp, Traits &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Godunov flux evaluation for Dirichlet boundary intersections.  <a href="a01184.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::internal::maxPolOrder&lt; FirstSpaceType, SpaceTypes &gt; Struct Template Reference</title>
+<title>dune-gdt: Dune::GDT::internal::DefaultProductSpaceTraits&lt; SpaceImps &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,39 +59,238 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a00250.html">internal</a></li><li class="navelem"><a class="el" href="a02864.html">maxPolOrder</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a00250.html">internal</a></li><li class="navelem"><a class="el" href="a02864.html">DefaultProductSpaceTraits</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="a02861.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::maxPolOrder&lt; FirstSpaceType, SpaceTypes &gt; Struct Template Reference</div>  </div>
+<div class="title">Dune::GDT::internal::DefaultProductSpaceTraits&lt; SpaceImps &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a04771_source.html">dune/gdt/spaces/product.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a04735_source.html">dune/gdt/spaces/product.hh</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a09006ec777410861a1c25c18ccadb065"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02844.html">DefaultProductSpace</a>&lt; SpaceImps... &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02864.html#a09006ec777410861a1c25c18ccadb065">derived_type</a></td></tr>
+<tr class="separator:a09006ec777410861a1c25c18ccadb065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a803017fbe542adc250b84e4ded4dd24b"><td class="memItemLeft" align="right" valign="top">typedef XT::Common::tuple_element&lt; 0, std::tuple&lt; SpaceImps... &gt; &gt;::type::GridLayerType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02864.html#a803017fbe542adc250b84e4ded4dd24b">GridLayerType</a></td></tr>
+<tr class="separator:a803017fbe542adc250b84e4ded4dd24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a739172399d5d4ed8804c7b627c12453a"><td class="memItemLeft" align="right" valign="top">typedef GridLayerType::IndexSet&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02864.html#a739172399d5d4ed8804c7b627c12453a">BackendType</a></td></tr>
+<tr class="separator:a739172399d5d4ed8804c7b627c12453a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac66ac0a277a7b46fe9f7905418928c57"><td class="memItemLeft" align="right" valign="top">typedef XT::Common::tuple_element&lt; 0, std::tuple&lt; SpaceImps... &gt; &gt;::type::RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02864.html#ac66ac0a277a7b46fe9f7905418928c57">RangeFieldType</a></td></tr>
+<tr class="separator:ac66ac0a277a7b46fe9f7905418928c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a043dd71b075f9b08b7fddce38b77dc3a"><td class="memItemLeft" align="right" valign="top">typedef std::tuple&lt; SpaceImps... &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02864.html#a043dd71b075f9b08b7fddce38b77dc3a">SpaceTupleType</a></td></tr>
+<tr class="separator:a043dd71b075f9b08b7fddce38b77dc3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a745efb360a74faf15011b3e81deceb5a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02808.html">Dune::GDT::DefaultProductMapper</a>&lt; <a class="el" href="a02864.html#a803017fbe542adc250b84e4ded4dd24b">GridLayerType</a>, typename SpaceImps::MapperType... &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02864.html#a745efb360a74faf15011b3e81deceb5a">MapperType</a></td></tr>
+<tr class="separator:a745efb360a74faf15011b3e81deceb5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad81495a036deef5f374babdbaadf3c89"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02444.html">Dune::GDT::BaseFunctionSet::ProductDefault</a>&lt; typename SpaceImps::BaseFunctionSetType... &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02864.html#ad81495a036deef5f374babdbaadf3c89">BaseFunctionSetType</a></td></tr>
+<tr class="separator:ad81495a036deef5f374babdbaadf3c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c6e02dd6c8a700f30ec92a9626b3c10"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02864.html#a0c6e02dd6c8a700f30ec92a9626b3c10">EntityType</a> = XT::Grid::extract_entity_t&lt; <a class="el" href="a02864.html#a803017fbe542adc250b84e4ded4dd24b">GridLayerType</a> &gt;</td></tr>
+<tr class="separator:a0c6e02dd6c8a700f30ec92a9626b3c10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42e6f0b24612cd118a2b6b9349906a6a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02832.html">DofCommunicationChooser</a>&lt; <a class="el" href="a02864.html#a803017fbe542adc250b84e4ded4dd24b">GridLayerType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02864.html#a42e6f0b24612cd118a2b6b9349906a6a">DofCommunicationChooserType</a></td></tr>
+<tr class="separator:a42e6f0b24612cd118a2b6b9349906a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d6b1a30e46ea044f83bfefb0c14b9c1"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a02832.html#a4a8775537c267ec00e1834115d1e7c1d">DofCommunicationChooserType::Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02864.html#a8d6b1a30e46ea044f83bfefb0c14b9c1">DofCommunicatorType</a></td></tr>
+<tr class="separator:a8d6b1a30e46ea044f83bfefb0c14b9c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a184c54348393afd04e42daaa413aff90"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02864.html#a184c54348393afd04e42daaa413aff90">polOrder</a> = <a class="el" href="a00250.html#a670fa0ee1f0d14ff4522931dcddc1b07">staticMax</a>(FirstSpaceType::polOrder, <a class="el" href="a02864.html">maxPolOrder</a>&lt;SpaceTypes...&gt;::polOrder)</td></tr>
-<tr class="separator:a184c54348393afd04e42daaa413aff90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10fc4a3590253a0d27d253352b7e4508"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02864.html#a10fc4a3590253a0d27d253352b7e4508">dimDomain</a> = GridLayerType::dimension</td></tr>
+<tr class="separator:a10fc4a3590253a0d27d253352b7e4508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf80d022eba1ba874f579ac18681007e"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02864.html#adf80d022eba1ba874f579ac18681007e">dimRange</a> = <a class="el" href="a02456.html">GDT::BaseFunctionSet::internal::SumDimRange</a>&lt;SpaceImps...&gt;::dimRange</td></tr>
+<tr class="separator:adf80d022eba1ba874f579ac18681007e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4af54d34b360e24afe2ab359ad19ae8f"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02864.html#a4af54d34b360e24afe2ab359ad19ae8f">dimRangeCols</a> = 1</td></tr>
+<tr class="separator:a4af54d34b360e24afe2ab359ad19ae8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af508a6e54afe20c53d58261310a6e4b7"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02864.html#af508a6e54afe20c53d58261310a6e4b7">polOrder</a> = <a class="el" href="a02848.html">internal::maxPolOrder</a>&lt;SpaceImps...&gt;::polOrder</td></tr>
+<tr class="separator:af508a6e54afe20c53d58261310a6e4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d28b88352db2c71274bf17566b2c371"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02864.html#a3d28b88352db2c71274bf17566b2c371">continuous</a> = <a class="el" href="a02856.html">internal::allContinuous</a>&lt;SpaceImps...&gt;::value</td></tr>
+<tr class="separator:a3d28b88352db2c71274bf17566b2c371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44d2ab8d15fa5cc32dd3240b1d72dba5"><td class="memItemLeft" align="right" valign="top">static const XT::Grid::Backends&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02864.html#a44d2ab8d15fa5cc32dd3240b1d72dba5">layer_backend</a> = XT::Grid::Backends::view</td></tr>
+<tr class="separator:a44d2ab8d15fa5cc32dd3240b1d72dba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1deac3ee7d432a65effa129f278ee8a"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02864.html#ab1deac3ee7d432a65effa129f278ee8a">needs_grid_view</a> = true</td></tr>
+<tr class="separator:ab1deac3ee7d432a65effa129f278ee8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cdc64e94f51760192b01d40ebd62840"><td class="memItemLeft" align="right" valign="top">static const constexpr <a class="el" href="a00249.html#afd9e79bf2e05d76e877c835fa352f045">Backends</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02864.html#a4cdc64e94f51760192b01d40ebd62840">backend_type</a> {std::tuple_element&lt;0, std::tuple&lt;SpaceImps...&gt;&gt;::Traits::backend_type}</td></tr>
+<tr class="separator:a4cdc64e94f51760192b01d40ebd62840"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a184c54348393afd04e42daaa413aff90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a184c54348393afd04e42daaa413aff90">&#9670;&nbsp;</a></span>polOrder</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a739172399d5d4ed8804c7b627c12453a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a739172399d5d4ed8804c7b627c12453a">&#9670;&nbsp;</a></span>BackendType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class FirstSpaceType , class... SpaceTypes&gt; </div>
+template&lt;class... SpaceImps&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef GridLayerType::IndexSet <a class="el" href="a02864.html">Dune::GDT::internal::DefaultProductSpaceTraits</a>&lt; SpaceImps &gt;::<a class="el" href="a02864.html#a739172399d5d4ed8804c7b627c12453a">BackendType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad81495a036deef5f374babdbaadf3c89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad81495a036deef5f374babdbaadf3c89">&#9670;&nbsp;</a></span>BaseFunctionSetType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class... SpaceImps&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a02444.html">Dune::GDT::BaseFunctionSet::ProductDefault</a>&lt;typename SpaceImps::BaseFunctionSetType...&gt; <a class="el" href="a02864.html">Dune::GDT::internal::DefaultProductSpaceTraits</a>&lt; SpaceImps &gt;::<a class="el" href="a02864.html#ad81495a036deef5f374babdbaadf3c89">BaseFunctionSetType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a09006ec777410861a1c25c18ccadb065"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09006ec777410861a1c25c18ccadb065">&#9670;&nbsp;</a></span>derived_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class... SpaceImps&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a02844.html">DefaultProductSpace</a>&lt;SpaceImps...&gt; <a class="el" href="a02864.html">Dune::GDT::internal::DefaultProductSpaceTraits</a>&lt; SpaceImps &gt;::<a class="el" href="a02864.html#a09006ec777410861a1c25c18ccadb065">derived_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42e6f0b24612cd118a2b6b9349906a6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42e6f0b24612cd118a2b6b9349906a6a">&#9670;&nbsp;</a></span>DofCommunicationChooserType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class... SpaceImps&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a02832.html">DofCommunicationChooser</a>&lt;<a class="el" href="a02864.html#a803017fbe542adc250b84e4ded4dd24b">GridLayerType</a>&gt; <a class="el" href="a02864.html">Dune::GDT::internal::DefaultProductSpaceTraits</a>&lt; SpaceImps &gt;::<a class="el" href="a02864.html#a42e6f0b24612cd118a2b6b9349906a6a">DofCommunicationChooserType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8d6b1a30e46ea044f83bfefb0c14b9c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d6b1a30e46ea044f83bfefb0c14b9c1">&#9670;&nbsp;</a></span>DofCommunicatorType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class... SpaceImps&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a02832.html#a4a8775537c267ec00e1834115d1e7c1d">DofCommunicationChooserType::Type</a> <a class="el" href="a02864.html">Dune::GDT::internal::DefaultProductSpaceTraits</a>&lt; SpaceImps &gt;::<a class="el" href="a02864.html#a8d6b1a30e46ea044f83bfefb0c14b9c1">DofCommunicatorType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c6e02dd6c8a700f30ec92a9626b3c10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c6e02dd6c8a700f30ec92a9626b3c10">&#9670;&nbsp;</a></span>EntityType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class... SpaceImps&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a02864.html">Dune::GDT::internal::DefaultProductSpaceTraits</a>&lt; SpaceImps &gt;::<a class="el" href="a02864.html#a0c6e02dd6c8a700f30ec92a9626b3c10">EntityType</a> =  XT::Grid::extract_entity_t&lt;<a class="el" href="a02864.html#a803017fbe542adc250b84e4ded4dd24b">GridLayerType</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a803017fbe542adc250b84e4ded4dd24b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a803017fbe542adc250b84e4ded4dd24b">&#9670;&nbsp;</a></span>GridLayerType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class... SpaceImps&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef XT::Common::tuple_element&lt;0, std::tuple&lt;SpaceImps...&gt; &gt;::type::GridLayerType <a class="el" href="a02864.html">Dune::GDT::internal::DefaultProductSpaceTraits</a>&lt; SpaceImps &gt;::<a class="el" href="a02864.html#a803017fbe542adc250b84e4ded4dd24b">GridLayerType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a745efb360a74faf15011b3e81deceb5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a745efb360a74faf15011b3e81deceb5a">&#9670;&nbsp;</a></span>MapperType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class... SpaceImps&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a02808.html">Dune::GDT::DefaultProductMapper</a>&lt;<a class="el" href="a02864.html#a803017fbe542adc250b84e4ded4dd24b">GridLayerType</a>, typename SpaceImps::MapperType...&gt; <a class="el" href="a02864.html">Dune::GDT::internal::DefaultProductSpaceTraits</a>&lt; SpaceImps &gt;::<a class="el" href="a02864.html#a745efb360a74faf15011b3e81deceb5a">MapperType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac66ac0a277a7b46fe9f7905418928c57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac66ac0a277a7b46fe9f7905418928c57">&#9670;&nbsp;</a></span>RangeFieldType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class... SpaceImps&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef XT::Common::tuple_element&lt;0, std::tuple&lt;SpaceImps...&gt; &gt;::type::RangeFieldType <a class="el" href="a02864.html">Dune::GDT::internal::DefaultProductSpaceTraits</a>&lt; SpaceImps &gt;::<a class="el" href="a02864.html#ac66ac0a277a7b46fe9f7905418928c57">RangeFieldType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a043dd71b075f9b08b7fddce38b77dc3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a043dd71b075f9b08b7fddce38b77dc3a">&#9670;&nbsp;</a></span>SpaceTupleType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class... SpaceImps&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::tuple&lt;SpaceImps...&gt; <a class="el" href="a02864.html">Dune::GDT::internal::DefaultProductSpaceTraits</a>&lt; SpaceImps &gt;::<a class="el" href="a02864.html#a043dd71b075f9b08b7fddce38b77dc3a">SpaceTupleType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a4cdc64e94f51760192b01d40ebd62840"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cdc64e94f51760192b01d40ebd62840">&#9670;&nbsp;</a></span>backend_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class... SpaceImps&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const int <a class="el" href="a02864.html">Dune::GDT::internal::maxPolOrder</a>&lt; FirstSpaceType, SpaceTypes &gt;::polOrder = <a class="el" href="a00250.html#a670fa0ee1f0d14ff4522931dcddc1b07">staticMax</a>(FirstSpaceType::polOrder, <a class="el" href="a02864.html">maxPolOrder</a>&lt;SpaceTypes...&gt;::polOrder)</td>
+          <td class="memname">const constexpr <a class="el" href="a00249.html#afd9e79bf2e05d76e877c835fa352f045">Backends</a> <a class="el" href="a02864.html">Dune::GDT::internal::DefaultProductSpaceTraits</a>&lt; SpaceImps &gt;::backend_type {std::tuple_element&lt;0, std::tuple&lt;SpaceImps...&gt;&gt;::Traits::backend_type}</td>
         </tr>
       </table>
   </td>
@@ -103,8 +302,176 @@ template&lt;class FirstSpaceType , class... SpaceTypes&gt; </div>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="a04771_source.html">spaces/product.hh</a></li>
+<a id="a3d28b88352db2c71274bf17566b2c371"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d28b88352db2c71274bf17566b2c371">&#9670;&nbsp;</a></span>continuous</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class... SpaceImps&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bool <a class="el" href="a02864.html">Dune::GDT::internal::DefaultProductSpaceTraits</a>&lt; SpaceImps &gt;::continuous = <a class="el" href="a02856.html">internal::allContinuous</a>&lt;SpaceImps...&gt;::value</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a10fc4a3590253a0d27d253352b7e4508"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10fc4a3590253a0d27d253352b7e4508">&#9670;&nbsp;</a></span>dimDomain</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class... SpaceImps&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t <a class="el" href="a02864.html">Dune::GDT::internal::DefaultProductSpaceTraits</a>&lt; SpaceImps &gt;::dimDomain = GridLayerType::dimension</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf80d022eba1ba874f579ac18681007e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf80d022eba1ba874f579ac18681007e">&#9670;&nbsp;</a></span>dimRange</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class... SpaceImps&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t <a class="el" href="a02864.html">Dune::GDT::internal::DefaultProductSpaceTraits</a>&lt; SpaceImps &gt;::dimRange = <a class="el" href="a02456.html">GDT::BaseFunctionSet::internal::SumDimRange</a>&lt;SpaceImps...&gt;::dimRange</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4af54d34b360e24afe2ab359ad19ae8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4af54d34b360e24afe2ab359ad19ae8f">&#9670;&nbsp;</a></span>dimRangeCols</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class... SpaceImps&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t <a class="el" href="a02864.html">Dune::GDT::internal::DefaultProductSpaceTraits</a>&lt; SpaceImps &gt;::dimRangeCols = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44d2ab8d15fa5cc32dd3240b1d72dba5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44d2ab8d15fa5cc32dd3240b1d72dba5">&#9670;&nbsp;</a></span>layer_backend</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class... SpaceImps&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const XT::Grid::Backends <a class="el" href="a02864.html">Dune::GDT::internal::DefaultProductSpaceTraits</a>&lt; SpaceImps &gt;::layer_backend = XT::Grid::Backends::view</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1deac3ee7d432a65effa129f278ee8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1deac3ee7d432a65effa129f278ee8a">&#9670;&nbsp;</a></span>needs_grid_view</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class... SpaceImps&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bool <a class="el" href="a02864.html">Dune::GDT::internal::DefaultProductSpaceTraits</a>&lt; SpaceImps &gt;::needs_grid_view = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af508a6e54afe20c53d58261310a6e4b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af508a6e54afe20c53d58261310a6e4b7">&#9670;&nbsp;</a></span>polOrder</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class... SpaceImps&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="a02864.html">Dune::GDT::internal::DefaultProductSpaceTraits</a>&lt; SpaceImps &gt;::polOrder = <a class="el" href="a02848.html">internal::maxPolOrder</a>&lt;SpaceImps...&gt;::polOrder</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="a04735_source.html">spaces/product.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::LocalFaceIntegrandInterface&lt; Traits, 2 &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::LocalLambdaQuaternaryFaceIntegrand&lt; E, I, R, rT, rCT, rA, rCA &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,242 +59,351 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a01556.html">LocalFaceIntegrandInterface&lt; Traits, 2 &gt;</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a01556.html">LocalLambdaQuaternaryFaceIntegrand</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pro-types">Protected Types</a> &#124;
-<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="a01553.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::LocalFaceIntegrandInterface&lt; Traits, 2 &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::LocalLambdaQuaternaryFaceIntegrand&lt; E, I, R, rT, rCT, rA, rCA &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Interface for binary codim 1 evaluations.  
- <a href="a01556.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="a04687_source.html">dune/gdt/local/integrands/interfaces.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a04699_source.html">dune/gdt/local/integrands/lambda.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::LocalFaceIntegrandInterface&lt; Traits, 2 &gt;:</div>
+Inheritance diagram for Dune::GDT::LocalLambdaQuaternaryFaceIntegrand&lt; E, I, R, rT, rCT, rA, rCA &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01555.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_local_face_integrand_interface_3_01_traits_00_012_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1_local_face_integrand_interface_3_01_traits_00_012_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_local_face_integrand_interface_3_01_traits_00_012_01_4_inherit__map">
+<div class="center"><img src="a01555.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_local_lambda_quaternary_face_integrand_3_01_e_00_01_i_00_01_r_00_01r_t_00_01r_c_t_00_01r_a_00_01r_c_a_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_local_lambda_quaternary_face_integrand_3_01_e_00_01_i_00_01_r_00_01r_t_00_01r_c_t_00_01r_a_00_01r_c_a_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_local_lambda_quaternary_face_integrand_3_01_e_00_01_i_00_01_r_00_01r_t_00_01r_c_t_00_01r_a_00_01r_c_a_01_4_inherit__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:af30a191298f562ddfd9a7a0046919f9b"><td class="memItemLeft" align="right" valign="top">typedef Traits::derived_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01556.html#af30a191298f562ddfd9a7a0046919f9b">derived_type</a></td></tr>
-<tr class="separator:af30a191298f562ddfd9a7a0046919f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a991b344eeeb864fb18f68bf5ee425742"><td class="memItemLeft" align="right" valign="top">typedef Traits::EntityType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01556.html#a991b344eeeb864fb18f68bf5ee425742">EntityType</a></td></tr>
-<tr class="separator:a991b344eeeb864fb18f68bf5ee425742"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad98ac7560b482f7364e7b5939c42c205"><td class="memItemLeft" align="right" valign="top">typedef Traits::LocalfunctionTupleType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01556.html#ad98ac7560b482f7364e7b5939c42c205">LocalfunctionTupleType</a></td></tr>
-<tr class="separator:ad98ac7560b482f7364e7b5939c42c205"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70fe032fab6cb433e8260d73179535a1"><td class="memItemLeft" align="right" valign="top">typedef Traits::DomainFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01556.html#a70fe032fab6cb433e8260d73179535a1">DomainFieldType</a></td></tr>
-<tr class="separator:a70fe032fab6cb433e8260d73179535a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f85520127838b9c02d989c3416acd7f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01572.html">internal::LocalLambdaQuaternaryFaceIntegrandTraits</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01556.html#a0f85520127838b9c02d989c3416acd7f">Traits</a></td></tr>
+<tr class="separator:a0f85520127838b9c02d989c3416acd7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd4ce7228a9fee6ac376ac87164fa85d"><td class="memItemLeft" align="right" valign="top">typedef XT::Functions::LocalfunctionSetInterface&lt; E, D, d, R, rT, rCT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01556.html#afd4ce7228a9fee6ac376ac87164fa85d">TestBaseType</a></td></tr>
+<tr class="separator:afd4ce7228a9fee6ac376ac87164fa85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2342f526b19da31eaab53ef23df70f7"><td class="memItemLeft" align="right" valign="top">typedef XT::Functions::LocalfunctionSetInterface&lt; E, D, d, R, rA, rCA &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01556.html#ab2342f526b19da31eaab53ef23df70f7">AnsatzBaseType</a></td></tr>
+<tr class="separator:ab2342f526b19da31eaab53ef23df70f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82e416d05311023b351307aafa701f3f"><td class="memItemLeft" align="right" valign="top">typedef FieldVector&lt; D, d - 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01556.html#a82e416d05311023b351307aafa701f3f">PointType</a></td></tr>
+<tr class="separator:a82e416d05311023b351307aafa701f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e77f9121134d9005a48952b18086978"><td class="memItemLeft" align="right" valign="top">typedef DynamicMatrix&lt; R &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01556.html#a7e77f9121134d9005a48952b18086978">LocalMatrixType</a></td></tr>
+<tr class="separator:a7e77f9121134d9005a48952b18086978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1ed2ce35659057183159281784099bb"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; size_t(const <a class="el" href="a01556.html#afd4ce7228a9fee6ac376ac87164fa85d">TestBaseType</a> &amp;, const <a class="el" href="a01556.html#ab2342f526b19da31eaab53ef23df70f7">AnsatzBaseType</a> &amp;, const <a class="el" href="a01556.html#afd4ce7228a9fee6ac376ac87164fa85d">TestBaseType</a> &amp;, const <a class="el" href="a01556.html#ab2342f526b19da31eaab53ef23df70f7">AnsatzBaseType</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01556.html#af1ed2ce35659057183159281784099bb">OrderLambdaType</a></td></tr>
+<tr class="separator:af1ed2ce35659057183159281784099bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93557c05c701c6739f21d30b895e8d44"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(const <a class="el" href="a01556.html#afd4ce7228a9fee6ac376ac87164fa85d">TestBaseType</a> &amp;, const <a class="el" href="a01556.html#ab2342f526b19da31eaab53ef23df70f7">AnsatzBaseType</a> &amp;, const <a class="el" href="a01556.html#afd4ce7228a9fee6ac376ac87164fa85d">TestBaseType</a> &amp;, const <a class="el" href="a01556.html#ab2342f526b19da31eaab53ef23df70f7">AnsatzBaseType</a> &amp;, const I &amp;, const <a class="el" href="a01556.html#a82e416d05311023b351307aafa701f3f">PointType</a> &amp;, <a class="el" href="a01556.html#a7e77f9121134d9005a48952b18086978">LocalMatrixType</a> &amp;, <a class="el" href="a01556.html#a7e77f9121134d9005a48952b18086978">LocalMatrixType</a> &amp;, <a class="el" href="a01556.html#a7e77f9121134d9005a48952b18086978">LocalMatrixType</a> &amp;, <a class="el" href="a01556.html#a7e77f9121134d9005a48952b18086978">LocalMatrixType</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01556.html#a93557c05c701c6739f21d30b895e8d44">EvaluateLambdaType</a></td></tr>
+<tr class="separator:a93557c05c701c6739f21d30b895e8d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a33d4221226c4d2973767581b9ddc4043"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01556.html#ad98ac7560b482f7364e7b5939c42c205">LocalfunctionTupleType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01556.html#a33d4221226c4d2973767581b9ddc4043">localFunctions</a> (const <a class="el" href="a01556.html#a991b344eeeb864fb18f68bf5ee425742">EntityType</a> &amp;entity) const</td></tr>
-<tr class="separator:a33d4221226c4d2973767581b9ddc4043"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d529515ac150d366f15f79a42fc2f9f"><td class="memTemplParams" colspan="2">template&lt;class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </td></tr>
-<tr class="memitem:a3d529515ac150d366f15f79a42fc2f9f"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01556.html#a3d529515ac150d366f15f79a42fc2f9f">order</a> (const <a class="el" href="a01556.html#ad98ac7560b482f7364e7b5939c42c205">LocalfunctionTupleType</a> &amp;localFunctionsTuple, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01556.html#ad35b2ab594b132ec0e0c99b6b81e7c82">E</a>, <a class="el" href="a01556.html#afbba81d98e45926aa941e4a102660ff1">D</a>, <a class="el" href="a01556.html#a21fd2f557cf9d2c5665ccfc853f69e21">d</a>, R, rT, rCT &gt; &amp;testBase, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01556.html#ad35b2ab594b132ec0e0c99b6b81e7c82">E</a>, <a class="el" href="a01556.html#afbba81d98e45926aa941e4a102660ff1">D</a>, <a class="el" href="a01556.html#a21fd2f557cf9d2c5665ccfc853f69e21">d</a>, R, rA, rCA &gt; &amp;ansatzBase) const</td></tr>
-<tr class="memdesc:a3d529515ac150d366f15f79a42fc2f9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the needed integration order.  <a href="#a3d529515ac150d366f15f79a42fc2f9f">More...</a><br /></td></tr>
-<tr class="separator:a3d529515ac150d366f15f79a42fc2f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f5d1a0d6c2c1b05a20f765d5e73dc15"><td class="memTemplParams" colspan="2">template&lt;class IntersectionType , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </td></tr>
-<tr class="memitem:a7f5d1a0d6c2c1b05a20f765d5e73dc15"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01556.html#a7f5d1a0d6c2c1b05a20f765d5e73dc15">evaluate</a> (const <a class="el" href="a01556.html#ad98ac7560b482f7364e7b5939c42c205">LocalfunctionTupleType</a> &amp;localFunctionsTuple, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01556.html#ad35b2ab594b132ec0e0c99b6b81e7c82">E</a>, <a class="el" href="a01556.html#afbba81d98e45926aa941e4a102660ff1">D</a>, <a class="el" href="a01556.html#a21fd2f557cf9d2c5665ccfc853f69e21">d</a>, R, rT, rCT &gt; &amp;testBase, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01556.html#ad35b2ab594b132ec0e0c99b6b81e7c82">E</a>, <a class="el" href="a01556.html#afbba81d98e45926aa941e4a102660ff1">D</a>, <a class="el" href="a01556.html#a21fd2f557cf9d2c5665ccfc853f69e21">d</a>, R, rA, rCA &gt; &amp;ansatzBase, const IntersectionType &amp;intersection, const Dune::FieldVector&lt; <a class="el" href="a01556.html#afbba81d98e45926aa941e4a102660ff1">D</a>, <a class="el" href="a01556.html#a21fd2f557cf9d2c5665ccfc853f69e21">d</a> - 1 &gt; &amp;localPoint, Dune::DynamicMatrix&lt; R &gt; &amp;ret) const</td></tr>
-<tr class="memdesc:a7f5d1a0d6c2c1b05a20f765d5e73dc15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a binary codim 1 evaluation.  <a href="#a7f5d1a0d6c2c1b05a20f765d5e73dc15">More...</a><br /></td></tr>
-<tr class="separator:a7f5d1a0d6c2c1b05a20f765d5e73dc15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:aee70bde7f4b1fec199810db7b6e56fd9"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01556.html#aee70bde7f4b1fec199810db7b6e56fd9">dimDomain</a> = Traits::dimDomain</td></tr>
-<tr class="separator:aee70bde7f4b1fec199810db7b6e56fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
-Protected Types</h2></td></tr>
-<tr class="memitem:ad35b2ab594b132ec0e0c99b6b81e7c82"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01556.html#a991b344eeeb864fb18f68bf5ee425742">EntityType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01556.html#ad35b2ab594b132ec0e0c99b6b81e7c82">E</a></td></tr>
-<tr class="separator:ad35b2ab594b132ec0e0c99b6b81e7c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbba81d98e45926aa941e4a102660ff1"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01556.html#a70fe032fab6cb433e8260d73179535a1">DomainFieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01556.html#afbba81d98e45926aa941e4a102660ff1">D</a></td></tr>
-<tr class="separator:afbba81d98e45926aa941e4a102660ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
-Static Protected Attributes</h2></td></tr>
-<tr class="memitem:a21fd2f557cf9d2c5665ccfc853f69e21"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01556.html#a21fd2f557cf9d2c5665ccfc853f69e21">d</a> = <a class="el" href="a01556.html#aee70bde7f4b1fec199810db7b6e56fd9">dimDomain</a></td></tr>
-<tr class="separator:a21fd2f557cf9d2c5665ccfc853f69e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36608e3e3a027f8ae933508088d33516"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01556.html#a36608e3e3a027f8ae933508088d33516">LocalLambdaQuaternaryFaceIntegrand</a> (<a class="el" href="a01556.html#af1ed2ce35659057183159281784099bb">OrderLambdaType</a> order_lambda, <a class="el" href="a01556.html#a93557c05c701c6739f21d30b895e8d44">EvaluateLambdaType</a> evaluate_lambda)</td></tr>
+<tr class="separator:a36608e3e3a027f8ae933508088d33516"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90086a6fe6b723c986c7abc873ea2f7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01556.html#a90086a6fe6b723c986c7abc873ea2f7d">LocalLambdaQuaternaryFaceIntegrand</a> (const <a class="el" href="a01556.html">ThisType</a> &amp;)=default</td></tr>
+<tr class="separator:a90086a6fe6b723c986c7abc873ea2f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a544e9864b3b253058bfdb942350d28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01556.html#a6a544e9864b3b253058bfdb942350d28">LocalLambdaQuaternaryFaceIntegrand</a> (<a class="el" href="a01556.html">ThisType</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a6a544e9864b3b253058bfdb942350d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6114e7f6128968881886708e41f18bda"><td class="memItemLeft" align="right" valign="top">LocalfunctionTupleType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01556.html#a6114e7f6128968881886708e41f18bda">localFunctions</a> (const EntityType &amp;) const</td></tr>
+<tr class="separator:a6114e7f6128968881886708e41f18bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b43eb9302b7187787acf3405296f138"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01556.html#a1b43eb9302b7187787acf3405296f138">order</a> (const LocalfunctionTupleType, const LocalfunctionTupleType, const <a class="el" href="a01556.html#afd4ce7228a9fee6ac376ac87164fa85d">TestBaseType</a> &amp;test_base_entity, const <a class="el" href="a01556.html#ab2342f526b19da31eaab53ef23df70f7">AnsatzBaseType</a> &amp;ansatz_base_entity, const <a class="el" href="a01556.html#afd4ce7228a9fee6ac376ac87164fa85d">TestBaseType</a> &amp;test_base_neighbor, const <a class="el" href="a01556.html#ab2342f526b19da31eaab53ef23df70f7">AnsatzBaseType</a> &amp;ansatz_base_neighbor) const</td></tr>
+<tr class="separator:a1b43eb9302b7187787acf3405296f138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18891141ded2cf5bf90b107b94e7bc13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01556.html#a18891141ded2cf5bf90b107b94e7bc13">evaluate</a> (const LocalfunctionTupleType &amp;, const LocalfunctionTupleType &amp;, const <a class="el" href="a01556.html#afd4ce7228a9fee6ac376ac87164fa85d">TestBaseType</a> &amp;test_base_entity, const <a class="el" href="a01556.html#ab2342f526b19da31eaab53ef23df70f7">AnsatzBaseType</a> &amp;ansatz_base_entity, const <a class="el" href="a01556.html#afd4ce7228a9fee6ac376ac87164fa85d">TestBaseType</a> &amp;test_base_neighbor, const <a class="el" href="a01556.html#ab2342f526b19da31eaab53ef23df70f7">AnsatzBaseType</a> &amp;ansatz_base_neighbor, const I &amp;intersection, const <a class="el" href="a01556.html#a82e416d05311023b351307aafa701f3f">PointType</a> &amp;local_point, <a class="el" href="a01556.html#a7e77f9121134d9005a48952b18086978">LocalMatrixType</a> &amp;ret_entity_entity, <a class="el" href="a01556.html#a7e77f9121134d9005a48952b18086978">LocalMatrixType</a> &amp;ret_neighbor_neighbor, <a class="el" href="a01556.html#a7e77f9121134d9005a48952b18086978">LocalMatrixType</a> &amp;ret_entity_neighbor, <a class="el" href="a01556.html#a7e77f9121134d9005a48952b18086978">LocalMatrixType</a> &amp;ret_neighbor_entity) const</td></tr>
+<tr class="separator:a18891141ded2cf5bf90b107b94e7bc13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class Traits&gt;<br />
-class Dune::GDT::LocalFaceIntegrandInterface&lt; Traits, 2 &gt;</h3>
-
-<p>Interface for binary codim 1 evaluations. </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="afbba81d98e45926aa941e4a102660ff1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbba81d98e45926aa941e4a102660ff1">&#9670;&nbsp;</a></span>D</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ab2342f526b19da31eaab53ef23df70f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2342f526b19da31eaab53ef23df70f7">&#9670;&nbsp;</a></span>AnsatzBaseType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Traits &gt; </div>
+template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef XT::Functions::LocalfunctionSetInterface&lt;E, D, d, R, rA, rCA&gt; <a class="el" href="a01556.html">Dune::GDT::LocalLambdaQuaternaryFaceIntegrand</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01556.html#ab2342f526b19da31eaab53ef23df70f7">AnsatzBaseType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a93557c05c701c6739f21d30b895e8d44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93557c05c701c6739f21d30b895e8d44">&#9670;&nbsp;</a></span>EvaluateLambdaType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::function&lt;void(const <a class="el" href="a01556.html#afd4ce7228a9fee6ac376ac87164fa85d">TestBaseType</a>&amp;, const <a class="el" href="a01556.html#ab2342f526b19da31eaab53ef23df70f7">AnsatzBaseType</a>&amp;, const <a class="el" href="a01556.html#afd4ce7228a9fee6ac376ac87164fa85d">TestBaseType</a>&amp;, const <a class="el" href="a01556.html#ab2342f526b19da31eaab53ef23df70f7">AnsatzBaseType</a>&amp;, const I&amp;, const <a class="el" href="a01556.html#a82e416d05311023b351307aafa701f3f">PointType</a>&amp;, <a class="el" href="a01556.html#a7e77f9121134d9005a48952b18086978">LocalMatrixType</a>&amp;, <a class="el" href="a01556.html#a7e77f9121134d9005a48952b18086978">LocalMatrixType</a>&amp;, <a class="el" href="a01556.html#a7e77f9121134d9005a48952b18086978">LocalMatrixType</a>&amp;, <a class="el" href="a01556.html#a7e77f9121134d9005a48952b18086978">LocalMatrixType</a>&amp;)&gt; <a class="el" href="a01556.html">Dune::GDT::LocalLambdaQuaternaryFaceIntegrand</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01556.html#a93557c05c701c6739f21d30b895e8d44">EvaluateLambdaType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7e77f9121134d9005a48952b18086978"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e77f9121134d9005a48952b18086978">&#9670;&nbsp;</a></span>LocalMatrixType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef DynamicMatrix&lt;R&gt; <a class="el" href="a01556.html">Dune::GDT::LocalLambdaQuaternaryFaceIntegrand</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01556.html#a7e77f9121134d9005a48952b18086978">LocalMatrixType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af1ed2ce35659057183159281784099bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1ed2ce35659057183159281784099bb">&#9670;&nbsp;</a></span>OrderLambdaType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::function&lt;size_t(const <a class="el" href="a01556.html#afd4ce7228a9fee6ac376ac87164fa85d">TestBaseType</a>&amp;, const <a class="el" href="a01556.html#ab2342f526b19da31eaab53ef23df70f7">AnsatzBaseType</a>&amp;, const <a class="el" href="a01556.html#afd4ce7228a9fee6ac376ac87164fa85d">TestBaseType</a>&amp;, const <a class="el" href="a01556.html#ab2342f526b19da31eaab53ef23df70f7">AnsatzBaseType</a>&amp;)&gt; <a class="el" href="a01556.html">Dune::GDT::LocalLambdaQuaternaryFaceIntegrand</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01556.html#af1ed2ce35659057183159281784099bb">OrderLambdaType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82e416d05311023b351307aafa701f3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82e416d05311023b351307aafa701f3f">&#9670;&nbsp;</a></span>PointType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef FieldVector&lt;D, d - 1&gt; <a class="el" href="a01556.html">Dune::GDT::LocalLambdaQuaternaryFaceIntegrand</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01556.html#a82e416d05311023b351307aafa701f3f">PointType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd4ce7228a9fee6ac376ac87164fa85d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd4ce7228a9fee6ac376ac87164fa85d">&#9670;&nbsp;</a></span>TestBaseType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef XT::Functions::LocalfunctionSetInterface&lt;E, D, d, R, rT, rCT&gt; <a class="el" href="a01556.html">Dune::GDT::LocalLambdaQuaternaryFaceIntegrand</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01556.html#afd4ce7228a9fee6ac376ac87164fa85d">TestBaseType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f85520127838b9c02d989c3416acd7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f85520127838b9c02d989c3416acd7f">&#9670;&nbsp;</a></span>Traits</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a01572.html">internal::LocalLambdaQuaternaryFaceIntegrandTraits</a>&lt;E, I, R, rT, rCT, rA, rCA&gt; <a class="el" href="a01556.html">Dune::GDT::LocalLambdaQuaternaryFaceIntegrand</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01556.html#a0f85520127838b9c02d989c3416acd7f">Traits</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a36608e3e3a027f8ae933508088d33516"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36608e3e3a027f8ae933508088d33516">&#9670;&nbsp;</a></span>LocalLambdaQuaternaryFaceIntegrand() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a01556.html#a70fe032fab6cb433e8260d73179535a1">DomainFieldType</a> <a class="el" href="a01548.html">Dune::GDT::LocalFaceIntegrandInterface</a>&lt; Traits, 2 &gt;::<a class="el" href="a01556.html#afbba81d98e45926aa941e4a102660ff1">D</a></td>
+          <td class="memname"><a class="el" href="a01556.html">Dune::GDT::LocalLambdaQuaternaryFaceIntegrand</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01556.html">LocalLambdaQuaternaryFaceIntegrand</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a01556.html#af1ed2ce35659057183159281784099bb">OrderLambdaType</a>&#160;</td>
+          <td class="paramname"><em>order_lambda</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a01556.html#a93557c05c701c6739f21d30b895e8d44">EvaluateLambdaType</a>&#160;</td>
+          <td class="paramname"><em>evaluate_lambda</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="af30a191298f562ddfd9a7a0046919f9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af30a191298f562ddfd9a7a0046919f9b">&#9670;&nbsp;</a></span>derived_type</h2>
+<a id="a90086a6fe6b723c986c7abc873ea2f7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90086a6fe6b723c986c7abc873ea2f7d">&#9670;&nbsp;</a></span>LocalLambdaQuaternaryFaceIntegrand() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Traits &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef Traits::derived_type <a class="el" href="a01548.html">Dune::GDT::LocalFaceIntegrandInterface</a>&lt; Traits, 2 &gt;::<a class="el" href="a01556.html#af30a191298f562ddfd9a7a0046919f9b">derived_type</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a70fe032fab6cb433e8260d73179535a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70fe032fab6cb433e8260d73179535a1">&#9670;&nbsp;</a></span>DomainFieldType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef Traits::DomainFieldType <a class="el" href="a01548.html">Dune::GDT::LocalFaceIntegrandInterface</a>&lt; Traits, 2 &gt;::<a class="el" href="a01556.html#a70fe032fab6cb433e8260d73179535a1">DomainFieldType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad35b2ab594b132ec0e0c99b6b81e7c82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad35b2ab594b132ec0e0c99b6b81e7c82">&#9670;&nbsp;</a></span>E</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits &gt; </div>
+template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a01556.html#a991b344eeeb864fb18f68bf5ee425742">EntityType</a> <a class="el" href="a01548.html">Dune::GDT::LocalFaceIntegrandInterface</a>&lt; Traits, 2 &gt;::<a class="el" href="a01556.html#ad35b2ab594b132ec0e0c99b6b81e7c82">E</a></td>
+          <td class="memname"><a class="el" href="a01556.html">Dune::GDT::LocalLambdaQuaternaryFaceIntegrand</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01556.html">LocalLambdaQuaternaryFaceIntegrand</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a01556.html">ThisType</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a991b344eeeb864fb18f68bf5ee425742"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a991b344eeeb864fb18f68bf5ee425742">&#9670;&nbsp;</a></span>EntityType</h2>
+<a id="a6a544e9864b3b253058bfdb942350d28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a544e9864b3b253058bfdb942350d28">&#9670;&nbsp;</a></span>LocalLambdaQuaternaryFaceIntegrand() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Traits &gt; </div>
+template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef Traits::EntityType <a class="el" href="a01548.html">Dune::GDT::LocalFaceIntegrandInterface</a>&lt; Traits, 2 &gt;::<a class="el" href="a01556.html#a991b344eeeb864fb18f68bf5ee425742">EntityType</a></td>
+          <td class="memname"><a class="el" href="a01556.html">Dune::GDT::LocalLambdaQuaternaryFaceIntegrand</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;::<a class="el" href="a01556.html">LocalLambdaQuaternaryFaceIntegrand</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a01556.html">ThisType</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad98ac7560b482f7364e7b5939c42c205"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad98ac7560b482f7364e7b5939c42c205">&#9670;&nbsp;</a></span>LocalfunctionTupleType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef Traits::LocalfunctionTupleType <a class="el" href="a01548.html">Dune::GDT::LocalFaceIntegrandInterface</a>&lt; Traits, 2 &gt;::<a class="el" href="a01556.html#ad98ac7560b482f7364e7b5939c42c205">LocalfunctionTupleType</a></td>
-        </tr>
-      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7f5d1a0d6c2c1b05a20f765d5e73dc15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f5d1a0d6c2c1b05a20f765d5e73dc15">&#9670;&nbsp;</a></span>evaluate()</h2>
+<a id="a18891141ded2cf5bf90b107b94e7bc13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18891141ded2cf5bf90b107b94e7bc13">&#9670;&nbsp;</a></span>evaluate()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Traits &gt; </div>
-<div class="memtemplate">
-template&lt;class IntersectionType , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
+template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a01548.html">Dune::GDT::LocalFaceIntegrandInterface</a>&lt; Traits, 2 &gt;::evaluate </td>
+          <td class="memname">void <a class="el" href="a01556.html">Dune::GDT::LocalLambdaQuaternaryFaceIntegrand</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;::evaluate </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a01556.html#ad98ac7560b482f7364e7b5939c42c205">LocalfunctionTupleType</a> &amp;&#160;</td>
-          <td class="paramname"><em>localFunctionsTuple</em>, </td>
+          <td class="paramtype">const LocalfunctionTupleType &amp;&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01556.html#ad35b2ab594b132ec0e0c99b6b81e7c82">E</a>, <a class="el" href="a01556.html#afbba81d98e45926aa941e4a102660ff1">D</a>, <a class="el" href="a01556.html#a21fd2f557cf9d2c5665ccfc853f69e21">d</a>, R, rT, rCT &gt; &amp;&#160;</td>
-          <td class="paramname"><em>testBase</em>, </td>
+          <td class="paramtype">const LocalfunctionTupleType &amp;&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01556.html#ad35b2ab594b132ec0e0c99b6b81e7c82">E</a>, <a class="el" href="a01556.html#afbba81d98e45926aa941e4a102660ff1">D</a>, <a class="el" href="a01556.html#a21fd2f557cf9d2c5665ccfc853f69e21">d</a>, R, rA, rCA &gt; &amp;&#160;</td>
-          <td class="paramname"><em>ansatzBase</em>, </td>
+          <td class="paramtype">const <a class="el" href="a01556.html#afd4ce7228a9fee6ac376ac87164fa85d">TestBaseType</a> &amp;&#160;</td>
+          <td class="paramname"><em>test_base_entity</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const IntersectionType &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a01556.html#ab2342f526b19da31eaab53ef23df70f7">AnsatzBaseType</a> &amp;&#160;</td>
+          <td class="paramname"><em>ansatz_base_entity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a01556.html#afd4ce7228a9fee6ac376ac87164fa85d">TestBaseType</a> &amp;&#160;</td>
+          <td class="paramname"><em>test_base_neighbor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a01556.html#ab2342f526b19da31eaab53ef23df70f7">AnsatzBaseType</a> &amp;&#160;</td>
+          <td class="paramname"><em>ansatz_base_neighbor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const I &amp;&#160;</td>
           <td class="paramname"><em>intersection</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Dune::FieldVector&lt; <a class="el" href="a01556.html#afbba81d98e45926aa941e4a102660ff1">D</a>, <a class="el" href="a01556.html#a21fd2f557cf9d2c5665ccfc853f69e21">d</a> - 1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>localPoint</em>, </td>
+          <td class="paramtype">const <a class="el" href="a01556.html#a82e416d05311023b351307aafa701f3f">PointType</a> &amp;&#160;</td>
+          <td class="paramname"><em>local_point</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Dune::DynamicMatrix&lt; R &gt; &amp;&#160;</td>
-          <td class="paramname"><em>ret</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a01556.html#a7e77f9121134d9005a48952b18086978">LocalMatrixType</a> &amp;&#160;</td>
+          <td class="paramname"><em>ret_entity_entity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a01556.html#a7e77f9121134d9005a48952b18086978">LocalMatrixType</a> &amp;&#160;</td>
+          <td class="paramname"><em>ret_neighbor_neighbor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a01556.html#a7e77f9121134d9005a48952b18086978">LocalMatrixType</a> &amp;&#160;</td>
+          <td class="paramname"><em>ret_entity_neighbor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a01556.html#a7e77f9121134d9005a48952b18086978">LocalMatrixType</a> &amp;&#160;</td>
+          <td class="paramname"><em>ret_neighbor_entity</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -309,36 +418,24 @@ template&lt;class IntersectionType , class R , size_t rT, size_t rCT, size_t rA,
 </table>
 </div><div class="memdoc">
 
-<p>Computes a binary codim 1 evaluation. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">IntersectionType</td><td>A model of Dune::Intersection&lt; ... &gt; </td></tr>
-    <tr><td class="paramname">R</td><td>RangeFieldType </td></tr>
-    <tr><td class="paramname">r{T,A}</td><td>dimRange of the {testBase*,ansatzBase*} </td></tr>
-    <tr><td class="paramname">rC{T,A}</td><td>dimRangeRows of the {testBase*,ansatzBase*} </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section attention"><dt>Attention</dt><dd>ret is assumed to be zero! </dd></dl>
-
 </div>
 </div>
-<a id="a33d4221226c4d2973767581b9ddc4043"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33d4221226c4d2973767581b9ddc4043">&#9670;&nbsp;</a></span>localFunctions()</h2>
+<a id="a6114e7f6128968881886708e41f18bda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6114e7f6128968881886708e41f18bda">&#9670;&nbsp;</a></span>localFunctions()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Traits &gt; </div>
+template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a01556.html#ad98ac7560b482f7364e7b5939c42c205">LocalfunctionTupleType</a> <a class="el" href="a01548.html">Dune::GDT::LocalFaceIntegrandInterface</a>&lt; Traits, 2 &gt;::localFunctions </td>
+          <td class="memname">LocalfunctionTupleType <a class="el" href="a01556.html">Dune::GDT::LocalLambdaQuaternaryFaceIntegrand</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;::localFunctions </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a01556.html#a991b344eeeb864fb18f68bf5ee425742">EntityType</a> &amp;&#160;</td>
-          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td class="paramtype">const EntityType &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -351,36 +448,52 @@ template&lt;class Traits &gt; </div>
 
 </div>
 </div>
-<a id="a3d529515ac150d366f15f79a42fc2f9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d529515ac150d366f15f79a42fc2f9f">&#9670;&nbsp;</a></span>order()</h2>
+<a id="a1b43eb9302b7187787acf3405296f138"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b43eb9302b7187787acf3405296f138">&#9670;&nbsp;</a></span>order()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Traits &gt; </div>
-<div class="memtemplate">
-template&lt;class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
+template&lt;class E , class I , class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t <a class="el" href="a01548.html">Dune::GDT::LocalFaceIntegrandInterface</a>&lt; Traits, 2 &gt;::order </td>
+          <td class="memname">size_t <a class="el" href="a01556.html">Dune::GDT::LocalLambdaQuaternaryFaceIntegrand</a>&lt; E, I, R, rT, rCT, rA, rCA &gt;::order </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a01556.html#ad98ac7560b482f7364e7b5939c42c205">LocalfunctionTupleType</a> &amp;&#160;</td>
-          <td class="paramname"><em>localFunctionsTuple</em>, </td>
+          <td class="paramtype">const LocalfunctionTupleType&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01556.html#ad35b2ab594b132ec0e0c99b6b81e7c82">E</a>, <a class="el" href="a01556.html#afbba81d98e45926aa941e4a102660ff1">D</a>, <a class="el" href="a01556.html#a21fd2f557cf9d2c5665ccfc853f69e21">d</a>, R, rT, rCT &gt; &amp;&#160;</td>
-          <td class="paramname"><em>testBase</em>, </td>
+          <td class="paramtype">const LocalfunctionTupleType&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01556.html#ad35b2ab594b132ec0e0c99b6b81e7c82">E</a>, <a class="el" href="a01556.html#afbba81d98e45926aa941e4a102660ff1">D</a>, <a class="el" href="a01556.html#a21fd2f557cf9d2c5665ccfc853f69e21">d</a>, R, rA, rCA &gt; &amp;&#160;</td>
-          <td class="paramname"><em>ansatzBase</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="a01556.html#afd4ce7228a9fee6ac376ac87164fa85d">TestBaseType</a> &amp;&#160;</td>
+          <td class="paramname"><em>test_base_entity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a01556.html#ab2342f526b19da31eaab53ef23df70f7">AnsatzBaseType</a> &amp;&#160;</td>
+          <td class="paramname"><em>ansatz_base_entity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a01556.html#afd4ce7228a9fee6ac376ac87164fa85d">TestBaseType</a> &amp;&#160;</td>
+          <td class="paramname"><em>test_base_neighbor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a01556.html#ab2342f526b19da31eaab53ef23df70f7">AnsatzBaseType</a> &amp;&#160;</td>
+          <td class="paramname"><em>ansatz_base_neighbor</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -395,69 +508,10 @@ template&lt;class R , size_t rT, size_t rCT, size_t rA, size_t rCA&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Computes the needed integration order. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">R</td><td>RangeFieldType </td></tr>
-    <tr><td class="paramname">r{T,A}</td><td>dimRange of the {testBase,ansatzBase} </td></tr>
-    <tr><td class="paramname">rC{T,A}</td><td>dimRangeRows of the {testBase,ansatzBase} </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a21fd2f557cf9d2c5665ccfc853f69e21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21fd2f557cf9d2c5665ccfc853f69e21">&#9670;&nbsp;</a></span>d</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const size_t <a class="el" href="a01548.html">Dune::GDT::LocalFaceIntegrandInterface</a>&lt; Traits, 2 &gt;::d = <a class="el" href="a01556.html#aee70bde7f4b1fec199810db7b6e56fd9">dimDomain</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aee70bde7f4b1fec199810db7b6e56fd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee70bde7f4b1fec199810db7b6e56fd9">&#9670;&nbsp;</a></span>dimDomain</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const size_t <a class="el" href="a01548.html">Dune::GDT::LocalFaceIntegrandInterface</a>&lt; Traits, 2 &gt;::dimDomain = Traits::dimDomain</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a04687_source.html">local/integrands/interfaces.hh</a></li>
+<li><a class="el" href="a04699_source.html">integrands/lambda.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
