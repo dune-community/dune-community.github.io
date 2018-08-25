@@ -96,8 +96,6 @@ Public Types</h2></td></tr>
 <tr class="separator:a02d2f3f33b7f91ae00db627361c18d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac361d375d7bde64b60388793686faa61"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01916.html#ac361d375d7bde64b60388793686faa61">RangeFieldType</a> = typename DiscreteFunctionType::RangeFieldType</td></tr>
 <tr class="separator:ac361d375d7bde64b60388793686faa61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a965364c2bb76348b760df89c4cd2bea8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01916.html#a965364c2bb76348b760df89c4cd2bea8">QuadratureType</a> = typename Dune::QuadratureRule&lt; <a class="el" href="a01908.html#ac361d375d7bde64b60388793686faa61">RangeFieldType</a>, <a class="el" href="a01916.html#a960ad5573869f45ef5382a5a1d7901f3">dimDomain</a> &gt;</td></tr>
-<tr class="separator:a965364c2bb76348b760df89c4cd2bea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9148e3270cf0ebfdf4792455b7c6b3d7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01908.html#a9148e3270cf0ebfdf4792455b7c6b3d7">AnalyticalFluxType</a> = AnalyticalFluxImp</td></tr>
 <tr class="separator:a9148e3270cf0ebfdf4792455b7c6b3d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6b5b27d27516b50d45a561606432c53"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01908.html#ab6b5b27d27516b50d45a561606432c53">DiscreteFunctionType</a> = DiscreteFunctionImp</td></tr>
@@ -153,8 +151,6 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a2e550d588e1cdf498064419ae76535c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8c7b75afffcce4a640b1d697ed7d471"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a01908.html#adc1a4803f4ef0d1e5649415ede4a0209">BasisfunctionType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01908.html#ab8c7b75afffcce4a640b1d697ed7d471">basis_functions_</a></td></tr>
 <tr class="separator:ab8c7b75afffcce4a640b1d697ed7d471"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1d35cdc863841a918c800d1bf992b89"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a01908.html#a965364c2bb76348b760df89c4cd2bea8">QuadratureType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01908.html#af1d35cdc863841a918c800d1bf992b89">quadrature_</a></td></tr>
-<tr class="separator:af1d35cdc863841a918c800d1bf992b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe9c03ffcd83cbe212540b3c5b39bd5c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a01908.html#ac361d375d7bde64b60388793686faa61">RangeFieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01908.html#afe9c03ffcd83cbe212540b3c5b39bd5c">epsilon_</a></td></tr>
 <tr class="separator:afe9c03ffcd83cbe212540b3c5b39bd5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8423473bcb250d23bc167bc24dc9349"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="a01908.html#a02d2f3f33b7f91ae00db627361c18d9b">RangeType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01908.html#ab8423473bcb250d23bc167bc24dc9349">basis_values_</a></td></tr>
@@ -375,22 +371,6 @@ template&lt;class AnalyticalFluxImp , class DiscreteFunctionImp , class Basisfun
 <span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a965364c2bb76348b760df89c4cd2bea8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a965364c2bb76348b760df89c4cd2bea8">&#9670;&nbsp;</a></span>QuadratureType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class AnalyticalFluxImp , class DiscreteFunctionImp , class BasisfunctionImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="a01908.html">Dune::GDT::LocalRealizabilityLimiterBase</a>&lt; AnalyticalFluxImp, DiscreteFunctionImp, BasisfunctionImp &gt;::<a class="el" href="a01908.html#a965364c2bb76348b760df89c4cd2bea8">QuadratureType</a> =  typename Dune::QuadratureRule&lt;<a class="el" href="a01908.html#ac361d375d7bde64b60388793686faa61">RangeFieldType</a>, <a class="el" href="a01916.html#a960ad5573869f45ef5382a5a1d7901f3">dimDomain</a>&gt;</td>
-        </tr>
-      </table>
 </div><div class="memdoc">
 
 </div>
@@ -913,30 +893,6 @@ template&lt;class AnalyticalFluxImp , class DiscreteFunctionImp , class Basisfun
       <table class="memname">
         <tr>
           <td class="memname">XT::Common::Parameter <a class="el" href="a01908.html">Dune::GDT::LocalRealizabilityLimiterBase</a>&lt; AnalyticalFluxImp, DiscreteFunctionImp, BasisfunctionImp &gt;::param_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af1d35cdc863841a918c800d1bf992b89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1d35cdc863841a918c800d1bf992b89">&#9670;&nbsp;</a></span>quadrature_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class AnalyticalFluxImp , class DiscreteFunctionImp , class BasisfunctionImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="a01908.html#a965364c2bb76348b760df89c4cd2bea8">QuadratureType</a>&amp; <a class="el" href="a01908.html">Dune::GDT::LocalRealizabilityLimiterBase</a>&lt; AnalyticalFluxImp, DiscreteFunctionImp, BasisfunctionImp &gt;::quadrature_</td>
         </tr>
       </table>
   </td>
