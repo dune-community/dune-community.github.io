@@ -178,8 +178,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:adebce099556ac2b6ebd146fa8f77d05f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5da6215bfc406b4ee2b3df18c502d011"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03056.html#a5da6215bfc406b4ee2b3df18c502d011">rankfile_name</a> (const std::string &amp;prefix, const int rank, const size_t <a class="el" href="a03064.html#ac6bd15510fc271074a2e46f9cd583ef6">step</a>)</td></tr>
 <tr class="separator:a5da6215bfc406b4ee2b3df18c502d011"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f0c26c54cd463c3c61340d19518d71c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03056.html#a4f0c26c54cd463c3c61340d19518d71c">write_to_textfile</a> (const <a class="el" href="a03056.html#ae8e5703d19f93cde71e89c2806e8dcde">LocalizableFunctionType</a> &amp;u_n, const <a class="el" href="a03056.html#a736ca463770a044758ce61e03bd2a67f">GridLayerType</a> &amp;grid_layer, const std::string &amp;prefix, const size_t <a class="el" href="a03064.html#ac6bd15510fc271074a2e46f9cd583ef6">step</a>, const <a class="el" href="a03064.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> t, const <a class="el" href="a03056.html#a713e4754285a6b8245597e3f3cde62d5">StringifierType</a> &amp;stringifier)</td></tr>
-<tr class="separator:a4f0c26c54cd463c3c61340d19518d71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e2655c60c867f5a4ac7dd30d0c6acd9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03056.html#a8e2655c60c867f5a4ac7dd30d0c6acd9">write_to_textfile</a> (const <a class="el" href="a03056.html#ae8e5703d19f93cde71e89c2806e8dcde">LocalizableFunctionType</a> &amp;u_n, const <a class="el" href="a03056.html#a736ca463770a044758ce61e03bd2a67f">GridLayerType</a> &amp;grid_layer, const std::string &amp;prefix, const size_t <a class="el" href="a03064.html#ac6bd15510fc271074a2e46f9cd583ef6">step</a>, const <a class="el" href="a03064.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> t, const <a class="el" href="a03056.html#a713e4754285a6b8245597e3f3cde62d5">StringifierType</a> &amp;stringifier, const bool intersection_wise=false)</td></tr>
+<tr class="separator:a8e2655c60c867f5a4ac7dd30d0c6acd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f3f8940062538c31525bdd13acc31f6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03056.html#a6f3f8940062538c31525bdd13acc31f6">write_files</a> (const bool visualize, const bool write_discrete, const bool write_exact, const <a class="el" href="a03056.html#a9e97a70601c13e08bf664ad7bb0f0fdb">DiscreteFunctionType</a> &amp;discrete_sol, const <a class="el" href="a03056.html#ae8e5703d19f93cde71e89c2806e8dcde">LocalizableFunctionType</a> &amp;exact_sol, const std::string &amp;prefix, const size_t <a class="el" href="a03064.html#ac6bd15510fc271074a2e46f9cd583ef6">step</a>, const <a class="el" href="a03064.html#a31fca11388bf5417599006e77d30705e">RangeFieldType</a> t, const <a class="el" href="a03056.html#a713e4754285a6b8245597e3f3cde62d5">StringifierType</a> &amp;stringifier, const <a class="el" href="a03056.html#a108943255ec09a9f8d78a42c1d06c0c8">VisualizerType</a> &amp;visualizer)</td></tr>
 <tr class="separator:a6f3f8940062538c31525bdd13acc31f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -1449,8 +1449,8 @@ template&lt;class DiscreteFunctionImp&gt; </div>
 
 </div>
 </div>
-<a id="a4f0c26c54cd463c3c61340d19518d71c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f0c26c54cd463c3c61340d19518d71c">&#9670;&nbsp;</a></span>write_to_textfile()</h2>
+<a id="a8e2655c60c867f5a4ac7dd30d0c6acd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e2655c60c867f5a4ac7dd30d0c6acd9">&#9670;&nbsp;</a></span>write_to_textfile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1494,7 +1494,13 @@ template&lt;class DiscreteFunctionImp&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="a03056.html#a713e4754285a6b8245597e3f3cde62d5">StringifierType</a> &amp;&#160;</td>
-          <td class="paramname"><em>stringifier</em>&#160;</td>
+          <td class="paramname"><em>stringifier</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>intersection_wise</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
