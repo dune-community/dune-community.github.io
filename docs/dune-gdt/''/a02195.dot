@@ -1,11 +1,19 @@
-digraph "Dune::GDT::LocalDiffusiveFluxEstimateStarOS2014Integrand&lt; DiffusionFactorType, DiffusionFactorHatType, DiffusionTensorType, DiffusiveFluxType &gt;"
+digraph "Dune::GDT::WeightedL2LocalizableProduct&lt; WeightFunctionType, GridLayer, Range, Source, Field &gt;"
 {
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="Dune::GDT::LocalDiffusive\lFluxEstimateStarOS2014Integrand\l\< DiffusionFactorType, DiffusionFactor\lHatType, DiffusionTensorType, DiffusiveFluxType \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 [label="Dune::GDT::WeightedL2Localizable\lProduct\< WeightFunctionType,\l GridLayer, Range, Source, Field \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
   Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 [label="Dune::GDT::LocalVolumeIntegrand\lInterface\< internal::LocalDiffusive\lFluxEstimateStarOS2014IntegrandTraits\l\< DiffusionFactorType, DiffusionFactorHatType,\l DiffusionTensorType, DiffusiveFluxType \>, 2 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01520.html"];
-  Node2 -> Node1 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::LocalDiffusive\lFluxEstimateStarOS2014Integrand\lTraits\< DiffusionFactorType,\l DiffusionFactorHatType, DiffusionTensor\lType, DiffusiveFluxType \>, 2 \>" ,fontname="Helvetica"];
-  Node2 [label="Dune::GDT::LocalVolumeIntegrand\lInterface\< Traits, numArguments \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01520.html",tooltip="Interface for local evaluations that depend on a codim 0 entity. "];
+  Node1 [label="Dune::GDT::LocalizableProduct\lBase\< GridLayer, Range, Source,\l Field \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01768.html"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="XT::Grid::Walker\< GridLayer \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< GridLayer, Range,\l Source, Field \>" ,fontname="Helvetica"];
+  Node3 [label="Dune::GDT::LocalizableProduct\lBase\< GridLayerImp, RangeImp,\l SourceImp, FieldImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01768.html"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="XT::Grid::Walker\< GridLayer\lImp \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node5 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< XT::Functions::Constant\lFunction\< XT::Grid::extract\l_entity_t\< GridLayer \>, GridLayer\l::ctype, GridLayer::dimension,\l Field, 1 \>, GridLayer, Range, Source, Field \>" ,fontname="Helvetica"];
+  Node5 [label="Dune::GDT::WeightedL2Localizable\lProduct\< XT::Functions::ConstantFunction\l\< XT::Grid::extract_entity_t\< GridLayer\l \>, GridLayer::ctype, GridLayer::dimension,\l Field, 1 \>, GridLayer, Range, Source, Field \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02196.html"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Dune::GDT::L2Localizable\lProduct\< GridLayer, Range,\l Source, Field \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02140.html"];
 }

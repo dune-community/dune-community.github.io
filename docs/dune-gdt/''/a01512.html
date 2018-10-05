@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::internal::LocalFvRhsJacobianIntegrandTraits&lt; RhsEvaluationImp, SourceType &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::LocalFvRhsIntegrand&lt; RhsEvaluationImp, SourceType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,42 +59,65 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a00250.html">internal</a></li><li class="navelem"><a class="el" href="a01512.html">LocalFvRhsJacobianIntegrandTraits</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a01512.html">LocalFvRhsIntegrand</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="a01509.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::LocalFvRhsJacobianIntegrandTraits&lt; RhsEvaluationImp, SourceType &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::LocalFvRhsIntegrand&lt; RhsEvaluationImp, SourceType &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a04588_source.html">dune/gdt/local/integrands/fv.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a04692_source.html">dune/gdt/local/integrands/fv.hh</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Dune::GDT::LocalFvRhsIntegrand&lt; RhsEvaluationImp, SourceType &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="a01511.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_local_fv_rhs_integrand_3_01_rhs_evaluation_imp_00_01_source_type_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_local_fv_rhs_integrand_3_01_rhs_evaluation_imp_00_01_source_type_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_local_fv_rhs_integrand_3_01_rhs_evaluation_imp_00_01_source_type_01_4_inherit__map">
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ab6e771d42648713f917f6e476258e503"><td class="memItemLeft" align="right" valign="top">typedef RhsEvaluationImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01512.html#ab6e771d42648713f917f6e476258e503">RhsEvaluationType</a></td></tr>
-<tr class="separator:ab6e771d42648713f917f6e476258e503"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac19f9126743ef0b576212a989250fca9"><td class="memItemLeft" align="right" valign="top">typedef RhsEvaluationImp::EntityType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01512.html#ac19f9126743ef0b576212a989250fca9">EntityType</a></td></tr>
-<tr class="separator:ac19f9126743ef0b576212a989250fca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeebb44cdf0887c8254e3a676aa371ead"><td class="memItemLeft" align="right" valign="top">typedef RhsEvaluationImp::DomainFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01512.html#aeebb44cdf0887c8254e3a676aa371ead">DomainFieldType</a></td></tr>
-<tr class="separator:aeebb44cdf0887c8254e3a676aa371ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dcfe4811fe227874fa524b801ad3cc0"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01500.html">LocalFvRhsJacobianIntegrand</a>&lt; RhsEvaluationImp, SourceType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01512.html#a1dcfe4811fe227874fa524b801ad3cc0">derived_type</a></td></tr>
-<tr class="separator:a1dcfe4811fe227874fa524b801ad3cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f52a054e8d94b9c2fbf7da4cc290299"><td class="memItemLeft" align="right" valign="top">typedef std::tuple&lt; std::unique_ptr&lt; typename RhsEvaluationType::LocalfunctionType &gt;, std::unique_ptr&lt; typename SourceType::LocalfunctionType &gt;, typename SourceType::SpaceType::GridLayerType::ctype &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01512.html#a7f52a054e8d94b9c2fbf7da4cc290299">LocalfunctionTupleType</a></td></tr>
-<tr class="separator:a7f52a054e8d94b9c2fbf7da4cc290299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c0802790aea4afc0abf4ed71bb9c337"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01524.html">internal::LocalFvRhsIntegrandTraits</a>&lt; RhsEvaluationImp, SourceType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01512.html#a4c0802790aea4afc0abf4ed71bb9c337">Traits</a></td></tr>
+<tr class="separator:a4c0802790aea4afc0abf4ed71bb9c337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11641d5c126dbd2dd2d5b180dc4f4c01"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01524.html#aff4e52f42481dcde6c64155b4f57bb14">Traits::RhsEvaluationType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01512.html#a11641d5c126dbd2dd2d5b180dc4f4c01">RhsEvaluationType</a></td></tr>
+<tr class="separator:a11641d5c126dbd2dd2d5b180dc4f4c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16761387969e5bc4bea518a8e5425d16"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01524.html#a7ba2a351d369e3a1fd78d890190f8084">Traits::LocalfunctionTupleType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01512.html#a16761387969e5bc4bea518a8e5425d16">LocalfunctionTupleType</a></td></tr>
+<tr class="separator:a16761387969e5bc4bea518a8e5425d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a460461d85537eaa89427a2fa02dfaddf"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01524.html#a81994bec5967f6926aa8bbca95c7704d">Traits::EntityType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01512.html#a460461d85537eaa89427a2fa02dfaddf">EntityType</a></td></tr>
+<tr class="separator:a460461d85537eaa89427a2fa02dfaddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a464c1b87c09d4e7dcfbaa104e78e6426"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a01524.html#a48784687f55043018e4f67ae1dbadd16">Traits::DomainFieldType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01512.html#a464c1b87c09d4e7dcfbaa104e78e6426">DomainFieldType</a></td></tr>
+<tr class="separator:a464c1b87c09d4e7dcfbaa104e78e6426"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74efc378f8c49b4b05873be1aedd141c"><td class="memItemLeft" align="right" valign="top">typedef RhsEvaluationType::DomainType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01512.html#a74efc378f8c49b4b05873be1aedd141c">DomainType</a></td></tr>
+<tr class="separator:a74efc378f8c49b4b05873be1aedd141c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aa6bbdc4ef15f10134351ae6aed8aced1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01512.html#aa6bbdc4ef15f10134351ae6aed8aced1">LocalFvRhsIntegrand</a> (const <a class="el" href="a01512.html#a11641d5c126dbd2dd2d5b180dc4f4c01">RhsEvaluationType</a> &amp;rhs_evaluation, const SourceType &amp;source, const XT::Common::Parameter &amp;param)</td></tr>
+<tr class="separator:aa6bbdc4ef15f10134351ae6aed8aced1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72b3297d81c2e56eb3a6103f4d583c4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a01512.html#a16761387969e5bc4bea518a8e5425d16">LocalfunctionTupleType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01512.html#a72b3297d81c2e56eb3a6103f4d583c4a">localFunctions</a> (const <a class="el" href="a01512.html#a460461d85537eaa89427a2fa02dfaddf">EntityType</a> &amp;entity) const</td></tr>
+<tr class="separator:a72b3297d81c2e56eb3a6103f4d583c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed9497a6754537f07baef736a2fd0a31"><td class="memTemplParams" colspan="2">template&lt;class R , size_t r, size_t rC&gt; </td></tr>
+<tr class="memitem:aed9497a6754537f07baef736a2fd0a31"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01512.html#aed9497a6754537f07baef736a2fd0a31">order</a> (const <a class="el" href="a01512.html#a16761387969e5bc4bea518a8e5425d16">LocalfunctionTupleType</a> &amp;local_functions_tuple, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01512.html#a460461d85537eaa89427a2fa02dfaddf">EntityType</a>, <a class="el" href="a01512.html#a464c1b87c09d4e7dcfbaa104e78e6426">DomainFieldType</a>, <a class="el" href="a01512.html#aa02baa47f7a6892b89d7b28fe46ab533">dimDomain</a>, R, r, rC &gt; &amp;) const</td></tr>
+<tr class="separator:aed9497a6754537f07baef736a2fd0a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1adf714d6bcc8bb44cc6358a62dac568"><td class="memTemplParams" colspan="2">template&lt;class R , size_t r, size_t rC&gt; </td></tr>
+<tr class="memitem:a1adf714d6bcc8bb44cc6358a62dac568"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01512.html#a1adf714d6bcc8bb44cc6358a62dac568">evaluate</a> (const <a class="el" href="a01512.html#a16761387969e5bc4bea518a8e5425d16">LocalfunctionTupleType</a> &amp;local_functions_tuple, const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01512.html#a460461d85537eaa89427a2fa02dfaddf">EntityType</a>, <a class="el" href="a01512.html#a464c1b87c09d4e7dcfbaa104e78e6426">DomainFieldType</a>, <a class="el" href="a01512.html#aa02baa47f7a6892b89d7b28fe46ab533">dimDomain</a>, R, r, rC &gt; &amp;, const Dune::FieldVector&lt; <a class="el" href="a01512.html#a464c1b87c09d4e7dcfbaa104e78e6426">DomainFieldType</a>, <a class="el" href="a01512.html#aa02baa47f7a6892b89d7b28fe46ab533">dimDomain</a> &gt; &amp;x_local, Dune::DynamicVector&lt; R &gt; &amp;ret) const</td></tr>
+<tr class="separator:a1adf714d6bcc8bb44cc6358a62dac568"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:acf3e069e59352d8a2bbb4a2dd31ec643"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01512.html#acf3e069e59352d8a2bbb4a2dd31ec643">dimDomain</a> = RhsEvaluationImp::dimDomain</td></tr>
-<tr class="separator:acf3e069e59352d8a2bbb4a2dd31ec643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa02baa47f7a6892b89d7b28fe46ab533"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01512.html#aa02baa47f7a6892b89d7b28fe46ab533">dimDomain</a> = Traits::dimDomain</td></tr>
+<tr class="separator:aa02baa47f7a6892b89d7b28fe46ab533"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class RhsEvaluationImp, class SourceType&gt;<br />
-class Dune::GDT::internal::LocalFvRhsJacobianIntegrandTraits&lt; RhsEvaluationImp, SourceType &gt;</h3>
+class Dune::GDT::LocalFvRhsIntegrand&lt; RhsEvaluationImp, SourceType &gt;</h3>
 
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -104,8 +127,8 @@ class Dune::GDT::internal::LocalFvRhsJacobianIntegrandTraits&lt; RhsEvaluationIm
   </dd>
 </dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a1dcfe4811fe227874fa524b801ad3cc0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1dcfe4811fe227874fa524b801ad3cc0">&#9670;&nbsp;</a></span>derived_type</h2>
+<a id="a464c1b87c09d4e7dcfbaa104e78e6426"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a464c1b87c09d4e7dcfbaa104e78e6426">&#9670;&nbsp;</a></span>DomainFieldType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -113,15 +136,15 @@ class Dune::GDT::internal::LocalFvRhsJacobianIntegrandTraits&lt; RhsEvaluationIm
 template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a01500.html">LocalFvRhsJacobianIntegrand</a>&lt;RhsEvaluationImp, SourceType&gt; <a class="el" href="a01512.html">Dune::GDT::internal::LocalFvRhsJacobianIntegrandTraits</a>&lt; RhsEvaluationImp, SourceType &gt;::<a class="el" href="a01512.html#a1dcfe4811fe227874fa524b801ad3cc0">derived_type</a></td>
+          <td class="memname">typedef <a class="el" href="a01524.html#a48784687f55043018e4f67ae1dbadd16">Traits::DomainFieldType</a> <a class="el" href="a01512.html">Dune::GDT::LocalFvRhsIntegrand</a>&lt; RhsEvaluationImp, SourceType &gt;::<a class="el" href="a01512.html#a464c1b87c09d4e7dcfbaa104e78e6426">DomainFieldType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aeebb44cdf0887c8254e3a676aa371ead"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeebb44cdf0887c8254e3a676aa371ead">&#9670;&nbsp;</a></span>DomainFieldType</h2>
+<a id="a74efc378f8c49b4b05873be1aedd141c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74efc378f8c49b4b05873be1aedd141c">&#9670;&nbsp;</a></span>DomainType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -129,15 +152,15 @@ template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
 template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef RhsEvaluationImp::DomainFieldType <a class="el" href="a01512.html">Dune::GDT::internal::LocalFvRhsJacobianIntegrandTraits</a>&lt; RhsEvaluationImp, SourceType &gt;::<a class="el" href="a01512.html#aeebb44cdf0887c8254e3a676aa371ead">DomainFieldType</a></td>
+          <td class="memname">typedef RhsEvaluationType::DomainType <a class="el" href="a01512.html">Dune::GDT::LocalFvRhsIntegrand</a>&lt; RhsEvaluationImp, SourceType &gt;::<a class="el" href="a01512.html#a74efc378f8c49b4b05873be1aedd141c">DomainType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ac19f9126743ef0b576212a989250fca9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac19f9126743ef0b576212a989250fca9">&#9670;&nbsp;</a></span>EntityType</h2>
+<a id="a460461d85537eaa89427a2fa02dfaddf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a460461d85537eaa89427a2fa02dfaddf">&#9670;&nbsp;</a></span>EntityType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,15 +168,15 @@ template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
 template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef RhsEvaluationImp::EntityType <a class="el" href="a01512.html">Dune::GDT::internal::LocalFvRhsJacobianIntegrandTraits</a>&lt; RhsEvaluationImp, SourceType &gt;::<a class="el" href="a01512.html#ac19f9126743ef0b576212a989250fca9">EntityType</a></td>
+          <td class="memname">typedef <a class="el" href="a01524.html#a81994bec5967f6926aa8bbca95c7704d">Traits::EntityType</a> <a class="el" href="a01512.html">Dune::GDT::LocalFvRhsIntegrand</a>&lt; RhsEvaluationImp, SourceType &gt;::<a class="el" href="a01512.html#a460461d85537eaa89427a2fa02dfaddf">EntityType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a7f52a054e8d94b9c2fbf7da4cc290299"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f52a054e8d94b9c2fbf7da4cc290299">&#9670;&nbsp;</a></span>LocalfunctionTupleType</h2>
+<a id="a16761387969e5bc4bea518a8e5425d16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16761387969e5bc4bea518a8e5425d16">&#9670;&nbsp;</a></span>LocalfunctionTupleType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -161,15 +184,15 @@ template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
 template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::tuple&lt;std::unique_ptr&lt;typename RhsEvaluationType::LocalfunctionType&gt;, std::unique_ptr&lt;typename SourceType::LocalfunctionType&gt;, typename SourceType::SpaceType::GridLayerType::ctype&gt; <a class="el" href="a01512.html">Dune::GDT::internal::LocalFvRhsJacobianIntegrandTraits</a>&lt; RhsEvaluationImp, SourceType &gt;::<a class="el" href="a01512.html#a7f52a054e8d94b9c2fbf7da4cc290299">LocalfunctionTupleType</a></td>
+          <td class="memname">typedef <a class="el" href="a01524.html#a7ba2a351d369e3a1fd78d890190f8084">Traits::LocalfunctionTupleType</a> <a class="el" href="a01512.html">Dune::GDT::LocalFvRhsIntegrand</a>&lt; RhsEvaluationImp, SourceType &gt;::<a class="el" href="a01512.html#a16761387969e5bc4bea518a8e5425d16">LocalfunctionTupleType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ab6e771d42648713f917f6e476258e503"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6e771d42648713f917f6e476258e503">&#9670;&nbsp;</a></span>RhsEvaluationType</h2>
+<a id="a11641d5c126dbd2dd2d5b180dc4f4c01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11641d5c126dbd2dd2d5b180dc4f4c01">&#9670;&nbsp;</a></span>RhsEvaluationType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -177,16 +200,32 @@ template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
 template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef RhsEvaluationImp <a class="el" href="a01512.html">Dune::GDT::internal::LocalFvRhsJacobianIntegrandTraits</a>&lt; RhsEvaluationImp, SourceType &gt;::<a class="el" href="a01512.html#ab6e771d42648713f917f6e476258e503">RhsEvaluationType</a></td>
+          <td class="memname">typedef <a class="el" href="a01524.html#aff4e52f42481dcde6c64155b4f57bb14">Traits::RhsEvaluationType</a> <a class="el" href="a01512.html">Dune::GDT::LocalFvRhsIntegrand</a>&lt; RhsEvaluationImp, SourceType &gt;::<a class="el" href="a01512.html#a11641d5c126dbd2dd2d5b180dc4f4c01">RhsEvaluationType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="acf3e069e59352d8a2bbb4a2dd31ec643"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf3e069e59352d8a2bbb4a2dd31ec643">&#9670;&nbsp;</a></span>dimDomain</h2>
+<a id="a4c0802790aea4afc0abf4ed71bb9c337"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c0802790aea4afc0abf4ed71bb9c337">&#9670;&nbsp;</a></span>Traits</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a01524.html">internal::LocalFvRhsIntegrandTraits</a>&lt;RhsEvaluationImp, SourceType&gt; <a class="el" href="a01512.html">Dune::GDT::LocalFvRhsIntegrand</a>&lt; RhsEvaluationImp, SourceType &gt;::<a class="el" href="a01512.html#a4c0802790aea4afc0abf4ed71bb9c337">Traits</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa6bbdc4ef15f10134351ae6aed8aced1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6bbdc4ef15f10134351ae6aed8aced1">&#9670;&nbsp;</a></span>LocalFvRhsIntegrand()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -197,7 +236,173 @@ template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t <a class="el" href="a01512.html">Dune::GDT::internal::LocalFvRhsJacobianIntegrandTraits</a>&lt; RhsEvaluationImp, SourceType &gt;::dimDomain = RhsEvaluationImp::dimDomain</td>
+          <td class="memname"><a class="el" href="a01512.html">Dune::GDT::LocalFvRhsIntegrand</a>&lt; RhsEvaluationImp, SourceType &gt;::<a class="el" href="a01512.html">LocalFvRhsIntegrand</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a01512.html#a11641d5c126dbd2dd2d5b180dc4f4c01">RhsEvaluationType</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs_evaluation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const SourceType &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1adf714d6bcc8bb44cc6358a62dac568"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1adf714d6bcc8bb44cc6358a62dac568">&#9670;&nbsp;</a></span>evaluate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
+<div class="memtemplate">
+template&lt;class R , size_t r, size_t rC&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a01512.html">Dune::GDT::LocalFvRhsIntegrand</a>&lt; RhsEvaluationImp, SourceType &gt;::evaluate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a01512.html#a16761387969e5bc4bea518a8e5425d16">LocalfunctionTupleType</a> &amp;&#160;</td>
+          <td class="paramname"><em>local_functions_tuple</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01512.html#a460461d85537eaa89427a2fa02dfaddf">EntityType</a>, <a class="el" href="a01512.html#a464c1b87c09d4e7dcfbaa104e78e6426">DomainFieldType</a>, <a class="el" href="a01512.html#aa02baa47f7a6892b89d7b28fe46ab533">dimDomain</a>, R, r, rC &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Dune::FieldVector&lt; <a class="el" href="a01512.html#a464c1b87c09d4e7dcfbaa104e78e6426">DomainFieldType</a>, <a class="el" href="a01512.html#aa02baa47f7a6892b89d7b28fe46ab533">dimDomain</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>x_local</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Dune::DynamicVector&lt; R &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a72b3297d81c2e56eb3a6103f4d583c4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72b3297d81c2e56eb3a6103f4d583c4a">&#9670;&nbsp;</a></span>localFunctions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a01512.html#a16761387969e5bc4bea518a8e5425d16">LocalfunctionTupleType</a> <a class="el" href="a01512.html">Dune::GDT::LocalFvRhsIntegrand</a>&lt; RhsEvaluationImp, SourceType &gt;::localFunctions </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a01512.html#a460461d85537eaa89427a2fa02dfaddf">EntityType</a> &amp;&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aed9497a6754537f07baef736a2fd0a31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed9497a6754537f07baef736a2fd0a31">&#9670;&nbsp;</a></span>order()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
+<div class="memtemplate">
+template&lt;class R , size_t r, size_t rC&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="a01512.html">Dune::GDT::LocalFvRhsIntegrand</a>&lt; RhsEvaluationImp, SourceType &gt;::order </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a01512.html#a16761387969e5bc4bea518a8e5425d16">LocalfunctionTupleType</a> &amp;&#160;</td>
+          <td class="paramname"><em>local_functions_tuple</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Functions::LocalfunctionSetInterface&lt; <a class="el" href="a01512.html#a460461d85537eaa89427a2fa02dfaddf">EntityType</a>, <a class="el" href="a01512.html#a464c1b87c09d4e7dcfbaa104e78e6426">DomainFieldType</a>, <a class="el" href="a01512.html#aa02baa47f7a6892b89d7b28fe46ab533">dimDomain</a>, R, r, rC &gt; &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa02baa47f7a6892b89d7b28fe46ab533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa02baa47f7a6892b89d7b28fe46ab533">&#9670;&nbsp;</a></span>dimDomain</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t <a class="el" href="a01512.html">Dune::GDT::LocalFvRhsIntegrand</a>&lt; RhsEvaluationImp, SourceType &gt;::dimDomain = Traits::dimDomain</td>
         </tr>
       </table>
   </td>
@@ -210,7 +415,7 @@ template&lt;class RhsEvaluationImp , class SourceType &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a04588_source.html">local/integrands/fv.hh</a></li>
+<li><a class="el" href="a04692_source.html">local/integrands/fv.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

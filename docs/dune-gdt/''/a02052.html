@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::LeftSlope&lt; VectorType, MatrixType, stencil_size &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::ReconstructedLocalizableFunction&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,104 +59,660 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a02052.html">LeftSlope</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a02052.html">ReconstructedLocalizableFunction</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="a02049.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::LeftSlope&lt; VectorType, MatrixType, stencil_size &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::ReconstructedLocalizableFunction&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00140_source.html">dune/gdt/operators/fv/reconstruction/slopes.hh</a>&gt;</code></p>
+<p>Wrapper for the map of reconstructed values that fulfills the XT::Functions::LocalizableFunctionInterface.  
+ <a href="a02052.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00137_source.html">dune/gdt/operators/fv/reconstruction/reconstructed_function.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::LeftSlope&lt; VectorType, MatrixType, stencil_size &gt;:</div>
+Inheritance diagram for Dune::GDT::ReconstructedLocalizableFunction&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02051.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_left_slope_3_01_vector_type_00_01_matrix_type_00_01stencil__size_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1_left_slope_3_01_vector_type_00_01_matrix_type_00_01stencil__size_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_left_slope_3_01_vector_type_00_01_matrix_type_00_01stencil__size_01_4_inherit__map">
+<div class="center"><img src="a02051.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_reconstructed_localizable_function_3_01_grid_layer_imp_00_01_domain_field_imp_00_01domain_dim_00_01_range_field_imp_00_01range_dim_00_01range_dim_cols_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_reconstructed_localizable_function_3_01_grid_layer_imp_00_01_domain_field_imp_00_01domain_dim_00_01_range_field_imp_00_01range_dim_00_01range_dim_cols_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_reconstructed_localizable_function_3_01_grid_layer_imp_00_01_domain_field_imp_00_01domain_dim_00_01_range_field_imp_00_01range_dim_00_01range_dim_cols_01_4_inherit__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a3d890d29454c85171a157825f048111e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#a3d890d29454c85171a157825f048111e">StencilType</a> = FieldVector&lt; VectorType, stencil_size &gt;</td></tr>
-<tr class="separator:a3d890d29454c85171a157825f048111e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe5b3098e9952944e386bcb67caa0e4a"><td class="memItemLeft" align="right" valign="top">typedef GridLayerImp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#abe5b3098e9952944e386bcb67caa0e4a">GridLayerType</a></td></tr>
+<tr class="separator:abe5b3098e9952944e386bcb67caa0e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a929e92198bfaa5d02824f60854fd385d"><td class="memItemLeft" align="right" valign="top">typedef GridLayerType::IndexSet&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#a929e92198bfaa5d02824f60854fd385d">IndexSetType</a></td></tr>
+<tr class="separator:a929e92198bfaa5d02824f60854fd385d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aa29d6d472363730c3d40e870cfdc34"><td class="memItemLeft" align="right" valign="top">typedef BaseType::EntityType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#a0aa29d6d472363730c3d40e870cfdc34">EntityType</a></td></tr>
+<tr class="separator:a0aa29d6d472363730c3d40e870cfdc34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb7a23f2f98119dc62b5a1b970aa23ef"><td class="memItemLeft" align="right" valign="top">typedef BaseType::DomainFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#acb7a23f2f98119dc62b5a1b970aa23ef">DomainFieldType</a></td></tr>
+<tr class="separator:acb7a23f2f98119dc62b5a1b970aa23ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab593fcb9b0e493d688ff31bfab01168b"><td class="memItemLeft" align="right" valign="top">typedef BaseType::RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#ab593fcb9b0e493d688ff31bfab01168b">RangeFieldType</a></td></tr>
+<tr class="separator:ab593fcb9b0e493d688ff31bfab01168b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca4b0b6b90b2100d47e3b32636871708"><td class="memItemLeft" align="right" valign="top">typedef BaseType::DomainType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#aca4b0b6b90b2100d47e3b32636871708">DomainType</a></td></tr>
+<tr class="separator:aca4b0b6b90b2100d47e3b32636871708"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a225f3afa96157d8c8fb7557f435a2dc5"><td class="memItemLeft" align="right" valign="top">typedef BaseType::RangeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#a225f3afa96157d8c8fb7557f435a2dc5">RangeType</a></td></tr>
+<tr class="separator:a225f3afa96157d8c8fb7557f435a2dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1749d854c826ba4df1ad78ada7a001bf"><td class="memItemLeft" align="right" valign="top">typedef BaseType::JacobianRangeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#a1749d854c826ba4df1ad78ada7a001bf">JacobianRangeType</a></td></tr>
+<tr class="separator:a1749d854c826ba4df1ad78ada7a001bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1e08869d00f8ac681bd510c3230fbe9"><td class="memItemLeft" align="right" valign="top">typedef GridLayerType::template Codim&lt; 0 &gt;::Geometry::LocalCoordinate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#ae1e08869d00f8ac681bd510c3230fbe9">LocalCoordinateType</a></td></tr>
+<tr class="separator:ae1e08869d00f8ac681bd510c3230fbe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4459016edfbaaf2db636fe5735447c58"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#a4459016edfbaaf2db636fe5735447c58">LocalfunctionType</a> = ReconstructedLocalfunction</td></tr>
+<tr class="separator:a4459016edfbaaf2db636fe5735447c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f40ae4a6e10c8f62cd28c1a65a44f16"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#a7f40ae4a6e10c8f62cd28c1a65a44f16">LocalfunctionInterfaceType</a> = XT::Functions::LocalfunctionInterface&lt; <a class="el" href="a02052.html#a0aa29d6d472363730c3d40e870cfdc34">EntityType</a>, <a class="el" href="a02052.html#acb7a23f2f98119dc62b5a1b970aa23ef">DomainFieldType</a>, <a class="el" href="a02052.html#af92a4993b3f1e7d21073a2af8fdea8ff">dimDomain</a>, <a class="el" href="a02052.html#ab593fcb9b0e493d688ff31bfab01168b">RangeFieldType</a>, <a class="el" href="a02052.html#a5b11727f7f74d8258f2971a799c1bce3">dimRange</a>, <a class="el" href="a02052.html#acc33d6654d5e79b1824b907f5243b9ec">dimRangeCols</a> &gt;</td></tr>
+<tr class="separator:a7f40ae4a6e10c8f62cd28c1a65a44f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f56c6878b401796830e6963f31f296c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#a9f56c6878b401796830e6963f31f296c">LocalReconstructedValuesType</a> = typename LocalfunctionType::LocalReconstructedValuesType</td></tr>
+<tr class="separator:a9f56c6878b401796830e6963f31f296c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab33edc489fa8d27c274dfb164adfb99c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#ab33edc489fa8d27c274dfb164adfb99c">ReconstructedValuesType</a> = typename std::vector&lt; <a class="el" href="a02052.html#a9f56c6878b401796830e6963f31f296c">LocalReconstructedValuesType</a> &gt;</td></tr>
+<tr class="separator:ab33edc489fa8d27c274dfb164adfb99c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a166cf3c52514be183d50e73a98ea693b"><td class="memItemLeft" align="right" valign="top">virtual VectorType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#a166cf3c52514be183d50e73a98ea693b">get</a> (const <a class="el" href="a02044.html#a3d890d29454c85171a157825f048111e">StencilType</a> &amp;, const <a class="el" href="a02044.html#a3d890d29454c85171a157825f048111e">StencilType</a> &amp;stencil_char, const MatrixType &amp;) const override final</td></tr>
-<tr class="separator:a166cf3c52514be183d50e73a98ea693b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31d615427d4ef39cd1e74b6a1c8a93b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#a31d615427d4ef39cd1e74b6a1c8a93b4">ReconstructedLocalizableFunction</a> (const <a class="el" href="a02052.html#abe5b3098e9952944e386bcb67caa0e4a">GridLayerType</a> &amp;grid_layer)</td></tr>
+<tr class="separator:a31d615427d4ef39cd1e74b6a1c8a93b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae57da7362ddf17e78cc0c2a9f8f529d0"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="a02052.html#a7f40ae4a6e10c8f62cd28c1a65a44f16">LocalfunctionInterfaceType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#ae57da7362ddf17e78cc0c2a9f8f529d0">local_function</a> (const <a class="el" href="a02052.html#a0aa29d6d472363730c3d40e870cfdc34">EntityType</a> &amp;entity) const</td></tr>
+<tr class="separator:ae57da7362ddf17e78cc0c2a9f8f529d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9a8e5325bfd92f30829f04a527c2039"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#ad9a8e5325bfd92f30829f04a527c2039">type</a> () const</td></tr>
+<tr class="separator:ad9a8e5325bfd92f30829f04a527c2039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0771fe10ad362d02d20ac6bd84bd34ef"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#a0771fe10ad362d02d20ac6bd84bd34ef">name</a> () const</td></tr>
+<tr class="separator:a0771fe10ad362d02d20ac6bd84bd34ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eb00b291377980e6ff462f2d2cf174b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a02052.html#ab33edc489fa8d27c274dfb164adfb99c">ReconstructedValuesType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#a0eb00b291377980e6ff462f2d2cf174b">values</a> ()</td></tr>
+<tr class="separator:a0eb00b291377980e6ff462f2d2cf174b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6fc663b87de6ac13006d1042097c849"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a02052.html#ab33edc489fa8d27c274dfb164adfb99c">ReconstructedValuesType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#ad6fc663b87de6ac13006d1042097c849">values</a> () const</td></tr>
+<tr class="separator:ad6fc663b87de6ac13006d1042097c849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb3ec5b65054357cb4321e0b0f80412f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a02052.html#a9f56c6878b401796830e6963f31f296c">LocalReconstructedValuesType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#afb3ec5b65054357cb4321e0b0f80412f">local_values</a> (const <a class="el" href="a02052.html#a0aa29d6d472363730c3d40e870cfdc34">EntityType</a> &amp;entity)</td></tr>
+<tr class="separator:afb3ec5b65054357cb4321e0b0f80412f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a68393211a11b9ab464f29fb9aeb036"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a02052.html#a9f56c6878b401796830e6963f31f296c">LocalReconstructedValuesType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#a7a68393211a11b9ab464f29fb9aeb036">local_values</a> (const <a class="el" href="a02052.html#a0aa29d6d472363730c3d40e870cfdc34">EntityType</a> &amp;entity) const</td></tr>
+<tr class="separator:a7a68393211a11b9ab464f29fb9aeb036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a745671c59eddf3e1fa2a4fb5acdb4fbd"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#a745671c59eddf3e1fa2a4fb5acdb4fbd">static_id</a> ()</td></tr>
+<tr class="separator:a745671c59eddf3e1fa2a4fb5acdb4fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:af92a4993b3f1e7d21073a2af8fdea8ff"><td class="memItemLeft" align="right" valign="top">static const constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#af92a4993b3f1e7d21073a2af8fdea8ff">dimDomain</a> = BaseType::dimDomain</td></tr>
+<tr class="separator:af92a4993b3f1e7d21073a2af8fdea8ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b11727f7f74d8258f2971a799c1bce3"><td class="memItemLeft" align="right" valign="top">static const constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#a5b11727f7f74d8258f2971a799c1bce3">dimRange</a> = BaseType::dimRange</td></tr>
+<tr class="separator:a5b11727f7f74d8258f2971a799c1bce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc33d6654d5e79b1824b907f5243b9ec"><td class="memItemLeft" align="right" valign="top">static const constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#acc33d6654d5e79b1824b907f5243b9ec">dimRangeCols</a> = BaseType::dimRangeCols</td></tr>
+<tr class="separator:acc33d6654d5e79b1824b907f5243b9ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b8b7beed7677167fbcbe1573ba96e8a"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02052.html#a3b8b7beed7677167fbcbe1573ba96e8a">available</a> = true</td></tr>
+<tr class="separator:a3b8b7beed7677167fbcbe1573ba96e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a3d890d29454c85171a157825f048111e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d890d29454c85171a157825f048111e">&#9670;&nbsp;</a></span>StencilType</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class GridLayerImp, class DomainFieldImp, size_t domainDim, class RangeFieldImp, size_t rangeDim, size_t rangeDimCols = 1&gt;<br />
+class Dune::GDT::ReconstructedLocalizableFunction&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;</h3>
+
+<p>Wrapper for the map of reconstructed values that fulfills the XT::Functions::LocalizableFunctionInterface. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="acb7a23f2f98119dc62b5a1b970aa23ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb7a23f2f98119dc62b5a1b970aa23ef">&#9670;&nbsp;</a></span>DomainFieldType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class VectorType , class MatrixType , size_t stencil_size&gt; </div>
+template&lt;class GridLayerImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp , size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a02044.html">Dune::GDT::SlopeBase</a>&lt; VectorType, MatrixType, stencil_size &gt;::<a class="el" href="a02044.html#a3d890d29454c85171a157825f048111e">StencilType</a> =  FieldVector&lt;VectorType, stencil_size&gt;</td>
+          <td class="memname">typedef BaseType::DomainFieldType <a class="el" href="a02052.html">Dune::GDT::ReconstructedLocalizableFunction</a>&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;::<a class="el" href="a02052.html#acb7a23f2f98119dc62b5a1b970aa23ef">DomainFieldType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a166cf3c52514be183d50e73a98ea693b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a166cf3c52514be183d50e73a98ea693b">&#9670;&nbsp;</a></span>get()</h2>
+<a id="aca4b0b6b90b2100d47e3b32636871708"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca4b0b6b90b2100d47e3b32636871708">&#9670;&nbsp;</a></span>DomainType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class VectorType , class MatrixType , size_t stencil_size&gt; </div>
+template&lt;class GridLayerImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp , size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef BaseType::DomainType <a class="el" href="a02052.html">Dune::GDT::ReconstructedLocalizableFunction</a>&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;::<a class="el" href="a02052.html#aca4b0b6b90b2100d47e3b32636871708">DomainType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0aa29d6d472363730c3d40e870cfdc34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aa29d6d472363730c3d40e870cfdc34">&#9670;&nbsp;</a></span>EntityType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp , size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef BaseType::EntityType <a class="el" href="a02052.html">Dune::GDT::ReconstructedLocalizableFunction</a>&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;::<a class="el" href="a02052.html#a0aa29d6d472363730c3d40e870cfdc34">EntityType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe5b3098e9952944e386bcb67caa0e4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe5b3098e9952944e386bcb67caa0e4a">&#9670;&nbsp;</a></span>GridLayerType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp , size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef GridLayerImp <a class="el" href="a02052.html">Dune::GDT::ReconstructedLocalizableFunction</a>&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;::<a class="el" href="a02052.html#abe5b3098e9952944e386bcb67caa0e4a">GridLayerType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a929e92198bfaa5d02824f60854fd385d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a929e92198bfaa5d02824f60854fd385d">&#9670;&nbsp;</a></span>IndexSetType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp , size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef GridLayerType::IndexSet <a class="el" href="a02052.html">Dune::GDT::ReconstructedLocalizableFunction</a>&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;::<a class="el" href="a02052.html#a929e92198bfaa5d02824f60854fd385d">IndexSetType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1749d854c826ba4df1ad78ada7a001bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1749d854c826ba4df1ad78ada7a001bf">&#9670;&nbsp;</a></span>JacobianRangeType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp , size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef BaseType::JacobianRangeType <a class="el" href="a02052.html">Dune::GDT::ReconstructedLocalizableFunction</a>&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;::<a class="el" href="a02052.html#a1749d854c826ba4df1ad78ada7a001bf">JacobianRangeType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1e08869d00f8ac681bd510c3230fbe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1e08869d00f8ac681bd510c3230fbe9">&#9670;&nbsp;</a></span>LocalCoordinateType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp , size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef GridLayerType::template Codim&lt;0&gt;::Geometry::LocalCoordinate <a class="el" href="a02052.html">Dune::GDT::ReconstructedLocalizableFunction</a>&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;::<a class="el" href="a02052.html#ae1e08869d00f8ac681bd510c3230fbe9">LocalCoordinateType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f40ae4a6e10c8f62cd28c1a65a44f16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f40ae4a6e10c8f62cd28c1a65a44f16">&#9670;&nbsp;</a></span>LocalfunctionInterfaceType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp , size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a02052.html">Dune::GDT::ReconstructedLocalizableFunction</a>&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;::<a class="el" href="a02052.html#a7f40ae4a6e10c8f62cd28c1a65a44f16">LocalfunctionInterfaceType</a> =  XT::Functions:: LocalfunctionInterface&lt;<a class="el" href="a02052.html#a0aa29d6d472363730c3d40e870cfdc34">EntityType</a>, <a class="el" href="a02052.html#acb7a23f2f98119dc62b5a1b970aa23ef">DomainFieldType</a>, <a class="el" href="a02052.html#af92a4993b3f1e7d21073a2af8fdea8ff">dimDomain</a>, <a class="el" href="a02052.html#ab593fcb9b0e493d688ff31bfab01168b">RangeFieldType</a>, <a class="el" href="a02052.html#a5b11727f7f74d8258f2971a799c1bce3">dimRange</a>, <a class="el" href="a02052.html#acc33d6654d5e79b1824b907f5243b9ec">dimRangeCols</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4459016edfbaaf2db636fe5735447c58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4459016edfbaaf2db636fe5735447c58">&#9670;&nbsp;</a></span>LocalfunctionType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp , size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a02052.html">Dune::GDT::ReconstructedLocalizableFunction</a>&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;::<a class="el" href="a02052.html#a4459016edfbaaf2db636fe5735447c58">LocalfunctionType</a> =  ReconstructedLocalfunction</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f56c6878b401796830e6963f31f296c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f56c6878b401796830e6963f31f296c">&#9670;&nbsp;</a></span>LocalReconstructedValuesType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp , size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a02052.html">Dune::GDT::ReconstructedLocalizableFunction</a>&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;::<a class="el" href="a02052.html#a9f56c6878b401796830e6963f31f296c">LocalReconstructedValuesType</a> =  typename LocalfunctionType::LocalReconstructedValuesType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab593fcb9b0e493d688ff31bfab01168b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab593fcb9b0e493d688ff31bfab01168b">&#9670;&nbsp;</a></span>RangeFieldType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp , size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef BaseType::RangeFieldType <a class="el" href="a02052.html">Dune::GDT::ReconstructedLocalizableFunction</a>&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;::<a class="el" href="a02052.html#ab593fcb9b0e493d688ff31bfab01168b">RangeFieldType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a225f3afa96157d8c8fb7557f435a2dc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a225f3afa96157d8c8fb7557f435a2dc5">&#9670;&nbsp;</a></span>RangeType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp , size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef BaseType::RangeType <a class="el" href="a02052.html">Dune::GDT::ReconstructedLocalizableFunction</a>&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;::<a class="el" href="a02052.html#a225f3afa96157d8c8fb7557f435a2dc5">RangeType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab33edc489fa8d27c274dfb164adfb99c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab33edc489fa8d27c274dfb164adfb99c">&#9670;&nbsp;</a></span>ReconstructedValuesType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp , size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a02052.html">Dune::GDT::ReconstructedLocalizableFunction</a>&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;::<a class="el" href="a02052.html#ab33edc489fa8d27c274dfb164adfb99c">ReconstructedValuesType</a> =  typename std::vector&lt;<a class="el" href="a02052.html#a9f56c6878b401796830e6963f31f296c">LocalReconstructedValuesType</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a31d615427d4ef39cd1e74b6a1c8a93b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31d615427d4ef39cd1e74b6a1c8a93b4">&#9670;&nbsp;</a></span>ReconstructedLocalizableFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp , size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual VectorType <a class="el" href="a02052.html">Dune::GDT::LeftSlope</a>&lt; VectorType, MatrixType, stencil_size &gt;::get </td>
+          <td class="memname"><a class="el" href="a02052.html">Dune::GDT::ReconstructedLocalizableFunction</a>&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;::<a class="el" href="a02052.html">ReconstructedLocalizableFunction</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a02044.html#a3d890d29454c85171a157825f048111e">StencilType</a> &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const <a class="el" href="a02052.html#abe5b3098e9952944e386bcb67caa0e4a">GridLayerType</a> &amp;&#160;</td>
+          <td class="paramname"><em>grid_layer</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a02044.html#a3d890d29454c85171a157825f048111e">StencilType</a> &amp;&#160;</td>
-          <td class="paramname"><em>stencil_char</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const MatrixType &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="a02044.html#a97cd7f60c1da65a3a71badc23b6b0955">Dune::GDT::SlopeBase&lt; VectorType, MatrixType, stencil_size &gt;</a>.</p>
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae57da7362ddf17e78cc0c2a9f8f529d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae57da7362ddf17e78cc0c2a9f8f529d0">&#9670;&nbsp;</a></span>local_function()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp , size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::unique_ptr&lt;<a class="el" href="a02052.html#a7f40ae4a6e10c8f62cd28c1a65a44f16">LocalfunctionInterfaceType</a>&gt; <a class="el" href="a02052.html">Dune::GDT::ReconstructedLocalizableFunction</a>&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;::local_function </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a02052.html#a0aa29d6d472363730c3d40e870cfdc34">EntityType</a> &amp;&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb3ec5b65054357cb4321e0b0f80412f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb3ec5b65054357cb4321e0b0f80412f">&#9670;&nbsp;</a></span>local_values() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp , size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a02052.html#a9f56c6878b401796830e6963f31f296c">LocalReconstructedValuesType</a>&amp; <a class="el" href="a02052.html">Dune::GDT::ReconstructedLocalizableFunction</a>&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;::local_values </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a02052.html#a0aa29d6d472363730c3d40e870cfdc34">EntityType</a> &amp;&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a68393211a11b9ab464f29fb9aeb036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a68393211a11b9ab464f29fb9aeb036">&#9670;&nbsp;</a></span>local_values() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp , size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a02052.html#a9f56c6878b401796830e6963f31f296c">LocalReconstructedValuesType</a>&amp; <a class="el" href="a02052.html">Dune::GDT::ReconstructedLocalizableFunction</a>&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;::local_values </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a02052.html#a0aa29d6d472363730c3d40e870cfdc34">EntityType</a> &amp;&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0771fe10ad362d02d20ac6bd84bd34ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0771fe10ad362d02d20ac6bd84bd34ef">&#9670;&nbsp;</a></span>name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp , size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string <a class="el" href="a02052.html">Dune::GDT::ReconstructedLocalizableFunction</a>&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;::name </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a745671c59eddf3e1fa2a4fb5acdb4fbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a745671c59eddf3e1fa2a4fb5acdb4fbd">&#9670;&nbsp;</a></span>static_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp , size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::string <a class="el" href="a02052.html">Dune::GDT::ReconstructedLocalizableFunction</a>&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;::static_id </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad9a8e5325bfd92f30829f04a527c2039"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9a8e5325bfd92f30829f04a527c2039">&#9670;&nbsp;</a></span>type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp , size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string <a class="el" href="a02052.html">Dune::GDT::ReconstructedLocalizableFunction</a>&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;::type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0eb00b291377980e6ff462f2d2cf174b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eb00b291377980e6ff462f2d2cf174b">&#9670;&nbsp;</a></span>values() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp , size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a02052.html#ab33edc489fa8d27c274dfb164adfb99c">ReconstructedValuesType</a>&amp; <a class="el" href="a02052.html">Dune::GDT::ReconstructedLocalizableFunction</a>&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;::values </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6fc663b87de6ac13006d1042097c849"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6fc663b87de6ac13006d1042097c849">&#9670;&nbsp;</a></span>values() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp , size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a02052.html#ab33edc489fa8d27c274dfb164adfb99c">ReconstructedValuesType</a>&amp; <a class="el" href="a02052.html">Dune::GDT::ReconstructedLocalizableFunction</a>&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;::values </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a3b8b7beed7677167fbcbe1573ba96e8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b8b7beed7677167fbcbe1573ba96e8a">&#9670;&nbsp;</a></span>available</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp , size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bool <a class="el" href="a02052.html">Dune::GDT::ReconstructedLocalizableFunction</a>&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;::available = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af92a4993b3f1e7d21073a2af8fdea8ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af92a4993b3f1e7d21073a2af8fdea8ff">&#9670;&nbsp;</a></span>dimDomain</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp , size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const constexpr size_t <a class="el" href="a02052.html">Dune::GDT::ReconstructedLocalizableFunction</a>&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;::dimDomain = BaseType::dimDomain</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b11727f7f74d8258f2971a799c1bce3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b11727f7f74d8258f2971a799c1bce3">&#9670;&nbsp;</a></span>dimRange</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp , size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const constexpr size_t <a class="el" href="a02052.html">Dune::GDT::ReconstructedLocalizableFunction</a>&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;::dimRange = BaseType::dimRange</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc33d6654d5e79b1824b907f5243b9ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc33d6654d5e79b1824b907f5243b9ec">&#9670;&nbsp;</a></span>dimRangeCols</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridLayerImp , class DomainFieldImp , size_t domainDim, class RangeFieldImp , size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const constexpr size_t <a class="el" href="a02052.html">Dune::GDT::ReconstructedLocalizableFunction</a>&lt; GridLayerImp, DomainFieldImp, domainDim, RangeFieldImp, rangeDim, rangeDimCols &gt;::dimRangeCols = BaseType::dimRangeCols</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00140_source.html">slopes.hh</a></li>
+<li><a class="el" href="a00137_source.html">reconstructed_function.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
