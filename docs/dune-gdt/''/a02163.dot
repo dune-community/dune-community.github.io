@@ -1,22 +1,18 @@
-digraph "Dune::GDT::LaplaceLocalizableProduct&lt; GridLayer, Range, Source, Field &gt;"
+digraph "Dune::GDT::LaplaceOperator&lt; GridLayerType, Field &gt;"
 {
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="Dune::GDT::LaplaceLocalizable\lProduct\< GridLayer, Range,\l Source, Field \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node0 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 [label="XT::Common::ConstStorage\lProvider\< XT::Functions\l::ConstantFunction\< XT::\lGrid::extract_entity_t\< GridLayer\l \>, GridLayer::ctype, GridLayer\l::dimension, Field, 1 \> \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
-  Node2 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="Dune::GDT::EllipticLocalizable\lProduct\< XT::Functions::Constant\lFunction\< XT::Grid::extract_entity\l_t\< GridLayer \>, GridLayer::ctype,\l GridLayer::dimension, Field, 1 \>,\l void, GridLayer, Range, Source, Field \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01812.html"];
-  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="Dune::GDT::LocalizableProduct\lBase\< GridLayer, Range, Source,\l Field \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01768.html"];
-  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="XT::Grid::Walker\< GridLayer \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
-  Node5 -> Node3 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< GridLayer, Range,\l Source, Field \>" ,fontname="Helvetica"];
-  Node5 [label="Dune::GDT::LocalizableProduct\lBase\< GridLayerImp, RangeImp,\l SourceImp, FieldImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01768.html"];
-  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="XT::Grid::Walker\< GridLayer\lImp \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
-  Node7 -> Node2 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< XT::Functions::Constant\lFunction\< XT::Grid::extract\l_entity_t\< GridLayer \>, GridLayer\l::ctype, GridLayer::dimension,\l Field, 1 \>, void, GridLayer, Range,\l Source, Field \>" ,fontname="Helvetica"];
-  Node7 [label="Dune::GDT::EllipticLocalizable\lProduct\< DiffusionFactorType,\l DiffusionTensorType, GridLayer,\l Range, Source, Field \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01812.html"];
-  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="Dune::GDT::LaplaceOperator\l\< GridLayerType, Field \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="Dune::GDT::OperatorInterface\l\< internal::LaplaceOperatorTraits\l\< GridLayerType, Field \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02120.html"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="XT::Common::CRTPInterface\l\< OperatorInterface\< internal\l::LaplaceOperatorTraits\< GridLayerType,\l Field \> \>, internal::LaplaceOperatorTraits\l\< GridLayerType, Field \> \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="ParametricInterface",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node1 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::LaplaceOperator\lTraits\< GridLayerType, Field \> \>" ,fontname="Helvetica"];
+  Node4 [label="Dune::GDT::OperatorInterface\l\< Traits \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a02120.html"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="XT::Common::CRTPInterface\l\< OperatorInterface\< Traits\l \>, Traits \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
 }

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::layer_from_backend&lt; type &gt; Struct Template Reference</title>
+<title>dune-gdt: Dune::GDT::ProductSpaceInterface&lt; Traits, domainDim, rangeDim, rangeDimCols &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,18 +59,94 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a02720.html">layer_from_backend</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a02720.html">ProductSpaceInterface</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="a02717.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::layer_from_backend&lt; type &gt; Struct Template Reference</div>  </div>
+<div class="title">Dune::GDT::ProductSpaceInterface&lt; Traits, domainDim, rangeDim, rangeDimCols &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a04734_source.html">dune/gdt/spaces/interface.hh</a>&gt;</code></p>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="a04734_source.html">spaces/interface.hh</a></li>
+<p><code>#include &lt;<a class="el" href="a04630_source.html">dune/gdt/spaces/interface.hh</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Dune::GDT::ProductSpaceInterface&lt; Traits, domainDim, rangeDim, rangeDimCols &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="a02719.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_product_space_interface_3_01_traits_00_01domain_dim_00_01range_dim_00_01range_dim_cols_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_product_space_interface_3_01_traits_00_01domain_dim_00_01range_dim_00_01range_dim_cols_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_product_space_interface_3_01_traits_00_01domain_dim_00_01range_dim_00_01range_dim_cols_01_4_inherit__map">
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:af559dca9c7f8a7719ea8d8776fe1b23c"><td class="memItemLeft" align="right" valign="top">typedef Traits::SpaceTupleType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02720.html#af559dca9c7f8a7719ea8d8776fe1b23c">SpaceTupleType</a></td></tr>
+<tr class="separator:af559dca9c7f8a7719ea8d8776fe1b23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:gaa659b8d7478cf3846a9c6a76a6fdb612"><td class="memTemplParams" colspan="2">template&lt;size_t ii&gt; </td></tr>
+<tr class="memitem:gaa659b8d7478cf3846a9c6a76a6fdb612"><td class="memTemplItemLeft" align="right" valign="top">const XT::Common::tuple_element&lt; ii, <a class="el" href="a02720.html#af559dca9c7f8a7719ea8d8776fe1b23c">SpaceTupleType</a> &gt;::type &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00244.html#gaa659b8d7478cf3846a9c6a76a6fdb612">factor</a> () const</td></tr>
+<tr class="separator:gaa659b8d7478cf3846a9c6a76a6fdb612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:aaa72e384b82c61396a75c1d77d773747"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02720.html#aaa72e384b82c61396a75c1d77d773747">num_factors</a> = std::tuple_size&lt;<a class="el" href="a02720.html#af559dca9c7f8a7719ea8d8776fe1b23c">SpaceTupleType</a>&gt;::value</td></tr>
+<tr class="separator:aaa72e384b82c61396a75c1d77d773747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class Traits, size_t domainDim, size_t rangeDim, size_t rangeDimCols = 1&gt;<br />
+class Dune::GDT::ProductSpaceInterface&lt; Traits, domainDim, rangeDim, rangeDimCols &gt;</h3>
+
+<p>Interface for function spaces that can be written as a product of several function spaces with the same domain. For example, a function space containing all functions f: {R}^d  {R}^r can also be seen as r times the function space containing all functions f: {R}^d  {R}. rangeDim and rangeDimCols are the respective dimensions of the product function space. If rangeDimCols is not the same for all factors, e.g. if the functions map to {R}  {R}^{2  2}, the range is regarded as a vector, i.e. rangeDimCols has to be specified as 1 and the dimensions have to be added up in rangeDim. In the example, this gives rangeDim = 5; </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="af559dca9c7f8a7719ea8d8776fe1b23c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af559dca9c7f8a7719ea8d8776fe1b23c">&#9670;&nbsp;</a></span>SpaceTupleType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits, size_t domainDim, size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Traits::SpaceTupleType <a class="el" href="a02720.html">Dune::GDT::ProductSpaceInterface</a>&lt; Traits, domainDim, rangeDim, rangeDimCols &gt;::<a class="el" href="a02720.html#af559dca9c7f8a7719ea8d8776fe1b23c">SpaceTupleType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aaa72e384b82c61396a75c1d77d773747"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa72e384b82c61396a75c1d77d773747">&#9670;&nbsp;</a></span>num_factors</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits, size_t domainDim, size_t rangeDim, size_t rangeDimCols = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t <a class="el" href="a02720.html">Dune::GDT::ProductSpaceInterface</a>&lt; Traits, domainDim, rangeDim, rangeDimCols &gt;::num_factors = std::tuple_size&lt;<a class="el" href="a02720.html#af559dca9c7f8a7719ea8d8776fe1b23c">SpaceTupleType</a>&gt;::value</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="a04630_source.html">spaces/interface.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

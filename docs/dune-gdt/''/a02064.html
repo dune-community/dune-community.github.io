@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::CentralSlope&lt; VectorType, MatrixType, stencil_size &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::MinmodSlope&lt; VectorType, MatrixType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,25 +59,26 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a02064.html">CentralSlope</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00248.html">Dune</a></li><li class="navelem"><a class="el" href="a00249.html">GDT</a></li><li class="navelem"><a class="el" href="a02064.html">MinmodSlope</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a02061.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::CentralSlope&lt; VectorType, MatrixType, stencil_size &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::MinmodSlope&lt; VectorType, MatrixType &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="a00140_source.html">dune/gdt/operators/fv/reconstruction/slopes.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::GDT::CentralSlope&lt; VectorType, MatrixType, stencil_size &gt;:</div>
+Inheritance diagram for Dune::GDT::MinmodSlope&lt; VectorType, MatrixType &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02063.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_central_slope_3_01_vector_type_00_01_matrix_type_00_01stencil__size_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dune_1_1_g_d_t_1_1_central_slope_3_01_vector_type_00_01_matrix_type_00_01stencil__size_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_central_slope_3_01_vector_type_00_01_matrix_type_00_01stencil__size_01_4_inherit__map">
+<div class="center"><img src="a02063.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_minmod_slope_3_01_vector_type_00_01_matrix_type_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_minmod_slope_3_01_vector_type_00_01_matrix_type_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_minmod_slope_3_01_vector_type_00_01_matrix_type_01_4_inherit__map">
 </map>
 </div>
 <table class="memberdecls">
@@ -88,8 +89,13 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8a7ce916fd6bd65511b5938b83b1cfe0"><td class="memItemLeft" align="right" valign="top">virtual VectorType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02064.html#a8a7ce916fd6bd65511b5938b83b1cfe0">get</a> (const <a class="el" href="a02060.html#a3d890d29454c85171a157825f048111e">StencilType</a> &amp;, const <a class="el" href="a02060.html#a3d890d29454c85171a157825f048111e">StencilType</a> &amp;stencil_char, const MatrixType &amp;) const override final</td></tr>
-<tr class="separator:a8a7ce916fd6bd65511b5938b83b1cfe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae31cbac5420b94d011564e01ef117651"><td class="memItemLeft" align="right" valign="top">virtual VectorType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02064.html#ae31cbac5420b94d011564e01ef117651">get</a> (const <a class="el" href="a02064.html#a3d890d29454c85171a157825f048111e">StencilType</a> &amp;, const <a class="el" href="a02064.html#a3d890d29454c85171a157825f048111e">StencilType</a> &amp;stencil_char, const MatrixType &amp;) const override final</td></tr>
+<tr class="separator:ae31cbac5420b94d011564e01ef117651"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a8ef04fe724580e7e2c78d590735770ab"><td class="memItemLeft" align="right" valign="top">static VectorType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02064.html#a8ef04fe724580e7e2c78d590735770ab">minmod</a> (const VectorType &amp;first_slope, const VectorType &amp;second_slope)</td></tr>
+<tr class="separator:a8ef04fe724580e7e2c78d590735770ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a3d890d29454c85171a157825f048111e"></a>
@@ -98,10 +104,10 @@ Public Member Functions</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class VectorType , class MatrixType , size_t stencil_size&gt; </div>
+template&lt;class VectorType, class MatrixType&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a02060.html">Dune::GDT::SlopeBase</a>&lt; VectorType, MatrixType, stencil_size &gt;::<a class="el" href="a02060.html#a3d890d29454c85171a157825f048111e">StencilType</a> =  FieldVector&lt;VectorType, stencil_size&gt;</td>
+          <td class="memname">using <a class="el" href="a02044.html">Dune::GDT::SlopeBase</a>&lt; VectorType, MatrixType, stencil_size &gt;::<a class="el" href="a02064.html#a3d890d29454c85171a157825f048111e">StencilType</a> =  FieldVector&lt;VectorType, stencil_size&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -109,27 +115,27 @@ template&lt;class VectorType , class MatrixType , size_t stencil_size&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8a7ce916fd6bd65511b5938b83b1cfe0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a7ce916fd6bd65511b5938b83b1cfe0">&#9670;&nbsp;</a></span>get()</h2>
+<a id="ae31cbac5420b94d011564e01ef117651"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae31cbac5420b94d011564e01ef117651">&#9670;&nbsp;</a></span>get()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class VectorType , class MatrixType , size_t stencil_size&gt; </div>
+template&lt;class VectorType, class MatrixType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual VectorType <a class="el" href="a02064.html">Dune::GDT::CentralSlope</a>&lt; VectorType, MatrixType, stencil_size &gt;::get </td>
+          <td class="memname">virtual VectorType <a class="el" href="a02064.html">Dune::GDT::MinmodSlope</a>&lt; VectorType, MatrixType &gt;::get </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a02060.html#a3d890d29454c85171a157825f048111e">StencilType</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a02064.html#a3d890d29454c85171a157825f048111e">StencilType</a> &amp;&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a02060.html#a3d890d29454c85171a157825f048111e">StencilType</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="a02064.html#a3d890d29454c85171a157825f048111e">StencilType</a> &amp;&#160;</td>
           <td class="paramname"><em>stencil_char</em>, </td>
         </tr>
         <tr>
@@ -151,7 +157,45 @@ template&lt;class VectorType , class MatrixType , size_t stencil_size&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="a02060.html#a97cd7f60c1da65a3a71badc23b6b0955">Dune::GDT::SlopeBase&lt; VectorType, MatrixType, stencil_size &gt;</a>.</p>
+<p>Implements <a class="el" href="a02044.html#a97cd7f60c1da65a3a71badc23b6b0955">Dune::GDT::SlopeBase&lt; VectorType, MatrixType, 3 &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a8ef04fe724580e7e2c78d590735770ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ef04fe724580e7e2c78d590735770ab">&#9670;&nbsp;</a></span>minmod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class VectorType, class MatrixType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static VectorType <a class="el" href="a02064.html">Dune::GDT::MinmodSlope</a>&lt; VectorType, MatrixType &gt;::minmod </td>
+          <td>(</td>
+          <td class="paramtype">const VectorType &amp;&#160;</td>
+          <td class="paramname"><em>first_slope</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const VectorType &amp;&#160;</td>
+          <td class="paramname"><em>second_slope</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
