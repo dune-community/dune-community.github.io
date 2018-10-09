@@ -1,0 +1,35 @@
+digraph "Dune::GDT::VectorFunctionalBase&lt; VectorImp, SpaceImp, GridLayerImp, FieldImp &gt;"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="Dune::GDT::VectorFunctional\lBase\< VectorImp, SpaceImp,\l GridLayerImp, FieldImp \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="Dune::GDT::FunctionalInterface\l\< internal::VectorFunctionalBaseTraits\l\< VectorImp, SpaceImp, GridLayerImp,\l FieldImp \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01051.html"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="XT::Common::CRTPInterface\l\< FunctionalInterface\<\l internal::VectorFunctionalBase\lTraits\< VectorImp, SpaceImp,\l GridLayerImp, FieldImp \> \>,\l internal::VectorFunctionalBaseTraits\l\< VectorImp, SpaceImp, GridLayerImp,\l FieldImp \> \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< internal::VectorFunctional\lBaseTraits\< VectorImp, SpaceImp,\l GridLayerImp, FieldImp \> \>" ,fontname="Helvetica"];
+  Node3 [label="Dune::GDT::FunctionalInterface\l\< Traits \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01051.html"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="XT::Common::CRTPInterface\l\< FunctionalInterface\<\l Traits \>, Traits \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Dune::GDT::SystemAssembler\l\< SpaceImp, GridLayerImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00835.html"];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="XT::Grid::Walker\< GridLayer\lImp \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node5 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< SpaceImp, GridLayerImp \>" ,fontname="Helvetica"];
+  Node7 [label="Dune::GDT::SystemAssembler\l\< TestSpaceImp, GridLayerImp,\l AnsatzSpaceImp, OuterTestSpaceImp,\l OuterAnsatzSpaceImp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00835.html"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 -> Node8 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< VectorType, SpaceType,\l GridLayerType, typename\l SpaceType ::RangeFieldType \>" ,fontname="Helvetica"];
+  Node8 [label="Dune::GDT::VectorFunctional\lBase\< VectorType, SpaceType,\l GridLayerType, typename SpaceType\l ::RangeFieldType \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01039.html"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Dune::GDT::L2VolumeVector\lFunctional\< SourceType,\l SpaceType, VectorType,\l GridLayerType \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01055.html"];
+  Node0 -> Node10 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< Vector, Space, GridLayer,\l Field \>" ,fontname="Helvetica"];
+  Node10 [label="Dune::GDT::VectorFunctional\lBase\< Vector, Space, GridLayer,\l Field \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01039.html"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Dune::GDT::EllipticIpdgDirichlet\lVectorFunctional\< DirichletType,\l DiffusionFactorType, DiffusionTensorType,\l Space, method, Vector, GridLayer, Field \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01047.html"];
+  Node10 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Dune::GDT::L2FaceVectorFunctional\l\< FunctionType, Space, Vector,\l GridLayer, Field \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01059.html"];
+  Node10 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="Dune::GDT::L2VolumeVector\lFunctional\< FunctionType,\l Space, Vector, GridLayer,\l Field \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01055.html"];
+  Node13 -> Node9 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< SourceType, SpaceType,\l VectorType, GridLayerType \>" ,fontname="Helvetica"];
+}
