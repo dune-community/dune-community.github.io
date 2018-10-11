@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::internal::MomentRegularizerTraits&lt; AnalyticalFluxImp, BasisfunctionImp &gt; Struct Template Reference</title>
+<title>dune-gdt: Dune::GDT::internal::EntropyBasedMomentFvOperatorTraits&lt; AdvectionOperatorImp, ReconstructionOperatorImp, RealizabilityLimiterImp, RegularizationOperatorImp &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00251.html">Dune</a></li><li class="navelem"><a class="el" href="a00252.html">GDT</a></li><li class="navelem"><a class="el" href="a00253.html">internal</a></li><li class="navelem"><a class="el" href="a01971.html">MomentRegularizerTraits</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00251.html">Dune</a></li><li class="navelem"><a class="el" href="a00252.html">GDT</a></li><li class="navelem"><a class="el" href="a00253.html">internal</a></li><li class="navelem"><a class="el" href="a01971.html">EntropyBasedMomentFvOperatorTraits</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -67,126 +67,144 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="a01968.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::internal::MomentRegularizerTraits&lt; AnalyticalFluxImp, BasisfunctionImp &gt; Struct Template Reference</div>  </div>
+<div class="title">Dune::GDT::internal::EntropyBasedMomentFvOperatorTraits&lt; AdvectionOperatorImp, ReconstructionOperatorImp, RealizabilityLimiterImp, RegularizationOperatorImp &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00122_source.html">dune/gdt/operators/fv/entropybased/regularization.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a04573_source.html">dune/gdt/operators/fv/entropybased.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aafa18f81ca83c1dc50afa00cad82e3d5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01971.html#aafa18f81ca83c1dc50afa00cad82e3d5">AnalyticalFluxType</a> = AnalyticalFluxImp</td></tr>
-<tr class="separator:aafa18f81ca83c1dc50afa00cad82e3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bfa63a61a7d4470e28827c3986bca54"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01971.html#a3bfa63a61a7d4470e28827c3986bca54">BasisfunctionType</a> = BasisfunctionImp</td></tr>
-<tr class="separator:a3bfa63a61a7d4470e28827c3986bca54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2a9ab18bc7cb9aeae953de10cfbbeeb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01971.html#ae2a9ab18bc7cb9aeae953de10cfbbeeb">FieldType</a> = typename AnalyticalFluxType::DomainFieldType</td></tr>
-<tr class="separator:ae2a9ab18bc7cb9aeae953de10cfbbeeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c06ffe97d72aafae832ae8a18dcce90"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01971.html#a8c06ffe97d72aafae832ae8a18dcce90">JacobianType</a> = <a class="el" href="a02135.html">NoJacobian</a></td></tr>
-<tr class="separator:a8c06ffe97d72aafae832ae8a18dcce90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9aa26e03525aee72133f6e7f25d3283b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01971.html#a9aa26e03525aee72133f6e7f25d3283b">RangeFieldType</a> = typename BasisfunctionType::RangeFieldType</td></tr>
-<tr class="separator:a9aa26e03525aee72133f6e7f25d3283b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6b914b4cc8eade23eceda9ac1f9918b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01971.html#ac6b914b4cc8eade23eceda9ac1f9918b">derived_type</a> = <a class="el" href="a01967.html">MomentRegularizer</a>&lt; <a class="el" href="a01971.html#aafa18f81ca83c1dc50afa00cad82e3d5">AnalyticalFluxType</a>, <a class="el" href="a01971.html#a3bfa63a61a7d4470e28827c3986bca54">BasisfunctionType</a>, <a class="el" href="a01971.html">MomentRegularizerTraits</a> &gt;</td></tr>
-<tr class="separator:ac6b914b4cc8eade23eceda9ac1f9918b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7df8eeade10fb643899c2c9839f0afa"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01971.html#af7df8eeade10fb643899c2c9839f0afa">AdvectionOperatorType</a> = AdvectionOperatorImp</td></tr>
+<tr class="separator:af7df8eeade10fb643899c2c9839f0afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8885030a0ced69f88f9edeebb023e16e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01971.html#a8885030a0ced69f88f9edeebb023e16e">ReconstructionOperatorType</a> = ReconstructionOperatorImp</td></tr>
+<tr class="separator:a8885030a0ced69f88f9edeebb023e16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a466a8e77122b1227d41ecb155765317d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01971.html#a466a8e77122b1227d41ecb155765317d">RealizabilityLimiterType</a> = RealizabilityLimiterImp</td></tr>
+<tr class="separator:a466a8e77122b1227d41ecb155765317d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa45bfad99aa24d6cea54aba4d9f80ff8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01971.html#aa45bfad99aa24d6cea54aba4d9f80ff8">RegularizationOperatorType</a> = RegularizationOperatorImp</td></tr>
+<tr class="separator:aa45bfad99aa24d6cea54aba4d9f80ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa58cfa4221d3b41ce477e424db22ab9d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01971.html#aa58cfa4221d3b41ce477e424db22ab9d">FieldType</a> = typename AdvectionOperatorType::DomainFieldType</td></tr>
+<tr class="separator:aa58cfa4221d3b41ce477e424db22ab9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a479bd9180c7bd14111eb80c4bec453c7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01971.html#a479bd9180c7bd14111eb80c4bec453c7">JacobianType</a> = <a class="el" href="a02119.html">NoJacobian</a></td></tr>
+<tr class="separator:a479bd9180c7bd14111eb80c4bec453c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0bc9d94ef554731f9eddf2e695ca65a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01971.html#ad0bc9d94ef554731f9eddf2e695ca65a">derived_type</a> = <a class="el" href="a01963.html">EntropyBasedMomentFvOperator</a>&lt; AdvectionOperatorImp, ReconstructionOperatorImp, RealizabilityLimiterImp, RegularizationOperatorImp, <a class="el" href="a01971.html">EntropyBasedMomentFvOperatorTraits</a> &gt;</td></tr>
+<tr class="separator:ad0bc9d94ef554731f9eddf2e695ca65a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="aafa18f81ca83c1dc50afa00cad82e3d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafa18f81ca83c1dc50afa00cad82e3d5">&#9670;&nbsp;</a></span>AnalyticalFluxType</h2>
+<a id="af7df8eeade10fb643899c2c9839f0afa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7df8eeade10fb643899c2c9839f0afa">&#9670;&nbsp;</a></span>AdvectionOperatorType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp , class BasisfunctionImp &gt; </div>
+template&lt;class AdvectionOperatorImp , class ReconstructionOperatorImp , class RealizabilityLimiterImp , class RegularizationOperatorImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01971.html">Dune::GDT::internal::MomentRegularizerTraits</a>&lt; AnalyticalFluxImp, BasisfunctionImp &gt;::<a class="el" href="a01971.html#aafa18f81ca83c1dc50afa00cad82e3d5">AnalyticalFluxType</a> =  AnalyticalFluxImp</td>
+          <td class="memname">using <a class="el" href="a01971.html">Dune::GDT::internal::EntropyBasedMomentFvOperatorTraits</a>&lt; AdvectionOperatorImp, ReconstructionOperatorImp, RealizabilityLimiterImp, RegularizationOperatorImp &gt;::<a class="el" href="a01971.html#af7df8eeade10fb643899c2c9839f0afa">AdvectionOperatorType</a> =  AdvectionOperatorImp</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a3bfa63a61a7d4470e28827c3986bca54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bfa63a61a7d4470e28827c3986bca54">&#9670;&nbsp;</a></span>BasisfunctionType</h2>
+<a id="ad0bc9d94ef554731f9eddf2e695ca65a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0bc9d94ef554731f9eddf2e695ca65a">&#9670;&nbsp;</a></span>derived_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp , class BasisfunctionImp &gt; </div>
+template&lt;class AdvectionOperatorImp , class ReconstructionOperatorImp , class RealizabilityLimiterImp , class RegularizationOperatorImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01971.html">Dune::GDT::internal::MomentRegularizerTraits</a>&lt; AnalyticalFluxImp, BasisfunctionImp &gt;::<a class="el" href="a01971.html#a3bfa63a61a7d4470e28827c3986bca54">BasisfunctionType</a> =  BasisfunctionImp</td>
+          <td class="memname">using <a class="el" href="a01971.html">Dune::GDT::internal::EntropyBasedMomentFvOperatorTraits</a>&lt; AdvectionOperatorImp, ReconstructionOperatorImp, RealizabilityLimiterImp, RegularizationOperatorImp &gt;::<a class="el" href="a01971.html#ad0bc9d94ef554731f9eddf2e695ca65a">derived_type</a> =  <a class="el" href="a01963.html">EntropyBasedMomentFvOperator</a>&lt;AdvectionOperatorImp, ReconstructionOperatorImp, RealizabilityLimiterImp, RegularizationOperatorImp, <a class="el" href="a01971.html">EntropyBasedMomentFvOperatorTraits</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ac6b914b4cc8eade23eceda9ac1f9918b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6b914b4cc8eade23eceda9ac1f9918b">&#9670;&nbsp;</a></span>derived_type</h2>
+<a id="aa58cfa4221d3b41ce477e424db22ab9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa58cfa4221d3b41ce477e424db22ab9d">&#9670;&nbsp;</a></span>FieldType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp , class BasisfunctionImp &gt; </div>
+template&lt;class AdvectionOperatorImp , class ReconstructionOperatorImp , class RealizabilityLimiterImp , class RegularizationOperatorImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01971.html">Dune::GDT::internal::MomentRegularizerTraits</a>&lt; AnalyticalFluxImp, BasisfunctionImp &gt;::<a class="el" href="a01971.html#ac6b914b4cc8eade23eceda9ac1f9918b">derived_type</a> =  <a class="el" href="a01967.html">MomentRegularizer</a>&lt;<a class="el" href="a01971.html#aafa18f81ca83c1dc50afa00cad82e3d5">AnalyticalFluxType</a>, <a class="el" href="a01971.html#a3bfa63a61a7d4470e28827c3986bca54">BasisfunctionType</a>, <a class="el" href="a01971.html">MomentRegularizerTraits</a>&gt;</td>
+          <td class="memname">using <a class="el" href="a01971.html">Dune::GDT::internal::EntropyBasedMomentFvOperatorTraits</a>&lt; AdvectionOperatorImp, ReconstructionOperatorImp, RealizabilityLimiterImp, RegularizationOperatorImp &gt;::<a class="el" href="a01971.html#aa58cfa4221d3b41ce477e424db22ab9d">FieldType</a> =  typename AdvectionOperatorType::DomainFieldType</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ae2a9ab18bc7cb9aeae953de10cfbbeeb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2a9ab18bc7cb9aeae953de10cfbbeeb">&#9670;&nbsp;</a></span>FieldType</h2>
+<a id="a479bd9180c7bd14111eb80c4bec453c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a479bd9180c7bd14111eb80c4bec453c7">&#9670;&nbsp;</a></span>JacobianType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp , class BasisfunctionImp &gt; </div>
+template&lt;class AdvectionOperatorImp , class ReconstructionOperatorImp , class RealizabilityLimiterImp , class RegularizationOperatorImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01971.html">Dune::GDT::internal::MomentRegularizerTraits</a>&lt; AnalyticalFluxImp, BasisfunctionImp &gt;::<a class="el" href="a01971.html#ae2a9ab18bc7cb9aeae953de10cfbbeeb">FieldType</a> =  typename AnalyticalFluxType::DomainFieldType</td>
+          <td class="memname">using <a class="el" href="a01971.html">Dune::GDT::internal::EntropyBasedMomentFvOperatorTraits</a>&lt; AdvectionOperatorImp, ReconstructionOperatorImp, RealizabilityLimiterImp, RegularizationOperatorImp &gt;::<a class="el" href="a01971.html#a479bd9180c7bd14111eb80c4bec453c7">JacobianType</a> =  <a class="el" href="a02119.html">NoJacobian</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a8c06ffe97d72aafae832ae8a18dcce90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c06ffe97d72aafae832ae8a18dcce90">&#9670;&nbsp;</a></span>JacobianType</h2>
+<a id="a466a8e77122b1227d41ecb155765317d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a466a8e77122b1227d41ecb155765317d">&#9670;&nbsp;</a></span>RealizabilityLimiterType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp , class BasisfunctionImp &gt; </div>
+template&lt;class AdvectionOperatorImp , class ReconstructionOperatorImp , class RealizabilityLimiterImp , class RegularizationOperatorImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01971.html">Dune::GDT::internal::MomentRegularizerTraits</a>&lt; AnalyticalFluxImp, BasisfunctionImp &gt;::<a class="el" href="a01971.html#a8c06ffe97d72aafae832ae8a18dcce90">JacobianType</a> =  <a class="el" href="a02135.html">NoJacobian</a></td>
+          <td class="memname">using <a class="el" href="a01971.html">Dune::GDT::internal::EntropyBasedMomentFvOperatorTraits</a>&lt; AdvectionOperatorImp, ReconstructionOperatorImp, RealizabilityLimiterImp, RegularizationOperatorImp &gt;::<a class="el" href="a01971.html#a466a8e77122b1227d41ecb155765317d">RealizabilityLimiterType</a> =  RealizabilityLimiterImp</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a9aa26e03525aee72133f6e7f25d3283b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9aa26e03525aee72133f6e7f25d3283b">&#9670;&nbsp;</a></span>RangeFieldType</h2>
+<a id="a8885030a0ced69f88f9edeebb023e16e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8885030a0ced69f88f9edeebb023e16e">&#9670;&nbsp;</a></span>ReconstructionOperatorType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class AnalyticalFluxImp , class BasisfunctionImp &gt; </div>
+template&lt;class AdvectionOperatorImp , class ReconstructionOperatorImp , class RealizabilityLimiterImp , class RegularizationOperatorImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01971.html">Dune::GDT::internal::MomentRegularizerTraits</a>&lt; AnalyticalFluxImp, BasisfunctionImp &gt;::<a class="el" href="a01971.html#a9aa26e03525aee72133f6e7f25d3283b">RangeFieldType</a> =  typename BasisfunctionType::RangeFieldType</td>
+          <td class="memname">using <a class="el" href="a01971.html">Dune::GDT::internal::EntropyBasedMomentFvOperatorTraits</a>&lt; AdvectionOperatorImp, ReconstructionOperatorImp, RealizabilityLimiterImp, RegularizationOperatorImp &gt;::<a class="el" href="a01971.html#a8885030a0ced69f88f9edeebb023e16e">ReconstructionOperatorType</a> =  ReconstructionOperatorImp</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="a00122_source.html">regularization.hh</a></li>
+<a id="aa45bfad99aa24d6cea54aba4d9f80ff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa45bfad99aa24d6cea54aba4d9f80ff8">&#9670;&nbsp;</a></span>RegularizationOperatorType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AdvectionOperatorImp , class ReconstructionOperatorImp , class RealizabilityLimiterImp , class RegularizationOperatorImp &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a01971.html">Dune::GDT::internal::EntropyBasedMomentFvOperatorTraits</a>&lt; AdvectionOperatorImp, ReconstructionOperatorImp, RealizabilityLimiterImp, RegularizationOperatorImp &gt;::<a class="el" href="a01971.html#aa45bfad99aa24d6cea54aba4d9f80ff8">RegularizationOperatorType</a> =  RegularizationOperatorImp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="a04573_source.html">operators/fv/entropybased.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

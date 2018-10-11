@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: advection.hh File Reference</title>
+<title>dune-gdt: fluxreconstruction.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,22 +59,60 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_8eae17099f455a1cfbd2c25e13098b8a.html">operators</a></li><li class="navelem"><a class="el" href="dir_8fbd9d79de26bd0c08e4e5fb2ef2e7c5.html">fv</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_8eae17099f455a1cfbd2c25e13098b8a.html">operators</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">advection.hh File Reference</div>  </div>
+<div class="title">fluxreconstruction.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="a04697_source.html">advection/force.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a04724_source.html">advection/godunov.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a04781_source.html">advection/kinetic.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a04823_source.html">advection/laxfriedrichs.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a04829_source.html">advection/laxwendroff.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a04835_source.html">advection/musta.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;boost/numeric/conversion/cast.hpp&gt;</code><br />
+<code>#include &lt;dune/common/dynmatrix.hh&gt;</code><br />
+<code>#include &lt;dune/geometry/quadraturerules.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/math.hh&gt;</code><br />
+<code>#include &lt;dune/xt/la/type_traits.hh&gt;</code><br />
+<code>#include &lt;dune/xt/grid/type_traits.hh&gt;</code><br />
+<code>#include &lt;dune/xt/functions/interfaces.hh&gt;</code><br />
+<code>#include &lt;dune/xt/functions/constant.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04531_source.html">dune/gdt/discretefunction/default.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04558_source.html">dune/gdt/local/integrands/elliptic-ipdg.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04705_source.html">dune/gdt/local/operators/lambda.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04522_source.html">dune/gdt/operators/base.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04552_source.html">dune/gdt/spaces/rt/default.hh</a>&gt;</code><br />
 </div>
 <p><a href="a00113_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01815.html">Dune::GDT::LocalizableDiffusiveFluxReconstructionOperator&lt; GridLayer, Source, Range, dg_method &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01819.html">Dune::GDT::DiffusiveFluxReconstructionOperator&lt; GridLayerType, DiffusionFactorType, DiffusionTensorType, method &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01819.html">Dune::GDT::DiffusiveFluxReconstructionOperator&lt; GridLayerType, DiffusionFactorType, DiffusionTensorType, method &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01823.html">Dune::GDT::DiffusiveFluxReconstructionOperator&lt; GridLayerType, LocalizableFunctionType, void, method &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00251"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html">Dune</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00252"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00252.html">Dune::GDT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a0ef1828dbb87ea7925b06e2fb3592981"><td class="memTemplParams" colspan="2">template&lt;LocalEllipticIpdgIntegrands::Method m, class GL , class DF , class DT &gt; </td></tr>
+<tr class="memitem:a0ef1828dbb87ea7925b06e2fb3592981"><td class="memTemplItemLeft" align="right" valign="top">DiffusiveFluxReconstructionOperator&lt; GL, DF, DT, m &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00252.html#a0ef1828dbb87ea7925b06e2fb3592981">Dune::GDT::make_diffusive_flux_reconstruction_operator</a> (const GL &amp;grid_layer, const DF &amp;diffusion_factor, const DT &amp;diffusion_tensor, const size_t over_integrate=0)</td></tr>
+<tr class="separator:a0ef1828dbb87ea7925b06e2fb3592981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

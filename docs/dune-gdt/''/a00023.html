@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: reinterpret.hh File Reference</title>
+<title>dune-gdt: fv_from_gridfunctor.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,28 +64,32 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">reinterpret.hh File Reference</div>  </div>
+<div class="title">fv_from_gridfunctor.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;dune/xt/functions/reinterpret.hh&gt;</code><br />
-<code>#include &quot;<a class="el" href="a04643_source.html">default.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;dune/xt/grid/walker.hh&gt;</code><br />
+<code>#include &lt;dune/xt/grid/walker/functors.hh&gt;</code><br />
+<code>#include &lt;dune/xt/la/container/vector-interface.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04531_source.html">dune/gdt/discretefunction/default.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a04603_source.html">dune/gdt/spaces/fv.hh</a>&gt;</code><br />
 </div>
 <p><a href="a00023_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00947.html">Dune::GDT::ReinterpretDiscreteFunction&lt; DiscreteFunctionType &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:a00251"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00252"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00252.html">Dune::GDT</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ad8a8be0297084c38443fdce4681f1417"><td class="memTemplParams" colspan="2">template&lt;class VectorType , class GridLayerType , class RangeFieldType &gt; </td></tr>
+<tr class="memitem:ad8a8be0297084c38443fdce4681f1417"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; FvSpace&lt; GridLayerType, RangeFieldType, 1 &gt;, VectorType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00252.html#ad8a8be0297084c38443fdce4681f1417">Dune::GDT::evaluate_into_fv_vector</a> (const GridLayerType &amp;grid_layer, XT::Grid::Functor::Codim0Return&lt; GridLayerType, RangeFieldType &gt; &amp;functor, std::string name, bool visualize=false)</td></tr>
+<tr class="separator:ad8a8be0297084c38443fdce4681f1417"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

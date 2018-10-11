@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: Dune::GDT::DiffusiveFluxReconstructionOperator&lt; GridLayerType, DiffusionFactorType, DiffusionTensorType, method &gt; Class Template Reference</title>
+<title>dune-gdt: Dune::GDT::AdvectionOperatorBase&lt; Traits &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00251.html">Dune</a></li><li class="navelem"><a class="el" href="a00252.html">GDT</a></li><li class="navelem"><a class="el" href="a01835.html">DiffusiveFluxReconstructionOperator</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00251.html">Dune</a></li><li class="navelem"><a class="el" href="a00252.html">GDT</a></li><li class="navelem"><a class="el" href="a01835.html">AdvectionOperatorBase</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -69,95 +69,196 @@ $(function() {
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="a01832.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dune::GDT::DiffusiveFluxReconstructionOperator&lt; GridLayerType, DiffusionFactorType, DiffusionTensorType, method &gt; Class Template Reference</div>  </div>
+<div class="title">Dune::GDT::AdvectionOperatorBase&lt; Traits &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00110_source.html">dune/gdt/operators/fluxreconstruction.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a04525_source.html">dune/gdt/operators/fv/advection/base.hh</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Dune::GDT::AdvectionOperatorBase&lt; Traits &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="a01834.png" border="0" usemap="#_dune_1_1_g_d_t_1_1_advection_operator_base_3_01_traits_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dune_1_1_g_d_t_1_1_advection_operator_base_3_01_traits_01_4_inherit__map" id="_dune_1_1_g_d_t_1_1_advection_operator_base_3_01_traits_01_4_inherit__map">
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a25704906abc98f665c5f27418536b5a2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01835.html#a25704906abc98f665c5f27418536b5a2">EntityType</a> = XT::Grid::extract_entity_t&lt; GridLayerType &gt;</td></tr>
-<tr class="separator:a25704906abc98f665c5f27418536b5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a889235f59b57d3d61675837f07b20bd1"><td class="memItemLeft" align="right" valign="top">typedef GridLayerType::ctype&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01835.html#a889235f59b57d3d61675837f07b20bd1">DomainFieldType</a></td></tr>
-<tr class="separator:a889235f59b57d3d61675837f07b20bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf85091f05f88ceb2701f7fd06d703cc"><td class="memItemLeft" align="right" valign="top">typedef DiffusionFactorType::RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01835.html#acf85091f05f88ceb2701f7fd06d703cc">FieldType</a></td></tr>
-<tr class="separator:acf85091f05f88ceb2701f7fd06d703cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1291a7de81b08d656ecd2a8ca9082db6"><td class="memItemLeft" align="right" valign="top">typedef DiffusionFactorType::DomainType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01835.html#a1291a7de81b08d656ecd2a8ca9082db6">DomainType</a></td></tr>
-<tr class="separator:a1291a7de81b08d656ecd2a8ca9082db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a270254c610a70e336ce45acea247d628"><td class="memItemLeft" align="right" valign="top">typedef Traits::AnalyticalFluxType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01835.html#a270254c610a70e336ce45acea247d628">AnalyticalFluxType</a></td></tr>
+<tr class="separator:a270254c610a70e336ce45acea247d628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62f38fe0439aecc8ee0b60d360c3b8eb"><td class="memItemLeft" align="right" valign="top">typedef Traits::BoundaryValueType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01835.html#a62f38fe0439aecc8ee0b60d360c3b8eb">BoundaryValueType</a></td></tr>
+<tr class="separator:a62f38fe0439aecc8ee0b60d360c3b8eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a334fd33e767c0e13eeb5c371050c1f06"><td class="memItemLeft" align="right" valign="top">typedef Traits::DomainFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01835.html#a334fd33e767c0e13eeb5c371050c1f06">DomainFieldType</a></td></tr>
+<tr class="separator:a334fd33e767c0e13eeb5c371050c1f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88f74c901b9d18a0e857a682ee9aefd2"><td class="memItemLeft" align="right" valign="top">typedef Traits::DomainType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01835.html#a88f74c901b9d18a0e857a682ee9aefd2">DomainType</a></td></tr>
+<tr class="separator:a88f74c901b9d18a0e857a682ee9aefd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab81c9839ac60ac5a2d8fe319d9d3a5ce"><td class="memItemLeft" align="right" valign="top">typedef Traits::RangeFieldType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01835.html#ab81c9839ac60ac5a2d8fe319d9d3a5ce">RangeFieldType</a></td></tr>
+<tr class="separator:ab81c9839ac60ac5a2d8fe319d9d3a5ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3bbd9948ecbb79e0f16946aad52a299"><td class="memItemLeft" align="right" valign="top">typedef Traits::NumericalCouplingFluxType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01835.html#aa3bbd9948ecbb79e0f16946aad52a299">NumericalCouplingFluxType</a></td></tr>
+<tr class="separator:aa3bbd9948ecbb79e0f16946aad52a299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9babb9e51ead9e1653e3384e281bbcc9"><td class="memItemLeft" align="right" valign="top">typedef Traits::NumericalBoundaryFluxType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01835.html#a9babb9e51ead9e1653e3384e281bbcc9">NumericalBoundaryFluxType</a></td></tr>
+<tr class="separator:a9babb9e51ead9e1653e3384e281bbcc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98427c2ca991ddefc36246d714ea5595"><td class="memItemLeft" align="right" valign="top">typedef Dune::QuadratureRule&lt; <a class="el" href="a01835.html#a334fd33e767c0e13eeb5c371050c1f06">DomainFieldType</a>, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01835.html#a98427c2ca991ddefc36246d714ea5595">Quadrature1dType</a></td></tr>
+<tr class="separator:a98427c2ca991ddefc36246d714ea5595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada5297c3a85024e6f8a371a74c1032d5"><td class="memItemLeft" align="right" valign="top">typedef Dune::QuadratureRule&lt; <a class="el" href="a01835.html#a334fd33e767c0e13eeb5c371050c1f06">DomainFieldType</a>, <a class="el" href="a01835.html#ae4a6140a4f30c81319e8cf4fc01c0fd4">dimDomain</a> - 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01835.html#ada5297c3a85024e6f8a371a74c1032d5">IntersectionQuadratureType</a></td></tr>
+<tr class="separator:ada5297c3a85024e6f8a371a74c1032d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a660dce242eabf5f5e3196ee0458f6b1d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01835.html#a660dce242eabf5f5e3196ee0458f6b1d">DiffusiveFluxReconstructionOperator</a> (const GridLayerType &amp;grid_layer, const DiffusionFactorType &amp;diffusion_factor, const DiffusionTensorType &amp;diffusion_tensor, const size_t over_integrate=0)</td></tr>
-<tr class="separator:a660dce242eabf5f5e3196ee0458f6b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f2427783f3e298b261c678f2b11742a"><td class="memTemplParams" colspan="2">template&lt;class GL , class V &gt; </td></tr>
-<tr class="memitem:a3f2427783f3e298b261c678f2b11742a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01835.html#a3f2427783f3e298b261c678f2b11742a">apply</a> (const XT::Functions::LocalizableFunctionInterface&lt; <a class="el" href="a01835.html#a25704906abc98f665c5f27418536b5a2">EntityType</a>, <a class="el" href="a01835.html#a889235f59b57d3d61675837f07b20bd1">DomainFieldType</a>, <a class="el" href="a01835.html#abb0071d8f0e79c7510c468a3da69cb07">dimDomain</a>, <a class="el" href="a01835.html#acf85091f05f88ceb2701f7fd06d703cc">FieldType</a>, 1 &gt; &amp;source, <a class="el" href="a00943.html">DiscreteFunction</a>&lt; <a class="el" href="a02895.html">RaviartThomasSpace</a>&lt; GL, 0, <a class="el" href="a01835.html#acf85091f05f88ceb2701f7fd06d703cc">FieldType</a> &gt;, V &gt; &amp;range) const</td></tr>
-<tr class="separator:a3f2427783f3e298b261c678f2b11742a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dd5ee29c90d90d2dc16ca3324e85966"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01835.html#a7dd5ee29c90d90d2dc16ca3324e85966">AdvectionOperatorBase</a> (const <a class="el" href="a01835.html#a270254c610a70e336ce45acea247d628">AnalyticalFluxType</a> &amp;analytical_flux, const <a class="el" href="a01835.html#a62f38fe0439aecc8ee0b60d360c3b8eb">BoundaryValueType</a> &amp;boundary_values, const <a class="el" href="a01835.html#ada5297c3a85024e6f8a371a74c1032d5">IntersectionQuadratureType</a> &amp;intersection_quadrature=<a class="el" href="a00252.html#ab582bbc63e160ac8dd3ae499263d1f57">midpoint_quadrature</a>&lt; <a class="el" href="a01835.html#a334fd33e767c0e13eeb5c371050c1f06">DomainFieldType</a>, <a class="el" href="a01835.html#ae4a6140a4f30c81319e8cf4fc01c0fd4">dimDomain</a> &gt;())</td></tr>
+<tr class="separator:a7dd5ee29c90d90d2dc16ca3324e85966"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0134b2e29ee9e8ff602f689d19769eb5"><td class="memTemplParams" colspan="2">template&lt;class SourceType , class RangeType , class... LocalOperatorArgs&gt; </td></tr>
+<tr class="memitem:a0134b2e29ee9e8ff602f689d19769eb5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a01835.html#a0134b2e29ee9e8ff602f689d19769eb5">apply</a> (SourceType &amp;source, RangeType &amp;range, const XT::Common::Parameter &amp;param, LocalOperatorArgs &amp;&amp;... local_operator_args) const</td></tr>
+<tr class="separator:a0134b2e29ee9e8ff602f689d19769eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:abb0071d8f0e79c7510c468a3da69cb07"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01835.html#abb0071d8f0e79c7510c468a3da69cb07">dimDomain</a> = GridLayerType::dimension</td></tr>
-<tr class="separator:abb0071d8f0e79c7510c468a3da69cb07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4a6140a4f30c81319e8cf4fc01c0fd4"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01835.html#ae4a6140a4f30c81319e8cf4fc01c0fd4">dimDomain</a> = Traits::dimDomain</td></tr>
+<tr class="separator:ae4a6140a4f30c81319e8cf4fc01c0fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a707df6f5558cbb7b96215c5173f1545c"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01835.html#a707df6f5558cbb7b96215c5173f1545c">dimRange</a> = Traits::dimRange</td></tr>
+<tr class="separator:a707df6f5558cbb7b96215c5173f1545c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a406bd9199b0e4498fb6b3cb9f2598b7d"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01835.html#a406bd9199b0e4498fb6b3cb9f2598b7d">dimRangeCols</a> = Traits::dimRangeCols</td></tr>
+<tr class="separator:a406bd9199b0e4498fb6b3cb9f2598b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a889235f59b57d3d61675837f07b20bd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a889235f59b57d3d61675837f07b20bd1">&#9670;&nbsp;</a></span>DomainFieldType</h2>
+<a id="a270254c610a70e336ce45acea247d628"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a270254c610a70e336ce45acea247d628">&#9670;&nbsp;</a></span>AnalyticalFluxType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GridLayerType, class DiffusionFactorType, class DiffusionTensorType, LocalEllipticIpdgIntegrands::Method method&gt; </div>
+template&lt;class Traits &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef GridLayerType::ctype <a class="el" href="a01835.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, DiffusionFactorType, DiffusionTensorType, method &gt;::<a class="el" href="a01835.html#a889235f59b57d3d61675837f07b20bd1">DomainFieldType</a></td>
+          <td class="memname">typedef Traits::AnalyticalFluxType <a class="el" href="a01835.html">Dune::GDT::AdvectionOperatorBase</a>&lt; Traits &gt;::<a class="el" href="a01835.html#a270254c610a70e336ce45acea247d628">AnalyticalFluxType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a1291a7de81b08d656ecd2a8ca9082db6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1291a7de81b08d656ecd2a8ca9082db6">&#9670;&nbsp;</a></span>DomainType</h2>
+<a id="a62f38fe0439aecc8ee0b60d360c3b8eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62f38fe0439aecc8ee0b60d360c3b8eb">&#9670;&nbsp;</a></span>BoundaryValueType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GridLayerType, class DiffusionFactorType, class DiffusionTensorType, LocalEllipticIpdgIntegrands::Method method&gt; </div>
+template&lt;class Traits &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef DiffusionFactorType::DomainType <a class="el" href="a01835.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, DiffusionFactorType, DiffusionTensorType, method &gt;::<a class="el" href="a01835.html#a1291a7de81b08d656ecd2a8ca9082db6">DomainType</a></td>
+          <td class="memname">typedef Traits::BoundaryValueType <a class="el" href="a01835.html">Dune::GDT::AdvectionOperatorBase</a>&lt; Traits &gt;::<a class="el" href="a01835.html#a62f38fe0439aecc8ee0b60d360c3b8eb">BoundaryValueType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a25704906abc98f665c5f27418536b5a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25704906abc98f665c5f27418536b5a2">&#9670;&nbsp;</a></span>EntityType</h2>
+<a id="a334fd33e767c0e13eeb5c371050c1f06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a334fd33e767c0e13eeb5c371050c1f06">&#9670;&nbsp;</a></span>DomainFieldType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GridLayerType, class DiffusionFactorType, class DiffusionTensorType, LocalEllipticIpdgIntegrands::Method method&gt; </div>
+template&lt;class Traits &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a01835.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, DiffusionFactorType, DiffusionTensorType, method &gt;::<a class="el" href="a01835.html#a25704906abc98f665c5f27418536b5a2">EntityType</a> =  XT::Grid::extract_entity_t&lt;GridLayerType&gt;</td>
+          <td class="memname">typedef Traits::DomainFieldType <a class="el" href="a01835.html">Dune::GDT::AdvectionOperatorBase</a>&lt; Traits &gt;::<a class="el" href="a01835.html#a334fd33e767c0e13eeb5c371050c1f06">DomainFieldType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="acf85091f05f88ceb2701f7fd06d703cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf85091f05f88ceb2701f7fd06d703cc">&#9670;&nbsp;</a></span>FieldType</h2>
+<a id="a88f74c901b9d18a0e857a682ee9aefd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88f74c901b9d18a0e857a682ee9aefd2">&#9670;&nbsp;</a></span>DomainType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GridLayerType, class DiffusionFactorType, class DiffusionTensorType, LocalEllipticIpdgIntegrands::Method method&gt; </div>
+template&lt;class Traits &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef DiffusionFactorType::RangeFieldType <a class="el" href="a01835.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, DiffusionFactorType, DiffusionTensorType, method &gt;::<a class="el" href="a01835.html#acf85091f05f88ceb2701f7fd06d703cc">FieldType</a></td>
+          <td class="memname">typedef Traits::DomainType <a class="el" href="a01835.html">Dune::GDT::AdvectionOperatorBase</a>&lt; Traits &gt;::<a class="el" href="a01835.html#a88f74c901b9d18a0e857a682ee9aefd2">DomainType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada5297c3a85024e6f8a371a74c1032d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada5297c3a85024e6f8a371a74c1032d5">&#9670;&nbsp;</a></span>IntersectionQuadratureType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Dune::QuadratureRule&lt;<a class="el" href="a01835.html#a334fd33e767c0e13eeb5c371050c1f06">DomainFieldType</a>, <a class="el" href="a01835.html#ae4a6140a4f30c81319e8cf4fc01c0fd4">dimDomain</a> - 1&gt; <a class="el" href="a01835.html">Dune::GDT::AdvectionOperatorBase</a>&lt; Traits &gt;::<a class="el" href="a01835.html#ada5297c3a85024e6f8a371a74c1032d5">IntersectionQuadratureType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9babb9e51ead9e1653e3384e281bbcc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9babb9e51ead9e1653e3384e281bbcc9">&#9670;&nbsp;</a></span>NumericalBoundaryFluxType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Traits::NumericalBoundaryFluxType <a class="el" href="a01835.html">Dune::GDT::AdvectionOperatorBase</a>&lt; Traits &gt;::<a class="el" href="a01835.html#a9babb9e51ead9e1653e3384e281bbcc9">NumericalBoundaryFluxType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa3bbd9948ecbb79e0f16946aad52a299"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3bbd9948ecbb79e0f16946aad52a299">&#9670;&nbsp;</a></span>NumericalCouplingFluxType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Traits::NumericalCouplingFluxType <a class="el" href="a01835.html">Dune::GDT::AdvectionOperatorBase</a>&lt; Traits &gt;::<a class="el" href="a01835.html#aa3bbd9948ecbb79e0f16946aad52a299">NumericalCouplingFluxType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a98427c2ca991ddefc36246d714ea5595"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98427c2ca991ddefc36246d714ea5595">&#9670;&nbsp;</a></span>Quadrature1dType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Dune::QuadratureRule&lt;<a class="el" href="a01835.html#a334fd33e767c0e13eeb5c371050c1f06">DomainFieldType</a>, 1&gt; <a class="el" href="a01835.html">Dune::GDT::AdvectionOperatorBase</a>&lt; Traits &gt;::<a class="el" href="a01835.html#a98427c2ca991ddefc36246d714ea5595">Quadrature1dType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab81c9839ac60ac5a2d8fe319d9d3a5ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab81c9839ac60ac5a2d8fe319d9d3a5ce">&#9670;&nbsp;</a></span>RangeFieldType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Traits::RangeFieldType <a class="el" href="a01835.html">Dune::GDT::AdvectionOperatorBase</a>&lt; Traits &gt;::<a class="el" href="a01835.html#ab81c9839ac60ac5a2d8fe319d9d3a5ce">RangeFieldType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -165,40 +266,34 @@ template&lt;class GridLayerType, class DiffusionFactorType, class DiffusionTenso
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a660dce242eabf5f5e3196ee0458f6b1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a660dce242eabf5f5e3196ee0458f6b1d">&#9670;&nbsp;</a></span>DiffusiveFluxReconstructionOperator()</h2>
+<a id="a7dd5ee29c90d90d2dc16ca3324e85966"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dd5ee29c90d90d2dc16ca3324e85966">&#9670;&nbsp;</a></span>AdvectionOperatorBase()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GridLayerType, class DiffusionFactorType, class DiffusionTensorType, LocalEllipticIpdgIntegrands::Method method&gt; </div>
+template&lt;class Traits &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a01835.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, DiffusionFactorType, DiffusionTensorType, method &gt;::<a class="el" href="a01835.html">DiffusiveFluxReconstructionOperator</a> </td>
+          <td class="memname"><a class="el" href="a01835.html">Dune::GDT::AdvectionOperatorBase</a>&lt; Traits &gt;::<a class="el" href="a01835.html">AdvectionOperatorBase</a> </td>
           <td>(</td>
-          <td class="paramtype">const GridLayerType &amp;&#160;</td>
-          <td class="paramname"><em>grid_layer</em>, </td>
+          <td class="paramtype">const <a class="el" href="a01835.html#a270254c610a70e336ce45acea247d628">AnalyticalFluxType</a> &amp;&#160;</td>
+          <td class="paramname"><em>analytical_flux</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const DiffusionFactorType &amp;&#160;</td>
-          <td class="paramname"><em>diffusion_factor</em>, </td>
+          <td class="paramtype">const <a class="el" href="a01835.html#a62f38fe0439aecc8ee0b60d360c3b8eb">BoundaryValueType</a> &amp;&#160;</td>
+          <td class="paramname"><em>boundary_values</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const DiffusionTensorType &amp;&#160;</td>
-          <td class="paramname"><em>diffusion_tensor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const size_t&#160;</td>
-          <td class="paramname"><em>over_integrate</em> = <code>0</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="a01835.html#ada5297c3a85024e6f8a371a74c1032d5">IntersectionQuadratureType</a> &amp;&#160;</td>
+          <td class="paramname"><em>intersection_quadrature</em> = <code><a class="el" href="a00252.html#ab582bbc63e160ac8dd3ae499263d1f57">midpoint_quadrature</a>&lt;<a class="el" href="a01835.html#a334fd33e767c0e13eeb5c371050c1f06">DomainFieldType</a>,&#160;<a class="el" href="a01835.html#ae4a6140a4f30c81319e8cf4fc01c0fd4">dimDomain</a>&gt;()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -216,30 +311,42 @@ template&lt;class GridLayerType, class DiffusionFactorType, class DiffusionTenso
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3f2427783f3e298b261c678f2b11742a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f2427783f3e298b261c678f2b11742a">&#9670;&nbsp;</a></span>apply()</h2>
+<a id="a0134b2e29ee9e8ff602f689d19769eb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0134b2e29ee9e8ff602f689d19769eb5">&#9670;&nbsp;</a></span>apply()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GridLayerType, class DiffusionFactorType, class DiffusionTensorType, LocalEllipticIpdgIntegrands::Method method&gt; </div>
+template&lt;class Traits &gt; </div>
 <div class="memtemplate">
-template&lt;class GL , class V &gt; </div>
+template&lt;class SourceType , class RangeType , class... LocalOperatorArgs&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a01835.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, DiffusionFactorType, DiffusionTensorType, method &gt;::apply </td>
+          <td class="memname">void <a class="el" href="a01835.html">Dune::GDT::AdvectionOperatorBase</a>&lt; Traits &gt;::apply </td>
           <td>(</td>
-          <td class="paramtype">const XT::Functions::LocalizableFunctionInterface&lt; <a class="el" href="a01835.html#a25704906abc98f665c5f27418536b5a2">EntityType</a>, <a class="el" href="a01835.html#a889235f59b57d3d61675837f07b20bd1">DomainFieldType</a>, <a class="el" href="a01835.html#abb0071d8f0e79c7510c468a3da69cb07">dimDomain</a>, <a class="el" href="a01835.html#acf85091f05f88ceb2701f7fd06d703cc">FieldType</a>, 1 &gt; &amp;&#160;</td>
+          <td class="paramtype">SourceType &amp;&#160;</td>
           <td class="paramname"><em>source</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00943.html">DiscreteFunction</a>&lt; <a class="el" href="a02895.html">RaviartThomasSpace</a>&lt; GL, 0, <a class="el" href="a01835.html#acf85091f05f88ceb2701f7fd06d703cc">FieldType</a> &gt;, V &gt; &amp;&#160;</td>
-          <td class="paramname"><em>range</em>&#160;</td>
+          <td class="paramtype">RangeType &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XT::Common::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>param</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LocalOperatorArgs &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>local_operator_args</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -257,19 +364,67 @@ template&lt;class GL , class V &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="abb0071d8f0e79c7510c468a3da69cb07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb0071d8f0e79c7510c468a3da69cb07">&#9670;&nbsp;</a></span>dimDomain</h2>
+<a id="ae4a6140a4f30c81319e8cf4fc01c0fd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4a6140a4f30c81319e8cf4fc01c0fd4">&#9670;&nbsp;</a></span>dimDomain</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GridLayerType, class DiffusionFactorType, class DiffusionTensorType, LocalEllipticIpdgIntegrands::Method method&gt; </div>
+template&lt;class Traits &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const size_t <a class="el" href="a01835.html">Dune::GDT::DiffusiveFluxReconstructionOperator</a>&lt; GridLayerType, DiffusionFactorType, DiffusionTensorType, method &gt;::dimDomain = GridLayerType::dimension</td>
+          <td class="memname">const size_t <a class="el" href="a01835.html">Dune::GDT::AdvectionOperatorBase</a>&lt; Traits &gt;::dimDomain = Traits::dimDomain</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a707df6f5558cbb7b96215c5173f1545c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a707df6f5558cbb7b96215c5173f1545c">&#9670;&nbsp;</a></span>dimRange</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t <a class="el" href="a01835.html">Dune::GDT::AdvectionOperatorBase</a>&lt; Traits &gt;::dimRange = Traits::dimRange</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a406bd9199b0e4498fb6b3cb9f2598b7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a406bd9199b0e4498fb6b3cb9f2598b7d">&#9670;&nbsp;</a></span>dimRangeCols</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Traits &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t <a class="el" href="a01835.html">Dune::GDT::AdvectionOperatorBase</a>&lt; Traits &gt;::dimRangeCols = Traits::dimRangeCols</td>
         </tr>
       </table>
   </td>
@@ -282,7 +437,7 @@ template&lt;class GridLayerType, class DiffusionFactorType, class DiffusionTenso
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00110_source.html">fluxreconstruction.hh</a></li>
+<li><a class="el" href="a04525_source.html">operators/fv/advection/base.hh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

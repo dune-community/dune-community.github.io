@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: realizability.hh File Reference</title>
+<title>dune-gdt: boundary.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_8eae17099f455a1cfbd2c25e13098b8a.html">operators</a></li><li class="navelem"><a class="el" href="dir_8fbd9d79de26bd0c08e4e5fb2ef2e7c5.html">fv</a></li><li class="navelem"><a class="el" href="dir_15077edfff1a5d7c3d5acc85193caa88.html">entropybased</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0b1a21aabd6e431c6c27eaae0f73db14.html">dune-gdt</a></li><li class="navelem"><a class="el" href="dir_f1b0de7d83bec9dc04998d7802345b16.html">dune</a></li><li class="navelem"><a class="el" href="dir_34906b46abd2322068aa0195bd244708.html">gdt</a></li><li class="navelem"><a class="el" href="dir_8eae17099f455a1cfbd2c25e13098b8a.html">operators</a></li><li class="navelem"><a class="el" href="dir_8fbd9d79de26bd0c08e4e5fb2ef2e7c5.html">fv</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -67,40 +67,29 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">realizability.hh File Reference</div>  </div>
+<div class="title">boundary.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;boost/iostreams/stream.hpp&gt;</code><br />
-<code>#include &lt;boost/iostreams/device/null.hpp&gt;</code><br />
-<code>#include &lt;dune/xt/common/fvector.hh&gt;</code><br />
-<code>#include &lt;dune/xt/grid/walker.hh&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00137_source.html">dune/gdt/operators/fv/reconstruction/reconstructed_function.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a04772_source.html">dune/gdt/operators/interfaces.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a04682_source.html">dune/gdt/local/fluxes/entropybased.hh</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;dune/xt/common/fvector.hh&gt;</code><br />
+<code>#include &lt;dune/xt/common/parameter.hh&gt;</code><br />
+<code>#include &lt;dune/xt/la/container/common/matrix/sparse.hh&gt;</code><br />
+<code>#include &lt;dune/xt/grid/boundaryinfo.hh&gt;</code><br />
 </div>
 <p><a href="a00119_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01927.html">Dune::GDT::LocalRealizabilityLimiterBase&lt; AnalyticalFluxImp, DiscreteFunctionImp, BasisfunctionImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01887.html">Dune::GDT::LocalBoundaryValueInterface&lt; GridLayerImp, RangeImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01931.html">Dune::GDT::NonLimitingLocalRealizabilityLimiter&lt; AnalyticalFluxImp, DiscreteFunctionImp, BasisfunctionImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01891.html">Dune::GDT::LocalizableBoundaryValueInterface&lt; GridLayerImp, RangeImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01935.html">Dune::GDT::PositivityLocalRealizabilityLimiter&lt; AnalyticalFluxImp, DiscreteFunctionImp, BasisfunctionImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01895.html">Dune::GDT::LocalizableFunctionBasedLocalDirichletBoundaryValue&lt; GridLayerType, LocalizableFunctionType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01939.html">Dune::GDT::DgLocalRealizabilityLimiter&lt; AnalyticalFluxImp, DiscreteFunctionImp, BasisfunctionImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01899.html">Dune::GDT::LocalizableFunctionBasedLocalizableDirichletBoundaryValue&lt; GridLayerType, LocalizableFunctionType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01943.html">Dune::GDT::ConvexHullLocalRealizabilityLimiter&lt; AnalyticalFluxImp, DiscreteFunctionImp, BasisfunctionImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01903.html">Dune::GDT::LocalMomentModelBoundaryValue&lt; GridLayerType, LocalizableFunctionType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01947.html">Dune::GDT::DgConvexHullLocalRealizabilityLimiter&lt; AnalyticalFluxImp, DiscreteFunctionImp, BasisfunctionImp &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01951.html">Dune::GDT::ClpLocalRealizabilityLimiter&lt; AnalyticalFluxImp, DiscreteFunctionImp, BasisfunctionImp &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01955.html">Dune::GDT::RealizabilityLimiter&lt; LocalRealizabilityLimiterImp, Traits &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01959.html">Dune::GDT::internal::RealizabilityLimiterTraits&lt; LocalRealizabilityLimiterImp &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01955.html">Dune::GDT::RealizabilityLimiter&lt; LocalRealizabilityLimiterImp, Traits &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01907.html">Dune::GDT::MomentModelBoundaryValue&lt; GridLayerType, BasisfunctionType, LocalizableFunctionType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -108,8 +97,6 @@ Namespaces</h2></td></tr>
 <tr class="memitem:a00251"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00252"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00252.html">Dune::GDT</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00253"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00253.html">Dune::GDT::internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-gdt: prolongations.hh File Reference</title>
+<title>dune-gdt: projections.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -67,16 +67,15 @@ $(function() {
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">prolongations.hh File Reference</div>  </div>
+<div class="title">projections.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;dune/xt/grid/layers.hh&gt;</code><br />
-<code>#include &lt;<a class="el" href="a04643_source.html">dune/gdt/discretefunction/default.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00161_source.html">dune/gdt/playground/spaces/block.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a04745_source.html">dune/gdt/spaces/interface.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="a04736_source.html">dune/gdt/spaces/cg/interface.hh</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="a04805_source.html">prolongations/l2.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a04811_source.html">prolongations/lagrange.hh</a>&quot;</code><br />
+<code>#include &lt;dune/xt/functions/interfaces/localizable-function.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00242_source.html">dune/gdt/type_traits.hh</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00173_source.html">projections/dirichlet.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a04690_source.html">projections/l2.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a04696_source.html">projections/lagrange.hh</a>&quot;</code><br />
 </div>
 <p><a href="a00185_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -89,21 +88,18 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa08c25274fd4dd387590da5f9087f4ea"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType , class SourceSpaceType , class SourceVectorType , class RangeSpaceType , class RangeVectorType &gt; </td></tr>
-<tr class="memitem:aa08c25274fd4dd387590da5f9087f4ea"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value &amp;&amp;is_cg_space&lt; RangeSpaceType &gt;::value, void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00252.html#aa08c25274fd4dd387590da5f9087f4ea">Dune::GDT::prolong</a> (const GridLayerType &amp;grid_layer, const ConstDiscreteFunction&lt; SourceSpaceType, SourceVectorType &gt; &amp;source, DiscreteFunction&lt; RangeSpaceType, RangeVectorType &gt; &amp;range, const size_t=0)</td></tr>
-<tr class="separator:aa08c25274fd4dd387590da5f9087f4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af392b611b527d3309b23f902cae6bf4b"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType , class SourceSpaceType , class SourceVectorType , class RangeSpaceType , class RangeVectorType &gt; </td></tr>
-<tr class="memitem:af392b611b527d3309b23f902cae6bf4b"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value &amp;&amp;!is_cg_space&lt; RangeSpaceType &gt;::value, void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00252.html#af392b611b527d3309b23f902cae6bf4b">Dune::GDT::prolong</a> (const GridLayerType &amp;grid_layer, const ConstDiscreteFunction&lt; SourceSpaceType, SourceVectorType &gt; &amp;source, DiscreteFunction&lt; RangeSpaceType, RangeVectorType &gt; &amp;range, const size_t over_integrate=0)</td></tr>
-<tr class="separator:af392b611b527d3309b23f902cae6bf4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b3045aa4dc67c8c6aa40604468a8ec7"><td class="memTemplParams" colspan="2">template&lt;class SourceSpaceType , class SourceVectorType , class RangeSpaceType , class RangeVectorType &gt; </td></tr>
-<tr class="memitem:a5b3045aa4dc67c8c6aa40604468a8ec7"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; is_cg_space&lt; RangeSpaceType &gt;::value, void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00252.html#a5b3045aa4dc67c8c6aa40604468a8ec7">Dune::GDT::prolong</a> (const ConstDiscreteFunction&lt; SourceSpaceType, SourceVectorType &gt; &amp;source, DiscreteFunction&lt; RangeSpaceType, RangeVectorType &gt; &amp;range, const size_t=0)</td></tr>
-<tr class="separator:a5b3045aa4dc67c8c6aa40604468a8ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a857b2b6325e4bf58234495716f241819"><td class="memTemplParams" colspan="2">template&lt;class SourceSpaceType , class SourceVectorType , class RangeSpaceType , class RangeVectorType &gt; </td></tr>
-<tr class="memitem:a857b2b6325e4bf58234495716f241819"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt;!is_cg_space&lt; RangeSpaceType &gt;::value, void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00252.html#a857b2b6325e4bf58234495716f241819">Dune::GDT::prolong</a> (const ConstDiscreteFunction&lt; SourceSpaceType, SourceVectorType &gt; &amp;source, DiscreteFunction&lt; RangeSpaceType, RangeVectorType &gt; &amp;range, const size_t over_integrate=0)</td></tr>
-<tr class="separator:a857b2b6325e4bf58234495716f241819"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa033d6900fdcffdafedd4d950267819e"><td class="memTemplParams" colspan="2">template&lt;class SourceSpaceType , class SourceVectorType , class RangeSpaceType , class RangeVectorType &gt; </td></tr>
-<tr class="memitem:aa033d6900fdcffdafedd4d950267819e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00252.html#aa033d6900fdcffdafedd4d950267819e">Dune::GDT::prolong</a> (const ConstDiscreteFunction&lt; SourceSpaceType, SourceVectorType &gt; &amp;source, DiscreteFunction&lt; BlockSpace&lt; RangeSpaceType &gt;, RangeVectorType &gt; &amp;range, const size_t over_integrate=0)</td></tr>
-<tr class="separator:aa033d6900fdcffdafedd4d950267819e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab28f3c4b54b4fb8206d8b24f2f2c1e32"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType , class SourceType , class SpaceType , class VectorType &gt; </td></tr>
+<tr class="memitem:ab28f3c4b54b4fb8206d8b24f2f2c1e32"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value &amp;&amp;XT::Functions::is_localizable_function&lt; SourceType &gt;::value &amp;&amp;is_cg_space&lt; SpaceType &gt;::value &amp;&amp;XT::LA::is_vector&lt; VectorType &gt;::value, void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00252.html#ab28f3c4b54b4fb8206d8b24f2f2c1e32">Dune::GDT::project</a> (const GridLayerType &amp;grid_layer, const SourceType &amp;source, DiscreteFunction&lt; SpaceType, VectorType &gt; &amp;range, const size_t=0)</td></tr>
+<tr class="separator:ab28f3c4b54b4fb8206d8b24f2f2c1e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6930f61566d99bf1e2ad1a1ea8ebdda"><td class="memTemplParams" colspan="2">template&lt;class GridLayerType , class SourceType , class SpaceType , class VectorType &gt; </td></tr>
+<tr class="memitem:ab6930f61566d99bf1e2ad1a1ea8ebdda"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Grid::is_layer&lt; GridLayerType &gt;::value &amp;&amp;XT::Functions::is_localizable_function&lt; SourceType &gt;::value &amp;&amp;!is_cg_space&lt; SpaceType &gt;::value &amp;&amp;XT::LA::is_vector&lt; VectorType &gt;::value, void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00252.html#ab6930f61566d99bf1e2ad1a1ea8ebdda">Dune::GDT::project</a> (const GridLayerType &amp;grid_layer, const SourceType &amp;source, DiscreteFunction&lt; SpaceType, VectorType &gt; &amp;range, const size_t over_integrate=0)</td></tr>
+<tr class="separator:ab6930f61566d99bf1e2ad1a1ea8ebdda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2246f50ebf840a99127b39c957faadf"><td class="memTemplParams" colspan="2">template&lt;class SourceType , class SpaceType , class VectorType &gt; </td></tr>
+<tr class="memitem:ab2246f50ebf840a99127b39c957faadf"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Functions::is_localizable_function&lt; SourceType &gt;::value &amp;&amp;is_cg_space&lt; SpaceType &gt;::value &amp;&amp;XT::LA::is_vector&lt; VectorType &gt;::value, void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00252.html#ab2246f50ebf840a99127b39c957faadf">Dune::GDT::project</a> (const SourceType &amp;source, DiscreteFunction&lt; SpaceType, VectorType &gt; &amp;range, const size_t=0)</td></tr>
+<tr class="separator:ab2246f50ebf840a99127b39c957faadf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add15cc27cd3d12bd7a1e30e5bf37224f"><td class="memTemplParams" colspan="2">template&lt;class SourceType , class SpaceType , class VectorType &gt; </td></tr>
+<tr class="memitem:add15cc27cd3d12bd7a1e30e5bf37224f"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; XT::Functions::is_localizable_function&lt; SourceType &gt;::value &amp;&amp;!is_cg_space&lt; SpaceType &gt;::value &amp;&amp;XT::LA::is_vector&lt; VectorType &gt;::value, void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00252.html#add15cc27cd3d12bd7a1e30e5bf37224f">Dune::GDT::project</a> (const SourceType &amp;source, DiscreteFunction&lt; SpaceType, VectorType &gt; &amp;range, const size_t over_integrate=0)</td></tr>
+<tr class="separator:add15cc27cd3d12bd7a1e30e5bf37224f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
